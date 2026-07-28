@@ -189,6 +189,14 @@
     height: auto;
     display: block;
     touch-action: none;
+    /* The whole surface is draggable, so it says so before it is pressed. The
+       nodes' own `cursor: pointer` wins over this on the circles themselves. */
+    cursor: grab;
+    background: var(--color-background);
+}
+
+.network--panning {
+    cursor: grabbing;
 }
 
 .network__link {
@@ -246,6 +254,41 @@
     justify-content: space-between;
     gap: var(--space-md);
     margin-top: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.network__progress,
+.network__controls {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-md);
+}
+
+.network__controls {
+    gap: var(--space-xs);
+}
+
+/* Square, so − and + read as a matched pair rather than as two words. */
+.network__zoom {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    line-height: 1;
+    color: var(--color-primary);
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
+.network__zoom:hover {
+    border-color: var(--color-primary);
+}
+
+.network__controls .link-button {
+    margin-top: 0;
+    margin-left: var(--space-xs);
 }
 
 /* Pager */

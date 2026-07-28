@@ -21,6 +21,12 @@ export const translations = {
         ofTotal: 'of',
 
         search: 'Search titles, authors, journals…',
+        suggestions: 'Suggestions',
+        // Singular, and shown against one suggestion: what kind of thing the
+        // name is, not how many of them there are.
+        kindAuthor: 'Author',
+        kindJournal: 'Journal',
+        kindPublisher: 'Publisher',
         from: 'From',
         to: 'To',
         clearFilters: 'Clear filters',
@@ -34,7 +40,10 @@ export const translations = {
         topAuthors: 'Most published authors',
         venues: 'Where ZMO publishes',
         coauthorship: 'Co-authorship',
-        coauthorshipHint: 'Authors who have published together. Drag a node to rearrange; click to filter.',
+        coauthorshipHint: 'Authors who have published together. Drag the background to pan and ⌘/Ctrl + scroll to zoom; drag a node to rearrange, click to filter.',
+        zoomIn: 'Zoom in',
+        zoomOut: 'Zoom out',
+        resetView: 'Reset view',
         noCoauthors: 'No co-authored publications match the current filters.',
         noData: 'Nothing to show for the current filters.',
 
@@ -83,6 +92,10 @@ export const translations = {
         ofTotal: 'von',
 
         search: 'Titel, Autorschaft, Zeitschriften durchsuchen…',
+        suggestions: 'Vorschläge',
+        kindAuthor: 'Autorschaft',
+        kindJournal: 'Zeitschrift',
+        kindPublisher: 'Verlag',
         from: 'Von',
         to: 'Bis',
         clearFilters: 'Filter zurücksetzen',
@@ -96,7 +109,10 @@ export const translations = {
         topAuthors: 'Meistpublizierte Autorinnen und Autoren',
         venues: 'Wo das ZMO publiziert',
         coauthorship: 'Ko-Autorschaft',
-        coauthorshipHint: 'Autorinnen und Autoren, die gemeinsam publiziert haben. Einen Knoten ziehen, um das Netz umzuordnen; klicken, um zu filtern.',
+        coauthorshipHint: 'Autorinnen und Autoren, die gemeinsam publiziert haben. Den Hintergrund ziehen, um den Ausschnitt zu verschieben, ⌘/Strg + Scrollen zum Zoomen; einen Knoten ziehen, um umzuordnen, klicken, um zu filtern.',
+        zoomIn: 'Vergrößern',
+        zoomOut: 'Verkleinern',
+        resetView: 'Ansicht zurücksetzen',
         noCoauthors: 'Keine gemeinsam verfasste Publikation entspricht den aktuellen Filtern.',
         noData: 'Für die aktuellen Filter gibt es nichts anzuzeigen.',
 

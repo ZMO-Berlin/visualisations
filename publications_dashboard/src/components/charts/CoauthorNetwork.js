@@ -10,7 +10,13 @@
  * Every node is labelled rather than only the hovered one: a network whose
  * names appear one at a time cannot be read as a picture, only queried. The
  * cost is that the labels crowd, which is why the graph opens on the busiest
- * authors and grows a step at a time.
+ * authors and grows a step at a time — and why the view pans and zooms.
+ *
+ * The force layout spreads nodes as far as it needs to, which is regularly
+ * further than the fixed viewBox: an author pushed past the edge used to be
+ * simply unreachable. A `d3.zoom` on the root SVG now moves a viewport group
+ * holding all three layers, so the reader can drag the picture around and
+ * magnify a crowded corner.
  */
 
 import { svg, el, mount } from '../../utils/dom.js';
@@ -22,6 +28,12 @@ const PRESETTLE_TICKS = 80;
 /** Rough half-width reserved for a label, to keep neighbours from colliding. */
 const LABEL_PADDING = 26;
 
+/** How far out and in the view may be taken. */
+const SCALE_EXTENT = [0.3, 6];
+
+/** One press of the zoom buttons. */
+const ZOOM_STEP = 1.4;
+
 export class CoauthorNetwork {
     #simulation = null;
     #signature = null;
@@ -31,6 +43,8 @@ export class CoauthorNetwork {
     // Kept so "show more" can redraw without waiting for the next state change.
     #graph = { nodes: [], links: [] };
     #selected = new Set();
+    #canvas = null;
+    #zoom = null;
 
     /**
      * @param {HTMLElement} container
@@ -103,13 +117,17 @@ export class CoauthorNetwork {
         const linkLayer = svg('g', { class: 'network__links' });
         const nodeLayer = svg('g', { class: 'network__nodes' });
         const labelLayer = svg('g', { class: 'network__labels' });
+        // One group for the zoom to move. Transforming the three layers
+        // separately would work, but this keeps the pan/zoom to a single
+        // attribute write per frame and leaves the layers free to be reordered.
+        const viewport = svg('g', { class: 'network__viewport' }, [linkLayer, nodeLayer, labelLayer]);
         const canvas = svg('svg', {
             class: 'network',
             viewBox: `0 0 ${width} ${height}`,
             preserveAspectRatio: 'xMidYMid meet',
             role: 'img',
             'aria-label': this.strings.coauthorship
-        }, [linkLayer, nodeLayer, labelLayer]);
+        }, [viewport]);
 
         const lines = graph.links.map(link => svg('line', {
             class: 'network__link',
@@ -207,6 +225,13 @@ export class CoauthorNetwork {
         // nodes here — by index, which matches the order they were appended in
         // — is what makes `event.subject` the dragged author rather than
         // undefined.
+        //
+        // `d3.drag` stops the mousedown it claims from propagating, so a press
+        // that reaches the zoom below is one that missed every node. That is
+        // what lets "drag a node" and "drag the background" coexist without
+        // either having to know about the other. The drag's own coordinates
+        // stay in simulation space because it measures against the node's
+        // parent, which is inside the transformed viewport.
         d3.select(canvas).selectAll('circle').data(graph.nodes).call(
             d3.drag()
                 .on('start', event => {
@@ -230,30 +255,109 @@ export class CoauthorNetwork {
                     event.subject.fy = null;
                 })
         );
+
+        this.#canvas = canvas;
+        this.#zoom = d3.zoom()
+            .scaleExtent(SCALE_EXTENT)
+            .filter(event => {
+                // d3's default filter rejects anything with ctrlKey, which is
+                // exactly the combination wanted here, so it has to be replaced
+                // rather than extended.
+                if (event.type === 'wheel') {
+                    // A bare wheel keeps scrolling the page — a chart that ate
+                    // the wheel would trap a reader on the way past it. Browsers
+                    // report a trackpad pinch as a ctrl-wheel, so pinch-to-zoom
+                    // comes along with the modifier.
+                    return event.ctrlKey || event.metaKey;
+                }
+                return !event.button;
+            })
+            // d3 multiplies a ctrl-wheel by ten, on the assumption that ctrl
+            // means a trackpad pinch and pinches arrive in tiny increments.
+            // Here ctrl is *also* how a mouse asks to zoom, and one 100px notch
+            // through that multiplier lands on the scale limit in a single
+            // turn. So the boost is kept only for what a pinch actually sends:
+            // pixel deltas, small ones. A line-mode wheel (Firefox reports ±3)
+            // is small too, hence the deltaMode test.
+            .wheelDelta(event => {
+                const unit = event.deltaMode === 1 ? 0.05 : event.deltaMode ? 1 : 0.002;
+                const pinching = event.deltaMode === 0 && Math.abs(event.deltaY) < 50;
+                return -event.deltaY * unit * (pinching ? 10 : 1);
+            })
+            .on('zoom', event => viewport.setAttribute('transform', event.transform))
+            .on('start', () => canvas.classList.add('network--panning'))
+            .on('end', () => canvas.classList.remove('network--panning'));
+
+        d3.select(canvas)
+            .call(this.#zoom)
+            // Double-click already means "toggle this author twice" on a node;
+            // having it also jump the zoom made the graph lurch under the
+            // pointer.
+            .on('dblclick.zoom', null);
     }
 
-    /** "60 of 214 authors", and the button that asks for the next batch. */
-    #footer(shown, total) {
-        if (total <= shown) {
-            return null;
+    /** Steps the zoom about the centre of the view. */
+    #zoomBy(factor) {
+        if (this.#canvas && this.#zoom) {
+            this.d3.select(this.#canvas).call(this.#zoom.scaleBy, factor);
         }
+    }
+
+    #resetView() {
+        if (this.#canvas && this.#zoom) {
+            this.d3.select(this.#canvas).call(this.#zoom.transform, this.d3.zoomIdentity);
+        }
+    }
+
+    /**
+     * "60 of 214 authors" and the button for the next batch on the left; the
+     * view controls on the right.
+     *
+     * The zoom buttons are not a convenience duplicating the wheel — they are
+     * the only pointer-free way in, since the wheel needs a modifier and a
+     * trackpad pinch is not something every reader has.
+     */
+    #footer(shown, total) {
+        const progress = total > shown
+            ? el('div', { class: 'network__progress' }, [
+                el('span', {
+                    class: 'pager__range',
+                    text: `${shown} ${this.strings.ofTotal} ${total} ${this.strings.authors}`
+                }),
+                el('button', {
+                    class: 'link-button',
+                    type: 'button',
+                    text: this.strings.showMore,
+                    on: {
+                        click: () => {
+                            this.#limit += this.settings.network.nodeStep;
+                            this.render(this.#graph, this.#selected);
+                        }
+                    }
+                })
+            ])
+            : el('span', {});
+
+        const step = (label, aria, onClick) => el('button', {
+            class: 'network__zoom',
+            type: 'button',
+            'aria-label': aria,
+            text: label,
+            on: { click: onClick }
+        });
 
         return el('div', { class: 'network__footer' }, [
-            el('span', {
-                class: 'pager__range',
-                text: `${shown} ${this.strings.ofTotal} ${total} ${this.strings.authors}`
-            }),
-            el('button', {
-                class: 'link-button',
-                type: 'button',
-                text: this.strings.showMore,
-                on: {
-                    click: () => {
-                        this.#limit += this.settings.network.nodeStep;
-                        this.render(this.#graph, this.#selected);
-                    }
-                }
-            })
+            progress,
+            el('div', { class: 'network__controls' }, [
+                step('−', this.strings.zoomOut, () => this.#zoomBy(1 / ZOOM_STEP)),
+                step('+', this.strings.zoomIn, () => this.#zoomBy(ZOOM_STEP)),
+                el('button', {
+                    class: 'link-button',
+                    type: 'button',
+                    text: this.strings.resetView,
+                    on: { click: () => this.#resetView() }
+                })
+            ])
         ]);
     }
 
@@ -274,6 +378,10 @@ export class CoauthorNetwork {
         this.#simulation = null;
         this.#nodes.clear();
         this.#labels.clear();
+        // The SVG these refer to is about to be replaced; a stale zoom would
+        // keep writing transforms into a detached node.
+        this.#canvas = null;
+        this.#zoom = null;
     }
 
     destroy() {

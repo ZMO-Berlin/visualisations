@@ -34,6 +34,78 @@
     outline-offset: 2px;
 }
 
+/* Search suggestions */
+
+.control--combobox {
+    position: relative;
+}
+
+/*
+ * Overlaid rather than in the flow: an open list must not push the summary
+ * strip and every chart below it down the page as the reader types.
+ */
+.suggestions {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    right: 0;
+    z-index: 20;
+    max-height: 19rem;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0.25rem 0;
+    list-style: none;
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: 0 8px 24px rgba(25, 43, 81, 0.12);
+}
+
+.suggestions[hidden] {
+    display: none;
+}
+
+.suggestion {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-sm);
+    padding: 0.4rem 0.75rem;
+    cursor: pointer;
+}
+
+.suggestion--active,
+.suggestion:hover {
+    background: var(--color-background-light);
+}
+
+.suggestion__value {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.suggestion__count {
+    font-size: 0.8125rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-text-secondary);
+}
+
+/* Fixed width so the kinds line up into a column the eye can skip down. */
+.suggestion__kind {
+    width: 5.5rem;
+    flex: none;
+    text-align: right;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-light);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .button {
     padding: 0.5rem 0.9rem;
     background: var(--color-primary);
