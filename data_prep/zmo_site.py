@@ -22,7 +22,7 @@ BASE_URL = "https://www.zmo.de"
 
 # Identify the crawler so ZMO can see what is hitting the site. Each scraper
 # appends its own name; this is the shared tail.
-USER_AGENT_SUFFIX = "(+https://github.com/fmadore/ZMO; research data preparation)"
+USER_AGENT_SUFFIX = "(+https://github.com/ZMO-Berlin/visualisations; research data preparation)"
 
 # Longest cache filename kept verbatim before it is truncated and hashed.
 MAX_CACHE_NAME = 80

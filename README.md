@@ -3,10 +3,21 @@
 Two static web apps built from data scraped from the
 [Leibniz-Zentrum Moderner Orient (ZMO)](https://www.zmo.de/) website.
 
-| App | What it shows | Lives in |
-| --- | --- | --- |
-| **Word cloud** | The most frequent terms in each research unit's description and project abstracts | `units_wordcloud/` |
-| **Publications dashboard** | The publication register — output per year, document types, authors, co-authorship, journals and publishers | `publications_dashboard/` |
+| App | What it shows | Lives in | Published at |
+| --- | --- | --- | --- |
+| **Word cloud** | The most frequent terms in each research unit's description and project abstracts | `units_wordcloud/` | [/units_wordcloud/](https://zmo-berlin.github.io/visualisations/units_wordcloud/) |
+| **Publications dashboard** | The publication register — output per year, document types, authors, co-authorship, journals and publishers | `publications_dashboard/` | [/publications_dashboard/](https://zmo-berlin.github.io/visualisations/publications_dashboard/) |
+
+GitHub Pages serves the repository root from `main`, so each app is published at
+its own directory. Neither app hard-codes that path — `main.js` resolves the app
+root from `import.meta.url` — so the same files work from a local server or any
+other host without a change.
+
+> **Embedding on zmo.de.** The site's `Content-Security-Policy` header lists the
+> origins an `<iframe>` may load from, and `zmo-berlin.github.io` has to be one
+> of them. At the time of writing `frame-src` allows `https://fmadore.github.io`
+> and `https://heshmat.zmo.de` but not this one, so an embed is blocked by the
+> browser until ZMO's web team adds it.
 
 Both apps:
 
