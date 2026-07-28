@@ -340,6 +340,10 @@
     "size": 4
   },
   {
+    "text": "complex",
+    "size": 4
+  },
+  {
     "text": "approach",
     "size": 4
   },
@@ -393,10 +397,6 @@
   },
   {
     "text": "example",
-    "size": 3
-  },
-  {
-    "text": "many",
     "size": 3
   }
 ]

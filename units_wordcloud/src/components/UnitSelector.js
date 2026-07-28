@@ -1,67 +1,73 @@
 import { getTranslations } from '../utils/translations.js';
-import { ConfigManager } from '../config/ConfigManager.js';
 
+/**
+ * Dropdown for choosing which research unit's frequencies to display.
+ */
 export class UnitSelector {
-    constructor(container) {
-        this.container = container instanceof HTMLElement ? container : document.getElementById(container);
-        if (!this.container) {
-            throw new Error('UnitSelector: container is required');
-        }
-        this.config = ConfigManager.getInstance();
+    /**
+     * @param {HTMLElement} container
+     * @param {object} deps
+     * @param {import('../config/ConfigManager.js').ConfigManager} deps.config
+     */
+    constructor(container, { config }) {
+        this.container = container;
+        this.config = config;
         this.translations = getTranslations();
-        this._onChange = null;
-        this.init();
+        this.onChange = null;
+        this.select = null;
+        this.render();
     }
 
-    init() {
-        // Create container div
-        const selectContainer = document.createElement('div');
-        selectContainer.className = 'select-container';
+    render() {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'select-container';
 
-        // Create select element
         const select = document.createElement('select');
         select.id = 'unitSelector';
         select.className = 'font-medium custom-select';
-        select.setAttribute('aria-label', 'Select a research unit');
+        select.setAttribute('aria-label', this.translations.selectUnit);
+        // Prevent the browser restoring a previous selection on reload, which
+        // would disagree with the unit the app actually loaded.
+        select.autocomplete = 'off';
 
-        // Add options
         this.config.getUnits().forEach(unit => {
             const option = document.createElement('option');
             option.value = unit.value;
             option.className = 'font-medium';
-            option.textContent = unit.labelKey ? 
-                this.translations[unit.labelKey] : 
-                unit.label;
+            option.textContent = unit.labelKey ? this.translations[unit.labelKey] : unit.label;
             select.appendChild(option);
         });
 
-        // Set default value
         select.value = this.config.get('data.defaultGroup');
+        select.addEventListener('change', () => this.onChange?.(select.value));
 
-        // Add event listener
-        select.addEventListener('change', () => {
-            if (this._onChange) {
-                this._onChange();
-            }
-        });
+        wrapper.appendChild(select);
+        this.container.appendChild(wrapper);
 
-        selectContainer.appendChild(select);
-        this.container.appendChild(selectContainer);
+        // Hold the reference rather than re-querying the document on every
+        // read; the element is owned by this component.
+        this.select = select;
     }
 
     getValue() {
-        return document.getElementById('unitSelector').value;
+        return this.select.value;
     }
 
+    /**
+     * Updates the control to reflect external state.
+     *
+     * Deliberately does *not* invoke `onChange`: this is called from the store
+     * subscription, and firing the handler here would push the same value back
+     * into the store and trigger a second, redundant data load.
+     */
     setValue(value) {
-        const select = document.getElementById('unitSelector');
-        select.value = value;
-        if (this._onChange) {
-            this._onChange();
+        if (value != null && this.select.value !== value) {
+            this.select.value = value;
         }
     }
 
-    set onChange(handler) {
-        this._onChange = handler;
+    destroy() {
+        this.onChange = null;
+        this.select = null;
     }
-} 
+}

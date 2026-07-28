@@ -1,71 +1,84 @@
 import { getTranslations } from '../utils/translations.js';
-import { ConfigManager } from '../config/ConfigManager.js';
 
+/**
+ * Range input controlling how many words the cloud shows.
+ */
 export class WordCountSlider {
-    constructor(container) {
-        this.container = container instanceof HTMLElement ? container : document.getElementById(container);
-        if (!this.container) {
-            throw new Error('WordCountSlider: container is required');
-        }
-        this.config = ConfigManager.getInstance();
+    /**
+     * @param {HTMLElement} container
+     * @param {object} deps
+     * @param {import('../config/ConfigManager.js').ConfigManager} deps.config
+     */
+    constructor(container, { config }) {
+        this.container = container;
+        this.config = config;
         this.translations = getTranslations();
-        this._onChange = null;
-        
-        this.init();
+        this.onChange = null;
+        this.slider = null;
+        this.valueDisplay = null;
+        this.render();
     }
 
-    init() {
-        const sliderContainer = document.createElement('div');
-        sliderContainer.className = 'slider-container';
+    render() {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'slider-container';
 
-        // Create label and value display
         const labelContainer = document.createElement('div');
         labelContainer.className = 'slider-label';
-        
-        const label = document.createElement('span');
+
+        const defaultCount = this.config.get('data.defaultWordCount');
+
+        const label = document.createElement('label');
+        label.setAttribute('for', 'wordCountSlider');
         label.textContent = this.translations.numberOfWords;
-        
+
         const valueDisplay = document.createElement('span');
         valueDisplay.className = 'slider-value';
-        valueDisplay.textContent = this.config.get('data.defaultWordCount');
-        
-        labelContainer.appendChild(label);
-        labelContainer.appendChild(document.createTextNode(': '));
-        labelContainer.appendChild(valueDisplay);
+        valueDisplay.textContent = defaultCount;
 
-        // Create slider
+        labelContainer.append(label, document.createTextNode(': '), valueDisplay);
+
         const slider = document.createElement('input');
         slider.type = 'range';
         slider.id = 'wordCountSlider';
         slider.min = this.config.get('data.minWords');
         slider.max = this.config.get('data.maxWords');
-        slider.value = this.config.get('data.defaultWordCount');
+        slider.value = defaultCount;
+        // Without this, browsers restore the previous position on reload, which
+        // leaves the control disagreeing with the state the app actually loaded
+        // (the store starts from the default or the `count` URL parameter).
+        slider.autocomplete = 'off';
 
-        // Add event listener
-        slider.addEventListener('input', (e) => {
-            valueDisplay.textContent = e.target.value;
-            if (this._onChange) {
-                this._onChange();
-            }
+        slider.addEventListener('input', () => {
+            valueDisplay.textContent = slider.value;
+            this.onChange?.(this.getValue());
         });
 
-        sliderContainer.appendChild(labelContainer);
-        sliderContainer.appendChild(slider);
-        this.container.appendChild(sliderContainer);
+        wrapper.append(labelContainer, slider);
+        this.container.appendChild(wrapper);
+
+        this.slider = slider;
+        this.valueDisplay = valueDisplay;
     }
 
     getValue() {
-        return parseInt(document.getElementById('wordCountSlider').value);
+        return parseInt(this.slider.value, 10);
     }
 
+    /**
+     * Syncs the control to external state without notifying listeners — see
+     * the note on `UnitSelector.setValue`.
+     */
     setValue(value) {
-        const slider = document.getElementById('wordCountSlider');
-        slider.value = value;
-        const event = new Event('input');
-        slider.dispatchEvent(event);
+        if (value == null) return;
+        const clamped = Math.min(Math.max(value, Number(this.slider.min)), Number(this.slider.max));
+        this.slider.value = clamped;
+        this.valueDisplay.textContent = clamped;
     }
 
-    set onChange(handler) {
-        this._onChange = handler;
+    destroy() {
+        this.onChange = null;
+        this.slider = null;
+        this.valueDisplay = null;
     }
-} 
+}

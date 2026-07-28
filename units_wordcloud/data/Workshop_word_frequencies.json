@@ -104,6 +104,10 @@
     "size": 6
   },
   {
+    "text": "sensibility",
+    "size": 6
+  },
+  {
     "text": "work",
     "size": 6
   },
@@ -168,6 +172,10 @@
     "size": 6
   },
   {
+    "text": "perspective",
+    "size": 5
+  },
+  {
     "text": "conceptualization",
     "size": 5
   },
@@ -181,10 +189,6 @@
   },
   {
     "text": "local",
-    "size": 5
-  },
-  {
-    "text": "sensibility",
     "size": 5
   },
   {
@@ -224,6 +228,10 @@
     "size": 5
   },
   {
+    "text": "like",
+    "size": 5
+  },
+  {
     "text": "study",
     "size": 5
   },
@@ -242,10 +250,6 @@
   {
     "text": "sectarianism",
     "size": 5
-  },
-  {
-    "text": "perspective",
-    "size": 4
   },
   {
     "text": "north",
@@ -288,15 +292,15 @@
     "size": 4
   },
   {
-    "text": "like",
-    "size": 4
-  },
-  {
     "text": "used",
     "size": 4
   },
   {
     "text": "discus",
+    "size": 4
+  },
+  {
+    "text": "category",
     "size": 4
   },
   {
@@ -317,6 +321,10 @@
   },
   {
     "text": "order",
+    "size": 4
+  },
+  {
+    "text": "press",
     "size": 4
   },
   {
@@ -389,14 +397,6 @@
   },
   {
     "text": "across",
-    "size": 3
-  },
-  {
-    "text": "building",
-    "size": 3
-  },
-  {
-    "text": "recent",
     "size": 3
   }
 ]

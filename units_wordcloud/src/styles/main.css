@@ -1,75 +1,30 @@
+/*
+ * Stylesheet entry point.
+ *
+ * Import order matters: tokens (reset, fonts, colors) come first so that later
+ * modules can reference the custom properties they define, and `responsive`
+ * comes last so its media queries override the base layout.
+ *
+ * This file intentionally contains no rules of its own. It previously restated
+ * the `body`, `.content-container`, `.wordcloud-container` and `#wordcloud`
+ * blocks already defined in `layout.css`, so every change had to be made twice
+ * and the two copies had already drifted apart.
+ */
+
+/* Tokens */
 @import './modules/reset.css';
 @import './modules/fonts.css';
 @import './modules/colors.css';
+
+/* Structure */
 @import './modules/layout.css';
+
+/* Components */
 @import './modules/controls.css';
 @import './modules/slider.css';
 @import './modules/button.css';
-@import './modules/responsive.css';
 @import './modules/tooltip.css';
 @import './modules/wordlist.css';
 
-/* Main Layout */
-body { 
-    font-family: var(--font-base);
-    text-align: center;
-    min-height: 100vh;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-normal);
-}
-
-/* Content Layout */
-.content-container {
-    display: flex;
-    flex: 1;
-    width: 100%;
-    overflow: hidden;
-}
-
-/* WordCloud Module */
-.wordcloud-container {
-    position: relative;
-    flex: 1;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    overflow: hidden;
-    padding: 5px;
-    box-sizing: border-box;
-    min-height: 400px;
-}
-
-#wordcloud {
-    width: 100%;
-    height: calc(100vh - 70px);
-    min-height: 400px;
-    max-height: none;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    max-width: min(100%, calc((100vh - 70px) * 1.5));
-}
-
-#wordcloud svg {
-    width: 100%;
-    height: 100%;
-    max-width: 1200px;
-    margin: 0;
-    display: block;
-    aspect-ratio: 1.5;
-}
-
-/* Input Components Module */
-.input-container {
-    flex: 1;
-    min-width: 180px;
-    font-family: var(--font-base);
-}
+/* Breakpoint overrides — must stay last */
+@import './modules/responsive.css';

@@ -1,106 +1,109 @@
 import { UnitSelector } from './UnitSelector.js';
 import { WordCountSlider } from './WordCountSlider.js';
 import { SaveButton } from './SaveButton.js';
-import { SaveManager } from '../utils/saveUtils.js';
 import { UI_EVENTS, ERROR_EVENTS } from '../events/EventTypes.js';
 
+/**
+ * The control bar: unit selector, word-count slider and export button.
+ *
+ * Owns the one-way flow `control input -> store action`, and mirrors store
+ * changes back into the controls. Because the controls' `setValue` methods do
+ * not re-fire their change handlers, that mirroring cannot loop back into
+ * another store update.
+ */
 export class Menu {
-    constructor(containerId, { config, store, eventBus, errorManager }) {
-        if (!containerId) {
-            throw new Error('Menu: containerId is required');
-        }
+    /**
+     * @param {string|HTMLElement} containerId
+     * @param {object} deps
+     * @param {import('../config/ConfigManager.js').ConfigManager} deps.config
+     * @param {import('../store/AppStore.js').AppStore} deps.store
+     * @param {import('../events/EventBus.js').EventBus} deps.eventBus
+     * @param {import('../utils/ErrorManager.js').ErrorManager} deps.errorManager
+     * @param {import('../utils/saveUtils.js').SaveManager} deps.saveManager
+     */
+    constructor(containerId, { config, store, eventBus, errorManager, saveManager }) {
+        this.container = typeof containerId === 'string'
+            ? document.getElementById(containerId.replace(/^#/, ''))
+            : containerId;
 
-        this.container = document.getElementById(containerId);
         if (!this.container) {
-            throw new Error(`Menu: container with id "${containerId}" not found`);
+            throw new Error(`Menu: container "${containerId}" not found`);
         }
 
-        // Inject dependencies
         this.config = config;
         this.store = store;
         this.eventBus = eventBus;
         this.errorManager = errorManager;
+        this.saveManager = saveManager;
+
         this.init();
     }
 
     init() {
-        return this.errorManager.wrapSync(() => {
-            // Create a wrapper for the controls
-            const menuWrapper = document.createElement('div');
-            menuWrapper.className = 'menu-wrapper';
-            this.container.appendChild(menuWrapper);
+        const wrapper = document.createElement('div');
+        wrapper.className = 'menu-wrapper';
+        this.container.appendChild(wrapper);
+        this.wrapper = wrapper;
 
-            // Store the wrapper reference
-            this.menuWrapper = menuWrapper;
+        this.components = {
+            unitSelector: new UnitSelector(wrapper, { config: this.config }),
+            wordCountSlider: new WordCountSlider(wrapper, { config: this.config }),
+            saveButton: new SaveButton(wrapper, { config: this.config })
+        };
 
-            // Initialize components with dependencies
-            this.components = {
-                unitSelector: new UnitSelector(menuWrapper, {
-                    config: this.config
-                }),
-                wordCountSlider: new WordCountSlider(menuWrapper, {
-                    config: this.config
-                }),
-                saveButton: new SaveButton(menuWrapper, {
-                    config: this.config,
-                    store: this.store
-                })
-            };
-
-            // Setup event handlers
-            this.setupEventHandlers();
-
-            // Subscribe to store updates
-            this.unsubscribe = this.store.subscribe(this.handleStateChange.bind(this));
-
-            // Set initial values from store
-            this.setInitialState();
-        }, { component: 'Menu', method: 'init' });
+        this.bindControls();
+        this.unsubscribe = this.store.subscribe(this.handleStateChange.bind(this));
+        this.syncFromState();
     }
 
-    setupEventHandlers() {
-        // Unit selector events
-        this.components.unitSelector.onChange = () => {
-            const unit = this.getUnit();
+    bindControls() {
+        this.components.unitSelector.onChange = unit => {
             this.eventBus.emit(UI_EVENTS.UNIT_CHANGE, { unit });
-            this.handleUpdate();
+            this.requestUpdate();
         };
 
-        // Word count slider events
-        this.components.wordCountSlider.onChange = () => {
-            const count = this.getWordCount();
+        this.components.wordCountSlider.onChange = count => {
             this.eventBus.emit(UI_EVENTS.WORD_COUNT_CHANGE, { count });
-            this.handleUpdate();
+            this.requestUpdate();
         };
 
-        // Save button events
-        this.components.saveButton.onClick = async () => {
-            try {
-                await this.eventBus.emit(UI_EVENTS.SAVE_REQUEST);
-                const svg = document.querySelector("#wordcloud svg");
-                if (!svg) {
-                    throw new Error('Word cloud SVG element not found');
-                }
-                await SaveManager.saveAsPNG(svg);
-                await this.eventBus.emit(UI_EVENTS.SAVE_COMPLETE);
-            } catch (error) {
-                await this.eventBus.emit(UI_EVENTS.SAVE_ERROR, { error });
-                await this.eventBus.emit(ERROR_EVENTS.GENERAL, { error });
-            }
-        };
+        this.components.saveButton.onClick = () => this.handleSave();
     }
 
-    setInitialState() {
-        return this.errorManager.wrapSync(() => {
-            const state = this.store.getState();
-            
-            if (state.selectedUnit) {
-                this.setUnit(state.selectedUnit);
+    requestUpdate() {
+        this.store
+            .updateWordCloud(this.getUnit(), this.getWordCount())
+            .catch(() => { /* already reported via ErrorManager and the store's error state */ });
+    }
+
+    async handleSave() {
+        const { saveButton } = this.components;
+        saveButton.setBusy(true);
+
+        try {
+            await this.eventBus.emit(UI_EVENTS.SAVE_REQUEST);
+
+            const svg = document.querySelector('#wordcloud svg');
+            if (!svg) {
+                throw new Error('There is no word cloud to export yet');
             }
-            if (state.wordCount) {
-                this.setWordCount(state.wordCount);
-            }
-        }, { component: 'Menu', method: 'setInitialState' });
+
+            await this.saveManager.saveAsPNG(svg);
+            await this.eventBus.emit(UI_EVENTS.SAVE_COMPLETE);
+        } catch (error) {
+            this.errorManager.handleError(error, { component: 'Menu', method: 'handleSave' });
+            await this.eventBus.emit(UI_EVENTS.SAVE_ERROR, { error });
+            await this.eventBus.emit(ERROR_EVENTS.GENERAL, { error });
+        } finally {
+            saveButton.setBusy(false);
+        }
+    }
+
+    /** Pushes current store values into the controls. */
+    syncFromState() {
+        const { selectedUnit, wordCount } = this.store.getState();
+        this.setUnit(selectedUnit);
+        this.setWordCount(wordCount);
     }
 
     handleStateChange(newState, oldState) {
@@ -112,64 +115,26 @@ export class Menu {
         }
     }
 
-    handleUpdate() {
-        return this.errorManager.wrapSync(() => {
-            this.store.updateWordCloud(
-                this.getUnit(),
-                this.getWordCount()
-            );
-        }, { 
-            component: 'Menu', 
-            method: 'handleUpdate',
-            data: {
-                unit: this.getUnit(),
-                wordCount: this.getWordCount()
-            }
-        });
-    }
-
     getUnit() {
-        return this.errorManager.wrapSync(
-            () => this.components.unitSelector.getValue(),
-            { component: 'Menu', method: 'getUnit' }
-        );
+        return this.components.unitSelector.getValue();
     }
 
     getWordCount() {
-        return this.errorManager.wrapSync(
-            () => this.components.wordCountSlider.getValue(),
-            { component: 'Menu', method: 'getWordCount' }
-        );
+        return this.components.wordCountSlider.getValue();
     }
 
     setUnit(value) {
-        return this.errorManager.wrapSync(
-            () => this.components.unitSelector.setValue(value),
-            { component: 'Menu', method: 'setUnit', value }
-        );
+        this.components.unitSelector.setValue(value);
     }
 
     setWordCount(value) {
-        return this.errorManager.wrapSync(
-            () => this.components.wordCountSlider.setValue(value),
-            { component: 'Menu', method: 'setWordCount', value }
-        );
+        this.components.wordCountSlider.setValue(value);
     }
 
     destroy() {
-        return this.errorManager.wrapSync(() => {
-            if (this.unsubscribe) {
-                this.unsubscribe();
-            }
-            Object.values(this.components).forEach(component => {
-                if (component.destroy) {
-                    component.destroy();
-                }
-            });
-            this.components = {};
-            if (this.container) {
-                this.container.innerHTML = '';
-            }
-        }, { component: 'Menu', method: 'destroy' });
+        this.unsubscribe?.();
+        Object.values(this.components ?? {}).forEach(component => component.destroy?.());
+        this.components = {};
+        this.container?.replaceChildren();
     }
-} 
+}

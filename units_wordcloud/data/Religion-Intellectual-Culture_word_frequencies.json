@@ -5,7 +5,7 @@
   },
   {
     "text": "intellectual",
-    "size": 35
+    "size": 36
   },
   {
     "text": "muslim",
@@ -72,6 +72,10 @@
     "size": 11
   },
   {
+    "text": "idea",
+    "size": 11
+  },
+  {
     "text": "different",
     "size": 10
   },
@@ -85,10 +89,6 @@
   },
   {
     "text": "discourse",
-    "size": 10
-  },
-  {
-    "text": "idea",
     "size": 10
   },
   {
@@ -129,6 +129,10 @@
   },
   {
     "text": "role",
+    "size": 8
+  },
+  {
+    "text": "islam",
     "size": 8
   },
   {
@@ -193,10 +197,6 @@
   },
   {
     "text": "seek",
-    "size": 7
-  },
-  {
-    "text": "islam",
     "size": 7
   },
   {

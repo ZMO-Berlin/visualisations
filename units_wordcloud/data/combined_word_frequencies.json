@@ -1,62 +1,86 @@
 [
   {
     "text": "social",
-    "size": 54
-  },
-  {
-    "text": "history",
-    "size": 46
+    "size": 63
   },
   {
     "text": "religious",
-    "size": 44
-  },
-  {
-    "text": "local",
-    "size": 41
-  },
-  {
-    "text": "context",
-    "size": 39
-  },
-  {
-    "text": "life",
-    "size": 39
-  },
-  {
-    "text": "state",
-    "size": 38
-  },
-  {
-    "text": "intellectual",
-    "size": 38
-  },
-  {
-    "text": "focus",
-    "size": 37
+    "size": 58
   },
   {
     "text": "muslim",
-    "size": 37
+    "size": 54
   },
   {
-    "text": "practice",
-    "size": 36
+    "text": "context",
+    "size": 51
   },
   {
-    "text": "time",
-    "size": 36
+    "text": "history",
+    "size": 48
+  },
+  {
+    "text": "intellectual",
+    "size": 48
   },
   {
     "text": "political",
-    "size": 35
+    "size": 47
+  },
+  {
+    "text": "local",
+    "size": 46
+  },
+  {
+    "text": "life",
+    "size": 42
+  },
+  {
+    "text": "practice",
+    "size": 42
   },
   {
     "text": "south",
-    "size": 33
+    "size": 41
+  },
+  {
+    "text": "knowledge",
+    "size": 41
+  },
+  {
+    "text": "state",
+    "size": 40
+  },
+  {
+    "text": "time",
+    "size": 39
+  },
+  {
+    "text": "focus",
+    "size": 38
   },
   {
     "text": "different",
+    "size": 36
+  },
+  {
+    "text": "new",
+    "size": 33
+  },
+  {
+    "text": "concept",
+    "size": 33
+  },
+  {
+    "text": "islamic",
+    "size": 33
+  },
+  {
+    "text": "process",
+    "size": 32
+  },
+  {
+    "text": "actor",
     "size": 32
   },
   {
@@ -64,19 +88,31 @@
     "size": 32
   },
   {
-    "text": "actor",
-    "size": 31
+    "text": "culture",
+    "size": 32
   },
   {
-    "text": "knowledge",
+    "text": "global",
     "size": 30
   },
   {
-    "text": "culture",
-    "size": 29
+    "text": "work",
+    "size": 30
+  },
+  {
+    "text": "african",
+    "size": 30
+  },
+  {
+    "text": "field",
+    "size": 30
   },
   {
     "text": "network",
+    "size": 29
+  },
+  {
+    "text": "region",
     "size": 28
   },
   {
@@ -84,19 +120,27 @@
     "size": 28
   },
   {
-    "text": "region",
-    "size": 28
+    "text": "way",
+    "size": 27
   },
   {
     "text": "asia",
     "size": 27
   },
   {
-    "text": "process",
+    "text": "discourse",
+    "size": 27
+  },
+  {
+    "text": "central",
     "size": 25
   },
   {
-    "text": "new",
+    "text": "aim",
+    "size": 25
+  },
+  {
+    "text": "world",
     "size": 25
   },
   {
@@ -104,39 +148,55 @@
     "size": 25
   },
   {
+    "text": "relation",
+    "size": 24
+  },
+  {
     "text": "international",
     "size": 24
   },
   {
-    "text": "work",
+    "text": "question",
     "size": 24
   },
   {
-    "text": "central",
+    "text": "society",
     "size": 23
   },
   {
     "text": "historical",
-    "size": 22
+    "size": 23
   },
   {
-    "text": "way",
-    "size": 22
+    "text": "conceptual",
+    "size": 23
   },
   {
-    "text": "islamic",
-    "size": 21
+    "text": "religion",
+    "size": 23
   },
   {
     "text": "group",
+    "size": 22
+  },
+  {
+    "text": "movement",
+    "size": 21
+  },
+  {
+    "text": "seek",
     "size": 20
   },
   {
-    "text": "question",
+    "text": "well",
     "size": 20
   },
   {
-    "text": "aim",
+    "text": "idea",
+    "size": 20
+  },
+  {
+    "text": "woman",
     "size": 20
   },
   {
@@ -144,71 +204,67 @@
     "size": 20
   },
   {
-    "text": "movement",
+    "text": "perspective",
+    "size": 20
+  },
+  {
+    "text": "modern",
+    "size": 20
+  },
+  {
+    "text": "russian",
+    "size": 20
+  },
+  {
+    "text": "term",
     "size": 19
   },
   {
-    "text": "global",
+    "text": "form",
     "size": 19
   },
   {
-    "text": "society",
+    "text": "often",
     "size": 18
   },
   {
-    "text": "idea",
+    "text": "explores",
     "size": 18
   },
   {
-    "text": "relation",
+    "text": "approach",
     "size": 18
   },
   {
-    "text": "woman",
+    "text": "indian",
     "size": 18
+  },
+  {
+    "text": "west",
+    "size": 18
+  },
+  {
+    "text": "africa",
+    "size": 18
+  },
+  {
+    "text": "understanding",
+    "size": 17
   },
   {
     "text": "national",
     "size": 17
   },
   {
-    "text": "modern",
+    "text": "material",
     "size": 17
-  },
-  {
-    "text": "russian",
-    "size": 17
-  },
-  {
-    "text": "world",
-    "size": 17
-  },
-  {
-    "text": "form",
-    "size": 16
-  },
-  {
-    "text": "well",
-    "size": 16
-  },
-  {
-    "text": "justice",
-    "size": 16
-  },
-  {
-    "text": "explores",
-    "size": 16
   },
   {
     "text": "change",
     "size": 16
   },
   {
-    "text": "indian",
-    "size": 16
-  },
-  {
-    "text": "cultural",
+    "text": "war",
     "size": 16
   },
   {
@@ -216,27 +272,79 @@
     "size": 16
   },
   {
-    "text": "religion",
+    "text": "particular",
     "size": 16
   },
   {
-    "text": "particular",
+    "text": "justice",
+    "size": 16
+  },
+  {
+    "text": "education",
+    "size": 16
+  },
+  {
+    "text": "like",
+    "size": 16
+  },
+  {
+    "text": "relationship",
+    "size": 16
+  },
+  {
+    "text": "light",
+    "size": 16
+  },
+  {
+    "text": "order",
+    "size": 16
+  },
+  {
+    "text": "western",
+    "size": 16
+  },
+  {
+    "text": "cultural",
+    "size": 16
+  },
+  {
+    "text": "secular",
+    "size": 16
+  },
+  {
+    "text": "framework",
+    "size": 16
+  },
+  {
+    "text": "tatar",
+    "size": 16
+  },
+  {
+    "text": "late",
+    "size": 16
+  },
+  {
+    "text": "part",
     "size": 15
   },
   {
-    "text": "seek",
+    "text": "arab",
     "size": 15
   },
   {
-    "text": "perspective",
+    "text": "specific",
     "size": 15
   },
   {
-    "text": "discourse",
+    "text": "tradition",
     "size": 15
   },
   {
-    "text": "material",
+    "text": "individual",
+    "size": 15
+  },
+  {
+    "text": "first",
     "size": 15
   },
   {
@@ -244,159 +352,51 @@
     "size": 15
   },
   {
-    "text": "africa",
+    "text": "experience",
     "size": 15
+  },
+  {
+    "text": "empire",
+    "size": 15
+  },
+  {
+    "text": "many",
+    "size": 14
+  },
+  {
+    "text": "transformation",
+    "size": 14
+  },
+  {
+    "text": "mean",
+    "size": 14
+  },
+  {
+    "text": "everyday",
+    "size": 14
+  },
+  {
+    "text": "dynamic",
+    "size": 14
+  },
+  {
+    "text": "swahili",
+    "size": 14
   },
   {
     "text": "explore",
     "size": 14
   },
   {
-    "text": "approach",
+    "text": "examines",
     "size": 14
   },
   {
-    "text": "individual",
+    "text": "various",
     "size": 14
-  },
-  {
-    "text": "part",
-    "size": 14
-  },
-  {
-    "text": "light",
-    "size": 14
-  },
-  {
-    "text": "war",
-    "size": 14
-  },
-  {
-    "text": "public",
-    "size": 14
-  },
-  {
-    "text": "education",
-    "size": 14
-  },
-  {
-    "text": "transformation",
-    "size": 13
-  },
-  {
-    "text": "relationship",
-    "size": 13
   },
   {
     "text": "early",
-    "size": 13
-  },
-  {
-    "text": "germany",
-    "size": 13
-  },
-  {
-    "text": "specific",
-    "size": 13
-  },
-  {
-    "text": "experience",
-    "size": 13
-  },
-  {
-    "text": "gdr",
-    "size": 13
-  },
-  {
-    "text": "west",
-    "size": 13
-  },
-  {
-    "text": "berlin",
-    "size": 13
-  },
-  {
-    "text": "solidarity",
-    "size": 13
-  },
-  {
-    "text": "mobility",
-    "size": 13
-  },
-  {
-    "text": "tatar",
-    "size": 13
-  },
-  {
-    "text": "arab",
-    "size": 13
-  },
-  {
-    "text": "examines",
-    "size": 12
-  },
-  {
-    "text": "challenge",
-    "size": 12
-  },
-  {
-    "text": "order",
-    "size": 12
-  },
-  {
-    "text": "memory",
-    "size": 12
-  },
-  {
-    "text": "first",
-    "size": 12
-  },
-  {
-    "text": "project",
-    "size": 12
-  },
-  {
-    "text": "late",
-    "size": 12
-  },
-  {
-    "text": "future",
-    "size": 12
-  },
-  {
-    "text": "mean",
-    "size": 12
-  },
-  {
-    "text": "school",
-    "size": 12
-  },
-  {
-    "text": "dynamic",
-    "size": 12
-  },
-  {
-    "text": "period",
-    "size": 12
-  },
-  {
-    "text": "refugee",
-    "size": 12
-  },
-  {
-    "text": "often",
-    "size": 12
-  },
-  {
-    "text": "asian",
-    "size": 12
-  },
-  {
-    "text": "human",
-    "size": 12
-  },
-  {
-    "text": "everyday",
-    "size": 12
+    "size": 14
   }
 ]

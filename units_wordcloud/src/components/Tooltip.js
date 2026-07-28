@@ -1,84 +1,97 @@
 import { getTranslations } from '../utils/translations.js';
 
+/**
+ * Floating label showing a word's rank and frequency on hover.
+ *
+ * A single element is created per instance and reused; it is appended to
+ * `document.body` so it is never clipped by the cloud's `overflow: hidden`.
+ */
 export class Tooltip {
+    /**
+     * @param {object} [deps]
+     * @param {import('../config/ConfigManager.js').ConfigManager} [deps.config]
+     */
     constructor({ config } = {}) {
-        this.tooltip = null;
         this.config = config;
         this.translations = getTranslations();
-        this.init();
+        this.tooltip = this.createElement();
     }
 
-    init() {
-        // Remove any existing tooltip
-        const existingTooltip = document.getElementById('tooltip');
-        if (existingTooltip) {
-            existingTooltip.remove();
-        }
-        this.tooltip = this.createTooltipElement();
-    }
+    createElement() {
+        // The page ships an empty `#tooltip` placeholder; reuse it when present
+        // so styling hooks stay stable, otherwise create one.
+        const existing = document.getElementById('tooltip');
+        if (existing) return existing;
 
-    createTooltipElement() {
         const tooltip = document.createElement('div');
         tooltip.id = 'tooltip';
+        tooltip.setAttribute('role', 'tooltip');
         document.body.appendChild(tooltip);
         return tooltip;
     }
 
     show(event, data) {
         if (!this.tooltip) {
-            this.init();
+            this.tooltip = this.createElement();
         }
 
-        const content = this.formatContent(data);
-        this.tooltip.innerHTML = content;
-        
-        // Position the tooltip
-        const tooltipWidth = this.tooltip.offsetWidth;
-        const tooltipHeight = this.tooltip.offsetHeight;
-        
-        let left = event.pageX + 10;
-        let top = event.pageY - tooltipHeight - 10;
+        this.tooltip.replaceChildren(...this.buildRows(data));
 
-        // Adjust position if tooltip would go off screen
-        if (left + tooltipWidth > window.innerWidth) {
-            left = event.pageX - tooltipWidth - 10;
+        // Measure after content is in place, then flip the tooltip toward
+        // whichever side has room.
+        const { offsetWidth, offsetHeight } = this.tooltip;
+        const margin = 10;
+
+        let left = event.pageX + margin;
+        let top = event.pageY - offsetHeight - margin;
+
+        if (left + offsetWidth > window.innerWidth) {
+            left = event.pageX - offsetWidth - margin;
         }
         if (top < 0) {
-            top = event.pageY + 10;
+            top = event.pageY + margin;
         }
 
-        // Set position before making visible
-        this.tooltip.style.left = `${left}px`;
+        this.tooltip.style.left = `${Math.max(left, 0)}px`;
         this.tooltip.style.top = `${top}px`;
-        
-        // Make tooltip visible
-        requestAnimationFrame(() => {
-            this.tooltip.classList.add('visible');
-        });
+        this.tooltip.classList.add('visible');
     }
 
     hide() {
-        if (this.tooltip) {
-            this.tooltip.classList.remove('visible');
-        }
+        this.tooltip?.classList.remove('visible');
     }
 
-    formatContent(data) {
-        const { text, originalSize, rank } = data;
-        let content = `<div class="tooltip-content">`;
-        content += `<div class="tooltip-row"><span>#${rank}</span> <strong>${text}</strong></div>`;
-        content += `<div class="tooltip-row"><span>${this.translations.frequency}:</span> <strong>${originalSize}</strong></div>`;
-        if (data.units) {
-            content += `<div class="tooltip-row"><span>${this.translations.units || 'Units'}:</span> <strong>${data.units.join(', ')}</strong></div>`;
+    /** Builds the rows as nodes; word text is never interpolated into markup. */
+    buildRows({ text, originalSize, rank, units }) {
+        const content = document.createElement('div');
+        content.className = 'tooltip-content';
+
+        content.appendChild(Tooltip.createRow(`#${rank}`, text));
+        content.appendChild(Tooltip.createRow(`${this.translations.frequency}:`, originalSize));
+
+        if (Array.isArray(units) && units.length > 0) {
+            content.appendChild(Tooltip.createRow(`${this.translations.units}:`, units.join(', ')));
         }
-        content += `</div>`;
-        return content;
+
+        return [content];
+    }
+
+    static createRow(label, value) {
+        const row = document.createElement('div');
+        row.className = 'tooltip-row';
+
+        const labelEl = document.createElement('span');
+        labelEl.textContent = label;
+
+        const valueEl = document.createElement('strong');
+        valueEl.textContent = value;
+
+        row.append(labelEl, document.createTextNode(' '), valueEl);
+        return row;
     }
 
     destroy() {
-        if (this.tooltip && this.tooltip.parentNode) {
-            this.tooltip.parentNode.removeChild(this.tooltip);
-            this.tooltip = null;
-        }
+        this.tooltip?.remove();
+        this.tooltip = null;
     }
-} 
+}

@@ -45,61 +45,15 @@
         overflow: hidden;
     }
 
-    /* Hide word list on mobile */
+    /*
+     * The word list is hidden below this breakpoint: the cloud takes the whole
+     * viewport instead. The ~50 lines of word-list sizing rules that used to
+     * follow this block were unreachable behind the `display: none !important`
+     * above, and have been removed. If the list is ever shown on narrow
+     * screens again, style it here.
+     */
     .word-list-container {
         display: none !important;
-    }
-
-    /* Word List */
-    .word-list-container {
-        width: 100%;
-        min-width: 100%;
-        max-width: 100%;
-        height: 200px;
-        min-height: 200px;
-        max-height: 200px;
-        border-left: none;
-        border-top: 1px solid #e0e0e0;
-        position: relative;
-        flex: 0 0 200px; /* Fixed height, prevent flex growing/shrinking */
-        overflow: hidden;
-    }
-
-    .word-list {
-        flex: 1 1 auto;
-        overflow-y: scroll; /* Always show scrollbar to prevent layout shifts */
-        overflow-x: hidden;
-        height: 0; /* Let flex control the height */
-        min-height: 0; /* Allow container to shrink */
-    }
-
-    .word-list-header {
-        padding: 8px 16px;
-        position: sticky;
-        top: 0;
-        background: #fff;
-        z-index: 2;
-    }
-
-    .word-list-header h2 {
-        font-size: var(--font-size-base);
-    }
-
-    .word-list-item {
-        padding: 6px 12px;
-    }
-
-    .word-list-pagination {
-        padding: 8px;
-        position: sticky;
-        bottom: 0;
-        background: #fff;
-        z-index: 2;
-    }
-
-    .word-frequency {
-        min-width: 60px;
-        text-align: right;
     }
 
     /* Fix for iframe embedding */
@@ -177,7 +131,9 @@
 
 /* Touch-friendly improvements */
 @media (hover: none) {
-    #countrySelector,
+    /* Was #countrySelector — left behind when the country filter became a
+       research-unit filter, so this rule matched nothing. */
+    #unitSelector,
     input[type="range"],
     .save-button {
         cursor: default;

@@ -1,53 +1,42 @@
+/**
+ * Central, read-mostly configuration for the word cloud application.
+ *
+ * A single instance is created in `main.js` and injected into every component
+ * that needs it. It is deliberately *not* a singleton: keeping construction in
+ * one place makes the dependency graph explicit and keeps the app testable.
+ */
 export class ConfigManager {
-    static instance = null;
-    
-    constructor() {
-        if (ConfigManager.instance) {
-            return ConfigManager.instance;
-        }
-        
-        this.config = {
+    /**
+     * @param {object} [overrides] Partial config merged over the defaults,
+     *   using the same shape as `defaults()`.
+     */
+    constructor(overrides = {}) {
+        this.config = ConfigManager.merge(ConfigManager.defaults(), overrides);
+    }
+
+    static defaults() {
+        return {
             wordcloud: {
                 dimensions: {
                     width: 1000,
                     height: 800,
-                    minHeight: 600,
-                    maxWidth: 1400,
-                    tablet: {
-                        minHeight: 600,
-                        aspectRatio: 1.3
-                    },
-                    mobile: {
-                        minHeight: 700,
-                        aspectRatio: 1.1
-                    }
+                    // Upper bound on a word's font size, as a fraction of the
+                    // cloud height. Recomputed by `updateDimensions()`.
+                    maxFontSizeRatio: 8
                 },
                 font: {
-                    // Primary and fallback fonts
                     family: {
                         primary: 'Muli',
                         fallback: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif'
                     },
-                    // Font size configuration
                     size: {
                         min: 10,
-                        max: null, // Will be calculated based on height
-                        scale: {
-                            factor: 5, // Base scaling factor
-                            min: 0.8,  // Minimum scale multiplier
-                            max: 1.2   // Maximum scale multiplier
-                        }
+                        max: null,      // derived from height via updateDimensions()
+                        scaleFactor: 5  // larger => smaller words for a given area
                     },
-                    // Font weight options
                     weight: {
                         normal: 400,
-                        bold: 400,
-                        range: [400]
-                    },
-                    // Font style options
-                    style: {
-                        normal: 'normal',
-                        emphasis: 'italic'
+                        bold: 400
                     }
                 },
                 layout: {
@@ -57,30 +46,17 @@ export class ConfigManager {
                 },
                 animation: {
                     duration: 200,
-                    scaleOnHover: 1.2,
-                    transition: {
-                        duration: 800,
-                        morphing: true,
-                        particles: true,
-                        physics: true
-                    },
-                    particles: {
-                        count: 10,
-                        duration: 600,
-                        colors: ['#ffb703', '#fb8500', '#e76f51', '#2a9d8f']
-                    },
-                    physics: {
-                        gravity: 0.8,
-                        bounce: 0.4,
-                        initialVelocity: -15
-                    }
+                    scaleOnHover: 1.2
                 },
                 export: {
                     scale: 2,
-                    format: 'png'
+                    format: 'png',
+                    filename: 'word_cloud'
                 },
                 colors: {
-                    colorAssignment: 'frequency', // 'frequency', 'random', or 'fixed'
+                    // 'frequency' | 'random' | 'fixed'
+                    colorAssignment: 'frequency',
+                    schemeSize: 10,
                     opacity: {
                         normal: 1,
                         hover: 0.8
@@ -95,75 +71,48 @@ export class ConfigManager {
                 maxWords: 100,
                 defaultWordCount: 75,
                 defaultGroup: 'combined',
-                // New data configuration options
-                format: {
-                    type: 'json',  // 'json', 'csv', etc.
-                    fields: {
-                        text: 'text',      // Field name for word text
-                        value: 'size',     // Field name for word frequency/value
-                        group: 'unit',     // Field name for grouping (optional)
-                        metadata: []       // Additional fields to preserve
-                    }
-                },
-                processing: {
-                    // Custom data processing options
-                    normalization: 'linear', // 'linear', 'log', 'sqrt'
-                    filters: [],            // Array of filter functions
-                    transformers: []        // Array of transform functions
+                // Font sizes are normalised into this range before layout.
+                normalizedSize: {
+                    min: 10,
+                    max: 100
                 }
             },
-            paths: {
-                dataDir: 'data',
-                // More flexible path configuration
-                getDataPath: (group, format = 'json') => {
-                    const basePath = window.APP_CONFIG?.basePath || '';
-                    return `${basePath ? basePath : '..'}/data/${group}_word_frequencies.${format}`;
-                }
-            },
-            // More generic groups configuration
             groups: {
-                type: 'unit',           // Type of grouping (e.g., 'unit', 'category', 'theme')
-                defaultCombined: true,     // Whether to show a combined option
-                combinedLabel: {           // Labels for combined option
-                    en: 'All Units',
-                    fr: 'Toutes les unités'
-                },
                 items: [
                     { value: 'combined', labelKey: 'allUnits' },
                     { value: 'State_Society', label: 'State and Society' },
                     { value: 'Lives_Ecologies', label: 'Lives and Ecologies' },
                     { value: 'Religion-Intellectual-Culture', label: 'Religion and Intellectual Culture' }
                 ]
-            }
+            },
+            /** Emit verbose event logs to the console. */
+            debug: false
         };
-
-        ConfigManager.instance = this;
     }
 
-    static getInstance() {
-        if (!ConfigManager.instance) {
-            ConfigManager.instance = new ConfigManager();
+    /** Deep-merges plain objects; arrays and primitives are replaced wholesale. */
+    static merge(base, override) {
+        const result = { ...base };
+        for (const [key, value] of Object.entries(override)) {
+            const isPlainObject = v => v !== null && typeof v === 'object' && !Array.isArray(v);
+            result[key] = isPlainObject(value) && isPlainObject(base[key])
+                ? ConfigManager.merge(base[key], value)
+                : value;
         }
-        return ConfigManager.instance;
+        return result;
     }
 
+    /** Reads a dotted path, e.g. `get('wordcloud.dimensions.width')`. */
     get(path) {
         return path.split('.').reduce((obj, key) => obj?.[key], this.config);
     }
 
+    /** Writes a dotted path, creating intermediate objects as needed. */
     set(path, value) {
         const keys = path.split('.');
         const lastKey = keys.pop();
-        const target = keys.reduce((obj, key) => obj[key] = obj[key] || {}, this.config);
+        const target = keys.reduce((obj, key) => (obj[key] = obj[key] || {}), this.config);
         target[lastKey] = value;
-    }
-
-    getWordcloudConfig() {
-        return { ...this.config.wordcloud };
-    }
-
-    getDataConfig() {
-        return { ...this.config.data };
     }
 
     getUnits() {
@@ -171,7 +120,7 @@ export class ConfigManager {
     }
 
     calculateMaxFontSize(height) {
-        return height / 8;
+        return height / this.config.wordcloud.dimensions.maxFontSizeRatio;
     }
 
     updateDimensions(width, height) {
@@ -181,19 +130,17 @@ export class ConfigManager {
     }
 
     getLayoutOptions() {
-        const { padding, rotations, rotationProbability } = this.config.wordcloud.layout;
-        return { padding, rotations, rotationProbability };
+        return { ...this.config.wordcloud.layout };
     }
 
     getFontConfig() {
-        const fontConfig = this.config.wordcloud.font;
+        const font = this.config.wordcloud.font;
         return {
-            family: `${fontConfig.family.primary}, ${fontConfig.family.fallback}`,
-            minSize: fontConfig.size.min,
-            maxSize: fontConfig.size.max,
-            scaleFactor: fontConfig.size.scale.factor,
-            weights: fontConfig.weight,
-            styles: fontConfig.style
+            family: `${font.family.primary}, ${font.family.fallback}`,
+            minSize: font.size.min,
+            maxSize: font.size.max,
+            scaleFactor: font.size.scaleFactor,
+            weights: font.weight
         };
     }
 
@@ -208,4 +155,13 @@ export class ConfigManager {
     getColorConfig() {
         return this.config.wordcloud.colors;
     }
-} 
+
+    /**
+     * Resolves the URL of a group's frequency file.
+     * `basePath` is set per-deployment by the page bootstrap (see `bootstrap.js`).
+     */
+    getDataPath(group) {
+        const basePath = this.get('paths.basePath') ?? '..';
+        return `${basePath}/data/${group}_word_frequencies.json`;
+    }
+}

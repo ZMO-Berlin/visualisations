@@ -1,62 +1,96 @@
 import { getTranslations } from '../utils/translations.js';
-import { ConfigManager } from '../config/ConfigManager.js';
-import { StyleManager } from '../utils/StyleManager.js';
-import { FontManager } from '../utils/FontManager.js';
-import { AnimationManager } from '../utils/AnimationManager.js';
 
+/**
+ * Paginated ranking of the words currently in the cloud.
+ *
+ * Hovering a row highlights the matching word in the cloud and vice versa. The
+ * list-to-cloud direction reports through the `onWordHover` / `onWordHoverEnd`
+ * callbacks; it previously synthesised `MouseEvent`s and dispatched them at the
+ * SVG nodes, which re-entered the cloud's own hover handler and could re-paginate
+ * the list out from under the pointer.
+ */
 export class WordList {
-    constructor(container) {
-        this.container = container instanceof HTMLElement ? container : document.getElementById(container);
+    /**
+     * @param {string|HTMLElement} container
+     * @param {object} [deps]
+     * @param {import('../config/ConfigManager.js').ConfigManager} [deps.config]
+     * @param {number} [deps.wordsPerPage]
+     */
+    constructor(container, { config, wordsPerPage = 15 } = {}) {
+        this.container = container instanceof HTMLElement
+            ? container
+            : document.getElementById(container);
+
         if (!this.container) {
-            throw new Error('WordList: container is required');
+            throw new Error(`WordList: container "${container}" not found`);
         }
-        this.config = ConfigManager.getInstance();
+
+        this.config = config;
         this.translations = getTranslations();
         this.words = [];
         this.currentPage = 1;
-        this.wordsPerPage = 15;
-        this.init();
+        this.wordsPerPage = wordsPerPage;
+
+        this.onWordHover = null;
+        this.onWordHoverEnd = null;
+
+        this.render();
     }
 
-    init() {
-        // Create container div
+    render() {
+        // Layout comes entirely from `styles/modules/wordlist.css`. The inline
+        // styles previously applied here were meant for the cloud container and
+        // overrode the stylesheet's sizing.
         const listContainer = document.createElement('div');
         listContainer.className = 'word-list-container';
-        listContainer.style.fontFamily = 'var(--font-base)';
-        StyleManager.setupContainer(listContainer);
 
-        // Create header
         const header = document.createElement('div');
         header.className = 'word-list-header';
         const title = document.createElement('h2');
-        title.textContent = this.translations.wordList;
         title.className = 'font-semibold';
-        title.style.fontFamily = 'var(--font-base)';
+        title.textContent = this.translations.wordList;
         header.appendChild(title);
-        listContainer.appendChild(header);
 
-        // Create list
         const list = document.createElement('div');
         list.className = 'word-list';
-        list.style.fontFamily = 'var(--font-base)';
-        listContainer.appendChild(list);
 
-        // Create pagination
         const pagination = document.createElement('div');
         pagination.className = 'word-list-pagination';
-        pagination.style.fontFamily = 'var(--font-base)';
-        listContainer.appendChild(pagination);
 
+        listContainer.append(header, list, pagination);
         this.container.appendChild(listContainer);
 
-        // Store references
         this.listElement = list;
         this.paginationElement = pagination;
+
+        this.bindHoverDelegation();
+    }
+
+    /**
+     * One delegated listener per direction, rather than two per row rebound on
+     * every page change.
+     */
+    bindHoverDelegation() {
+        const rowFor = event => event.target.closest('.word-list-item');
+
+        this.listElement.addEventListener('mouseover', event => {
+            const row = rowFor(event);
+            if (!row || row.contains(event.relatedTarget)) return;
+            row.classList.add('hover');
+            this.onWordHover?.(row.dataset.word);
+        });
+
+        this.listElement.addEventListener('mouseout', event => {
+            const row = rowFor(event);
+            if (!row || row.contains(event.relatedTarget)) return;
+            row.classList.remove('hover');
+            this.onWordHoverEnd?.(row.dataset.word);
+        });
     }
 
     updateWords(words) {
-        if (!words || !Array.isArray(words)) {
-            console.error('Invalid words data:', words);
+        if (!Array.isArray(words)) {
+            console.warn('WordList: expected an array of words, got', words);
             return;
         }
         this.words = words;
@@ -66,141 +100,105 @@ export class WordList {
 
     renderCurrentPage() {
         const startIndex = (this.currentPage - 1) * this.wordsPerPage;
-        const endIndex = startIndex + this.wordsPerPage;
-        const pageWords = this.words.slice(startIndex, endIndex);
+        const pageWords = this.words.slice(startIndex, startIndex + this.wordsPerPage);
 
-        // Clear current list
-        this.listElement.innerHTML = '';
+        const rows = pageWords.map((word, index) => {
+            const row = document.createElement('div');
+            row.className = 'word-list-item';
+            row.dataset.word = word.text;
 
-        // Render words
-        pageWords.forEach((word, index) => {
-            const wordElement = document.createElement('div');
-            wordElement.className = 'word-list-item';
-            wordElement.setAttribute('data-word', word.text);
-            
-            const rank = word.rank || startIndex + index + 1;
-            const frequency = word.originalSize || word.size;
-            
-            wordElement.innerHTML = `
-                <span class="word-rank font-normal">#${rank}</span>
-                <span class="word-text font-medium">${word.text}</span>
-                <span class="word-frequency font-normal">${frequency}</span>
-            `;
-            
-            // Add hover effect synchronization
-            wordElement.addEventListener('mouseover', () => {
-                wordElement.classList.add('hover');
-                // Trigger hover effect on corresponding word in cloud
-                const cloudWord = document.querySelector(`text[data-word="${word.text}"]`);
-                if (cloudWord) {
-                    const event = new MouseEvent('mouseover', {
-                        bubbles: true,
-                        cancelable: true,
-                        view: window
-                    });
-                    cloudWord.dispatchEvent(event);
-                }
-            });
-            
-            wordElement.addEventListener('mouseout', () => {
-                wordElement.classList.remove('hover');
-                // Remove hover effect
-                const cloudWord = document.querySelector(`text[data-word="${word.text}"]`);
-                if (cloudWord) {
-                    const event = new MouseEvent('mouseout', {
-                        bubbles: true,
-                        cancelable: true,
-                        view: window
-                    });
-                    cloudWord.dispatchEvent(event);
-                }
-            });
-            
-            this.listElement.appendChild(wordElement);
+            // textContent throughout: word text comes from a generated data
+            // file, and building this markup by interpolating into innerHTML
+            // would make that file a script-injection vector.
+            const rank = document.createElement('span');
+            rank.className = 'word-rank font-normal';
+            rank.textContent = `#${word.rank ?? startIndex + index + 1}`;
+
+            const text = document.createElement('span');
+            text.className = 'word-text font-medium';
+            text.textContent = word.text;
+
+            const frequency = document.createElement('span');
+            frequency.className = 'word-frequency font-normal';
+            frequency.textContent = word.originalSize ?? word.size;
+
+            row.append(rank, text, frequency);
+            return row;
         });
 
+        this.listElement.replaceChildren(...rows);
         this.renderPagination();
     }
 
     renderPagination() {
-        const totalPages = Math.ceil(this.words.length / this.wordsPerPage);
-        this.paginationElement.innerHTML = '';
+        const totalPages = this.getTotalPages();
+        this.paginationElement.replaceChildren();
 
         if (totalPages <= 1) return;
 
-        // Previous button
-        const prevButton = document.createElement('button');
-        prevButton.innerHTML = '←';
-        prevButton.className = 'font-medium';
-        prevButton.disabled = this.currentPage === 1;
-        prevButton.addEventListener('click', () => this.goToPage(this.currentPage - 1));
-        this.paginationElement.appendChild(prevButton);
+        const prev = document.createElement('button');
+        prev.type = 'button';
+        prev.className = 'font-medium';
+        prev.textContent = '←';
+        prev.setAttribute('aria-label', 'Previous page');
+        prev.disabled = this.currentPage === 1;
+        prev.addEventListener('click', () => this.goToPage(this.currentPage - 1));
 
-        // Page numbers
         const pageInfo = document.createElement('span');
         pageInfo.className = 'page-info font-medium';
         pageInfo.textContent = `${this.currentPage} / ${totalPages}`;
-        this.paginationElement.appendChild(pageInfo);
 
-        // Next button
-        const nextButton = document.createElement('button');
-        nextButton.innerHTML = '→';
-        nextButton.className = 'font-medium';
-        nextButton.disabled = this.currentPage === totalPages;
-        nextButton.addEventListener('click', () => this.goToPage(this.currentPage + 1));
-        this.paginationElement.appendChild(nextButton);
+        const next = document.createElement('button');
+        next.type = 'button';
+        next.className = 'font-medium';
+        next.textContent = '→';
+        next.setAttribute('aria-label', 'Next page');
+        next.disabled = this.currentPage === totalPages;
+        next.addEventListener('click', () => this.goToPage(this.currentPage + 1));
+
+        this.paginationElement.append(prev, pageInfo, next);
+    }
+
+    getTotalPages() {
+        return Math.max(Math.ceil(this.words.length / this.wordsPerPage), 1);
     }
 
     goToPage(page) {
-        const totalPages = Math.ceil(this.words.length / this.wordsPerPage);
-        if (page >= 1 && page <= totalPages) {
-            this.currentPage = page;
-            this.renderCurrentPage();
-        }
+        if (page < 1 || page > this.getTotalPages() || page === this.currentPage) return;
+        this.currentPage = page;
+        this.renderCurrentPage();
     }
 
+    /** Highlights `word`, paging to it if it is not on the current page. */
     highlightWord(word) {
-        // Remove any existing highlights
-        const highlighted = this.listElement.querySelector('.highlighted');
-        if (highlighted) {
-            highlighted.classList.remove('highlighted');
-        }
+        this.clearHighlight();
 
-        // Find the word in our list
-        const wordIndex = this.words.findIndex(w => w.text === word);
-        if (wordIndex === -1) return;
+        const index = this.words.findIndex(candidate => candidate.text === word);
+        if (index === -1) return;
 
-        // Calculate which page the word is on
-        const targetPage = Math.floor(wordIndex / this.wordsPerPage) + 1;
-        
-        // If we're not on the correct page, go there
+        const targetPage = Math.floor(index / this.wordsPerPage) + 1;
         if (this.currentPage !== targetPage) {
             this.goToPage(targetPage);
         }
 
-        // Find and highlight the word element
-        const wordElement = this.listElement.querySelector(`[data-word="${word}"]`);
-        if (wordElement) {
-            wordElement.classList.add('highlighted');
-            // Scroll the word into view with smooth behavior
-            wordElement.scrollIntoView({ 
-                behavior: 'smooth', 
-                block: 'nearest',
-                inline: 'nearest'
-            });
+        const row = this.findRow(word);
+        if (row) {
+            row.classList.add('highlighted');
+            row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
     }
 
     clearHighlight() {
-        const highlighted = this.listElement.querySelector('.highlighted');
-        if (highlighted) {
-            highlighted.classList.remove('highlighted');
-        }
+        this.listElement.querySelector('.highlighted')?.classList.remove('highlighted');
+    }
+
+    findRow(word) {
+        return [...this.listElement.children].find(row => row.dataset.word === word) ?? null;
     }
 
     destroy() {
-        if (this.container) {
-            this.container.innerHTML = '';
-        }
+        this.onWordHover = null;
+        this.onWordHoverEnd = null;
+        this.container?.replaceChildren();
     }
-} 
+}

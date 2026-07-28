@@ -1,1 +1,16 @@
+# Python
 /.venv
+__pycache__/
+*.py[cod]
+
+# NLTK corpora downloaded by the data pipeline
+nltk_data/
+
+# Legacy generator output. The pipeline now writes straight to
+# units_wordcloud/data/; these were the intermediate copies it used to leave
+# behind in the script directory.
+data_prep/word_frequencies_*.json
+
+# OS cruft
+.DS_Store
+Thumbs.db

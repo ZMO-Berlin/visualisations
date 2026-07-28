@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <script>
-        // Determine base path based on environment
-        const basePath = window.location.hostname.includes('github.io') ? '/ZMO/units_wordcloud' : '';
-        const targetPath = `${basePath}/en/index.html`;
-        
-        // Update meta refresh and window location
-        document.head.innerHTML += `<meta http-equiv="refresh" content="0;url=${targetPath}">`;
-        window.location.href = targetPath;
-    </script>
+    <title>ZMO Word Cloud</title>
+    <!--
+        Relative redirect: works identically on a local server, a user site and a
+        project page. The previous version hard-coded "/ZMO/units_wordcloud" for
+        github.io hosts, which broke if the repository was renamed or served from
+        a different path.
+    -->
+    <meta http-equiv="refresh" content="0; url=en/">
+    <link rel="canonical" href="en/">
 </head>
 <body>
+    <p>Redirecting to the word cloud… <a href="en/">Continue in English</a> · <a href="fr/">Continuer en français</a></p>
     <script>
-        // Dynamic link generation
-        const linkBasePath = window.location.hostname.includes('github.io') ? '/ZMO/units_wordcloud' : '';
-        document.write(`If you are not redirected automatically, please <a href="${linkBasePath}/en/index.html">click here</a>.`);
+        // Send French-preferring visitors to the localised page. The meta refresh
+        // above is the no-JavaScript fallback.
+        var prefersFrench = (navigator.languages || [navigator.language || ''])
+            .some(function (lang) { return String(lang).toLowerCase().startsWith('fr'); });
+        window.location.replace(prefersFrench ? 'fr/' : 'en/');
     </script>
 </body>
 </html>

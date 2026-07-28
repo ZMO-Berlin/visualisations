@@ -1,95 +1,69 @@
-import { ConfigManager } from '../config/ConfigManager.js';
-
+/**
+ * Central error sink.
+ *
+ * Collects errors from explicit `handleError` calls plus the two global
+ * failure channels (`error`, `unhandledrejection`), annotates them with
+ * context, and fans them out to subscribers.
+ */
 export class ErrorManager {
-    static instance = null;
-    
     constructor() {
-        if (ErrorManager.instance) {
-            return ErrorManager.instance;
-        }
-        
-        this.config = ConfigManager.getInstance();
-        this.errors = [];
-        this.errorListeners = new Set();
-        this.setupErrorHandling();
-        
-        ErrorManager.instance = this;
+        this.listeners = new Set();
+        this.onWindowError = event => this.handleError(event.error, { source: 'window.error' });
+        this.onRejection = event => this.handleError(event.reason, { source: 'unhandledrejection' });
+        this.setupGlobalHandlers();
     }
 
-    static getInstance() {
-        if (!ErrorManager.instance) {
-            ErrorManager.instance = new ErrorManager();
-        }
-        return ErrorManager.instance;
-    }
-
-    setupErrorHandling() {
-        window.addEventListener('unhandledrejection', (event) => {
-            this.handleError(event.reason);
-        });
-
-        window.addEventListener('error', (event) => {
-            this.handleError(event.error);
-        });
+    setupGlobalHandlers() {
+        window.addEventListener('error', this.onWindowError);
+        window.addEventListener('unhandledrejection', this.onRejection);
     }
 
     handleError(error, context = {}) {
-        const errorInfo = this.createErrorInfo(error, context);
-        this.errors.push(errorInfo);
-        this.notifyListeners(errorInfo);
-        this.logError(errorInfo);
+        const info = this.createErrorInfo(error, context);
+        this.notifyListeners(info);
+        this.logError(info);
+        return info;
     }
 
     createErrorInfo(error, context) {
+        // `error` may be any thrown value, not necessarily an Error instance.
+        const isError = error instanceof Error;
         return {
             timestamp: new Date(),
-            message: error.message || 'An unknown error occurred',
-            stack: error.stack,
-            type: error.name || error.constructor.name,
+            message: isError ? error.message : String(error ?? 'An unknown error occurred'),
+            stack: isError ? error.stack : undefined,
+            type: isError ? error.name : typeof error,
             context: {
                 ...context,
-                url: window.location.href,
-                userAgent: navigator.userAgent
+                url: window.location.href
             }
         };
     }
 
-    logError(errorInfo) {
-        console.error('Error:', {
-            message: errorInfo.message,
-            type: errorInfo.type,
-            context: errorInfo.context,
-            timestamp: errorInfo.timestamp.toISOString(),
-            stack: errorInfo.stack
-        });
+    logError({ message, type, context, timestamp, stack }) {
+        console.error('[ZMO]', message, { type, context, timestamp: timestamp.toISOString(), stack });
     }
 
-    // Subscribe to error events
+    /** @returns {() => void} Unsubscribe function. */
     subscribe(callback) {
-        this.errorListeners.add(callback);
-        return () => this.errorListeners.delete(callback);
+        this.listeners.add(callback);
+        return () => this.listeners.delete(callback);
     }
 
-    notifyListeners(errorInfo) {
-        this.errorListeners.forEach(listener => {
+    notifyListeners(info) {
+        this.listeners.forEach(listener => {
             try {
-                listener(errorInfo);
+                listener(info);
             } catch (error) {
-                console.error('Error in error listener:', error);
+                console.error('[ZMO] error listener threw', error);
             }
         });
     }
 
-    // Utility methods for components
-    async wrapAsync(promise, context = {}) {
-        try {
-            return await promise;
-        } catch (error) {
-            this.handleError(error, context);
-            throw error; // Re-throw to allow component-level handling if needed
-        }
-    }
-
+    /**
+     * Runs `fn`, reporting and re-throwing anything it throws. Re-throwing keeps
+     * the caller's own error handling intact; the manager only observes.
+     */
     wrapSync(fn, context = {}) {
         try {
             return fn();
@@ -99,21 +73,19 @@ export class ErrorManager {
         }
     }
 
-    // Get error history
-    getErrors() {
-        return [...this.errors];
+    /** Async counterpart to `wrapSync`. */
+    async wrapAsync(fn, context = {}) {
+        try {
+            return await fn();
+        } catch (error) {
+            this.handleError(error, context);
+            throw error;
+        }
     }
 
-    // Clear error history
-    clearErrors() {
-        this.errors = [];
-        this.notifyListeners({ type: 'clear' });
-    }
-
-    // Destroy instance
     destroy() {
-        this.errorListeners.clear();
-        this.errors = [];
-        ErrorManager.instance = null;
+        window.removeEventListener('error', this.onWindowError);
+        window.removeEventListener('unhandledrejection', this.onRejection);
+        this.listeners.clear();
     }
-} 
+}

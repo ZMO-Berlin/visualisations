@@ -1,78 +1,92 @@
-import { ErrorManager } from '../utils/ErrorManager.js';
-
+/**
+ * Minimal async publish/subscribe bus.
+ *
+ * Handlers may return promises; `emit()` awaits them in priority order so that
+ * callers can rely on all side effects having settled. Handler and middleware
+ * failures are reported to the ErrorManager and never abort the emit loop —
+ * one broken listener must not take down the rest of the UI.
+ */
 export class EventBus {
-    static instance = null;
-    
-    constructor() {
-        if (EventBus.instance) {
-            return EventBus.instance;
+    /**
+     * @param {object} deps
+     * @param {import('../utils/ErrorManager.js').ErrorManager} deps.errorManager
+     */
+    constructor({ errorManager }) {
+        if (!errorManager) {
+            throw new Error('EventBus: errorManager is required');
         }
-        
+        this.errorManager = errorManager;
         this.events = new Map();
-        this.errorManager = ErrorManager.getInstance();
         this.middlewares = [];
-        EventBus.instance = this;
     }
 
-    static getInstance() {
-        if (!EventBus.instance) {
-            EventBus.instance = new EventBus();
-        }
-        return EventBus.instance;
-    }
-
+    /** Registers a middleware `(eventType, data) => data`. Chainable. */
     use(middleware) {
         this.middlewares.push(middleware);
-        return this; // Allow chaining
+        return this;
     }
 
+    /**
+     * Subscribes to an event.
+     * @returns {() => void} Unsubscribe function. Callers are expected to keep
+     *   this and invoke it on teardown.
+     */
     on(eventType, callback, options = {}) {
         this.validateEventType(eventType);
-        
+        if (typeof callback !== 'function') {
+            throw new Error(`EventBus: handler for "${eventType}" must be a function`);
+        }
+
         if (!this.events.has(eventType)) {
             this.events.set(eventType, new Set());
         }
-        
+
         const handler = {
             callback,
-            options: {
-                once: options.once || false,
-                priority: options.priority || 0
-            }
+            once: options.once || false,
+            priority: options.priority || 0
         };
-        
-        this.events.get(eventType).add(handler);
-        
-        // Return unsubscribe function
-        return () => this.off(eventType, callback);
+
+        const handlers = this.events.get(eventType);
+        handlers.add(handler);
+
+        return () => handlers.delete(handler);
     }
 
     once(eventType, callback) {
         return this.on(eventType, callback, { once: true });
     }
 
+    /**
+     * Removes a specific handler, or every handler for `eventType` when
+     * `callback` is omitted.
+     */
     off(eventType, callback) {
         this.validateEventType(eventType);
-        
-        if (this.events.has(eventType)) {
-            const handlers = this.events.get(eventType);
-            for (const handler of handlers) {
-                if (handler.callback === callback) {
-                    handlers.delete(handler);
-                    break;
-                }
+
+        const handlers = this.events.get(eventType);
+        if (!handlers) return;
+
+        if (callback === undefined) {
+            this.events.delete(eventType);
+            return;
+        }
+
+        for (const handler of handlers) {
+            if (handler.callback === callback) {
+                handlers.delete(handler);
+                break;
             }
         }
     }
 
     async emit(eventType, data = {}) {
         this.validateEventType(eventType);
-        
-        if (!this.events.has(eventType)) {
-            return;
-        }
 
-        // Apply middlewares
+        // Middleware runs before the subscriber check, not after: logging and
+        // payload validation are properties of the event itself. Skipping them
+        // when nothing happens to be listening would mean a malformed payload
+        // passes silently today and only fails once a subscriber is added.
         let eventData = { ...data };
         for (const middleware of this.middlewares) {
             try {
@@ -84,17 +98,26 @@ export class EventBus {
                     eventType,
                     phase: 'middleware'
                 });
+                // A rejected middleware means the payload failed validation;
+                // dropping the event is safer than running handlers on it.
+                return;
             }
         }
 
-        // Get handlers and sort by priority
-        const handlers = Array.from(this.events.get(eventType));
-        handlers.sort((a, b) => b.options.priority - a.options.priority);
+        const handlers = this.events.get(eventType);
+        if (!handlers || handlers.size === 0) {
+            return;
+        }
 
-        // Execute handlers
-        for (const handler of handlers) {
+        // Snapshot before iterating: handlers may subscribe or unsubscribe.
+        const ordered = Array.from(handlers).sort((a, b) => b.priority - a.priority);
+
+        for (const handler of ordered) {
+            if (handler.once) {
+                handlers.delete(handler);
+            }
             try {
-                await this.executeHandler(handler, eventType, eventData);
+                await handler.callback(eventData);
             } catch (error) {
                 this.errorManager.handleError(error, {
                     component: 'EventBus',
@@ -104,32 +127,11 @@ export class EventBus {
                 });
             }
         }
-
-        // Clean up 'once' handlers
-        this.cleanupOnceHandlers(eventType);
-    }
-
-    async executeHandler(handler, eventType, data) {
-        const result = handler.callback(data);
-        if (result instanceof Promise) {
-            await result;
-        }
-    }
-
-    cleanupOnceHandlers(eventType) {
-        if (this.events.has(eventType)) {
-            const handlers = this.events.get(eventType);
-            for (const handler of handlers) {
-                if (handler.options.once) {
-                    handlers.delete(handler);
-                }
-            }
-        }
     }
 
     validateEventType(eventType) {
         if (!eventType || typeof eventType !== 'string') {
-            throw new Error('Invalid event type');
+            throw new Error('EventBus: event type must be a non-empty string');
         }
     }
 
@@ -140,6 +142,5 @@ export class EventBus {
 
     destroy() {
         this.clear();
-        EventBus.instance = null;
     }
-} 
+}

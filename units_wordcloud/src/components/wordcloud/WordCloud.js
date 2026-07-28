@@ -1,111 +1,139 @@
 import { WordCloudRenderer } from './Renderer.js';
 import { WordCloudLayoutManager } from './LayoutManager.js';
 import { DimensionManager } from '../../utils/DimensionManager.js';
-import { CanvasManager } from '../../utils/CanvasManager.js';
 import { StyleManager } from '../../utils/StyleManager.js';
-import { WordCloudController } from './WordCloudController.js';
-import { LAYOUT_EVENTS, WORDCLOUD_EVENTS } from '../../events/EventTypes.js';
+import { WordStyler } from '../../utils/WordStyler.js';
 
+/**
+ * The word cloud view: observes the store and the container's size, and
+ * redraws when either changes.
+ *
+ * Coordination between this component's own parts (dimensions -> layout ->
+ * render) is done with direct calls. The event bus is reserved for genuinely
+ * cross-component signals such as word hover and click; routing internal steps
+ * through it — as the previous WordCloudController did — added two async hops
+ * and made the redraw path hard to follow.
+ */
 export class WordCloud {
-    constructor(containerId, { config, store, eventBus, options = {} } = {}) {
-        this.container = typeof containerId === 'string' ? 
-            document.getElementById(containerId.replace('#', '')) : 
-            containerId;
+    /**
+     * @param {string|HTMLElement} containerId
+     * @param {object} deps
+     * @param {import('../../config/ConfigManager.js').ConfigManager} deps.config
+     * @param {import('../../store/AppStore.js').AppStore} deps.store
+     * @param {import('../../events/EventBus.js').EventBus} deps.eventBus
+     */
+    constructor(containerId, { config, store, eventBus } = {}) {
+        this.container = typeof containerId === 'string'
+            ? document.getElementById(containerId.replace(/^#/, ''))
+            : containerId;
 
         if (!this.container) {
-            throw new Error('Container element not found');
+            throw new Error(`WordCloud: container "${containerId}" not found`);
         }
 
-        // Initialize dependencies
         this.config = config;
-        this.eventBus = eventBus;
         this.store = store;
-        
-        // Initialize managers and controllers
-        this.initializeManagers();
-        this.controller = new WordCloudController({ config, store, eventBus });
-        
-        // Apply initial configuration
-        this.applyConfiguration(options);
-        
-        // Setup the view
+        this.eventBus = eventBus;
+
+        this.wordStyler = new WordStyler({ config });
+        this.dimensionManager = new DimensionManager(this.container, { config });
+        this.renderer = new WordCloudRenderer(this.container, {
+            config,
+            eventBus,
+            wordStyler: this.wordStyler
+        });
+        this.layoutManager = new WordCloudLayoutManager({
+            config,
+            wordStyler: this.wordStyler
+        });
+
+        this.redrawHandle = null;
+        this.teardown = [];
+
         StyleManager.setupContainer(this.container);
         this.setupView();
     }
 
-    initializeManagers() {
-        this.dimensionManager = new DimensionManager(this.container);
-        this.canvasManager = new CanvasManager();
-        this.renderer = new WordCloudRenderer(this.container, {
-            config: this.config,
-            eventBus: this.eventBus
-        });
-        this.layoutManager = new WordCloudLayoutManager({
-            config: this.config
-        });
-    }
-
-    applyConfiguration(options) {
-        Object.entries(options).forEach(([key, value]) => {
-            this.config.set(`wordcloud.${key}`, value);
-        });
-    }
-
     setupView() {
-        // Handle dimension changes
-        this.dimensionManager.subscribe(async dimensions => {
-            await this.eventBus.emit(LAYOUT_EVENTS.DIMENSION_CHANGE, { dimensions });
-            this.layoutManager.updateDimensions(dimensions);
-            this.renderer.updateDimensions(dimensions.width, dimensions.height);
-        });
+        this.teardown.push(
+            this.dimensionManager.subscribe(dimensions => {
+                this.layoutManager.updateDimensions(dimensions);
+                this.renderer.updateDimensions(dimensions.width, dimensions.height);
+                this.store.updateDimensions(dimensions);
+                this.scheduleRedraw();
+            })
+        );
 
-        // Handle layout updates
-        this.eventBus.on(LAYOUT_EVENTS.UPDATE_REQUIRED, async () => {
-            await this.redraw();
-        });
+        this.teardown.push(
+            this.store.subscribe((newState, oldState) => {
+                if (newState.currentWords !== oldState.currentWords) {
+                    this.scheduleRedraw();
+                }
+            })
+        );
+    }
 
-        // Handle word hover events
-        this.eventBus.on(WORDCLOUD_EVENTS.WORD_HOVER, ({ word }) => {
-            if (this.wordList) {
-                this.wordList.highlightWord(word.text);
-            }
+    /**
+     * Coalesces redraw requests into one per frame.
+     *
+     * A resize drag emits dimension changes far faster than d3-cloud can place
+     * words; without this, every intermediate size would start its own layout.
+     */
+    scheduleRedraw() {
+        if (this.redrawHandle !== null) {
+            return;
+        }
+        this.redrawHandle = requestAnimationFrame(() => {
+            this.redrawHandle = null;
+            this.redraw();
         });
     }
 
     async redraw() {
-        try {
-            const words = await this.layoutManager.layoutWords(this.getCurrentWords());
-            await this.draw(words);
-        } catch (error) {
-            console.error('Error redrawing word cloud:', error);
-            throw error;
+        const words = this.getCurrentWords();
+        if (words.length === 0) {
+            this.renderer.clear();
+            return [];
         }
+
+        const placed = await this.layoutManager.layoutWords(words);
+        return this.draw(placed);
     }
 
     getCurrentWords() {
         return this.store.getState().currentWords || [];
     }
 
-    async draw(words) {
+    draw(words) {
         const svg = this.renderer.createSVG();
         const wordGroup = this.renderer.createWordGroup(svg);
         this.renderer.renderWords(wordGroup, words);
         return words;
     }
 
+    /**
+     * Links the cloud to the word list so hovering either one highlights the
+     * other. Each direction drives the other's *visual* state only, so there is
+     * no handler that can bounce an event back to its origin.
+     */
     setWordList(wordList) {
         this.wordList = wordList;
         this.renderer.setWordList(wordList);
+
+        wordList.onWordHover = text => this.renderer.highlightWord(text);
+        wordList.onWordHoverEnd = text => this.renderer.clearWordHighlight(text);
     }
 
-    cleanup() {
+    destroy() {
+        if (this.redrawHandle !== null) {
+            cancelAnimationFrame(this.redrawHandle);
+            this.redrawHandle = null;
+        }
+        this.teardown.forEach(unsubscribe => unsubscribe());
+        this.teardown = [];
+
         this.dimensionManager.destroy();
-        this.canvasManager.destroy();
-        this.renderer.clear();
-        this.controller.destroy();
-        
-        // Clean up event handlers
-        this.eventBus.off(LAYOUT_EVENTS.UPDATE_REQUIRED);
-        this.eventBus.off(WORDCLOUD_EVENTS.WORD_HOVER);
+        this.layoutManager.destroy();
+        this.renderer.destroy();
     }
-} 
+}

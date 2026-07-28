@@ -1,120 +1,177 @@
 #!/usr/bin/env python3
-"""
-Word Frequency Generator for Text Analysis
+"""Generate word-frequency data for the ZMO word cloud.
 
-This script processes text files to generate word frequency data for visualization.
-It performs text preprocessing (tokenization, lemmatization) and outputs JSON files
-containing word frequencies that can be used to create word clouds using D3.js.
+Reads one ``.txt`` file per research unit from ``raw_data/``, applies a light
+NLP pipeline (tokenise, drop stopwords, lemmatise), and writes one JSON file per
+unit plus a ``combined`` file aggregating them all.
 
-The script handles both individual file processing and combined analysis of all input files.
+Output goes straight to the directory the web app loads from, using the
+filenames it expects (``<Unit>_word_frequencies.json``). Run with ``--help`` for
+the available options.
 """
+
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from collections import Counter
+from pathlib import Path
 
 import nltk
-from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-import json
-from collections import Counter
-import os
+from nltk.tokenize import word_tokenize
 
-# Download required NLTK resources for text processing
-nltk.download('punkt')  # For tokenization
-nltk.download('stopwords')  # For removing common words
-nltk.download('wordnet')  # For lemmatization
-nltk.download('averaged_perceptron_tagger')  # For part-of-speech tagging
+# Paths are resolved relative to this file so the script works from any cwd.
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent
 
-def process_text(text):
+DEFAULT_INPUT_DIR = SCRIPT_DIR / "raw_data"
+DEFAULT_OUTPUT_DIR = REPO_ROOT / "units_wordcloud" / "data"
+
+COMBINED_NAME = "combined"
+
+# Terms common to every unit's description; they crowd out the distinctive
+# vocabulary the cloud is meant to surface.
+CUSTOM_STOPWORDS = {
+    "project", "research", "study", "analysis", "data",
+    "also", "within", "including", "would", "may", "one", "two",
+}
+
+# NLTK 3.9 replaced the pickled ``punkt`` model with the ``punkt_tab`` tables and
+# made ``word_tokenize`` require the latter. Requesting only ``punkt`` — as this
+# script previously did — therefore raises LookupError at tokenisation time on
+# any current NLTK. Both are listed so the script also works on older releases.
+REQUIRED_CORPORA = ("punkt_tab", "punkt", "stopwords", "wordnet")
+
+
+def ensure_corpora(quiet: bool = True) -> None:
+    """Download NLTK corpora that are not already present.
+
+    Checked before downloading so repeat runs stay offline-friendly.
     """
-    Process the input text through various NLP steps to prepare it for frequency analysis.
-    
-    Steps:
-    1. Tokenization and conversion to lowercase
-    2. Removal of stopwords and non-alphabetic tokens
-    3. Lemmatization to reduce words to their base form
-    
-    Args:
-        text (str): The input text to process
-        
-    Returns:
-        list: A list of processed tokens ready for frequency analysis
-    """
-    # Tokenization and lowercase conversion
-    tokens = word_tokenize(text.lower())
+    lookups = {
+        "punkt_tab": "tokenizers/punkt_tab",
+        "punkt": "tokenizers/punkt",
+        "stopwords": "corpora/stopwords",
+        "wordnet": "corpora/wordnet",
+    }
 
-    # Remove stopwords and non-alphabetic tokens
-    stop_words = set(stopwords.words('english'))
-    # Add domain-specific stopwords that might skew the analysis
-    custom_stops = {'project', 'research', 'study', 'analysis', 'data', 'also', 'within', 'including', 'would', 'may', 'one', 'two'}
-    stop_words.update(custom_stops)
-    
-    # Filter out non-alphabetic tokens and stopwords
-    tokens = [word for word in tokens if word.isalpha() and word not in stop_words]
+    for package in REQUIRED_CORPORA:
+        try:
+            nltk.data.find(lookups[package])
+        except LookupError:
+            # ``punkt`` is a legacy fallback; on NLTK >= 3.9 it may be absent
+            # from the index, which is fine as long as punkt_tab resolved.
+            nltk.download(package, quiet=quiet)
 
-    # Lemmatization to reduce words to their base form (e.g., 'running' -> 'run')
-    lemmatizer = WordNetLemmatizer()
-    lemmatized_tokens = [lemmatizer.lemmatize(word) for word in tokens]
 
-    return lemmatized_tokens
+class TextProcessor:
+    """Turns raw text into a list of lemmatised, filtered tokens."""
 
-def save_word_frequencies(word_freq, output_filename):
-    """
-    Save word frequencies to a JSON file in a format suitable for D3.js visualization.
-    
-    Args:
-        word_freq (Counter): Counter object containing word frequencies
-        output_filename (str): Path where the JSON file will be saved
-    """
-    # Convert to list of objects for D3.js (limiting to top 100 words)
-    word_data = [{"text": word, "size": count} for word, count in word_freq.most_common(100)]
-    
-    # Save to JSON file with proper formatting
-    with open(output_filename, 'w', encoding='utf-8') as f:
-        json.dump(word_data, f, ensure_ascii=False, indent=2)
+    def __init__(self, language: str = "english", min_length: int = 2) -> None:
+        self.language = language
+        self.min_length = min_length
+        # Built once and reused: constructing the lemmatiser and stopword set
+        # per file is pure overhead.
+        self.lemmatizer = WordNetLemmatizer()
+        self.stop_words = set(stopwords.words(language)) | CUSTOM_STOPWORDS
 
-def main():
-    """
-    Main execution function that:
-    1. Processes each .txt file from the raw_data directory individually
-    2. Generates individual word frequency JSON files
-    3. Creates a combined analysis of all files
-    """
-    # Get the directory where the script is located
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    raw_data_dir = os.path.join(current_dir, 'raw_data')
-    
-    # Ensure raw_data directory exists
-    if not os.path.exists(raw_data_dir):
-        print("Please create a 'raw_data' directory and place your .txt files there")
-        return
-    
-    # Get all .txt files from raw_data directory
-    files = [f for f in os.listdir(raw_data_dir) if f.endswith('.txt')]
-    
-    if not files:
-        print("No .txt files found in the raw_data directory")
-        return
-    
-    # Process each file individually and maintain a combined list
-    all_tokens = []
-    for filename in files:
-        file_path = os.path.join(raw_data_dir, filename)
-        
-        # Read and process each file
-        with open(file_path, 'r', encoding='utf-8') as file:
-            text = file.read()
-        
-        tokens = process_text(text)
-        all_tokens.extend(tokens)  # Accumulate tokens for combined analysis
-        
-        # Generate and save individual word frequencies
-        word_freq = Counter(tokens)
-        output_filename = os.path.join(current_dir, f'word_frequencies_{os.path.splitext(filename)[0]}.json')
-        save_word_frequencies(word_freq, output_filename)
-    
-    # Generate and save combined word frequencies
-    combined_freq = Counter(all_tokens)
-    combined_output = os.path.join(current_dir, 'word_frequencies_combined.json')
-    save_word_frequencies(combined_freq, combined_output)
+    def process(self, text: str) -> list[str]:
+        tokens = word_tokenize(text.lower(), language=self.language)
+        return [
+            self.lemmatizer.lemmatize(token)
+            for token in tokens
+            if token.isalpha()
+            and len(token) >= self.min_length
+            and token not in self.stop_words
+        ]
+
+
+def write_frequencies(counter: Counter, output_path: Path, top_n: int) -> int:
+    """Write the ``top_n`` most common entries in the app's JSON shape."""
+    payload = [{"text": word, "size": count} for word, count in counter.most_common(top_n)]
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    return len(payload)
+
+
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument(
+        "--input-dir", type=Path, default=DEFAULT_INPUT_DIR,
+        help=f"directory of source .txt files (default: {DEFAULT_INPUT_DIR.relative_to(REPO_ROOT)})",
+    )
+    parser.add_argument(
+        "--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR,
+        help=f"where to write the JSON files (default: {DEFAULT_OUTPUT_DIR.relative_to(REPO_ROOT)})",
+    )
+    parser.add_argument(
+        "--top-n", type=int, default=100,
+        help="number of words to keep per file (default: 100)",
+    )
+    parser.add_argument(
+        "--min-length", type=int, default=2,
+        help="discard tokens shorter than this (default: 2)",
+    )
+    parser.add_argument(
+        "--language", default="english",
+        help="language for tokenisation and stopwords (default: english)",
+    )
+    parser.add_argument(
+        "--exclude", nargs="*", default=[], metavar="NAME",
+        help="source file stems to skip entirely, e.g. --exclude Workshop",
+    )
+    return parser.parse_args(argv)
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = parse_args(argv)
+
+    if not args.input_dir.is_dir():
+        print(f"error: input directory not found: {args.input_dir}", file=sys.stderr)
+        return 1
+
+    excluded = set(args.exclude)
+    sources = sorted(
+        path for path in args.input_dir.glob("*.txt") if path.stem not in excluded
+    )
+
+    if not sources:
+        print(f"error: no .txt files to process in {args.input_dir}", file=sys.stderr)
+        return 1
+
+    ensure_corpora()
+    processor = TextProcessor(language=args.language, min_length=args.min_length)
+
+    combined: Counter = Counter()
+
+    for source in sources:
+        tokens = processor.process(source.read_text(encoding="utf-8"))
+        combined.update(tokens)
+
+        output_path = args.output_dir / f"{source.stem}_word_frequencies.json"
+        written = write_frequencies(Counter(tokens), output_path, args.top_n)
+        print(f"{source.name:<40} {len(tokens):>6} tokens -> {written:>3} words  {output_path.name}")
+
+    combined_path = args.output_dir / f"{COMBINED_NAME}_word_frequencies.json"
+    written = write_frequencies(combined, combined_path, args.top_n)
+    print(f"{'(all sources)':<40} {sum(combined.values()):>6} tokens -> {written:>3} words  {combined_path.name}")
+
+    print(f"\nWrote {len(sources) + 1} files to {args.output_dir}")
+    print(
+        "Reminder: a unit only appears in the UI once it is listed in "
+        "units_wordcloud/src/config/ConfigManager.js (groups.items)."
+    )
+    return 0
+
 
 if __name__ == "__main__":
-    main() 
+    raise SystemExit(main())

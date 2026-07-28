@@ -1,1 +1,6 @@
-nltk==3.9.1
+# Data preparation pipeline (data_prep/generate_word_data.py).
+# The web app has no build step and no Node dependencies.
+#
+# NLTK >= 3.9 requires the `punkt_tab` tokenizer tables rather than the older
+# pickled `punkt` model; the generator downloads both.
+nltk==3.10.0

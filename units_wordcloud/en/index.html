@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZMO Word Cloud</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <meta name="description" content="Interactive word cloud of the most frequent terms across the ZMO research units.">
+    <link rel="icon" href="data:,">
     <link rel="stylesheet" href="../src/styles/main.css">
-    <script>
-        // Configure base path for the application
-        window.APP_CONFIG = {
-            basePath: window.location.hostname.includes('github.io') ? '/ZMO/units_wordcloud' : '..'
-        };
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"
+            integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1.2.9/build/d3.layout.cloud.js"
+            integrity="sha384-xQ341kXZh9V/CNGZ1khb5YRiKeBlXA7SHpxBWH0L87OPp97kGQ51NLAlVLaDiR0v"
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="controls-container">
@@ -26,7 +24,7 @@
         </div>
         <div id="wordlist"></div>
     </div>
-    <div id="tooltip"></div>
+    <div id="tooltip" role="tooltip"></div>
     <script type="module" src="../src/main.js"></script>
 </body>
-</html> 
+</html>

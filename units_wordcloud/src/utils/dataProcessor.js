@@ -1,64 +1,101 @@
+/**
+ * Turns raw frequency files into the shape the layout and word list expect.
+ *
+ * Each output word carries:
+ *   - `text`          cleaned label
+ *   - `originalSize`  raw frequency, shown in the tooltip and word list
+ *   - `size`          frequency normalised into [min, max] for font scaling
+ *   - `rank`          1-based position by descending frequency
+ */
 export class DataProcessor {
+    /**
+     * @param {object} deps
+     * @param {import('../config/ConfigManager.js').ConfigManager} deps.config
+     */
+    constructor({ config }) {
+        this.config = config;
+    }
+
+    /** Strips stray quote characters left over from the source texts. */
     static cleanWord(word) {
-        return word.replace(/['']/, '').trim();
+        return String(word).replace(/['’‘]/g, '').trim();
     }
 
-    static normalizeSize(size, minSize, maxSize) {
-        return 10 + (size - minSize) * (90) / (maxSize - minSize);
+    /**
+     * Maps a raw frequency onto the configured font-size range.
+     *
+     * When every word shares the same frequency the range collapses; falling
+     * back to the midpoint avoids a division by zero that would otherwise
+     * propagate NaN into every font size and blank the cloud.
+     */
+    normalizeSize(size, minSize, maxSize) {
+        const { min, max } = this.config.get('data.normalizedSize');
+        if (maxSize === minSize) {
+            return (min + max) / 2;
+        }
+        return min + ((size - minSize) * (max - min)) / (maxSize - minSize);
     }
 
-    static processCombinedData(data) {
-        // If data is already an array, return it as is
+    /**
+     * Accepts either a flat array of words (the format produced by
+     * `generate_word_data.py`) or an object keyed by unit name, in which case
+     * per-unit entries are summed and their origins recorded on `units`.
+     */
+    static mergeGroups(data) {
         if (Array.isArray(data)) {
             return data;
         }
 
         const wordMap = new Map();
-        
-        // Handle case where data is an object with unit names as keys
+
         Object.entries(data).forEach(([unitName, unitWords]) => {
-            // Ensure unitWords is an array
             if (!Array.isArray(unitWords)) {
-                console.warn(`Invalid data format for unit ${unitName}: expected array but got`, typeof unitWords);
+                console.warn(`DataProcessor: expected an array for unit "${unitName}", got ${typeof unitWords}`);
                 return;
             }
 
-            unitWords.forEach(word => {
-                if (wordMap.has(word.text)) {
-                    const existingWord = wordMap.get(word.text);
-                    existingWord.size += word.size;
-                    existingWord.units = existingWord.units || [unitName];
-                    if (!existingWord.units.includes(unitName)) {
-                        existingWord.units.push(unitName);
+            unitWords.forEach(({ text, size }) => {
+                const existing = wordMap.get(text);
+                if (existing) {
+                    existing.size += size;
+                    if (!existing.units.includes(unitName)) {
+                        existing.units.push(unitName);
                     }
                 } else {
-                    wordMap.set(word.text, {
-                        text: word.text,
-                        size: word.size,
-                        units: [unitName]
-                    });
+                    wordMap.set(text, { text, size, units: [unitName] });
                 }
             });
         });
+
         return Array.from(wordMap.values());
     }
 
-    static processWords(words, wordCount) {
-        // Clean words and remove empty ones
-        words = words.map(w => ({...w, text: this.cleanWord(w.text)}))
-                     .filter(w => w.text.length > 0);
+    /**
+     * @param {Array<{text: string, size: number}>} words
+     * @param {number} wordCount Maximum number of words to keep.
+     */
+    process(words, wordCount) {
+        const cleaned = words
+            .map(word => ({ ...word, text: DataProcessor.cleanWord(word.text) }))
+            .filter(word => word.text.length > 0 && Number.isFinite(word.size))
+            .sort((a, b) => b.size - a.size)
+            .slice(0, wordCount);
 
-        // Limit the number of words based on the count
-        words = words.sort((a, b) => b.size - a.size)
-                     .slice(0, wordCount);
+        if (cleaned.length === 0) {
+            return [];
+        }
 
-        // Normalize sizes
-        const minSize = Math.min(...words.map(w => w.size));
-        const maxSize = Math.max(...words.map(w => w.size));
-        return words.map(w => ({
-            ...w,
-            originalSize: w.size,
-            size: this.normalizeSize(w.size, minSize, maxSize)
+        // reduce() rather than Math.min(...arr): spreading a large array can
+        // overflow the call stack.
+        const sizes = cleaned.map(word => word.size);
+        const minSize = sizes.reduce((a, b) => Math.min(a, b), Infinity);
+        const maxSize = sizes.reduce((a, b) => Math.max(a, b), -Infinity);
+
+        return cleaned.map((word, index) => ({
+            ...word,
+            originalSize: word.size,
+            size: this.normalizeSize(word.size, minSize, maxSize),
+            rank: index + 1
         }));
     }
-} 
+}

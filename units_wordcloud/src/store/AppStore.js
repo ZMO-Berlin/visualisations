@@ -1,180 +1,118 @@
-import { EventBus } from '../events/EventBus.js';
-import { ConfigManager } from '../config/ConfigManager.js';
-import { WordCloudService } from '../services/WordCloudService.js';
-import { WORDCLOUD_EVENTS, DATA_EVENTS, ERROR_EVENTS } from '../events/EventTypes.js';
-import { LoggerMiddleware } from '../events/middleware/LoggerMiddleware.js';
-import { ValidationMiddleware } from '../events/middleware/ValidationMiddleware.js';
+import { WORDCLOUD_EVENTS } from '../events/EventTypes.js';
 
+/**
+ * Single source of truth for what the UI is currently showing.
+ *
+ * Components read via `getState()` and react via `subscribe()`; nothing mutates
+ * state directly. `updateWordCloud()` is the only action that performs I/O.
+ */
 export class AppStore {
-    static instance = null;
-    
-    constructor({ config, eventBus, errorManager }) {
-        if (AppStore.instance) {
-            return AppStore.instance;
-        }
-        
+    /**
+     * @param {object} deps
+     * @param {import('../config/ConfigManager.js').ConfigManager} deps.config
+     * @param {import('../events/EventBus.js').EventBus} deps.eventBus
+     * @param {import('../utils/ErrorManager.js').ErrorManager} deps.errorManager
+     * @param {import('../services/WordCloudService.js').WordCloudService} deps.wordCloudService
+     */
+    constructor({ config, eventBus, errorManager, wordCloudService }) {
         this.config = config;
         this.eventBus = eventBus;
         this.errorManager = errorManager;
-        this.wordCloudService = WordCloudService.getInstance();
-        
-        // Setup event bus middlewares
-        this.eventBus
-            .use(LoggerMiddleware)
-            .use(ValidationMiddleware);
-        
+        this.wordCloudService = wordCloudService;
+
         this.state = {
-            selectedUnit: this.wordCloudService.getDefaultUnit(),
-            wordCount: this.wordCloudService.getDefaultWordCount(),
+            selectedUnit: wordCloudService.getDefaultUnit(),
+            wordCount: wordCloudService.getDefaultWordCount(),
             currentWords: [],
             dimensions: {
-                width: this.config.get('wordcloud.dimensions.width'),
-                height: this.config.get('wordcloud.dimensions.height')
+                width: config.get('wordcloud.dimensions.width'),
+                height: config.get('wordcloud.dimensions.height')
             },
             isLoading: false,
-            error: null,
-            layout: {
-                wordListVisible: true
-            }
+            error: null
         };
-        
-        this.listeners = new Set();
-        AppStore.instance = this;
-    }
 
-    static getInstance() {
-        if (!AppStore.instance) {
-            AppStore.instance = new AppStore();
-        }
-        return AppStore.instance;
+        this.listeners = new Set();
+
+        // Monotonic token: only the most recent request may commit its results,
+        // so a slow response for an earlier selection cannot overwrite a newer one.
+        this.requestId = 0;
     }
 
     getState() {
         return { ...this.state };
     }
 
-    setState(newState) {
-        const oldState = { ...this.state };
-        this.state = { ...this.state, ...newState };
+    setState(partial) {
+        const oldState = this.state;
+        this.state = { ...this.state, ...partial };
         this.notifyListeners(oldState);
     }
 
+    /** @returns {() => void} Unsubscribe function. */
     subscribe(listener) {
         this.listeners.add(listener);
         return () => this.listeners.delete(listener);
     }
 
     notifyListeners(oldState) {
-        this.listeners.forEach(listener => listener(this.state, oldState));
+        // Copy first: a listener may unsubscribe during iteration.
+        [...this.listeners].forEach(listener => listener(this.state, oldState));
     }
 
-    // Action creators
+    /**
+     * Loads the given group and word count, then publishes the result.
+     * Concurrent calls are safe; stale responses are discarded.
+     */
     async updateWordCloud(unit, wordCount) {
+        const requestId = ++this.requestId;
+
+        this.setState({
+            selectedUnit: unit,
+            wordCount,
+            isLoading: true,
+            error: null
+        });
+        await this.eventBus.emit(WORDCLOUD_EVENTS.LOADING, { isLoading: true });
+
         try {
-            this.setState({ isLoading: true, error: null });
-            
-            // Update state immediately for UI responsiveness
-            this.setState({
-                selectedUnit: unit,
-                wordCount: wordCount
-            });
-
-            // Emit loading event
-            await this.eventBus.emit(WORDCLOUD_EVENTS.LOADING, { isLoading: true });
-            
-            // Load and process data using the service
             const words = await this.wordCloudService.loadData(unit, wordCount);
-            
-            // Update state with new data
-            this.setState({
-                currentWords: words,
-                isLoading: false
-            });
 
-            // Emit success event
+            if (requestId !== this.requestId) {
+                return words; // superseded by a newer request
+            }
+
+            this.setState({ currentWords: words, isLoading: false });
             await this.eventBus.emit(WORDCLOUD_EVENTS.UPDATE, { words });
-            
             return words;
         } catch (error) {
-            this.setState({
-                error: error.message,
-                isLoading: false
+            if (requestId === this.requestId) {
+                this.setState({ error: error.message, isLoading: false });
+                await this.eventBus.emit(WORDCLOUD_EVENTS.ERROR, { error });
+            }
+            this.errorManager.handleError(error, {
+                component: 'AppStore',
+                method: 'updateWordCloud',
+                unit,
+                wordCount
             });
-            
-            // Emit error event
-            await this.eventBus.emit(WORDCLOUD_EVENTS.ERROR, { error });
-            
             throw error;
         } finally {
-            await this.eventBus.emit(WORDCLOUD_EVENTS.LOADING, { isLoading: false });
+            if (requestId === this.requestId) {
+                await this.eventBus.emit(WORDCLOUD_EVENTS.LOADING, { isLoading: false });
+            }
         }
     }
 
     updateDimensions(dimensions) {
-        this.setState({
-            dimensions: {
-                ...this.state.dimensions,
-                ...dimensions
-            }
-        });
+        const { width, height } = this.state.dimensions;
+        if (dimensions.width === width && dimensions.height === height) {
+            return;
+        }
+        this.setState({ dimensions: { ...this.state.dimensions, ...dimensions } });
     }
 
-    toggleWordList() {
-        this.setState({
-            layout: {
-                ...this.state.layout,
-                wordListVisible: !this.state.layout.wordListVisible
-            }
-        });
+    destroy() {
+        this.listeners.clear();
     }
-
-    // Helper methods
-    processWordData(response, unit, wordCount) {
-        const words = unit === 'combined' ? 
-            this.processCombinedData(response) : 
-            response;
-        return this.processWords(words, wordCount);
-    }
-
-    processCombinedData(data) {
-        const wordMap = new Map();
-        Object.entries(data).forEach(([unitName, unitWords]) => {
-            unitWords.forEach(word => {
-                if (wordMap.has(word.text)) {
-                    const existingWord = wordMap.get(word.text);
-                    existingWord.size += word.size;
-                    existingWord.units.push(unitName);
-                } else {
-                    wordMap.set(word.text, {
-                        text: word.text,
-                        size: word.size,
-                        units: [unitName]
-                    });
-                }
-            });
-        });
-        return Array.from(wordMap.values());
-    }
-
-    processWords(words, wordCount) {
-        words = words
-            .map(w => ({...w, text: w.text.replace(/['']/, '').trim()}))
-            .filter(w => w.text.length > 0)
-            .sort((a, b) => b.size - a.size)
-            .slice(0, wordCount);
-
-        const minSize = Math.min(...words.map(w => w.size));
-        const maxSize = Math.max(...words.map(w => w.size));
-        
-        return words.map((w, index) => ({
-            ...w,
-            originalSize: w.size,
-            size: this.normalizeSize(w.size, minSize, maxSize),
-            rank: index + 1
-        }));
-    }
-
-    normalizeSize(size, minSize, maxSize) {
-        return 10 + (size - minSize) * (90) / (maxSize - minSize);
-    }
-} 
+}
