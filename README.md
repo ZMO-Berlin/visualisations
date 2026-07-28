@@ -12,13 +12,16 @@ Available in English and French.
   browser. There is no bundler, no `package.json`, and no `npm install`.
 - **Data is scraped from [zmo.de](https://www.zmo.de/), not maintained by hand.**
   Two Python scripts fetch each unit's abstract and every project abstract, then
-  reduce them to word frequencies. See [Regenerating the data](#regenerating-the-data).
+  reduce them to word frequencies. A GitHub Action reruns them monthly. See
+  [Regenerating the data](#regenerating-the-data).
 
 ---
 
 ## Repository layout
 
 ```
+.github/workflows/           Monthly data refresh (see Automatic monthly refresh)
+
 data_prep/                   Offline data pipeline (Python)
   scrape_zmo.py              zmo.de -> text
   generate_word_data.py      Text -> word-frequency JSON
@@ -160,6 +163,30 @@ The script downloads what it needs on first run. NLTK 3.9 replaced the pickled
 `punkt` model with the `punkt_tab` tables and made `word_tokenize` require the
 latter, so both are requested; a run that fetches only `punkt` fails with
 `LookupError: Resource 'punkt_tab' not found`.
+
+### Automatic monthly refresh
+
+[`.github/workflows/update-word-data.yml`](.github/workflows/update-word-data.yml)
+runs both stages at 04:00 UTC on the 1st of each month and commits the result to
+`main` if anything changed. Because Pages serves from `main`, the published site
+updates with it. Nothing is committed when the site's text is unchanged.
+
+Run it on demand from the Actions tab — **Update word cloud data** → *Run
+workflow*. It takes a `dry_run` option that scrapes and reports without
+committing, which is the safe way to check whether the site has moved.
+
+Two safety nets stand between a broken scrape and `main`:
+
+* the scraper itself exits non-zero if a page yields no abstract or no projects;
+* a follow-up step compares each unit's word count against the committed version
+  and fails if one keeps under 60% of its words. The scraper cannot tell that a
+  page returned *fewer* projects than before, so this catches a partial
+  restructure that would otherwise commit a hollowed-out corpus.
+
+A failing run sends the usual GitHub notification. Note that GitHub disables
+scheduled workflows in public repositories after 60 days without repository
+activity; if the site's text goes unchanged that long, the schedule may need
+re-enabling from the Actions tab.
 
 ---
 
