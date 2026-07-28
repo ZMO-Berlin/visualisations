@@ -1,118 +1,74 @@
 [
   {
-    "text": "religious",
-    "size": 37
+    "text": "intellectual",
+    "size": 29
   },
   {
-    "text": "intellectual",
-    "size": 36
+    "text": "religious",
+    "size": 24
   },
   {
     "text": "muslim",
-    "size": 32
-  },
-  {
-    "text": "islamic",
-    "size": 21
-  },
-  {
-    "text": "context",
     "size": 20
   },
   {
-    "text": "religion",
-    "size": 15
-  },
-  {
-    "text": "knowledge",
-    "size": 14
-  },
-  {
-    "text": "new",
-    "size": 14
+    "text": "islamic",
+    "size": 20
   },
   {
     "text": "practice",
-    "size": 13
+    "size": 17
   },
   {
     "text": "social",
-    "size": 13
+    "size": 15
   },
   {
-    "text": "culture",
+    "text": "religion",
     "size": 12
+  },
+  {
+    "text": "context",
+    "size": 12
+  },
+  {
+    "text": "digital",
+    "size": 12
+  },
+  {
+    "text": "knowledge",
+    "size": 11
   },
   {
     "text": "life",
-    "size": 12
+    "size": 10
   },
   {
-    "text": "world",
-    "size": 12
-  },
-  {
-    "text": "actor",
-    "size": 12
-  },
-  {
-    "text": "way",
-    "size": 11
-  },
-  {
-    "text": "region",
-    "size": 11
-  },
-  {
-    "text": "theological",
-    "size": 11
-  },
-  {
-    "text": "arab",
-    "size": 11
+    "text": "school",
+    "size": 10
   },
   {
     "text": "idea",
-    "size": 11
-  },
-  {
-    "text": "different",
     "size": 10
   },
   {
-    "text": "tradition",
+    "text": "islam",
     "size": 10
   },
   {
-    "text": "network",
-    "size": 10
+    "text": "culture",
+    "size": 9
   },
   {
-    "text": "discourse",
-    "size": 10
+    "text": "system",
+    "size": 9
+  },
+  {
+    "text": "university",
+    "size": 9
   },
   {
     "text": "society",
-    "size": 9
-  },
-  {
-    "text": "secular",
-    "size": 9
-  },
-  {
-    "text": "education",
-    "size": 9
-  },
-  {
-    "text": "theology",
-    "size": 9
-  },
-  {
-    "text": "religiosity",
-    "size": 8
-  },
-  {
-    "text": "critical",
     "size": 8
   },
   {
@@ -120,27 +76,7 @@
     "size": 8
   },
   {
-    "text": "school",
-    "size": 8
-  },
-  {
-    "text": "africa",
-    "size": 8
-  },
-  {
-    "text": "role",
-    "size": 8
-  },
-  {
-    "text": "islam",
-    "size": 8
-  },
-  {
-    "text": "elite",
-    "size": 8
-  },
-  {
-    "text": "public",
+    "text": "new",
     "size": 8
   },
   {
@@ -148,55 +84,51 @@
     "size": 8
   },
   {
-    "text": "particular",
+    "text": "african",
+    "size": 8
+  },
+  {
+    "text": "actor",
     "size": 7
   },
   {
-    "text": "dynamic",
+    "text": "history",
     "size": 7
   },
   {
-    "text": "work",
+    "text": "way",
     "size": 7
   },
   {
-    "text": "local",
+    "text": "human",
     "size": 7
   },
   {
-    "text": "time",
+    "text": "concept",
     "size": 7
   },
   {
-    "text": "christianity",
+    "text": "ethnographic",
     "size": 7
   },
   {
-    "text": "question",
+    "text": "critical",
     "size": 7
   },
   {
-    "text": "individual",
+    "text": "education",
     "size": 7
   },
   {
-    "text": "state",
+    "text": "aim",
     "size": 7
   },
   {
-    "text": "examine",
+    "text": "art",
     "size": 7
   },
   {
-    "text": "political",
-    "size": 7
-  },
-  {
-    "text": "west",
-    "size": 7
-  },
-  {
-    "text": "seek",
+    "text": "historical",
     "size": 7
   },
   {
@@ -204,39 +136,75 @@
     "size": 7
   },
   {
+    "text": "religiosity",
+    "size": 6
+  },
+  {
+    "text": "world",
+    "size": 6
+  },
+  {
+    "text": "different",
+    "size": 6
+  },
+  {
+    "text": "dynamic",
+    "size": 6
+  },
+  {
     "text": "specific",
     "size": 6
   },
   {
-    "text": "process",
+    "text": "concern",
     "size": 6
   },
   {
-    "text": "traditional",
+    "text": "experience",
     "size": 6
   },
   {
-    "text": "form",
+    "text": "west",
     "size": 6
   },
   {
-    "text": "system",
+    "text": "africa",
     "size": 6
   },
   {
-    "text": "south",
+    "text": "state",
     "size": 6
   },
   {
-    "text": "investigates",
+    "text": "swahili",
     "size": 6
   },
   {
-    "text": "western",
+    "text": "coast",
     "size": 6
   },
   {
-    "text": "art",
+    "text": "mean",
+    "size": 6
+  },
+  {
+    "text": "local",
+    "size": 6
+  },
+  {
+    "text": "study",
+    "size": 6
+  },
+  {
+    "text": "first",
+    "size": 6
+  },
+  {
+    "text": "time",
+    "size": 6
+  },
+  {
+    "text": "policy",
     "size": 6
   },
   {
@@ -244,7 +212,15 @@
     "size": 6
   },
   {
-    "text": "university",
+    "text": "three",
+    "size": 6
+  },
+  {
+    "text": "work",
+    "size": 6
+  },
+  {
+    "text": "ai",
     "size": 6
   },
   {
@@ -252,59 +228,43 @@
     "size": 6
   },
   {
-    "text": "periodical",
+    "text": "role",
     "size": 6
   },
   {
-    "text": "niger",
+    "text": "collection",
     "size": 6
   },
   {
-    "text": "relation",
+    "text": "commentary",
+    "size": 6
+  },
+  {
+    "text": "field",
     "size": 5
   },
   {
-    "text": "concern",
+    "text": "particular",
     "size": 5
   },
   {
-    "text": "ethnographic",
+    "text": "focus",
     "size": 5
   },
   {
-    "text": "approach",
+    "text": "well",
     "size": 5
   },
   {
-    "text": "language",
+    "text": "secular",
     "size": 5
   },
   {
-    "text": "human",
+    "text": "political",
     "size": 5
   },
   {
-    "text": "challenge",
-    "size": 5
-  },
-  {
-    "text": "various",
-    "size": 5
-  },
-  {
-    "text": "christian",
-    "size": 5
-  },
-  {
-    "text": "engagement",
-    "size": 5
-  },
-  {
-    "text": "beyond",
-    "size": 5
-  },
-  {
-    "text": "global",
+    "text": "scholar",
     "size": 5
   },
   {
@@ -312,27 +272,23 @@
     "size": 5
   },
   {
-    "text": "concept",
+    "text": "question",
     "size": 5
   },
   {
-    "text": "thought",
+    "text": "reading",
     "size": 5
   },
   {
-    "text": "modern",
+    "text": "form",
     "size": 5
   },
   {
-    "text": "anthropology",
+    "text": "elite",
     "size": 5
   },
   {
-    "text": "aim",
-    "size": 5
-  },
-  {
-    "text": "movement",
+    "text": "investigates",
     "size": 5
   },
   {
@@ -340,15 +296,15 @@
     "size": 5
   },
   {
+    "text": "large",
+    "size": 5
+  },
+  {
+    "text": "ghadames",
+    "size": 5
+  },
+  {
     "text": "campus",
-    "size": 5
-  },
-  {
-    "text": "press",
-    "size": 5
-  },
-  {
-    "text": "tatar",
     "size": 5
   },
   {
@@ -356,31 +312,35 @@
     "size": 5
   },
   {
-    "text": "focus",
+    "text": "western",
+    "size": 5
+  },
+  {
+    "text": "spain",
+    "size": 5
+  },
+  {
+    "text": "tradition",
     "size": 4
   },
   {
-    "text": "understanding",
+    "text": "often",
     "size": 4
   },
   {
-    "text": "reflect",
+    "text": "modern",
     "size": 4
   },
   {
-    "text": "well",
+    "text": "beyond",
     "size": 4
   },
   {
-    "text": "regional",
+    "text": "figure",
     "size": 4
   },
   {
-    "text": "tension",
-    "size": 4
-  },
-  {
-    "text": "interest",
+    "text": "recognition",
     "size": 4
   },
   {
@@ -388,15 +348,55 @@
     "size": 4
   },
   {
-    "text": "aspect",
+    "text": "material",
     "size": 4
   },
   {
-    "text": "recent",
+    "text": "approach",
     "size": 4
   },
   {
-    "text": "use",
+    "text": "individual",
+    "size": 4
+  },
+  {
+    "text": "sultanate",
+    "size": 4
+  },
+  {
+    "text": "broader",
+    "size": 4
+  },
+  {
+    "text": "cultural",
+    "size": 4
+  },
+  {
+    "text": "process",
+    "size": 4
+  },
+  {
+    "text": "traditional",
+    "size": 4
+  },
+  {
+    "text": "value",
+    "size": 4
+  },
+  {
+    "text": "international",
+    "size": 4
+  },
+  {
+    "text": "hassan",
+    "size": 4
+  },
+  {
+    "text": "porcelain",
+    "size": 4
+  },
+  {
+    "text": "like",
     "size": 4
   }
 ]

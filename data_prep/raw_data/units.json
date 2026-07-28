@@ -1,0 +1,320 @@
+{
+  "generated": "2026-07-28T09:58:03+00:00",
+  "source": "https://www.zmo.de",
+  "units": [
+    {
+      "stem": "State_Society",
+      "slug": "state-and-society",
+      "label": "State and Society",
+      "url": "https://www.zmo.de/en/research/state-and-society",
+      "projects": [
+        {
+          "title": "Historical Icons and Representations of the Past",
+          "url": "https://www.zmo.de/en/research/state-and-society/heike-liebau",
+          "kind": "project"
+        },
+        {
+          "title": "An Oasis Facing Globalisation: The History and Development of Hegra (Saudi Arabia) since the late 19th Century",
+          "url": "https://www.zmo.de/en/research/state-and-society/ulrike-freitag",
+          "kind": "project"
+        },
+        {
+          "title": "Learning to Feel Like a Nation: Nationalism and Emotions in Turkish School Books",
+          "url": "https://www.zmo.de/en/research/state-and-society/deniz-t-kilincoglu",
+          "kind": "project"
+        },
+        {
+          "title": "An Anthropological Study of the Impact and Repercussions of Chinese BRI projects in Coastal Kenya",
+          "url": "https://www.zmo.de/en/research/state-and-society/kadara-swaleh",
+          "kind": "project"
+        },
+        {
+          "title": "Archival Imaginaries and the Politics of History in South Asia",
+          "url": "https://www.zmo.de/en/research/state-and-society/mallika-leuzinger",
+          "kind": "project"
+        },
+        {
+          "title": "Modern India in German Archives, 1706–1989 (MIDA)",
+          "url": null,
+          "kind": "umbrella"
+        },
+        {
+          "title": "Modern Indian Literature in Translation in the GDR – Between Ideology, Censorship and Cultural Diplomacy",
+          "url": "https://www.zmo.de/en/research/state-and-society/mida/martin-christof-fuechsle",
+          "kind": "project"
+        },
+        {
+          "title": "State of Tranquillity? Affect, Atmosphere and Violence in Early Colonial Bengal",
+          "url": "https://www.zmo.de/en/research/state-and-society/mida/jannes-thode",
+          "kind": "project"
+        },
+        {
+          "title": "Crafting Entanglements: Afro-Asian Pasts of the Global Cold War (CRAFTE)",
+          "url": null,
+          "kind": "umbrella"
+        },
+        {
+          "title": "Entangled Wavelengths: International Radio Broadcasters & their Afro-Asian Listening Publics",
+          "url": "https://www.zmo.de/en/research/state-and-society/crafte/anandita-bajpai",
+          "kind": "project"
+        },
+        {
+          "title": "The Global South and the Global Cold War in Berlin – the Divided City as a Locale for African-Asian-Solidarities",
+          "url": "https://www.zmo.de/en/research/state-and-society/crafte/maria-ketzmerick-calandrino",
+          "kind": "project"
+        },
+        {
+          "title": "Women's Internationalism(s) and Afro-Asian Networks: Cultural politics and Cold War in India",
+          "url": "https://www.zmo.de/en/research/state-and-society/crafte/tamalika-roy",
+          "kind": "project"
+        },
+        {
+          "title": "Lived Socialism: On the Deployment of the FDJ Friendship Brigades of the Former GDR in Algeria 1964–1989: Development Aid, Socialism, and Diplomacy",
+          "url": "https://www.zmo.de/en/forschung/staat-und-gesellschaft/crafte/said-djadoun",
+          "kind": "project"
+        },
+        {
+          "title": "In Pursuit of ‘Legality’ and ‘Justice’. Minority Struggles in the Russian Empire and the Soviet Union",
+          "url": null,
+          "kind": "umbrella"
+        },
+        {
+          "title": "Russian Colonialism, Georgian Jews, and Blood Libel in the Late Imperial Caucasus, 1850- 1914",
+          "url": "https://www.zmo.de/en/research/state-and-society/justimino/stefan-kirmse",
+          "kind": "project"
+        },
+        {
+          "title": "‘Traditional Crime’ in Central Asia: Bride-kidnapping and the Payment of Kalym in Long-Term Perspective, 1860s-Present",
+          "url": "https://www.zmo.de/en/research/state-and-society/justimino/stefan-kirmse-ii",
+          "kind": "project"
+        },
+        {
+          "title": "Legal Nationalism: Strategies of Seeking Justice in Post-Stalinist Armenian SSR",
+          "url": "https://www.zmo.de/en/research/state-and-society/justimino/gevorg-avetikyan",
+          "kind": "project"
+        },
+        {
+          "title": "Return to Norms: Stefania Shabatura and the Ukrainian Shistdesiatnyky",
+          "url": "https://www.zmo.de/en/research/state-and-society/justimino/lucien-turczan-lipets",
+          "kind": "project"
+        },
+        {
+          "title": "Muslim Parliamentary Groups in the Russian State Duma, 1906–1916",
+          "url": "https://www.zmo.de/en/research/state-and-society/justimino/leo-hedrich",
+          "kind": "project"
+        },
+        {
+          "title": "From Revolutionary to Socialist Legality: Georgian Perspectives",
+          "url": "https://www.zmo.de/en/research/state-and-society/justimino/katie-sartania",
+          "kind": "project"
+        },
+        {
+          "title": "Russian–Ottoman Relations and the Karaite Question in Late Imperial Russia",
+          "url": "https://www.zmo.de/en/research/state-and-society/justimino/aikaterini-lykoudi",
+          "kind": "project"
+        },
+        {
+          "title": "Timely Histories: A Social History of Time in South Asia",
+          "url": null,
+          "kind": "umbrella"
+        },
+        {
+          "title": "South Asian Nights: A History",
+          "url": "https://www.zmo.de/en/research/state-and-society/timely-histories/nitin-sinha",
+          "kind": "project"
+        },
+        {
+          "title": "Time and Delay: Gendered Temporalities in Bengal in the 19th and 20th Centuries",
+          "url": "https://www.zmo.de/en/research/state-and-society/timely-histories/sagnik-kar",
+          "kind": "project"
+        },
+        {
+          "title": "Light and Nocturnal-time: Materiality and Material Practices of Early Modern Nights in Mughal South Asia",
+          "url": "https://www.zmo.de/en/research/state-and-society/timely-histories/amrita-chattopadhyay",
+          "kind": "project"
+        },
+        {
+          "title": "The Economy of Hip-Hop Music Production in Bishkek, Kyrgyzstan (1990s–2021)",
+          "url": "https://www.zmo.de/en/research/state-and-society/florian-coppenrath",
+          "kind": "project"
+        },
+        {
+          "title": "Relicts of (Another) Future? – The Afterlife of the Socialist City in Central Asia and the Southern Caucasus",
+          "url": "https://www.zmo.de/en/research/state-and-society/david-leupold",
+          "kind": "project"
+        },
+        {
+          "title": "A Tale of Two Narratives: Deliberative Systems in Egypt during the French Military Campaign of 1798–1801 and the Inception of the Modern Middle East",
+          "url": "https://www.zmo.de/en/research/state-and-society/robin-schmahl",
+          "kind": "project"
+        },
+        {
+          "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
+          "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart",
+          "kind": "project"
+        },
+        {
+          "title": "After Authoritarianism: How Political Thinking Travels With Syrians to Germany and Denmark",
+          "url": "https://www.zmo.de/en/research/state-and-society/birgitte-holst",
+          "kind": "project"
+        }
+      ]
+    },
+    {
+      "stem": "Lives_Ecologies",
+      "slug": "lives-and-ecologies",
+      "label": "Lives and Ecologies",
+      "url": "https://www.zmo.de/en/research/lives-and-ecologies",
+      "projects": [
+        {
+          "title": "Revisions of Rurality: Ecology, Conflict and Violence in a Changing Middle East",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/katharina-lange",
+          "kind": "project"
+        },
+        {
+          "title": "The Dream of Stability: Egyptian Migrations and Homes in the Age of Growth",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/samuli-schielke",
+          "kind": "project"
+        },
+        {
+          "title": "Future Building in Central Asia: Intergenerational Cooperation, Infrastructure, and Translocal Mobilities",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/aksana-ismailbekova",
+          "kind": "project"
+        },
+        {
+          "title": "Migrant arrival contexts in transregional comparison. Local figurations and differing collective histories of Assyrians/Arameans in Germany and Jordan",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/johannes-becker-orhan-nassif",
+          "kind": "project"
+        },
+        {
+          "title": "In the Company of Plants: Multispecies Care and Migrant Home-making in Germany (DFG)",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/hilal-alkan",
+          "kind": "project"
+        },
+        {
+          "title": "Slavery and Post-Slavery in South Yemen under British rule (FWF Erwin Schrödinger)",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/magdalena-moorthy-kloss",
+          "kind": "project"
+        },
+        {
+          "title": "Beyond Humanitarianism: Disability Care and Belonging of Afghan Veterans in Iran (DFG)",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/ahmad-moradi",
+          "kind": "project"
+        },
+        {
+          "title": "Oil, Decolonisation and the ‘Great Acceleration’: A Translocal History of Oil Refining and Environmental Justice in the Western Indian Ocean",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/mattin-biglari",
+          "kind": "project"
+        },
+        {
+          "title": "Highly-Qualified Syrian Circassian Refugees in Multicultural Capitals of Amsterdam and Berlin: Challenges and Opportunities (Gerda Henkel Foundation)",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/erguen-oezguer",
+          "kind": "project"
+        },
+        {
+          "title": "Fisherfolk of the Steppe: Water, Resource Use, and Environmental Transformation in Kazakhstan, 1950s–Present",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/anna-safronova",
+          "kind": "project"
+        },
+        {
+          "title": "Bahari yetu (Our ocean/genre) – A Matrifocal Anthropological Study of Oral Archives and Embodied Knowledge Practices Along the Swahili Coast",
+          "url": "https://www.zmo.de/en/research/lives-ecology/jasmin-mahazi-lives-and-ecologies",
+          "kind": "project"
+        },
+        {
+          "title": "Knowledge, Temporalities and Questions of Justice. Negotiating Coastal Futures in West Africa in Times of Climate Change",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/juliane-schumacher",
+          "kind": "project"
+        }
+      ]
+    },
+    {
+      "stem": "Religion-Intellectual-Culture",
+      "slug": "religion-and-intellectual-culture",
+      "label": "Religion and Intellectual Culture",
+      "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture",
+      "projects": [
+        {
+          "title": "Boko: Europe, Intellectualism and Religiosity in Hausa Context",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/abdoulaye-sounaye",
+          "kind": "project"
+        },
+        {
+          "title": "Contested Knowledge, Sociality, and Religion: Intellectual Culture Under Postcolonial Conditions on the Swahili Coast and Beyond",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/kai-kresse",
+          "kind": "project"
+        },
+        {
+          "title": "The 'Omani Enlightenment': Circulation of Ideas and the Cultivation of Critical Thought in the Sultanate of Oman",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/mehdi-ayachi",
+          "kind": "project"
+        },
+        {
+          "title": "In Search of a ‘New Orthodoxy': Islamic Education in Post-Soviet Tatarstan",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/leila-almazova",
+          "kind": "project"
+        },
+        {
+          "title": "Hassan Heshmat – A Decolonial Artist, Then and Now",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/sonja-hegasy",
+          "kind": "project"
+        },
+        {
+          "title": "When Anonymity is No Longer Enough: 'Fictionalization' as a New Way of Writing Ethnography in the Age of Digital Surveillance",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/max-kramer",
+          "kind": "project"
+        },
+        {
+          "title": "The Ghadames Heritage Project",
+          "url": null,
+          "kind": "umbrella"
+        },
+        {
+          "title": "The Contending Political Theologies of Pakistan’s Transnational Islamic Actors: A Comparison of Mainstream Deobandi Discourses and Militant Islamism",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/sohaib-ali",
+          "kind": "project"
+        },
+        {
+          "title": "Ethics in the Realist Idealism of Rabat School: Al-Fassi, Lahbabi, and Taha",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/mohammed-hashas",
+          "kind": "project"
+        },
+        {
+          "title": "Preaching and Teaching: Religiosity, Knowledge and Performance at the Université Abdou Moumouni de Niamey, Niger",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/vincent-favier",
+          "kind": "project"
+        },
+        {
+          "title": "The Kano Mind: The Formation of a Modern Hybrid Muslim Elite, its World View, and its Social Cultural Influence on Kano Muslim Society c. 1945-2003",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/muhammad-abubakar-yakasai",
+          "kind": "project"
+        },
+        {
+          "title": "Memorialization of Holy Wars: Commemorative Practices and Memorial Policies in Morocco and Spain",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/manal-jadir",
+          "kind": "project"
+        },
+        {
+          "title": "Digital Humanities and Artificial Intelligence in African Studies",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/frederick-madore",
+          "kind": "project"
+        },
+        {
+          "title": "Shāfiʿī Commentaries and Translocal Scholarly Dynamics: Between the Mamluk Sultanate and the Bū Saʿīdī Swahili Coast",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/mohamed-noor",
+          "kind": "project"
+        },
+        {
+          "title": "VR Islam? Systems of Sensory Perception in Virtual Reality and the Prospects of Virtual Devotion in Islam",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/fouad-gehad-marei",
+          "kind": "project"
+        },
+        {
+          "title": "Islam West Africa Collection",
+          "url": null,
+          "kind": "umbrella"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,11 @@
-# Data preparation pipeline (data_prep/generate_word_data.py).
-# The web app has no build step and no Node dependencies.
-#
+# Data preparation pipeline (data_prep/). The web app itself has no build step
+# and no Node dependencies.
+
+# scrape_zmo.py — fetch research-unit and project text from zmo.de
+requests==2.34.2
+beautifulsoup4==4.15.0
+
+# generate_word_data.py — tokenise, lemmatise, count.
 # NLTK >= 3.9 requires the `punkt_tab` tokenizer tables rather than the older
 # pickled `punkt` model; the generator downloads both.
 nltk==3.10.0

@@ -31,6 +31,7 @@ DEFAULT_INPUT_DIR = SCRIPT_DIR / "raw_data"
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "units_wordcloud" / "data"
 
 COMBINED_NAME = "combined"
+MANIFEST_NAME = "units.json"
 
 # Terms common to every unit's description; they crowd out the distinctive
 # vocabulary the cloud is meant to surface.
@@ -87,6 +88,28 @@ class TextProcessor:
             and len(token) >= self.min_length
             and token not in self.stop_words
         ]
+
+
+def read_unit_stems(input_dir: Path) -> set[str] | None:
+    """Return the file stems that are research units, per the scraper manifest.
+
+    ``scrape_zmo.py`` records which files it produced. Only those contribute to
+    the ``combined`` aggregate, so text that lives in ``raw_data/`` without
+    coming from a research-unit page — a workshop description, say — still gets
+    its own word cloud but does not dilute "All Research Units".
+
+    Returns None when no manifest is present, in which case every file counts.
+    """
+    manifest_path = input_dir / MANIFEST_NAME
+    if not manifest_path.is_file():
+        return None
+
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        return {unit["stem"] for unit in manifest["units"]}
+    except (json.JSONDecodeError, KeyError, TypeError) as error:
+        print(f"warning: ignoring unreadable {manifest_path.name}: {error}", file=sys.stderr)
+        return None
 
 
 def write_frequencies(counter: Counter, output_path: Path, top_n: int) -> int:
@@ -151,19 +174,27 @@ def main(argv: list[str] | None = None) -> int:
     ensure_corpora()
     processor = TextProcessor(language=args.language, min_length=args.min_length)
 
+    unit_stems = read_unit_stems(args.input_dir)
     combined: Counter = Counter()
+    combined_sources = 0
 
     for source in sources:
         tokens = processor.process(source.read_text(encoding="utf-8"))
-        combined.update(tokens)
+
+        in_combined = unit_stems is None or source.stem in unit_stems
+        if in_combined:
+            combined.update(tokens)
+            combined_sources += 1
 
         output_path = args.output_dir / f"{source.stem}_word_frequencies.json"
         written = write_frequencies(Counter(tokens), output_path, args.top_n)
-        print(f"{source.name:<40} {len(tokens):>6} tokens -> {written:>3} words  {output_path.name}")
+        flag = "" if in_combined else "  (not a research unit; excluded from combined)"
+        print(f"{source.name:<40} {len(tokens):>6} tokens -> {written:>3} words  {output_path.name}{flag}")
 
     combined_path = args.output_dir / f"{COMBINED_NAME}_word_frequencies.json"
     written = write_frequencies(combined, combined_path, args.top_n)
-    print(f"{'(all sources)':<40} {sum(combined.values()):>6} tokens -> {written:>3} words  {combined_path.name}")
+    label = f"(combined: {combined_sources} unit(s))"
+    print(f"{label:<40} {sum(combined.values()):>6} tokens -> {written:>3} words  {combined_path.name}")
 
     print(f"\nWrote {len(sources) + 1} files to {args.output_dir}")
     print(

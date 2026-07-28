@@ -10,6 +10,9 @@ Available in English and French.
 - **Live pages:** `units_wordcloud/en/` and `units_wordcloud/fr/`
 - **No build step.** The front end is plain ES modules, loaded directly by the
   browser. There is no bundler, no `package.json`, and no `npm install`.
+- **Data is scraped from [zmo.de](https://www.zmo.de/), not maintained by hand.**
+  Two Python scripts fetch each unit's abstract and every project abstract, then
+  reduce them to word frequencies. See [Regenerating the data](#regenerating-the-data).
 
 ---
 
@@ -17,8 +20,10 @@ Available in English and French.
 
 ```
 data_prep/                   Offline data pipeline (Python)
+  scrape_zmo.py              zmo.de -> text
   generate_word_data.py      Text -> word-frequency JSON
   raw_data/                  One .txt file per research unit (pipeline input)
+    units.json               Manifest of what the scraper collected
 
 units_wordcloud/             The web app (static; this is what gets deployed)
   index.html                 Language-detecting redirect
@@ -74,19 +79,68 @@ still renders a usable page.
 ## Regenerating the data
 
 The word frequencies are produced offline and committed, so the deployed site
-needs no server-side processing.
+needs no server-side processing. There are two stages: fetch the text from
+zmo.de, then turn it into frequencies.
 
 ```bash
 python -m venv .venv
 .venv/Scripts/activate        # Windows;  source .venv/bin/activate elsewhere
 pip install -r requirements.txt
-python data_prep/generate_word_data.py
+
+python data_prep/scrape_zmo.py            # zmo.de   -> data_prep/raw_data/*.txt
+python data_prep/generate_word_data.py    # raw_data -> units_wordcloud/data/*.json
 ```
 
-The script reads every `.txt` file in `data_prep/raw_data/`, and for each one
-writes `units_wordcloud/data/<Name>_word_frequencies.json` — that is, straight
-into the directory the app loads from, under the exact filename it expects. It
-also writes `combined_word_frequencies.json` aggregating every source file.
+Run the first stage when the website changes and the second whenever the text
+does. Keeping the `.txt` files under version control means a scrape produces a
+readable diff of exactly what changed on the site.
+
+### Stage 1 — `scrape_zmo.py`
+
+For each of the three research units this reads the unit's overview page and
+collects:
+
+* the unit's title and abstract;
+* every project listed under **Research Projects**, following each link to its
+  own page for the abstract;
+* the inline descriptions of umbrella projects such as MIDA, CRAFTE and
+  JUSTIMINO, which are printed on the listing page rather than linked. These are
+  easy to miss — extracting only the linked projects silently drops several
+  hundred words per unit.
+
+Researcher bylines are dropped so personal names do not become word-cloud terms.
+Output is one paragraph per line with blank lines between, matching the format
+the files previously maintained by hand used.
+
+```bash
+python data_prep/scrape_zmo.py --dry-run                      # report, write nothing
+python data_prep/scrape_zmo.py --only lives-and-ecologies     # one unit
+python data_prep/scrape_zmo.py --cache-dir /tmp/zmo-html      # reuse downloads
+```
+
+The scraper requests one page at a time with a delay between requests and
+identifies itself in the `User-Agent`. It **fails loudly** if a page yields no
+abstract or no projects: the `bb-*` selectors it relies on come from the site's
+TYPO3 theme, so a redesign should produce a visible error rather than a quietly
+shrinking word cloud.
+
+Unit slugs and their filenames are listed in `UNITS` at the top of the script.
+A filename stem is also the `value` of an entry in `ConfigManager.js` and the
+prefix of a file in `units_wordcloud/data/`, so renaming one means changing all
+three.
+
+### Stage 2 — `generate_word_data.py`
+
+Reads every `.txt` file in `data_prep/raw_data/`, and for each one writes
+`units_wordcloud/data/<Name>_word_frequencies.json` — straight into the
+directory the app loads from, under the exact filename it expects. It also
+writes `combined_word_frequencies.json`.
+
+Only files listed in `raw_data/units.json` (written by the scraper) feed the
+combined aggregate. Text that lives in `raw_data/` without coming from a
+research-unit page — `Workshop.txt`, a workshop description written by hand —
+still gets its own frequency file but stays out of "All Research Units". Delete
+the manifest and every file counts again.
 
 Processing per file: lowercase, tokenise, drop stopwords (NLTK's English list
 plus a project-specific list of terms common to every unit), drop non-alphabetic
@@ -100,11 +154,6 @@ python data_prep/generate_word_data.py --exclude Workshop
 python data_prep/generate_word_data.py --output-dir /tmp/preview
 ```
 
-> **Note on `combined`.** By default every `.txt` file in `raw_data/`
-> contributes to `combined_word_frequencies.json`, including `Workshop.txt`,
-> which is not one of the three research units offered in the UI. Pass
-> `--exclude Workshop` if the combined view should cover research units only.
-
 ### NLTK corpora
 
 The script downloads what it needs on first run. NLTK 3.9 replaced the pickled
@@ -116,8 +165,13 @@ latter, so both are requested; a run that fetches only `punkt` fails with
 
 ## Adding a research unit
 
-1. Put the unit's text in `data_prep/raw_data/<Unit_Name>.txt`.
-2. Run the generator. It writes `units_wordcloud/data/<Unit_Name>_word_frequencies.json`.
+1. Add the unit to `UNITS` in
+   [`data_prep/scrape_zmo.py`](data_prep/scrape_zmo.py) — its URL slug on
+   zmo.de and the filename stem to write. (For text that is not on the website,
+   drop a `.txt` file into `data_prep/raw_data/` by hand instead; it will get
+   its own word cloud but stay out of `combined`.)
+2. Run both stages. They write `data_prep/raw_data/<Unit_Name>.txt` and then
+   `units_wordcloud/data/<Unit_Name>_word_frequencies.json`.
 3. Add the unit to `groups.items` in
    [`units_wordcloud/src/config/ConfigManager.js`](units_wordcloud/src/config/ConfigManager.js):
 

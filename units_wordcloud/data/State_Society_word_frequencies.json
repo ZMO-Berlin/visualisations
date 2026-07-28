@@ -1,18 +1,18 @@
 [
   {
     "text": "history",
-    "size": 31
-  },
-  {
-    "text": "state",
-    "size": 29
+    "size": 36
   },
   {
     "text": "social",
-    "size": 28
+    "size": 27
   },
   {
     "text": "focus",
+    "size": 26
+  },
+  {
+    "text": "south",
     "size": 26
   },
   {
@@ -20,19 +20,19 @@
     "size": 25
   },
   {
-    "text": "south",
+    "text": "state",
     "size": 24
   },
   {
-    "text": "political",
-    "size": 22
-  },
-  {
     "text": "soviet",
-    "size": 22
+    "size": 23
   },
   {
     "text": "time",
+    "size": 22
+  },
+  {
+    "text": "local",
     "size": 21
   },
   {
@@ -40,83 +40,123 @@
     "size": 21
   },
   {
-    "text": "role",
+    "text": "historical",
+    "size": 19
+  },
+  {
+    "text": "practice",
+    "size": 19
+  },
+  {
+    "text": "city",
+    "size": 19
+  },
+  {
+    "text": "modern",
     "size": 18
   },
   {
-    "text": "group",
+    "text": "role",
     "size": 17
   },
   {
-    "text": "historical",
+    "text": "global",
     "size": 17
   },
   {
-    "text": "local",
-    "size": 17
-  },
-  {
-    "text": "international",
-    "size": 17
-  },
-  {
-    "text": "culture",
-    "size": 17
-  },
-  {
-    "text": "russian",
+    "text": "indian",
     "size": 17
   },
   {
     "text": "woman",
+    "size": 17
+  },
+  {
+    "text": "group",
     "size": 16
   },
   {
-    "text": "network",
-    "size": 15
+    "text": "political",
+    "size": 16
   },
   {
-    "text": "actor",
-    "size": 15
+    "text": "past",
+    "size": 16
   },
   {
     "text": "different",
     "size": 15
   },
   {
-    "text": "indian",
+    "text": "work",
     "size": 15
   },
   {
-    "text": "practice",
-    "size": 14
-  },
-  {
-    "text": "justice",
-    "size": 14
-  },
-  {
-    "text": "work",
-    "size": 14
-  },
-  {
     "text": "national",
+    "size": 15
+  },
+  {
+    "text": "music",
+    "size": 15
+  },
+  {
+    "text": "international",
     "size": 14
   },
   {
-    "text": "gdr",
+    "text": "russian",
+    "size": 14
+  },
+  {
+    "text": "network",
     "size": 13
   },
   {
-    "text": "modern",
+    "text": "well",
+    "size": 13
+  },
+  {
+    "text": "justice",
+    "size": 13
+  },
+  {
+    "text": "question",
+    "size": 13
+  },
+  {
+    "text": "india",
+    "size": 13
+  },
+  {
+    "text": "explores",
+    "size": 13
+  },
+  {
+    "text": "material",
+    "size": 13
+  },
+  {
+    "text": "space",
+    "size": 13
+  },
+  {
+    "text": "empire",
+    "size": 13
+  },
+  {
+    "text": "cold",
+    "size": 13
+  },
+  {
+    "text": "war",
+    "size": 13
+  },
+  {
+    "text": "memory",
     "size": 12
   },
   {
-    "text": "cultural",
-    "size": 12
-  },
-  {
-    "text": "violence",
+    "text": "early",
     "size": 12
   },
   {
@@ -124,15 +164,27 @@
     "size": 12
   },
   {
-    "text": "solidarity",
-    "size": 12
-  },
-  {
-    "text": "explores",
+    "text": "actor",
     "size": 11
   },
   {
-    "text": "early",
+    "text": "culture",
+    "size": 11
+  },
+  {
+    "text": "central",
+    "size": 11
+  },
+  {
+    "text": "late",
+    "size": 11
+  },
+  {
+    "text": "aim",
+    "size": 11
+  },
+  {
+    "text": "new",
     "size": 11
   },
   {
@@ -140,11 +192,15 @@
     "size": 11
   },
   {
-    "text": "city",
+    "text": "entanglement",
     "size": 11
   },
   {
-    "text": "war",
+    "text": "archive",
+    "size": 11
+  },
+  {
+    "text": "affect",
     "size": 11
   },
   {
@@ -152,59 +208,47 @@
     "size": 11
   },
   {
-    "text": "movement",
+    "text": "kyrgyzstan",
+    "size": 11
+  },
+  {
+    "text": "market",
+    "size": 11
+  },
+  {
+    "text": "explore",
     "size": 10
   },
   {
-    "text": "context",
+    "text": "perspective",
     "size": 10
   },
   {
-    "text": "memory",
+    "text": "process",
     "size": 10
   },
   {
-    "text": "question",
+    "text": "century",
     "size": 10
   },
   {
-    "text": "central",
+    "text": "part",
     "size": 10
   },
   {
-    "text": "late",
+    "text": "case",
     "size": 10
   },
   {
-    "text": "material",
+    "text": "gdr",
     "size": 10
   },
   {
-    "text": "station",
+    "text": "cultural",
     "size": 10
   },
   {
-    "text": "aim",
-    "size": 10
-  },
-  {
-    "text": "legal",
-    "size": 10
-  },
-  {
-    "text": "global",
-    "size": 10
-  },
-  {
-    "text": "cold",
-    "size": 10
-  },
-  {
-    "text": "berlin",
-    "size": 10
-  },
-  {
-    "text": "temporal",
+    "text": "solidarity",
     "size": 10
   },
   {
@@ -212,11 +256,7 @@
     "size": 10
   },
   {
-    "text": "empire",
-    "size": 10
-  },
-  {
-    "text": "crimean",
+    "text": "armenian",
     "size": 10
   },
   {
@@ -224,19 +264,23 @@
     "size": 10
   },
   {
-    "text": "examines",
+    "text": "bishkek",
+    "size": 10
+  },
+  {
+    "text": "context",
     "size": 9
   },
   {
-    "text": "explore",
+    "text": "first",
     "size": 9
   },
   {
-    "text": "perspective",
+    "text": "colonial",
     "size": 9
   },
   {
-    "text": "india",
+    "text": "future",
     "size": 9
   },
   {
@@ -244,11 +288,15 @@
     "size": 9
   },
   {
-    "text": "part",
+    "text": "period",
     "size": 9
   },
   {
-    "text": "case",
+    "text": "urban",
+    "size": 9
+  },
+  {
+    "text": "berlin",
     "size": 9
   },
   {
@@ -256,23 +304,39 @@
     "size": 9
   },
   {
-    "text": "right",
+    "text": "geopolitical",
     "size": 9
   },
   {
-    "text": "armenian",
+    "text": "imperial",
     "size": 9
   },
   {
-    "text": "process",
+    "text": "legal",
+    "size": 9
+  },
+  {
+    "text": "examines",
     "size": 8
   },
   {
-    "text": "colonial",
+    "text": "relationship",
     "size": 8
   },
   {
-    "text": "century",
+    "text": "community",
+    "size": 8
+  },
+  {
+    "text": "change",
+    "size": 8
+  },
+  {
+    "text": "station",
+    "size": 8
+  },
+  {
+    "text": "system",
     "size": 8
   },
   {
@@ -280,31 +344,35 @@
     "size": 8
   },
   {
-    "text": "framework",
-    "size": 8
-  },
-  {
-    "text": "experience",
-    "size": 8
-  },
-  {
     "text": "everyday",
     "size": 8
   },
   {
-    "text": "tatar",
+    "text": "field",
     "size": 8
   },
   {
-    "text": "imperial",
+    "text": "relation",
     "size": 8
   },
   {
-    "text": "strategy",
+    "text": "violence",
     "size": 8
   },
   {
-    "text": "ukrainian",
+    "text": "british",
+    "size": 8
+  },
+  {
+    "text": "power",
+    "size": 8
+  },
+  {
+    "text": "trajectory",
+    "size": 8
+  },
+  {
+    "text": "world",
     "size": 8
   },
   {
@@ -312,11 +380,15 @@
     "size": 8
   },
   {
-    "text": "form",
+    "text": "production",
+    "size": 8
+  },
+  {
+    "text": "order",
     "size": 7
   },
   {
-    "text": "well",
+    "text": "approach",
     "size": 7
   },
   {
@@ -324,79 +396,7 @@
     "size": 7
   },
   {
-    "text": "past",
+    "text": "individual",
     "size": 7
-  },
-  {
-    "text": "temporality",
-    "size": 7
-  },
-  {
-    "text": "change",
-    "size": 7
-  },
-  {
-    "text": "investigates",
-    "size": 7
-  },
-  {
-    "text": "period",
-    "size": 7
-  },
-  {
-    "text": "new",
-    "size": 7
-  },
-  {
-    "text": "relation",
-    "size": 7
-  },
-  {
-    "text": "translation",
-    "size": 7
-  },
-  {
-    "text": "structure",
-    "size": 7
-  },
-  {
-    "text": "trace",
-    "size": 7
-  },
-  {
-    "text": "trajectory",
-    "size": 7
-  },
-  {
-    "text": "union",
-    "size": 7
-  },
-  {
-    "text": "labour",
-    "size": 7
-  },
-  {
-    "text": "programme",
-    "size": 6
-  },
-  {
-    "text": "particular",
-    "size": 6
-  },
-  {
-    "text": "transformation",
-    "size": 6
-  },
-  {
-    "text": "order",
-    "size": 6
-  },
-  {
-    "text": "first",
-    "size": 6
-  },
-  {
-    "text": "idea",
-    "size": 6
   }
 ]
