@@ -1,0 +1,129 @@
+name: Update publication data
+
+# Re-crawls the ZMO publication register and regenerates the dashboard dataset.
+# Pushing to main also republishes the GitHub Pages site, which is served from
+# this branch.
+
+on:
+  schedule:
+    # 05:00 UTC on the 1st of each month — an hour after the word cloud refresh,
+    # so the two jobs never try to push to main at the same time.
+    - cron: '0 5 1 * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Crawl and report, but do not commit'
+        type: boolean
+        default: false
+      refresh_all:
+        description: 'Refetch every detail page instead of reusing cached records'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# Never let two refreshes race each other onto main.
+concurrency:
+  group: update-publication-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    # A top-up run is ~200 requests and about five minutes. A --refresh-all run
+    # fetches ~2,400 pages at one every half second and takes about thirty; the
+    # default 6-hour limit covers it, but this keeps a hung crawl from burning
+    # them.
+    timeout-minutes: 90
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7.0.0
+        with:
+          # Pinned to the version the pipeline is developed against.
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # The committed publications.json is the cache: a publication whose
+      # listing entry is unchanged keeps the record already on disk instead of
+      # having its detail page fetched again.
+      - name: Crawl the publication register
+        run: |
+          python data_prep/scrape_publications.py \
+            ${{ inputs.refresh_all && '--refresh-all' || '' }}
+
+      - name: Generate the dashboard dataset
+        run: python data_prep/generate_publication_data.py
+
+      # The scraper aborts if a listing page yields nothing at all, but it
+      # cannot tell that the register returned *fewer* publications than before.
+      # A large drop means the site was restructured and the selectors are only
+      # partly matching, so fail rather than commit a hollowed-out dataset.
+      - name: Check the register did not collapse
+        run: |
+          python - <<'PY'
+          import json, subprocess, sys
+          from pathlib import Path
+
+          THRESHOLD = 0.9  # fail if fewer than 90% of the previous records survive
+          path = Path("data_prep/raw_data/publications.json")
+
+          previous = subprocess.run(
+              ["git", "show", f"HEAD:{path.as_posix()}"], capture_output=True
+          )
+          if previous.returncode != 0:
+              print(f"{path.name}: new file, skipping check")
+              sys.exit(0)
+
+          before = len(json.loads(previous.stdout.decode("utf-8"))["publications"])
+          after = len(json.loads(path.read_text(encoding="utf-8"))["publications"])
+          ratio = after / before if before else 1.0
+          print(f"{path.name}: {before} -> {after} publications ({ratio:.0%})")
+
+          if before and ratio < THRESHOLD:
+              print(f"\nRefusing to commit: the register kept only {ratio:.0%} of its records")
+              sys.exit(1)
+          PY
+
+      - name: Summarise changes
+        id: changes
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes: the register is unchanged since the last run." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "### Files changed"
+              echo ''
+              echo '```'
+              git status --porcelain
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true' && inputs.dry_run != true
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Refresh publication data from zmo.de' \
+                     -m 'Automated monthly run of data_prep/scrape_publications.py and data_prep/generate_publication_data.py.'
+          # Rebase before pushing: the word cloud refresh writes to the same
+          # branch, and a long crawl can outlast the gap between the two jobs.
+          git pull --rebase origin main
+          git push
+
+      - name: Report dry run
+        if: steps.changes.outputs.changed == 'true' && inputs.dry_run == true
+        run: |
+          echo 'Dry run: changes were produced but not committed.' >> "$GITHUB_STEP_SUMMARY"

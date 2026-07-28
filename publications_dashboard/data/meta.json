@@ -1,0 +1,24 @@
+{
+ "source": "https://www.zmo.de/en/publications/publication-search",
+ "documentTypes": [
+  "Monographs",
+  "Book reviews",
+  "Contributions to an edited volume",
+  "Editorship of journal, book series",
+  "Edited volumes",
+  "Journal articles",
+  "Other publications",
+  "Special Issues",
+  "Working Papers"
+ ],
+ "counts": {
+  "publications": 1962,
+  "authors": 656,
+  "untyped": 35,
+  "withoutYear": 9
+ },
+ "years": {
+  "min": 1994,
+  "max": 2026
+ }
+}

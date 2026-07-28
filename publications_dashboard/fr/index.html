@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications du ZMO</title>
+    <meta name="description" content="Aperçu interactif des publications du répertoire du ZMO, par année, type de document, auteur et support.">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <!--
+        d3 sert à une seule chose : la disposition en forces du graphe de
+        co-publication. Même version et même empreinte d'intégrité que
+        l'application de nuage de mots, afin qu'un visiteur des deux ne la
+        télécharge qu'une fois.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"
+            integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <main class="dashboard">
+        <header id="header" class="header"></header>
+        <div id="summary" class="summary"></div>
+        <div id="filters" class="filters"></div>
+        <div id="status" role="status" aria-live="polite"></div>
+        <div id="panels" class="panels" hidden></div>
+        <footer id="source"></footer>
+    </main>
+    <script type="module" src="../src/main.js"></script>
+</body>
+</html>

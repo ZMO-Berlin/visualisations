@@ -1,0 +1,81 @@
+{
+  "_readme": [
+    "Hand-curated spelling merges for generate_publication_data.py.",
+    "",
+    "The generator already folds together spellings that differ only by case,",
+    "punctuation, spacing or a leading article, and given names that are a",
+    "prefix of exactly one longer form. This file is for the rest: real typos,",
+    "renamed venues and imprint variants, where no rule can tell a misspelling",
+    "from a different entity without knowing the field.",
+    "",
+    "Each entry maps a variant to the form to keep. Add one only when the two",
+    "are certainly the same thing. Near-identical names that are NOT the same,",
+    "and must stay apart, include:",
+    "  'Journal for Islamic Studies' (Cape Town) vs 'Journal of Islamic Studies' (Oxford)",
+    "  'Islam in Africa' (book series) vs 'Islamic Africa' (journal)",
+    "  'Journal of Global History' vs 'Journal of Social History'",
+    "  'The Journal of Modern African Studies' vs 'The Journal of North African Studies'",
+    "  'Springer' vs 'Springer VS' — distinct imprints of one group",
+    "  'Oxford University Press' vs 'Oxford University Press Pakistan' — likewise",
+    "  'Africa' vs 'Africa Today' vs 'Africa Spectrum' — three different journals"
+  ],
+
+  "authors": {
+    "Determann, Jörg Mathias": "Determann, Jörg Matthias",
+    "Mende-Altayli, Rana von": "Mende-Altaylı, Rana von",
+    "Abou-bakr, Randa": "Aboubakr, Randa",
+    "Hamzah, Dyalah": "Hamzah, Dyala",
+    "Debevec, Lisa": "Debevec, Liza",
+    "Cicek, Talha": "Çiçek, M. Talha",
+    "Schulz, Dorothea Schulz": "Schulz, Dorothea"
+  },
+
+  "journals": {
+    "Journal for Religion in Africa": "Journal of Religion in Africa",
+    "Journal for Middle Eastern Women Studies": "Journal of Middle East Women's Studies",
+    "International Journal of Middle Eastern Studies": "International Journal of Middle East Studies",
+    "Indian Economic and Social History Review": "Indian Economic & Social History Review",
+    "AllegraLaboratory": "Allegra Laboratory",
+    "Leipziger Studien zu Kultur und Geschichte Su¨d- und Zentralasiens": "Leipziger Studien zu Kultur und Geschichte Süd und Zentralasiens",
+    "Social Anthropology/Anthropologie Social": "Social Anthropology/Anthropologie sociale",
+    "H-Soz-u-Kult": "H-Soz-Kult",
+    "Middle East – Topics and Arguments": "Middle East - Topics & Arguments",
+    "Northeast African Studies Journal": "Northeast African Studies",
+    "Qantara.de": "Qantara",
+    "Ethnos. Journal of Anthropology": "Ethnos",
+    "Ethnos: Journal of Anthropology": "Ethnos",
+    "American Anthropologist: Journal of the American Anthropological Association": "American Anthropologist",
+    "Africa : Journal of the International African Institute": "Africa",
+    "PAIDEUMA. Zeitschrift für kulturanthropologische Forschung": "Paideuma",
+    "History & Theory. Studies in the Philosophy of History": "History & Theory",
+    "Arabian Humanities. Revue internationale d’archéologie et de sciences sociales sur la péninsule Arabique": "Arabian Humanities",
+    "Geschichte und Gesellschaft, Geschichte und Gesellschaft": "Geschichte und Gesellschaft",
+    "Material Religion, Material religion": "Material Religion",
+    "Aus Politik und Zeitgeschichte (APuZ)": "Aus Politik und Zeitgeschichte"
+  },
+
+  "publishers": {
+    "Leibiz-Zentrum Moderner Orient": "Leibniz-Zentrum Moderner Orient",
+    "Routldege": "Routledge",
+    "Göttingen Univesity Press": "Göttingen University Press",
+    "transkript": "transcript",
+    "Orient Black Swan": "Orient Blackswan",
+    "University of Kwa Zulu-Natal": "University of KwaZulu-Natal",
+    "Berghahn": "Berghahn Books",
+    "Berghahn Books Ltd": "Berghahn Books",
+    "Campus": "Campus Verlag",
+    "Draupadi": "Draupadi Verlag",
+    "Peter Lang": "Peter Lang Verlag",
+    "James Currey Ltd": "James Currey",
+    "Edward Elgar": "Edward Elgar Publishing",
+    "Sefsafa": "Sefsafa Publishing House",
+    "Walter de Gruyter GmbH": "Walter de Gruyter",
+    "Deutsches Institut für Urbanistik gGmbH": "Deutsches Institut für Urbanistik",
+    "Ohio University Press.": "Ohio University Press",
+
+    "Friedrich Ebert Stiftung": "Friedrich-Ebert-Stiftung",
+    "Rosa Luxemburg Stiftung": "Rosa-Luxemburg-Stiftung"
+  },
+
+  "series": {}
+}

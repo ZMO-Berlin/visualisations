@@ -1,0 +1,287 @@
+/* Horizontal bars, the year timeline, and the co-authorship network. */
+
+/* Ranked bars */
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.bar {
+    display: grid;
+    /* Label column is fluid but capped, so long journal names cannot squeeze
+       the bars themselves down to nothing. */
+    grid-template-columns: minmax(6rem, 14rem) 1fr 2.5rem;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: 0.2rem var(--space-xs);
+    border-radius: var(--radius);
+    text-align: left;
+}
+
+.bar:hover {
+    background: var(--color-gray-50);
+}
+
+.bar__label {
+    font-size: 0.8125rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bar__track {
+    display: block;
+    height: 0.9rem;
+    background: var(--color-gray-100);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.bar__fill {
+    display: block;
+    height: 100%;
+    background: var(--color-bar);
+    transition: width 250ms ease, background-color 150ms ease;
+}
+
+.bar:hover .bar__fill {
+    background: var(--color-bar-hover);
+}
+
+.bar__count {
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.bar--selected .bar__fill,
+.bar--selected:hover .bar__fill {
+    background: var(--color-bar-selected);
+}
+
+.bar--selected .bar__label {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+/* Timeline */
+
+.timeline__columns {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    height: 240px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.column {
+    flex: 1 1 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    min-width: 3px;
+    padding: 0;
+}
+
+.column__stack {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    /* The gap is set inline by the component so the value stays with the rule
+       that explains it. */
+    transition: height 250ms ease;
+}
+
+.column__fill {
+    width: 100%;
+    min-height: 1px;
+    background: var(--color-bar);
+    transition: height 250ms ease, opacity 150ms ease;
+}
+
+/* Only the topmost segment is rounded, so a stack reads as one column. */
+.column__stack > .column__fill:last-child {
+    border-radius: 2px 2px 0 0;
+}
+
+.column:hover .column__fill {
+    opacity: 0.75;
+}
+
+.column--selected {
+    background: var(--color-accent-alpha);
+    border-radius: 2px;
+}
+
+/* Series colours. Assigned in order by the component; never cycled. */
+.series-1 { background: var(--series-1); }
+.series-2 { background: var(--series-2); }
+.series-3 { background: var(--series-3); }
+.series-4 { background: var(--series-4); }
+.series-5 { background: var(--series-5); }
+.series-6 { background: var(--series-6); }
+.series-7 { background: var(--series-7); }
+.series-8 { background: var(--series-8); }
+
+/* Legend, which doubles as the document-type filter */
+
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs) var(--space-md);
+    margin-top: var(--space-sm);
+}
+
+.legend__item {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: 0.15rem 0.3rem;
+    border-radius: var(--radius);
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+}
+
+.legend__item:hover {
+    background: var(--color-gray-50);
+    color: var(--color-text-primary);
+}
+
+.legend__item--selected {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.legend__swatch {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 2px;
+    flex: none;
+}
+
+.legend__item--selected .legend__swatch {
+    box-shadow: 0 0 0 2px var(--color-white), 0 0 0 3px var(--color-primary);
+}
+
+.timeline__axis {
+    position: relative;
+    height: 1.25rem;
+    margin-top: var(--space-xs);
+}
+
+.timeline__tick {
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 0.6875rem;
+    color: var(--color-text-light);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+/* Co-authorship network */
+
+.network {
+    width: 100%;
+    height: auto;
+    display: block;
+    touch-action: none;
+}
+
+.network__link {
+    stroke: var(--color-gray-300);
+    stroke-opacity: 0.7;
+}
+
+.network__node {
+    fill: var(--color-bar);
+    stroke: var(--color-white);
+    stroke-width: 1.5;
+    cursor: pointer;
+    transition: fill 150ms ease, opacity 150ms ease;
+}
+
+.network__node:hover {
+    fill: var(--color-primary);
+}
+
+.network__node--selected {
+    fill: var(--color-bar-selected);
+}
+
+.network__node--dimmed {
+    opacity: 0.35;
+}
+
+.network__label {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    fill: var(--color-text-secondary);
+    /* A white outline drawn *under* the glyphs keeps a name legible where it
+       crosses a link line. paint-order is what puts the stroke behind the
+       fill; without it the outline would be painted over the letters. */
+    paint-order: stroke;
+    stroke: var(--color-white);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    /* The circle underneath owns the hover and the click. */
+    pointer-events: none;
+}
+
+.network__label--selected {
+    fill: var(--color-accent-dark);
+    font-weight: 600;
+}
+
+.network__label--dimmed {
+    opacity: 0.3;
+}
+
+.network__footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-top: var(--space-sm);
+}
+
+/* Pager */
+
+.pager {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--space-sm);
+    margin-top: var(--space-sm);
+}
+
+.pager__button {
+    display: grid;
+    place-items: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    line-height: 1;
+    color: var(--color-primary);
+}
+
+.pager__button:hover:not(:disabled) {
+    background: var(--color-gray-50);
+    border-color: var(--color-border-hover);
+}
+
+.pager__button:disabled {
+    color: var(--color-gray-300);
+    cursor: default;
+}
+
+.pager__range {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    font-variant-numeric: tabular-nums;
+}

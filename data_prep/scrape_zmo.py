@@ -27,25 +27,26 @@ import argparse
 import json
 import re
 import sys
-import time
 from dataclasses import dataclass, field
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin
 
-import requests
-from bs4 import BeautifulSoup
+from zmo_site import (
+    BASE_URL,
+    USER_AGENT_SUFFIX,
+    Fetcher,
+    ScrapeError,
+    clean_text,
+    configure_console,
+    content_root,
+)
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_OUTPUT_DIR = SCRIPT_DIR / "raw_data"
 MANIFEST_NAME = "units.json"
 
-BASE_URL = "https://www.zmo.de"
-
 # Identify the crawler so ZMO can see what is hitting the site.
-USER_AGENT = (
-    "ZMO-WordCloud-Scraper/1.0 "
-    "(+https://github.com/fmadore/ZMO; research word-cloud data preparation)"
-)
+USER_AGENT = f"ZMO-WordCloud-Scraper/1.0 {USER_AGENT_SUFFIX}"
 
 
 @dataclass(frozen=True)
@@ -97,108 +98,9 @@ class Entry:
     paragraphs: list[str] = field(default_factory=list)
 
 
-class ScrapeError(RuntimeError):
-    """Raised when a page does not look the way the extractor expects.
-
-    The selectors below depend on the site's TYPO3 theme. If ZMO restyles the
-    site they will stop matching, and the failure has to be loud: silently
-    writing a shorter file would quietly shrink the word cloud instead of
-    reporting a problem.
-    """
-
-
-class Fetcher:
-    """HTTP client with a shared session, retries and a politeness delay."""
-
-    def __init__(self, delay: float = 0.5, timeout: float = 30.0, retries: int = 3,
-                 cache_dir: Path | None = None) -> None:
-        self.delay = delay
-        self.timeout = timeout
-        self.retries = retries
-        self.cache_dir = cache_dir
-        self.session = requests.Session()
-        self.session.headers["User-Agent"] = USER_AGENT
-        self._last_request = 0.0
-
-        if cache_dir:
-            cache_dir.mkdir(parents=True, exist_ok=True)
-
-    def get(self, url: str) -> str:
-        cached = self._cache_path(url)
-        if cached and cached.exists():
-            return cached.read_text(encoding="utf-8")
-
-        html = self._request(url)
-
-        if cached:
-            cached.write_text(html, encoding="utf-8")
-        return html
-
-    def _request(self, url: str) -> str:
-        last_error: Exception | None = None
-
-        for attempt in range(1, self.retries + 1):
-            self._throttle()
-            try:
-                response = self.session.get(url, timeout=self.timeout)
-                response.raise_for_status()
-                # Let requests honour the declared charset; the site serves UTF-8.
-                response.encoding = response.encoding or "utf-8"
-                return response.text
-            except requests.RequestException as error:
-                last_error = error
-                if attempt < self.retries:
-                    backoff = 2 ** (attempt - 1)
-                    print(f"  retry {attempt}/{self.retries - 1} in {backoff}s: {error}", file=sys.stderr)
-                    time.sleep(backoff)
-
-        raise ScrapeError(f"could not fetch {url}: {last_error}")
-
-    def _throttle(self) -> None:
-        elapsed = time.monotonic() - self._last_request
-        if elapsed < self.delay:
-            time.sleep(self.delay - elapsed)
-        self._last_request = time.monotonic()
-
-    def _cache_path(self, url: str) -> Path | None:
-        if not self.cache_dir:
-            return None
-        name = re.sub(r"[^A-Za-z0-9]+", "_", urlparse(url).path).strip("_") or "index"
-        return self.cache_dir / f"{name}.html"
-
-
-def content_root(html: str) -> BeautifulSoup:
-    """Return the indexable part of the page.
-
-    TYPO3 wraps editorial content in ``<!--TYPO3SEARCH_begin-->`` /
-    ``<!--TYPO3SEARCH_end-->`` for its own indexer. Slicing on those markers
-    drops the navigation, breadcrumb and footer, which otherwise contribute
-    hundreds of menu words to every page.
-    """
-    start = html.find("<!--TYPO3SEARCH_begin-->")
-    end = html.find("<!--TYPO3SEARCH_end-->")
-    fragment = html[start:end] if start >= 0 and end > start else html
-    return BeautifulSoup(fragment, "html.parser")
-
-
-# Zero-width and bidi marks appear in text pasted from Word into the CMS. They
-# are invisible but survive tokenisation, producing duplicate "word" entries
-# that differ only by an unprintable character.
-INVISIBLE_CHARS = dict.fromkeys(map(ord, "​‌‍⁠﻿‎‏"), None)
-
 # Academic titles that mark a byline rather than prose.
 BYLINE_PREFIX = re.compile(r"^(Dr\.|Prof\.|PD\b|Priv\.-Doz\.|Dipl\.)", re.IGNORECASE)
 BYLINE_MAX_WORDS = 12
-
-
-def clean_text(node) -> str:
-    """Flatten a node to a single normalised line.
-
-    A space separator keeps words apart across nested ``<strong>``/``<i>`` tags;
-    ``\\xa0`` comes from ``&nbsp;`` in the source.
-    """
-    text = node.get_text(" ", strip=True).translate(INVISIBLE_CHARS).replace("\xa0", " ")
-    return " ".join(text.split())
 
 
 def is_byline(paragraph, text: str) -> bool:
@@ -356,19 +258,6 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     return parser.parse_args(argv)
 
 
-def configure_console() -> None:
-    """Make stdout/stderr tolerate non-ASCII.
-
-    Project titles contain characters such as en-dashes and ‘ı’ that the
-    default Windows console codepage cannot encode, which would otherwise abort
-    the run with a UnicodeEncodeError partway through — from a progress message,
-    not from anything wrong with the data.
-    """
-    for stream in (sys.stdout, sys.stderr):
-        if hasattr(stream, "reconfigure"):
-            stream.reconfigure(encoding="utf-8", errors="replace")
-
-
 def main(argv: list[str] | None = None) -> int:
     configure_console()
     args = parse_args(argv)
@@ -385,7 +274,10 @@ def main(argv: list[str] | None = None) -> int:
             print("error: --only matched no units", file=sys.stderr)
             return 1
 
-    fetcher = Fetcher(delay=args.delay, timeout=args.timeout, cache_dir=args.cache_dir)
+    fetcher = Fetcher(
+        delay=args.delay, timeout=args.timeout, cache_dir=args.cache_dir,
+        user_agent=USER_AGENT,
+    )
     manifest_units = []
 
     try:

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZMO Publications</title>
+    <meta name="description" content="Interactive overview of the publications in the ZMO register, by year, document type, author and venue.">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <!--
+        d3 is used for one thing: the force layout behind the co-authorship
+        graph. Same version and integrity hash as the word cloud app, so a
+        visitor to both downloads it once.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"
+            integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <main class="dashboard">
+        <header id="header" class="header"></header>
+        <div id="summary" class="summary"></div>
+        <div id="filters" class="filters"></div>
+        <div id="status" role="status" aria-live="polite"></div>
+        <div id="panels" class="panels" hidden></div>
+        <footer id="source"></footer>
+    </main>
+    <script type="module" src="../src/main.js"></script>
+</body>
+</html>

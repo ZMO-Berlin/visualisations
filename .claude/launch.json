@@ -6,6 +6,12 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8000", "--directory", "units_wordcloud"],
       "port": 8000
+    },
+    {
+      "name": "publications",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8001", "--directory", "publications_dashboard"],
+      "port": 8001
     }
   ]
 }

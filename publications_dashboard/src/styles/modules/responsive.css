@@ -1,0 +1,60 @@
+/*
+ * Breakpoint overrides. Imported last so these win over the base layout.
+ */
+
+@media (max-width: 900px) {
+    .panels {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .summary__row {
+        gap: var(--space-lg);
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        padding: var(--space-md) var(--space-sm) var(--space-lg);
+    }
+
+    .header__title {
+        font-size: 1.375rem;
+    }
+
+    .panel {
+        padding: var(--space-md);
+    }
+
+    /* The label column is the first thing to give way on a narrow screen: the
+       bar and its number carry the comparison, the full label is in the
+       tooltip and the chip. */
+    .bar {
+        grid-template-columns: minmax(4rem, 8rem) 1fr 2rem;
+    }
+
+    .timeline__columns {
+        height: 160px;
+    }
+
+    .stat__value {
+        font-size: 1.375rem;
+    }
+}
+
+/* Print: the charts are the point, the controls are not. */
+@media print {
+    .filters,
+    .link-button,
+    .header__lang,
+    .tabs {
+        display: none;
+    }
+
+    .panels {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .panel {
+        break-inside: avoid;
+    }
+}

@@ -1,0 +1,31 @@
+/* The single floating label shared by the timeline and the network. */
+
+.tooltip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    max-width: 18rem;
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--radius);
+    font-size: 0.8125rem;
+    line-height: 1.35;
+    /* The tooltip follows the pointer, so it must never become the element the
+       pointer is over. */
+    pointer-events: none;
+    box-shadow: 0 2px 8px var(--color-shadow-hover);
+}
+
+.tooltip[hidden] {
+    display: none;
+}
+
+.tooltip__title {
+    font-weight: 600;
+}
+
+.tooltip__line {
+    color: var(--color-gray-200);
+}

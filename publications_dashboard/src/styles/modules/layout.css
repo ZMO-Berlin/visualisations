@@ -1,0 +1,172 @@
+/* Page frame: header, summary strip, and the grid the panels sit in. */
+
+body {
+    font-family: var(--font-sans);
+    color: var(--color-text-primary);
+    background: var(--color-background-light);
+    line-height: 1.5;
+}
+
+.dashboard {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: var(--space-lg) var(--space-md) var(--space-xl);
+}
+
+/* Header */
+
+.header {
+    margin-bottom: var(--space-lg);
+}
+
+.header__bar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.header__title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.header__lang {
+    font-size: 0.875rem;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-border-hover);
+}
+
+.header__lang:hover {
+    border-bottom-color: var(--color-primary);
+}
+
+.header__intro {
+    color: var(--color-text-secondary);
+    max-width: 60ch;
+    margin-top: var(--space-xs);
+}
+
+/* Summary strip */
+
+.summary {
+    margin-bottom: var(--space-md);
+}
+
+.summary__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xl);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.stat__value {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    /* Tabular figures so a changing count does not shift the labels beside it. */
+    font-variant-numeric: tabular-nums;
+}
+
+.stat__label {
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-light);
+}
+
+.stat__note {
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+}
+
+/* Filters */
+
+.filters {
+    margin-bottom: var(--space-lg);
+}
+
+/* Panels */
+
+.panels {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-md);
+}
+
+.panel {
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-md) var(--space-lg) var(--space-lg);
+    /* min-width: 0 stops a long journal name from widening its grid column
+       past the viewport instead of ellipsizing. */
+    min-width: 0;
+}
+
+.panel--wide {
+    grid-column: 1 / -1;
+}
+
+.panel__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-md);
+}
+
+.panel__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.panel__hint {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    margin-top: var(--space-xs);
+}
+
+.panel__body {
+    margin-top: var(--space-md);
+}
+
+/* Status and empty states */
+
+.status {
+    padding: var(--space-xl);
+    text-align: center;
+    color: var(--color-text-secondary);
+}
+
+.status--error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.empty {
+    padding: var(--space-lg) 0;
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+}
+
+.source {
+    margin-top: var(--space-lg);
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    /* The register's URLs are long; let one wrap rather than widen the page. */
+    overflow-wrap: anywhere;
+}

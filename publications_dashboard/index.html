@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZMO Publications</title>
+    <!--
+        Relative redirect, matching the word cloud app: works identically on a
+        local server, a user site and a project page, with no host sniffing and
+        no path to update if the repository is renamed.
+    -->
+    <meta http-equiv="refresh" content="0; url=en/">
+    <link rel="canonical" href="en/">
+</head>
+<body>
+    <p>Redirecting to the publications dashboard… <a href="en/">Continue in English</a> · <a href="fr/">Continuer en français</a></p>
+    <script>
+        // Send French-preferring visitors to the localised page. The meta
+        // refresh above is the no-JavaScript fallback.
+        var prefersFrench = (navigator.languages || [navigator.language || ''])
+            .some(function (lang) { return String(lang).toLowerCase().startsWith('fr'); });
+        window.location.replace(prefersFrench ? 'fr/' : 'en/');
+    </script>
+</body>
+</html>

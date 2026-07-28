@@ -1,0 +1,62 @@
+/* The publication list under the charts. */
+
+.list__count {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-sm);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list__item {
+    padding: var(--space-sm) 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.list__item:first-child {
+    border-top: none;
+}
+
+.list__title {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.list__title:hover {
+    text-decoration: underline;
+}
+
+.list__meta {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    margin-top: 0.15rem;
+}
+
+.list__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-top: var(--space-xs);
+}
+
+.tag {
+    font-size: 0.75rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    background: var(--color-primary-alpha);
+    color: var(--color-primary);
+}
+
+.tag--link {
+    text-decoration: none;
+    /* DOIs are long; let one wrap rather than push the row wider than the panel. */
+    overflow-wrap: anywhere;
+}
+
+.tag--link:hover {
+    text-decoration: underline;
+}
