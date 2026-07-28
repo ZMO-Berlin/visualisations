@@ -31,8 +31,16 @@ export class ConfigManager {
                     },
                     size: {
                         min: 10,
-                        max: null,      // derived from height via updateDimensions()
-                        scaleFactor: 5  // larger => smaller words for a given area
+                        max: null,        // derived from height via updateDimensions()
+                        /**
+                         * Larger => smaller words for a given area. At 5 the
+                         * cloud drew as a small dense knot in the middle of the
+                         * canvas, using about a third of it; 3.5 fills roughly
+                         * three quarters with no word dropped at any unit or
+                         * word count, which leaves margin for a narrower
+                         * viewport.
+                         */
+                        scaleFactor: 3.5
                     },
                     weight: {
                         normal: 400,
@@ -40,9 +48,15 @@ export class ConfigManager {
                     }
                 },
                 layout: {
-                    padding: 8,
+                    /**
+                     * Gap left around each word. At 8 — most of a line at the
+                     * smallest sizes — the words never looked like one shape.
+                     */
+                    padding: 3,
                     rotations: [0, 90],
-                    rotationProbability: 0.5
+                    rotationProbability: 0.25,
+                    /** Ranks kept horizontal however the die falls. */
+                    uprightTop: 12
                 },
                 animation: {
                     duration: 200,
@@ -56,7 +70,13 @@ export class ConfigManager {
                 colors: {
                     // 'frequency' | 'random' | 'fixed'
                     colorAssignment: 'frequency',
-                    schemeSize: 10,
+                    /**
+                     * Five, not ten. The palette is a ramp read in rank order,
+                     * and ten steps between the same two endpoints put four
+                     * near-identical teals at the tail — the extra slots bought
+                     * no distinction a reader could see.
+                     */
+                    schemeSize: 5,
                     opacity: {
                         normal: 1,
                         hover: 0.8
@@ -70,12 +90,7 @@ export class ConfigManager {
                 minWords: 10,
                 maxWords: 100,
                 defaultWordCount: 75,
-                defaultGroup: 'combined',
-                // Font sizes are normalised into this range before layout.
-                normalizedSize: {
-                    min: 10,
-                    max: 100
-                }
+                defaultGroup: 'combined'
             },
             groups: {
                 items: [

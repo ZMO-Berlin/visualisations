@@ -70,7 +70,20 @@ export class WordStyler {
     // ------------------------------------------------------------------ fonts
 
     /**
-     * Builds a font-size function for one layout pass.
+     * Builds a font-size function for one layout pass — the single place a
+     * frequency becomes a number of pixels.
+     *
+     * The font scales with the *square root* of the frequency, so that a word's
+     * **area** is what tracks how often it occurs: twice the height is four
+     * times the space on the page, and area is what a reader weighs when
+     * glancing at a cloud. Scaling the height directly would double-count, and
+     * against a distribution as flat as this one — the commonest term appears
+     * four times as often as the seventy-fifth, not forty — it left most of the
+     * cloud at the 10px floor with two words looming over it.
+     *
+     * Anchored at zero rather than at the smallest word present, so the ratio
+     * between two words is the ratio between their frequencies and does not
+     * shift when the reader changes how many words are shown.
      *
      * Returning a closure lets the per-word cost stay O(1): the area-derived
      * base size and the largest raw size are computed once, not once per word
@@ -88,7 +101,7 @@ export class WordStyler {
         const baseSize = Math.sqrt(area / (Math.max(words.length, 1) * scaleFactor));
 
         return word => {
-            const scaled = baseSize * (word.size / largest);
+            const scaled = baseSize * Math.sqrt(Math.max(word.size, 0) / largest);
             return Math.min(Math.max(scaled, minSize), upperBound);
         };
     }

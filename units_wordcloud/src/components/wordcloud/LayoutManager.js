@@ -20,12 +20,19 @@ export class WordCloudLayoutManager {
     createLayout() {
         const { width, height } = this.config.get('wordcloud.dimensions');
         const { padding } = this.config.getLayoutOptions();
+        const { family } = this.config.getFontConfig();
 
         return d3.layout.cloud()
             .size([width, height])
             .padding(padding)
+            // d3-cloud measures every word on a scratch canvas to decide where
+            // it fits, and defaults that measurement to `serif` — while the SVG
+            // draws in Muli. The layout was packing shapes that were never the
+            // ones on screen, which is both gaps where there should be none and
+            // collisions where the metrics disagreed.
+            .font(family)
             .canvas(WordCloudLayoutManager.createMeasurementCanvas)
-            .rotate(() => this.getRotation());
+            .rotate((word, index) => this.getRotation(word, index));
     }
 
     /**
@@ -47,8 +54,22 @@ export class WordCloudLayoutManager {
         return canvas;
     }
 
-    getRotation() {
-        const { rotations, rotationProbability } = this.config.getLayoutOptions();
+    /**
+     * Whether a word is turned on its side, and by how much.
+     *
+     * Words arrive sorted by descending frequency, so `index` is the word's
+     * rank: the largest ones are kept upright. They are what the cloud is read
+     * as at a glance, and a headline term standing on its end costs more in
+     * legibility than the variety buys — the rotation is there to break up the
+     * long tail, which is where it now applies.
+     */
+    getRotation(word, index) {
+        const { rotations, rotationProbability, uprightTop } = this.config.getLayoutOptions();
+
+        if (index < uprightTop) {
+            return 0;
+        }
+
         return Math.random() < rotationProbability
             ? rotations[Math.floor(Math.random() * rotations.length)]
             : 0;

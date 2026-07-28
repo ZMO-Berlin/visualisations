@@ -17,17 +17,28 @@
     --color-gray-600: #333333;
     --color-gray-700: #1a1a1a;
 
-    /* Word Cloud Color Schemes */
-    --wordcloud-scheme-1: #264653;
-    --wordcloud-scheme-2: #2a9d8f;
-    --wordcloud-scheme-3: #e9c46a;
-    --wordcloud-scheme-4: #f4a261;
-    --wordcloud-scheme-5: #e76f51;
-    --wordcloud-scheme-6: #8ecae6;
-    --wordcloud-scheme-7: #219ebc;
-    --wordcloud-scheme-8: #023047;
-    --wordcloud-scheme-9: #ffb703;
-    --wordcloud-scheme-10: #fb8500;
+    /*
+     * Word cloud ramp, read in rank order: the commonest words take slot 1.
+     *
+     * A ramp rather than a set of categorical hues, because that is what the
+     * colour actually encodes here — `WordStyler.getColorForWord` spreads the
+     * palette across the ranking. d3-cloud puts the biggest words in the
+     * middle, so the cloud reads as a dark centre cooling towards teal at its
+     * edges.
+     *
+     * It runs from the logo's navy (#143c73) to the accent teal the landing
+     * page already uses (#2a9d8f), darkened until every step clears 4.5:1 on
+     * white. The previous palette was two unrelated schemes concatenated, and
+     * eight of its ten colours failed that threshold — five failed even 3:1.
+     * Worse, the palest of them (#e9c46a at 1.67:1, #ffb703 at 1.75:1) were
+     * assigned to the *least* frequent words, which are also the smallest: the
+     * faintest colour landed on the tiniest text.
+     */
+    --wordcloud-scheme-1: #143c73;   /* 10.92:1 on white */
+    --wordcloud-scheme-2: #19557e;   /*  7.95:1 */
+    --wordcloud-scheme-3: #1e7189;   /*  5.56:1 */
+    --wordcloud-scheme-4: #218186;   /*  4.62:1 */
+    --wordcloud-scheme-5: #238277;   /*  4.63:1 */
 
     /* Semantic Colors */
     --color-text-primary: var(--color-gray-600);

@@ -4,8 +4,17 @@
  * Each output word carries:
  *   - `text`          cleaned label
  *   - `originalSize`  raw frequency, shown in the tooltip and word list
- *   - `size`          frequency normalised into [min, max] for font scaling
+ *   - `size`          the same frequency, which is what the font scale reads
  *   - `rank`          1-based position by descending frequency
+ *
+ * `size` used to be the frequency stretched onto a fixed [10, 100] range before
+ * `WordStyler` scaled it again. Two mappings, neither aware of the other, and
+ * the first threw away the very thing the second needed: because it pinned the
+ * rarest word to 10 and the commonest to 100 whatever the data did, the drawn
+ * range was always 10:1. The combined register spans 4:1 — 56 occurrences to
+ * 14 — so two words towered over a field of specks, and the size differences a
+ * reader was reading were mostly an artefact of the stretch. The frequency is
+ * now passed through untouched and mapped to pixels once, in one place.
  */
 export class DataProcessor {
     /**
@@ -19,21 +28,6 @@ export class DataProcessor {
     /** Strips stray quote characters left over from the source texts. */
     static cleanWord(word) {
         return String(word).replace(/['’‘]/g, '').trim();
-    }
-
-    /**
-     * Maps a raw frequency onto the configured font-size range.
-     *
-     * When every word shares the same frequency the range collapses; falling
-     * back to the midpoint avoids a division by zero that would otherwise
-     * propagate NaN into every font size and blank the cloud.
-     */
-    normalizeSize(size, minSize, maxSize) {
-        const { min, max } = this.config.get('data.normalizedSize');
-        if (maxSize === minSize) {
-            return (min + max) / 2;
-        }
-        return min + ((size - minSize) * (max - min)) / (maxSize - minSize);
     }
 
     /**
@@ -81,20 +75,9 @@ export class DataProcessor {
             .sort((a, b) => b.size - a.size)
             .slice(0, wordCount);
 
-        if (cleaned.length === 0) {
-            return [];
-        }
-
-        // reduce() rather than Math.min(...arr): spreading a large array can
-        // overflow the call stack.
-        const sizes = cleaned.map(word => word.size);
-        const minSize = sizes.reduce((a, b) => Math.min(a, b), Infinity);
-        const maxSize = sizes.reduce((a, b) => Math.max(a, b), -Infinity);
-
         return cleaned.map((word, index) => ({
             ...word,
             originalSize: word.size,
-            size: this.normalizeSize(word.size, minSize, maxSize),
             rank: index + 1
         }));
     }
