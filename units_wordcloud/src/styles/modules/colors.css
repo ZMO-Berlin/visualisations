@@ -18,27 +18,28 @@
     --color-gray-700: #1a1a1a;
 
     /*
-     * Word cloud ramp, read in rank order: the commonest words take slot 1.
+     * Word cloud palette, read in rank order: the commonest words take slot 1.
+     * d3-cloud places the biggest words first and spirals outward, so the
+     * cloud reads as a navy core ringed by teal, plum, brick, rust and bronze.
      *
-     * A ramp rather than a set of categorical hues, because that is what the
-     * colour actually encodes here — `WordStyler.getColorForWord` spreads the
-     * palette across the ranking. d3-cloud puts the biggest words in the
-     * middle, so the cloud reads as a dark centre cooling towards teal at its
-     * edges.
+     * Six jewel tones rather than a ramp. A navy-to-teal ramp was tried and
+     * was too quiet to be worth looking at — one hue family, read as a single
+     * colour. These are far apart (closest pair ΔE 25.8) while every one of
+     * them still clears 4.5:1 on white, which is the constraint that matters:
+     * colour is assigned by rank, so the last slot lands on the *smallest*
+     * words. The palette this replaced was two unrelated schemes concatenated,
+     * and eight of its ten colours failed that threshold — five failed even
+     * 3:1, and its palest (#e9c46a at 1.67:1) sat on the tiniest text.
      *
-     * It runs from the logo's navy (#143c73) to the accent teal the landing
-     * page already uses (#2a9d8f), darkened until every step clears 4.5:1 on
-     * white. The previous palette was two unrelated schemes concatenated, and
-     * eight of its ten colours failed that threshold — five failed even 3:1.
-     * Worse, the palest of them (#e9c46a at 1.67:1, #ffb703 at 1.75:1) were
-     * assigned to the *least* frequent words, which are also the smallest: the
-     * faintest colour landed on the tiniest text.
+     * The two ends are the institute's own: the logo's navy, and its orange
+     * darkened into a rust that carries on white.
      */
-    --wordcloud-scheme-1: #143c73;   /* 10.92:1 on white */
-    --wordcloud-scheme-2: #19557e;   /*  7.95:1 */
-    --wordcloud-scheme-3: #1e7189;   /*  5.56:1 */
-    --wordcloud-scheme-4: #218186;   /*  4.62:1 */
-    --wordcloud-scheme-5: #238277;   /*  4.63:1 */
+    --wordcloud-scheme-1: #143c73;   /* navy    10.92:1 on white */
+    --wordcloud-scheme-2: #0e6f7d;   /* teal     5.85:1 */
+    --wordcloud-scheme-3: #6a3d7a;   /* plum     8.20:1 */
+    --wordcloud-scheme-4: #a83c3c;   /* brick    6.22:1 */
+    --wordcloud-scheme-5: #b45418;   /* rust     4.97:1 */
+    --wordcloud-scheme-6: #7d6410;   /* bronze   5.67:1 */
 
     /* Semantic Colors */
     --color-text-primary: var(--color-gray-600);

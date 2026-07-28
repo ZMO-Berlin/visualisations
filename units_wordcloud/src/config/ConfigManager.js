@@ -35,12 +35,13 @@ export class ConfigManager {
                         /**
                          * Larger => smaller words for a given area. At 5 the
                          * cloud drew as a small dense knot in the middle of the
-                         * canvas, using about a third of it; 3.5 fills roughly
-                         * three quarters with no word dropped at any unit or
-                         * word count, which leaves margin for a narrower
-                         * viewport.
+                         * canvas, using about a third of it. 1.5 fills 44–85%
+                         * across every unit at every word count, with nothing
+                         * dropped — the low end being the Religion unit, whose
+                         * frequencies fall away steeply enough that its tail is
+                         * genuinely small.
                          */
-                        scaleFactor: 3.5
+                        scaleFactor: 1.5
                     },
                     weight: {
                         normal: 400,
@@ -70,13 +71,7 @@ export class ConfigManager {
                 colors: {
                     // 'frequency' | 'random' | 'fixed'
                     colorAssignment: 'frequency',
-                    /**
-                     * Five, not ten. The palette is a ramp read in rank order,
-                     * and ten steps between the same two endpoints put four
-                     * near-identical teals at the tail — the extra slots bought
-                     * no distinction a reader could see.
-                     */
-                    schemeSize: 5,
+                    schemeSize: 6,
                     opacity: {
                         normal: 1,
                         hover: 0.8
