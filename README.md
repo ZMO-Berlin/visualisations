@@ -140,10 +140,10 @@ directory the app loads from, under the exact filename it expects. It also
 writes `combined_word_frequencies.json`.
 
 Only files listed in `raw_data/units.json` (written by the scraper) feed the
-combined aggregate. Text that lives in `raw_data/` without coming from a
-research-unit page — `Workshop.txt`, a workshop description written by hand —
-still gets its own frequency file but stays out of "All Research Units". Delete
-the manifest and every file counts again.
+combined aggregate. So if you drop a `.txt` file into `raw_data/` by hand — a
+workshop description, a call for papers — it gets its own frequency file but
+stays out of "All Research Units". Delete the manifest and every file counts
+again.
 
 Processing per file: lowercase, tokenise, drop stopwords (NLTK's English list
 plus a project-specific list of terms common to every unit), drop non-alphabetic
@@ -153,7 +153,7 @@ Useful options (`--help` lists them all):
 
 ```bash
 python data_prep/generate_word_data.py --top-n 150
-python data_prep/generate_word_data.py --exclude Workshop
+python data_prep/generate_word_data.py --exclude Some_File
 python data_prep/generate_word_data.py --output-dir /tmp/preview
 ```
 

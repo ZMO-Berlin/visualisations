@@ -150,7 +150,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument(
         "--exclude", nargs="*", default=[], metavar="NAME",
-        help="source file stems to skip entirely, e.g. --exclude Workshop",
+        help="source file stems to skip entirely, e.g. --exclude Draft_Notes",
     )
     return parser.parse_args(argv)
 
