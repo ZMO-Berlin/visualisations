@@ -50,6 +50,11 @@ export const translations = {
         zoomOut: 'Zoom out',
         resetView: 'Reset view',
         noCoauthors: 'No co-authored publications match the current filters.',
+        // Shown when the author being filtered on has published alone: they are
+        // not in the co-authorship graph at all, so the panel says why instead
+        // of showing a picture they are absent from.
+        noCollaboration: '{names} has no co-authored publication in the current selection.',
+        noCollaborationMany: '{names} have no co-authored publication in the current selection.',
         noData: 'Nothing to show for the current filters.',
 
         journals: 'Journals',
@@ -122,6 +127,8 @@ export const translations = {
         zoomOut: 'Verkleinern',
         resetView: 'Ansicht zurücksetzen',
         noCoauthors: 'Keine gemeinsam verfasste Publikation entspricht den aktuellen Filtern.',
+        noCollaboration: '{names} hat in der aktuellen Auswahl keine gemeinsam verfasste Publikation.',
+        noCollaborationMany: '{names} haben in der aktuellen Auswahl keine gemeinsam verfasste Publikation.',
         noData: 'Für die aktuellen Filter gibt es nichts anzuzeigen.',
 
         journals: 'Zeitschriften',

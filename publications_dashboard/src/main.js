@@ -205,7 +205,7 @@ function bootstrap() {
     const venueChart = new VenueChart(venuePanel.body, { settings, strings, store });
 
     const network = new CoauthorNetwork(networkPanel.body, {
-        settings, strings, tooltip,
+        settings, strings, locale, tooltip,
         // d3 is loaded by the page as a global; injecting it here keeps the
         // component free of that assumption and testable with a stub.
         d3: window.d3,
@@ -313,10 +313,11 @@ function bootstrap() {
 
         venueChart.render(store.select('venue'), state.filters.venue);
 
-        // Like the author ranking, the network excludes the author filter:
-        // selecting a node dims the rest instead of collapsing the graph to the
-        // one author and their co-authors, which would leave nothing to click
-        // next.
+        // Like the author ranking, the network excludes the author filter: the
+        // whole graph stays on screen instead of collapsing to the one author
+        // and their co-authors, which would leave nothing to click next. The
+        // selection is what it moves and dims the picture around — see the head
+        // of CoauthorNetwork.js.
         network.render(coauthorGraph(store.select('author'), settings.network), state.filters.author);
 
         list.render(filtered);

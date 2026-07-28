@@ -202,6 +202,27 @@
 .network__link {
     stroke: var(--c-line-strong);
     stroke-opacity: 0.7;
+    transition: stroke var(--dur-fast) var(--ease-out),
+                stroke-opacity var(--dur-fast) var(--ease-out);
+}
+
+/* An edge of the filtered author: the collaboration being asked about. */
+.network__link--active {
+    stroke: var(--c-accent);
+    stroke-opacity: 1;
+}
+
+/* Anything else, once there is a selection — kept visible as context, but
+   quiet enough that the edges above read as a shape on top of it. */
+.network__link--dimmed {
+    stroke-opacity: 0.18;
+}
+
+/* The line above the graph, when a filtered author is missing from it. */
+.network__note {
+    margin-bottom: var(--s-2);
+    color: var(--c-ink-soft);
+    font-size: var(--text-sm);
 }
 
 .network__node {
