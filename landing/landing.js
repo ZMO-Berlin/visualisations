@@ -18,7 +18,7 @@ const LOCALE = document.documentElement.lang || 'en';
 
 const PHRASE = {
     en: (count, from, to) => `${count} publications, ${from}–${to}`,
-    fr: (count, from, to) => `${count} publications, ${from}–${to}`
+    de: (count, from, to) => `${count} Publikationen, ${from}–${to}`
 };
 
 async function fillStat() {

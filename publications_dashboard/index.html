@@ -13,13 +13,13 @@
     <link rel="canonical" href="en/">
 </head>
 <body>
-    <p>Redirecting to the publications dashboard… <a href="en/">Continue in English</a> · <a href="fr/">Continuer en français</a></p>
+    <p>Redirecting to the publications dashboard… <a href="en/">Continue in English</a> · <a href="de/">Weiter auf Deutsch</a></p>
     <script>
-        // Send French-preferring visitors to the localised page. The meta
+        // Send German-preferring visitors to the localised page. The meta
         // refresh above is the no-JavaScript fallback.
-        var prefersFrench = (navigator.languages || [navigator.language || ''])
-            .some(function (lang) { return String(lang).toLowerCase().startsWith('fr'); });
-        window.location.replace(prefersFrench ? 'fr/' : 'en/');
+        var prefersGerman = (navigator.languages || [navigator.language || ''])
+            .some(function (lang) { return String(lang).toLowerCase().startsWith('de'); });
+        window.location.replace(prefersGerman ? 'de/' : 'en/');
     </script>
 </body>
 </html>

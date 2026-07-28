@@ -25,6 +25,7 @@
 @import './modules/button.css';
 @import './modules/tooltip.css';
 @import './modules/wordlist.css';
+@import './modules/credit.css';
 
 /* Breakpoint overrides — must stay last */
 @import './modules/responsive.css';

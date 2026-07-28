@@ -88,15 +88,30 @@ function bootstrap() {
 
     // --- Static chrome ------------------------------------------------------
 
-    const other = locale === 'fr' ? 'en' : 'fr';
+    const other = locale === 'de' ? 'en' : 'de';
     mount(header, el('div', {}, [
         el('div', { class: 'header__bar' }, [
             el('h1', { class: 'header__title', text: strings.title }),
             el('a', { class: 'header__lang', href: `../${other}/`, lang: other, hreflang: other,
-                text: other === 'fr' ? 'Français' : 'English' })
+                text: other === 'de' ? 'Deutsch' : 'English' })
         ]),
         el('p', { class: 'header__intro', text: strings.intro })
     ]));
+
+    // Written once, outside `render`, so it is on the page while the data is
+    // still loading and stays there if the fetch fails. `target="_blank"`
+    // because the dashboard is also embedded in an iframe on zmo.de, where a
+    // same-tab link would replace it with a personal site.
+    document.getElementById('credit').append(
+        el('p', { class: 'credit' }, [
+            `${strings.credit} `,
+            el('a', {
+                href: 'https://www.frederickmadore.com/',
+                target: '_blank', rel: 'noopener noreferrer',
+                text: 'Frédérick Madore'
+            })
+        ])
+    );
 
     // --- Panels -------------------------------------------------------------
 

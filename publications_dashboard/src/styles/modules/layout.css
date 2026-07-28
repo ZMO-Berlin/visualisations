@@ -163,10 +163,23 @@ body {
     font-size: 0.875rem;
 }
 
-.source {
+.dashboard__footer {
     margin-top: var(--space-lg);
+}
+
+.source {
     font-size: 0.8125rem;
     color: var(--color-text-light);
     /* The register's URLs are long; let one wrap rather than widen the page. */
     overflow-wrap: anywhere;
+}
+
+.credit {
+    margin-top: var(--space-xs);
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+}
+
+.credit a {
+    color: var(--color-text-secondary);
 }

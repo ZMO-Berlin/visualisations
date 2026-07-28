@@ -1,0 +1,47 @@
+/*
+ * Credit Module
+ *
+ * `body` is a fixed, full-viewport flex column with `overflow: hidden`, and the
+ * cloud's height is derived from it, so a footer in the flow would push the
+ * visualisation out of the frame. The credit is pinned to the bottom-left
+ * instead: the cloud is centred inside a 1.5:1 box, so that corner is the part
+ * of the viewport it is least likely to reach, and the translucent backing
+ * keeps the line readable on the rare occasion a word lands under it.
+ */
+.credit {
+    position: fixed;
+    left: 10px;
+    bottom: 8px;
+    z-index: 90;
+    margin: 0;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.85);
+    font-size: var(--font-size-xs);
+    line-height: 1.4;
+    color: var(--color-text-secondary);
+}
+
+.credit a {
+    color: var(--color-primary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-border-hover);
+}
+
+.credit a:hover,
+.credit a:focus-visible {
+    border-bottom-color: var(--color-primary);
+}
+
+/*
+ * On narrow screens the word list is hidden and the cloud takes the whole
+ * width, so the credit is tucked further into the corner to leave the cloud as
+ * much room as the viewport allows.
+ */
+@media (max-width: 600px) {
+    .credit {
+        left: 6px;
+        bottom: 4px;
+        padding: 1px 6px;
+    }
+}

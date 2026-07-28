@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZMO Nuage de Mots</title>
-    <meta name="description" content="Nuage de mots interactif des termes les plus fréquents dans les unités de recherche du ZMO.">
+    <title>ZMO-Wortwolke</title>
+    <meta name="description" content="Interaktive Wortwolke der häufigsten Begriffe in den Forschungseinheiten des ZMO.">
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="../src/styles/main.css">
     <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"
@@ -25,6 +25,17 @@
         <div id="wordlist"></div>
     </div>
     <div id="tooltip" role="tooltip"></div>
+    <!--
+        Die Seite füllt das Fenster und hat keine Fußzeile, in der der Hinweis
+        stehen könnte; er sitzt deshalb in einer Ecke, welche die Wolke nicht
+        erreicht. `target="_blank"`, weil diese Seite auf zmo.de auch in einem
+        iframe eingebunden ist: ein Link im selben Tab würde dort die
+        Visualisierung durch eine persönliche Website ersetzen.
+    -->
+    <p class="credit">
+        Erstellt von
+        <a href="https://www.frederickmadore.com/" target="_blank" rel="noopener noreferrer">Frédérick Madore</a>
+    </p>
     <script type="module" src="../src/main.js"></script>
 </body>
 </html>

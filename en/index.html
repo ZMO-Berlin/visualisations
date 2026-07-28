@@ -12,8 +12,13 @@
     <main class="landing">
         <header class="landing__header">
             <div class="landing__bar">
-                <p class="eyebrow">Leibniz-Zentrum Moderner Orient</p>
-                <a class="lang" href="../fr/" lang="fr" hreflang="fr">Français</a>
+                <!-- The logo carries the institute's name, so the alt text is
+                     the name itself and no separate line repeats it. -->
+                <a class="brand" href="https://www.zmo.de/">
+                    <img class="brand__logo" src="../landing/zmo-logo.png"
+                         alt="Leibniz-Zentrum Moderner Orient" width="763" height="701">
+                </a>
+                <a class="lang" href="../de/" lang="de" hreflang="de">Deutsch</a>
             </div>
             <h1>Visualisations</h1>
             <p class="lede">
@@ -55,6 +60,10 @@
             <p>
                 Source: <a href="https://www.zmo.de/">zmo.de</a>. Code and data:
                 <a href="https://github.com/ZMO-Berlin/visualisations">ZMO-Berlin/visualisations</a>.
+            </p>
+            <p>
+                Created by
+                <a href="https://www.frederickmadore.com/">Frédérick Madore</a>.
             </p>
         </footer>
     </main>

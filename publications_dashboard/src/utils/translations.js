@@ -1,5 +1,5 @@
 /**
- * UI strings, in the two languages the site is published in.
+ * UI strings, in the two languages the site is published in: English and German.
  *
  * Document-type labels are the exception: they come from the register itself
  * (English, as ZMO publishes them) and are translated here by exact key so an
@@ -40,7 +40,6 @@ export const translations = {
 
         journals: 'Journals',
         publishers: 'Publishers',
-        series: 'Series',
 
         showMore: 'Show more',
         previousPage: 'Previous page',
@@ -50,6 +49,10 @@ export const translations = {
         noResults: 'No publication matches the current filters.',
         untyped: 'No document type',
         openOnZmo: 'View on zmo.de',
+
+        // The credit reads "<credit> Frédérick Madore"; the name is a link and
+        // stays as it is written in every language.
+        credit: 'Created by',
 
         // Document types, keyed by the register's own English label.
         type: {
@@ -65,61 +68,63 @@ export const translations = {
         }
     },
 
-    fr: {
-        title: 'Publications du ZMO',
-        intro: 'Toutes les publications du répertoire du ZMO, par année, type, auteur et support.',
-        source: 'Source',
+    de: {
+        title: 'ZMO-Publikationen',
+        intro: 'Alle Publikationen im Verzeichnis des ZMO, nach Jahr, Typ, Autorschaft und Publikationsorgan.',
+        source: 'Quelle',
 
-        loading: 'Chargement des publications…',
-        error: 'Les données de publication n’ont pas pu être chargées.',
-        retry: 'Réessayer',
+        loading: 'Publikationen werden geladen…',
+        error: 'Die Publikationsdaten konnten nicht geladen werden.',
+        retry: 'Erneut versuchen',
 
-        publications: 'publications',
-        authors: 'auteurs',
-        years: 'années',
-        ofTotal: 'sur',
+        publications: 'Publikationen',
+        authors: 'Autorinnen und Autoren',
+        years: 'Jahre',
+        ofTotal: 'von',
 
-        search: 'Rechercher un titre, un auteur, une revue…',
-        from: 'De',
-        to: 'À',
-        clearFilters: 'Effacer les filtres',
-        activeFilters: 'Filtres actifs',
-        removeFilter: 'Retirer ce filtre',
+        search: 'Titel, Autorschaft, Zeitschriften durchsuchen…',
+        from: 'Von',
+        to: 'Bis',
+        clearFilters: 'Filter zurücksetzen',
+        activeFilters: 'Aktive Filter',
+        removeFilter: 'Diesen Filter entfernen',
 
-        overTime: 'Publications par année',
-        overTimeHint: 'Cliquez sur une colonne pour filtrer par année, ou sur une entrée de la légende pour filtrer par type. Les types les plus rares sont regroupés.',
-        otherTypes: 'Autres types',
-        documentTypes: 'Types de document',
-        topAuthors: 'Auteurs les plus publiés',
-        venues: 'Où le ZMO publie',
-        coauthorship: 'Co-publication',
-        coauthorshipHint: 'Auteurs ayant publié ensemble. Déplacez un nœud pour réorganiser ; cliquez pour filtrer.',
-        noCoauthors: 'Aucune publication co-signée ne correspond aux filtres.',
-        noData: 'Rien à afficher pour les filtres actifs.',
+        overTime: 'Publikationen pro Jahr',
+        overTimeHint: 'Auf eine Säule klicken, um nach Jahr zu filtern, oder auf einen Legendeneintrag, um nach Dokumenttyp zu filtern. Die kleinsten Typen sind zusammengefasst.',
+        otherTypes: 'Weitere Typen',
+        documentTypes: 'Dokumenttypen',
+        topAuthors: 'Meistpublizierte Autorinnen und Autoren',
+        venues: 'Wo das ZMO publiziert',
+        coauthorship: 'Ko-Autorschaft',
+        coauthorshipHint: 'Autorinnen und Autoren, die gemeinsam publiziert haben. Einen Knoten ziehen, um das Netz umzuordnen; klicken, um zu filtern.',
+        noCoauthors: 'Keine gemeinsam verfasste Publikation entspricht den aktuellen Filtern.',
+        noData: 'Für die aktuellen Filter gibt es nichts anzuzeigen.',
 
-        journals: 'Revues',
-        publishers: 'Éditeurs',
-        series: 'Collections',
+        journals: 'Zeitschriften',
+        publishers: 'Verlage',
 
-        showMore: 'Afficher plus',
-        previousPage: 'Page précédente',
-        nextPage: 'Page suivante',
+        showMore: 'Mehr anzeigen',
+        previousPage: 'Vorherige Seite',
+        nextPage: 'Nächste Seite',
 
-        publicationList: 'Publications',
-        noResults: 'Aucune publication ne correspond aux filtres.',
-        untyped: 'Sans type de document',
-        openOnZmo: 'Voir sur zmo.de',
+        publicationList: 'Publikationen',
+        noResults: 'Keine Publikation entspricht den aktuellen Filtern.',
+        untyped: 'Ohne Dokumenttyp',
+        openOnZmo: 'Auf zmo.de ansehen',
+
+        credit: 'Erstellt von',
 
         type: {
-            'Monographs': 'Monographies',
-            'Book reviews': 'Comptes rendus',
-            'Contributions to an edited volume': 'Contributions à un ouvrage collectif',
-            'Editorship of journal, book series': 'Direction de revue ou de collection',
-            'Edited volumes': 'Ouvrages collectifs',
-            'Journal articles': 'Articles de revue',
-            'Other publications': 'Autres publications',
-            'Special Issues': 'Numéros spéciaux',
-            'Working Papers': 'Documents de travail'
+            'Monographs': 'Monografien',
+            'Book reviews': 'Rezensionen',
+            'Contributions to an edited volume': 'Beiträge in Sammelbänden',
+            'Editorship of journal, book series': 'Herausgeberschaft von Zeitschriften und Reihen',
+            'Edited volumes': 'Sammelbände',
+            'Journal articles': 'Zeitschriftenaufsätze',
+            'Other publications': 'Weitere Publikationen',
+            'Special Issues': 'Sonderhefte',
+            // Left in English: the ZMO publishes its own series under that name.
+            'Working Papers': 'Working Papers'
         }
     }
 };

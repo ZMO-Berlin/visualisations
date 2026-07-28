@@ -10,8 +10,14 @@
 
 import { fold } from '../utils/format.js';
 
-/** Venue charts and filters address one of these record fields. */
-export const VENUE_FIELDS = ['journal', 'publisher', 'series'];
+/**
+ * Venue charts and filters address one of these record fields.
+ *
+ * `series` is deliberately not one of them — 175 distinct values over 187
+ * records is not something to rank — but it is still shown on individual
+ * entries and still searched. See `VenueChart`.
+ */
+export const VENUE_FIELDS = ['journal', 'publisher'];
 
 export function createFilters() {
     return {

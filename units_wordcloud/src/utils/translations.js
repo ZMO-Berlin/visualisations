@@ -9,15 +9,15 @@ export const translations = {
         selectUnit: 'Select a research unit',
         wordList: 'Word List'
     },
-    fr: {
-        allUnits: 'Toutes les unités de recherche',
-        numberOfWords: 'Nombre de mots',
-        saveAsPNG: 'Enregistrer en PNG',
-        word: 'Mot',
-        frequency: 'Fréquence',
-        units: 'Unités de recherche',
-        selectUnit: 'Sélectionner une unité de recherche',
-        wordList: 'Liste des mots'
+    de: {
+        allUnits: 'Alle Forschungseinheiten',
+        numberOfWords: 'Anzahl der Wörter',
+        saveAsPNG: 'Als PNG speichern',
+        word: 'Wort',
+        frequency: 'Häufigkeit',
+        units: 'Forschungseinheiten',
+        selectUnit: 'Forschungseinheit auswählen',
+        wordList: 'Wortliste'
     }
 };
 
@@ -29,7 +29,7 @@ export const DEFAULT_LOCALE = 'en';
  *
  * `<html lang>` is the authoritative signal — each localised page already
  * declares it — and it keeps the app working if the pages are ever served from
- * paths other than `/en/` and `/fr/`.
+ * paths other than `/en/` and `/de/`.
  */
 export function getLocale() {
     const declared = document.documentElement.lang?.slice(0, 2).toLowerCase();

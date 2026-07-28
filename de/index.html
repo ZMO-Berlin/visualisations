@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZMO-Visualisierungen</title>
+    <meta name="description" content="Zwei interaktive Ansichten der Forschung am Leibniz-Zentrum Moderner Orient: eine Wortwolke der Forschungseinheiten und ein Dashboard des Publikationsverzeichnisses.">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="../landing/landing.css">
+</head>
+<body>
+    <main class="landing">
+        <header class="landing__header">
+            <div class="landing__bar">
+                <!-- Das Logo trägt den Namen des Instituts; der Alternativtext
+                     ist deshalb der Name selbst, und keine weitere Zeile
+                     wiederholt ihn. -->
+                <a class="brand" href="https://www.zmo.de/">
+                    <img class="brand__logo" src="../landing/zmo-logo.png"
+                         alt="Leibniz-Zentrum Moderner Orient" width="763" height="701">
+                </a>
+                <a class="lang" href="../en/" lang="en" hreflang="en">English</a>
+            </div>
+            <h1>Visualisierungen</h1>
+            <p class="lede">
+                Zwei interaktive Ansichten der Forschung am ZMO. Beide beruhen
+                auf Daten, die von <a href="https://www.zmo.de/">zmo.de</a>
+                ausgelesen und nicht von Hand gepflegt werden, und beide werden
+                monatlich aktualisiert.
+            </p>
+        </header>
+
+        <nav class="cards" aria-label="Visualisierung auswählen">
+            <a class="card" href="../units_wordcloud/de/">
+                <h2 class="card__title">Wortwolke</h2>
+                <p class="card__lede">Worüber jede Forschungseinheit schreibt, in ihren eigenen Worten.</p>
+                <p class="card__stat">Drei Forschungseinheiten</p>
+                <ul class="card__list">
+                    <li>Eine Einheit auswählen oder alle zusammen</li>
+                    <li>Die Zahl der angezeigten Wörter einstellen</li>
+                    <li>Ein Wort überfahren zeigt seine Häufigkeit; die Wolke lässt sich als PNG exportieren</li>
+                </ul>
+                <span class="card__go">Zur Wortwolke</span>
+            </a>
+
+            <a class="card" href="../publications_dashboard/de/">
+                <h2 class="card__title">Publikationen</h2>
+                <p class="card__lede">Das gesamte Publikationsverzeichnis, aus fünf Blickwinkeln.</p>
+                <!-- Wird durch die tatsächlichen Zahlen des Datensatzes ersetzt;
+                     dies ist der Rückfall, falls die Abfrage fehlschlägt. -->
+                <p class="card__stat" data-publication-stat>Das vollständige Verzeichnis</p>
+                <ul class="card__list">
+                    <li>Publikationen pro Jahr, gestapelt nach Dokumenttyp</li>
+                    <li>Die meistpublizierten Autorinnen und Autoren, und wer mit wem publiziert</li>
+                    <li>In welchen Zeitschriften und Verlagen das ZMO erscheint</li>
+                </ul>
+                <span class="card__go">Zum Publikations-Dashboard</span>
+            </a>
+        </nav>
+
+        <footer class="landing__footer">
+            <p>
+                Quelle: <a href="https://www.zmo.de/">zmo.de</a>. Code und Daten:
+                <a href="https://github.com/ZMO-Berlin/visualisations">ZMO-Berlin/visualisations</a>.
+            </p>
+            <p>
+                Erstellt von
+                <a href="https://www.frederickmadore.com/">Frédérick Madore</a>.
+            </p>
+        </footer>
+    </main>
+    <script type="module" src="../landing/landing.js"></script>
+</body>
+</html>

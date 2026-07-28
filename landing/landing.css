@@ -44,17 +44,23 @@ body {
 
 .landing__bar {
     display: flex;
-    align-items: baseline;
+    /* Centre rather than baseline: the bar's left item is now an image, which
+       has no text baseline to align the language link to. */
+    align-items: center;
     justify-content: space-between;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
-.eyebrow {
-    font-size: 0.8125rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--ink-light);
+/*
+ * The institute's mark, sized by height so the intrinsic aspect ratio decides
+ * the width. The `width`/`height` attributes on the tag reserve the right box
+ * before the file arrives, so the header does not jump as it loads.
+ */
+.brand__logo {
+    display: block;
+    height: 4.5rem;
+    width: auto;
 }
 
 .lang {
@@ -195,6 +201,10 @@ h1 {
     border-top: 1px solid var(--border);
     font-size: 0.875rem;
     color: var(--ink-light);
+}
+
+.landing__footer p + p {
+    margin-top: 0.35rem;
 }
 
 .landing__footer a {

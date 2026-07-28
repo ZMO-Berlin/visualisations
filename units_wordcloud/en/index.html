@@ -25,6 +25,16 @@
         <div id="wordlist"></div>
     </div>
     <div id="tooltip" role="tooltip"></div>
+    <!--
+        The page fills the viewport and has no footer to sit in, so the credit
+        is pinned to a corner the cloud does not reach. `target="_blank"`
+        because this page is also embedded in an iframe on zmo.de, where a
+        same-tab link would replace the visualisation with a personal site.
+    -->
+    <p class="credit">
+        Created by
+        <a href="https://www.frederickmadore.com/" target="_blank" rel="noopener noreferrer">Frédérick Madore</a>
+    </p>
     <script type="module" src="../src/main.js"></script>
 </body>
 </html>

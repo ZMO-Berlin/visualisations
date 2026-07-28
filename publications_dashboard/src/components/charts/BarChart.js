@@ -2,7 +2,7 @@
  * A ranked horizontal bar chart, drawn in HTML rather than SVG.
  *
  * The labels here are journal names, author names and document types — long,
- * multi-word, and different lengths in English and French. In HTML they wrap,
+ * multi-word, and different lengths in English and German. In HTML they wrap,
  * ellipsize and reflow for free; in SVG each one would need measuring and
  * truncating by hand at every breakpoint. Each row is a real `<button>`, so
  * keyboard navigation, focus rings and `aria-pressed` come from the platform.

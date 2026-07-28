@@ -9,7 +9,7 @@ Two static web apps built from data scraped from the
 | **Publications dashboard** | The publication register — output per year, document types, authors, co-authorship, journals and publishers | `publications_dashboard/` | [/publications_dashboard/](https://zmo-berlin.github.io/visualisations/publications_dashboard/) |
 
 The site root is a landing page that introduces the two and links to them, in
-English and French. GitHub Pages serves the repository root from `main`, so each
+English and German. GitHub Pages serves the repository root from `main`, so each
 app is published at its own directory. Nothing hard-codes that path — `main.js`
 resolves the app root from `import.meta.url` — so the same files work from a
 local server or any other host without a change.
@@ -27,7 +27,7 @@ fallback if that fetch fails.
 
 Both apps:
 
-- are published in **English and French**, at `<app>/en/` and `<app>/fr/`;
+- are published in **English and German**, at `<app>/en/` and `<app>/de/`;
 - have **no build step** — plain ES modules loaded directly by the browser. No
   bundler, no `package.json`, no `npm install`;
 - read **data that is scraped, not maintained by hand**. Python scripts in
@@ -41,8 +41,8 @@ Both apps:
 ```
 index.html                   Language-detecting redirect to the landing page
 en/index.html                Landing page, English
-fr/index.html                Landing page, French
-landing/                     Its stylesheet and the script that reads the counts
+de/index.html                Landing page, German
+landing/                     Its stylesheet, logo, and the script reading the counts
 .nojekyll                    Serve the files as they are; do not run Jekyll
 
 .github/workflows/           Monthly data refreshes, one per app
@@ -71,7 +71,7 @@ Each app follows the same shape:
 <app>/
   index.html                 Language-detecting redirect
   en/index.html              English entry point
-  fr/index.html              French entry point
+  de/index.html              German entry point
   data/                      Generated JSON (pipeline output; the app fetches it)
   src/
     main.js                  Composition root: builds and wires everything
@@ -299,6 +299,12 @@ than left to colour alone.
 Rankings run to hundreds of entries — 656 authors, 526 journals — so every
 ranked chart pages rather than truncating at a top-N; the network opens on the
 60 most-published authors and grows on request.
+
+"Where ZMO publishes" ranks journals and publishers. The register's `series`
+field is not ranked beside them: it is filled on 187 of 1,962 records and holds
+175 distinct values among them, so the ranking was a list of ones. The field is
+still what names the venue on a working paper in the list below, and is still
+searched.
 
 Both language pages accept `?debug`, which logs every state transition to the
 console.

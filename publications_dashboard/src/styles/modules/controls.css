@@ -69,6 +69,13 @@
     margin-top: var(--space-sm);
 }
 
+/* The row is a permanent node that is emptied rather than removed, so that
+   rebuilding it cannot disturb the focused search box above it. `display: flex`
+   would otherwise beat the `hidden` attribute and leave a blank gap. */
+.chips[hidden] {
+    display: none;
+}
+
 .chip {
     display: inline-flex;
     align-items: center;
@@ -103,7 +110,7 @@
     color: var(--color-white);
 }
 
-/* Tabs, for the journals / publishers / series switch */
+/* Tabs, for the journals / publishers switch */
 
 .tabs {
     display: flex;

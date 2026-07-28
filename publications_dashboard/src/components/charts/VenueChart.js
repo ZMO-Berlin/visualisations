@@ -1,10 +1,15 @@
 /**
- * Where ZMO publishes: journals, publishers or book series, one at a time.
+ * Where ZMO publishes: journals or publishers, one at a time.
  *
- * The three are separate fields in the register and are not comparable — a
- * journal article has a journal, a chapter has a publisher, a working paper has
- * a series — so they are shown as three views of one panel rather than merged
- * into a single misleading ranking.
+ * The two are separate fields in the register and are not comparable — a
+ * journal article has a journal, a chapter has a publisher — so they are shown
+ * as two views of one panel rather than merged into a single misleading
+ * ranking. The register's `series` field used to be a third tab and is not one
+ * any more: it is filled on 187 of 1,962 records and holds 175 distinct values
+ * among them, so the "ranking" was a list of ones that said more about the
+ * field's coverage than about where ZMO publishes. The field itself is
+ * untouched — it still names the venue on individual entries in the list below,
+ * and is still searched.
  */
 
 import { el, mount } from '../../utils/dom.js';
@@ -39,8 +44,7 @@ export class VenueChart {
     render(records, selected) {
         const labels = {
             journal: this.strings.journals,
-            publisher: this.strings.publishers,
-            series: this.strings.series
+            publisher: this.strings.publishers
         };
 
         this.#tabsContainer.replaceChildren(...Object.entries(labels).map(([field, label]) =>
