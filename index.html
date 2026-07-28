@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZMO Visualisations</title>
+    <!--
+        Language-detecting redirect, the same shape each app uses one level
+        down. Relative, so it works from a local server, a user site and a
+        project page alike, with no host sniffing and no path to update if the
+        repository is renamed.
+    -->
+    <meta http-equiv="refresh" content="0; url=en/">
+    <link rel="canonical" href="en/">
+</head>
+<body>
+    <p>Redirecting… <a href="en/">Continue in English</a> · <a href="fr/">Continuer en français</a></p>
+    <script>
+        // Send French-preferring visitors to the localised page. The meta
+        // refresh above is the no-JavaScript fallback.
+        var prefersFrench = (navigator.languages || [navigator.language || ''])
+            .some(function (lang) { return String(lang).toLowerCase().startsWith('fr'); });
+        window.location.replace(prefersFrench ? 'fr/' : 'en/');
+    </script>
+</body>
+</html>

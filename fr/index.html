@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisations du ZMO</title>
+    <meta name="description" content="Deux aperçus interactifs de la recherche au Leibniz-Zentrum Moderner Orient : un nuage de mots des unités de recherche et un tableau de bord du répertoire des publications.">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="../landing/landing.css">
+</head>
+<body>
+    <main class="landing">
+        <header class="landing__header">
+            <div class="landing__bar">
+                <p class="eyebrow">Leibniz-Zentrum Moderner Orient</p>
+                <a class="lang" href="../en/" lang="en" hreflang="en">English</a>
+            </div>
+            <h1>Visualisations</h1>
+            <p class="lede">
+                Deux aperçus interactifs de la recherche au ZMO. Les deux sont
+                construits à partir de données relevées sur
+                <a href="https://www.zmo.de/">zmo.de</a> plutôt que saisies à la
+                main, et sont actualisés chaque mois.
+            </p>
+        </header>
+
+        <nav class="cards" aria-label="Choisir une visualisation">
+            <a class="card" href="../units_wordcloud/fr/">
+                <h2 class="card__title">Nuage de mots</h2>
+                <p class="card__lede">Ce dont parle chaque unité de recherche, dans ses propres termes.</p>
+                <p class="card__stat">Trois unités de recherche</p>
+                <ul class="card__list">
+                    <li>Choisissez une unité, ou toutes à la fois</li>
+                    <li>Réglez le nombre de mots affichés</li>
+                    <li>Survolez un mot pour sa fréquence, puis exportez le nuage en PNG</li>
+                </ul>
+                <span class="card__go">Ouvrir le nuage de mots</span>
+            </a>
+
+            <a class="card" href="../publications_dashboard/fr/">
+                <h2 class="card__title">Publications</h2>
+                <p class="card__lede">Tout le répertoire des publications, sous cinq angles.</p>
+                <!-- Remplacé par les chiffres réels du jeu de données ; ceci est
+                     le repli si la requête échoue. -->
+                <p class="card__stat" data-publication-stat>Le répertoire complet</p>
+                <ul class="card__list">
+                    <li>Production par année, empilée par type de document</li>
+                    <li>Auteurs les plus publiés, et qui publie avec qui</li>
+                    <li>Les revues et les éditeurs où le ZMO paraît</li>
+                </ul>
+                <span class="card__go">Ouvrir le tableau de bord</span>
+            </a>
+        </nav>
+
+        <footer class="landing__footer">
+            <p>
+                Source : <a href="https://www.zmo.de/">zmo.de</a>. Code et données :
+                <a href="https://github.com/ZMO-Berlin/visualisations">ZMO-Berlin/visualisations</a>.
+            </p>
+        </footer>
+    </main>
+    <script type="module" src="../landing/landing.js"></script>
+</body>
+</html>

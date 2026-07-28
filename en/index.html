@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZMO Visualisations</title>
+    <meta name="description" content="Two interactive views of research at the Leibniz-Zentrum Moderner Orient: a word cloud of the research units, and a dashboard of the publication register.">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="../landing/landing.css">
+</head>
+<body>
+    <main class="landing">
+        <header class="landing__header">
+            <div class="landing__bar">
+                <p class="eyebrow">Leibniz-Zentrum Moderner Orient</p>
+                <a class="lang" href="../fr/" lang="fr" hreflang="fr">Français</a>
+            </div>
+            <h1>Visualisations</h1>
+            <p class="lede">
+                Two interactive views of research at ZMO. Both are built from
+                data read off <a href="https://www.zmo.de/">zmo.de</a> rather
+                than maintained by hand, and both refresh every month.
+            </p>
+        </header>
+
+        <nav class="cards" aria-label="Choose a visualisation">
+            <a class="card" href="../units_wordcloud/en/">
+                <h2 class="card__title">Word cloud</h2>
+                <p class="card__lede">What each research unit writes about, in its own words.</p>
+                <p class="card__stat">Three research units</p>
+                <ul class="card__list">
+                    <li>Pick one unit, or all of them combined</li>
+                    <li>Choose how many words to show</li>
+                    <li>Hover a word for its frequency, and export the cloud as a PNG</li>
+                </ul>
+                <span class="card__go">Open the word cloud</span>
+            </a>
+
+            <a class="card" href="../publications_dashboard/en/">
+                <h2 class="card__title">Publications</h2>
+                <p class="card__lede">The whole publication register, five ways.</p>
+                <!-- Replaced with live figures from the dataset; this is the
+                     fallback if the fetch fails. -->
+                <p class="card__stat" data-publication-stat>The full register</p>
+                <ul class="card__list">
+                    <li>Output per year, stacked by document type</li>
+                    <li>Most-published authors, and who publishes with whom</li>
+                    <li>Which journals and publishers ZMO appears in</li>
+                </ul>
+                <span class="card__go">Open the publications dashboard</span>
+            </a>
+        </nav>
+
+        <footer class="landing__footer">
+            <p>
+                Source: <a href="https://www.zmo.de/">zmo.de</a>. Code and data:
+                <a href="https://github.com/ZMO-Berlin/visualisations">ZMO-Berlin/visualisations</a>.
+            </p>
+        </footer>
+    </main>
+    <script type="module" src="../landing/landing.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+/*
+ * The landing page: a header and two cards.
+ *
+ * Self-contained rather than importing either app's stylesheet. The apps each
+ * own their tokens, and a page whose only job is to point at them should not
+ * break when one of them restyles. The few shared values — the ZMO navy, the
+ * system sans — are repeated here on purpose.
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #192b51;
+    --navy-light: #243a6a;
+    --accent: #2a9d8f;
+    --ink: #333333;
+    --ink-soft: #666666;
+    --ink-light: #a0a0a0;
+    --surface: #ffffff;
+    --page: #f8f9fa;
+    --border: #e0e0e0;
+    --radius: 8px;
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--ink);
+    background: var(--page);
+    line-height: 1.55;
+}
+
+.landing {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 4rem;
+}
+
+/* Header */
+
+.landing__bar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.eyebrow {
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-light);
+}
+
+.lang {
+    font-size: 0.875rem;
+    color: var(--navy);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+}
+
+.lang:hover {
+    border-bottom-color: var(--navy);
+}
+
+h1 {
+    margin-top: 0.35rem;
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 600;
+    color: var(--navy);
+    letter-spacing: -0.015em;
+}
+
+.lede {
+    margin-top: 0.75rem;
+    max-width: 46ch;
+    color: var(--ink-soft);
+}
+
+.lede a {
+    color: inherit;
+}
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+}
+
+/*
+ * The whole card is the link, not a button inside it: a reader aiming at a
+ * choice should not have to find the one word that is clickable.
+ */
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+}
+
+.card:hover,
+.card:focus-visible {
+    border-color: var(--navy);
+    box-shadow: 0 6px 20px rgba(25, 43, 81, 0.09);
+    transform: translateY(-2px);
+}
+
+.card:focus-visible {
+    outline: 2px solid var(--navy);
+    outline-offset: 3px;
+}
+
+.card__title {
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.card__lede {
+    margin-top: 0.35rem;
+    color: var(--ink-soft);
+}
+
+.card__stat {
+    margin-top: 0.9rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+}
+
+.card__list {
+    margin-top: 0.9rem;
+    list-style: none;
+    font-size: 0.9375rem;
+    color: var(--ink-soft);
+}
+
+.card__list li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-top: 0.4rem;
+}
+
+.card__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--border);
+}
+
+.card__go {
+    /* margin-top:auto pins the call to action to the bottom, so two cards of
+       different length still line their links up. */
+    margin-top: auto;
+    padding-top: 1.25rem;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.card__go::after {
+    content: ' →';
+    display: inline-block;
+    transition: transform 150ms ease;
+}
+
+.card:hover .card__go::after {
+    transform: translateX(3px);
+}
+
+/* Footer */
+
+.landing__footer {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.875rem;
+    color: var(--ink-light);
+}
+
+.landing__footer a {
+    color: var(--ink-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+
+    .card:hover,
+    .card:focus-visible {
+        transform: none;
+    }
+}

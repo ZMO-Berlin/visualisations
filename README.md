@@ -8,10 +8,16 @@ Two static web apps built from data scraped from the
 | **Word cloud** | The most frequent terms in each research unit's description and project abstracts | `units_wordcloud/` | [/units_wordcloud/](https://zmo-berlin.github.io/visualisations/units_wordcloud/) |
 | **Publications dashboard** | The publication register — output per year, document types, authors, co-authorship, journals and publishers | `publications_dashboard/` | [/publications_dashboard/](https://zmo-berlin.github.io/visualisations/publications_dashboard/) |
 
-GitHub Pages serves the repository root from `main`, so each app is published at
-its own directory. Neither app hard-codes that path — `main.js` resolves the app
-root from `import.meta.url` — so the same files work from a local server or any
-other host without a change.
+The site root is a landing page that introduces the two and links to them, in
+English and French. GitHub Pages serves the repository root from `main`, so each
+app is published at its own directory. Nothing hard-codes that path — `main.js`
+resolves the app root from `import.meta.url` — so the same files work from a
+local server or any other host without a change.
+
+The landing page reads the publication count and year span from the dashboard's
+own `meta.json` rather than restating them, so it cannot drift from what it
+links to after a monthly refresh. The markup carries a usable sentence as a
+fallback if that fetch fails.
 
 > **Embedding on zmo.de.** The site's `Content-Security-Policy` header lists the
 > origins an `<iframe>` may load from, and `zmo-berlin.github.io` has to be one
@@ -33,6 +39,12 @@ Both apps:
 ## Repository layout
 
 ```
+index.html                   Language-detecting redirect to the landing page
+en/index.html                Landing page, English
+fr/index.html                Landing page, French
+landing/                     Its stylesheet and the script that reads the counts
+.nojekyll                    Serve the files as they are; do not run Jekyll
+
 .github/workflows/           Monthly data refreshes, one per app
 
 data_prep/                   Offline data pipelines (Python)
@@ -78,6 +90,15 @@ Each app follows the same shape:
 Both apps use ES modules and `fetch`, so they must be served over HTTP — opening
 `index.html` from the filesystem will not work.
 
+Serving the repository root gives the landing page and both apps, exactly as
+they are published:
+
+```bash
+python -m http.server 8002
+```
+
+Then open <http://localhost:8002/>. To work on one app on its own:
+
 ```bash
 python -m http.server 8000 --directory units_wordcloud
 ```
@@ -86,8 +107,7 @@ python -m http.server 8000 --directory units_wordcloud
 python -m http.server 8001 --directory publications_dashboard
 ```
 
-Then open <http://localhost:8000/> or <http://localhost:8001/>. Any static file
-server works equally well.
+Any static file server works equally well.
 
 ## Setting up the pipelines
 
