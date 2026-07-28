@@ -29,7 +29,6 @@ import re
 import sys
 import time
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
@@ -444,8 +443,11 @@ def main(argv: list[str] | None = None) -> int:
     if args.only:
         print("note: --only was used, so units.json was left unchanged")
     else:
+        # Deliberately no timestamp: the manifest has to be byte-identical when
+        # the site has not changed, otherwise the monthly workflow commits a
+        # diff on every run and republishes the site for nothing. Git already
+        # records when each refresh landed.
         manifest = {
-            "generated": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
             "source": BASE_URL,
             "units": manifest_units,
         }
