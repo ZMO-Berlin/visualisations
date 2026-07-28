@@ -1,75 +1,97 @@
-/* Slider Module */
-.slider-container {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 0 15px;
-}
+/*
+ * The word-count slider.
+ *
+ * Label and value live in `.field__head` above the track (see controls.css);
+ * this file is only the track and its handle. The filled portion to the left of
+ * the handle is drawn with a gradient on the track rather than an extra
+ * element, so there is nothing to keep in sync with the input's value.
+ */
 
-.slider-label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: var(--font-weight-medium);
-    color: #333;
-}
-
-.slider-value {
-    background: var(--color-primary);
-    color: white;
-    padding: 2px 8px;
-    border-radius: 12px;
-    font-size: var(--font-size-sm);
-    min-width: 30px;
-    text-align: center;
-}
-
-input[type="range"] {
+.slider {
     width: 100%;
-    height: 6px;
-    background: #e0e0e0;
-    border-radius: 3px;
+    height: 1.25rem;
+    margin: 0;
+    background: transparent;
     appearance: none;
+    cursor: pointer;
+}
+
+.slider:focus {
     outline: none;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+/* --- track --------------------------------------------------------------- */
+
+.slider::-webkit-slider-runnable-track {
+    height: 4px;
+    border-radius: 2px;
+    background: var(--c-line);
+}
+
+.slider::-moz-range-track {
+    height: 4px;
+    border-radius: 2px;
+    background: var(--c-line);
+}
+
+/* Firefox fills the track up to the handle for us. */
+.slider::-moz-range-progress {
+    height: 4px;
+    border-radius: 2px;
+    background: var(--c-brand);
+}
+
+/* --- handle -------------------------------------------------------------- */
+
+.slider::-webkit-slider-thumb {
     appearance: none;
-    width: 18px;
-    height: 18px;
-    background: var(--color-primary);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border: 2px solid white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    width: 15px;
+    height: 15px;
+    /* Centres the handle on a 4px track: (4 - 15) / 2. */
+    margin-top: -5.5px;
+    background: var(--c-surface);
+    border: 2px solid var(--c-brand);
+    border-radius: var(--r-pill);
+    box-shadow: 0 1px 2px rgba(20, 39, 72, 0.2);
+    transition: transform var(--dur-fast) var(--ease-out);
 }
 
-input[type="range"]::-webkit-slider-thumb:hover {
-    background: var(--color-primary-dark);
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: var(--c-surface);
+    border: 2px solid var(--c-brand);
+    border-radius: var(--r-pill);
+    box-shadow: 0 1px 2px rgba(20, 39, 72, 0.2);
+    transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.slider:hover::-webkit-slider-thumb {
     transform: scale(1.1);
 }
 
-input[type="range"]::-webkit-slider-thumb:active {
-    transform: scale(0.95);
-}
-
-input[type="range"]::-moz-range-thumb {
-    width: 18px;
-    height: 18px;
-    background: var(--color-primary);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border: 2px solid white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-input[type="range"]::-moz-range-thumb:hover {
-    background: var(--color-primary-dark);
+.slider:hover::-moz-range-thumb {
     transform: scale(1.1);
 }
 
-input[type="range"]::-moz-range-thumb:active {
-    transform: scale(0.95);
-} 
+.slider:focus-visible::-webkit-slider-thumb {
+    box-shadow: var(--ring-focus);
+}
+
+.slider:focus-visible::-moz-range-thumb {
+    box-shadow: var(--ring-focus);
+}
+
+/* A finger needs more than fifteen pixels to land on. */
+@media (hover: none) {
+    .slider::-webkit-slider-thumb {
+        width: 22px;
+        height: 22px;
+        margin-top: -9px;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 22px;
+        height: 22px;
+    }
+}

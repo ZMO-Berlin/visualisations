@@ -1,5 +1,12 @@
 /**
- * Search, year range, and one removable chip per active filter.
+ * The command bar: search, year range, the active filters, and what they leave.
+ *
+ * This was three stacked blocks — a strip of three big headline figures, then a
+ * row of controls, then a row of chips — each in its own bordered box, together
+ * taking a third of the screen before a single chart. They are one panel now,
+ * and the figures have shrunk to a line of text beside the chips, because that
+ * is what they are for: "214 of 1,962" is a reading of the filter, so it
+ * belongs next to the filter rather than above it in 28px type.
  *
  * Document types and venues are also chosen by clicking their charts; the chips
  * are what makes every choice, from wherever it was made, visible and undoable
@@ -39,6 +46,7 @@ export class FilterBar {
     #searchInput = null;
     #controlsRow = null;
     #chipsRow = null;
+    #countsSlot = null;
     #clearButton = null;
     /** `{ from, to }` once the dataset's year span is known. */
     #yearSelects = null;
@@ -62,6 +70,20 @@ export class FilterBar {
         this.container = container;
         this.strings = strings;
         this.store = store;
+        // Eagerly, not on first render: the counts slot below has to exist
+        // before `Summary` can be constructed against it, and the whole point
+        // of the merge is that the counts live inside this panel.
+        this.#buildShell();
+    }
+
+    /**
+     * Where the filtered figures are written.
+     *
+     * Handing out a node rather than counting here keeps this component about
+     * the filters and `Summary` about what they leave.
+     */
+    get countsSlot() {
+        return this.#countsSlot;
     }
 
     render(state, extent) {
@@ -90,99 +112,125 @@ export class FilterBar {
     }
 
     /**
-     * Creates the parts that are missing, and touches nothing that already
-     * exists.
+     * The parts that do not depend on the data: everything but the year range.
      *
-     * The year options are the whole dataset's span, which never changes once
-     * the data has loaded, so the selects are built the first time it is known
-     * and then left alone. `extent` is null only when no record carries a year.
+     * Built once, in the constructor, and then only ever updated. Moving a
+     * focused element in the DOM blurs it, so re-rendering this bar from
+     * scratch on every state change threw the caret out of the search box after
+     * the first character it debounced.
+     */
+    #buildShell() {
+        this.#searchInput = el('input', {
+            class: 'control__input',
+            type: 'search',
+            placeholder: this.strings.search,
+            'aria-label': this.strings.search,
+            // The combobox pattern, so the suggestions are announced rather
+            // than being a visual-only affordance. `list` is deliberately
+            // absent: a native <datalist> cannot carry the count, the kind,
+            // or the click that applies a filter instead of a text search.
+            role: 'combobox',
+            'aria-autocomplete': 'list',
+            'aria-expanded': 'false',
+            'aria-controls': 'search-suggestions',
+            autocomplete: 'off',
+            on: {
+                input: event => {
+                    const { value } = event.target;
+                    clearTimeout(this.#searchTimer);
+                    this.#searchTimer = setTimeout(() => this.store.setSearch(value), SEARCH_DEBOUNCE_MS);
+                    // Not debounced: a suggestion list that lagged the caret
+                    // by a fifth of a second would be read as broken.
+                    this.#suggest(value);
+                },
+                keydown: event => this.#onKeyDown(event),
+                focus: event => this.#suggest(event.target.value)
+            }
+        });
+
+        this.#listbox = el('ul', {
+            id: 'search-suggestions',
+            class: 'suggestions',
+            role: 'listbox',
+            'aria-label': this.strings.suggestions,
+            hidden: true
+        });
+
+        this.#clearButton = el('button', {
+            class: 'button button--ghost',
+            type: 'button',
+            text: this.strings.clearFilters,
+            on: { click: () => this.store.clearFilters() }
+        });
+
+        this.#controlsRow = el('div', { class: 'command__row' }, [
+            // Positioned, so the listbox can hang under the input rather
+            // than pushing the rest of the dashboard down as it opens.
+            el('div', { class: 'control control--grow control--combobox' }, [
+                el('span', { class: 'control__icon', 'aria-hidden': 'true', text: '⌕' }),
+                this.#searchInput,
+                this.#listbox
+            ]),
+            this.#clearButton
+        ]);
+
+        this.#chipsRow = el('div', {
+            class: 'chips',
+            role: 'list',
+            'aria-label': this.strings.activeFilters,
+            hidden: true
+        });
+
+        // Written by `Summary`, which is constructed against this node.
+        this.#countsSlot = el('div', { class: 'command__counts' });
+
+        mount(this.container, el('div', { class: 'command' }, [
+            this.#controlsRow,
+            el('div', { class: 'command__meta' }, [this.#chipsRow, this.#countsSlot])
+        ]));
+
+        // A press anywhere else dismisses the list. `pointerdown` rather
+        // than `click` so it closes on the way down, and capture so a
+        // handler that stops propagation cannot leave it stuck open.
+        this.#onDocumentPointerDown = event => {
+            if (!this.#controlsRow.contains(event.target)) {
+                this.#closeSuggestions();
+            }
+        };
+        document.addEventListener('pointerdown', this.#onDocumentPointerDown, true);
+    }
+
+    /**
+     * The year range, which cannot be built until the data says what it is.
+     *
+     * The options are the whole dataset's span, which never changes once the
+     * data has loaded, so the selects are built the first time it is known and
+     * then left alone. `extent` is null only when no record carries a year.
      */
     #build(extent) {
-        if (!this.#controlsRow) {
-            this.#searchInput = el('input', {
-                class: 'control__input',
-                type: 'search',
-                placeholder: this.strings.search,
-                'aria-label': this.strings.search,
-                // The combobox pattern, so the suggestions are announced rather
-                // than being a visual-only affordance. `list` is deliberately
-                // absent: a native <datalist> cannot carry the count, the kind,
-                // or the click that applies a filter instead of a text search.
-                role: 'combobox',
-                'aria-autocomplete': 'list',
-                'aria-expanded': 'false',
-                'aria-controls': 'search-suggestions',
-                autocomplete: 'off',
-                on: {
-                    input: event => {
-                        const { value } = event.target;
-                        clearTimeout(this.#searchTimer);
-                        this.#searchTimer = setTimeout(() => this.store.setSearch(value), SEARCH_DEBOUNCE_MS);
-                        // Not debounced: a suggestion list that lagged the
-                        // caret by a fifth of a second would be read as broken.
-                        this.#suggest(value);
-                    },
-                    keydown: event => this.#onKeyDown(event),
-                    focus: event => this.#suggest(event.target.value)
-                }
-            });
-
-            this.#listbox = el('ul', {
-                id: 'search-suggestions',
-                class: 'suggestions',
-                role: 'listbox',
-                'aria-label': this.strings.suggestions,
-                hidden: true
-            });
-
-            this.#clearButton = el('button', {
-                class: 'button',
-                type: 'button',
-                text: this.strings.clearFilters,
-                on: { click: () => this.store.clearFilters() }
-            });
-
-            this.#controlsRow = el('div', { class: 'controls' }, [
-                // Positioned, so the listbox can hang under the input rather
-                // than pushing the rest of the dashboard down as it opens.
-                el('div', { class: 'control control--grow control--combobox' }, [
-                    this.#searchInput, this.#listbox
-                ]),
-                this.#clearButton
-            ]);
-
-            this.#chipsRow = el('div', {
-                class: 'chips',
-                role: 'list',
-                'aria-label': this.strings.activeFilters,
-                hidden: true
-            });
-
-            mount(this.container, el('div', {}, [this.#controlsRow, this.#chipsRow]));
-
-            // A press anywhere else dismisses the list. `pointerdown` rather
-            // than `click` so it closes on the way down, and capture so a
-            // handler that stops propagation cannot leave it stuck open.
-            this.#onDocumentPointerDown = event => {
-                if (!this.#controlsRow.contains(event.target)) {
-                    this.#closeSuggestions();
-                }
-            };
-            document.addEventListener('pointerdown', this.#onDocumentPointerDown, true);
+        if (!extent || this.#yearSelects) {
+            return;
         }
 
-        if (extent && !this.#yearSelects) {
-            this.#extent = extent;
-            this.#yearSelects = {
-                from: this.#yearSelect('from'),
-                to: this.#yearSelect('to')
-            };
-            // Before the button, so the row reads search · from · to · clear.
-            this.#clearButton.before(
-                el('div', { class: 'control' }, [this.#yearSelects.from]),
-                el('div', { class: 'control' }, [this.#yearSelects.to])
-            );
-        }
+        this.#extent = extent;
+        this.#yearSelects = {
+            from: this.#yearSelect('from'),
+            to: this.#yearSelect('to')
+        };
+
+        // Before the button, so the row reads search · from · to · clear.
+        this.#clearButton.before(
+            this.#yearControl('from', this.#yearSelects.from),
+            this.#yearControl('to', this.#yearSelects.to)
+        );
+    }
+
+    /** A year select with its edge named beside it rather than inside it. */
+    #yearControl(edge, select) {
+        return el('div', { class: 'control control--year' }, [
+            el('span', { class: 'control__tag', text: this.strings[edge] }),
+            select
+        ]);
     }
 
     // ---------------------------------------------------------- autocomplete
@@ -398,7 +446,9 @@ export class FilterBar {
                 }
             }
         }, [
-            el('option', { value: '', text: this.strings[edge] }),
+            // The edge is named by the tag beside the control now, so the empty
+            // option says what choosing it means rather than repeating "From".
+            el('option', { value: '', text: this.strings.anyYear }),
             ...years.map(year => el('option', { value: String(year), text: String(year) }))
         ]);
     }
@@ -456,6 +506,7 @@ export class FilterBar {
         this.#searchInput = null;
         this.#controlsRow = null;
         this.#chipsRow = null;
+        this.#countsSlot = null;
         this.#clearButton = null;
         this.#yearSelects = null;
         this.#listbox = null;

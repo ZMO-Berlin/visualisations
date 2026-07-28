@@ -14,7 +14,11 @@ button {
 }
 
 a {
-    color: var(--color-primary);
+    color: var(--c-accent);
+}
+
+a:hover {
+    color: var(--c-accent-strong);
 }
 
 ol,

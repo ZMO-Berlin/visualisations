@@ -373,6 +373,7 @@ def build_meta(dataset: list[dict], source: str, document_types: list[str]) -> d
     years = sorted(record["year"] for record in dataset if record.get("year"))
     authors = {name for record in dataset for name in record.get("authors", [])}
     types = Counter(record.get("type", "") for record in dataset)
+    per_year = Counter(years)
 
     return {
         "source": source,
@@ -387,6 +388,17 @@ def build_meta(dataset: list[dict], source: str, document_types: list[str]) -> d
             "withoutYear": sum(1 for record in dataset if not record.get("year")),
         },
         "years": {"min": years[0], "max": years[-1]} if years else None,
+        # One count per year across the whole span, gaps included as zero. The
+        # landing page draws its preview of the dashboard from this: without it
+        # that page would have to fetch the megabyte of publications.json to
+        # show a chart the size of a postage stamp, or the shape would be drawn
+        # by hand and be a picture of nothing.
+        "perYear": [
+            {"year": year, "count": per_year[year]}
+            for year in range(years[0], years[-1] + 1)
+        ]
+        if years
+        else [],
     }
 
 

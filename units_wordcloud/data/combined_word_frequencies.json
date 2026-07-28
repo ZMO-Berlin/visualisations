@@ -12,10 +12,6 @@
     "size": 44
   },
   {
-    "text": "focus",
-    "size": 40
-  },
-  {
     "text": "local",
     "size": 40
   },
@@ -44,6 +40,10 @@
     "size": 33
   },
   {
+    "text": "change",
+    "size": 31
+  },
+  {
     "text": "context",
     "size": 31
   },
@@ -64,7 +64,7 @@
     "size": 29
   },
   {
-    "text": "different",
+    "text": "work",
     "size": 28
   },
   {
@@ -72,7 +72,7 @@
     "size": 27
   },
   {
-    "text": "aim",
+    "text": "process",
     "size": 25
   },
   {
@@ -92,28 +92,12 @@
     "size": 25
   },
   {
-    "text": "process",
-    "size": 24
-  },
-  {
     "text": "war",
     "size": 24
   },
   {
-    "text": "well",
+    "text": "group",
     "size": 24
-  },
-  {
-    "text": "work",
-    "size": 23
-  },
-  {
-    "text": "new",
-    "size": 23
-  },
-  {
-    "text": "question",
-    "size": 23
   },
   {
     "text": "modern",
@@ -132,20 +116,12 @@
     "size": 21
   },
   {
-    "text": "group",
-    "size": 21
-  },
-  {
     "text": "oil",
     "size": 21
   },
   {
     "text": "indian",
     "size": 21
-  },
-  {
-    "text": "change",
-    "size": 20
   },
   {
     "text": "region",
@@ -160,11 +136,19 @@
     "size": 20
   },
   {
-    "text": "way",
+    "text": "experience",
+    "size": 19
+  },
+  {
+    "text": "affect",
     "size": 19
   },
   {
     "text": "woman",
+    "size": 19
+  },
+  {
+    "text": "understand",
     "size": 19
   },
   {
@@ -188,6 +172,10 @@
     "size": 19
   },
   {
+    "text": "shape",
+    "size": 18
+  },
+  {
     "text": "relation",
     "size": 18
   },
@@ -204,6 +192,10 @@
     "size": 18
   },
   {
+    "text": "follow",
+    "size": 18
+  },
+  {
     "text": "development",
     "size": 18
   },
@@ -216,19 +208,11 @@
     "size": 17
   },
   {
-    "text": "first",
-    "size": 17
-  },
-  {
-    "text": "explores",
+    "text": "light",
     "size": 17
   },
   {
     "text": "world",
-    "size": 17
-  },
-  {
-    "text": "explore",
     "size": 17
   },
   {
@@ -244,6 +228,14 @@
     "size": 16
   },
   {
+    "text": "form",
+    "size": 16
+  },
+  {
+    "text": "archive",
+    "size": 16
+  },
+  {
     "text": "music",
     "size": 16
   },
@@ -252,12 +244,8 @@
     "size": 16
   },
   {
-    "text": "part",
-    "size": 15
-  },
-  {
-    "text": "often",
-    "size": 15
+    "text": "school",
+    "size": 16
   },
   {
     "text": "dynamic",
@@ -268,31 +256,15 @@
     "size": 15
   },
   {
-    "text": "archive",
-    "size": 15
-  },
-  {
     "text": "cultural",
     "size": 15
-  },
-  {
-    "text": "seek",
-    "size": 14
   },
   {
     "text": "trajectory",
     "size": 14
   },
   {
-    "text": "three",
-    "size": 14
-  },
-  {
-    "text": "mean",
-    "size": 14
-  },
-  {
-    "text": "perspective",
+    "text": "impact",
     "size": 14
   },
   {
@@ -300,27 +272,15 @@
     "size": 14
   },
   {
-    "text": "approach",
-    "size": 14
-  },
-  {
-    "text": "light",
-    "size": 14
-  },
-  {
-    "text": "experience",
-    "size": 14
-  },
-  {
     "text": "ethnographic",
     "size": 14
   },
   {
-    "text": "africa",
+    "text": "rise",
     "size": 14
   },
   {
-    "text": "school",
+    "text": "africa",
     "size": 14
   },
   {
@@ -336,6 +296,10 @@
     "size": 13
   },
   {
+    "text": "live",
+    "size": 13
+  },
+  {
     "text": "violence",
     "size": 13
   },
@@ -344,15 +308,11 @@
     "size": 13
   },
   {
-    "text": "use",
-    "size": 13
-  },
-  {
     "text": "community",
     "size": 13
   },
   {
-    "text": "specific",
+    "text": "challenge",
     "size": 13
   },
   {
@@ -360,19 +320,23 @@
     "size": 13
   },
   {
+    "text": "build",
+    "size": 13
+  },
+  {
+    "text": "care",
+    "size": 13
+  },
+  {
     "text": "period",
     "size": 13
   },
   {
-    "text": "form",
-    "size": 13
-  },
-  {
-    "text": "order",
-    "size": 13
-  },
-  {
     "text": "concept",
+    "size": 13
+  },
+  {
+    "text": "engage",
     "size": 13
   },
   {
@@ -381,10 +345,6 @@
   },
   {
     "text": "berlin",
-    "size": 13
-  },
-  {
-    "text": "affect",
     "size": 13
   },
   {
@@ -398,5 +358,45 @@
   {
     "text": "narrative",
     "size": 13
+  },
+  {
+    "text": "field",
+    "size": 13
+  },
+  {
+    "text": "digital",
+    "size": 13
+  },
+  {
+    "text": "empire",
+    "size": 13
+  },
+  {
+    "text": "cold",
+    "size": 13
+  },
+  {
+    "text": "mobility",
+    "size": 12
+  },
+  {
+    "text": "conflict",
+    "size": 12
+  },
+  {
+    "text": "across",
+    "size": 12
+  },
+  {
+    "text": "many",
+    "size": 12
+  },
+  {
+    "text": "home",
+    "size": 12
+  },
+  {
+    "text": "become",
+    "size": 12
   }
 ]

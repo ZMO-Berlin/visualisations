@@ -1,160 +1,81 @@
-/* Responsive Module */
-@media (max-width: 900px) {
-    :root {
-        --word-list-width: 100%;
+/*
+ * Breakpoint overrides — must stay last in the import order.
+ *
+ * Much shorter than it was. The old file spent fifty lines restating heights as
+ * `calc(100vh - 90px)` and `calc(100vh - 80px)` at each breakpoint, because the
+ * base layout hard-coded `calc(100vh - 70px)`; the column now measures itself,
+ * so none of that has anything to correct.
+ */
+
+/* --- the toolbar stops fitting on one line ------------------------------- */
+@media (max-width: 62rem) {
+    .context {
+        gap: var(--s-5);
+        padding: var(--s-5) var(--s-6) var(--s-4);
     }
 
-    /* Menu Layout */
-    .menu-wrapper {
+    .toolbar {
         flex-wrap: wrap;
-        gap: 12px;
-        padding: 6px;
-    }
-    
-    .input-container {
-        flex: 1 1 calc(50% - 12px);
+        gap: var(--s-4) var(--s-6);
+        padding: var(--s-3) var(--s-6);
     }
 
-    /* Content Layout */
-    .content-container {
-        flex-direction: column;
-        position: relative;
-        height: calc(100vh - 70px);
-        overflow: hidden;
+    /* Once the row wraps, the export button has a line to itself, and pinning
+       it right would leave it stranded under nothing. */
+    .field--action {
+        margin-left: 0;
     }
 
-    /* Word Cloud */
+    .field--slider {
+        flex: 1 1 14rem;
+    }
+}
+
+/* --- the ranked list stops earning its width ----------------------------- */
+@media (max-width: 56rem) {
     .wordcloud-container {
-        flex: 1;
-        min-height: 0;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-    }
-
-    #wordcloud {
-        height: 100%;
-        width: 100%;
-        min-height: unset;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        overflow: hidden;
+        padding: var(--s-3) var(--s-4);
     }
 
     /*
-     * The word list is hidden below this breakpoint: the cloud takes the whole
-     * viewport instead. The ~50 lines of word-list sizing rules that used to
-     * follow this block were unreachable behind the `display: none !important`
-     * above, and have been removed. If the list is ever shown on narrow
-     * screens again, style it here.
+     * Hidden rather than stacked below the cloud. The panel is a companion to
+     * the cloud — hovering one highlights the other — and a version of it that
+     * cannot be seen at the same time as the cloud is not that.
      */
     .word-list-container {
-        display: none !important;
+        display: none;
+    }
+}
+
+/* --- phones -------------------------------------------------------------- */
+@media (max-width: 37.5rem) {
+    .context {
+        padding: var(--s-4);
     }
 
-    /* Fix for iframe embedding */
-    body {
-        position: fixed;
+    .context__intro {
+        /* The title and the current unit still say what this is; the full
+           sentence of provenance costs a third of a short screen. */
+        display: none;
+    }
+
+    .context__stats {
+        display: none;
+    }
+
+    .toolbar {
+        padding: var(--s-3) var(--s-4);
+        gap: var(--s-3) var(--s-4);
+    }
+
+    .field--slider {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+
+    /* A 1.5:1 box wastes most of a portrait screen; let the cloud fill it. */
+    #wordcloud {
+        aspect-ratio: auto;
         width: 100%;
-        height: 100%;
-        overflow: hidden;
     }
 }
-
-@media (max-width: 600px) {
-    /* Menu Layout */
-    .menu-wrapper {
-        flex-direction: column;
-        gap: 6px;
-        padding: 6px;
-        margin: 2px auto;
-    }
-    
-    .input-container {
-        width: 100%;
-    }
-    
-    .slider-container {
-        margin: 0;
-    }
-
-    /* Content Layout */
-    .content-container {
-        height: calc(100vh - 90px);
-    }
-}
-
-/* Small mobile devices */
-@media (max-width: 480px) {
-    /* Content Layout */
-    .content-container {
-        height: calc(100vh - 80px);
-    }
-
-    /* Word Cloud */
-    .wordcloud-container {
-        height: 100%; /* Take full height */
-    }
-
-    /* Word List */
-    .word-list-container {
-        height: 180px;
-        min-height: 180px;
-        max-height: 180px;
-        flex: 0 0 180px;
-    }
-
-    .word-list {
-        height: calc(100% - 80px);
-    }
-
-    .word-list-item {
-        padding: 4px 8px;
-    }
-
-    .word-rank {
-        min-width: 32px;
-    }
-
-    .word-text {
-        margin: 0 8px;
-    }
-
-    .word-frequency {
-        min-width: 50px;
-    }
-}
-
-/* Touch-friendly improvements */
-@media (hover: none) {
-    /* Was #countrySelector — left behind when the country filter became a
-       research-unit filter, so this rule matched nothing. */
-    #unitSelector,
-    input[type="range"],
-    .save-button {
-        cursor: default;
-    }
-
-    input[type="range"]::-webkit-slider-thumb {
-        width: 24px;
-        height: 24px;
-    }
-
-    input[type="range"]::-moz-range-thumb {
-        width: 24px;
-        height: 24px;
-    }
-
-    .save-button:hover {
-        transform: none;
-        box-shadow: 0 2px 4px rgba(74, 144, 226, 0.2);
-    }
-
-    .save-button:active {
-        background-color: #357abd;
-    }
-} 

@@ -26,10 +26,11 @@ export class WordCloudLayoutManager {
             .size([width, height])
             .padding(padding)
             // d3-cloud measures every word on a scratch canvas to decide where
-            // it fits, and defaults that measurement to `serif` — while the SVG
-            // draws in Muli. The layout was packing shapes that were never the
-            // ones on screen, which is both gaps where there should be none and
-            // collisions where the metrics disagreed.
+            // it fits, and defaults that measurement to a generic `serif` —
+            // while the SVG draws in the configured face. The layout was
+            // packing shapes that were never the ones on screen, which is both
+            // gaps where there should be none and collisions where the metrics
+            // disagreed.
             .font(family)
             .canvas(WordCloudLayoutManager.createMeasurementCanvas)
             .rotate((word, index) => this.getRotation(word, index));

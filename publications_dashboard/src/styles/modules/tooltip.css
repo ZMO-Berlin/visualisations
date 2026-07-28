@@ -6,16 +6,16 @@
     left: 0;
     z-index: 10;
     max-width: 18rem;
-    padding: var(--space-xs) var(--space-sm);
-    background: var(--color-primary);
-    color: var(--color-white);
-    border-radius: var(--radius);
-    font-size: 0.8125rem;
+    padding: var(--s-1) var(--s-2);
+    background: var(--c-brand);
+    color: var(--c-surface);
+    border-radius: var(--r-sm);
+    font-size: var(--text-sm);
     line-height: 1.35;
     /* The tooltip follows the pointer, so it must never become the element the
        pointer is over. */
     pointer-events: none;
-    box-shadow: 0 2px 8px var(--color-shadow-hover);
+    box-shadow: 0 2px 8px rgba(20, 39, 72, 0.10);
 }
 
 .tooltip[hidden] {
@@ -23,9 +23,9 @@
 }
 
 .tooltip__title {
-    font-weight: 600;
+    font-weight: var(--weight-medium);
 }
 
 .tooltip__line {
-    color: var(--color-gray-200);
+    color: var(--c-line);
 }

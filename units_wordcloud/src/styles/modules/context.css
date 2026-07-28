@@ -1,0 +1,126 @@
+/*
+ * The context strip: what the page is, which unit it is showing, and two
+ * figures describing what is on screen.
+ *
+ * This is the band that survives when the page is embedded on zmo.de and the
+ * site bar removes itself, so it has to stand on its own — it carries the
+ * title and the sentence of provenance that the site bar does not.
+ */
+
+.context {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--s-10);
+    flex-wrap: wrap;
+    padding: var(--s-5) var(--s-8) var(--s-4);
+    background: var(--c-surface);
+    border-bottom: 1px solid var(--c-line);
+    text-align: left;
+}
+
+.context__text {
+    min-width: 0;
+}
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    margin: 0 0 var(--s-2);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--c-ink-soft);
+}
+
+.eyebrow::before {
+    content: '';
+    flex: none;
+    width: 7px;
+    height: 7px;
+    background: var(--c-frame);
+}
+
+.context__title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: var(--weight-regular);
+    line-height: 1.1;
+    letter-spacing: var(--track-tight);
+    color: var(--c-brand-strong);
+}
+
+/*
+ * Wider than `--w-prose`. That token is for a column of body text; this is one
+ * sentence in a horizontal band, and holding it to 62ch broke it over three
+ * lines and cost the cloud below it twenty-odd pixels of height for no gain in
+ * readability.
+ */
+.context__intro {
+    margin: var(--s-2) 0 0;
+    max-width: 72ch;
+    font-family: var(--font-display);
+    font-size: var(--text-base);
+    line-height: 1.5;
+    color: var(--c-ink-muted);
+}
+
+/*
+ * Short viewports — a laptop at 720px, or the embed on zmo.de once the
+ * institute's own header has taken its share.
+ *
+ * The cloud is the page; everything above it is caption. Below this height the
+ * caption gives up its sentence and its two figures, and keeps the title and
+ * the unit it is showing, which is the part a reader cannot reconstruct from
+ * looking at the picture.
+ */
+@media (max-height: 46rem) {
+    .context {
+        padding: var(--s-3) var(--s-8);
+    }
+
+    .context__title {
+        font-size: var(--text-lg);
+    }
+
+    .context__intro,
+    .context__stats {
+        display: none;
+    }
+}
+
+/* Two tiles, separated by the hairline showing through a 1px grid gap. */
+.context__stats {
+    display: flex;
+    gap: 1px;
+    flex: none;
+    background: var(--c-line);
+    border: 1px solid var(--c-line);
+}
+
+.context__stat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-1);
+    padding: var(--s-3) var(--s-4);
+    background: var(--c-surface);
+}
+
+.context__stat-value {
+    font-size: var(--text-lg);
+    line-height: 1;
+    color: var(--c-brand-strong);
+    /* Both figures change as the slider moves; tabular keeps the labels still. */
+    font-variant-numeric: var(--figures-tabular);
+}
+
+.context__stat-label {
+    font-size: var(--text-2xs);
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--c-ink-faint);
+}

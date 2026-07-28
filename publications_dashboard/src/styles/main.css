@@ -1,18 +1,19 @@
 /*
  * Stylesheet entry point.
  *
- * Import order matters: tokens (reset, colors) come first so later modules can
- * reference the custom properties they define, and `responsive` comes last so
- * its media queries override the base layout.
+ * Import order matters: structure first so components can override it, and
+ * `responsive` last so its media queries win.
+ *
+ * The `colors` module that used to head this list is gone. Every custom
+ * property it declared is now in `shared/tokens.css`, which the page loads
+ * before this file and which the word cloud loads too — one navy, one set of
+ * series colours, one spacing scale, declared once.
  *
  * This file intentionally contains no rules of its own.
  */
 
-/* Tokens */
-@import './modules/reset.css';
-@import './modules/colors.css';
-
 /* Structure */
+@import './modules/reset.css';
 @import './modules/layout.css';
 
 /* Components */

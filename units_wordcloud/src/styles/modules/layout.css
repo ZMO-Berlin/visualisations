@@ -1,62 +1,97 @@
-/* Layout Module */
-body { 
-    font-family: var(--font-base);
-    text-align: center;
-    min-height: 100vh;
+/*
+ * Page frame.
+ *
+ * The page is a fixed, full-viewport column that never scrolls: site bar,
+ * context strip, toolbar, then the cloud and its ranked list filling whatever
+ * is left. Everything above the cloud is `flex: none` and sized by its own
+ * content, and the cloud takes the remainder — which is the point of the
+ * rewrite. The heights used to be hard-coded as `calc(100vh - 70px)` in four
+ * places, a figure that was only ever true for one arrangement of controls and
+ * was already wrong for the two narrow breakpoints that patched it with 90px
+ * and 80px.
+ */
+
+body {
+    font-family: var(--font-ui);
+    font-size: var(--text-base);
+    line-height: var(--lh-normal);
+    color: var(--c-ink);
+    background: var(--c-page);
+    -webkit-font-smoothing: antialiased;
+
+    position: fixed;
+    inset: 0;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     margin: 0;
     padding: 0;
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-normal);
-    position: fixed;
+}
+
+/* The three bands above the cloud: each as tall as it needs to be. */
+.site-bar,
+.context,
+.controls-container {
+    flex: none;
+}
+
+.controls-container {
     width: 100%;
+    position: relative;
+    z-index: 100;
+    background: var(--c-surface);
+    border-bottom: 1px solid var(--c-line);
 }
 
 .content-container {
     display: flex;
     flex: 1;
     width: 100%;
+    /* Without this a flex child refuses to shrink below its content, and the
+       ranked list pushes the cloud out of the viewport instead of scrolling. */
+    min-height: 0;
     overflow: hidden;
     position: relative;
 }
 
 .wordcloud-container {
     position: relative;
-    flex: 1 0 calc(100% - var(--word-list-width));
-    width: calc(100% - var(--word-list-width));
-    min-width: calc(100% - var(--word-list-width));
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin: 0;
-    padding: 5px;
+    padding: var(--s-5) var(--s-6);
 }
 
-#wordcloud { 
-    width: 100%;
-    height: calc(100vh - 70px);
-    min-height: 400px;
+/*
+ * The layout box, and the element whose size the cloud is measured against.
+ *
+ * `aspect-ratio` with `max-width` expresses the same constraint the old
+ * `max-width: min(100%, calc((100vh - 70px) * 1.5))` did, without needing to
+ * know the height of the chrome: at most one and a half times as wide as it is
+ * tall, and otherwise as wide as there is room for.
+ */
+#wordcloud {
+    height: 100%;
+    aspect-ratio: 1.5;
+    max-width: 100%;
+    min-height: 0;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    background-color: transparent;
-    max-width: min(100%, calc((100vh - 70px) * 1.5));
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
+    background-color: transparent;
 }
 
 #wordcloud svg {
     width: 100%;
     height: 100%;
-    max-width: 1200px;
-    min-height: 400px;
     display: block;
-    aspect-ratio: 1.5;
-    overflow: visible; /* Allow words to overflow their container */
-} 
+    /* Words are placed from their centres and may reach past the box. */
+    overflow: visible;
+}

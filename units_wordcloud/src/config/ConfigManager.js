@@ -26,8 +26,12 @@ export class ConfigManager {
                 },
                 font: {
                     family: {
-                        primary: 'Muli',
-                        fallback: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif'
+                        // The cloud is the one place on the site where the words
+                        // *are* the picture, so they are set in the display
+                        // serif rather than in the UI sans — see `--font-display`
+                        // in shared/tokens.css.
+                        primary: 'Newsreader',
+                        fallback: 'Georgia, "Times New Roman", serif'
                     },
                     size: {
                         min: 10,

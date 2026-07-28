@@ -8,17 +8,25 @@
  */
 
 import { el, mount } from '../utils/dom.js';
-import { citation, formatNumber } from '../utils/format.js';
-import { translateType } from '../utils/translations.js';
+import { formatNumber } from '../utils/format.js';
 import { Pager } from './Pager.js';
 
 export class PublicationList {
     #records = [];
 
-    constructor(container, { settings, strings, locale }) {
+    /**
+     * @param {HTMLElement} container
+     * @param {object} deps
+     * @param {(key: string) => string} deps.formatLabel Document type, translated.
+     * @param {(key: string) => number} deps.seriesIndex The type's palette slot,
+     *   so a row's square is the same colour as its band in the timeline.
+     */
+    constructor(container, { settings, strings, locale, formatLabel, seriesIndex }) {
         this.container = container;
         this.strings = strings;
         this.locale = locale;
+        this.formatLabel = formatLabel;
+        this.seriesIndex = seriesIndex;
         this.pager = new Pager({
             strings,
             pageSize: settings.list.pageSize,
@@ -60,29 +68,53 @@ export class PublicationList {
         ]));
     }
 
+    /**
+     * One record: the year in its own column, then the type, the title and who
+     * published it where.
+     *
+     * The year is pulled out to the left rather than left at the end of the
+     * citation line, because the list is sorted by it — a column of years is
+     * the scale the reader is scrolling along. The type keeps the palette slot
+     * it has in the timeline above, so a row and its band are the same colour.
+     */
     #item(record) {
         const title = [record.title, record.subtitle].filter(Boolean).join(': ')
             || record.slug;
+        const venue = record.journal || record.publisher || record.series;
+        const authors = record.authors?.join('; ');
 
         return el('li', { class: 'list__item' }, [
-            el('a', {
-                class: 'list__title',
-                href: record.url,
-                target: '_blank',
-                rel: 'noopener noreferrer',
-                title: this.strings.openOnZmo,
-                text: title
-            }),
-            el('p', { class: 'list__meta', text: citation(record) }),
-            el('p', { class: 'list__tags' }, [
-                record.type && el('span', { class: 'tag', text: translateType(this.strings, record.type) }),
-                record.doi && el('a', {
-                    class: 'tag tag--link',
-                    href: `https://doi.org/${record.doi}`,
+            el('span', { class: 'list__year', text: record.year ?? '—' }),
+            el('div', { class: 'list__body' }, [
+                record.type && el('p', { class: 'list__type' }, [
+                    el('span', {
+                        class: `list__swatch series-${this.seriesIndex(record.type)}`,
+                        'aria-hidden': 'true'
+                    }),
+                    this.formatLabel(record.type)
+                ]),
+                el('a', {
+                    class: 'list__title',
+                    href: record.url,
                     target: '_blank',
                     rel: 'noopener noreferrer',
-                    text: `DOI ${record.doi}`
-                })
+                    title: this.strings.openOnZmo,
+                    text: title
+                }),
+                (authors || venue) && el('p', { class: 'list__meta' }, [
+                    authors,
+                    authors && venue && ' · ',
+                    venue && el('span', { class: 'list__venue', text: venue })
+                ]),
+                record.doi && el('p', { class: 'list__tags' }, [
+                    el('a', {
+                        class: 'tag tag--link',
+                        href: `https://doi.org/${record.doi}`,
+                        target: '_blank',
+                        rel: 'noopener noreferrer',
+                        text: `DOI ${record.doi}`
+                    })
+                ])
             ])
         ]);
     }

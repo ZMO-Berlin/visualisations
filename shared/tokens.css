@@ -1,0 +1,282 @@
+/*
+ * ZMO Visualisations — design variables.
+ *
+ * One file, loaded first by all three pages (landing, word cloud, publications
+ * dashboard). Each app used to declare its own `colors.css` and the landing
+ * page repeated the same six values a third time, so a change to the navy was
+ * three edits and a drift waiting to happen. Everything a page needs to look
+ * like ZMO is below; nothing below is app-specific.
+ *
+ * Load order:
+ *   <link rel="stylesheet" href="/shared/tokens.css">   <- this file
+ *   <link rel="stylesheet" href="../src/styles/main.css">
+ *
+ * The legacy block at the bottom maps the old variable names onto these, so the
+ * existing stylesheets keep working unchanged and can be migrated one module at
+ * a time rather than in one commit.
+ */
+
+/* The @font-face declarations, split by script. Must precede every rule. */
+@import './fonts.css';
+
+/* ------------------------------------------------------------------ *
+ * 1. Brand
+ *
+ * Taken from the logo itself rather than approximated: the mark is navy
+ * lettering in orange squares. The orange is a *frame* colour at brand
+ * weight — it fails 4.5:1 on white, so it is never used for text or for a
+ * small mark that carries meaning on its own. `--c-accent` is that orange
+ * darkened until it can be read, and is the accent that appears in prose,
+ * links and selected states.
+ * ------------------------------------------------------------------ */
+:root {
+    --zmo-navy: #1c3765;
+    --zmo-orange: #e0843f;
+
+    --c-brand: var(--zmo-navy);
+    --c-brand-strong: #142748;
+    --c-brand-soft: #2a4f8c;
+    --c-brand-tint: #e9edf5;
+    --c-brand-tint-strong: #d3dbeb;
+
+    --c-frame: var(--zmo-orange);      /* rules, square markers, hairlines */
+    --c-frame-tint: #f7e7d8;
+
+    --c-accent: #b3541c;               /* clay — 4.6:1 on --c-surface */
+    --c-accent-strong: #8c3f12;
+    --c-accent-tint: #f6ece3;
+
+    /* ---------------------------------------------------------------- *
+     * 2. Surfaces and ink
+     *
+     * The old neutrals were #f8f9fa over #333: a cold screen grey with no
+     * relation to the brand. These are warm — paper rather than interface —
+     * which lets a white panel sit on the page background without a shadow
+     * to separate it, and lets the navy read as ink instead of as a
+     * hyperlink blue. Ink is very slightly cooled towards the navy so text
+     * and headings belong to one family.
+     * ---------------------------------------------------------------- */
+    --c-page: #f7f5f0;
+    --c-surface: #ffffff;
+    --c-surface-sunk: #f3f0e9;         /* chart tracks, table zebra, wells */
+    --c-surface-hover: #faf8f4;
+
+    --c-line: #e3dfd5;                 /* default hairline */
+    --c-line-soft: #f3f0e9;            /* inside a panel, between rows */
+    --c-line-strong: #cfc9bc;          /* emphasis, axis, hover borders */
+
+    --c-ink: #1a1d23;                  /* body text            15.4:1 */
+    --c-ink-muted: #4a5058;            /* secondary text        8.2:1 */
+    --c-ink-soft: #737a84;             /* captions, hints       4.7:1 */
+    --c-ink-faint: #9aa0a9;            /* axis labels, meta     2.9:1 — never
+                                          for anything that must be read */
+
+    --c-focus: var(--c-brand);
+    --c-selection: var(--c-brand-tint-strong);
+
+    /* ---------------------------------------------------------------- *
+     * 3. Data colour
+     *
+     * Both palettes are kept exactly as they were validated — the eight
+     * categorical slots clear the colourblind separation threshold in this
+     * order, and the six word-cloud tones each clear 4.5:1 on white. They
+     * move here only so the two apps stop declaring them twice.
+     * ---------------------------------------------------------------- */
+    --series-1: #2a78d6;   /* blue    */
+    --series-2: #eb6834;   /* orange  */
+    --series-3: #1baf7a;   /* aqua    */
+    --series-4: #eda100;   /* yellow  */
+    --series-5: #e87ba4;   /* magenta */
+    --series-6: #008300;   /* green   */
+    --series-7: #4a3aa7;   /* violet  */
+    --series-8: #e34948;   /* red     */
+
+    --cloud-1: #143c73;    /* navy   10.92:1 on white */
+    --cloud-2: #0e6f7d;    /* teal    5.85:1 */
+    --cloud-3: #6a3d7a;    /* plum    8.20:1 */
+    --cloud-4: #a83c3c;    /* brick   6.22:1 */
+    --cloud-5: #b45418;    /* rust    4.97:1 */
+    --cloud-6: #7d6410;    /* bronze  5.67:1 */
+
+    /* Quantitative bars are one hue: every bar is the same kind of thing. */
+    --c-bar: #8fa4ca;
+    --c-bar-hover: var(--c-brand-soft);
+    --c-bar-selected: var(--c-accent);
+
+    /* ---------------------------------------------------------------- *
+     * 4. Type
+     *
+     * Two families. Newsreader carries titles, ledes and the word cloud —
+     * an editorial serif, which is what an institute's own writing looks
+     * like on paper, and it gives the pages a voice that a system sans
+     * cannot. Instrument Sans carries everything functional: controls,
+     * labels, axes, tables, counts. Both are OFL and self-hosted next to
+     * this file, so there is no third-party request and no layout shift.
+     *
+     * `--font-ui` is set with `tabular-nums` wherever a figure can change
+     * under a filter; the token below is the shorthand for that.
+     * ---------------------------------------------------------------- */
+    --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+    --font-ui: 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+    --font-numeric: var(--font-ui);
+    --figures-tabular: tabular-nums;
+
+    /* A 1.20 scale from 13px, rounded to whole pixels. Display sizes are
+       fluid so a title does not have to be re-set per breakpoint. */
+    --text-2xs: 0.6875rem;  /* 11 — axis ticks only */
+    --text-xs: 0.75rem;     /* 12 — eyebrows, chips, meta */
+    --text-sm: 0.8125rem;   /* 13 — dense UI: bar labels, table cells */
+    --text-base: 0.9375rem; /* 15 — body */
+    --text-md: 1.0625rem;   /* 17 — lede, panel titles */
+    --text-lg: 1.375rem;    /* 22 */
+    --text-xl: 1.75rem;     /* 28 */
+    --text-2xl: clamp(2rem, 3.4vw, 2.75rem);
+    --text-3xl: clamp(2.75rem, 6vw, 4.25rem);
+
+    --lh-tight: 1.08;
+    --lh-snug: 1.28;
+    --lh-normal: 1.55;
+    --track-tight: -0.02em;
+    --track-normal: 0;
+    --track-caps: 0.08em;   /* small caps labels — always with uppercase */
+
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+
+    /* ---------------------------------------------------------------- *
+     * 5. Space — 4px base, named by step so a panel and a chart cannot
+     * disagree about what "medium" is.
+     * ---------------------------------------------------------------- */
+    --s-1: 0.25rem;   /*  4 */
+    --s-2: 0.5rem;    /*  8 */
+    --s-3: 0.75rem;   /* 12 */
+    --s-4: 1rem;      /* 16 */
+    --s-5: 1.25rem;   /* 20 */
+    --s-6: 1.5rem;    /* 24 */
+    --s-8: 2rem;      /* 32 */
+    --s-10: 2.5rem;   /* 40 */
+    --s-12: 3rem;     /* 48 */
+    --s-16: 4rem;     /* 64 */
+
+    /* ---------------------------------------------------------------- *
+     * 6. Shape
+     *
+     * Near-square. The logo is six sharp squares; an 8px radius on every
+     * card was the one thing making the pages look like a template. 3px
+     * reads as "printed", 999px is reserved for removable chips.
+     * ---------------------------------------------------------------- */
+    --r-xs: 2px;
+    --r-sm: 3px;
+    --r-md: 5px;
+    --r-pill: 999px;
+    --border: 1px solid var(--c-line);
+
+    /* Elevation is a hairline first and a shadow second. */
+    --shadow-1: 0 1px 2px rgba(20, 39, 72, 0.05);
+    --shadow-2: 0 8px 24px rgba(20, 39, 72, 0.10);
+    --ring-focus: 0 0 0 3px var(--c-brand-tint-strong);
+
+    /* ---------------------------------------------------------------- *
+     * 7. Motion — two durations. Anything longer is decoration.
+     * ---------------------------------------------------------------- */
+    --dur-fast: 120ms;
+    --dur-base: 220ms;
+    --ease-out: cubic-bezier(0.2, 0.8, 0.3, 1);
+
+    /* ---------------------------------------------------------------- *
+     * 8. Layout
+     * ---------------------------------------------------------------- */
+    --w-page: 76rem;        /* 1216 — dashboard and landing share it */
+    --w-prose: 62ch;
+    --h-header: 3.5rem;     /* the shared site bar */
+    --w-wordlist: 20rem;    /* was 300px, widened for the ranked list */
+}
+
+/* Motion is opt-in for readers who ask for less of it. */
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --dur-fast: 0.01ms;
+        --dur-base: 0.01ms;
+    }
+}
+
+/* ------------------------------------------------------------------ *
+ * 9. Legacy aliases
+ *
+ * Every variable the current stylesheets reference, pointing at the tokens
+ * above. Dropping this file in front of them changes the look without
+ * touching a single rule; each module can then be migrated to the new names
+ * on its own, and this block shrinks until it can be deleted.
+ * ------------------------------------------------------------------ */
+:root {
+    --color-primary: var(--c-brand);
+    --color-primary-dark: var(--c-brand-strong);
+    --color-primary-light: var(--c-brand-soft);
+    --color-primary-alpha: rgba(28, 55, 101, 0.10);
+
+    --color-white: var(--c-surface);
+    --color-gray-50: var(--c-surface-hover);
+    --color-gray-100: var(--c-surface-sunk);
+    --color-gray-200: var(--c-line);
+    --color-gray-300: var(--c-line-strong);
+    --color-gray-400: var(--c-ink-faint);
+    --color-gray-500: var(--c-ink-soft);
+    --color-gray-600: var(--c-ink-muted);
+    --color-gray-700: var(--c-ink);
+
+    --color-accent: var(--c-accent);
+    --color-accent-dark: var(--c-accent-strong);
+    --color-accent-alpha: var(--c-accent-tint);
+
+    --color-text-primary: var(--c-ink);
+    --color-text-secondary: var(--c-ink-muted);
+    --color-text-light: var(--c-ink-soft);
+    --color-border: var(--c-line);
+    --color-border-hover: var(--c-line-strong);
+    --color-background: var(--c-surface);
+    --color-background-light: var(--c-page);
+    --color-shadow: rgba(20, 39, 72, 0.05);
+    --color-shadow-hover: rgba(20, 39, 72, 0.10);
+
+    /* The dashboard's ranked bars. Absent from the first draft of this file,
+       which left three `var()`s in charts.css resolving to nothing. */
+    --color-bar: var(--c-bar);
+    --color-bar-hover: var(--c-bar-hover);
+    --color-bar-selected: var(--c-bar-selected);
+
+    --wordcloud-scheme-1: var(--cloud-1);
+    --wordcloud-scheme-2: var(--cloud-2);
+    --wordcloud-scheme-3: var(--cloud-3);
+    --wordcloud-scheme-4: var(--cloud-4);
+    --wordcloud-scheme-5: var(--cloud-5);
+    --wordcloud-scheme-6: var(--cloud-6);
+
+    --space-xs: var(--s-1);
+    --space-sm: var(--s-2);
+    --space-md: var(--s-4);
+    --space-lg: var(--s-6);
+    --space-xl: var(--s-10);
+    --radius: var(--r-sm);
+
+    --font-sans: var(--font-ui);
+    --font-primary: 'Newsreader';
+    --font-fallback: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+    --font-base: var(--font-ui);
+
+    --font-weight-normal: var(--weight-regular);
+    --font-weight-medium: var(--weight-medium);
+    --font-weight-semibold: var(--weight-semibold);
+
+    --font-size-xs: var(--text-xs);
+    --font-size-sm: var(--text-sm);
+    --font-size-base: var(--text-base);
+    --font-size-lg: var(--text-md);
+    --font-size-xl: var(--text-lg);
+
+    --line-height-tight: var(--lh-tight);
+    --line-height-normal: var(--lh-normal);
+    --line-height-relaxed: 1.75;
+
+    --word-list-width: var(--w-wordlist);
+}

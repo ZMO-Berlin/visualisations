@@ -2,6 +2,10 @@ import { getTranslations } from '../utils/translations.js';
 
 /**
  * Range input controlling how many words the cloud shows.
+ *
+ * The label and the current value sit on one line above the track, so the
+ * control reads the same way as the unit selector beside it: what it is, then
+ * what it is set to.
  */
 export class WordCountSlider {
     /**
@@ -20,26 +24,28 @@ export class WordCountSlider {
     }
 
     render() {
-        const wrapper = document.createElement('div');
-        wrapper.className = 'slider-container';
+        const field = document.createElement('div');
+        field.className = 'field field--slider';
 
-        const labelContainer = document.createElement('div');
-        labelContainer.className = 'slider-label';
+        const head = document.createElement('div');
+        head.className = 'field__head';
 
         const defaultCount = this.config.get('data.defaultWordCount');
 
         const label = document.createElement('label');
+        label.className = 'field__label';
         label.setAttribute('for', 'wordCountSlider');
         label.textContent = this.translations.numberOfWords;
 
         const valueDisplay = document.createElement('span');
-        valueDisplay.className = 'slider-value';
+        valueDisplay.className = 'field__value';
         valueDisplay.textContent = defaultCount;
 
-        labelContainer.append(label, document.createTextNode(': '), valueDisplay);
+        head.append(label, valueDisplay);
 
         const slider = document.createElement('input');
         slider.type = 'range';
+        slider.className = 'slider';
         slider.id = 'wordCountSlider';
         slider.min = this.config.get('data.minWords');
         slider.max = this.config.get('data.maxWords');
@@ -54,8 +60,8 @@ export class WordCountSlider {
             this.onChange?.(this.getValue());
         });
 
-        wrapper.append(labelContainer, slider);
-        this.container.appendChild(wrapper);
+        field.append(head, slider);
+        this.container.appendChild(field);
 
         this.slider = slider;
         this.valueDisplay = valueDisplay;

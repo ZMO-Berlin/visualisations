@@ -35,9 +35,27 @@ MANIFEST_NAME = "units.json"
 
 # Terms common to every unit's description; they crowd out the distinctive
 # vocabulary the cloud is meant to surface.
+#
+# The second group below is research-proposal boilerplate — the verbs and
+# hedges that describe what a project *does about* its subject rather than what
+# the subject is. They were among the loudest words in the cloud ("focus" was
+# 4th, ahead of every place, period and religion in the corpus) because every
+# unit describes itself in the same prose: "the project focuses on", "it aims
+# to explore", "in different ways". None of it distinguishes one unit from
+# another, which is the only thing this cloud is for.
+#
+# Words that merely *sound* generic are deliberately kept: "night", "life",
+# "south", "practice" and "space" are all subjects ZMO actually works on.
 CUSTOM_STOPWORDS = {
     "project", "research", "study", "analysis", "data",
     "also", "within", "including", "would", "may", "one", "two",
+
+    # Proposal boilerplate.
+    "focus", "aim", "seek", "explore", "examine", "investigate", "address",
+    "consider", "provide", "use", "take", "make", "mean", "way", "part",
+    "well", "new", "first", "three", "often", "different", "specific",
+    "particular", "various", "thus", "therefore", "however", "order",
+    "approach", "perspective", "question",
 }
 
 # NLTK 3.9 replaced the pickled ``punkt`` model with the ``punkt_tab`` tables and
@@ -79,14 +97,32 @@ class TextProcessor:
         self.lemmatizer = WordNetLemmatizer()
         self.stop_words = set(stopwords.words(language)) | CUSTOM_STOPWORDS
 
+    def lemma(self, token: str) -> str:
+        """Reduce a token to its dictionary form, as a noun *or* as a verb.
+
+        ``WordNetLemmatizer.lemmatize`` defaults to ``pos="n"``, so it only ever
+        folded plurals. Every verb went through untouched, and the cloud ended
+        up ranking "explores" and "explore" as two separate terms seventeen
+        times each — one word, its count halved, occupying two slots.
+
+        Nouns first: "focuses" is a noun plural before it is a verb, and trying
+        the verb form first would rewrite legitimate nouns ("relations" ->
+        "relate"). The verb pass only sees what the noun pass left unchanged.
+        """
+        noun = self.lemmatizer.lemmatize(token, pos="n")
+        return noun if noun != token else self.lemmatizer.lemmatize(token, pos="v")
+
     def process(self, text: str) -> list[str]:
         tokens = word_tokenize(text.lower(), language=self.language)
         return [
-            self.lemmatizer.lemmatize(token)
+            lemma
             for token in tokens
             if token.isalpha()
             and len(token) >= self.min_length
             and token not in self.stop_words
+            # Filtered again after lemmatising: "aims" survives the stopword
+            # check as written and only becomes "aim" afterwards.
+            and (lemma := self.lemma(token)) not in self.stop_words
         ]
 
 

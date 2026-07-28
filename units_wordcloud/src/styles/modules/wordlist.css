@@ -1,119 +1,183 @@
-:root {
-    --word-list-width: 300px;
-}
+/*
+ * The ranked-terms panel beside the cloud.
+ *
+ * `--w-wordlist` is declared in `shared/tokens.css`, not here: the layout
+ * module needs the same figure, and two files owning one width is how the old
+ * 300px and the old `calc(100% - 300px)` drifted apart.
+ *
+ * Each row is a small horizontal bar chart with the word written over it. The
+ * cloud already encodes frequency as type size, but sizes scattered across a
+ * canvas cannot be compared; on one baseline the distribution's steep head and
+ * long tail are legible at a glance.
+ */
 
 .word-list-container {
-    width: var(--word-list-width);
-    min-width: var(--word-list-width);
-    max-width: var(--word-list-width);
+    flex: 0 0 var(--w-wordlist);
+    width: var(--w-wordlist);
+    min-width: 0;
     height: 100%;
-    background: #fff;
-    border-left: 1px solid #e0e0e0;
     display: flex;
     flex-direction: column;
-    position: relative;
-    flex: 0 0 var(--word-list-width);
+    min-height: 0;
+    background: var(--c-surface);
+    border-left: 1px solid var(--c-line);
+    text-align: left;
 }
+
+/* ---------------------------------------------------------------- header */
 
 .word-list-header {
-    padding: 16px;
-    border-bottom: 1px solid #e0e0e0;
-    background: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    flex: 0 0 auto;
+    flex: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--s-3);
+    padding: var(--s-4) var(--s-4) var(--s-3);
+    border-bottom: 1px solid var(--c-line);
 }
 
-.word-list-header h2 {
+.word-list-title {
     margin: 0;
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-medium);
-    color: #333;
+    font-family: var(--font-display);
+    font-size: var(--text-md);
+    font-weight: var(--weight-regular);
+    line-height: 1;
+    color: var(--c-brand-strong);
 }
+
+.word-list-range {
+    font-size: var(--text-2xs);
+    color: var(--c-ink-faint);
+    font-variant-numeric: var(--figures-tabular);
+    white-space: nowrap;
+}
+
+/* ------------------------------------------------------------------ rows */
 
 .word-list {
     flex: 1;
-    padding: 8px 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    min-height: 0;
     overflow-y: auto;
 }
 
 .word-list-item {
-    display: flex;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.625rem 1fr auto;
+    gap: var(--s-3);
     align-items: center;
-    padding: 8px 16px;
-    border-bottom: 1px solid #f5f5f5;
-    transition: all 0.2s ease;
-    cursor: pointer;
+    padding: var(--s-2) var(--s-4);
+    border-bottom: 1px solid var(--c-line-soft);
     border-left: 3px solid transparent;
-    min-height: 40px; /* Fixed height instead of calculated */
+    cursor: pointer;
+    transition:
+        background var(--dur-fast) var(--ease-out),
+        border-left-color var(--dur-fast) var(--ease-out);
+}
+
+/*
+ * The frequency bar. Absolutely positioned and first in the DOM so it fills the
+ * row behind the text; every sibling is given `position: relative` to lift it
+ * back above without needing a z-index on anything.
+ */
+.word-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--c-surface-sunk);
+    pointer-events: none;
+}
+
+.word-rank,
+.word-text,
+.word-frequency {
+    position: relative;
 }
 
 .word-list-item:hover,
 .word-list-item.hover {
-    background-color: #f8f9fa;
-    border-left: 3px solid var(--color-primary);
+    background: var(--c-surface-hover);
+    border-left-color: var(--c-brand);
 }
 
 .word-list-item.highlighted {
-    background-color: var(--color-primary-alpha);
-    border-left: 3px solid var(--color-primary);
+    background: var(--c-brand-tint);
+    border-left-color: var(--c-brand);
 }
 
 .word-rank {
-    color: var(--color-primary);
-    font-weight: var(--font-weight-medium);
-    min-width: 40px;
+    font-size: var(--text-2xs);
+    color: var(--c-ink-faint);
+    font-variant-numeric: var(--figures-tabular);
 }
 
 .word-text {
-    flex: 1;
-    margin: 0 12px;
-    font-weight: var(--font-weight-medium);
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--c-ink);
 }
 
 .word-frequency {
-    color: #666;
-    font-size: var(--font-size-sm);
+    font-size: var(--text-xs);
+    color: var(--c-ink-soft);
+    font-variant-numeric: var(--figures-tabular);
+}
+
+/* ---------------------------------------------------------------- footer */
+
+.word-list-footer {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--s-3);
+    padding: var(--s-2) var(--s-4);
+    border-top: 1px solid var(--c-line);
+}
+
+.word-list-hint {
+    margin: 0;
+    font-size: var(--text-2xs);
+    line-height: 1.35;
+    color: var(--c-ink-faint);
 }
 
 .word-list-pagination {
-    padding: 12px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    border-top: 1px solid #e0e0e0;
-    background: #fff;
-    position: sticky;
-    bottom: 0;
-    z-index: 1;
-    flex: 0 0 auto;
+    gap: var(--s-1);
+    flex: none;
 }
 
-.word-list-pagination button {
-    padding: 6px 12px;
-    border: 1px solid #e0e0e0;
-    background: white;
-    border-radius: 4px;
+.pager-button {
+    width: 1.625rem;
+    height: 1.625rem;
+    display: grid;
+    place-items: center;
+    font: inherit;
+    font-size: var(--text-sm);
+    line-height: 1;
+    color: var(--c-brand-strong);
+    background: var(--c-surface);
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-sm);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: background var(--dur-fast) var(--ease-out);
 }
 
-.word-list-pagination button:hover:not(:disabled) {
-    background: #f5f5f5;
-    border-color: #d0d0d0;
+.pager-button:hover:not(:disabled) {
+    background: var(--c-surface-hover);
 }
 
-.word-list-pagination button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+.pager-button:focus-visible {
+    outline: 2px solid var(--c-focus);
+    outline-offset: 2px;
 }
 
-.page-info {
-    font-size: var(--font-size-sm);
-    color: #666;
-} 
+.pager-button:disabled {
+    color: var(--c-line-strong);
+    border-color: var(--c-line);
+    cursor: default;
+}

@@ -1,25 +1,26 @@
 /*
  * Stylesheet entry point.
  *
- * Import order matters: tokens (reset, fonts, colors) come first so that later
- * modules can reference the custom properties they define, and `responsive`
- * comes last so its media queries override the base layout.
+ * Import order matters: structure first so components can override it, and
+ * `responsive` last so its media queries win.
  *
- * This file intentionally contains no rules of its own. It previously restated
- * the `body`, `.content-container`, `.wordcloud-container` and `#wordcloud`
- * blocks already defined in `layout.css`, so every change had to be made twice
- * and the two copies had already drifted apart.
+ * The `colors` and `fonts` modules that used to head this list are gone. Both
+ * declared custom properties that `shared/tokens.css` — loaded by the page
+ * before this file — now owns; keeping them would have meant two files
+ * declaring one navy, which is the drift the token layer exists to end. The
+ * `.font-normal` / `.font-medium` / `.font-semibold` utilities that lived in
+ * `fonts.css` went with it: all three set weight 400, and no component still
+ * asks for them.
+ *
+ * This file intentionally contains no rules of its own.
  */
 
-/* Tokens */
-@import './modules/reset.css';
-@import './modules/fonts.css';
-@import './modules/colors.css';
-
 /* Structure */
+@import './modules/reset.css';
 @import './modules/layout.css';
 
 /* Components */
+@import './modules/context.css';
 @import './modules/controls.css';
 @import './modules/slider.css';
 @import './modules/button.css';

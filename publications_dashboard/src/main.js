@@ -88,14 +88,17 @@ function bootstrap() {
 
     // --- Static chrome ------------------------------------------------------
 
-    const other = locale === 'de' ? 'en' : 'de';
-    mount(header, el('div', {}, [
-        el('div', { class: 'header__bar' }, [
-            el('h1', { class: 'header__title', text: strings.title }),
-            el('a', { class: 'header__lang', href: `../${other}/`, lang: other, hreflang: other,
-                text: other === 'de' ? 'Deutsch' : 'English' })
+    // The language link that used to live here has moved to the shared site
+    // bar, which carries it on all three pages — and knows how to send a reader
+    // to the same view in the other language rather than to its front page.
+    mount(header, el('div', { class: 'header__bar' }, [
+        el('div', { class: 'header__text' }, [
+            el('p', { class: 'eyebrow', text: strings.register }),
+            el('h1', { class: 'header__title', text: strings.heading }),
+            el('p', { class: 'header__intro', text: strings.intro })
         ]),
-        el('p', { class: 'header__intro', text: strings.intro })
+        // Filled by `renderSource` once the dataset says where it was crawled.
+        el('div', { id: 'source', class: 'header__source' })
     ]));
 
     // Written once, outside `render`, so it is on the page while the data is
@@ -131,8 +134,10 @@ function bootstrap() {
         venuePanel.section, networkPanel.section, listPanel.section
     );
 
-    const summary = new Summary(document.getElementById('summary'), { strings, locale });
+    // Order matters: the filter bar owns the command panel, and the summary is
+    // written into a slot inside it.
     const filterBar = new FilterBar(document.getElementById('filters'), { strings, store });
+    const summary = new Summary(filterBar.countsSlot, { strings, locale });
 
     /**
      * Document types in a fixed order, with the smallest folded into one
@@ -207,7 +212,11 @@ function bootstrap() {
         onSelect: author => store.toggle('author', author)
     });
 
-    const list = new PublicationList(listPanel.body, { settings, strings, locale });
+    const list = new PublicationList(listPanel.body, {
+        settings, strings, locale,
+        formatLabel: typeLabel,
+        seriesIndex: typeSlot
+    });
 
     // --- Rendering ----------------------------------------------------------
 
@@ -229,8 +238,13 @@ function bootstrap() {
         sourceShown = true;
         document.getElementById('source').append(
             el('p', { class: 'source' }, [
-                `${strings.source}: `,
-                el('a', { href: url, target: '_blank', rel: 'noopener noreferrer', text: url })
+                el('span', { class: 'source__label', text: strings.source }),
+                el('a', {
+                    class: 'source__link', href: url,
+                    target: '_blank', rel: 'noopener noreferrer',
+                    // The scheme is noise in a caption; the link carries it.
+                    text: url.replace(/^https?:\/\/(www\.)?/, '')
+                })
             ])
         );
     }

@@ -6,6 +6,11 @@
     <title>ZMO-Wortwolke</title>
     <meta name="description" content="Interaktive Wortwolke der häufigsten Begriffe in den Forschungseinheiten des ZMO.">
     <link rel="icon" href="data:,">
+    <link rel="alternate" hreflang="en" href="../en/">
+    <link rel="alternate" hreflang="de" href="./">
+    <!-- Tokens zuerst: jeder Wert in den beiden Dateien darunter ist dort definiert. -->
+    <link rel="stylesheet" href="../../shared/tokens.css">
+    <link rel="stylesheet" href="../../shared/site-bar.css">
     <link rel="stylesheet" href="../src/styles/main.css">
     <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"
             integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"
@@ -15,16 +20,29 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+    <!--
+        Wird im iframe ganz entfernt: auf zmo.de steht der eigene Kopfbereich
+        des Instituts bereits darüber. Der Kontextstreifen darunter bleibt, denn
+        er gehört zur Visualisierung und nicht zur Website.
+    -->
+    <div data-site-bar="wordcloud" hidden></div>
+
+    <!-- Titel, aktuelle Einheit und die beiden Zahlen. Von ContextStrip aufgebaut. -->
+    <div id="context"></div>
+
     <div class="controls-container">
         <div id="controls"></div>
     </div>
+
     <div class="content-container">
         <div class="wordcloud-container">
             <div id="wordcloud"></div>
         </div>
         <div id="wordlist"></div>
     </div>
+
     <div id="tooltip" role="tooltip"></div>
+
     <!--
         Die Seite füllt das Fenster und hat keine Fußzeile, in der der Hinweis
         stehen könnte; er sitzt deshalb in einer Ecke, welche die Wolke nicht
@@ -36,6 +54,8 @@
         Erstellt von
         <a href="https://www.frederickmadore.com/" target="_blank" rel="noopener noreferrer">Frédérick Madore</a>
     </p>
+
+    <script type="module" src="../../shared/site-bar.js"></script>
     <script type="module" src="../src/main.js"></script>
 </body>
 </html>

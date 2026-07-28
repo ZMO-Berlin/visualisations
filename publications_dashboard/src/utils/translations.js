@@ -7,7 +7,11 @@
  */
 export const translations = {
     en: {
+        // `title` is the document title; `heading` is the <h1>, which sits
+        // under an eyebrow that already says whose register this is.
         title: 'ZMO Publications',
+        register: 'Publication register',
+        heading: 'Publications',
         intro: 'Every publication in the ZMO register, by year, type, author and venue.',
         source: 'Source',
 
@@ -29,6 +33,7 @@ export const translations = {
         kindPublisher: 'Publisher',
         from: 'From',
         to: 'To',
+        anyYear: 'Any',
         clearFilters: 'Clear filters',
         activeFilters: 'Active filters',
         removeFilter: 'Remove this filter',
@@ -79,6 +84,8 @@ export const translations = {
 
     de: {
         title: 'ZMO-Publikationen',
+        register: 'Publikationsverzeichnis',
+        heading: 'Publikationen',
         intro: 'Alle Publikationen im Verzeichnis des ZMO, nach Jahr, Typ, Autorschaft und Publikationsorgan.',
         source: 'Quelle',
 
@@ -98,6 +105,7 @@ export const translations = {
         kindPublisher: 'Verlag',
         from: 'Von',
         to: 'Bis',
+        anyYear: 'Alle',
         clearFilters: 'Filter zurücksetzen',
         activeFilters: 'Aktive Filter',
         removeFilter: 'Diesen Filter entfernen',

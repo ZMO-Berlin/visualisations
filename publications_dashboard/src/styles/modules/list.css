@@ -1,9 +1,16 @@
-/* The publication list under the charts. */
+/*
+ * The publication list under the charts.
+ *
+ * Two columns: the year, then everything else. The list is sorted by year, so a
+ * column of them is the scale the reader scrolls along — it used to be the last
+ * item of a run-on citation line, where it could not be scanned.
+ */
 
 .list__count {
-    font-size: 0.8125rem;
-    color: var(--color-text-light);
-    margin-bottom: var(--space-sm);
+    font-size: var(--text-xs);
+    color: var(--c-ink-faint);
+    margin-bottom: var(--s-2);
+    font-variant-numeric: var(--figures-tabular);
 }
 
 .list {
@@ -12,43 +19,91 @@
 }
 
 .list__item {
-    padding: var(--space-sm) 0;
-    border-top: 1px solid var(--color-border);
+    display: grid;
+    grid-template-columns: 3.4rem 1fr;
+    gap: var(--s-4);
+    align-items: start;
+    padding: var(--s-3) var(--s-1);
+    border-top: 1px solid var(--c-line-soft);
 }
 
 .list__item:first-child {
     border-top: none;
 }
 
+.list__item:hover {
+    background: var(--c-surface-hover);
+}
+
+.list__year {
+    font-size: var(--text-sm);
+    line-height: 1.45;
+    color: var(--c-ink-faint);
+    font-variant-numeric: var(--figures-tabular);
+}
+
+.list__body {
+    min-width: 0;
+}
+
+.list__type {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    margin-bottom: 3px;
+    font-size: var(--text-2xs);
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--c-ink-soft);
+}
+
+/* The colour comes from a `series-N` class, shared with the timeline. */
+.list__swatch {
+    flex: none;
+    width: 8px;
+    height: 8px;
+    border-radius: var(--r-xs);
+}
+
 .list__title {
-    font-weight: 600;
+    font-family: var(--font-display);
+    font-size: var(--text-base);
+    line-height: 1.4;
+    color: var(--c-brand-strong);
     text-decoration: none;
-    color: var(--color-primary);
 }
 
 .list__title:hover {
     text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .list__meta {
-    font-size: 0.875rem;
-    color: var(--color-text-secondary);
-    margin-top: 0.15rem;
+    margin-top: 3px;
+    font-size: var(--text-xs);
+    line-height: 1.5;
+    color: var(--c-ink-soft);
+}
+
+/* The venue is the one part of the line that is a work's own title. */
+.list__venue {
+    font-style: italic;
 }
 
 .list__tags {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-sm);
-    margin-top: var(--space-xs);
+    gap: var(--s-2);
+    margin-top: var(--s-2);
 }
 
 .tag {
-    font-size: 0.75rem;
-    padding: 0.1rem 0.5rem;
-    border-radius: 999px;
-    background: var(--color-primary-alpha);
-    color: var(--color-primary);
+    font-size: var(--text-2xs);
+    padding: 2px var(--s-2);
+    border-radius: var(--r-xs);
+    background: var(--c-brand-tint);
+    color: var(--c-brand);
 }
 
 .tag--link {

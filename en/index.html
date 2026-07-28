@@ -6,63 +6,136 @@
     <title>ZMO Visualisations</title>
     <meta name="description" content="Two interactive views of research at the Leibniz-Zentrum Moderner Orient: a word cloud of the research units, and a dashboard of the publication register.">
     <link rel="icon" href="data:,">
+    <link rel="alternate" hreflang="de" href="../de/">
+    <link rel="alternate" hreflang="en" href="./">
+    <!-- Tokens first: every value in the two files below is defined there. -->
+    <link rel="stylesheet" href="../shared/tokens.css">
+    <link rel="stylesheet" href="../shared/site-bar.css">
     <link rel="stylesheet" href="../landing/landing.css">
 </head>
 <body>
+    <!-- Built by the shared script, and removed outright when framed. -->
+    <div data-site-bar="overview" hidden></div>
+
     <main class="landing">
-        <header class="landing__header">
-            <div class="landing__bar">
-                <!-- The logo carries the institute's name, so the alt text is
-                     the name itself and no separate line repeats it. -->
-                <a class="brand" href="https://www.zmo.de/">
-                    <img class="brand__logo" src="../landing/zmo-logo.png"
-                         alt="Leibniz-Zentrum Moderner Orient" width="763" height="701">
-                </a>
-                <a class="lang" href="../de/" lang="de" hreflang="de">Deutsch</a>
+        <header class="hero">
+            <div>
+                <p class="eyebrow">Leibniz-Zentrum Moderner Orient</p>
+                <h1 class="hero__title">Visualisations</h1>
+                <p class="hero__lede">
+                    Two interactive views of research at ZMO — what its three
+                    research units write about, and what the institute publishes.
+                </p>
+                <p class="hero__meta">
+                    Rebuilt monthly from the register at
+                    <a href="https://www.zmo.de/">zmo.de</a>
+                </p>
             </div>
-            <h1>Visualisations</h1>
-            <p class="lede">Two interactive views of research at ZMO.</p>
+
+            <!--
+                The figures are written here as the register stood at the last
+                refresh, and replaced with the live ones by `landing.js`. Having
+                a real number in the markup rather than a dash means a reader
+                who never gets the fetch still gets an answer, and the page does
+                not reflow when the fetch lands.
+            -->
+            <div class="figures">
+                <div class="figure">
+                    <div class="figure__value" data-figure="publications">1,962</div>
+                    <div class="figure__label">Publications</div>
+                </div>
+                <div class="figure">
+                    <div class="figure__value" data-figure="authors">656</div>
+                    <div class="figure__label">Authors</div>
+                </div>
+                <div class="figure">
+                    <div class="figure__value" data-figure="years">1994<span class="dash">–</span>2026</div>
+                    <div class="figure__label">Years covered</div>
+                </div>
+                <div class="figure">
+                    <div class="figure__value">3</div>
+                    <div class="figure__label">Research units</div>
+                </div>
+            </div>
         </header>
 
         <nav class="cards" aria-label="Choose a visualisation">
             <a class="card" href="../units_wordcloud/en/">
-                <h2 class="card__title">Word cloud</h2>
-                <p class="card__lede">What each research unit writes about, in its own words.</p>
-                <p class="card__stat">Three research units</p>
-                <ul class="card__list">
-                    <li>Pick one unit, or all of them combined</li>
-                    <li>Choose how many words to show</li>
-                    <li>Hover a word for its frequency, and export the cloud as a PNG</li>
-                </ul>
-                <span class="card__go">Open the word cloud</span>
+                <!--
+                    Decorative: the words are a sample of the visualisation, and
+                    the card's own heading and list say what it is. A screen
+                    reader announcing eleven loose nouns before the title would
+                    be reading the picture aloud.
+                -->
+                <div class="card__preview" aria-hidden="true">
+                    <div class="card__cloud" data-cloud>
+                        <span style="font-size:34px;color:var(--cloud-1)">social</span>
+                        <span style="font-size:17px;color:var(--cloud-2)">time</span>
+                        <span style="font-size:13px;color:var(--cloud-3)">change</span>
+                        <span style="font-size:19px;color:var(--cloud-4)">life</span>
+                        <span style="font-size:15px;color:var(--cloud-5)">intellectual</span>
+                        <span style="font-size:21px;color:var(--cloud-6)">local</span>
+                        <span style="font-size:15px;color:var(--cloud-1)">soviet</span>
+                        <span style="font-size:24px;color:var(--cloud-2)">practice</span>
+                        <span style="font-size:16px;color:var(--cloud-3)">south</span>
+                        <span style="font-size:34px;color:var(--cloud-4)">history</span>
+                        <span style="font-size:17px;color:var(--cloud-5)">state</span>
+                    </div>
+                </div>
+                <div class="card__body">
+                    <div class="card__head">
+                        <span class="card__index">01</span>
+                        <h2 class="card__title">Word cloud</h2>
+                    </div>
+                    <p class="card__lede">What each research unit writes about, in its own words.</p>
+                    <ul class="card__list">
+                        <li>One unit at a time, or all three combined</li>
+                        <li>Ten to a hundred terms, on a slider</li>
+                        <li>Frequencies on hover, and a PNG to take away</li>
+                    </ul>
+                    <span class="card__go">Open the word cloud</span>
+                </div>
             </a>
 
             <a class="card" href="../publications_dashboard/en/">
-                <h2 class="card__title">Publications</h2>
-                <p class="card__lede">The whole publication register, five ways.</p>
-                <!-- Replaced with live figures from the dataset; this is the
-                     fallback if the fetch fails. -->
-                <p class="card__stat" data-publication-stat>The full register</p>
-                <ul class="card__list">
-                    <li>Output per year, stacked by document type</li>
-                    <li>Most-published authors, and who publishes with whom</li>
-                    <li>Which journals and publishers ZMO appears in</li>
-                </ul>
-                <span class="card__go">Open the publications dashboard</span>
+                <div class="card__preview" aria-hidden="true">
+                    <div class="card__spark">
+                        <div class="card__bars" data-spark></div>
+                        <div class="card__axis">
+                            <span data-spark-from>1994</span>
+                            <span data-spark-to>2026</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__body">
+                    <div class="card__head">
+                        <span class="card__index">02</span>
+                        <h2 class="card__title">Publications</h2>
+                    </div>
+                    <p class="card__lede">The whole register, by year, type, author and venue.</p>
+                    <ul class="card__list">
+                        <li>Output per year, stacked by document type</li>
+                        <li>Most-published authors, and who publishes with whom</li>
+                        <li>Which journals and publishers ZMO appears in</li>
+                    </ul>
+                    <span class="card__go">Open the dashboard</span>
+                </div>
             </a>
         </nav>
 
         <footer class="landing__footer">
             <p>
-                Source: <a href="https://www.zmo.de/">zmo.de</a>. Code and data:
-                <a href="https://github.com/ZMO-Berlin/visualisations">ZMO-Berlin/visualisations</a>.
+                Source: <a href="https://www.zmo.de/">zmo.de</a> · Code and data:
+                <a href="https://github.com/ZMO-Berlin/visualisations">ZMO-Berlin/visualisations</a>
             </p>
             <p>
                 Created by
-                <a href="https://www.frederickmadore.com/">Frédérick Madore</a>.
+                <a href="https://www.frederickmadore.com/">Frédérick Madore</a>
             </p>
         </footer>
     </main>
+
+    <script type="module" src="../shared/site-bar.js"></script>
     <script type="module" src="../landing/landing.js"></script>
 </body>
 </html>

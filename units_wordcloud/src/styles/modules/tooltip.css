@@ -1,17 +1,30 @@
-/* Tooltip Module */
+/*
+ * The label that follows the pointer over the cloud.
+ *
+ * Dark on light, matching the dashboard's tooltip: the cloud is six saturated
+ * colours on white, and a white card floating over it disappeared into the
+ * page. Navy is the one surface that reads against every tone in the palette.
+ *
+ * The stray #4a90e2 blue that used to colour the rank was the last survivor of
+ * a palette this site no longer uses.
+ */
 #tooltip {
     position: fixed;
-    padding: 8px 12px;
-    font-family: var(--font-base);
-    font-size: var(--font-size-sm);
-    background: rgba(255, 255, 255, 0.98);
-    border-radius: 6px;
+    padding: var(--s-2) var(--s-3);
+    font-family: var(--font-ui);
+    font-size: var(--text-xs);
+    line-height: 1.35;
+    color: var(--c-surface);
+    background: var(--c-brand-strong);
+    border-radius: var(--r-sm);
+    box-shadow: var(--shadow-2);
+    /* The tooltip follows the pointer, so it must never become the element the
+       pointer is over. */
     pointer-events: none;
     opacity: 0;
     z-index: 9999;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    transition: opacity 0.2s ease;
-    max-width: 250px;
+    transition: opacity var(--dur-fast) var(--ease-out);
+    max-width: 15rem;
     transform: translate3d(0, 0, 0);
     will-change: opacity, transform;
 }
@@ -23,30 +36,23 @@
 .tooltip-content {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 2px;
 }
 
 .tooltip-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 12px;
+    align-items: baseline;
+    gap: var(--s-3);
     white-space: nowrap;
 }
 
 .tooltip-row span {
-    color: #666;
-    font-size: var(--font-size-xs);
-}
-
-/* Style for the rank number */
-.tooltip-row:first-child span {
-    color: #4a90e2;
-    font-weight: var(--font-weight-semibold);
-    font-size: var(--font-size-sm);
+    color: var(--c-brand-tint-strong);
+    font-variant-numeric: var(--figures-tabular);
 }
 
 .tooltip-row strong {
-    color: #333;
-    font-weight: var(--font-weight-medium);
-} 
+    color: var(--c-surface);
+    font-weight: var(--weight-medium);
+}

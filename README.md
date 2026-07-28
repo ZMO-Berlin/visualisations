@@ -14,10 +14,19 @@ app is published at its own directory. Nothing hard-codes that path — `main.js
 resolves the app root from `import.meta.url` — so the same files work from a
 local server or any other host without a change.
 
-The landing page reads the publication count and year span from the dashboard's
-own `meta.json` rather than restating them, so it cannot drift from what it
-links to after a monthly refresh. The markup carries a usable sentence as a
-fallback if that fetch fails.
+The landing page reads its figures and both card previews from the same files
+the apps read — `meta.json` for the counts and the year sparkline, the combined
+word frequencies for the term preview — rather than restating them, so it cannot
+drift from what it links to after a monthly refresh. The markup carries the
+current values as a fallback, generated from the same data, so a failed fetch
+leaves a page that still makes sense and the card does not change as the fetch
+lands.
+
+The three pages share one design layer in `shared/`: a single `tokens.css` that
+every stylesheet draws its colours, type, spacing and shape from, and a site bar
+carrying the institute's mark, the three views and the language. The bar removes
+itself when the page is inside an iframe, since zmo.de has its own header above
+the embed.
 
 > **Embedding on zmo.de.** The site's `Content-Security-Policy` header lists the
 > origins an `<iframe>` may load from, and `zmo-berlin.github.io` has to be one
@@ -44,6 +53,17 @@ en/index.html                Landing page, English
 de/index.html                Landing page, German
 landing/                     Its stylesheet, logo, and the script reading the counts
 .nojekyll                    Serve the files as they are; do not run Jekyll
+
+shared/                      The one layer all three pages load first
+  tokens.css                 Colour, type, space, shape, motion — every design
+                             value on the site, declared once. Ends with a block
+                             of legacy aliases mapping the old variable names
+                             onto the new ones, so a stylesheet can be migrated
+                             a module at a time rather than in one commit.
+  fonts.css                  @font-face for the two families, split by script
+  fonts/                     Self-hosted Newsreader and Instrument Sans (OFL)
+  site-bar.js/.css           The bar carrying the mark, the three views and the
+                             language. Removes itself inside an iframe.
 
 .github/workflows/           Monthly data refreshes, one per app
 
@@ -97,17 +117,13 @@ they are published:
 python -m http.server 8002
 ```
 
-Then open <http://localhost:8002/>. To work on one app on its own:
+Then open <http://localhost:8002/>, <http://localhost:8002/units_wordcloud/en/>
+or <http://localhost:8002/publications_dashboard/en/>.
 
-```bash
-python -m http.server 8000 --directory units_wordcloud
-```
-
-```bash
-python -m http.server 8001 --directory publications_dashboard
-```
-
-Any static file server works equally well.
+Serve the repository root, not an app directory. Both apps load
+`../../shared/tokens.css`, which does not exist above an app root, so
+`--directory units_wordcloud` now gives an unstyled page. Any static file server
+works equally well.
 
 ## Setting up the pipelines
 
@@ -201,8 +217,30 @@ stays out of "All Research Units". Delete the manifest and every file counts
 again.
 
 Processing per file: lowercase, tokenise, drop stopwords (NLTK's English list
-plus a project-specific list of terms common to every unit), drop non-alphabetic
-and very short tokens, lemmatise, then keep the most frequent terms.
+plus a project-specific list), drop non-alphabetic and very short tokens,
+lemmatise, drop stopwords again, then keep the most frequent terms.
+
+Two details in that sequence are worth knowing, because both were wrong until
+recently and both were visible in the cloud:
+
+- **Lemmatising tries noun then verb.** `WordNetLemmatizer` defaults to
+  `pos="n"`, which only ever folds plurals — every verb passed through
+  untouched, and the cloud ranked `explores` and `explore` as two separate
+  terms, seventeen each. Nouns are tried first because `focuses` is a noun
+  plural before it is a verb; going verb-first would rewrite legitimate nouns
+  (`relations` → `relate`).
+- **Stopwords are applied twice**, before and after lemmatising, so that a
+  stoplisted `aim` also catches the `aims` that only becomes `aim` afterwards.
+
+`CUSTOM_STOPWORDS` holds two groups: terms common to every unit
+(`project`, `research`, `study`…) and research-proposal boilerplate — the verbs
+and hedges describing what a project *does about* its subject rather than what
+the subject is (`focus`, `aim`, `explore`, `examine`, `way`, `different`…).
+Before the second group existed, `focus` was the 4th commonest term in the
+combined cloud, ahead of every place, period and religion in the corpus, because
+all three units describe themselves in the same prose. Words that merely *sound*
+generic are deliberately kept: `night`, `life`, `south`, `practice` and `space`
+are all subjects ZMO actually works on.
 
 Useful options (`--help` lists them all):
 
@@ -254,8 +292,17 @@ UnitSelector / WordCountSlider
         │                                    (clean, rank, normalise)
         │  (subscription)
         ├──────────────► WordCloud ──► LayoutManager (d3-cloud) ──► Renderer (SVG)
-        └──────────────► WordList
+        ├──────────────► WordList
+        └──────────────► ContextStrip   (unit name, terms shown, occurrences)
 ```
+
+**The first layout waits for the webfont.** d3-cloud decides where each word
+fits by drawing it to a scratch canvas and measuring it, so the layout is only
+correct if the face it measures is the face the SVG draws. Newsreader is
+`font-display: swap`, so laying out immediately would pack the fallback serif's
+metrics and then repaint them in Newsreader — overlaps where the real glyphs are
+wider, gaps where they are narrower — and nothing would trigger a second layout
+to fix it. `main.js` awaits `document.fonts.load()` before the first render.
 
 **Dependencies are injected.** [`main.js`](units_wordcloud/src/main.js) is the
 only place that constructs anything; every other module receives what it needs
@@ -378,7 +425,11 @@ the cache misses; `--refresh-all` picks it up.
 ### Stage 2 — `generate_publication_data.py`
 
 Writes `publications_dashboard/data/publications.json` (one slim record per
-publication) and `meta.json` (source, document types in filter order, counts).
+publication) and `meta.json` (source, document types in filter order, counts,
+and `perYear` — one count per year across the whole span, gaps included as
+zero). `perYear` exists for the landing page: without it that page would have to
+fetch the megabyte of `publications.json` to draw a preview the size of a
+postage stamp.
 
 Its real work is **consolidating spellings**. The register is maintained by hand,
 so one person or journal appears under several forms: `Kresse, Kai` and
@@ -528,7 +579,18 @@ re-enabling from the Actions tab.
 [d3](https://d3js.org/) and [d3-cloud](https://github.com/jasondavies/d3-cloud)
 are loaded from jsDelivr, pinned to exact versions and protected with
 subresource-integrity hashes. Both apps pin the same d3 build, so a visitor to
-both downloads it once. Everything else is first-party.
+both downloads it once.
+
+[Newsreader](https://fonts.google.com/specimen/Newsreader) and
+[Instrument Sans](https://fonts.google.com/specimen/Instrument+Sans) are served
+from `shared/fonts/`, not from a font CDN: no third-party request, and no reader
+is announced to Google on their way in. They are Google's own variable `woff2`
+builds, split by `unicode-range`, so an English or German page fetches only the
+`latin` cut — around 160 KB of the 544 KB on disk. Arabic and CJK titles in the
+publication register fall back to a system face; neither family covers those
+scripts.
+
+Everything else is first-party.
 
 ## Browser support
 
@@ -538,5 +600,6 @@ assignment. No transpilation or polyfills are applied.
 
 ## License
 
-No license has been declared for this repository yet. The bundled Muli typeface
-is licensed separately under the SIL Open Font License.
+No license has been declared for this repository yet. The bundled Newsreader and
+Instrument Sans typefaces are licensed separately under the SIL Open Font
+License.

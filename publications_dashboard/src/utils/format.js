@@ -29,11 +29,3 @@ export function shortName(name) {
         .join(' ');
     return initials ? `${initials} ${surname}` : surname;
 }
-
-/** The citation line under a title: authors, venue and year, as available. */
-export function citation(record) {
-    const venue = record.journal || record.publisher || record.series;
-    return [record.authors?.join('; '), venue, record.year]
-        .filter(Boolean)
-        .join(' · ');
-}

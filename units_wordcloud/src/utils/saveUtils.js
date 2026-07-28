@@ -40,7 +40,12 @@ export class SaveManager {
                 }
 
                 const family = this.config.get('wordcloud.font.family.primary');
-                return `@font-face{font-family:'${family}';src:url(data:font/ttf;base64,${btoa(binary)}) format('truetype');}`;
+                // Derived from the URL rather than fixed: the cloud is set in a
+                // variable woff2 now, and declaring it as truetype made the
+                // face invalid inside the exported SVG, so every PNG came back
+                // in a system serif while the screen showed Newsreader.
+                const { mime, format } = SaveManager.fontFormat(this.fontUrl);
+                return `@font-face{font-family:'${family}';src:url(data:${mime};base64,${btoa(binary)}) format('${format}');}`;
             } catch (error) {
                 console.warn('[ZMO] could not embed webfont in export; falling back to system fonts', error);
                 return '';
@@ -48,6 +53,23 @@ export class SaveManager {
         })();
 
         return this.fontFacePromise;
+    }
+
+    /** The `@font-face` MIME type and `format()` keyword for a font URL. */
+    static fontFormat(url) {
+        const extension = new URL(url, window.location.href).pathname
+            .split('.').pop().toLowerCase();
+
+        switch (extension) {
+            case 'woff2':
+                return { mime: 'font/woff2', format: 'woff2' };
+            case 'woff':
+                return { mime: 'font/woff', format: 'woff' };
+            case 'otf':
+                return { mime: 'font/otf', format: 'opentype' };
+            default:
+                return { mime: 'font/ttf', format: 'truetype' };
+        }
     }
 
     /**

@@ -4,7 +4,7 @@ import { SaveButton } from './SaveButton.js';
 import { UI_EVENTS, ERROR_EVENTS } from '../events/EventTypes.js';
 
 /**
- * The control bar: unit selector, word-count slider and export button.
+ * The toolbar: unit selector, word-count slider and export button.
  *
  * Owns the one-way flow `control input -> store action`, and mirrors store
  * changes back into the controls. Because the controls' `setValue` methods do
@@ -40,8 +40,11 @@ export class Menu {
     }
 
     init() {
+        // A toolbar rather than the floating rounded strip this used to be:
+        // each control now carries its own label, and the row sits flush
+        // between the context strip and the cloud instead of hovering over it.
         const wrapper = document.createElement('div');
-        wrapper.className = 'menu-wrapper';
+        wrapper.className = 'toolbar';
         this.container.appendChild(wrapper);
         this.wrapper = wrapper;
 

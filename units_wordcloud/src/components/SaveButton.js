@@ -14,6 +14,10 @@ const DOWNLOAD_ICON = `
  * state. The actual export is owned by Menu, so there is exactly one save code
  * path. (This component previously ran its own duplicate save routine *and*
  * exposed an `onClick` hook that Menu assigned but nothing ever invoked.)
+ *
+ * Outlined rather than filled. It sits in a toolbar next to the one control
+ * that changes what the page is about; a solid navy button beside the unit
+ * selector read as the primary action, which taking a copy away is not.
  */
 export class SaveButton {
     /**
@@ -32,22 +36,24 @@ export class SaveButton {
 
     render() {
         const wrapper = document.createElement('div');
-        wrapper.className = 'button-container';
+        wrapper.className = 'field field--action';
 
         const button = document.createElement('button');
         button.type = 'button';
         button.id = 'saveButton';
-        button.className = 'save-button font-medium';
-        button.setAttribute('aria-label', this.translations.saveAsPNG);
+        button.className = 'save-button';
 
         const icon = document.createElement('span');
         icon.className = 'save-icon';
         icon.innerHTML = DOWNLOAD_ICON;
 
         const text = document.createElement('span');
-        text.className = 'button-text font-medium';
+        text.className = 'button-text';
         text.textContent = this.translations.saveAsPNG;
 
+        // The label is the button's own text, so no `aria-label` repeats it —
+        // one that merely restates the visible text is a second name for the
+        // same thing and can drift from it.
         button.append(icon, text);
         button.addEventListener('click', () => this.onClick?.());
 

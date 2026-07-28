@@ -2,18 +2,7 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "wordcloud",
-      "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8000", "--directory", "units_wordcloud"],
-      "port": 8000
-    },
-    {
-      "name": "publications",
-      "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8001", "--directory", "publications_dashboard"],
-      "port": 8001
-    },
-    {
+      "//": "One server for the whole site. The per-app servers this replaced served units_wordcloud/ and publications_dashboard/ as their own roots, which no longer works: both apps load ../../shared/tokens.css, and that path does not exist above an app root. Open /en/, /units_wordcloud/en/ or /publications_dashboard/en/ from here.",
       "name": "site",
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8002"],

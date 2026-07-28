@@ -73,14 +73,20 @@ export function svg(tag, props = {}, children = []) {
     return node;
 }
 
-/** A titled panel: the frame every chart is drawn inside. */
+/**
+ * A titled panel: the frame every chart is drawn inside.
+ *
+ * The hint rides on the title's line rather than below it. It says how to drive
+ * the chart — "click a column to filter by year" — which is worth one glance
+ * and, on a page of six panels, should not cost six lines of height.
+ */
 export function panel({ title, hint, actions }, body) {
     return el('section', { class: 'panel' }, [
         el('div', { class: 'panel__head' }, [
             el('h2', { class: 'panel__title', text: title }),
+            hint && el('p', { class: 'panel__hint', text: hint }),
             actions
         ]),
-        hint && el('p', { class: 'panel__hint', text: hint }),
         el('div', { class: 'panel__body' }, [body])
     ]);
 }

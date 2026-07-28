@@ -12,6 +12,10 @@
     "size": 17
   },
   {
+    "text": "change",
+    "size": 14
+  },
+  {
     "text": "social",
     "size": 14
   },
@@ -29,7 +33,7 @@
   },
   {
     "text": "care",
-    "size": 11
+    "size": 12
   },
   {
     "text": "knowledge",
@@ -60,15 +64,11 @@
     "size": 10
   },
   {
-    "text": "change",
-    "size": 9
-  },
-  {
-    "text": "focus",
-    "size": 9
-  },
-  {
     "text": "central",
+    "size": 9
+  },
+  {
+    "text": "understand",
     "size": 9
   },
   {
@@ -104,27 +104,19 @@
     "size": 8
   },
   {
-    "text": "grouping",
-    "size": 8
-  },
-  {
     "text": "relation",
     "size": 7
   },
   {
-    "text": "way",
+    "text": "displace",
     "size": 7
   },
   {
-    "text": "aim",
+    "text": "follow",
     "size": 7
   },
   {
     "text": "people",
-    "size": 7
-  },
-  {
-    "text": "different",
     "size": 7
   },
   {
@@ -148,19 +140,11 @@
     "size": 6
   },
   {
+    "text": "impact",
+    "size": 6
+  },
+  {
     "text": "decade",
-    "size": 6
-  },
-  {
-    "text": "well",
-    "size": 6
-  },
-  {
-    "text": "displaced",
-    "size": 6
-  },
-  {
-    "text": "often",
     "size": 6
   },
   {
@@ -180,15 +164,15 @@
     "size": 6
   },
   {
-    "text": "understanding",
-    "size": 6
-  },
-  {
     "text": "germany",
     "size": 6
   },
   {
     "text": "syrian",
+    "size": 6
+  },
+  {
+    "text": "fish",
     "size": 6
   },
   {
@@ -201,10 +185,6 @@
   },
   {
     "text": "human",
-    "size": 5
-  },
-  {
-    "text": "seek",
     "size": 5
   },
   {
@@ -236,6 +216,18 @@
     "size": 5
   },
   {
+    "text": "experience",
+    "size": 5
+  },
+  {
+    "text": "affect",
+    "size": 5
+  },
+  {
+    "text": "challenge",
+    "size": 5
+  },
+  {
     "text": "south",
     "size": 5
   },
@@ -252,11 +244,15 @@
     "size": 5
   },
   {
-    "text": "question",
+    "text": "figuration",
     "size": 5
   },
   {
-    "text": "figuration",
+    "text": "group",
+    "size": 5
+  },
+  {
+    "text": "grouping",
     "size": 5
   },
   {
@@ -272,16 +268,12 @@
     "size": 5
   },
   {
-    "text": "explore",
-    "size": 5
-  },
-  {
     "text": "million",
     "size": 5
   },
   {
-    "text": "fish",
-    "size": 5
+    "text": "live",
+    "size": 4
   },
   {
     "text": "societal",
@@ -304,19 +296,11 @@
     "size": 4
   },
   {
-    "text": "impact",
-    "size": 4
-  },
-  {
     "text": "rural",
     "size": 4
   },
   {
     "text": "many",
-    "size": 4
-  },
-  {
-    "text": "part",
     "size": 4
   },
   {
@@ -332,15 +316,15 @@
     "size": 4
   },
   {
+    "text": "draw",
+    "size": 4
+  },
+  {
     "text": "land",
     "size": 4
   },
   {
     "text": "economic",
-    "size": 4
-  },
-  {
-    "text": "project",
     "size": 4
   },
   {
@@ -364,6 +348,10 @@
     "size": 4
   },
   {
+    "text": "become",
+    "size": 4
+  },
+  {
     "text": "egypt",
     "size": 4
   },
@@ -373,6 +361,10 @@
   },
   {
     "text": "society",
+    "size": 4
+  },
+  {
+    "text": "build",
     "size": 4
   },
   {
@@ -396,7 +388,15 @@
     "size": 4
   },
   {
-    "text": "new",
+    "text": "form",
+    "size": 4
+  },
+  {
+    "text": "regional",
+    "size": 4
+  },
+  {
+    "text": "around",
     "size": 4
   }
 ]

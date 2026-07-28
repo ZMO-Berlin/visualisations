@@ -8,10 +8,6 @@
     "size": 27
   },
   {
-    "text": "focus",
-    "size": 26
-  },
-  {
     "text": "south",
     "size": 26
   },
@@ -60,6 +56,10 @@
     "size": 17
   },
   {
+    "text": "work",
+    "size": 17
+  },
+  {
     "text": "global",
     "size": 17
   },
@@ -84,14 +84,6 @@
     "size": 16
   },
   {
-    "text": "different",
-    "size": 15
-  },
-  {
-    "text": "work",
-    "size": 15
-  },
-  {
     "text": "national",
     "size": 15
   },
@@ -112,15 +104,7 @@
     "size": 13
   },
   {
-    "text": "well",
-    "size": 13
-  },
-  {
     "text": "justice",
-    "size": 13
-  },
-  {
-    "text": "question",
     "size": 13
   },
   {
@@ -128,11 +112,11 @@
     "size": 13
   },
   {
-    "text": "explores",
+    "text": "material",
     "size": 13
   },
   {
-    "text": "material",
+    "text": "affect",
     "size": 13
   },
   {
@@ -156,7 +140,15 @@
     "size": 12
   },
   {
+    "text": "change",
+    "size": 12
+  },
+  {
     "text": "early",
+    "size": 12
+  },
+  {
+    "text": "archive",
     "size": 12
   },
   {
@@ -165,6 +157,10 @@
   },
   {
     "text": "actor",
+    "size": 11
+  },
+  {
+    "text": "shape",
     "size": 11
   },
   {
@@ -180,11 +176,7 @@
     "size": 11
   },
   {
-    "text": "aim",
-    "size": 11
-  },
-  {
-    "text": "new",
+    "text": "light",
     "size": 11
   },
   {
@@ -193,14 +185,6 @@
   },
   {
     "text": "entanglement",
-    "size": 11
-  },
-  {
-    "text": "archive",
-    "size": 11
-  },
-  {
-    "text": "affect",
     "size": 11
   },
   {
@@ -216,23 +200,11 @@
     "size": 11
   },
   {
-    "text": "explore",
-    "size": 10
-  },
-  {
-    "text": "perspective",
-    "size": 10
-  },
-  {
     "text": "process",
     "size": 10
   },
   {
     "text": "century",
-    "size": 10
-  },
-  {
-    "text": "part",
     "size": 10
   },
   {
@@ -268,11 +240,15 @@
     "size": 10
   },
   {
+    "text": "create",
+    "size": 9
+  },
+  {
     "text": "context",
     "size": 9
   },
   {
-    "text": "first",
+    "text": "enable",
     "size": 9
   },
   {
@@ -316,10 +292,6 @@
     "size": 9
   },
   {
-    "text": "examines",
-    "size": 8
-  },
-  {
     "text": "relationship",
     "size": 8
   },
@@ -328,7 +300,11 @@
     "size": 8
   },
   {
-    "text": "change",
+    "text": "experience",
+    "size": 8
+  },
+  {
+    "text": "become",
     "size": 8
   },
   {
@@ -340,7 +316,15 @@
     "size": 8
   },
   {
-    "text": "light",
+    "text": "follow",
+    "size": 8
+  },
+  {
+    "text": "build",
+    "size": 8
+  },
+  {
+    "text": "see",
     "size": 8
   },
   {
@@ -364,6 +348,14 @@
     "size": 8
   },
   {
+    "text": "shift",
+    "size": 8
+  },
+  {
+    "text": "trace",
+    "size": 8
+  },
+  {
     "text": "power",
     "size": 8
   },
@@ -384,19 +376,27 @@
     "size": 8
   },
   {
-    "text": "order",
-    "size": 7
-  },
-  {
-    "text": "approach",
-    "size": 7
-  },
-  {
-    "text": "project",
+    "text": "form",
     "size": 7
   },
   {
     "text": "individual",
+    "size": 7
+  },
+  {
+    "text": "development",
+    "size": 7
+  },
+  {
+    "text": "year",
+    "size": 7
+  },
+  {
+    "text": "nationalism",
+    "size": 7
+  },
+  {
+    "text": "think",
     "size": 7
   }
 ]

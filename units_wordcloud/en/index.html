@@ -6,6 +6,11 @@
     <title>ZMO Word Cloud</title>
     <meta name="description" content="Interactive word cloud of the most frequent terms across the ZMO research units.">
     <link rel="icon" href="data:,">
+    <link rel="alternate" hreflang="de" href="../de/">
+    <link rel="alternate" hreflang="en" href="./">
+    <!-- Tokens first: every value in the two files below is defined there. -->
+    <link rel="stylesheet" href="../../shared/tokens.css">
+    <link rel="stylesheet" href="../../shared/site-bar.css">
     <link rel="stylesheet" href="../src/styles/main.css">
     <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"
             integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"
@@ -15,16 +20,29 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+    <!--
+        Removed outright when this page is inside an iframe: on zmo.de the
+        institute's own header is already above it. The context strip below
+        stays, because it belongs to the visualisation rather than to the site.
+    -->
+    <div data-site-bar="wordcloud" hidden></div>
+
+    <!-- Title, current unit and the two figures. Built by ContextStrip. -->
+    <div id="context"></div>
+
     <div class="controls-container">
         <div id="controls"></div>
     </div>
+
     <div class="content-container">
         <div class="wordcloud-container">
             <div id="wordcloud"></div>
         </div>
         <div id="wordlist"></div>
     </div>
+
     <div id="tooltip" role="tooltip"></div>
+
     <!--
         The page fills the viewport and has no footer to sit in, so the credit
         is pinned to a corner the cloud does not reach. `target="_blank"`
@@ -35,6 +53,8 @@
         Created by
         <a href="https://www.frederickmadore.com/" target="_blank" rel="noopener noreferrer">Frédérick Madore</a>
     </p>
+
+    <script type="module" src="../../shared/site-bar.js"></script>
     <script type="module" src="../src/main.js"></script>
 </body>
 </html>

@@ -1,45 +1,57 @@
-/* Button Module */
-.button-container {
-    display: flex;
-    align-items: center;
-}
+/*
+ * The export button.
+ *
+ * Outlined, not filled. It sits beside the control that decides what the page
+ * is about, and a solid navy block there read as the primary action — which
+ * taking a copy away is not.
+ */
 
 .save-button {
-    width: 100%;
-    padding: 8px 16px;
-    background-color: var(--color-primary);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-medium);
-    font-family: var(--font-base);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+    padding: var(--s-2) var(--s-3);
+    font: inherit;
+    font-size: var(--text-sm);
+    font-weight: var(--weight-medium);
+    color: var(--c-brand-strong);
+    background: var(--c-surface);
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-sm);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition:
+        background var(--dur-fast) var(--ease-out),
+        border-color var(--dur-fast) var(--ease-out);
 }
 
-.save-button:hover {
-    background-color: var(--color-primary-dark);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 6px var(--color-primary-alpha);
+.save-button:hover:not(:disabled) {
+    background: var(--c-surface-hover);
+    border-color: var(--c-brand);
 }
 
-.save-button:active {
-    transform: translateY(0);
-    box-shadow: 0 1px 2px var(--color-primary-alpha);
+.save-button:focus-visible {
+    outline: 2px solid var(--c-focus);
+    outline-offset: 2px;
+}
+
+.save-button:disabled {
+    color: var(--c-ink-faint);
+    border-color: var(--c-line);
+    cursor: progress;
 }
 
 .save-button .save-icon {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--c-ink-soft);
+}
+
+.save-button:hover:not(:disabled) .save-icon {
+    color: var(--c-accent);
 }
 
 .save-button svg {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
 }
-
-.save-button .button-text {
-    font-weight: var(--font-weight-medium);
-} 
