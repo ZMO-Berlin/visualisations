@@ -96,15 +96,15 @@
     "size": 14
   },
   {
+    "text": "justice",
+    "size": 14
+  },
+  {
     "text": "russian",
     "size": 14
   },
   {
     "text": "network",
-    "size": 13
-  },
-  {
-    "text": "justice",
     "size": 13
   },
   {
@@ -192,6 +192,10 @@
     "size": 11
   },
   {
+    "text": "legality",
+    "size": 11
+  },
+  {
     "text": "kyrgyzstan",
     "size": 11
   },
@@ -221,10 +225,6 @@
   },
   {
     "text": "solidarity",
-    "size": 10
-  },
-  {
-    "text": "legality",
     "size": 10
   },
   {

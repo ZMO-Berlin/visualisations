@@ -18,9 +18,9 @@ on:
 permissions:
   contents: write
 
-# Never let two refreshes race each other onto main.
+# Serialize both data-refresh workflows so their commits cannot race onto main.
 concurrency:
-  group: update-word-data
+  group: data-refresh-main
   cancel-in-progress: false
 
 jobs:
@@ -114,6 +114,9 @@ jobs:
           git add -A
           git commit -m 'Refresh word cloud data from zmo.de' \
                      -m 'Automated monthly run of data_prep/scrape_zmo.py and data_prep/generate_word_data.py.'
+          # A human commit can land during the crawl even though the two data
+          # refresh workflows are serialized with each other.
+          git pull --rebase origin main
           git push
 
       - name: Report dry run

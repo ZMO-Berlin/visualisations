@@ -1,0 +1,62 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Cache NLTK corpora
+        uses: actions/cache@v6.1.0
+        with:
+          path: ~/nltk_data
+          key: nltk-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24.18.1'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Python tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Check Python and JavaScript syntax
+        run: |
+          python -m compileall -q data_prep tests
+          find . -type f -name '*.js' -not -path './.git/*' -print0 \
+            | xargs -0 -n 1 node --check
+
+      - name: Validate committed JSON
+        run: |
+          find . -type f -name '*.json' -not -path './.git/*' -print0 \
+            | xargs -0 -n 1 python -m json.tool > /dev/null
+
+      - name: Check generated data is current
+        run: |
+          python data_prep/generate_publication_data.py \
+            --output-dir "$RUNNER_TEMP/publication-data"
+          diff -ru publications_dashboard/data "$RUNNER_TEMP/publication-data"
+
+          python data_prep/generate_word_data.py \
+            --output-dir "$RUNNER_TEMP/word-data"
+          diff -ru units_wordcloud/data "$RUNNER_TEMP/word-data"

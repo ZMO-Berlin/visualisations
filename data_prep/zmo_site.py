@@ -147,4 +147,8 @@ def configure_console() -> None:
     """
     for stream in (sys.stdout, sys.stderr):
         if hasattr(stream, "reconfigure"):
-            stream.reconfigure(encoding="utf-8", errors="replace")
+            # GitHub Actions attaches pipes rather than terminals, so Python
+            # would otherwise buffer several minutes of progress at a time.
+            stream.reconfigure(
+                encoding="utf-8", errors="replace", line_buffering=True
+            )

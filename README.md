@@ -65,7 +65,9 @@ shared/                      The one layer all three pages load first
   site-bar.js/.css           The bar carrying the mark, the three views and the
                              language. Removes itself inside an iframe.
 
-.github/workflows/           Monthly data refreshes, one per app
+.github/workflows/           Monthly data refreshes plus push/PR validation
+
+tests/                       unittest regression tests for the pipelines
 
 data_prep/                   Offline data pipelines (Python)
   zmo_site.py                Shared: HTTP client, TYPO3 page slicing, text cleanup
@@ -132,6 +134,16 @@ python -m venv .venv
 .venv/Scripts/activate        # Windows;  source .venv/bin/activate elsewhere
 pip install -r requirements.txt
 ```
+
+Run the pipeline regression tests with:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The `Validate` workflow also parses every Python, JavaScript and JSON file and
+regenerates both apps' data into a temporary directory, failing if the committed
+outputs are stale.
 
 ---
 
@@ -550,9 +562,11 @@ Git already records when each refresh landed.
 | --- | --- | --- |
 | [`update-word-data.yml`](.github/workflows/update-word-data.yml) | 04:00 UTC on the 1st | Both word cloud stages |
 | [`update-publication-data.yml`](.github/workflows/update-publication-data.yml) | 05:00 UTC on the 1st | Both publications stages |
+| [`validate.yml`](.github/workflows/validate.yml) | Every push and pull request | Tests, syntax, JSON and generated-data checks |
 
 Each commits to `main` only if something changed. Because Pages serves from
-`main`, the published site updates with it.
+`main`, the published site updates with it. The two refresh workflows share one
+concurrency group, so manual and scheduled runs cannot race their commits.
 
 Run either on demand from the Actions tab. Both take a `dry_run` option that
 scrapes and reports without committing, which is the safe way to check whether
@@ -561,6 +575,9 @@ the site has moved; the publications workflow also takes `refresh_all`.
 Two safety nets stand between a broken scrape and `main`:
 
 * the scrapers exit non-zero when a page yields nothing they recognise;
+* the publications scraper verifies that the live document-type filter still
+  matches its known ids and labels, and refetches individual malformed cache
+  entries instead of abandoning the full cache;
 * a follow-up step compares the new output against the committed version and
   fails on a large drop — under 60% of a unit's words, or under 90% of the
   register's publications. A scraper cannot tell that a page returned *fewer*

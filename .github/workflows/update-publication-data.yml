@@ -23,9 +23,9 @@ on:
 permissions:
   contents: write
 
-# Never let two refreshes race each other onto main.
+# Serialize both data-refresh workflows so their commits cannot race onto main.
 concurrency:
-  group: update-publication-data
+  group: data-refresh-main
   cancel-in-progress: false
 
 jobs:

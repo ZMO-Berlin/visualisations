@@ -8,4 +8,4 @@ beautifulsoup4==4.15.0
 # generate_word_data.py — tokenise, lemmatise, count.
 # NLTK >= 3.9 requires the `punkt_tab` tokenizer tables rather than the older
 # pickled `punkt` model; the generator downloads both.
-nltk==3.10.0
+nltk==3.10.1

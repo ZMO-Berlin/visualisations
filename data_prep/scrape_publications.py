@@ -95,7 +95,7 @@ class Reference:
     """A pointer from one publication in the register to another."""
 
     slug: str | None
-    title: str
+    title: str = ""
     subtitle: str = ""
     authors: list[str] = field(default_factory=list)
     role: str = ""  # "Ed." when the listing marks the names as editors
@@ -113,7 +113,10 @@ class Publication:
 
     slug: str
     url: str
-    title: str
+    # The register contains at least one genuine stub whose headline is empty.
+    # Empty optional fields are omitted from the JSON cache, so the default is
+    # also what makes that record round-trip cleanly between runs.
+    title: str = ""
     subtitle: str = ""
     authors: list[str] = field(default_factory=list)
     document_type: str = ""
@@ -201,6 +204,49 @@ def parse_listing(html: str) -> tuple[list[dict], int | None]:
     return entries, last_page
 
 
+def document_type_options(html: str) -> dict[int, str]:
+    """Read the document-type ids and labels offered by the live filter."""
+    soup = content_root(html)
+    select = soup.find("select", attrs={"name": FILTER_PARAM})
+    if not select:
+        return {}
+
+    options: dict[int, str] = {}
+    for option in select.find_all("option"):
+        value = option.get("value", "")
+        if value.isdigit():
+            options[int(value)] = clean_text(option)
+    return options
+
+
+def validate_document_types(html: str) -> None:
+    """Fail loudly when the site's filter no longer matches our type map."""
+    actual = document_type_options(html)
+    if actual == DOCUMENT_TYPES:
+        return
+
+    missing = sorted(set(DOCUMENT_TYPES) - set(actual))
+    added = sorted(set(actual) - set(DOCUMENT_TYPES))
+    renamed = sorted(
+        type_id for type_id in set(actual) & set(DOCUMENT_TYPES)
+        if actual[type_id] != DOCUMENT_TYPES[type_id]
+    )
+    changes = []
+    if missing:
+        changes.append(f"missing ids {missing}")
+    if added:
+        changes.append(f"new ids {added}")
+    if renamed:
+        labels = ", ".join(
+            f"{type_id}: {DOCUMENT_TYPES[type_id]!r} -> {actual[type_id]!r}"
+            for type_id in renamed
+        )
+        changes.append(f"renamed labels ({labels})")
+
+    detail = "; ".join(changes) or "the document-type select was not found"
+    raise ScrapeError(f"{LISTING_URL}: document-type filters changed: {detail}")
+
+
 def crawl_listing(fetcher: Fetcher, document_type: int | None = None,
                   label: str = "all", limit: int | None = None) -> list[dict]:
     """Walk every result page of one listing, following its own pagination."""
@@ -211,6 +257,8 @@ def crawl_listing(fetcher: Fetcher, document_type: int | None = None,
 
     while page <= MAX_PAGES:
         html = fetcher.get(listing_url(page, document_type))
+        if page == 1 and document_type is None:
+            validate_document_types(html)
         found, end = parse_listing(html)
 
         if page == 1:
@@ -520,15 +568,51 @@ def fingerprint(entry: dict) -> str:
     )
 
 
-def load_previous(path: Path) -> dict[str, dict]:
+def load_previous(path: Path) -> dict[str, Publication]:
+    """Load and validate reusable records, skipping only malformed entries."""
     if not path.is_file():
         return {}
+
     try:
         payload = json.loads(path.read_text(encoding="utf-8"))
-        return {record["slug"]: record for record in payload.get("publications", [])}
-    except (json.JSONDecodeError, KeyError, TypeError) as error:
+    except (json.JSONDecodeError, OSError, TypeError) as error:
         print(f"warning: ignoring unreadable {path.name}: {error}", file=sys.stderr)
         return {}
+
+    if not isinstance(payload, dict):
+        print(
+            f"warning: ignoring unreadable {path.name}: root is not a JSON object",
+            file=sys.stderr,
+        )
+        return {}
+
+    raw_records = payload.get("publications", [])
+    if not isinstance(raw_records, list):
+        print(
+            f"warning: ignoring unreadable {path.name}: publications is not a list",
+            file=sys.stderr,
+        )
+        return {}
+
+    reusable: dict[str, Publication] = {}
+    for index, data in enumerate(raw_records, start=1):
+        label = data.get("slug", f"record {index}") if isinstance(data, dict) else f"record {index}"
+        try:
+            record = from_record(data)
+        except (AttributeError, TypeError, ValueError) as error:
+            print(
+                f"warning: cached publication {label!r} is invalid and will be refetched: {error}",
+                file=sys.stderr,
+            )
+            continue
+        if record.slug in reusable:
+            print(
+                f"warning: duplicate cached publication {record.slug!r}; keeping the last copy",
+                file=sys.stderr,
+            )
+        reusable[record.slug] = record
+
+    return reusable
 
 
 def to_record(publication: Publication) -> dict:
@@ -543,26 +627,45 @@ def to_record(publication: Publication) -> dict:
 def from_record(data: dict) -> Publication:
     """Rebuild a cached record.
 
-    Unknown keys are dropped rather than passed to the constructor: a field
-    removed from ``Publication`` in a later version would otherwise make every
-    cached record raise TypeError, turning a schema change into a crash instead
-    of a re-fetch.
+    Unknown keys are dropped rather than passed to the constructor. Optional
+    fields omitted by ``to_record`` regain their dataclass defaults. Invalid
+    required or nested fields raise ValueError so ``load_previous`` can refetch
+    only that publication rather than discarding the whole cache.
     """
+    if not isinstance(data, dict):
+        raise ValueError("record is not a JSON object")
+
     known = {field.name for field in fields(Publication)}
     values = {key: value for key, value in data.items() if key in known}
+    for required in ("slug", "url"):
+        if not isinstance(values.get(required), str) or not values[required].strip():
+            raise ValueError(f"{required} is missing or not a non-empty string")
 
     reference_fields = {field.name for field in fields(Reference)}
     if values.get("published_in"):
+        if not isinstance(values["published_in"], dict):
+            raise ValueError("published_in is not a JSON object")
         values["published_in"] = Reference(**{
             key: value for key, value in values["published_in"].items()
             if key in reference_fields
         })
+    contributions = values.get("contributions", [])
+    if not isinstance(contributions, list) or any(
+        not isinstance(reference, dict) for reference in contributions
+    ):
+        raise ValueError("contributions is not a list of JSON objects")
     values["contributions"] = [
-        Reference(**{key: value for key, value in ref.items() if key in reference_fields})
-        for ref in values.get("contributions", [])
+        Reference(**{
+            key: value for key, value in reference.items()
+            if key in reference_fields
+        })
+        for reference in contributions
     ]
 
-    return Publication(**values)
+    try:
+        return Publication(**values)
+    except TypeError as error:
+        raise ValueError(str(error)) from error
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
@@ -625,7 +728,8 @@ def main(argv: list[str] | None = None) -> int:
 
         stale = [
             entry for entry in entries
-            if previous.get(entry["slug"], {}).get("fingerprint") != fingerprint(entry)
+            if previous.get(entry["slug"]) is None
+            or previous[entry["slug"]].fingerprint != fingerprint(entry)
         ]
         if previous:
             print(f"  {len(entries) - len(stale)} unchanged since the last crawl, "
@@ -651,8 +755,8 @@ def main(argv: list[str] | None = None) -> int:
             mark = fingerprint(entry)
             cached = previous.get(slug)
 
-            if cached and cached.get("fingerprint") == mark:
-                record = from_record(cached)
+            if cached and cached.fingerprint == mark:
+                record = cached
                 reused += 1
             else:
                 record = parse_detail(fetcher.get(detail_url(slug)), slug)
