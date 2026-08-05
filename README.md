@@ -615,8 +615,29 @@ Targets current evergreen browsers. Uses ES modules, private class fields,
 `ResizeObserver`, `Element.replaceChildren`, optional chaining and logical
 assignment. No transpilation or polyfills are applied.
 
-## License
+## Licences
 
-No license has been declared for this repository yet. The bundled Newsreader and
-Instrument Sans typefaces are licensed separately under the SIL Open Font
-License.
+Split, because the repository holds two different things:
+
+| | Licence | Covers |
+| --- | --- | --- |
+| Code | [MIT](LICENSE) | Everything in `data_prep/`, `shared/`, `landing/`, `tests/`, and both apps' `src/` and HTML |
+| Data | [CC BY 4.0](LICENSE-DATA) | `data_prep/raw_data/`, `data_prep/aliases.json`, and both apps' `data/` |
+
+The data is derived from zmo.de — the research-unit and project descriptions,
+and the publication register — so the rights in the source material are the
+institute's, and the CC BY grant rests on this repository being published by
+the institute itself.
+
+Two things are excluded from both. The bundled Newsreader and Instrument Sans
+typefaces in `shared/fonts/` are third-party, under the SIL Open Font License.
+The ZMO mark in `landing/zmo-logo.png`, and the icons and share card derived
+from it in `shared/`, are the institute's and are not licensed for reuse here.
+
+## Citation
+
+[`CITATION.cff`](CITATION.cff) carries the citation metadata, which GitHub
+renders as a **Cite this repository** button on the repository page and exports
+as APA or BibTeX. It has no DOI: nothing here is tagged or archived. If a
+release is ever deposited with Zenodo, add `version`, `doi` and the release date
+to that file at the same time.

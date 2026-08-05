@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+title: ZMO Visualisations
+message: >-
+  If you use these visualisations, or the data behind them, please cite the
+  repository as below.
+type: software
+authors:
+  - family-names: Madore
+    given-names: Frédérick
+    orcid: https://orcid.org/0000-0003-0959-2092
+    affiliation: University of Bayreuth
+abstract: >-
+  Two static web apps built from data scraped from the Leibniz-Zentrum Moderner
+  Orient (ZMO) website: an interactive word cloud of the most frequent terms in
+  each research unit's description and project abstracts, and a cross-filtering
+  dashboard of ZMO's publication register — output per year, document types,
+  authors, co-authorship, journals and publishers. Both are published in English
+  and German, and both are rebuilt monthly from zmo.de by Python pipelines run
+  from GitHub Actions.
+repository-code: https://github.com/ZMO-Berlin/visualisations
+url: https://zmo-berlin.github.io/visualisations/
+# Split, and both are listed because the repository ships both: MIT for the
+# code, CC BY 4.0 for the scraped datasets. See LICENSE and LICENSE-DATA.
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - data visualisation
+  - digital humanities
+  - word cloud
+  - bibliometrics
+  - publication register
+  - research data
+  - web scraping
+  - Leibniz-Zentrum Moderner Orient
+# The site is rebuilt monthly rather than released in versions. Bump this when
+# tagging a release; add `version:` and `doi:` at the same time if the tag is
+# archived to Zenodo.
+date-released: '2026-08-05'
+references:
+  - type: database
+    title: ZMO publication register
+    abstract: >-
+      The source of the publications dashboard, and of the research-unit and
+      project text behind the word cloud.
+    authors:
+      - name: Leibniz-Zentrum Moderner Orient
+        city: Berlin
+        country: DE
+        website: https://www.zmo.de/
+    url: https://www.zmo.de/en/publications/publication-search

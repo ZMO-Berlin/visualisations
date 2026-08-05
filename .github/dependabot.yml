@@ -1,0 +1,26 @@
+version: 2
+
+updates:
+  # GitHub Actions only. The Python pipelines in requirements.txt are pinned
+  # deliberately and run monthly against a live site, so they are reviewed by
+  # hand rather than bumped automatically.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      # Monthly, not weekly: there are four actions in three workflows, and a
+      # PR a week for them would be noise. This lands just before the 1st-of-
+      # the-month data refreshes, so a broken runner shows up before they run.
+      interval: monthly
+      time: "06:00"
+      timezone: Europe/Berlin
+    # One pull request covering every action, rather than one per action.
+    groups:
+      actions:
+        patterns:
+          - "*"
+    open-pull-requests-limit: 1
+    # Assigned so the notification reaches a person rather than the org.
+    assignees:
+      - fmadore
+    commit-message:
+      prefix: ci

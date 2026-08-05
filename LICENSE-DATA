@@ -1,0 +1,52 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+==========================================================
+
+This licence covers the *data* in this repository, not the code. The code is
+under the MIT License in `LICENSE`.
+
+Covered by CC BY 4.0
+--------------------
+
+  data_prep/raw_data/          Scraper output: the research-unit and project
+                               text (`<Unit>.txt`, `units.json`) and the full
+                               publication records (`publications.json`)
+  data_prep/aliases.json       The hand-curated spelling merges
+  units_wordcloud/data/        The word-frequency datasets
+  publications_dashboard/data/ The dashboard dataset and its `meta.json`
+
+Underlying rights
+-----------------
+
+The content in `data_prep/raw_data/` is derived from the website of the
+Leibniz-Zentrum Moderner Orient (https://www.zmo.de/) — the research-unit and
+project descriptions, and the publication register. ZMO holds the rights in
+that source material; this licence is granted on that basis, the repository
+being published by the institute itself.
+
+Bibliographic facts — an author's name, a title, a year, a journal — are not
+copyrightable in most jurisdictions. The attribution below is asked for as
+scholarly practice as much as as a licence condition.
+
+How to attribute
+----------------
+
+  Madore, Frédérick. ZMO Visualisations. Leibniz-Zentrum Moderner Orient.
+  https://github.com/ZMO-Berlin/visualisations — data derived from the ZMO
+  publication register, CC BY 4.0.
+
+`CITATION.cff` in the repository root holds the same in machine-readable form,
+and GitHub renders it as a "Cite this repository" button.
+
+Full text
+---------
+
+Deed:      https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Not covered
+-----------
+
+The Newsreader and Instrument Sans typefaces in `shared/fonts/` are third-party
+and licensed separately under the SIL Open Font License 1.1. The ZMO logo in
+`landing/zmo-logo.png` and the icons derived from it in `shared/` are the
+institute's mark and are not licensed for reuse by this file.
