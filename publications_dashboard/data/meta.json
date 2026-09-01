@@ -12,8 +12,8 @@
   "Working Papers"
  ],
  "counts": {
-  "publications": 1962,
-  "authors": 656,
+  "publications": 1976,
+  "authors": 672,
   "untyped": 35,
   "withoutYear": 9
  },
@@ -152,7 +152,7 @@
   },
   {
    "year": 2026,
-   "count": 31
+   "count": 45
   }
  ]
 }
