@@ -28,11 +28,6 @@
           "kind": "project"
         },
         {
-          "title": "Archival Imaginaries and the Politics of History in South Asia",
-          "url": "https://www.zmo.de/en/research/state-and-society/mallika-leuzinger",
-          "kind": "project"
-        },
-        {
           "title": "Modern India in German Archives, 1706–1989 (MIDA)",
           "url": null,
           "kind": "umbrella"
@@ -156,6 +151,11 @@
           "title": "After Authoritarianism: How Political Thinking Travels With Syrians to Germany and Denmark",
           "url": "https://www.zmo.de/en/research/state-and-society/birgitte-holst",
           "kind": "project"
+        },
+        {
+          "title": "Predictive Narratives and Magical Thinking as Coping Mechanisms in Lebanon’s Radical Uncertainty (2019-2024)",
+          "url": "https://www.zmo.de/en/research/state-and-society/sari-chreiteh",
+          "kind": "project"
         }
       ]
     },
@@ -186,23 +186,13 @@
           "kind": "project"
         },
         {
-          "title": "In the Company of Plants: Multispecies Care and Migrant Home-making in Germany (DFG)",
-          "url": "https://www.zmo.de/en/research/lives-and-ecologies/hilal-alkan",
-          "kind": "project"
-        },
-        {
-          "title": "Slavery and Post-Slavery in South Yemen under British rule (FWF Erwin Schrödinger)",
-          "url": "https://www.zmo.de/en/research/lives-and-ecologies/magdalena-moorthy-kloss",
+          "title": "Shifting landscapes of human-plant co-mobilities between Europe and Asia (PLANTH)",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-hilal-alkan-shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth",
           "kind": "project"
         },
         {
           "title": "Beyond Humanitarianism: Disability Care and Belonging of Afghan Veterans in Iran (DFG)",
           "url": "https://www.zmo.de/en/research/lives-and-ecologies/ahmad-moradi",
-          "kind": "project"
-        },
-        {
-          "title": "Oil, Decolonisation and the ‘Great Acceleration’: A Translocal History of Oil Refining and Environmental Justice in the Western Indian Ocean",
-          "url": "https://www.zmo.de/en/research/lives-and-ecologies/mattin-biglari",
           "kind": "project"
         },
         {
@@ -223,6 +213,26 @@
         {
           "title": "Knowledge, Temporalities and Questions of Justice. Negotiating Coastal Futures in West Africa in Times of Climate Change",
           "url": "https://www.zmo.de/en/research/lives-and-ecologies/juliane-schumacher",
+          "kind": "project"
+        },
+        {
+          "title": "In the Company of Plants: Multispecies Care and Migrant Home-making in Germany (DFG)",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/hilal-alkan#c3095",
+          "kind": "project"
+        },
+        {
+          "title": "Sklaverei und Post-Sklaverei im britisch regierten Südjemen",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/magdalena-moorthy-kloss#c3099",
+          "kind": "project"
+        },
+        {
+          "title": "Oil, Decolonisation and the ‘Great Acceleration’: A Translocal History of Oil Refining and Environmental Justice in the Western Indian Ocean",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/mattin-biglari#c3690",
+          "kind": "project"
+        },
+        {
+          "title": "Urban Seeds and Their Savers: Building living archives and a liveable London",
+          "url": "https://www.zmo.de/en/research/lives-and-ecologies/helene-schulze#c3602",
           "kind": "project"
         }
       ]
@@ -312,6 +322,11 @@
           "title": "Islam West Africa Collection",
           "url": null,
           "kind": "umbrella"
+        },
+        {
+          "title": "Call to Prayer: Evangelizing in an Arab/Islamic Lifeworld",
+          "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/arpan-roy#c3343",
+          "kind": "project"
         }
       ]
     }

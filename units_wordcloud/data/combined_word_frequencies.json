@@ -1,23 +1,27 @@
 [
   {
     "text": "social",
-    "size": 56
+    "size": 57
   },
   {
     "text": "history",
-    "size": 56
+    "size": 53
   },
   {
     "text": "practice",
-    "size": 44
-  },
-  {
-    "text": "local",
-    "size": 40
+    "size": 45
   },
   {
     "text": "life",
-    "size": 38
+    "size": 40
+  },
+  {
+    "text": "local",
+    "size": 39
+  },
+  {
+    "text": "context",
+    "size": 36
   },
   {
     "text": "time",
@@ -28,7 +32,7 @@
     "size": 36
   },
   {
-    "text": "south",
+    "text": "intellectual",
     "size": 34
   },
   {
@@ -36,19 +40,23 @@
     "size": 33
   },
   {
-    "text": "intellectual",
-    "size": 33
-  },
-  {
     "text": "change",
-    "size": 31
-  },
-  {
-    "text": "context",
-    "size": 31
+    "size": 32
   },
   {
     "text": "historical",
+    "size": 32
+  },
+  {
+    "text": "south",
+    "size": 31
+  },
+  {
+    "text": "political",
+    "size": 30
+  },
+  {
+    "text": "work",
     "size": 30
   },
   {
@@ -56,15 +64,7 @@
     "size": 30
   },
   {
-    "text": "political",
-    "size": 29
-  },
-  {
     "text": "global",
-    "size": 29
-  },
-  {
-    "text": "work",
     "size": 28
   },
   {
@@ -73,18 +73,18 @@
   },
   {
     "text": "process",
-    "size": 25
-  },
-  {
-    "text": "asia",
-    "size": 25
+    "size": 26
   },
   {
     "text": "role",
-    "size": 25
+    "size": 26
   },
   {
     "text": "knowledge",
+    "size": 26
+  },
+  {
+    "text": "asia",
     "size": 25
   },
   {
@@ -96,8 +96,12 @@
     "size": 24
   },
   {
-    "text": "group",
+    "text": "region",
     "size": 24
+  },
+  {
+    "text": "group",
+    "size": 23
   },
   {
     "text": "modern",
@@ -105,6 +109,10 @@
   },
   {
     "text": "actor",
+    "size": 22
+  },
+  {
+    "text": "network",
     "size": 22
   },
   {
@@ -116,7 +124,11 @@
     "size": 21
   },
   {
-    "text": "oil",
+    "text": "migrant",
+    "size": 21
+  },
+  {
+    "text": "world",
     "size": 21
   },
   {
@@ -124,16 +136,24 @@
     "size": 21
   },
   {
-    "text": "region",
-    "size": 20
+    "text": "oil",
+    "size": 21
+  },
+  {
+    "text": "city",
+    "size": 21
   },
   {
     "text": "culture",
-    "size": 20
+    "size": 21
   },
   {
     "text": "islamic",
-    "size": 20
+    "size": 21
+  },
+  {
+    "text": "relation",
+    "size": 19
   },
   {
     "text": "experience",
@@ -152,23 +172,7 @@
     "size": 19
   },
   {
-    "text": "migrant",
-    "size": 19
-  },
-  {
-    "text": "network",
-    "size": 19
-  },
-  {
-    "text": "material",
-    "size": 19
-  },
-  {
     "text": "national",
-    "size": 19
-  },
-  {
-    "text": "city",
     "size": 19
   },
   {
@@ -176,15 +180,7 @@
     "size": 18
   },
   {
-    "text": "relation",
-    "size": 18
-  },
-  {
     "text": "century",
-    "size": 18
-  },
-  {
-    "text": "past",
     "size": 18
   },
   {
@@ -200,11 +196,31 @@
     "size": 18
   },
   {
-    "text": "development",
-    "size": 18
+    "text": "past",
+    "size": 17
   },
   {
     "text": "society",
+    "size": 17
+  },
+  {
+    "text": "future",
+    "size": 17
+  },
+  {
+    "text": "form",
+    "size": 17
+  },
+  {
+    "text": "development",
+    "size": 17
+  },
+  {
+    "text": "material",
+    "size": 17
+  },
+  {
+    "text": "archive",
     "size": 17
   },
   {
@@ -212,15 +228,27 @@
     "size": 17
   },
   {
-    "text": "world",
-    "size": 17
-  },
-  {
     "text": "system",
     "size": 17
   },
   {
-    "text": "future",
+    "text": "human",
+    "size": 16
+  },
+  {
+    "text": "live",
+    "size": 16
+  },
+  {
+    "text": "community",
+    "size": 16
+  },
+  {
+    "text": "challenge",
+    "size": 16
+  },
+  {
+    "text": "build",
     "size": 16
   },
   {
@@ -228,11 +256,7 @@
     "size": 16
   },
   {
-    "text": "form",
-    "size": 16
-  },
-  {
-    "text": "archive",
+    "text": "market",
     "size": 16
   },
   {
@@ -248,16 +272,28 @@
     "size": 16
   },
   {
-    "text": "dynamic",
+    "text": "arab",
     "size": 15
   },
   {
-    "text": "market",
+    "text": "urban",
+    "size": 15
+  },
+  {
+    "text": "care",
+    "size": 15
+  },
+  {
+    "text": "dynamic",
     "size": 15
   },
   {
     "text": "cultural",
     "size": 15
+  },
+  {
+    "text": "mobility",
+    "size": 14
   },
   {
     "text": "trajectory",
@@ -268,7 +304,7 @@
     "size": 14
   },
   {
-    "text": "memory",
+    "text": "university",
     "size": 14
   },
   {
@@ -284,20 +320,20 @@
     "size": 14
   },
   {
+    "text": "narrative",
+    "size": 14
+  },
+  {
+    "text": "digital",
+    "size": 14
+  },
+  {
     "text": "india",
     "size": 14
   },
   {
     "text": "russian",
     "size": 14
-  },
-  {
-    "text": "human",
-    "size": 13
-  },
-  {
-    "text": "live",
-    "size": 13
   },
   {
     "text": "violence",
@@ -308,27 +344,23 @@
     "size": 13
   },
   {
-    "text": "community",
-    "size": 13
-  },
-  {
-    "text": "challenge",
-    "size": 13
-  },
-  {
     "text": "individual",
     "size": 13
   },
   {
-    "text": "build",
+    "text": "shift",
     "size": 13
   },
   {
-    "text": "care",
+    "text": "site",
     "size": 13
   },
   {
     "text": "period",
+    "size": 13
+  },
+  {
+    "text": "place",
     "size": 13
   },
   {
@@ -340,11 +372,11 @@
     "size": 13
   },
   {
-    "text": "entanglement",
+    "text": "berlin",
     "size": 13
   },
   {
-    "text": "berlin",
+    "text": "production",
     "size": 13
   },
   {
@@ -356,47 +388,15 @@
     "size": 13
   },
   {
-    "text": "narrative",
+    "text": "entanglement",
     "size": 13
   },
   {
-    "text": "field",
+    "text": "colonial",
     "size": 13
   },
   {
-    "text": "digital",
+    "text": "religion",
     "size": 13
-  },
-  {
-    "text": "empire",
-    "size": 13
-  },
-  {
-    "text": "cold",
-    "size": 13
-  },
-  {
-    "text": "mobility",
-    "size": 12
-  },
-  {
-    "text": "conflict",
-    "size": 12
-  },
-  {
-    "text": "across",
-    "size": 12
-  },
-  {
-    "text": "many",
-    "size": 12
-  },
-  {
-    "text": "home",
-    "size": 12
-  },
-  {
-    "text": "become",
-    "size": 12
   }
 ]

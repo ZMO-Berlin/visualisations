@@ -1,22 +1,26 @@
 [
   {
+    "text": "migrant",
+    "size": 21
+  },
+  {
     "text": "oil",
     "size": 20
   },
   {
-    "text": "migrant",
+    "text": "life",
     "size": 19
   },
   {
-    "text": "life",
-    "size": 17
-  },
-  {
     "text": "change",
-    "size": 14
+    "size": 15
   },
   {
     "text": "social",
+    "size": 14
+  },
+  {
+    "text": "care",
     "size": 14
   },
   {
@@ -32,8 +36,8 @@
     "size": 12
   },
   {
-    "text": "care",
-    "size": 12
+    "text": "context",
+    "size": 11
   },
   {
     "text": "knowledge",
@@ -44,11 +48,11 @@
     "size": 10
   },
   {
-    "text": "conflict",
+    "text": "mobility",
     "size": 10
   },
   {
-    "text": "context",
+    "text": "conflict",
     "size": 10
   },
   {
@@ -62,6 +66,10 @@
   {
     "text": "refugee",
     "size": 10
+  },
+  {
+    "text": "practice",
+    "size": 9
   },
   {
     "text": "central",
@@ -80,11 +88,11 @@
     "size": 9
   },
   {
-    "text": "mobility",
+    "text": "war",
     "size": 8
   },
   {
-    "text": "war",
+    "text": "relation",
     "size": 8
   },
   {
@@ -92,7 +100,7 @@
     "size": 8
   },
   {
-    "text": "practice",
+    "text": "migration",
     "size": 8
   },
   {
@@ -104,11 +112,15 @@
     "size": 8
   },
   {
-    "text": "relation",
+    "text": "live",
     "size": 7
   },
   {
     "text": "displace",
+    "size": 7
+  },
+  {
+    "text": "challenge",
     "size": 7
   },
   {
@@ -117,6 +129,14 @@
   },
   {
     "text": "people",
+    "size": 7
+  },
+  {
+    "text": "build",
+    "size": 7
+  },
+  {
+    "text": "germany",
     "size": 7
   },
   {
@@ -136,6 +156,18 @@
     "size": 7
   },
   {
+    "text": "human",
+    "size": 6
+  },
+  {
+    "text": "together",
+    "size": 6
+  },
+  {
+    "text": "resource",
+    "size": 6
+  },
+  {
     "text": "middle",
     "size": 6
   },
@@ -148,11 +180,23 @@
     "size": 6
   },
   {
+    "text": "community",
+    "size": 6
+  },
+  {
+    "text": "site",
+    "size": 6
+  },
+  {
     "text": "state",
     "size": 6
   },
   {
     "text": "climate",
+    "size": 6
+  },
+  {
+    "text": "urban",
     "size": 6
   },
   {
@@ -164,7 +208,7 @@
     "size": 6
   },
   {
-    "text": "germany",
+    "text": "plant",
     "size": 6
   },
   {
@@ -184,15 +228,7 @@
     "size": 5
   },
   {
-    "text": "human",
-    "size": 5
-  },
-  {
-    "text": "together",
-    "size": 5
-  },
-  {
-    "text": "resource",
+    "text": "livelihood",
     "size": 5
   },
   {
@@ -201,6 +237,10 @@
   },
   {
     "text": "across",
+    "size": 5
+  },
+  {
+    "text": "generation",
     "size": 5
   },
   {
@@ -224,23 +264,27 @@
     "size": 5
   },
   {
-    "text": "challenge",
-    "size": 5
-  },
-  {
-    "text": "south",
-    "size": 5
-  },
-  {
-    "text": "site",
-    "size": 5
-  },
-  {
     "text": "especially",
     "size": 5
   },
   {
+    "text": "work",
+    "size": 5
+  },
+  {
     "text": "future",
+    "size": 5
+  },
+  {
+    "text": "asia",
+    "size": 5
+  },
+  {
+    "text": "historical",
+    "size": 5
+  },
+  {
+    "text": "form",
     "size": 5
   },
   {
@@ -256,11 +300,11 @@
     "size": 5
   },
   {
-    "text": "plant",
+    "text": "million",
     "size": 5
   },
   {
-    "text": "slavery",
+    "text": "network",
     "size": 5
   },
   {
@@ -268,11 +312,11 @@
     "size": 5
   },
   {
-    "text": "million",
-    "size": 5
+    "text": "shape",
+    "size": 4
   },
   {
-    "text": "live",
+    "text": "ecological",
     "size": 4
   },
   {
@@ -285,14 +329,6 @@
   },
   {
     "text": "displacement",
-    "size": 4
-  },
-  {
-    "text": "livelihood",
-    "size": 4
-  },
-  {
-    "text": "generation",
     "size": 4
   },
   {
@@ -309,6 +345,10 @@
   },
   {
     "text": "century",
+    "size": 4
+  },
+  {
+    "text": "landscape",
     "size": 4
   },
   {
@@ -340,11 +380,11 @@
     "size": 4
   },
   {
-    "text": "migration",
+    "text": "growth",
     "size": 4
   },
   {
-    "text": "growth",
+    "text": "south",
     "size": 4
   },
   {
@@ -357,46 +397,6 @@
   },
   {
     "text": "moral",
-    "size": 4
-  },
-  {
-    "text": "society",
-    "size": 4
-  },
-  {
-    "text": "build",
-    "size": 4
-  },
-  {
-    "text": "movement",
-    "size": 4
-  },
-  {
-    "text": "infrastructure",
-    "size": 4
-  },
-  {
-    "text": "comparative",
-    "size": 4
-  },
-  {
-    "text": "historical",
-    "size": 4
-  },
-  {
-    "text": "period",
-    "size": 4
-  },
-  {
-    "text": "form",
-    "size": 4
-  },
-  {
-    "text": "regional",
-    "size": 4
-  },
-  {
-    "text": "around",
     "size": 4
   }
 ]

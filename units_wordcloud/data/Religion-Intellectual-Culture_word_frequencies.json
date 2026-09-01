@@ -1,18 +1,18 @@
 [
   {
     "text": "intellectual",
-    "size": 29
+    "size": 30
   },
   {
     "text": "religious",
     "size": 24
   },
   {
-    "text": "muslim",
-    "size": 20
+    "text": "islamic",
+    "size": 21
   },
   {
-    "text": "islamic",
+    "text": "muslim",
     "size": 20
   },
   {
@@ -24,12 +24,16 @@
     "size": 15
   },
   {
-    "text": "religion",
-    "size": 12
+    "text": "context",
+    "size": 15
   },
   {
-    "text": "context",
-    "size": 12
+    "text": "religion",
+    "size": 13
+  },
+  {
+    "text": "islam",
+    "size": 13
   },
   {
     "text": "school",
@@ -52,11 +56,15 @@
     "size": 10
   },
   {
-    "text": "islam",
+    "text": "arab",
     "size": 10
   },
   {
     "text": "culture",
+    "size": 9
+  },
+  {
+    "text": "world",
     "size": 9
   },
   {
@@ -65,6 +73,10 @@
   },
   {
     "text": "university",
+    "size": 9
+  },
+  {
+    "text": "work",
     "size": 9
   },
   {
@@ -77,10 +89,6 @@
   },
   {
     "text": "heshmat",
-    "size": 8
-  },
-  {
-    "text": "work",
     "size": 8
   },
   {
@@ -101,6 +109,10 @@
   },
   {
     "text": "concept",
+    "size": 7
+  },
+  {
+    "text": "region",
     "size": 7
   },
   {
@@ -129,10 +141,6 @@
   },
   {
     "text": "religiosity",
-    "size": 6
-  },
-  {
-    "text": "world",
     "size": 6
   },
   {
@@ -204,11 +212,19 @@
     "size": 6
   },
   {
+    "text": "western",
+    "size": 6
+  },
+  {
     "text": "collection",
     "size": 6
   },
   {
     "text": "commentary",
+    "size": 6
+  },
+  {
+    "text": "christianity",
     "size": 6
   },
   {
@@ -225,6 +241,10 @@
   },
   {
     "text": "political",
+    "size": 5
+  },
+  {
+    "text": "figure",
     "size": 5
   },
   {
@@ -260,6 +280,10 @@
     "size": 5
   },
   {
+    "text": "like",
+    "size": 5
+  },
+  {
     "text": "large",
     "size": 5
   },
@@ -284,11 +308,11 @@
     "size": 5
   },
   {
-    "text": "western",
+    "text": "spain",
     "size": 5
   },
   {
-    "text": "spain",
+    "text": "christian",
     "size": 5
   },
   {
@@ -316,7 +340,7 @@
     "size": 4
   },
   {
-    "text": "figure",
+    "text": "identify",
     "size": 4
   },
   {
@@ -329,6 +353,10 @@
   },
   {
     "text": "material",
+    "size": 4
+  },
+  {
+    "text": "public",
     "size": 4
   },
   {
@@ -369,34 +397,6 @@
   },
   {
     "text": "hassan",
-    "size": 4
-  },
-  {
-    "text": "porcelain",
-    "size": 4
-  },
-  {
-    "text": "like",
-    "size": 4
-  },
-  {
-    "text": "anonymity",
-    "size": 4
-  },
-  {
-    "text": "contemporary",
-    "size": 4
-  },
-  {
-    "text": "ethic",
-    "size": 4
-  },
-  {
-    "text": "heritage",
-    "size": 4
-  },
-  {
-    "text": "result",
     "size": 4
   }
 ]

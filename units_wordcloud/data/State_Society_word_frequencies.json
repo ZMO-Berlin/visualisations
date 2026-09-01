@@ -1,15 +1,11 @@
 [
   {
     "text": "history",
-    "size": 36
+    "size": 33
   },
   {
     "text": "social",
-    "size": 27
-  },
-  {
-    "text": "south",
-    "size": 26
+    "size": 28
   },
   {
     "text": "night",
@@ -17,6 +13,10 @@
   },
   {
     "text": "state",
+    "size": 24
+  },
+  {
+    "text": "south",
     "size": 24
   },
   {
@@ -28,16 +28,12 @@
     "size": 22
   },
   {
-    "text": "local",
-    "size": 21
-  },
-  {
-    "text": "asia",
-    "size": 21
-  },
-  {
     "text": "historical",
-    "size": 19
+    "size": 20
+  },
+  {
+    "text": "local",
+    "size": 20
   },
   {
     "text": "practice",
@@ -45,6 +41,10 @@
   },
   {
     "text": "city",
+    "size": 19
+  },
+  {
+    "text": "asia",
     "size": 19
   },
   {
@@ -56,11 +56,7 @@
     "size": 17
   },
   {
-    "text": "work",
-    "size": 17
-  },
-  {
-    "text": "global",
+    "text": "political",
     "size": 17
   },
   {
@@ -72,16 +68,20 @@
     "size": 17
   },
   {
-    "text": "group",
+    "text": "work",
     "size": 16
   },
   {
-    "text": "political",
+    "text": "global",
     "size": 16
+  },
+  {
+    "text": "group",
+    "size": 15
   },
   {
     "text": "past",
-    "size": 16
+    "size": 15
   },
   {
     "text": "national",
@@ -90,6 +90,10 @@
   {
     "text": "music",
     "size": 15
+  },
+  {
+    "text": "network",
+    "size": 14
   },
   {
     "text": "international",
@@ -104,15 +108,7 @@
     "size": 14
   },
   {
-    "text": "network",
-    "size": 13
-  },
-  {
     "text": "india",
-    "size": 13
-  },
-  {
-    "text": "material",
     "size": 13
   },
   {
@@ -136,10 +132,6 @@
     "size": 13
   },
   {
-    "text": "memory",
-    "size": 12
-  },
-  {
     "text": "change",
     "size": 12
   },
@@ -148,11 +140,11 @@
     "size": 12
   },
   {
-    "text": "archive",
+    "text": "radio",
     "size": 12
   },
   {
-    "text": "radio",
+    "text": "market",
     "size": 12
   },
   {
@@ -160,7 +152,7 @@
     "size": 11
   },
   {
-    "text": "shape",
+    "text": "process",
     "size": 11
   },
   {
@@ -176,6 +168,10 @@
     "size": 11
   },
   {
+    "text": "material",
+    "size": 11
+  },
+  {
     "text": "light",
     "size": 11
   },
@@ -185,6 +181,10 @@
   },
   {
     "text": "entanglement",
+    "size": 11
+  },
+  {
+    "text": "archive",
     "size": 11
   },
   {
@@ -200,11 +200,23 @@
     "size": 11
   },
   {
-    "text": "market",
-    "size": 11
+    "text": "context",
+    "size": 10
   },
   {
-    "text": "process",
+    "text": "memory",
+    "size": 10
+  },
+  {
+    "text": "shape",
+    "size": 10
+  },
+  {
+    "text": "future",
+    "size": 10
+  },
+  {
+    "text": "narrative",
     "size": 10
   },
   {
@@ -244,10 +256,6 @@
     "size": 9
   },
   {
-    "text": "context",
-    "size": 9
-  },
-  {
     "text": "enable",
     "size": 9
   },
@@ -256,11 +264,7 @@
     "size": 9
   },
   {
-    "text": "future",
-    "size": 9
-  },
-  {
-    "text": "narrative",
+    "text": "medium",
     "size": 9
   },
   {
@@ -280,6 +284,10 @@
     "size": 9
   },
   {
+    "text": "trace",
+    "size": 9
+  },
+  {
     "text": "geopolitical",
     "size": 9
   },
@@ -289,6 +297,10 @@
   },
   {
     "text": "legal",
+    "size": 9
+  },
+  {
+    "text": "production",
     "size": 9
   },
   {
@@ -312,6 +324,10 @@
     "size": 8
   },
   {
+    "text": "think",
+    "size": 8
+  },
+  {
     "text": "system",
     "size": 8
   },
@@ -321,14 +337,6 @@
   },
   {
     "text": "build",
-    "size": 8
-  },
-  {
-    "text": "see",
-    "size": 8
-  },
-  {
-    "text": "everyday",
     "size": 8
   },
   {
@@ -352,10 +360,6 @@
     "size": 8
   },
   {
-    "text": "trace",
-    "size": 8
-  },
-  {
     "text": "power",
     "size": 8
   },
@@ -372,19 +376,11 @@
     "size": 8
   },
   {
-    "text": "production",
-    "size": 8
-  },
-  {
     "text": "form",
     "size": 7
   },
   {
     "text": "individual",
-    "size": 7
-  },
-  {
-    "text": "development",
     "size": 7
   },
   {
@@ -396,7 +392,11 @@
     "size": 7
   },
   {
-    "text": "think",
+    "text": "country",
+    "size": 7
+  },
+  {
+    "text": "activity",
     "size": 7
   }
 ]
