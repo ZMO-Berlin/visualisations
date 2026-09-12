@@ -44,7 +44,9 @@ export class Analysis {
             el('p', { class: 'explore-hint', text: `${this.s.selected}: ${this.records.length} ${this.s.records}. ${this.mode === 'percentage' ? this.s.percentageHint : `${this.s.scaleMaximum}: ${peak}.`} ${this.s.datedOnly}` }),
             el('div', { class: 'trend-grid' }, types.map(type => el('div', {}, [el('h3', { text: this.typeLabel(type) }),
                 el('div', { class: 'mini-chart', 'aria-hidden': 'true' }, years.map(year => el('span', { style: { height: `${value(type, year) / peak * 100}%` } }))),
-                el('div', { class: 'mini-axis' }, [String(extent[0]), String(extent[1])])]))),
+                el('div', { class: 'mini-axis' }, [
+                    el('span', { text: extent[0] }), el('span', { text: extent[1] })
+                ])]))),
             el('details', {}, [el('summary', { text: this.s.list }), this.table([this.s.year, ...types.map(this.typeLabel)], years.map(year => [String(year), ...types.map(type => value(type, year).toFixed(this.mode === 'percentage' ? 1 : 0) + (this.mode === 'percentage' ? '%' : ''))]))])
         ]));
     }
