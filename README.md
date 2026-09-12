@@ -9,8 +9,8 @@ Two static web apps built from data scraped from the
 | **Publications dashboard** | The publication register — output per year, document types, authors, co-authorship, journals and publishers | `publications_dashboard/` | [/publications_dashboard/](https://zmo-berlin.github.io/visualisations/publications_dashboard/) |
 
 The site root is a landing page that introduces the two and links to them, in
-English and German. GitHub Pages serves the repository root from `main`, so each
-app is published at its own directory. Nothing hard-codes that path — `main.js`
+English and German. The Deploy Pages workflow validates `main` and publishes an
+allowlist of static files as an artifact, so each app has its own directory. Nothing hard-codes that path — `main.js`
 resolves the app root from `import.meta.url` — so the same files work from a
 local server or any other host without a change.
 
@@ -274,8 +274,8 @@ latter, so both are requested; a run that fetches only `punkt` fails with
 1. Add the unit to `UNITS` in
    [`data_prep/scrape_zmo.py`](data_prep/scrape_zmo.py) — its URL slug on
    zmo.de and the filename stem to write. (For text that is not on the website,
-   drop a `.txt` file into `data_prep/raw_data/` by hand instead; it will get
-   its own word cloud but stay out of `combined`.)
+   drop a `.txt` file into `data_prep/raw_data/` by hand; the existing unit
+   manifest is still required, and the extra text stays out of `combined`.)
 2. Run both stages. They write `data_prep/raw_data/<Unit_Name>.txt` and then
    `units_wordcloud/data/<Unit_Name>_word_frequencies.json`.
 3. Add the unit to `groups.items` in
@@ -320,23 +320,21 @@ to fix it. `main.js` awaits `document.fonts.load()` before the first render.
 only place that constructs anything; every other module receives what it needs
 through its constructor.
 
-**The event bus is for cross-component signals only** — word hover, word click,
-data loading, save requests, errors.
+**Interaction uses direct callbacks and store subscriptions.** The unused event
+bus and validation/logging middleware have been removed. Actions validate inputs;
+services validate data. Superseded requests and layouts are ignored or cancelled,
+and every cancelled layout promise settles. A content-derived random seed keeps
+the same words stable at the same viewport and font metrics.
 
-> The bus currently has **publishers but no subscribers**: the app itself is
-> wired with direct calls and store subscriptions, so the ~15 `emit()` sites
-> exist purely as an extension point for embedding code that wants to observe
-> the cloud. Payloads are still validated on every emit, so anything that
-> subscribes later gets well-formed data. If that extension point is not
-> wanted, the bus, its middleware and the `emit()` calls can all be removed
-> without touching behaviour.
+`Explorer` adds unit comparison and source passages. Its complete vocabulary data
+is lazy-loaded; a failed cloud dependency still leaves the frequency list usable.
 
 ---
 
 # The publications dashboard
 
 Everything in ZMO's [publication register](https://www.zmo.de/en/publications/publication-search)
-— 1,962 publications, 1994–2026, 656 authors — as five linked views: output per
+— 1,976 publications, 1994–2026, 668 authors — as five linked views: output per
 year, document types, most-published authors, where ZMO publishes, and who
 publishes with whom, over the full list of publications underneath.
 
@@ -355,13 +353,13 @@ assigned in sequence and never shuffled or cycled. Three of the eight sit below
 3:1 contrast on white, which is why every series is named in the legend rather
 than left to colour alone.
 
-Rankings run to hundreds of entries — 656 authors, 526 journals — so every
+Rankings run to hundreds of entries — 668 authors, 528 journals — so every
 ranked chart pages rather than truncating at a top-N; the network opens on the
 60 most-published authors and grows on request.
 
 "Where ZMO publishes" ranks journals and publishers. The register's `series`
-field is not ranked beside them: it is filled on 187 of 1,962 records and holds
-175 distinct values among them, so the ranking was a list of ones. The field is
+field is not ranked beside them: it is filled on 192 of 1,976 records and holds
+179 distinct values among them, so the ranking was a list of ones. The field is
 still what names the venue on a working paper in the list below, and is still
 searched.
 
@@ -432,11 +430,13 @@ python data_prep/scrape_publications.py --cache-dir /tmp/zmo-pubs   # reuse down
 ```
 
 An abstract edited in place without any listing field changing is the one edit
-the cache misses; `--refresh-all` picks it up.
+the cache misses; `--refresh-all` picks it up. Scheduled runs in January, April,
+July and October refresh all detail pages to bound this staleness.
 
 ### Stage 2 — `generate_publication_data.py`
 
-Writes `publications_dashboard/data/publications.json` (one slim record per
+Writes `families.json` (deduplicated volume–chapter relationships),
+`publications_dashboard/data/publications.json` (one slim record per
 publication) and `meta.json` (source, document types in filter order, counts,
 and `perYear` — one count per year across the whole span, gaps included as
 zero). `perYear` exists for the landing page: without it that page would have to
@@ -478,15 +478,15 @@ hand-curated and commented: `Routldege` → `Routledge`,
 that must **not** be merged — `Journal for Islamic Studies` (Cape Town) is not
 `Journal of Islamic Studies` (Oxford); `Springer` is not `Springer VS`.
 
-Together these fold 74 spellings, taking 683 author entries down to 656 and 562
-journal names to 526. Review the lot before trusting it:
+Together these fold 81 spellings, yielding 668 author entries and 528 distinct
+journal names. Review the lot before trusting it:
 
 ```bash
 python data_prep/generate_publication_data.py --report-merges
 ```
 
 Fields the dashboard does not draw — abstracts, cover images, ISBNs, the
-chapter/volume links, the publisher's own URL — stay in
+the publisher's own URL — stay in
 `raw_data/publications.json` rather than being shipped to every visitor. They
 are there for anything built next.
 
@@ -536,7 +536,7 @@ FilterBar · Timeline · BarChart ×2 · VenueChart · CoauthorNetwork
 ```
 
 `store.select(dimension)` returns the records passing every filter *except* that
-dimension, memoised per state. Charts are HTML rather than SVG — the labels are
+dimension, memoised by the filters each selector depends on. Charts are HTML rather than SVG — the labels are
 long, multi-word and differently sized in two languages, and in HTML they wrap
 and ellipsize for free. The co-authorship graph is the exception: it needs
 `d3.forceSimulation` for the layout.
@@ -554,7 +554,9 @@ and the text cleanup that strips invisible characters pasted in from Word.
 Neither scraper writes a timestamp into its output. The manifests and datasets
 have to be byte-identical when the site has not changed, or the monthly
 workflows would commit a diff on every run and republish the site for nothing.
-Git already records when each refresh landed.
+Git records when content changed. Deployment separately writes `shared/refresh.json`
+from the latest successful refresh workflows; the methodology disclosures show
+those dates without changing the content-derived dataset IDs.
 
 ## Automatic monthly refresh
 
@@ -564,15 +566,16 @@ Git already records when each refresh landed.
 | [`update-publication-data.yml`](.github/workflows/update-publication-data.yml) | 05:00 UTC on the 1st | Both publications stages |
 | [`validate.yml`](.github/workflows/validate.yml) | Every push and pull request | Tests, syntax, JSON and generated-data checks |
 
-Each commits to `main` only if something changed. Because Pages serves from
-`main`, the published site updates with it. The two refresh workflows share one
+Each commits to `main` only if something changed. Successful completion triggers
+Deploy Pages explicitly through `workflow_run`; this also works for commits made
+with `GITHUB_TOKEN`, which do not trigger ordinary push workflows. The two refresh workflows share one
 concurrency group, so manual and scheduled runs cannot race their commits.
 
 Run either on demand from the Actions tab. Both take a `dry_run` option that
 scrapes and reports without committing, which is the safe way to check whether
 the site has moved; the publications workflow also takes `refresh_all`.
 
-Two safety nets stand between a broken scrape and `main`:
+Several safety nets stand between a broken scrape and `main`:
 
 * the scrapers exit non-zero when a page yields nothing they recognise;
 * the publications scraper verifies that the live document-type filter still
@@ -580,7 +583,8 @@ Two safety nets stand between a broken scrape and `main`:
   entries instead of abandoning the full cache;
 * a follow-up step compares the new output against the committed version and
   fails on a large drop — under 60% of a unit's words, or under 90% of the
-  register's publications. A scraper cannot tell that a page returned *fewer*
+  register's identities (even if replacement records keep the count unchanged).
+  Removed projects and units are checked too. A scraper cannot tell that a page returned *fewer*
   items than before, so this catches a partial restructure that would otherwise
   commit a hollowed-out dataset.
 
@@ -590,6 +594,72 @@ activity; if the site goes unchanged that long, the schedule may need
 re-enabling from the Actions tab.
 
 ---
+
+
+## Exploration and reusable outputs
+
+The dashboard includes count/percentage small multiples by document type, author
+publication timelines with clickable year counts, shared-publication lists for
+collaborator pairs, and expandable volume–chapter families. These views open on
+demand. The network includes encoding guidance and keeps its layout when only
+selection changes. Rankings exclude their own filter; the result list, CSV and
+timeline exports apply all filters. Timeline SVG/PNG exports show total dated
+records, carry the full selected scope, source and dataset identity, and explain
+that the latest year may be incomplete.
+
+The word explorer has Cloud, Frequency list, Compare units and Source passages
+views. Comparison uses the **complete vocabulary**, including counts below the
+cloud's top-100 cutoff, normalized per 1,000 retained tokens. Its difference sort
+uses maximum minus minimum normalized frequency and requires five occurrences.
+A term opens original English paragraphs attributed to the exact project/unit
+heading and source link. The comparison CSV contains raw counts and normalized
+rates. The corpus currently contains 8,362 retained tokens across 61 project
+entries and three units. The UI explains these denominators and source limits.
+
+Both apps provide **Copy view link**. Dashboard parameters are `q`, repeated
+`type`, `author` and `venue`, plus `from` and `to` (see `store/url.js` for the
+canonical encoding). Word parameters are `unit`, `count`, `view`, `term`, `find`
+and `sort`. Language switches preserve them. Normal changes replace the current
+history entry; browser navigation restores URL state. Persisted back/forward
+navigation suspends and resumes visualization work without destroying the page.
+
+## Validation and publishing
+
+Run locally after changing application code or generated data:
+
+```bash
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+node --test tests/*.test.mjs
+python data_prep/validate_outputs.py
+```
+
+The last command regenerates **every** dataset into temporary directories,
+compares parsed contents and verifies English/German landing fallbacks. After an
+intentional data change, run both relevant generators and
+`python data_prep/update_landing.py` before validation. NLTK is pinned to 3.10.3;
+3.10.1 incorrectly blocked dependencies inside a repository-local virtualenv.
+
+Serve the repository and open `/tests/browser.html` for the six DOM/canvas
+regression checks (focus, comparison styles, localized SVG/PNG, page lifecycle, initial URL restoration, missing cloud dependencies).
+These browser checks are manual; the Node/Python suites and syntax/data checks run
+in CI. New behavior tests cover selector semantics, URL round trips, late async
+results, graph invalidation, layout cancellation, name normalization, crawl
+identity guards, attribution and deduplicated volume relationships.
+
+**One-time deployment setup:** select **GitHub Actions** in the repository's
+Settings → Pages → Build and deployment source. Then run **Deploy Pages** on
+`main`. This is required when migrating from branch-based publishing. The workflow
+runs tests and regeneration checks against the exact checkout it packages, then
+uploads only the public HTML/assets/application datasets. Raw crawls, tests,
+Python code, documentation and the virtualenv are not included. The settings
+change and production deployment are not performed by a local code edit.
+
+The deployment workflow runs after a successful Validate or data-refresh workflow,
+or manually. Refresh jobs also run the Node/Python tests and generated-data checks
+before committing, and recheck generated consistency after rebasing. A failed
+validation cannot publish the checked-out content. No test command crawls the live
+website; crawling is a separate, explicit pipeline operation.
 
 ## Third-party code
 

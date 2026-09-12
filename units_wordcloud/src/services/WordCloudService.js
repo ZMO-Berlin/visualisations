@@ -1,5 +1,4 @@
 import { DataProcessor } from '../utils/dataProcessor.js';
-import { DATA_EVENTS } from '../events/EventTypes.js';
 
 /**
  * Fetches and prepares frequency data for a group.
@@ -12,25 +11,20 @@ export class WordCloudService {
     /**
      * @param {object} deps
      * @param {import('../config/ConfigManager.js').ConfigManager} deps.config
-     * @param {import('../events/EventBus.js').EventBus} deps.eventBus
      */
-    constructor({ config, eventBus }) {
+    constructor({ config }) {
         this.config = config;
-        this.eventBus = eventBus;
         this.processor = new DataProcessor({ config });
         this.cache = new Map();
     }
 
     async loadData(unit, wordCount) {
-        await this.eventBus.emit(DATA_EVENTS.LOAD_START, { unit, wordCount });
 
         const raw = await this.fetchGroup(unit);
 
-        await this.eventBus.emit(DATA_EVENTS.LOAD_COMPLETE, { unit });
 
         const words = this.processor.process(DataProcessor.mergeGroups(raw), wordCount);
 
-        await this.eventBus.emit(DATA_EVENTS.PROCESS_COMPLETE, { words });
         return words;
     }
 

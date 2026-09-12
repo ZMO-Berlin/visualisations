@@ -1,3 +1,10 @@
+import { showFreshness } from '../../shared/freshness.js';
+import { bindLifecycle, writeParams } from '../../shared/state-url.js';
+import { exploreStrings } from '../../shared/explore-strings.js';
+import { copyView, csv, download } from '../../shared/download.js';
+import { exportTimeline } from '../../shared/chart-export.js';
+import { decodeFilters, encodeFilters, FILTER_KEYS } from './store/url.js';
+import { Analysis } from './components/Analysis.js';
 /**
  * Application root: the one place where dependencies are constructed and wired.
  *
@@ -73,11 +80,13 @@ function makePanel(options) {
 function bootstrap() {
     const locale = getLocale();
     const strings = getTranslations(locale);
+    const extra = exploreStrings(locale);
     const settings = createSettings({ basePath: resolveBasePath() });
     const debug = new URLSearchParams(window.location.search).has('debug');
 
     const service = new PublicationService({ settings });
     const store = new AppStore({ settings: { ...settings, debug }, service });
+    store.replaceFilters(decodeFilters(location.search));
 
     const header = document.getElementById('header');
     const status = document.getElementById('status');
@@ -127,12 +136,54 @@ function bootstrap() {
 
     timelinePanel.section.classList.add('panel--wide');
     networkPanel.section.classList.add('panel--wide');
+    venuePanel.section.classList.add('panel--wide');
+    listPanel.section.id = 'publication-results';
     listPanel.section.classList.add('panel--wide');
 
     panels.replaceChildren(
         timelinePanel.section, typePanel.section, authorPanel.section,
         venuePanel.section, networkPanel.section, listPanel.section
     );
+
+    const analysisBody = el('div');
+    const analysisPanel = panel({ title: extra.analysis }, analysisBody);
+    analysisPanel.classList.add('panel--wide');
+    networkPanel.section.before(analysisPanel);
+    const analysis = new Analysis(analysisBody, { store, strings: extra, typeLabel });
+    const networkContent = networkPanel.section.querySelector('.panel__body');
+    const disclosure = el('details', { class: 'analysis-section' }, [el('summary', { text: strings.coauthorship }), networkContent]);
+    networkPanel.section.append(disclosure);
+    networkPanel.section.querySelector('.panel__head').hidden = true;
+    networkContent.prepend(el('p', { class: 'explore-hint', text: extra.networkLegend }));
+    disclosure.addEventListener('toggle', () => {
+        if (disclosure.open) renderNetwork(); else network.suspend();
+    });
+    const methods = el('details', { class: 'methodology' }, [el('summary', { text: extra.methodology }), el('p', { text: extra.publicationMethod })]);
+    const coverage = el('p'); methods.append(coverage);
+    header.after(methods);
+    showFreshness('publication', methods, locale, extra.refresh);
+    const actions = el('div', { class: 'explore-actions' });
+    const exportStatus = el('span', { role: 'status' });
+    const scope = () => encodeFilters(store.getState().filters).map(([key, value]) => `${key}: ${value}`).join(' · ') || extra.publications;
+    actions.append(el('a', { href: '#publication-results', text: extra.viewRecords }),
+        el('button', { type: 'button', text: extra.copyLink, on: { click: e => copyView(e.currentTarget, extra) } }),
+        el('button', { type: 'button', text: extra.csv, dataset: { export: '' }, on: { click: () => {
+            const state = store.getState();
+            download(csv([['title', 'authors', 'year', 'type', 'journal', 'publisher', 'doi', 'url', 'dataset', 'scope'], ...store.select().map(r => [r.title, r.authors?.join('; '), r.year, r.type, r.journal, r.publisher, r.doi, r.url, state.meta.datasetId, scope()])]), 'zmo-publications.csv');
+        } } }));
+    for (const format of ['svg', 'png']) actions.append(el('button', { type: 'button', text: extra[format], dataset: { export: '' }, on: { click: async e => {
+        const button = e.currentTarget; button.disabled = true;
+        try {
+            const state = store.getState(); const span = yearExtent(store.select());
+            const rows = span ? stackedYearSeries(store.select(), span, () => '*', ['*']) : [];
+            await exportTimeline(rows, { title: strings.overTime, source: state.meta.source, datasetId: state.meta.datasetId, scope: scope(), locale }, format);
+            exportStatus.textContent = '';
+        } catch { exportStatus.textContent = extra.exportError; }
+        finally { button.disabled = false; }
+    } } }));
+    actions.append(exportStatus);
+    document.getElementById('filters').after(actions, el('p', { class: 'explore-hint', text: extra.scope }));
+    listPanel.section.append(el('a', { href: '#filters', text: extra.backFilters }));
 
     // Order matters: the filter bar owns the command panel, and the summary is
     // written into a slot inside it.
@@ -249,7 +300,30 @@ function bootstrap() {
         );
     }
 
+    const derived = new WeakMap();
+    function memo(records, key, calculate) {
+        if (!derived.has(records)) derived.set(records, new Map());
+        const cache = derived.get(records);
+        if (!cache.has(key)) cache.set(key, calculate(records));
+        return cache.get(key);
+    }
+    function safely(component, fn) {
+        try { fn(); }
+        catch (error) {
+            console.error(error);
+            mount(component.container, el('p', { role: 'status', text: extra.chartFailed }));
+        }
+    }
+    function renderNetwork() {
+        if (store.getState().status !== 'ready') return;
+        safely(network, () => {
+            if (!window.d3) throw new Error('D3 unavailable');
+            network.render(memo(store.select('author'), 'graph', records => coauthorGraph(records, settings.network)), store.getState().filters.author);
+            network.resume();
+        });
+    }
     function render(state, previous) {
+        for (const button of actions.querySelectorAll('[data-export]')) button.disabled = state.status !== 'ready';
         if (state.status === 'loading') {
             status.hidden = false;
             status.replaceChildren(el('p', { class: 'status', text: strings.loading }));
@@ -279,6 +353,8 @@ function bootstrap() {
             countTypes(state.publications), settings.charts.seriesLimit, OTHER_TYPES
         );
         renderSource(state.meta.source);
+        coverage.textContent = `${extra.missing}: ${state.meta.counts.withoutYear} ${extra.undated}; ${state.meta.counts.untyped} ${extra.untyped}. Dataset ${state.meta.datasetId}.`;
+        writeParams(encodeFilters(state.filters), FILTER_KEYS);
 
         const filtered = store.select();
         if (previous && previous.filters !== state.filters) {
@@ -293,7 +369,7 @@ function bootstrap() {
         // The timeline is split by document type but filters by year, so it is
         // the year dimension it excludes.
         if (fullExtent) {
-            timeline.render({
+            safely(timeline, () => timeline.render({
                 series: stackedYearSeries(
                     store.select('years'), fullExtent,
                     record => types.keyOf(record.type || UNTYPED), types.order
@@ -301,44 +377,40 @@ function bootstrap() {
                 order: types.order,
                 selectedYears: state.filters.years,
                 selectedSeries: legendSelection(state.filters.type)
-            });
+            }));
         }
 
-        typeChart.render(rank(countTypes(store.select('type'))), state.filters.type);
+        safely(typeChart, () => typeChart.render(memo(store.select('type'), 'types', r => rank(countTypes(r))), state.filters.type));
 
-        authorChart.render(
-            rank(countValues(store.select('author'), record => record.authors)),
-            state.filters.author
-        );
+        safely(authorChart, () => authorChart.render(memo(store.select('author'), 'authors', r => rank(countValues(r, record => record.authors))), state.filters.author));
 
-        venueChart.render(store.select('venue'), state.filters.venue);
+        safely(venueChart, () => venueChart.render(store.select('venue'), state.filters.venue));
 
         // Like the author ranking, the network excludes the author filter: the
         // whole graph stays on screen instead of collapsing to the one author
         // and their co-authors, which would leave nothing to click next. The
         // selection is what it moves and dims the picture around — see the head
         // of CoauthorNetwork.js.
-        network.render(coauthorGraph(store.select('author'), settings.network), state.filters.author);
+        if (disclosure.open) renderNetwork();
+        safely(analysis, () => analysis.render(filtered, state.publications, state.filters));
 
-        list.render(filtered);
+        safely(list, () => list.render(filtered));
+        if (!filtered.length) list.container.append(el('button', { type: 'button', class: 'button', text: extra.reset, on: { click: () => store.clearFilters() } }));
     }
 
     const unsubscribe = store.subscribe(render);
     render(store.getState(), null);
     store.load();
 
-    // `pagehide` rather than `unload`: `unload` is deprecated, blocks the
-    // back/forward cache, and does not fire reliably on mobile Safari.
-    window.addEventListener('pagehide', () => {
+    const restore = () => store.replaceFilters(decodeFilters(location.search));
+    window.addEventListener('popstate', restore);
+    bindLifecycle({ suspend: () => network.suspend(), resume: () => { if (disclosure.open) network.resume(); }, destroy: () => {
+        window.removeEventListener('popstate', restore);
         unsubscribe();
-        [summary, filterBar, timeline, typeChart, authorChart, venueChart, network, list, tooltip]
-            .forEach(component => component.destroy());
+        [summary, filterBar, timeline, typeChart, authorChart, venueChart, network, list, tooltip, analysis].forEach(component => component.destroy());
         store.destroy();
-    }, { once: true });
+    } });
 }
 
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', bootstrap, { once: true });
-} else {
-    bootstrap();
-}
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bootstrap, { once: true });
+else bootstrap();

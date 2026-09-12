@@ -1,0 +1,28 @@
+/* Scrollable analytical views keep exact values available at every width. */
+body { position:static; height:auto; min-height:100vh; overflow:auto; display:block; }
+body > .explore-actions, .vocabulary-panel, body > .methodology { margin:1rem auto; padding:0 1.5rem; max-width:1250px; }
+.content-container { min-height:560px; height:65vh; max-height:760px; }
+.wordcloud-container { min-height:360px; }
+.word-list-item { width:100%; border:0; background:transparent; color:var(--c-ink); text-align:left; cursor:pointer; min-height:40px; }
+.word-list-item:hover, .word-list-item:focus-visible { background:var(--c-brand-tint); }
+body[data-view="list"] .wordcloud-container { display:none; }
+body[data-view="list"] #wordlist, body[data-view="list"] .word-list-container { width:100%; display:flex; flex:1; }
+body[data-view="compare"] .content-container, body[data-view="context"] .content-container { display:none; }
+.credit { position:static; padding:1rem 1.5rem; }
+.view-status { padding:0 1.5rem; }
+.vocabulary-panel h2 { font-family:var(--font-display); color:var(--c-brand-strong); font-size:1.6rem; font-weight:400; }
+@media(max-width:56rem) {
+    body[data-view="cloud"] #wordlist { display:none; }
+    body[data-view="list"] .word-list-container { display:flex; }
+    .content-container { height:65vh; min-height:480px; }
+}
+@media(max-width:600px) {
+    body > .explore-actions, .vocabulary-panel, body > .methodology { padding:0 1rem; }
+    .context__stats { display:flex; }
+    .context { flex-wrap:wrap; }
+    .context__stat-value { font-size:1.25rem; }
+}
+
+body[data-view="compare"] .field--slider, body[data-view="context"] .field--slider,
+body[data-view="compare"] .field--action, body[data-view="context"] .field--action,
+body[data-view="compare"] .context__stats, body[data-view="context"] .context__stats { display:none; }

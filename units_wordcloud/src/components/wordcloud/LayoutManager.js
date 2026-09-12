@@ -11,8 +11,9 @@ export class WordCloudLayoutManager {
      * @param {import('../../config/ConfigManager.js').ConfigManager} deps.config
      * @param {import('../../utils/WordStyler.js').WordStyler} deps.wordStyler
      */
-    constructor({ config, wordStyler }) {
+    constructor({ config, wordStyler, cloudFactory }) {
         this.config = config;
+        this.cloudFactory = cloudFactory;
         this.wordStyler = wordStyler;
         this.layout = this.createLayout();
     }
@@ -22,7 +23,7 @@ export class WordCloudLayoutManager {
         const { padding } = this.config.getLayoutOptions();
         const { family } = this.config.getFontConfig();
 
-        return d3.layout.cloud()
+        return this.cloudFactory()
             .size([width, height])
             .padding(padding)
             // d3-cloud measures every word on a scratch canvas to decide where
@@ -71,8 +72,8 @@ export class WordCloudLayoutManager {
             return 0;
         }
 
-        return Math.random() < rotationProbability
-            ? rotations[Math.floor(Math.random() * rotations.length)]
+        return this.random() < rotationProbability
+            ? rotations[Math.floor(this.random() * rotations.length)]
             : 0;
     }
 
@@ -92,30 +93,43 @@ export class WordCloudLayoutManager {
      * @returns {Promise<Array<object>>}
      */
     layoutWords(words) {
+        this.cancel();
         if (!words || words.length === 0) {
             return Promise.resolve([]);
         }
 
-        this.layout.stop();
-
+        let seed = 2166136261;
+        for (const char of JSON.stringify(words.map(word => [word.text, word.size]))) {
+            seed = Math.imul(seed ^ char.charCodeAt(0), 16777619) >>> 0;
+        }
+        this.random = () => { seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0; return seed / 4294967296; };
+        this.layout.random(this.random);
         const { width, height } = this.config.get('wordcloud.dimensions');
         const sizer = this.wordStyler.createSizer(words, width * height);
 
         return new Promise((resolve, reject) => {
+            this.pending = resolve;
             try {
                 this.layout
                     .words(words.map(word => ({ ...word })))
                     .fontSize(sizer)
-                    .on('end', resolve)
+                    .on('end', words => { this.pending = null; resolve(words); })
                     .start();
             } catch (error) {
+                this.pending = null;
                 reject(error);
             }
         });
     }
 
-    destroy() {
+    cancel() {
         this.layout.stop();
+        this.pending?.(null);
+        this.pending = null;
+    }
+
+    destroy() {
+        this.cancel();
         this.layout.on('end', null);
     }
 }

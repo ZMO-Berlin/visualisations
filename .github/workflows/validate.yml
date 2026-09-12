@@ -51,12 +51,8 @@ jobs:
           find . -type f -name '*.json' -not -path './.git/*' -print0 \
             | xargs -0 -n 1 python -m json.tool > /dev/null
 
-      - name: Check generated data is current
-        run: |
-          python data_prep/generate_publication_data.py \
-            --output-dir "$RUNNER_TEMP/publication-data"
-          diff -ru publications_dashboard/data "$RUNNER_TEMP/publication-data"
+      - name: JavaScript behavior tests
+        run: node --test tests/*.test.mjs
 
-          python data_prep/generate_word_data.py \
-            --output-dir "$RUNNER_TEMP/word-data"
-          diff -ru units_wordcloud/data "$RUNNER_TEMP/word-data"
+      - name: Check generated data is current
+        run: python data_prep/validate_outputs.py

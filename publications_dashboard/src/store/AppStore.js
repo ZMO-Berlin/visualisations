@@ -36,16 +36,19 @@ export class AppStore {
     }
 
     async load() {
+        const request = this.request = (this.request ?? 0) + 1;
         this.#update({ status: 'loading', error: null });
 
         try {
             const { publications, meta } = await this.service.load();
+            if (this.destroyed || request !== this.request) return;
             this.#update({
                 status: 'ready',
                 publications: indexForSearch(publications),
                 meta
             });
         } catch (error) {
+            if (this.destroyed || request !== this.request) return;
             console.error('Failed to load publications', error);
             this.#update({ status: 'error', error });
         }
@@ -90,6 +93,22 @@ export class AppStore {
         this.#setFilters(filters);
     }
 
+    replaceFilters(filters) { this.#setFilters(filters); }
+
+    choose(dimension, value) {
+        const filters = cloneFilters(this.state.filters);
+        filters.search = '';
+        filters[dimension].add(value);
+        this.#setFilters(filters);
+    }
+
+    focusPublications(authors, years = null) {
+        const filters = cloneFilters(this.state.filters);
+        filters.author = new Set(authors);
+        filters.years = years;
+        this.#setFilters(filters);
+    }
+
     setSearch(text) {
         if (text === this.state.filters.search) {
             return;
@@ -127,13 +146,17 @@ export class AppStore {
      */
     select(except) {
         const key = except ?? '*';
-        if (!this.#cache.has(key)) {
-            this.#cache.set(key, applyFilters(this.state.publications, this.state.filters, { except }));
+        const signature = JSON.stringify(Object.entries(this.state.filters).filter(([dimension]) => dimension !== except)
+            .map(([dimension, value]) => [dimension, value instanceof Set ? [...value].sort() : value]));
+        const cached = this.#cache.get(key);
+        if (!cached || cached.signature !== signature) {
+            this.#cache.set(key, { signature, records: applyFilters(this.state.publications, this.state.filters, { except }) });
         }
-        return this.#cache.get(key);
+        return this.#cache.get(key).records;
     }
 
     destroy() {
+        this.destroyed = true;
         this.#listeners.clear();
         this.#cache.clear();
     }
@@ -149,7 +172,7 @@ export class AppStore {
         this.state = { ...previous, ...patch };
         // Every filtered view is derived from state, so the memo cannot outlive
         // a state change.
-        this.#cache.clear();
+        if (patch.publications) this.#cache.clear();
 
         if (this.settings.debug) {
             console.debug('[store]', Object.keys(patch).join(', '), this.state);
@@ -164,6 +187,7 @@ export class AppStore {
             try {
                 listener(this.state, previous);
             } catch (error) {
+            if (this.destroyed || request !== this.request) return;
                 console.error('A subscriber threw while rendering state', error);
             }
         }

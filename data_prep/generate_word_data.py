@@ -12,6 +12,7 @@ the available options.
 
 from __future__ import annotations
 
+from output import atomic_json
 import argparse
 import json
 import sys
@@ -138,24 +139,25 @@ def read_unit_stems(input_dir: Path) -> set[str] | None:
     """
     manifest_path = input_dir / MANIFEST_NAME
     if not manifest_path.is_file():
-        return None
+        raise ValueError(f"Missing unit manifest: {manifest_path}")
 
     try:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-        return {unit["stem"] for unit in manifest["units"]}
+        stems = {unit["stem"] for unit in manifest["units"]}
+        if not stems or len(stems) != len(manifest["units"]):
+            raise ValueError("Empty or duplicate unit manifest")
+        for stem in stems:
+            if Path(stem).name != stem or not (input_dir / f"{stem}.txt").is_file():
+                raise ValueError(f"Missing or invalid unit source: {stem}")
+        return stems
     except (json.JSONDecodeError, KeyError, TypeError) as error:
-        print(f"warning: ignoring unreadable {manifest_path.name}: {error}", file=sys.stderr)
-        return None
+        raise ValueError(f"Invalid unit manifest: {manifest_path}") from error
 
 
 def write_frequencies(counter: Counter, output_path: Path, top_n: int) -> int:
     """Write the ``top_n`` most common entries in the app's JSON shape."""
     payload = [{"text": word, "size": count} for word, count in counter.most_common(top_n)]
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    atomic_json(output_path, payload)
     return len(payload)
 
 
@@ -213,12 +215,14 @@ def main(argv: list[str] | None = None) -> int:
     unit_stems = read_unit_stems(args.input_dir)
     combined: Counter = Counter()
     combined_sources = 0
+    unit_counts = {}
 
     for source in sources:
         tokens = processor.process(source.read_text(encoding="utf-8"))
 
         in_combined = unit_stems is None or source.stem in unit_stems
         if in_combined:
+            unit_counts[source.stem] = Counter(tokens)
             combined.update(tokens)
             combined_sources += 1
 
@@ -232,7 +236,10 @@ def main(argv: list[str] | None = None) -> int:
     label = f"(combined: {combined_sources} unit(s))"
     print(f"{label:<40} {sum(combined.values()):>6} tokens -> {written:>3} words  {combined_path.name}")
 
-    print(f"\nWrote {len(sources) + 1} files to {args.output_dir}")
+    from vocabulary import build_vocabulary
+    vocabulary = build_vocabulary(args.input_dir, unit_counts, processor)
+    atomic_json(args.output_dir / "vocabulary.json", vocabulary)
+    print(f"\nWrote frequency files and vocabulary.json to {args.output_dir}")
     print(
         "Reminder: a unit only appears in the UI once it is listed in "
         "units_wordcloud/src/config/ConfigManager.js (groups.items)."

@@ -21,6 +21,8 @@
  *    and nothing to update if the repository is renamed.
  */
 
+import { syncLanguageLink } from './state-url.js';
+
 const STRINGS = {
     en: {
         section: 'Visualisations',
@@ -167,3 +169,6 @@ export function renderSiteBar() {
 }
 
 renderSiteBar();
+syncLanguageLink();
+
+window.addEventListener('hashchange', syncLanguageLink);

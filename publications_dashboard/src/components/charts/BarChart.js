@@ -49,6 +49,7 @@ export class BarChart {
      * @param {Set<string>} selected
      */
     render(data, selected = new Set()) {
+        if (data === this.#data && selected.size === this.#selected.size && [...selected].every(key => this.#selected.has(key))) return;
         // A different ranking is a different list, so paging starts over; the
         // same ranking redrawn (a selection changed elsewhere) keeps its place.
         if (!sameKeys(data, this.#data)) {
@@ -83,6 +84,7 @@ export class BarChart {
             class: `bar${isSelected ? ' bar--selected' : ''}`,
             type: 'button',
             'aria-pressed': String(isSelected),
+            dataset: { key },
             title: `${this.formatLabel(key)} — ${count}`,
             on: { click: () => this.onSelect(key) }
         }, [

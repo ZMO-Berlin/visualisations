@@ -24,3 +24,5 @@
 
 /* Breakpoint overrides — must stay last */
 @import './modules/responsive.css';
+
+@import './modules/improvements.css';

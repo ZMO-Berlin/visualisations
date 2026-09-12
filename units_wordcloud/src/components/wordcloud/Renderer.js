@@ -1,6 +1,7 @@
+import { getLocale } from '../../utils/translations.js';
+import { exploreStrings } from '../../../../shared/explore-strings.js';
 import { Tooltip } from '../Tooltip.js';
 import { StyleManager } from '../../utils/StyleManager.js';
-import { WORDCLOUD_EVENTS } from '../../events/EventTypes.js';
 
 /**
  * Draws laid-out words into an SVG and owns their pointer interactions.
@@ -15,13 +16,11 @@ export class WordCloudRenderer {
      * @param {HTMLElement} container
      * @param {object} deps
      * @param {import('../../config/ConfigManager.js').ConfigManager} deps.config
-     * @param {import('../../events/EventBus.js').EventBus} deps.eventBus
      * @param {import('../../utils/WordStyler.js').WordStyler} deps.wordStyler
      */
-    constructor(container, { config, eventBus, wordStyler }) {
+    constructor(container, { config, wordStyler }) {
         this.container = container;
         this.config = config;
-        this.eventBus = eventBus;
         this.wordStyler = wordStyler;
 
         this.svg = null;
@@ -50,7 +49,7 @@ export class WordCloudRenderer {
             .attr('height', '100%')
             .attr('viewBox', `0 0 ${width} ${height}`)
             .attr('role', 'img')
-            .attr('aria-label', 'Word cloud of the most frequent terms');
+            .attr('aria-label', exploreStrings(getLocale()).cloud);
 
         StyleManager.setupSVG(this.svg);
         return this.svg;
@@ -93,7 +92,6 @@ export class WordCloudRenderer {
                 this.tooltip.show(event, d);
                 this.wordStyler.wordEnter(event.currentTarget, d.size);
                 this.wordList?.highlightWord(d.text);
-                this.eventBus.emit(WORDCLOUD_EVENTS.WORD_HOVER, { word: d });
             })
             .on('mouseout', (event, d) => {
                 this.tooltip.hide();
@@ -101,7 +99,7 @@ export class WordCloudRenderer {
                 this.wordList?.clearHighlight();
             })
             .on('click', (event, d) => {
-                this.eventBus.emit(WORDCLOUD_EVENTS.WORD_CLICK, { word: d });
+                this.onSelectWord?.(d.text);
             });
     }
 

@@ -1,0 +1,70 @@
+name: Deploy Pages
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Validate, Update publication data, Update word cloud data]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+  actions: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-deployment
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: main
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.13'
+          cache: pip
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24.18.1'
+      - run: pip install -r requirements.txt
+      - name: Validate the exact checkout being deployed
+        run: |
+          python -m unittest discover -s tests -v
+          node --test tests/*.test.mjs
+          python data_prep/validate_outputs.py
+      - uses: actions/configure-pages@v6.0.0
+      - name: Assemble public files only
+        run: |
+          mkdir _site
+          cp index.html .nojekyll LICENSE LICENSE-DATA CITATION.cff _site/
+          cp -R en de landing shared publications_dashboard units_wordcloud _site/
+          mkdir -p _site/shared
+      - name: Record successful data-refresh times
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${{ github.repository }}/actions/workflows/update-publication-data.yml/runs?status=success&per_page=1" > /tmp/publication-runs.json
+          gh api "repos/${{ github.repository }}/actions/workflows/update-word-data.yml/runs?status=success&per_page=1" > /tmp/word-runs.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          result = {}
+          for kind in ('publication', 'word'):
+              runs = json.loads(Path(f'/tmp/{kind}-runs.json').read_text())['workflow_runs']
+              result[kind] = runs[0]['updated_at'] if runs else None
+          Path('_site/shared/refresh.json').write_text(json.dumps(result))
+          PY
+      - uses: actions/upload-pages-artifact@v5.0.0
+        with:
+          path: _site
+      - uses: actions/deploy-pages@v5.0.1
+        id: deployment

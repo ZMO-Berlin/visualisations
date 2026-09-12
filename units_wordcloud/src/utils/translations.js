@@ -23,7 +23,7 @@ export const translations = {
 
         // The ranked list.
         listRange: (from, to, total) => `${from}–${to} of ${total}`,
-        listHint: 'Hover a term to find it in the cloud',
+        listHint: 'Select a term to read its source passages',
         previousPage: 'Previous page',
         nextPage: 'Next page'
     },
@@ -46,7 +46,7 @@ export const translations = {
         occurrences: 'Nennungen',
 
         listRange: (from, to, total) => `${from}–${to} von ${total}`,
-        listHint: 'Einen Begriff überfahren, um ihn in der Wolke zu finden',
+        listHint: 'Einen Begriff auswählen, um seine Quelltexte zu lesen',
         previousPage: 'Vorherige Seite',
         nextPage: 'Nächste Seite'
     }

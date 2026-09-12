@@ -20,9 +20,8 @@ export class WordCloud {
      * @param {object} deps
      * @param {import('../../config/ConfigManager.js').ConfigManager} deps.config
      * @param {import('../../store/AppStore.js').AppStore} deps.store
-     * @param {import('../../events/EventBus.js').EventBus} deps.eventBus
      */
-    constructor(containerId, { config, store, eventBus } = {}) {
+    constructor(containerId, { config, store } = {}) {
         this.container = typeof containerId === 'string'
             ? document.getElementById(containerId.replace(/^#/, ''))
             : containerId;
@@ -33,18 +32,17 @@ export class WordCloud {
 
         this.config = config;
         this.store = store;
-        this.eventBus = eventBus;
 
         this.wordStyler = new WordStyler({ config });
         this.dimensionManager = new DimensionManager(this.container, { config });
         this.renderer = new WordCloudRenderer(this.container, {
             config,
-            eventBus,
             wordStyler: this.wordStyler
         });
         this.layoutManager = new WordCloudLayoutManager({
             config,
-            wordStyler: this.wordStyler
+            wordStyler: this.wordStyler,
+            cloudFactory: () => window.d3.layout.cloud()
         });
 
         this.redrawHandle = null;
@@ -90,14 +88,17 @@ export class WordCloud {
     }
 
     async redraw() {
-        const words = this.getCurrentWords();
-        if (words.length === 0) {
-            this.renderer.clear();
+        const generation = this.generation = (this.generation ?? 0) + 1;
+        try {
+            const words = this.getCurrentWords();
+            if (!words.length) { this.layoutManager.cancel(); this.renderer.clear(); return []; }
+            const placed = await this.layoutManager.layoutWords(words);
+            if (placed === null || this.destroyed || generation !== this.generation) return [];
+            return this.draw(placed);
+        } catch (error) {
+            if (!this.destroyed) this.store.setState({ error: error.message, isLoading: false });
             return [];
         }
-
-        const placed = await this.layoutManager.layoutWords(words);
-        return this.draw(placed);
     }
 
     getCurrentWords() {
@@ -125,6 +126,7 @@ export class WordCloud {
     }
 
     destroy() {
+        this.destroyed = true;
         if (this.redrawHandle !== null) {
             cancelAnimationFrame(this.redrawHandle);
             this.redrawHandle = null;

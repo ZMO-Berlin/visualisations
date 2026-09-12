@@ -6,6 +6,8 @@
  * file fails here, with a message, rather than three components deep in a chart
  * that cannot explain what went wrong.
  */
+import { validateDataset } from '../utils/contracts.js';
+
 export class PublicationService {
     constructor({ settings }) {
         this.settings = settings;
@@ -22,7 +24,7 @@ export class PublicationService {
             throw new Error('publications.json is empty or not an array');
         }
 
-        return { publications, meta: meta ?? {} };
+        return validateDataset(publications, meta);
     }
 
     async #fetchJson(url) {

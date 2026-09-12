@@ -67,9 +67,8 @@
 
     --c-ink: #1a1d23;                  /* body text            15.4:1 */
     --c-ink-muted: #4a5058;            /* secondary text        8.2:1 */
-    --c-ink-soft: #737a84;             /* captions, hints       4.7:1 */
-    --c-ink-faint: #9aa0a9;            /* axis labels, meta     2.9:1 — never
-                                          for anything that must be read */
+    --c-ink-soft: #626974;             /* readable captions on white and warm surfaces */
+    --c-ink-faint: #626974;            /* readable axis labels and metadata */
 
     --c-focus: var(--c-brand);
     --c-selection: var(--c-brand-tint-strong);

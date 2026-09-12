@@ -62,7 +62,7 @@ export class Timeline {
         const inRange = year =>
             Boolean(selectedYears) && year >= selectedYears[0] && year <= selectedYears[1];
 
-        mount(this.container, el('div', { class: 'timeline' }, [
+        mount(this.container, el('div', { class: 'timeline', tabindex: '0', role: 'region', 'aria-label': this.strings.overTime }, [
             el('div', { class: 'timeline__columns' },
                 series.map(entry => this.#column(entry, max, inRange(entry.year)))),
             el('div', { class: 'timeline__axis' }, this.#ticks(series)),
@@ -91,12 +91,13 @@ export class Timeline {
             }
         }));
 
-        const label = `${year}: ${total} ${this.strings.publications}`;
+        const label = `${year}: ${total} ${this.strings.publications}. ${segments.map(segment => `${this.formatSeries(segment.key)}: ${segment.count}`).join('; ')}`;
 
         return el('button', {
             class: `column${selected ? ' column--selected' : ''}`,
             type: 'button',
             'aria-label': label,
+            dataset: { key: String(year) },
             'aria-pressed': String(selected),
             on: {
                 click: () => this.onSelectYear(year),
@@ -133,7 +134,7 @@ export class Timeline {
 
         return series
             .map((entry, index) => ({ ...entry, index }))
-            .filter(({ year, index }) => year % step === 0 || index === 0 || index === span - 1)
+            .filter(({ year, index }) => index === 0 || index === span - 1 || (year % step === 0 && index >= 2 && index <= span - 3))
             .map(({ year, index }) => el('span', {
                 class: 'timeline__tick',
                 text: String(year),

@@ -1,3 +1,4 @@
+import { replaceContent } from '../../../shared/dom.js';
 import { getLocale, getTranslations } from '../utils/translations.js';
 
 /**
@@ -137,7 +138,11 @@ export class WordList {
         const rows = pageWords.map((word, index) => {
             const count = WordList.countOf(word);
 
-            const row = document.createElement('div');
+            const row = document.createElement('button');
+            row.type = 'button';
+            row.addEventListener('click', () => this.onSelectWord?.(word.text));
+            row.addEventListener('focus', () => this.onWordHover?.(word.text));
+            row.addEventListener('blur', () => this.onWordHoverEnd?.(word.text));
             row.className = 'word-list-item';
             row.dataset.word = word.text;
 
@@ -165,7 +170,7 @@ export class WordList {
             return row;
         });
 
-        this.listElement.replaceChildren(...rows);
+        replaceContent(this.listElement, ...rows);
         this.renderRange(startIndex, pageWords.length);
         this.renderPagination();
     }
@@ -184,6 +189,7 @@ export class WordList {
 
     renderPagination() {
         const totalPages = this.getTotalPages();
+        const focused = this.paginationElement.contains(document.activeElement) ? document.activeElement.getAttribute('aria-label') : null;
         this.paginationElement.replaceChildren();
 
         if (totalPages <= 1) return;
@@ -203,6 +209,10 @@ export class WordList {
             step('‹', this.currentPage - 1, this.translations.previousPage),
             step('›', this.currentPage + 1, this.translations.nextPage)
         );
+        if (focused) {
+            const buttons = [...this.paginationElement.querySelectorAll('button')];
+            (buttons.find(b => b.getAttribute('aria-label') === focused && !b.disabled) ?? buttons.find(b => !b.disabled))?.focus({ preventScroll: true });
+        }
     }
 
     getTotalPages() {

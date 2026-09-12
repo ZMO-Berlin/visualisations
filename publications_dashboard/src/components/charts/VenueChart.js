@@ -12,7 +12,7 @@
  * and is still searched.
  */
 
-import { el, mount } from '../../utils/dom.js';
+import { el, mount, replaceContent } from '../../utils/dom.js';
 import { countValues, rank } from '../../utils/aggregate.js';
 import { venueKey } from '../../store/filters.js';
 import { BarChart } from './BarChart.js';
@@ -29,7 +29,7 @@ export class VenueChart {
         this.strings = strings;
         this.store = store;
 
-        this.#tabsContainer = el('div', { class: 'tabs', role: 'tablist' });
+        this.#tabsContainer = el('div', { class: 'tabs', role: 'group', 'aria-label': strings.venues });
         this.#barsContainer = el('div', {});
         this.#bars = new BarChart(this.#barsContainer, {
             settings,
@@ -47,12 +47,11 @@ export class VenueChart {
             publisher: this.strings.publishers
         };
 
-        this.#tabsContainer.replaceChildren(...Object.entries(labels).map(([field, label]) =>
+        replaceContent(this.#tabsContainer, ...Object.entries(labels).map(([field, label]) =>
             el('button', {
                 class: `tab${field === this.#field ? ' tab--active' : ''}`,
                 type: 'button',
-                role: 'tab',
-                'aria-selected': String(field === this.#field),
+                'aria-pressed': String(field === this.#field),
                 text: label,
                 on: {
                     click: () => {

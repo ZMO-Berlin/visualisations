@@ -269,6 +269,9 @@ def crawl_listing(fetcher: Fetcher, document_type: int | None = None,
                     "the .bb-publication--item markup has changed"
                 )
 
+        if not found or all(entry["slug"] in seen for entry in found):
+            raise ScrapeError(f"Listing page {page} is empty or repeats earlier records")
+
         for entry in found:
             if entry["slug"] not in seen:
                 seen.add(entry["slug"])
@@ -282,6 +285,8 @@ def crawl_listing(fetcher: Fetcher, document_type: int | None = None,
             break
         page += 1
 
+    if last_page and page < last_page:
+        raise ScrapeError("Listing exceeded the maximum page limit")
     return entries
 
 
@@ -800,9 +805,8 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
+    from output import atomic_json
+    atomic_json(args.output, payload)
     print(f"wrote {args.output}")
     print("\nNext: python data_prep/generate_publication_data.py")
     return 0

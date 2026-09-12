@@ -1,8 +1,7 @@
 name: Update publication data
 
 # Re-crawls the ZMO publication register and regenerates the dashboard dataset.
-# Pushing to main also republishes the GitHub Pages site, which is served from
-# this branch.
+# Successful completion triggers the validated Deploy Pages workflow.
 
 on:
   schedule:
@@ -49,6 +48,10 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
 
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24.18.1'
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
@@ -57,41 +60,24 @@ jobs:
       # having its detail page fetched again.
       - name: Crawl the publication register
         run: |
-          python data_prep/scrape_publications.py \
-            ${{ inputs.refresh_all && '--refresh-all' || '' }}
+          refresh=()
+          if [[ '${{ inputs.refresh_all }}' == 'true' || $(date -u +%m) =~ ^(01|04|07|10)$ ]]; then refresh+=(--refresh-all); fi
+          python data_prep/scrape_publications.py "${refresh[@]}"
 
       - name: Generate the dashboard dataset
         run: python data_prep/generate_publication_data.py
 
-      # The scraper aborts if a listing page yields nothing at all, but it
-      # cannot tell that the register returned *fewer* publications than before.
-      # A large drop means the site was restructured and the selectors are only
-      # partly matching, so fail rather than commit a hollowed-out dataset.
-      - name: Check the register did not collapse
+      - name: Check refresh identities
+        run: python data_prep/check_refresh.py publications
+
+      - name: Update landing fallbacks
+        run: python data_prep/update_landing.py
+
+      - name: Test before committing data
         run: |
-          python - <<'PY'
-          import json, subprocess, sys
-          from pathlib import Path
-
-          THRESHOLD = 0.9  # fail if fewer than 90% of the previous records survive
-          path = Path("data_prep/raw_data/publications.json")
-
-          previous = subprocess.run(
-              ["git", "show", f"HEAD:{path.as_posix()}"], capture_output=True
-          )
-          if previous.returncode != 0:
-              print(f"{path.name}: new file, skipping check")
-              sys.exit(0)
-
-          before = len(json.loads(previous.stdout.decode("utf-8"))["publications"])
-          after = len(json.loads(path.read_text(encoding="utf-8"))["publications"])
-          ratio = after / before if before else 1.0
-          print(f"{path.name}: {before} -> {after} publications ({ratio:.0%})")
-
-          if before and ratio < THRESHOLD:
-              print(f"\nRefusing to commit: the register kept only {ratio:.0%} of its records")
-              sys.exit(1)
-          PY
+          python -m unittest discover -s tests -v
+          node --test tests/*.test.mjs
+          python data_prep/validate_outputs.py
 
       - name: Summarise changes
         id: changes
@@ -115,12 +101,13 @@ jobs:
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A
+          git add data_prep/raw_data publications_dashboard/data units_wordcloud/data en/index.html de/index.html
           git commit -m 'Refresh publication data from zmo.de' \
                      -m 'Automated monthly run of data_prep/scrape_publications.py and data_prep/generate_publication_data.py.'
           # Rebase before pushing: the word cloud refresh writes to the same
           # branch, and a long crawl can outlast the gap between the two jobs.
           git pull --rebase origin main
+          python data_prep/validate_outputs.py
           git push
 
       - name: Report dry run

@@ -1,0 +1,16 @@
+.panel__hint { font-size:0.8125rem; color:var(--c-ink-muted); max-width:65ch; }
+.panel__head { flex-wrap:wrap; }
+.panel__title { font-size:1.25rem; }
+.timeline { overflow-x:auto; padding-bottom:0.5rem; }
+.timeline__columns, .timeline__axis { min-width:720px; }
+.pager__button, .network__zoom, .tab, .legend__item { min-height:44px; }
+.pager__button, .network__zoom { min-width:44px; }
+.list__year, .list__meta, .list__count, .pager__range { font-size:0.8125rem; }
+.panel--wide > a { display:inline-block; margin-top:1rem; }
+.dashboard > .explore-hint { margin-bottom:1rem; }
+.analysis-section .panel__body { margin-top:0.5rem; }
+@media(max-width:600px) {
+    .header__bar { gap:1rem; }
+    .header__source { text-align:left; }
+    .panel__hint { text-align:left; }
+}

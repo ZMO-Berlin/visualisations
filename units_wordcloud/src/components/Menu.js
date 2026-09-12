@@ -1,7 +1,6 @@
 import { UnitSelector } from './UnitSelector.js';
 import { WordCountSlider } from './WordCountSlider.js';
 import { SaveButton } from './SaveButton.js';
-import { UI_EVENTS, ERROR_EVENTS } from '../events/EventTypes.js';
 
 /**
  * The toolbar: unit selector, word-count slider and export button.
@@ -17,11 +16,10 @@ export class Menu {
      * @param {object} deps
      * @param {import('../config/ConfigManager.js').ConfigManager} deps.config
      * @param {import('../store/AppStore.js').AppStore} deps.store
-     * @param {import('../events/EventBus.js').EventBus} deps.eventBus
      * @param {import('../utils/ErrorManager.js').ErrorManager} deps.errorManager
      * @param {import('../utils/saveUtils.js').SaveManager} deps.saveManager
      */
-    constructor(containerId, { config, store, eventBus, errorManager, saveManager }) {
+    constructor(containerId, { config, store, errorManager, saveManager }) {
         this.container = typeof containerId === 'string'
             ? document.getElementById(containerId.replace(/^#/, ''))
             : containerId;
@@ -32,7 +30,6 @@ export class Menu {
 
         this.config = config;
         this.store = store;
-        this.eventBus = eventBus;
         this.errorManager = errorManager;
         this.saveManager = saveManager;
 
@@ -61,12 +58,10 @@ export class Menu {
 
     bindControls() {
         this.components.unitSelector.onChange = unit => {
-            this.eventBus.emit(UI_EVENTS.UNIT_CHANGE, { unit });
             this.requestUpdate();
         };
 
         this.components.wordCountSlider.onChange = count => {
-            this.eventBus.emit(UI_EVENTS.WORD_COUNT_CHANGE, { count });
             this.requestUpdate();
         };
 
@@ -84,7 +79,6 @@ export class Menu {
         saveButton.setBusy(true);
 
         try {
-            await this.eventBus.emit(UI_EVENTS.SAVE_REQUEST);
 
             const svg = document.querySelector('#wordcloud svg');
             if (!svg) {
@@ -92,11 +86,8 @@ export class Menu {
             }
 
             await this.saveManager.saveAsPNG(svg);
-            await this.eventBus.emit(UI_EVENTS.SAVE_COMPLETE);
         } catch (error) {
             this.errorManager.handleError(error, { component: 'Menu', method: 'handleSave' });
-            await this.eventBus.emit(UI_EVENTS.SAVE_ERROR, { error });
-            await this.eventBus.emit(ERROR_EVENTS.GENERAL, { error });
         } finally {
             saveButton.setBusy(false);
         }

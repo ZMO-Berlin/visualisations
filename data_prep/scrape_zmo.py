@@ -31,6 +31,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from urllib.parse import urljoin
 
+from output import atomic_text, atomic_json
+
 from zmo_site import (
     BASE_URL,
     USER_AGENT_SUFFIX,
@@ -303,7 +305,7 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"  would write {len(document.split())} words to {destination}")
             else:
                 destination.parent.mkdir(parents=True, exist_ok=True)
-                destination.write_text(document, encoding="utf-8")
+                atomic_text(destination, document)
                 print(f"  wrote {len(document.split())} words to {destination}")
 
             manifest_units.append({
@@ -344,9 +346,7 @@ def main(argv: list[str] | None = None) -> int:
             "units": manifest_units,
         }
         manifest_path = args.output_dir / MANIFEST_NAME
-        manifest_path.write_text(
-            json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-        )
+        atomic_json(manifest_path, manifest)
         print(f"wrote {manifest_path}")
 
     print("\nNext: python data_prep/generate_word_data.py")

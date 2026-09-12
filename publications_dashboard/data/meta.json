@@ -1,5 +1,7 @@
 {
  "source": "https://www.zmo.de/en/publications/publication-search",
+ "schemaVersion": 1,
+ "datasetId": "95c3c7069581e4de",
  "documentTypes": [
   "Monographs",
   "Book reviews",
@@ -13,7 +15,7 @@
  ],
  "counts": {
   "publications": 1976,
-  "authors": 672,
+  "authors": 668,
   "untyped": 35,
   "withoutYear": 9
  },

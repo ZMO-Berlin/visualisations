@@ -182,7 +182,7 @@ def extends(shorter: str, longer: str) -> bool:
     short_tokens = shorter.split()
     long_tokens = longer.split()
 
-    if not short_tokens or len(short_tokens) >= len(long_tokens):
+    if not short_tokens or len(short_tokens) > len(long_tokens) or short_tokens == long_tokens:
         return False
 
     return all(
@@ -377,6 +377,8 @@ def build_meta(dataset: list[dict], source: str, document_types: list[str]) -> d
 
     return {
         "source": source,
+        "schemaVersion": 1,
+        "datasetId": __import__("output").identity(dataset),
         # Filter order, then whatever the crawl found that the filter does not
         # list, so a new type appears in the UI rather than vanishing.
         "documentTypes": [label for label in document_types if types[label]]
@@ -413,10 +415,8 @@ def read_aliases(path: Path) -> dict:
 
 
 def write_json(path: Path, payload) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
-    )
+    from output import atomic_json
+    atomic_json(path, payload, indent=1)
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
@@ -464,6 +464,14 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     dataset, names, venues = build_dataset(records, read_aliases(args.aliases))
+    from urllib.parse import urlparse
+    if len({r['slug'] for r in dataset}) != len(dataset):
+        raise ValueError('Duplicate publication slugs')
+    for record in dataset:
+        if urlparse(record['url']).scheme not in ('https', 'http'):
+            raise ValueError('Unsafe publication URL')
+        if record.get('year') is not None and (not isinstance(record['year'], int) or not 1000 <= record['year'] <= 9999):
+            raise ValueError('Invalid publication year')
     meta = build_meta(
         dataset,
         source=payload.get("source", ""),
@@ -480,6 +488,8 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"  {', '.join(repr(v) for v in variants)} -> {target!r}")
         print()
 
+    from families import build_families
+    write_json(args.output_dir / "families.json", build_families(records))
     write_json(args.output_dir / "publications.json", dataset)
     write_json(args.output_dir / "meta.json", meta)
 

@@ -1,3 +1,4 @@
+import { graphSignature } from '../../utils/graph-signature.js';
 /**
  * Who has published with whom, as a force-directed graph.
  *
@@ -202,11 +203,7 @@ export class CoauthorNetwork {
         // The full node list, not just its length: two different filters can
         // easily yield the same number of authors, and treating those as the
         // same graph would leave the previous one on screen.
-        const signature = [
-            nodes.map(node => node.id).join('|'),
-            links.length,
-            links.reduce((sum, link) => sum + link.weight, 0)
-        ].join('::');
+        const signature = graphSignature(nodes, links, graph.nodes.length);
 
         if (signature !== this.#signature) {
             this.#build({ nodes, links }, graph.nodes.length);
@@ -219,6 +216,8 @@ export class CoauthorNetwork {
     }
 
     #build(graph, totalAuthors) {
+        const positions = new Map([...this.#data].map(([id, node]) => [id, { x: node.x, y: node.y }]));
+        for (const node of graph.nodes) Object.assign(node, positions.get(node.id));
         this.#stop();
 
         const { d3 } = this;
@@ -618,6 +617,7 @@ export class CoauthorNetwork {
         for (const [id, circle] of this.#nodes) {
             const chosen = selected.has(id);
             const faded = dim && !chosen && !near.has(id);
+            circle.setAttribute('aria-pressed', String(chosen));
             circle.classList.toggle('network__node--selected', chosen);
             circle.classList.toggle('network__node--dimmed', faded);
             const label = this.#labels.get(id);
@@ -671,6 +671,9 @@ export class CoauthorNetwork {
         this.#signature = null;
         this.#focused = [];
     }
+
+    suspend() { this.#simulation?.stop(); }
+    resume() { this.#simulation?.restart(); }
 
     destroy() {
         this.#stop();

@@ -1,8 +1,7 @@
 name: Update word cloud data
 
 # Refreshes the corpus from zmo.de and regenerates the frequency files.
-# Pushing to main also republishes the GitHub Pages site, which is served from
-# this branch.
+# Successful completion triggers the validated Deploy Pages workflow.
 
 on:
   schedule:
@@ -45,6 +44,10 @@ jobs:
           path: ~/nltk_data
           key: nltk-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
 
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24.18.1'
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
@@ -54,40 +57,17 @@ jobs:
       - name: Generate word frequencies
         run: python data_prep/generate_word_data.py
 
-      # The scraper aborts if a page yields no abstract or no projects, but it
-      # cannot tell that a page returned *fewer* projects than before. A large
-      # drop means the site was restructured and the selectors are only partly
-      # matching, so fail rather than commit a hollowed-out corpus.
-      - name: Check the corpus did not collapse
+      - name: Check refresh identities
+        run: python data_prep/check_refresh.py units
+
+      - name: Update landing fallbacks
+        run: python data_prep/update_landing.py
+
+      - name: Test before committing data
         run: |
-          python - <<'PY'
-          import subprocess, sys
-          from pathlib import Path
-
-          THRESHOLD = 0.6  # fail if a unit keeps less than 60% of its words
-          failures = []
-
-          for path in sorted(Path("data_prep/raw_data").glob("*.txt")):
-              previous = subprocess.run(
-                  ["git", "show", f"HEAD:{path.as_posix()}"],
-                  capture_output=True,
-              )
-              if previous.returncode != 0:
-                  print(f"{path.name}: new file, skipping check")
-                  continue
-
-              before = len(previous.stdout.decode("utf-8").split())
-              after = len(path.read_text(encoding="utf-8").split())
-              ratio = after / before if before else 1.0
-              print(f"{path.name}: {before} -> {after} words ({ratio:.0%})")
-
-              if before and ratio < THRESHOLD:
-                  failures.append(f"{path.name} kept only {ratio:.0%} of its words")
-
-          if failures:
-              print("\nRefusing to commit:", *failures, sep="\n  - ")
-              sys.exit(1)
-          PY
+          python -m unittest discover -s tests -v
+          node --test tests/*.test.mjs
+          python data_prep/validate_outputs.py
 
       - name: Summarise changes
         id: changes
@@ -111,12 +91,13 @@ jobs:
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A
+          git add data_prep/raw_data publications_dashboard/data units_wordcloud/data en/index.html de/index.html
           git commit -m 'Refresh word cloud data from zmo.de' \
                      -m 'Automated monthly run of data_prep/scrape_zmo.py and data_prep/generate_word_data.py.'
           # A human commit can land during the crawl even though the two data
           # refresh workflows are serialized with each other.
           git pull --rebase origin main
+          python data_prep/validate_outputs.py
           git push
 
       - name: Report dry run

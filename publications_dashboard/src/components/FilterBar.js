@@ -27,7 +27,7 @@
  * being reparented into a fresh wrapper each time, which is a move.
  */
 
-import { el, mount } from '../utils/dom.js';
+import { el, mount, replaceContent } from '../utils/dom.js';
 import { countActive, parseVenueKey, venueKey } from '../store/filters.js';
 import { countValues } from '../utils/aggregate.js';
 import { fold } from '../utils/format.js';
@@ -107,7 +107,7 @@ export class FilterBar {
         this.#clearButton.disabled = countActive(filters) === 0;
 
         const chips = this.#chips(filters);
-        this.#chipsRow.replaceChildren(...chips);
+        replaceContent(this.#chipsRow, ...chips);
         this.#chipsRow.hidden = chips.length === 0;
     }
 
@@ -160,7 +160,7 @@ export class FilterBar {
             class: 'button button--ghost',
             type: 'button',
             text: this.strings.clearFilters,
-            on: { click: () => this.store.clearFilters() }
+            on: { click: () => { clearTimeout(this.#searchTimer); this.#searchInput.value = ''; this.#closeSuggestions(); this.store.clearFilters(); } }
         });
 
         this.#controlsRow = el('div', { class: 'command__row' }, [
@@ -369,13 +369,7 @@ export class FilterBar {
         clearTimeout(this.#searchTimer);
         this.#searchInput.value = '';
         this.#closeSuggestions();
-        this.store.setSearch('');
-
-        if (entry.kind === 'author') {
-            this.store.toggle('author', entry.value);
-        } else {
-            this.store.toggle('venue', venueKey(entry.kind, entry.value));
-        }
+        this.store.choose(entry.kind === 'author' ? 'author' : 'venue', entry.kind === 'author' ? entry.value : venueKey(entry.kind, entry.value));
 
         this.#searchInput.focus();
     }
