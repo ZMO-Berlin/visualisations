@@ -5,22 +5,22 @@
       "stem": "State_Society",
       "label": "State and Society",
       "url": "https://www.zmo.de/en/research/state-and-society",
-      "tokens": 4137,
-      "projects": 30
+      "tokens": 4302,
+      "projects": 32
     },
     {
       "stem": "Lives_Ecologies",
       "label": "Lives and Ecologies",
       "url": "https://www.zmo.de/en/research/lives-and-ecologies",
-      "tokens": 2003,
-      "projects": 14
+      "tokens": 2138,
+      "projects": 16
     },
     {
       "stem": "Religion-Intellectual-Culture",
       "label": "Religion and Intellectual Culture",
       "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture",
-      "tokens": 2222,
-      "projects": 17
+      "tokens": 2301,
+      "projects": 18
     }
   ],
   "terms": [
@@ -92,7 +92,7 @@
       "term": "absent",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -102,6 +102,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "abundance",
+      "counts": [
+        1,
+        0,
+        0
       ]
     },
     {
@@ -227,7 +235,7 @@
     {
       "term": "account",
       "counts": [
-        4,
+        5,
         1,
         1
       ]
@@ -363,7 +371,7 @@
     {
       "term": "activist",
       "counts": [
-        4,
+        5,
         1,
         1
       ]
@@ -380,7 +388,7 @@
       "term": "actor",
       "counts": [
         11,
-        4,
+        5,
         7
       ]
     },
@@ -620,7 +628,7 @@
       "term": "afterlives",
       "counts": [
         1,
-        0,
+        2,
         0
       ]
     },
@@ -651,7 +659,7 @@
     {
       "term": "agent",
       "counts": [
-        1,
+        2,
         0,
         2
       ]
@@ -660,7 +668,7 @@
       "term": "agrarian",
       "counts": [
         0,
-        1,
+        2,
         0
       ]
     },
@@ -721,6 +729,14 @@
       ]
     },
     {
+      "term": "aksakal",
+      "counts": [
+        4,
+        0,
+        0
+      ]
+    },
+    {
       "term": "al",
       "counts": [
         1,
@@ -733,6 +749,22 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "album",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "term": "alexander",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -905,6 +937,14 @@
       ]
     },
     {
+      "term": "amateur",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "ambiguity",
       "counts": [
         0,
@@ -916,7 +956,7 @@
       "term": "amidst",
       "counts": [
         0,
-        1,
+        2,
         0
       ]
     },
@@ -940,8 +980,8 @@
       "term": "among",
       "counts": [
         3,
-        0,
-        1
+        1,
+        2
       ]
     },
     {
@@ -1051,8 +1091,16 @@
     {
       "term": "animate",
       "counts": [
-        0,
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "annotate",
+      "counts": [
+        1,
+        0,
         0
       ]
     },
@@ -1115,8 +1163,8 @@
     {
       "term": "anthropology",
       "counts": [
-        1,
-        3,
+        2,
+        4,
         2
       ]
     },
@@ -1170,6 +1218,14 @@
     },
     {
       "term": "apparel",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "term": "apparent",
       "counts": [
         1,
         0,
@@ -1315,7 +1371,7 @@
     {
       "term": "archival",
       "counts": [
-        3,
+        6,
         1,
         2
       ]
@@ -1323,7 +1379,7 @@
     {
       "term": "archive",
       "counts": [
-        11,
+        12,
         3,
         3
       ]
@@ -1331,7 +1387,7 @@
     {
       "term": "area",
       "counts": [
-        5,
+        6,
         1,
         1
       ]
@@ -1425,6 +1481,14 @@
       ]
     },
     {
+      "term": "artefact",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "article",
       "counts": [
         0,
@@ -1459,7 +1523,7 @@
     {
       "term": "artist",
       "counts": [
-        0,
+        1,
         0,
         3
       ]
@@ -1483,7 +1547,7 @@
     {
       "term": "asia",
       "counts": [
-        19,
+        21,
         5,
         1
       ]
@@ -1500,7 +1564,7 @@
       "term": "ask",
       "counts": [
         1,
-        3,
+        5,
         2
       ]
     },
@@ -1517,7 +1581,7 @@
       "counts": [
         2,
         1,
-        2
+        3
       ]
     },
     {
@@ -1617,6 +1681,14 @@
       ]
     },
     {
+      "term": "attachment",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "attain",
       "counts": [
         0,
@@ -1636,7 +1708,7 @@
       "term": "attention",
       "counts": [
         2,
-        1,
+        2,
         1
       ]
     },
@@ -1675,7 +1747,7 @@
     {
       "term": "audience",
       "counts": [
-        0,
+        1,
         0,
         1
       ]
@@ -1755,7 +1827,7 @@
     {
       "term": "available",
       "counts": [
-        3,
+        4,
         0,
         0
       ]
@@ -1802,6 +1874,14 @@
     },
     {
       "term": "awareness",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "term": "away",
       "counts": [
         1,
         0,
@@ -1924,7 +2004,7 @@
       "term": "become",
       "counts": [
         8,
-        4,
+        5,
         0
       ]
     },
@@ -2021,7 +2101,7 @@
       "counts": [
         1,
         2,
-        0
+        1
       ]
     },
     {
@@ -2098,6 +2178,14 @@
     },
     {
       "term": "betrachtet",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "term": "better",
       "counts": [
         1,
         0,
@@ -2267,7 +2355,7 @@
     {
       "term": "book",
       "counts": [
-        4,
+        5,
         1,
         1
       ]
@@ -2363,7 +2451,7 @@
     {
       "term": "bring",
       "counts": [
-        3,
+        4,
         2,
         3
       ]
@@ -2413,7 +2501,7 @@
       "counts": [
         4,
         0,
-        4
+        5
       ]
     },
     {
@@ -2756,7 +2844,7 @@
       "term": "center",
       "counts": [
         1,
-        0,
+        1,
         1
       ]
     },
@@ -2861,7 +2949,7 @@
       "counts": [
         12,
         15,
-        5
+        7
       ]
     },
     {
@@ -3091,9 +3179,17 @@
     {
       "term": "citizen",
       "counts": [
-        2,
+        3,
         0,
         0
+      ]
+    },
+    {
+      "term": "citizenship",
+      "counts": [
+        0,
+        0,
+        1
       ]
     },
     {
@@ -3204,7 +3300,7 @@
       "term": "climate",
       "counts": [
         1,
-        6,
+        10,
         0
       ]
     },
@@ -3245,6 +3341,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "coal",
+      "counts": [
+        0,
+        3,
         0
       ]
     },
@@ -3294,6 +3398,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "coffee",
+      "counts": [
+        1,
+        0,
+        0
       ]
     },
     {
@@ -3348,7 +3460,7 @@
       "term": "collaboration",
       "counts": [
         0,
-        1,
+        2,
         3
       ]
     },
@@ -3596,7 +3708,7 @@
       "term": "community",
       "counts": [
         8,
-        6,
+        7,
         2
       ]
     },
@@ -3916,7 +4028,7 @@
       "term": "conduct",
       "counts": [
         2,
-        1,
+        2,
         2
       ]
     },
@@ -3972,7 +4084,7 @@
       "term": "conflict",
       "counts": [
         2,
-        10,
+        11,
         0
       ]
     },
@@ -4187,7 +4299,7 @@
     {
       "term": "contemporary",
       "counts": [
-        6,
+        7,
         0,
         4
       ]
@@ -4205,14 +4317,14 @@
       "counts": [
         1,
         0,
-        2
+        3
       ]
     },
     {
       "term": "contest",
       "counts": [
         1,
-        0,
+        1,
         3
       ]
     },
@@ -4299,7 +4411,7 @@
     {
       "term": "continuity",
       "counts": [
-        1,
+        2,
         2,
         1
       ]
@@ -4333,7 +4445,7 @@
       "counts": [
         4,
         3,
-        1
+        3
       ]
     },
     {
@@ -4587,7 +4699,7 @@
     {
       "term": "court",
       "counts": [
-        1,
+        7,
         0,
         0
       ]
@@ -4837,7 +4949,7 @@
       "counts": [
         10,
         1,
-        4
+        5
       ]
     },
     {
@@ -5019,7 +5131,7 @@
     {
       "term": "deal",
       "counts": [
-        4,
+        5,
         1,
         0
       ]
@@ -5043,9 +5155,17 @@
     {
       "term": "decade",
       "counts": [
-        3,
+        4,
         6,
         1
+      ]
+    },
+    {
+      "term": "decarbonization",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -5097,6 +5217,14 @@
       ]
     },
     {
+      "term": "dedicate",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "dedication",
       "counts": [
         0,
@@ -5109,6 +5237,14 @@
       "counts": [
         2,
         0,
+        0
+      ]
+    },
+    {
+      "term": "deepen",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -5420,7 +5556,7 @@
       "term": "design",
       "counts": [
         0,
-        0,
+        1,
         3
       ]
     },
@@ -5430,6 +5566,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "designer",
+      "counts": [
+        1,
+        0,
+        0
       ]
     },
     {
@@ -5548,14 +5692,14 @@
       "term": "develop",
       "counts": [
         5,
-        2,
+        3,
         2
       ]
     },
     {
       "term": "development",
       "counts": [
-        6,
+        7,
         9,
         2
       ]
@@ -5929,6 +6073,14 @@
       ]
     },
     {
+      "term": "dispute",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "disregard",
       "counts": [
         0,
@@ -6147,7 +6299,7 @@
     {
       "term": "domestic",
       "counts": [
-        0,
+        1,
         0,
         1
       ]
@@ -6204,7 +6356,7 @@
       "term": "draw",
       "counts": [
         3,
-        4,
+        6,
         1
       ]
     },
@@ -6380,7 +6532,7 @@
       "term": "economic",
       "counts": [
         5,
-        4,
+        5,
         0
       ]
     },
@@ -6429,7 +6581,7 @@
       "counts": [
         0,
         3,
-        7
+        12
       ]
     },
     {
@@ -6437,7 +6589,7 @@
       "counts": [
         0,
         0,
-        3
+        6
       ]
     },
     {
@@ -6459,7 +6611,7 @@
     {
       "term": "effort",
       "counts": [
-        1,
+        2,
         0,
         0
       ]
@@ -6555,7 +6707,7 @@
     {
       "term": "elder",
       "counts": [
-        0,
+        1,
         1,
         0
       ]
@@ -6572,6 +6724,14 @@
       "term": "element",
       "counts": [
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "elephant",
+      "counts": [
+        0,
         1,
         0
       ]
@@ -6771,7 +6931,7 @@
     {
       "term": "encounter",
       "counts": [
-        1,
+        2,
         1,
         1
       ]
@@ -6794,6 +6954,14 @@
     },
     {
       "term": "endurance",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "term": "endure",
       "counts": [
         1,
         0,
@@ -6964,7 +7132,7 @@
       "term": "entanglement",
       "counts": [
         11,
-        2,
+        4,
         0
       ]
     },
@@ -7003,7 +7171,7 @@
     {
       "term": "entrepreneur",
       "counts": [
-        2,
+        3,
         0,
         0
       ]
@@ -7089,6 +7257,14 @@
       ]
     },
     {
+      "term": "equality",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "equivalent",
       "counts": [
         0,
@@ -7099,9 +7275,9 @@
     {
       "term": "era",
       "counts": [
-        2,
+        3,
         1,
-        2
+        3
       ]
     },
     {
@@ -7116,6 +7292,14 @@
       "term": "erc",
       "counts": [
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "ermenek",
+      "counts": [
+        0,
         1,
         0
       ]
@@ -7165,7 +7349,7 @@
       "counts": [
         2,
         0,
-        2
+        3
       ]
     },
     {
@@ -7244,14 +7428,14 @@
       "term": "ethnographic",
       "counts": [
         5,
-        2,
+        4,
         7
       ]
     },
     {
       "term": "ethnography",
       "counts": [
-        2,
+        3,
         0,
         2
       ]
@@ -7300,7 +7484,7 @@
       "term": "european",
       "counts": [
         6,
-        3,
+        5,
         2
       ]
     },
@@ -7348,7 +7532,7 @@
       "term": "event",
       "counts": [
         4,
-        0,
+        1,
         1
       ]
     },
@@ -7379,8 +7563,8 @@
     {
       "term": "everyday",
       "counts": [
-        7,
-        0,
+        9,
+        1,
         1
       ]
     },
@@ -7531,7 +7715,7 @@
     {
       "term": "exhibition",
       "counts": [
-        0,
+        1,
         1,
         0
       ]
@@ -7553,6 +7737,14 @@
       ]
     },
     {
+      "term": "exit",
+      "counts": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
       "term": "expand",
       "counts": [
         1,
@@ -7565,7 +7757,7 @@
       "counts": [
         0,
         1,
-        1
+        2
       ]
     },
     {
@@ -7580,7 +7772,7 @@
       "term": "expect",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -7753,6 +7945,14 @@
       ]
     },
     {
+      "term": "extraction",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "extractive",
       "counts": [
         0,
@@ -7781,6 +7981,14 @@
       "counts": [
         6,
         3,
+        0
+      ]
+    },
+    {
+      "term": "facebook",
+      "counts": [
+        1,
+        0,
         0
       ]
     },
@@ -7867,7 +8075,7 @@
     {
       "term": "family",
       "counts": [
-        1,
+        2,
         2,
         1
       ]
@@ -7901,6 +8109,14 @@
       "counts": [
         1,
         2,
+        0
+      ]
+    },
+    {
+      "term": "fashion",
+      "counts": [
+        1,
+        0,
         0
       ]
     },
@@ -7985,6 +8201,14 @@
       ]
     },
     {
+      "term": "fellowship",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "fergana",
       "counts": [
         0,
@@ -8036,7 +8260,7 @@
       "term": "fieldwork",
       "counts": [
         4,
-        1,
+        3,
         2
       ]
     },
@@ -8162,6 +8386,14 @@
     },
     {
       "term": "five",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "term": "flatten",
       "counts": [
         1,
         0,
@@ -8315,15 +8547,15 @@
     {
       "term": "form",
       "counts": [
-        7,
+        8,
         5,
-        5
+        6
       ]
     },
     {
       "term": "formal",
       "counts": [
-        0,
+        1,
         0,
         1
       ]
@@ -8332,8 +8564,8 @@
       "term": "formation",
       "counts": [
         1,
-        0,
-        1
+        1,
+        2
       ]
     },
     {
@@ -8396,7 +8628,7 @@
       "term": "foundation",
       "counts": [
         2,
-        2,
+        3,
         0
       ]
     },
@@ -8452,7 +8684,7 @@
       "term": "framework",
       "counts": [
         7,
-        0,
+        1,
         3
       ]
     },
@@ -8909,7 +9141,7 @@
       "counts": [
         1,
         0,
-        0
+        1
       ]
     },
     {
@@ -8923,7 +9155,7 @@
     {
       "term": "global",
       "counts": [
-        16,
+        17,
         10,
         2
       ]
@@ -8963,7 +9195,7 @@
     {
       "term": "go",
       "counts": [
-        3,
+        4,
         1,
         1
       ]
@@ -9057,6 +9289,14 @@
       ]
     },
     {
+      "term": "grapple",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "grassroots",
       "counts": [
         0,
@@ -9092,7 +9332,7 @@
       "term": "green",
       "counts": [
         0,
-        1,
+        2,
         0
       ]
     },
@@ -9123,7 +9363,7 @@
     {
       "term": "group",
       "counts": [
-        15,
+        16,
         5,
         3
       ]
@@ -9214,6 +9454,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "handle",
+      "counts": [
+        1,
+        0,
+        0
       ]
     },
     {
@@ -9493,7 +9741,7 @@
       "counts": [
         4,
         0,
-        2
+        3
       ]
     },
     {
@@ -9539,7 +9787,7 @@
     {
       "term": "historical",
       "counts": [
-        20,
+        21,
         5,
         7
       ]
@@ -9587,7 +9835,7 @@
     {
       "term": "history",
       "counts": [
-        33,
+        37,
         13,
         7
       ]
@@ -9595,7 +9843,7 @@
     {
       "term": "hitherto",
       "counts": [
-        1,
+        2,
         0,
         0
       ]
@@ -9651,7 +9899,7 @@
     {
       "term": "hope",
       "counts": [
-        1,
+        2,
         0,
         0
       ]
@@ -9708,7 +9956,7 @@
       "term": "household",
       "counts": [
         0,
-        0,
+        1,
         1
       ]
     },
@@ -9740,7 +9988,7 @@
       "term": "human",
       "counts": [
         3,
-        6,
+        8,
         7
       ]
     },
@@ -9758,6 +10006,14 @@
         0,
         0,
         3
+      ]
+    },
+    {
+      "term": "humboldt",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -9893,7 +10149,7 @@
       "counts": [
         3,
         3,
-        1
+        4
       ]
     },
     {
@@ -9995,7 +10251,7 @@
     {
       "term": "image",
       "counts": [
-        3,
+        4,
         0,
         0
       ]
@@ -10003,7 +10259,7 @@
     {
       "term": "imaginary",
       "counts": [
-        2,
+        4,
         1,
         0
       ]
@@ -10067,7 +10323,7 @@
     {
       "term": "imperial",
       "counts": [
-        9,
+        10,
         1,
         0
       ]
@@ -10133,7 +10389,7 @@
       "counts": [
         2,
         1,
-        2
+        3
       ]
     },
     {
@@ -10158,6 +10414,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "imprint",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -10276,7 +10540,7 @@
       "term": "india",
       "counts": [
         13,
-        0,
+        1,
         1
       ]
     },
@@ -10444,7 +10708,7 @@
       "term": "initial",
       "counts": [
         1,
-        0,
+        1,
         1
       ]
     },
@@ -10468,7 +10732,7 @@
       "term": "initiative",
       "counts": [
         1,
-        0,
+        1,
         3
       ]
     },
@@ -10521,6 +10785,14 @@
       ]
     },
     {
+      "term": "insecurity",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "insight",
       "counts": [
         1,
@@ -10542,6 +10814,14 @@
         1,
         0,
         1
+      ]
+    },
+    {
+      "term": "instagram",
+      "counts": [
+        1,
+        0,
+        0
       ]
     },
     {
@@ -10587,15 +10867,15 @@
     {
       "term": "institution",
       "counts": [
-        1,
-        1,
-        2
+        2,
+        2,
+        3
       ]
     },
     {
       "term": "institutional",
       "counts": [
-        2,
+        3,
         1,
         0
       ]
@@ -10755,7 +11035,7 @@
     {
       "term": "interest",
       "counts": [
-        3,
+        4,
         0,
         2
       ]
@@ -11061,7 +11341,7 @@
       "counts": [
         0,
         7,
-        0
+        2
       ]
     },
     {
@@ -11069,7 +11349,7 @@
       "counts": [
         0,
         3,
-        0
+        1
       ]
     },
     {
@@ -11385,6 +11665,14 @@
       ]
     },
     {
+      "term": "judiciary",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "jungle",
       "counts": [
         1,
@@ -11403,8 +11691,8 @@
     {
       "term": "justice",
       "counts": [
-        14,
-        4,
+        17,
+        5,
         0
       ]
     },
@@ -11513,6 +11801,14 @@
       ]
     },
     {
+      "term": "keep",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "keeper",
       "counts": [
         1,
@@ -11534,6 +11830,14 @@
         3,
         0,
         1
+      ]
+    },
+    {
+      "term": "kerala",
+      "counts": [
+        0,
+        2,
+        0
       ]
     },
     {
@@ -11621,7 +11925,7 @@
       "counts": [
         4,
         11,
-        11
+        12
       ]
     },
     {
@@ -11691,7 +11995,7 @@
     {
       "term": "kyrgyzstan",
       "counts": [
-        11,
+        14,
         1,
         0
       ]
@@ -11708,7 +12012,7 @@
       "term": "labor",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -11812,7 +12116,7 @@
       "term": "largely",
       "counts": [
         0,
-        2,
+        3,
         2
       ]
     },
@@ -11963,7 +12267,7 @@
     {
       "term": "legal",
       "counts": [
-        9,
+        10,
         0,
         3
       ]
@@ -12107,7 +12411,7 @@
     {
       "term": "letter",
       "counts": [
-        2,
+        3,
         0,
         0
       ]
@@ -12147,7 +12451,7 @@
     {
       "term": "library",
       "counts": [
-        1,
+        2,
         0,
         0
       ]
@@ -12179,8 +12483,8 @@
     {
       "term": "life",
       "counts": [
-        11,
-        19,
+        12,
+        20,
         10
       ]
     },
@@ -12236,7 +12540,7 @@
       "term": "like",
       "counts": [
         4,
-        3,
+        4,
         5
       ]
     },
@@ -12340,7 +12644,7 @@
       "term": "little",
       "counts": [
         2,
-        0,
+        1,
         0
       ]
     },
@@ -12372,7 +12676,7 @@
       "term": "livelihood",
       "counts": [
         3,
-        5,
+        6,
         0
       ]
     },
@@ -12395,7 +12699,7 @@
     {
       "term": "local",
       "counts": [
-        20,
+        22,
         13,
         6
       ]
@@ -12436,6 +12740,22 @@
       "term": "locate",
       "counts": [
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "logic",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "term": "logistics",
+      "counts": [
+        1,
         0,
         0
       ]
@@ -12467,8 +12787,8 @@
     {
       "term": "look",
       "counts": [
-        5,
-        2,
+        6,
+        3,
         0
       ]
     },
@@ -12835,7 +13155,7 @@
     {
       "term": "material",
       "counts": [
-        11,
+        13,
         2,
         4
       ]
@@ -12907,7 +13227,7 @@
     {
       "term": "matter",
       "counts": [
-        2,
+        3,
         1,
         0
       ]
@@ -13011,7 +13331,7 @@
     {
       "term": "member",
       "counts": [
-        2,
+        3,
         2,
         0
       ]
@@ -13035,7 +13355,7 @@
     {
       "term": "memory",
       "counts": [
-        10,
+        12,
         2,
         0
       ]
@@ -13094,6 +13414,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "messy",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -13276,7 +13604,7 @@
       "term": "mine",
       "counts": [
         0,
-        1,
+        2,
         0
       ]
     },
@@ -13345,6 +13673,14 @@
       ]
     },
     {
+      "term": "mobilise",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "mobility",
       "counts": [
         4,
@@ -13371,7 +13707,7 @@
     {
       "term": "mode",
       "counts": [
-        3,
+        4,
         0,
         0
       ]
@@ -13387,7 +13723,7 @@
     {
       "term": "modern",
       "counts": [
-        18,
+        19,
         1,
         4
       ]
@@ -13404,8 +13740,16 @@
       "term": "modernity",
       "counts": [
         1,
-        0,
+        1,
         2
+      ]
+    },
+    {
+      "term": "modernization",
+      "counts": [
+        0,
+        0,
+        1
       ]
     },
     {
@@ -13476,7 +13820,7 @@
       "term": "month",
       "counts": [
         1,
-        1,
+        2,
         0
       ]
     },
@@ -13499,7 +13843,7 @@
     {
       "term": "moral",
       "counts": [
-        1,
+        2,
         4,
         2
       ]
@@ -13517,7 +13861,7 @@
       "counts": [
         1,
         0,
-        1
+        2
       ]
     },
     {
@@ -13627,7 +13971,7 @@
     {
       "term": "move",
       "counts": [
-        3,
+        4,
         3,
         0
       ]
@@ -13716,7 +14060,7 @@
       "term": "multispecies",
       "counts": [
         0,
-        2,
+        3,
         0
       ]
     },
@@ -13885,7 +14229,7 @@
       "counts": [
         15,
         1,
-        3
+        7
       ]
     },
     {
@@ -13908,7 +14252,7 @@
       "term": "nationalism",
       "counts": [
         7,
-        2,
+        4,
         0
       ]
     },
@@ -13948,7 +14292,7 @@
       "term": "navigate",
       "counts": [
         2,
-        0,
+        1,
         3
       ]
     },
@@ -14571,7 +14915,7 @@
     {
       "term": "older",
       "counts": [
-        0,
+        1,
         2,
         0
       ]
@@ -14611,7 +14955,7 @@
     {
       "term": "online",
       "counts": [
-        0,
+        1,
         1,
         1
       ]
@@ -14643,7 +14987,7 @@
     {
       "term": "operate",
       "counts": [
-        0,
+        1,
         1,
         1
       ]
@@ -14921,6 +15265,14 @@
       ]
     },
     {
+      "term": "pahlavi",
+      "counts": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "term": "paint",
       "counts": [
         1,
@@ -14995,7 +15347,7 @@
     {
       "term": "parallel",
       "counts": [
-        1,
+        2,
         1,
         0
       ]
@@ -15061,7 +15413,7 @@
       "counts": [
         4,
         3,
-        2
+        3
       ]
     },
     {
@@ -15099,7 +15451,7 @@
     {
       "term": "past",
       "counts": [
-        15,
+        16,
         2,
         0
       ]
@@ -15146,6 +15498,14 @@
     },
     {
       "term": "patrimony",
+      "counts": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "term": "patriotism",
       "counts": [
         0,
         0,
@@ -15227,8 +15587,8 @@
     {
       "term": "people",
       "counts": [
-        3,
-        7,
+        4,
+        8,
         2
       ]
     },
@@ -15299,9 +15659,9 @@
     {
       "term": "period",
       "counts": [
-        9,
+        11,
         4,
-        0
+        2
       ]
     },
     {
@@ -15324,7 +15684,7 @@
       "term": "periphery",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -15338,6 +15698,14 @@
     },
     {
       "term": "persianate",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "term": "persistence",
       "counts": [
         1,
         0,
@@ -15443,7 +15811,7 @@
     {
       "term": "phd",
       "counts": [
-        2,
+        3,
         0,
         0
       ]
@@ -15481,6 +15849,14 @@
       ]
     },
     {
+      "term": "photography",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "physical",
       "counts": [
         4,
@@ -15507,7 +15883,7 @@
     {
       "term": "picture",
       "counts": [
-        1,
+        3,
         0,
         0
       ]
@@ -15548,7 +15924,7 @@
       "term": "place",
       "counts": [
         6,
-        4,
+        5,
         3
       ]
     },
@@ -15556,7 +15932,7 @@
       "term": "plan",
       "counts": [
         1,
-        2,
+        4,
         0
       ]
     },
@@ -15595,7 +15971,7 @@
     {
       "term": "platform",
       "counts": [
-        1,
+        2,
         0,
         1
       ]
@@ -15684,7 +16060,7 @@
       "term": "policy",
       "counts": [
         2,
-        0,
+        1,
         6
       ]
     },
@@ -15699,8 +16075,8 @@
     {
       "term": "political",
       "counts": [
-        17,
-        8,
+        18,
+        9,
         5
       ]
     },
@@ -15715,7 +16091,7 @@
     {
       "term": "politics",
       "counts": [
-        4,
+        5,
         1,
         2
       ]
@@ -16084,7 +16460,7 @@
       "term": "prescription",
       "counts": [
         0,
-        0,
+        1,
         1
       ]
     },
@@ -16163,8 +16539,8 @@
     {
       "term": "primarily",
       "counts": [
-        2,
-        0,
+        3,
+        1,
         0
       ]
     },
@@ -16233,6 +16609,14 @@
       ]
     },
     {
+      "term": "probe",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "problem",
       "counts": [
         0,
@@ -16252,8 +16636,8 @@
       "term": "process",
       "counts": [
         11,
-        10,
-        5
+        11,
+        6
       ]
     },
     {
@@ -16403,7 +16787,7 @@
     {
       "term": "proliferation",
       "counts": [
-        0,
+        1,
         1,
         0
       ]
@@ -16428,7 +16812,7 @@
       "term": "promote",
       "counts": [
         0,
-        0,
+        1,
         1
       ]
     },
@@ -16563,7 +16947,7 @@
     {
       "term": "pursue",
       "counts": [
-        2,
+        3,
         0,
         2
       ]
@@ -16771,7 +17155,7 @@
     {
       "term": "range",
       "counts": [
-        4,
+        5,
         0,
         2
       ]
@@ -16804,7 +17188,7 @@
       "term": "rather",
       "counts": [
         3,
-        1,
+        2,
         3
       ]
     },
@@ -17011,7 +17395,7 @@
     {
       "term": "reconfigured",
       "counts": [
-        1,
+        2,
         0,
         0
       ]
@@ -17078,6 +17462,14 @@
         1,
         0,
         0
+      ]
+    },
+    {
+      "term": "redefinition",
+      "counts": [
+        0,
+        0,
+        1
       ]
     },
     {
@@ -17165,7 +17557,7 @@
       "counts": [
         1,
         0,
-        1
+        2
       ]
     },
     {
@@ -17257,6 +17649,14 @@
       ]
     },
     {
+      "term": "reign",
+      "counts": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
       "term": "reimagine",
       "counts": [
         0,
@@ -17291,7 +17691,7 @@
     {
       "term": "relate",
       "counts": [
-        3,
+        4,
         2,
         1
       ]
@@ -17381,7 +17781,7 @@
       "counts": [
         0,
         0,
-        13
+        14
       ]
     },
     {
@@ -17397,7 +17797,7 @@
       "counts": [
         5,
         1,
-        24
+        27
       ]
     },
     {
@@ -17563,9 +17963,9 @@
     {
       "term": "representation",
       "counts": [
-        2,
+        3,
         0,
-        2
+        3
       ]
     },
     {
@@ -17665,10 +18065,26 @@
       ]
     },
     {
+      "term": "resilience",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "resistance",
       "counts": [
         0,
         1,
+        0
+      ]
+    },
+    {
+      "term": "resolve",
+      "counts": [
+        1,
+        0,
         0
       ]
     },
@@ -17684,7 +18100,7 @@
       "term": "resource",
       "counts": [
         0,
-        6,
+        8,
         1
       ]
     },
@@ -17710,6 +18126,22 @@
         1,
         0,
         1
+      ]
+    },
+    {
+      "term": "response",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "responsibility",
+      "counts": [
+        1,
+        0,
+        0
       ]
     },
     {
@@ -17746,6 +18178,14 @@
     },
     {
       "term": "rethink",
+      "counts": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "retrieval",
       "counts": [
         1,
         0,
@@ -17838,6 +18278,14 @@
         2,
         0,
         0
+      ]
+    },
+    {
+      "term": "reza",
+      "counts": [
+        0,
+        0,
+        3
       ]
     },
     {
@@ -17941,7 +18389,7 @@
       "counts": [
         17,
         3,
-        6
+        9
       ]
     },
     {
@@ -18035,7 +18483,7 @@
     {
       "term": "rural",
       "counts": [
-        2,
+        3,
         4,
         1
       ]
@@ -18059,7 +18507,7 @@
     {
       "term": "russian",
       "counts": [
-        14,
+        15,
         0,
         0
       ]
@@ -18364,7 +18812,7 @@
       "term": "second",
       "counts": [
         3,
-        3,
+        4,
         1
       ]
     },
@@ -18443,7 +18891,7 @@
     {
       "term": "see",
       "counts": [
-        7,
+        8,
         0,
         0
       ]
@@ -18657,6 +19105,14 @@
       ]
     },
     {
+      "term": "shah",
+      "counts": [
+        0,
+        0,
+        3
+      ]
+    },
+    {
       "term": "shake",
       "counts": [
         0,
@@ -18675,9 +19131,9 @@
     {
       "term": "shape",
       "counts": [
-        10,
-        4,
-        4
+        11,
+        5,
+        5
       ]
     },
     {
@@ -18732,7 +19188,7 @@
       "term": "shift",
       "counts": [
         8,
-        3,
+        4,
         2
       ]
     },
@@ -18757,6 +19213,14 @@
       "counts": [
         2,
         0,
+        0
+      ]
+    },
+    {
+      "term": "shoot",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -18868,7 +19332,7 @@
       "term": "since",
       "counts": [
         2,
-        3,
+        4,
         2
       ]
     },
@@ -18942,6 +19406,14 @@
         0,
         1,
         1
+      ]
+    },
+    {
+      "term": "skepticism",
+      "counts": [
+        0,
+        2,
+        0
       ]
     },
     {
@@ -19020,8 +19492,8 @@
       "term": "social",
       "counts": [
         28,
-        14,
-        15
+        16,
+        18
       ]
     },
     {
@@ -19147,8 +19619,8 @@
     {
       "term": "south",
       "counts": [
-        24,
-        4,
+        26,
+        5,
         3
       ]
     },
@@ -19156,7 +19628,7 @@
       "term": "southern",
       "counts": [
         4,
-        0,
+        1,
         1
       ]
     },
@@ -19187,7 +19659,7 @@
     {
       "term": "soviet",
       "counts": [
-        23,
+        24,
         10,
         0
       ]
@@ -19228,7 +19700,7 @@
       "term": "spatial",
       "counts": [
         3,
-        1,
+        2,
         0
       ]
     },
@@ -19302,6 +19774,14 @@
         0,
         0,
         2
+      ]
+    },
+    {
+      "term": "spill",
+      "counts": [
+        1,
+        0,
+        0
       ]
     },
     {
@@ -19403,7 +19883,7 @@
     {
       "term": "state",
       "counts": [
-        24,
+        26,
         6,
         6
       ]
@@ -19529,6 +20009,14 @@
       ]
     },
     {
+      "term": "store",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "story",
       "counts": [
         4,
@@ -19636,7 +20124,7 @@
       "term": "strong",
       "counts": [
         2,
-        1,
+        2,
         0
       ]
     },
@@ -19690,6 +20178,14 @@
     },
     {
       "term": "style",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "term": "subcontinent",
       "counts": [
         1,
         0,
@@ -19770,6 +20266,14 @@
     },
     {
       "term": "sudan",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "term": "suddenly",
       "counts": [
         1,
         0,
@@ -19868,7 +20372,7 @@
       "term": "support",
       "counts": [
         3,
-        1,
+        2,
         2
       ]
     },
@@ -19899,7 +20403,7 @@
     {
       "term": "surface",
       "counts": [
-        1,
+        2,
         0,
         0
       ]
@@ -20029,6 +20533,14 @@
       "counts": [
         0,
         1,
+        0
+      ]
+    },
+    {
+      "term": "table",
+      "counts": [
+        1,
+        0,
         0
       ]
     },
@@ -20228,7 +20740,7 @@
       "term": "tension",
       "counts": [
         4,
-        0,
+        1,
         3
       ]
     },
@@ -20652,7 +21164,7 @@
       "term": "town",
       "counts": [
         2,
-        0,
+        1,
         0
       ]
     },
@@ -20715,7 +21227,7 @@
     {
       "term": "traditional",
       "counts": [
-        2,
+        3,
         0,
         4
       ]
@@ -20726,6 +21238,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "traffic",
+      "counts": [
+        1,
+        0,
+        0
       ]
     },
     {
@@ -20811,9 +21331,9 @@
     {
       "term": "transformation",
       "counts": [
+        6,
         5,
-        5,
-        1
+        4
       ]
     },
     {
@@ -20836,7 +21356,7 @@
       "term": "transition",
       "counts": [
         1,
-        1,
+        7,
         0
       ]
     },
@@ -20878,6 +21398,14 @@
         1,
         1,
         0
+      ]
+    },
+    {
+      "term": "transmission",
+      "counts": [
+        0,
+        0,
+        1
       ]
     },
     {
@@ -21009,6 +21537,14 @@
       ]
     },
     {
+      "term": "trunk",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "trusteeship",
       "counts": [
         0,
@@ -21041,6 +21577,14 @@
       ]
     },
     {
+      "term": "tuck",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "tunis",
       "counts": [
         0,
@@ -21052,7 +21596,7 @@
       "term": "turkey",
       "counts": [
         2,
-        2,
+        3,
         0
       ]
     },
@@ -21180,7 +21724,7 @@
       "term": "un",
       "counts": [
         0,
-        1,
+        2,
         0
       ]
     },
@@ -21233,6 +21777,14 @@
       ]
     },
     {
+      "term": "undergo",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "underground",
       "counts": [
         1,
@@ -21259,9 +21811,17 @@
     {
       "term": "understand",
       "counts": [
-        4,
+        5,
         9,
         6
+      ]
+    },
+    {
+      "term": "understanding",
+      "counts": [
+        0,
+        0,
+        1
       ]
     },
     {
@@ -21332,7 +21892,7 @@
       "term": "union",
       "counts": [
         6,
-        2,
+        3,
         0
       ]
     },
@@ -21422,6 +21982,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "unplanned",
+      "counts": [
+        0,
+        2,
+        0
       ]
     },
     {
@@ -21884,6 +22452,14 @@
       "term": "village",
       "counts": [
         2,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "villager",
+      "counts": [
+        1,
         0,
         0
       ]
@@ -21963,7 +22539,7 @@
     {
       "term": "visual",
       "counts": [
-        1,
+        2,
         0,
         1
       ]
@@ -22001,10 +22577,18 @@
       ]
     },
     {
+      "term": "volunteer",
+      "counts": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "term": "von",
       "counts": [
         2,
-        0,
+        1,
         0
       ]
     },
@@ -22131,7 +22715,7 @@
     {
       "term": "website",
       "counts": [
-        1,
+        2,
         0,
         0
       ]
@@ -22180,6 +22764,14 @@
       "term": "whether",
       "counts": [
         2,
+        0,
+        0
+      ]
+    },
+    {
+      "term": "whilst",
+      "counts": [
+        1,
         0,
         0
       ]
@@ -22261,7 +22853,7 @@
       "counts": [
         17,
         1,
-        1
+        6
       ]
     },
     {
@@ -22283,7 +22875,7 @@
     {
       "term": "work",
       "counts": [
-        16,
+        17,
         5,
         9
       ]
@@ -22292,7 +22884,7 @@
       "term": "worker",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -22452,7 +23044,7 @@
       "term": "zmo",
       "counts": [
         2,
-        1,
+        2,
         0
       ]
     },
@@ -23118,6 +23710,72 @@
         "vision",
         "wider",
         "work"
+      ]
+    },
+    {
+      "unit": "State_Society",
+      "title": "Justice in the Making: Moral Responsibility and the Resilience of Aksakal Courts in Kyrgyzstan",
+      "url": "https://www.zmo.de/en/research/state-and-society/translate-to-english-marat-uraimov-staat-und-gesellschaft",
+      "text": "Justice in the Making: Moral Responsibility and the Resilience of Aksakal Courts in Kyrgyzstan",
+      "terms": [
+        "aksakal",
+        "court",
+        "justice",
+        "kyrgyzstan",
+        "moral",
+        "resilience",
+        "responsibility"
+      ]
+    },
+    {
+      "unit": "State_Society",
+      "title": "Justice in the Making: Moral Responsibility and the Resilience of Aksakal Courts in Kyrgyzstan",
+      "url": "https://www.zmo.de/en/research/state-and-society/translate-to-english-marat-uraimov-staat-und-gesellschaft",
+      "text": "This PhD project examines Aksakal courts, court of elders in Kyrgyzstan as enduring institutions of local community-based traditional justice that operate primarily in rural areas in parallel with the formal state judiciary. I am focusing on questions related to Modern History and Legal Anthropology, examining the historical continuity and transformation of Aksakal courts from the Russian Imperial period through the Soviet era and into the contemporary Kyrgyzstan period. I am interested in how villagers understand and use different forms of justice in their everyday lives as well as how people move between Aksakal courts and state courts when dealing with and resolving disputes.",
+      "terms": [
+        "aksakal",
+        "anthropology",
+        "area",
+        "contemporary",
+        "continuity",
+        "court",
+        "deal",
+        "dispute",
+        "elder",
+        "endure",
+        "era",
+        "everyday",
+        "form",
+        "formal",
+        "historical",
+        "history",
+        "imperial",
+        "institution",
+        "interest",
+        "judiciary",
+        "justice",
+        "kyrgyzstan",
+        "legal",
+        "life",
+        "local",
+        "modern",
+        "move",
+        "operate",
+        "parallel",
+        "people",
+        "period",
+        "phd",
+        "primarily",
+        "relate",
+        "resolve",
+        "rural",
+        "russian",
+        "soviet",
+        "state",
+        "traditional",
+        "transformation",
+        "understand",
+        "villager"
       ]
     },
     {
@@ -26498,344 +27156,6 @@
     },
     {
       "unit": "State_Society",
-      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
-      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart",
-      "text": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
-      "terms": [
-        "backlash",
-        "bishkek",
-        "collapse",
-        "geopolitics",
-        "imperialism",
-        "infrastructure",
-        "live",
-        "market",
-        "odesa",
-        "rescale",
-        "soviet"
-      ]
-    },
-    {
-      "unit": "State_Society",
-      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
-      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart",
-      "text": "Since their independence in 1991, Ukraine and Kyrgyzstan are caught at the crossroads of competing geopolitical stakeholders and post-imperial reverberations. While there is abundant research on strategic power struggles in the region, little is known about how local communities engage with geopolitics. Through extensive, multi-sited ethnography, my work tackles the nexus of macro-scale power politics and the micro-scale of everyday life at two sites that are intricately and intensely entangled with geopolitical dynamics: the 7Km Market in Odesa, and the Dordoi Bazaar in Bishkek. Located in two historically related, yet vastly different former Soviet republics, I show how past configurations of labor, gender, and space have shaped contemporary infrastructures of bottom-up global trade. Built from double-stacked shipping containers, the two markets have become key nodes in a transnational network linking goods from Turkey, China, Korea, and beyond with consumers across Eurasia. As modular, dynamic, shape-shifting hubs they stimulating economic innovation and extra-economic sociality, yet their embeddedness in global supply chains also exposes traders to shifting border regimes and mobility constraints, shaped by foreign policy shifts and international conflict.",
-      "terms": [
-        "abundant",
-        "across",
-        "bazaar",
-        "become",
-        "beyond",
-        "bishkek",
-        "border",
-        "build",
-        "catch",
-        "chain",
-        "china",
-        "community",
-        "compete",
-        "configuration",
-        "conflict",
-        "constraint",
-        "consumer",
-        "container",
-        "contemporary",
-        "crossroad",
-        "dordoi",
-        "dynamic",
-        "economic",
-        "embeddedness",
-        "engage",
-        "entangle",
-        "ethnography",
-        "eurasia",
-        "everyday",
-        "expose",
-        "extensive",
-        "foreign",
-        "former",
-        "gender",
-        "geopolitical",
-        "geopolitics",
-        "global",
-        "good",
-        "historically",
-        "hub",
-        "independence",
-        "infrastructure",
-        "innovation",
-        "intensely",
-        "international",
-        "intricately",
-        "key",
-        "know",
-        "korea",
-        "kyrgyzstan",
-        "labor",
-        "life",
-        "link",
-        "little",
-        "local",
-        "locate",
-        "market",
-        "mobility",
-        "modular",
-        "network",
-        "nexus",
-        "node",
-        "odesa",
-        "past",
-        "policy",
-        "politics",
-        "power",
-        "regime",
-        "region",
-        "relate",
-        "republic",
-        "reverberation",
-        "shape",
-        "shift",
-        "ship",
-        "show",
-        "since",
-        "site",
-        "sociality",
-        "soviet",
-        "space",
-        "stakeholder",
-        "stimulate",
-        "strategic",
-        "struggle",
-        "supply",
-        "tackle",
-        "trade",
-        "trader",
-        "transnational",
-        "turkey",
-        "ukraine",
-        "vastly",
-        "work",
-        "yet"
-      ]
-    },
-    {
-      "unit": "State_Society",
-      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
-      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart",
-      "text": "Correspondingly, my research employs a relational lens to examine the post-1991 trajectories of Ukraine and Kyrgyzstan, positioning these markets as laboratories for post-Soviet geopolitical rivalries. Emphasizing traders’ geopolitical awareness and the adaptive livelihood strategies reflected in both talk and practice, my approach critiques strictly top-down views of geopolitics and reductive portrayals of economic actors as mere agents of the market. Instead, I provide nuanced insights into the interplay between market infrastructures, geopolitical shifts and everyday economic practices – an intersection I conceptualise as ‘lived geopolitics.’ The concept challenges geopolitics’ classical detachment from the vernacular and its confinement to the scale of the state, by emphasizing multidirectional entanglements across scales.",
-      "terms": [
-        "across",
-        "actor",
-        "adaptive",
-        "agent",
-        "awareness",
-        "challenge",
-        "classical",
-        "concept",
-        "conceptualise",
-        "confinement",
-        "correspondingly",
-        "critique",
-        "detachment",
-        "economic",
-        "emphasize",
-        "employ",
-        "entanglement",
-        "everyday",
-        "geopolitical",
-        "geopolitics",
-        "infrastructure",
-        "insight",
-        "instead",
-        "interplay",
-        "intersection",
-        "kyrgyzstan",
-        "laboratory",
-        "lens",
-        "live",
-        "livelihood",
-        "market",
-        "mere",
-        "multidirectional",
-        "nuanced",
-        "portrayal",
-        "position",
-        "practice",
-        "reductive",
-        "reflect",
-        "relational",
-        "rivalry",
-        "scale",
-        "shift",
-        "state",
-        "strategy",
-        "strictly",
-        "talk",
-        "trader",
-        "trajectory",
-        "ukraine",
-        "vernacular",
-        "view"
-      ]
-    },
-    {
-      "unit": "State_Society",
-      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
-      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart",
-      "text": "Methodologically, this research is grounded in years (2018–2024) of multi-sited ethnographic fieldwork at retail hubs in Russia, Ukraine, and Kyrgyzstan. It combines extended participant observation in markets and container shops with diverse qualitative methods: oral history interviews with 1990s shuttle traders, semi-structured interviews with current traders and market managers, and numerous informal conversations with traders, drivers, cleaners, and food vendors. During the pandemic, digital ethnography included active engagement in social media discussions and surveys. Repeated field visits captured the evolving impacts of key geopolitical events such as Kyrgyzstan’s accession to the Eurasian Economic Union, the Covid-19 pandemic, and Russia’s invasion of Ukraine, while fostering trust-based relationships.",
-      "terms": [
-        "accession",
-        "active",
-        "capture",
-        "cleaner",
-        "combine",
-        "container",
-        "conversation",
-        "current",
-        "digital",
-        "discussion",
-        "diverse",
-        "driver",
-        "economic",
-        "engagement",
-        "ethnographic",
-        "ethnography",
-        "eurasian",
-        "event",
-        "evolve",
-        "extend",
-        "field",
-        "fieldwork",
-        "food",
-        "foster",
-        "geopolitical",
-        "ground",
-        "history",
-        "hub",
-        "impact",
-        "include",
-        "informal",
-        "interview",
-        "invasion",
-        "key",
-        "kyrgyzstan",
-        "manager",
-        "market",
-        "medium",
-        "method",
-        "methodologically",
-        "numerous",
-        "observation",
-        "oral",
-        "pandemic",
-        "participant",
-        "qualitative",
-        "relationship",
-        "repeat",
-        "retail",
-        "russia",
-        "shop",
-        "shuttle",
-        "social",
-        "survey",
-        "trader",
-        "ukraine",
-        "union",
-        "vendor",
-        "visit",
-        "year"
-      ]
-    },
-    {
-      "unit": "State_Society",
-      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
-      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart",
-      "text": "My forthcoming monograph aims to rethink post-Soviet markets as historically grounded, relational infrastructures embedded in global circuits. By examining communalities and differences in the developments of market trade in Ukraine and Kyrgyzstan my work advances comparison as a relational mode of anthropological inquiry. Conceptualising market actors as active participants in rather than passive recipients of geopolitical change, I bring geopolitical processes into sharper ethnographic focus.",
-      "terms": [
-        "active",
-        "actor",
-        "advance",
-        "anthropological",
-        "bring",
-        "change",
-        "circuit",
-        "communalities",
-        "comparison",
-        "conceptualise",
-        "development",
-        "difference",
-        "embed",
-        "ethnographic",
-        "forthcoming",
-        "geopolitical",
-        "global",
-        "ground",
-        "historically",
-        "infrastructure",
-        "inquiry",
-        "kyrgyzstan",
-        "market",
-        "mode",
-        "monograph",
-        "participant",
-        "passive",
-        "process",
-        "rather",
-        "recipient",
-        "relational",
-        "rethink",
-        "sharper",
-        "trade",
-        "ukraine",
-        "work"
-      ]
-    },
-    {
-      "unit": "State_Society",
-      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
-      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart",
-      "text": "The book project is generousl y supported by the Independent Social Research Foundation",
-      "terms": [
-        "book",
-        "foundation",
-        "generousl",
-        "independent",
-        "social",
-        "support"
-      ]
-    },
-    {
-      "unit": "State_Society",
-      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
-      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart",
-      "text": "Key publication from this project:",
-      "terms": [
-        "key",
-        "publication"
-      ]
-    },
-    {
-      "unit": "State_Society",
-      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
-      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart",
-      "text": "Eggart, C., 2023b. “Made in Kyrgyzstan is Gold!” The Rise of the Informal Kyrgyzstani Apparel Industry . Third World Quarterly. ahead-of-print, 1–18. https://doi.org/10.1080/01436597.2023.2254242",
-      "terms": [
-        "apparel",
-        "eggart",
-        "gold",
-        "http",
-        "industry",
-        "informal",
-        "kyrgyzstan",
-        "kyrgyzstani",
-        "quarterly",
-        "rise",
-        "third",
-        "world"
-      ]
-    },
-    {
-      "unit": "State_Society",
       "title": "After Authoritarianism: How Political Thinking Travels With Syrians to Germany and Denmark",
       "url": "https://www.zmo.de/en/research/state-and-society/birgitte-holst",
       "text": "After Authoritarianism: How Political Thinking Travels With Syrians to Germany and Denmark",
@@ -27044,6 +27364,472 @@
         "uncertain",
         "weather",
         "yet"
+      ]
+    },
+    {
+      "unit": "State_Society",
+      "title": "Archival Imaginaries and the Politics of History in South Asia",
+      "url": "https://www.zmo.de/en/research/state-and-society/mallika-leuzinger#c4015",
+      "text": "Archival Imaginaries and the Politics of History in South Asia",
+      "terms": [
+        "archival",
+        "asia",
+        "history",
+        "imaginary",
+        "politics",
+        "south"
+      ]
+    },
+    {
+      "unit": "State_Society",
+      "title": "Archival Imaginaries and the Politics of History in South Asia",
+      "url": "https://www.zmo.de/en/research/state-and-society/mallika-leuzinger#c4015",
+      "text": "The past decade has seen the proliferation of ‘citizens archives’, ‘picture libraries’ and ‘memory projects’ dedicated to the history of South Asia. I first encountered these platforms, which mobilise visual and material artefacts, and range from purpose-built websites to Instagram handles and Facebook groups that spill over into exhibitions and coffee table books, whilst researching the development of amateur and domestic photography in the subcontinent. Images that had hitherto been stored in albums and trunks or tucked away in letters were suddenly available online, annotated, animated and reconfigured by the efforts of family members, artists, designers, entrepreneurs, volunteers and audiences both local and global.",
+      "terms": [
+        "album",
+        "amateur",
+        "animate",
+        "annotate",
+        "archive",
+        "artefact",
+        "artist",
+        "asia",
+        "audience",
+        "available",
+        "away",
+        "book",
+        "citizen",
+        "coffee",
+        "decade",
+        "dedicate",
+        "designer",
+        "development",
+        "domestic",
+        "effort",
+        "encounter",
+        "entrepreneur",
+        "exhibition",
+        "facebook",
+        "family",
+        "global",
+        "group",
+        "handle",
+        "history",
+        "hitherto",
+        "image",
+        "instagram",
+        "letter",
+        "library",
+        "local",
+        "material",
+        "member",
+        "memory",
+        "mobilise",
+        "online",
+        "past",
+        "photography",
+        "picture",
+        "platform",
+        "proliferation",
+        "range",
+        "reconfigured",
+        "see",
+        "south",
+        "spill",
+        "store",
+        "subcontinent",
+        "suddenly",
+        "table",
+        "trunk",
+        "tuck",
+        "visual",
+        "volunteer",
+        "website",
+        "whilst"
+      ]
+    },
+    {
+      "unit": "State_Society",
+      "title": "Archival Imaginaries and the Politics of History in South Asia",
+      "url": "https://www.zmo.de/en/research/state-and-society/mallika-leuzinger#c4015",
+      "text": "My new project grapples with this apparent archival abundance, this traffic in ‘pictures’ and ‘memories’. I probe the logics and logistics that have brought these materials to the surface, and the work that goes in to keeping them there. I also look at the persistence of older, institutional and activist modes of retrieval and representation. In pursuing an ethnography of archival imaginaries and agents, I hope to better account for how history is flattened into and fashioned out of everyday matter, and how it takes political shape.",
+      "terms": [
+        "abundance",
+        "account",
+        "activist",
+        "agent",
+        "apparent",
+        "archival",
+        "better",
+        "bring",
+        "ethnography",
+        "everyday",
+        "fashion",
+        "flatten",
+        "go",
+        "grapple",
+        "history",
+        "hope",
+        "imaginary",
+        "institutional",
+        "keep",
+        "logic",
+        "logistics",
+        "look",
+        "material",
+        "matter",
+        "memory",
+        "mode",
+        "older",
+        "persistence",
+        "picture",
+        "political",
+        "probe",
+        "pursue",
+        "representation",
+        "retrieval",
+        "shape",
+        "surface",
+        "traffic",
+        "work"
+      ]
+    },
+    {
+      "unit": "State_Society",
+      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
+      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart#c4011",
+      "text": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
+      "terms": [
+        "backlash",
+        "bishkek",
+        "collapse",
+        "geopolitics",
+        "imperialism",
+        "infrastructure",
+        "live",
+        "market",
+        "odesa",
+        "rescale",
+        "soviet"
+      ]
+    },
+    {
+      "unit": "State_Society",
+      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
+      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart#c4011",
+      "text": "Since their independence in 1991, Ukraine and Kyrgyzstan are caught at the crossroads of competing geopolitical stakeholders and post-imperial reverberations. While there is abundant research on strategic power struggles in the region, little is known about how local communities engage with geopolitics. Through extensive, multi-sited ethnography, my work tackles the nexus of macro-scale power politics and the micro-scale of everyday life at two sites that are intricately and intensely entangled with geopolitical dynamics: the 7Km Market in Odesa, and the Dordoi Bazaar in Bishkek. Located in two historically related, yet vastly different former Soviet republics, I show how past configurations of labor, gender, and space have shaped contemporary infrastructures of bottom-up global trade. Built from double-stacked shipping containers, the two markets have become key nodes in a transnational network linking goods from Turkey, China, Korea, and beyond with consumers across Eurasia. As modular, dynamic, shape-shifting hubs they stimulating economic innovation and extra-economic sociality, yet their embeddedness in global supply chains also exposes traders to shifting border regimes and mobility constraints, shaped by foreign policy shifts and international conflict.",
+      "terms": [
+        "abundant",
+        "across",
+        "bazaar",
+        "become",
+        "beyond",
+        "bishkek",
+        "border",
+        "build",
+        "catch",
+        "chain",
+        "china",
+        "community",
+        "compete",
+        "configuration",
+        "conflict",
+        "constraint",
+        "consumer",
+        "container",
+        "contemporary",
+        "crossroad",
+        "dordoi",
+        "dynamic",
+        "economic",
+        "embeddedness",
+        "engage",
+        "entangle",
+        "ethnography",
+        "eurasia",
+        "everyday",
+        "expose",
+        "extensive",
+        "foreign",
+        "former",
+        "gender",
+        "geopolitical",
+        "geopolitics",
+        "global",
+        "good",
+        "historically",
+        "hub",
+        "independence",
+        "infrastructure",
+        "innovation",
+        "intensely",
+        "international",
+        "intricately",
+        "key",
+        "know",
+        "korea",
+        "kyrgyzstan",
+        "labor",
+        "life",
+        "link",
+        "little",
+        "local",
+        "locate",
+        "market",
+        "mobility",
+        "modular",
+        "network",
+        "nexus",
+        "node",
+        "odesa",
+        "past",
+        "policy",
+        "politics",
+        "power",
+        "regime",
+        "region",
+        "relate",
+        "republic",
+        "reverberation",
+        "shape",
+        "shift",
+        "ship",
+        "show",
+        "since",
+        "site",
+        "sociality",
+        "soviet",
+        "space",
+        "stakeholder",
+        "stimulate",
+        "strategic",
+        "struggle",
+        "supply",
+        "tackle",
+        "trade",
+        "trader",
+        "transnational",
+        "turkey",
+        "ukraine",
+        "vastly",
+        "work",
+        "yet"
+      ]
+    },
+    {
+      "unit": "State_Society",
+      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
+      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart#c4011",
+      "text": "Correspondingly, my research employs a relational lens to examine the post-1991 trajectories of Ukraine and Kyrgyzstan, positioning these markets as laboratories for post-Soviet geopolitical rivalries. Emphasizing traders’ geopolitical awareness and the adaptive livelihood strategies reflected in both talk and practice, my approach critiques strictly top-down views of geopolitics and reductive portrayals of economic actors as mere agents of the market. Instead, I provide nuanced insights into the interplay between market infrastructures, geopolitical shifts and everyday economic practices – an intersection I conceptualise as ‘lived geopolitics.’ The concept challenges geopolitics’ classical detachment from the vernacular and its confinement to the scale of the state, by emphasizing multidirectional entanglements across scales.",
+      "terms": [
+        "across",
+        "actor",
+        "adaptive",
+        "agent",
+        "awareness",
+        "challenge",
+        "classical",
+        "concept",
+        "conceptualise",
+        "confinement",
+        "correspondingly",
+        "critique",
+        "detachment",
+        "economic",
+        "emphasize",
+        "employ",
+        "entanglement",
+        "everyday",
+        "geopolitical",
+        "geopolitics",
+        "infrastructure",
+        "insight",
+        "instead",
+        "interplay",
+        "intersection",
+        "kyrgyzstan",
+        "laboratory",
+        "lens",
+        "live",
+        "livelihood",
+        "market",
+        "mere",
+        "multidirectional",
+        "nuanced",
+        "portrayal",
+        "position",
+        "practice",
+        "reductive",
+        "reflect",
+        "relational",
+        "rivalry",
+        "scale",
+        "shift",
+        "state",
+        "strategy",
+        "strictly",
+        "talk",
+        "trader",
+        "trajectory",
+        "ukraine",
+        "vernacular",
+        "view"
+      ]
+    },
+    {
+      "unit": "State_Society",
+      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
+      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart#c4011",
+      "text": "Methodologically, this research is grounded in years (2018–2024) of multi-sited ethnographic fieldwork at retail hubs in Russia, Ukraine, and Kyrgyzstan. It combines extended participant observation in markets and container shops with diverse qualitative methods: oral history interviews with 1990s shuttle traders, semi-structured interviews with current traders and market managers, and numerous informal conversations with traders, drivers, cleaners, and food vendors. During the pandemic, digital ethnography included active engagement in social media discussions and surveys. Repeated field visits captured the evolving impacts of key geopolitical events such as Kyrgyzstan’s accession to the Eurasian Economic Union, the Covid-19 pandemic, and Russia’s invasion of Ukraine, while fostering trust-based relationships.",
+      "terms": [
+        "accession",
+        "active",
+        "capture",
+        "cleaner",
+        "combine",
+        "container",
+        "conversation",
+        "current",
+        "digital",
+        "discussion",
+        "diverse",
+        "driver",
+        "economic",
+        "engagement",
+        "ethnographic",
+        "ethnography",
+        "eurasian",
+        "event",
+        "evolve",
+        "extend",
+        "field",
+        "fieldwork",
+        "food",
+        "foster",
+        "geopolitical",
+        "ground",
+        "history",
+        "hub",
+        "impact",
+        "include",
+        "informal",
+        "interview",
+        "invasion",
+        "key",
+        "kyrgyzstan",
+        "manager",
+        "market",
+        "medium",
+        "method",
+        "methodologically",
+        "numerous",
+        "observation",
+        "oral",
+        "pandemic",
+        "participant",
+        "qualitative",
+        "relationship",
+        "repeat",
+        "retail",
+        "russia",
+        "shop",
+        "shuttle",
+        "social",
+        "survey",
+        "trader",
+        "ukraine",
+        "union",
+        "vendor",
+        "visit",
+        "year"
+      ]
+    },
+    {
+      "unit": "State_Society",
+      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
+      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart#c4011",
+      "text": "My forthcoming monograph aims to rethink post-Soviet markets as historically grounded, relational infrastructures embedded in global circuits. By examining communalities and differences in the developments of market trade in Ukraine and Kyrgyzstan my work advances comparison as a relational mode of anthropological inquiry. Conceptualising market actors as active participants in rather than passive recipients of geopolitical change, I bring geopolitical processes into sharper ethnographic focus.",
+      "terms": [
+        "active",
+        "actor",
+        "advance",
+        "anthropological",
+        "bring",
+        "change",
+        "circuit",
+        "communalities",
+        "comparison",
+        "conceptualise",
+        "development",
+        "difference",
+        "embed",
+        "ethnographic",
+        "forthcoming",
+        "geopolitical",
+        "global",
+        "ground",
+        "historically",
+        "infrastructure",
+        "inquiry",
+        "kyrgyzstan",
+        "market",
+        "mode",
+        "monograph",
+        "participant",
+        "passive",
+        "process",
+        "rather",
+        "recipient",
+        "relational",
+        "rethink",
+        "sharper",
+        "trade",
+        "ukraine",
+        "work"
+      ]
+    },
+    {
+      "unit": "State_Society",
+      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
+      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart#c4011",
+      "text": "The book project is generousl y supported by the Independent Social Research Foundation",
+      "terms": [
+        "book",
+        "foundation",
+        "generousl",
+        "independent",
+        "social",
+        "support"
+      ]
+    },
+    {
+      "unit": "State_Society",
+      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
+      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart#c4011",
+      "text": "Key publication from this project:",
+      "terms": [
+        "key",
+        "publication"
+      ]
+    },
+    {
+      "unit": "State_Society",
+      "title": "Lived Geopolitics: Rescaling Market Infrastructures in Odesa and Bishkek from Soviet Collapse to Backlash Imperialism",
+      "url": "https://www.zmo.de/en/research/state-and-society/claudia-eggart#c4011",
+      "text": "Eggart, C., 2023b. “Made in Kyrgyzstan is Gold!” The Rise of the Informal Kyrgyzstani Apparel Industry . Third World Quarterly. ahead-of-print, 1–18. https://doi.org/10.1080/01436597.2023.2254242",
+      "terms": [
+        "apparel",
+        "eggart",
+        "gold",
+        "http",
+        "industry",
+        "informal",
+        "kyrgyzstan",
+        "kyrgyzstani",
+        "quarterly",
+        "rise",
+        "third",
+        "world"
       ]
     },
     {
@@ -28383,6 +29169,107 @@
     },
     {
       "unit": "Lives_Ecologies",
+      "title": "(Un)Just Transitions: Labor, Resource Nationalism, and Climate Skepticism Amidst an Unplanned Exit from Coal",
+      "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-unjust-transitions-labor-resource-nationalism-and-climate-skepticism-amidst-an-unplanned-exit-from-coal#c4222",
+      "text": "(Un)Just Transitions: Labor, Resource Nationalism, and Climate Skepticism Amidst an Unplanned Exit from Coal",
+      "terms": [
+        "amidst",
+        "climate",
+        "coal",
+        "exit",
+        "labor",
+        "nationalism",
+        "resource",
+        "skepticism",
+        "transition",
+        "un",
+        "unplanned"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "(Un)Just Transitions: Labor, Resource Nationalism, and Climate Skepticism Amidst an Unplanned Exit from Coal",
+      "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-unjust-transitions-labor-resource-nationalism-and-climate-skepticism-amidst-an-unplanned-exit-from-coal#c4222",
+      "text": "What does a “green transition” look like where there is little transition planning and the institutions expected to make it just are largely absent? Focusing on Ermenek, a mining town in southern Turkey undergoing an unplanned coal exit since 2014, this project examines how workers, households, and communities navigate the social and economic afterlives of extraction. Drawing on multi-sited ethnographic research conducted in collaboration with the Center for Spatial Justice, the project examines how livelihood insecurity, attachments to coal, resource nationalism, and climate skepticism shape responses to decarbonization. By shifting attention from planned transition prescriptions designed for places where strong unions and climate actors exit to the messy afterlives of extraction on the European periphery, the project seeks to rethink just transition as a contested social and political process rather than primarily a policy framework. Initial fieldwork supported by the European Climate Foundation, the project is now being developed at ZMO through an Alexander von Humboldt Research Fellowship.",
+      "terms": [
+        "absent",
+        "actor",
+        "afterlives",
+        "alexander",
+        "attachment",
+        "attention",
+        "center",
+        "climate",
+        "coal",
+        "collaboration",
+        "community",
+        "conduct",
+        "contest",
+        "decarbonization",
+        "design",
+        "develop",
+        "draw",
+        "economic",
+        "ermenek",
+        "ethnographic",
+        "european",
+        "exit",
+        "expect",
+        "extraction",
+        "fellowship",
+        "fieldwork",
+        "foundation",
+        "framework",
+        "green",
+        "household",
+        "humboldt",
+        "initial",
+        "insecurity",
+        "institution",
+        "justice",
+        "largely",
+        "like",
+        "little",
+        "livelihood",
+        "look",
+        "messy",
+        "mine",
+        "nationalism",
+        "navigate",
+        "periphery",
+        "place",
+        "plan",
+        "policy",
+        "political",
+        "prescription",
+        "primarily",
+        "process",
+        "rather",
+        "resource",
+        "response",
+        "rethink",
+        "shape",
+        "shift",
+        "since",
+        "skepticism",
+        "social",
+        "southern",
+        "spatial",
+        "strong",
+        "support",
+        "town",
+        "transition",
+        "turkey",
+        "undergo",
+        "union",
+        "unplanned",
+        "von",
+        "worker",
+        "zmo"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
       "title": "Bahari yetu (Our ocean/genre) – A Matrifocal Anthropological Study of Oral Archives and Embodied Knowledge Practices Along the Swahili Coast",
       "url": "https://www.zmo.de/en/research/lives-ecology/jasmin-mahazi-lives-and-ecologies",
       "text": "Bahari yetu (Our ocean/genre) – A Matrifocal Anthropological Study of Oral Archives and Embodied Knowledge Practices Along the Swahili Coast",
@@ -28649,6 +29536,58 @@
         "try",
         "warm",
         "west"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "“Shoot that Elephant”: Anthropology of Inter-Species Entanglements in Kerala, South India",
+      "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-thanzeel-nazer-lebenswege-und-oekologien",
+      "text": "“Shoot that Elephant”: Anthropology of Inter-Species Entanglements in Kerala, South India",
+      "terms": [
+        "anthropology",
+        "elephant",
+        "entanglement",
+        "india",
+        "kerala",
+        "shoot",
+        "south"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "“Shoot that Elephant”: Anthropology of Inter-Species Entanglements in Kerala, South India",
+      "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-thanzeel-nazer-lebenswege-und-oekologien",
+      "text": "Drawing from twenty-four months of ethnographic fieldwork in forest-frontier villages of Kerala, my project asks how initiatives aimed at promoting equality among humans deepen tensions between humans and non-humans. Second, it asks how an event of human-wildlife conflict becomes imprinted in people’s everyday lives. This project locates the formation of multispecies entanglements through agrarian transition, modernity, and state-making.",
+      "terms": [
+        "agrarian",
+        "among",
+        "ask",
+        "become",
+        "conflict",
+        "deepen",
+        "draw",
+        "entanglement",
+        "equality",
+        "ethnographic",
+        "event",
+        "everyday",
+        "fieldwork",
+        "formation",
+        "human",
+        "imprint",
+        "initiative",
+        "kerala",
+        "life",
+        "locate",
+        "modernity",
+        "month",
+        "multispecies",
+        "people",
+        "promote",
+        "second",
+        "tension",
+        "transition",
+        "village"
       ]
     },
     {
@@ -29975,6 +30914,110 @@
         "viable",
         "vulnerability",
         "write"
+      ]
+    },
+    {
+      "unit": "Religion-Intellectual-Culture",
+      "title": "Women’s Education and the Transformation of Religious and National Identities during the Reza Shah Pahlavi Era",
+      "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/translate-to-english-saeede-soltanimoghadam-religion-und-intellektuelle-kultur",
+      "text": "Women’s Education and the Transformation of Religious and National Identities during the Reza Shah Pahlavi Era",
+      "terms": [
+        "education",
+        "era",
+        "identity",
+        "national",
+        "pahlavi",
+        "religious",
+        "reza",
+        "shah",
+        "transformation",
+        "woman"
+      ]
+    },
+    {
+      "unit": "Religion-Intellectual-Culture",
+      "title": "Women’s Education and the Transformation of Religious and National Identities during the Reza Shah Pahlavi Era",
+      "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/translate-to-english-saeede-soltanimoghadam-religion-und-intellektuelle-kultur",
+      "text": "This project examines the role of women’s education in the transformation of religious and national identities in Iran during the reign of Reza Shah Pahlavi (1925–1941). It focuses on the expansion of girls’ education, the establishment of new educational institutions, and changes in educational content as important aspects of the modernization and nation-building processes of the period.",
+      "terms": [
+        "aspect",
+        "change",
+        "content",
+        "education",
+        "educational",
+        "establishment",
+        "expansion",
+        "girl",
+        "identity",
+        "important",
+        "institution",
+        "iran",
+        "modernization",
+        "national",
+        "pahlavi",
+        "period",
+        "process",
+        "reign",
+        "religious",
+        "reza",
+        "role",
+        "shah",
+        "transformation",
+        "woman"
+      ]
+    },
+    {
+      "unit": "Religion-Intellectual-Culture",
+      "title": "Women’s Education and the Transformation of Religious and National Identities during the Reza Shah Pahlavi Era",
+      "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/translate-to-english-saeede-soltanimoghadam-religion-und-intellektuelle-kultur",
+      "text": "The research explores how educational reforms shaped the representation of women and contributed to changing understandings of religion, morality, patriotism, citizenship, and women’s social roles. It particularly examines how education contributed to the redefinition of religious and national identities and to the formation of new forms of social and national belonging among Iranian women.",
+      "terms": [
+        "among",
+        "belong",
+        "change",
+        "citizenship",
+        "contribute",
+        "education",
+        "educational",
+        "form",
+        "formation",
+        "identity",
+        "iranian",
+        "morality",
+        "national",
+        "particularly",
+        "patriotism",
+        "redefinition",
+        "reform",
+        "religion",
+        "religious",
+        "representation",
+        "role",
+        "shape",
+        "social",
+        "understanding",
+        "woman"
+      ]
+    },
+    {
+      "unit": "Religion-Intellectual-Culture",
+      "title": "Women’s Education and the Transformation of Religious and National Identities during the Reza Shah Pahlavi Era",
+      "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/translate-to-english-saeede-soltanimoghadam-religion-und-intellektuelle-kultur",
+      "text": "The project seeks to highlight the role of education not only in the transmission of knowledge but also in the broader cultural and social transformation of Iran during the Reza Shah period.",
+      "terms": [
+        "broader",
+        "cultural",
+        "education",
+        "highlight",
+        "iran",
+        "knowledge",
+        "period",
+        "reza",
+        "role",
+        "shah",
+        "social",
+        "transformation",
+        "transmission"
       ]
     },
     {
@@ -31446,5 +32489,5 @@
       ]
     }
   ],
-  "datasetId": "6c872f3b39d08d6f"
+  "datasetId": "9023a9c937c428ac"
 }

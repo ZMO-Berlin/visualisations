@@ -4,20 +4,20 @@
     "size": 21
   },
   {
+    "text": "life",
+    "size": 20
+  },
+  {
     "text": "oil",
     "size": 20
   },
   {
-    "text": "life",
-    "size": 19
+    "text": "social",
+    "size": 16
   },
   {
     "text": "change",
     "size": 15
-  },
-  {
-    "text": "social",
-    "size": 14
   },
   {
     "text": "care",
@@ -36,6 +36,14 @@
     "size": 12
   },
   {
+    "text": "process",
+    "size": 11
+  },
+  {
+    "text": "conflict",
+    "size": 11
+  },
+  {
     "text": "context",
     "size": 11
   },
@@ -44,19 +52,15 @@
     "size": 11
   },
   {
-    "text": "process",
-    "size": 10
-  },
-  {
     "text": "mobility",
     "size": 10
   },
   {
-    "text": "conflict",
+    "text": "global",
     "size": 10
   },
   {
-    "text": "global",
+    "text": "climate",
     "size": 10
   },
   {
@@ -66,6 +70,10 @@
   {
     "text": "refugee",
     "size": 10
+  },
+  {
+    "text": "political",
+    "size": 9
   },
   {
     "text": "practice",
@@ -88,15 +96,19 @@
     "size": 9
   },
   {
+    "text": "human",
+    "size": 8
+  },
+  {
+    "text": "resource",
+    "size": 8
+  },
+  {
     "text": "war",
     "size": 8
   },
   {
     "text": "relation",
-    "size": 8
-  },
-  {
-    "text": "political",
     "size": 8
   },
   {
@@ -112,11 +124,19 @@
     "size": 8
   },
   {
+    "text": "people",
+    "size": 8
+  },
+  {
     "text": "live",
     "size": 7
   },
   {
     "text": "displace",
+    "size": 7
+  },
+  {
+    "text": "community",
     "size": 7
   },
   {
@@ -128,11 +148,11 @@
     "size": 7
   },
   {
-    "text": "people",
+    "text": "build",
     "size": 7
   },
   {
-    "text": "build",
+    "text": "transition",
     "size": 7
   },
   {
@@ -156,15 +176,11 @@
     "size": 7
   },
   {
-    "text": "human",
-    "size": 6
-  },
-  {
     "text": "together",
     "size": 6
   },
   {
-    "text": "resource",
+    "text": "livelihood",
     "size": 6
   },
   {
@@ -180,7 +196,7 @@
     "size": 6
   },
   {
-    "text": "community",
+    "text": "draw",
     "size": 6
   },
   {
@@ -189,10 +205,6 @@
   },
   {
     "text": "state",
-    "size": 6
-  },
-  {
-    "text": "climate",
     "size": 6
   },
   {
@@ -228,7 +240,7 @@
     "size": 5
   },
   {
-    "text": "livelihood",
+    "text": "shape",
     "size": 5
   },
   {
@@ -252,6 +264,14 @@
     "size": 5
   },
   {
+    "text": "actor",
+    "size": 5
+  },
+  {
+    "text": "ask",
+    "size": 5
+  },
+  {
     "text": "transformation",
     "size": 5
   },
@@ -261,6 +281,22 @@
   },
   {
     "text": "affect",
+    "size": 5
+  },
+  {
+    "text": "economic",
+    "size": 5
+  },
+  {
+    "text": "justice",
+    "size": 5
+  },
+  {
+    "text": "south",
+    "size": 5
+  },
+  {
+    "text": "become",
     "size": 5
   },
   {
@@ -300,6 +336,14 @@
     "size": 5
   },
   {
+    "text": "place",
+    "size": 5
+  },
+  {
+    "text": "european",
+    "size": 5
+  },
+  {
     "text": "million",
     "size": 5
   },
@@ -310,10 +354,6 @@
   {
     "text": "ocean",
     "size": 5
-  },
-  {
-    "text": "shape",
-    "size": 4
   },
   {
     "text": "ecological",
@@ -352,51 +392,11 @@
     "size": 4
   },
   {
-    "text": "actor",
-    "size": 4
-  },
-  {
-    "text": "draw",
-    "size": 4
-  },
-  {
     "text": "land",
     "size": 4
   },
   {
-    "text": "economic",
-    "size": 4
-  },
-  {
-    "text": "justice",
-    "size": 4
-  },
-  {
     "text": "dream",
-    "size": 4
-  },
-  {
-    "text": "stability",
-    "size": 4
-  },
-  {
-    "text": "growth",
-    "size": 4
-  },
-  {
-    "text": "south",
-    "size": 4
-  },
-  {
-    "text": "become",
-    "size": 4
-  },
-  {
-    "text": "egypt",
-    "size": 4
-  },
-  {
-    "text": "moral",
     "size": 4
   }
 ]

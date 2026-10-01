@@ -38,6 +38,14 @@ When Anonymity is No Longer Enough: 'Fictionalization' as a New Way of Writing E
 
 This project investigates how contemporary regimes of data tracking and algorithmic identification reshape notions of anonymity, privacy, and control in ethnographic writing. While anonymity has long been a concern in research ethics, today’s data-driven infrastructures render true anonymity increasingly fragile. The research examines how tracking technologies, originally designed for targeted advertising and behavioral prediction, produce new forms of social control and vulnerability, particularly in contexts of rising authoritarianism. By analyzing data points within ethnographic texts, the project explores how dispersed digital traces are recombined into powerful mechanisms of identification and governance. Ultimately, it aims to theorize how ethnographic texts can be written in ways that disperse personas, times, and places to avoid being corroborated as data points. Can one still write in ways that make it impossible for AI to identify a person? What degree of fictionalization is necessary and viable in each specific case under discussion?
 
+Women’s Education and the Transformation of Religious and National Identities during the Reza Shah Pahlavi Era
+
+This project examines the role of women’s education in the transformation of religious and national identities in Iran during the reign of Reza Shah Pahlavi (1925–1941). It focuses on the expansion of girls’ education, the establishment of new educational institutions, and changes in educational content as important aspects of the modernization and nation-building processes of the period.
+
+The research explores how educational reforms shaped the representation of women and contributed to changing understandings of religion, morality, patriotism, citizenship, and women’s social roles. It particularly examines how education contributed to the redefinition of religious and national identities and to the formation of new forms of social and national belonging among Iranian women.
+
+The project seeks to highlight the role of education not only in the transmission of knowledge but also in the broader cultural and social transformation of Iran during the Reza Shah period.
+
 The Ghadames Heritage Project
 
 Digitization and Heritage Protection: Ghadames as a Laboratory of Community-Based and Collaborative Strategies

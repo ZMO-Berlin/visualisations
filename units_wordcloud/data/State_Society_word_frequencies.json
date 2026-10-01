@@ -1,27 +1,31 @@
 [
   {
     "text": "history",
-    "size": 33
+    "size": 37
   },
   {
     "text": "social",
     "size": 28
   },
   {
+    "text": "state",
+    "size": 26
+  },
+  {
+    "text": "south",
+    "size": 26
+  },
+  {
     "text": "night",
     "size": 25
   },
   {
-    "text": "state",
-    "size": 24
-  },
-  {
-    "text": "south",
-    "size": 24
-  },
-  {
     "text": "soviet",
-    "size": 23
+    "size": 24
+  },
+  {
+    "text": "local",
+    "size": 22
   },
   {
     "text": "time",
@@ -29,14 +33,18 @@
   },
   {
     "text": "historical",
-    "size": 20
+    "size": 21
   },
   {
-    "text": "local",
-    "size": 20
+    "text": "asia",
+    "size": 21
   },
   {
     "text": "practice",
+    "size": 19
+  },
+  {
+    "text": "modern",
     "size": 19
   },
   {
@@ -44,11 +52,7 @@
     "size": 19
   },
   {
-    "text": "asia",
-    "size": 19
-  },
-  {
-    "text": "modern",
+    "text": "political",
     "size": 18
   },
   {
@@ -56,7 +60,11 @@
     "size": 17
   },
   {
-    "text": "political",
+    "text": "justice",
+    "size": 17
+  },
+  {
+    "text": "work",
     "size": 17
   },
   {
@@ -64,27 +72,27 @@
     "size": 17
   },
   {
+    "text": "global",
+    "size": 17
+  },
+  {
     "text": "woman",
     "size": 17
   },
   {
-    "text": "work",
-    "size": 16
-  },
-  {
-    "text": "global",
-    "size": 16
-  },
-  {
     "text": "group",
-    "size": 15
+    "size": 16
   },
   {
     "text": "past",
-    "size": 15
+    "size": 16
   },
   {
     "text": "national",
+    "size": 15
+  },
+  {
+    "text": "russian",
     "size": 15
   },
   {
@@ -100,15 +108,15 @@
     "size": 14
   },
   {
-    "text": "justice",
-    "size": 14
-  },
-  {
-    "text": "russian",
+    "text": "kyrgyzstan",
     "size": 14
   },
   {
     "text": "india",
+    "size": 13
+  },
+  {
+    "text": "material",
     "size": 13
   },
   {
@@ -132,11 +140,23 @@
     "size": 13
   },
   {
+    "text": "memory",
+    "size": 12
+  },
+  {
     "text": "change",
     "size": 12
   },
   {
     "text": "early",
+    "size": 12
+  },
+  {
+    "text": "life",
+    "size": 12
+  },
+  {
+    "text": "archive",
     "size": 12
   },
   {
@@ -149,6 +169,10 @@
   },
   {
     "text": "actor",
+    "size": 11
+  },
+  {
+    "text": "shape",
     "size": 11
   },
   {
@@ -168,7 +192,7 @@
     "size": 11
   },
   {
-    "text": "material",
+    "text": "period",
     "size": 11
   },
   {
@@ -176,15 +200,7 @@
     "size": 11
   },
   {
-    "text": "life",
-    "size": 11
-  },
-  {
     "text": "entanglement",
-    "size": 11
-  },
-  {
-    "text": "archive",
     "size": 11
   },
   {
@@ -196,19 +212,7 @@
     "size": 11
   },
   {
-    "text": "kyrgyzstan",
-    "size": 11
-  },
-  {
     "text": "context",
-    "size": 10
-  },
-  {
-    "text": "memory",
-    "size": 10
-  },
-  {
-    "text": "shape",
     "size": 10
   },
   {
@@ -225,6 +229,14 @@
   },
   {
     "text": "case",
+    "size": 10
+  },
+  {
+    "text": "legal",
+    "size": 10
+  },
+  {
+    "text": "imperial",
     "size": 10
   },
   {
@@ -268,11 +280,11 @@
     "size": 9
   },
   {
-    "text": "period",
+    "text": "urban",
     "size": 9
   },
   {
-    "text": "urban",
+    "text": "everyday",
     "size": 9
   },
   {
@@ -292,16 +304,12 @@
     "size": 9
   },
   {
-    "text": "imperial",
-    "size": 9
-  },
-  {
-    "text": "legal",
-    "size": 9
-  },
-  {
     "text": "production",
     "size": 9
+  },
+  {
+    "text": "form",
+    "size": 8
   },
   {
     "text": "relationship",
@@ -360,6 +368,10 @@
     "size": 8
   },
   {
+    "text": "see",
+    "size": 8
+  },
+  {
     "text": "power",
     "size": 8
   },
@@ -376,27 +388,15 @@
     "size": 8
   },
   {
-    "text": "form",
-    "size": 7
-  },
-  {
     "text": "individual",
     "size": 7
   },
   {
+    "text": "development",
+    "size": 7
+  },
+  {
     "text": "year",
-    "size": 7
-  },
-  {
-    "text": "nationalism",
-    "size": 7
-  },
-  {
-    "text": "country",
-    "size": 7
-  },
-  {
-    "text": "activity",
     "size": 7
   }
 ]

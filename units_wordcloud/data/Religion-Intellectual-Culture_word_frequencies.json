@@ -5,7 +5,7 @@
   },
   {
     "text": "religious",
-    "size": 24
+    "size": 27
   },
   {
     "text": "islamic",
@@ -16,12 +16,12 @@
     "size": 20
   },
   {
-    "text": "practice",
-    "size": 17
+    "text": "social",
+    "size": 18
   },
   {
-    "text": "social",
-    "size": 15
+    "text": "practice",
+    "size": 17
   },
   {
     "text": "context",
@@ -29,7 +29,7 @@
   },
   {
     "text": "religion",
-    "size": 13
+    "size": 14
   },
   {
     "text": "islam",
@@ -40,12 +40,16 @@
     "size": 12
   },
   {
-    "text": "digital",
+    "text": "knowledge",
     "size": 12
   },
   {
-    "text": "knowledge",
-    "size": 11
+    "text": "education",
+    "size": 12
+  },
+  {
+    "text": "digital",
+    "size": 12
   },
   {
     "text": "life",
@@ -77,6 +81,10 @@
   },
   {
     "text": "work",
+    "size": 9
+  },
+  {
+    "text": "role",
     "size": 9
   },
   {
@@ -124,7 +132,11 @@
     "size": 7
   },
   {
-    "text": "education",
+    "text": "change",
+    "size": 7
+  },
+  {
+    "text": "national",
     "size": 7
   },
   {
@@ -188,6 +200,14 @@
     "size": 6
   },
   {
+    "text": "form",
+    "size": 6
+  },
+  {
+    "text": "process",
+    "size": 6
+  },
+  {
     "text": "time",
     "size": 6
   },
@@ -200,15 +220,19 @@
     "size": 6
   },
   {
+    "text": "woman",
+    "size": 6
+  },
+  {
     "text": "ai",
     "size": 6
   },
   {
-    "text": "deobandi",
+    "text": "educational",
     "size": 6
   },
   {
-    "text": "role",
+    "text": "deobandi",
     "size": 6
   },
   {
@@ -226,6 +250,10 @@
   {
     "text": "christianity",
     "size": 6
+  },
+  {
+    "text": "shape",
+    "size": 5
   },
   {
     "text": "field",
@@ -260,15 +288,11 @@
     "size": 5
   },
   {
-    "text": "form",
+    "text": "broader",
     "size": 5
   },
   {
-    "text": "process",
-    "size": 5
-  },
-  {
-    "text": "change",
+    "text": "cultural",
     "size": 5
   },
   {
@@ -314,10 +338,6 @@
   {
     "text": "christian",
     "size": 5
-  },
-  {
-    "text": "shape",
-    "size": 4
   },
   {
     "text": "tradition",
@@ -376,27 +396,7 @@
     "size": 4
   },
   {
-    "text": "broader",
-    "size": 4
-  },
-  {
-    "text": "cultural",
-    "size": 4
-  },
-  {
     "text": "traditional",
-    "size": 4
-  },
-  {
-    "text": "value",
-    "size": 4
-  },
-  {
-    "text": "international",
-    "size": 4
-  },
-  {
-    "text": "hassan",
     "size": 4
   }
 ]
