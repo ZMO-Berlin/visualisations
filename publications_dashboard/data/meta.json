@@ -1,7 +1,7 @@
 {
  "source": "https://www.zmo.de/en/publications/publication-search",
  "schemaVersion": 1,
- "datasetId": "95c3c7069581e4de",
+ "datasetId": "c140b6ed4c9f873c",
  "documentTypes": [
   "Monographs",
   "Book reviews",
@@ -14,9 +14,9 @@
   "Working Papers"
  ],
  "counts": {
-  "publications": 1976,
-  "authors": 668,
-  "untyped": 35,
+  "publications": 1979,
+  "authors": 670,
+  "untyped": 36,
   "withoutYear": 9
  },
  "years": {
@@ -154,7 +154,7 @@
   },
   {
    "year": 2026,
-   "count": 45
+   "count": 48
   }
  ]
 }

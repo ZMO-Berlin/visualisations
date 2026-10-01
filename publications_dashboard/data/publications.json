@@ -51,6 +51,19 @@
   "publisher": "Sefsafa Publishing House"
  },
  {
+  "slug": "%E1%83%A5%E1%83%A3%E1%83%A9%E1%83%98%E1%83%A1-%E1%83%90%E1%83%9C%E1%83%A2%E1%83%98%E1%83%A1%E1%83%90%E1%83%91%E1%83%AD%E1%83%9D%E1%83%97%E1%83%90-%E1%83%AC%E1%83%98%E1%83%9C%E1%83%90%E1%83%90%E1%83%A6%E1%83%9B%E1%83%93%E1%83%94%E1%83%92%E1%83%9D%E1%83%91%E1%83%90-%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A8%E1%83%98-anti-soviet-street-resistance-in-georgia",
+  "url": "https://www.zmo.de/en/publications/publication-search/%E1%83%A5%E1%83%A3%E1%83%A9%E1%83%98%E1%83%A1-%E1%83%90%E1%83%9C%E1%83%A2%E1%83%98%E1%83%A1%E1%83%90%E1%83%91%E1%83%AD%E1%83%9D%E1%83%97%E1%83%90-%E1%83%AC%E1%83%98%E1%83%9C%E1%83%90%E1%83%90%E1%83%A6%E1%83%9B%E1%83%93%E1%83%94%E1%83%92%E1%83%9D%E1%83%91%E1%83%90-%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A8%E1%83%98-anti-soviet-street-resistance-in-georgia",
+  "title": "ქუჩის ანტისაბჭოთა წინააღმდეგობა საქართველოში (Anti-Soviet Street Resistance in Georgia)",
+  "subtitle": "სერიის II წიგნი (Book II of the Series)",
+  "authors": [
+   "Sartania, Katie"
+  ],
+  "type": "Monographs",
+  "year": 2026,
+  "publisher": "Artanuji Publishing Hause",
+  "series": "სამეცნიერო გამოცემები, ახალი თაობის ისტორიკოსები (Scientific Publications, New Generation of Historians)"
+ },
+ {
   "slug": "%E9%A9%AC%E6%9D%A5%E4%BA%BA%E7%9A%84%E4%B8%8D%E5%AE%89-malays-insecurity",
   "url": "https://www.zmo.de/en/publications/publication-search/%E9%A9%AC%E6%9D%A5%E4%BA%BA%E7%9A%84%E4%B8%8D%E5%AE%89-malays-insecurity",
   "title": "马来人的不安 (Malays’ Insecurity)",
@@ -410,7 +423,7 @@
    "Bori, Caterina",
    "Holtzman, Livnat"
   ],
-  "type": "Edited volumes",
+  "type": "Contributions to an edited volume",
   "year": 2010,
   "publisher": "Istituto per l'Oriente"
  },
@@ -2418,6 +2431,18 @@
   "doi": "10.1163/15700607-20220010"
  },
  {
+  "slug": "book-review-romain-grancher-la-mer-en-commun-le-monde-de-la-peche-a-dieppe-xviiie-xixe-siecle-editions-de-la-sorbonne-histoire-environnementale",
+  "url": "https://www.zmo.de/en/publications/publication-search/book-review-romain-grancher-la-mer-en-commun-le-monde-de-la-peche-a-dieppe-xviiie-xixe-siecle-editions-de-la-sorbonne-histoire-environnementale",
+  "title": "Rev.: Romain Grancher La mer en commun Le monde de la pêche à Dieppe (XVIIIe-XIXe siècle). Éditions de la Sorbonne, « Histoire environnementale », 2025, 264p",
+  "authors": [
+   "Safronova, Anna"
+  ],
+  "type": "Book reviews",
+  "year": 2026,
+  "journal": "Études",
+  "doi": "10.3917/etu.4337.0134"
+ },
+ {
   "slug": "booka-or-how-one-religion-sees-another-islamic-discourses-on-african-traditional-religion-in-west-africa",
   "url": "https://www.zmo.de/en/publications/publication-search/booka-or-how-one-religion-sees-another-islamic-discourses-on-african-traditional-religion-in-west-africa",
   "title": "Bōkā or how one Religion sees another: Islamic discourses on ‘African Traditional Religion’ in West Africa",
@@ -2965,7 +2990,8 @@
   ],
   "type": "Contributions to an edited volume",
   "year": 2026,
-  "publisher": "Edward Elgar Publishing"
+  "publisher": "Edward Elgar Publishing",
+  "doi": "10.4337/9781035353712.fm6"
  },
  {
   "slug": "circassians-multiple-displacements-homelands-diasporas-diaspora-organisations-1",
@@ -6568,6 +6594,19 @@
   "journal": "Journal for Islamic Studies"
  },
  {
+  "slug": "for-whom-and-for-what-purpose-a-position-paper-on-digital-humanities-and-ai-in-african-studies",
+  "url": "https://www.zmo.de/en/publications/publication-search/for-whom-and-for-what-purpose-a-position-paper-on-digital-humanities-and-ai-in-african-studies",
+  "title": "For Whom and For What Purpose? A Position Paper on Digital Humanities and AI in African Studies",
+  "authors": [
+   "Madore, Frédérick",
+   "Hiribarren, Vincent"
+  ],
+  "year": 2026,
+  "publisher": "Leibniz-Zentrum Moderner Orient",
+  "series": "ZMO Programmatic Texts, 16",
+  "doi": "10.58144/20260827-000"
+ },
+ {
   "slug": "foreign-agendas-and-iskenderiyan-standards-fragments-of-a-shared-work",
   "url": "https://www.zmo.de/en/publications/publication-search/foreign-agendas-and-iskenderiyan-standards-fragments-of-a-shared-work",
   "title": "Foreign Agendas and Iskenderiyan Standards - Fragments of a Shared Work",
@@ -6976,6 +7015,19 @@
   "journal": "Communist and Post-Communist Studies",
   "publisher": "University of California Press",
   "doi": "10.1525/cpcs.2026.2712389"
+ },
+ {
+  "slug": "from-pasture-to-forest-zone",
+  "url": "https://www.zmo.de/en/publications/publication-search/from-pasture-to-forest-zone",
+  "title": "From Pasture to Forest Zone: Forest Project, Mobile Pastoralism, and the Environmental Policy of the Russian Empire in Central Asia (1898–1908)",
+  "authors": [
+   "Bazarbaev, Akmal"
+  ],
+  "type": "Journal articles",
+  "year": 2026,
+  "journal": "Journal of Central Asian History",
+  "publisher": "Brill",
+  "doi": "10.1163/27728668-20260001"
  },
  {
   "slug": "from-private-database-to-public-resource-to-a-testing-ground-for-ai-methods",
@@ -8996,7 +9048,7 @@
   "authors": [
    "Determann, Jörg Matthias"
   ],
-  "type": "Other publications",
+  "type": "Contributions to an edited volume",
   "year": 2012,
   "journal": "University of London",
   "publisher": "London"
@@ -13878,7 +13930,7 @@
   "authors": [
    "Raza, Ali"
   ],
-  "type": "Edited volumes",
+  "type": "Contributions to an edited volume",
   "year": 2013,
   "publisher": "Oxford University Press"
  },
@@ -18843,19 +18895,6 @@
   "year": 2009
  },
  {
-  "slug": "street-artsoviet-resistance-in-georgia-double-protest-1921-1989",
-  "url": "https://www.zmo.de/en/publications/publication-search/street-artsoviet-resistance-in-georgia-double-protest-1921-1989",
-  "title": "ქუჩის ანტისაბჭოთა წინააღმდეგობა საქართველოში (Street Art Soviet Resistance in Georgia: Double Protest 1921-1989)",
-  "subtitle": "სერიის II წიგნი (Book II of the Series)",
-  "authors": [
-   "Sartania, Katie"
-  ],
-  "type": "Monographs",
-  "year": 2026,
-  "publisher": "Artanuji Publishing Hause",
-  "series": "სამეცნიერო გამოცემები, ახალი თაობის ისტორიკოსები (Scientific Publications, New Generation of Historians)"
- },
- {
   "slug": "street-children-as-a-transgression-in-the-new-bourgeois-urban-space",
   "url": "https://www.zmo.de/en/publications/publication-search/street-children-as-a-transgression-in-the-new-bourgeois-urban-space",
   "title": "Street Children as a Transgression in the New Bourgeois Urban Space",
@@ -23034,7 +23073,7 @@
    "Roche, Sophie",
    "Hohmann, Sophie"
   ],
-  "type": "Journal articles",
+  "type": "Contributions to an edited volume",
   "year": 2012,
   "publisher": "Routledge"
  },
