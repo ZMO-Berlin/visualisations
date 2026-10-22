@@ -6,7 +6,7 @@ Two static web apps built from data scraped from the
 | App | What it shows | Lives in | Published at |
 | --- | --- | --- | --- |
 | **Word cloud** | The most frequent terms in each research unit's description and project abstracts | `units_wordcloud/` | [/units_wordcloud/](https://zmo-berlin.github.io/visualisations/units_wordcloud/) |
-| **Publications dashboard** | The publication register — output per year, research themes, document types, authors, languages, open access, co-authorship, journals and publishers, collaborating institutions and citations | `publications_dashboard/` | [/publications_dashboard/](https://zmo-berlin.github.io/visualisations/publications_dashboard/) |
+| **Publications dashboard** | The publication register — output per year, research themes, regions studied, document types, authors, languages, open access, library subject headings, co-authorship, journals and publishers, collaborating institutions and citations | `publications_dashboard/` | [/publications_dashboard/](https://zmo-berlin.github.io/visualisations/publications_dashboard/) |
 
 The site root is a landing page that introduces the two and links to them, in
 English and German. The Deploy Pages workflow validates `main` and publishes an
@@ -78,13 +78,19 @@ data_prep/                   Offline data pipelines (Python)
   enrich_openalex.py         register -> OpenAlex matches, citations -> openalex.json
   build_themes.py            titles -> embeddings -> themes and map -> themes.json
   gemma_encoder.py           EmbeddingGemma 2 (ONNX, fp32) for build_themes.py
+  fetch_subjects.py          books' ISBNs -> GND subject headings -> subjects.json
+  regions.py                 Places named in titles and abstracts; --report for review
+  gazetteer_check.py         Checks gazetteer ids on Wikidata -> places.json
+  titles.py                  A title without its formulas and a review's imprint
   languages.py               Language of a title (Lingua plus register-specific rules)
   people.py                  Register author <-> people page, by name
   dashboard_extras.py        The enrichment layers of the dashboard dataset
   generate_publication_data.py   publications.json + layers -> dashboard dataset
   aliases.json               Hand-curated spelling merges (typos, renamed venues)
   theme_labels.json          Theme names, written by Claude Opus 5.5 from the brief
-  reports/                   Not deployed: OpenAlex gap report, theme brief
+  gazetteer.json             Hand-curated places: names in three languages, regions
+  regions_review.json        Review decisions on ambiguous place names
+  reports/                   Not deployed: OpenAlex gaps, theme brief, regions review
   raw_data/                  Scraper output, committed for readable diffs
     <Unit>.txt               One file per research unit
     units.json               Manifest of what the unit scraper collected
@@ -92,6 +98,8 @@ data_prep/                   Offline data pipelines (Python)
     people.json              People pages: position, current units, ORCID
     openalex.json            OpenAlex matches, references and citations
     themes.json              Theme, area and map position of every publication
+    places.json              Wikidata labels and coordinates of gazetteer places
+    subjects.json            GND headings of the register's books
 
 units_wordcloud/             Word cloud app (static)
 publications_dashboard/      Publications dashboard app (static)
@@ -384,6 +392,11 @@ field is not ranked beside them: it is filled on 192 of 1,976 records and holds
 still what names the venue on a working paper in the list below, and is still
 searched.
 
+A year slider under the timeline sets the same range as the From/To selects;
+the author timelines are a heatmap on one scale; and every chart panel has a
+full-screen button. When the dashboard is embedded, the `<iframe>` needs
+`allow="fullscreen"` for that button to appear.
+
 Both language pages accept `?debug`, which logs every state transition to the
 console.
 
@@ -397,8 +410,9 @@ a missing input leaves its fields out.
 python data_prep/scrape_publications.py          # zmo.de -> data_prep/raw_data/publications.json
 python data_prep/scrape_people.py                # zmo.de -> data_prep/raw_data/people.json
 python data_prep/enrich_openalex.py              # OpenAlex -> data_prep/raw_data/openalex.json
+python data_prep/fetch_subjects.py               # lobid + DNB -> data_prep/raw_data/subjects.json
 python data_prep/build_themes.py                 # titles -> data_prep/raw_data/themes.json (requirements-themes.txt)
-python data_prep/generate_publication_data.py    # -> publications_dashboard/data/*.json
+python data_prep/generate_publication_data.py    # -> publications_dashboard/data/*.json (places matched here)
 ```
 
 ### Stage 1 — `scrape_publications.py`
@@ -583,6 +597,8 @@ measurements that shaped them are in
 | OpenAlex | [OpenAlex](https://openalex.org) (CC0) | 833 of 1,976 publications matched | open access, institutions, citations |
 | Language | titles, [Lingua](https://github.com/pemistahl/lingua-py) | 1,638 of 1,976 determined | language ranking, languages over time |
 | Themes | [EmbeddingGemma 2](https://huggingface.co/google/embeddinggemma-2), names by Claude Opus 5.5 | every publication | map, theme ranking, themes over time |
+| Places | `gazetteer.json` (206 places), coordinates from Wikidata | 1,367 of 1,979 name a place | world map, place ranking, regions over time |
+| Subject headings | GND, via [lobid](https://lobid.org/resources) and the [DNB](https://www.dnb.de) (CC0) | 133 of 245 books with an ISBN | heading ranking, list tags |
 
 The secondary dashboard files (`themes.json`, `openalex.json`) refer to
 records by their position in `publications.json` and carry the dataset id they
@@ -665,6 +681,11 @@ under the map. Each label carries a signature of the membership it was written
 for, and the generator refuses labels whose signature no longer matches, so a
 re-fit cannot ship old names on new groups.
 
+**Recording a review.** Anyone at ZMO can review the names: edit the `en`/`de`
+labels and descriptions in `theme_labels.json` (keep each `signature`), then set
+`"reviewed": {"by": "Name", "date": "YYYY-MM-DD"}`. The note under the map then
+names the reviewer instead of saying the names are unreviewed.
+
 Day to day the fit is kept: the *Update themes* workflow embeds new
 publications and gives each the theme with the nearest centroid and a place
 beside its most similar neighbours. A re-fit is a deliberate local act:
@@ -678,6 +699,49 @@ On Windows on ARM, numba (used by UMAP) crashes inside LLVM; use an x64 Python.
 Embedding is several times faster with four onnxruntime threads than with all
 cores on a hybrid-core laptop (`--threads`, default 4). Embeddings are cached in
 `data_prep/.cache/`, which is not committed.
+
+### Places — `regions.py`
+
+The register records no place, so places are found by name. `gazetteer.json` is
+hand-curated: 206 countries, regions, cities, seas and historical polities, each
+with a Wikidata id, its names in English, German and French, and the adjectives
+and demonyms titles use ("syrisch*" catches syrische, syrischen…), grouped into
+eight regions — the categorical palette's limit — plus a grey transregional
+group for continents, seas and "worlds". Every id was checked against Wikidata
+with `gazetteer_check.py`, which caught 35 wrong ones (an id from memory had put
+Niamey in Kampala) and writes the coordinates the map uses.
+
+Matching reads titles, subtitles and, where the register has one, abstracts;
+abstracts were deliberately not used for themes, but for places they are the
+better evidence, and the dashboard says that records with an abstract therefore
+show more places. The longest name wins ("Indian Ocean" is not India, "Niger
+Delta" is Nigeria); hyphenated words count every part ("Syrian-Turkish");
+institution names and the like are removed first ("ZMO Berlin", "Gulf of
+Guinea", "Middle Ages"); a review's imprint is never a place. Demonyms that are
+mostly languages or ethnonyms were left out after reading the matches —
+"French", "Chinese Muslims in Indonesia", "Armenian" for the genocide in the
+Ottoman Empire.
+
+**Review.** `python data_prep/regions.py --report` writes
+`reports/regions-review.md`: every place's count, every match of the five names
+marked ambiguous (Benin, Georgia, Jordan, Medina, Tripoli) in context, and a
+seeded sample per region. All 46 ambiguous matches were read and decided in
+`regions_review.json` — three rejected: an author called Daniel Jordan Smith, the
+medina (old town) of Tunis, and *al-madīna*, "the city". The review was done by
+Claude Opus 5.5 and the dashboard says so; a new ambiguous match after a monthly
+refresh keeps the default and is listed as unreviewed rather than failing the
+run. Researchers' stated regional focus on zmo.de is matched with the same list
+and shown beside the map.
+
+### Subject headings — `fetch_subjects.py`
+
+Monographs and edited volumes with an ISBN are looked up in the hbz union
+catalogue (lobid) and the German National Library (SRU, MARC21) and their GND
+headings merged. A catalogue record counts only if its own ISBNs include the
+one asked for and it shares a word with the register's title — which caught one
+ISBN in the register belonging to a different book. Machine-assigned DNB
+headings are dropped. Chapters are out of scope: a volume's headings do not
+describe a chapter. Headings are in German, as the catalogues give them.
 
 ## Shared pipeline code
 
@@ -805,10 +869,13 @@ website; crawling is a separate, explicit pipeline operation.
 
 ## Third-party code
 
-[d3](https://d3js.org/) and [d3-cloud](https://github.com/jasondavies/d3-cloud)
-are loaded from jsDelivr, pinned to exact versions and protected with
-subresource-integrity hashes. Both apps pin the same d3 build, so a visitor to
-both downloads it once.
+[d3](https://d3js.org/), [d3-cloud](https://github.com/jasondavies/d3-cloud) and
+[topojson-client](https://github.com/topojson/topojson-client) are loaded from
+jsDelivr, pinned to exact versions and protected with subresource-integrity
+hashes. Both apps pin the same d3 build, so a visitor to both downloads it once.
+The regions map's country outlines, `shared/geo/countries-110m.json`, are
+[world-atlas](https://github.com/topojson/world-atlas) 2.0.2 (ISC), derived from
+public-domain Natural Earth data, and are served from the site.
 
 [Newsreader](https://fonts.google.com/specimen/Newsreader) and
 [Instrument Sans](https://fonts.google.com/specimen/Instrument+Sans) are served
@@ -842,7 +909,9 @@ material are the institute's, and the CC BY grant rests on this repository
 being published by the institute itself. `raw_data/openalex.json` holds
 OpenAlex metadata, which OpenAlex releases under CC0. The theme names in
 `theme_labels.json` were generated by Claude Opus 5.5 and are marked as such
-wherever they are shown.
+wherever they are shown. `raw_data/subjects.json` holds catalogue data from the
+hbz and the German National Library, both released under CC0, and
+`raw_data/places.json` Wikidata labels and coordinates (CC0).
 
 Two things are excluded from both. The bundled Newsreader and Instrument Sans
 typefaces in `shared/fonts/` are third-party, under the SIL Open Font License.

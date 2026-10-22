@@ -1,0 +1,6830 @@
+{
+ "sources": {
+  "lobid": "https://lobid.org/resources",
+  "dnb": "https://services.dnb.de/sru/dnb"
+ },
+ "coverage": {
+  "books": 245,
+  "with_valid_isbn": 238,
+  "matched": 185,
+  "matched_by": {
+   "lobid": 172,
+   "dnb": 111
+  },
+  "with_subjects": 133
+ },
+ "books": {
+  "a-bridgehead-to-africa": {
+   "isbn": [
+    "9783110684964"
+   ],
+   "fp": "49900625f1",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1211753956"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99371312474806441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4757098-2",
+     "label": "Tripolis (Libyen, Region)",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4011882-4",
+     "label": "Deutschland",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4003846-4",
+     "label": "Außenpolitik",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4039305-7",
+     "label": "Militär",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4066399-1",
+     "label": "Wirtschaft",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4073624-6",
+     "label": "Kolonialismus",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "325.34309612"
+   ]
+  },
+  "a-geography-of-jihad-1": {
+   "isbn": [
+    "9783110675276"
+   ],
+   "fp": "1cbbce1832",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990369493930206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99376253438706441"
+    }
+   ],
+   "ddc": [
+    "297.7209"
+   ]
+  },
+  "against-the-fetishisation-of-plural-time": {
+   "isbn": [
+    "9783111696492",
+    "9783111697215"
+   ],
+   "fp": "3799337c2d",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/135371778X"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1369204205"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99375674805006441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4067461-7",
+     "label": "Zeit",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4563270-4",
+     "label": "Soziale Konstruktion",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4020531-9",
+     "label": "Geschichtsschreibung",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "304.237"
+   ]
+  },
+  "akteure-des-wandels": {
+   "isbn": [
+    "9783860932988"
+   ],
+   "fp": "f2897f75ab",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/960468838"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990117258750206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4033569-0",
+     "label": "Kulturkontakt",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "al-jazeera-vor-ort": {
+   "isbn": [
+    "9783865962287"
+   ],
+   "fp": "2c2da44ce8",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/993181678"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990174290880206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4005728-8",
+     "label": "Berlin",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4699478-6",
+     "label": "Al-Jazeera",
+     "type": "CorporateBody"
+    },
+    {
+     "id": "4143584-9",
+     "label": "Auslandskorrespondent",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4253135-4",
+     "label": "Berufsethik",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4005709-4",
+     "label": "Berichterstattung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4044660-8",
+     "label": "Paris",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4015602-3",
+     "label": "Ethik",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "070.43320943155"
+   ]
+  },
+  "alltagsmobilitaeten": {
+   "isbn": [
+    "9783899429282"
+   ],
+   "fp": "da66cb830a",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/998765465"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990189361420206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4037680-1",
+     "label": "Marokko",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4034026-0",
+     "label": "Ländlicher Raum",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4034929-9",
+     "label": "Lebenswelt",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4318539-3",
+     "label": "Sozioökonomischer Wandel",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4557997-0",
+     "label": "Globalisierung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4034288-8",
+     "label": "Landflucht",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "307.720964"
+   ]
+  },
+  "amerika-in-afrika": {
+   "isbn": [
+    "9783879976102"
+   ],
+   "fp": "ce49a154ee",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/966230833"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990155664180206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4001670-5",
+     "label": "Amerika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4133133-3",
+     "label": "Afrikabild",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4116433-7",
+     "label": "Schwarze",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "anmerkungen-zur-historizitaet-des-krishna": {
+   "isbn": [
+    "9783638915700"
+   ],
+   "fp": "533d3df961",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1006200320"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990194790460206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "118724479",
+     "label": "Krischna",
+     "type": "Person"
+    }
+   ],
+   "ddc": [
+    "390"
+   ]
+  },
+  "arabische-zeitenwende": {
+   "isbn": [
+    "9783838902432"
+   ],
+   "fp": "9a974e4795",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1021188239"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990191082030206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4068789-2",
+     "label": "Arabische Staaten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4003554-2",
+     "label": "Aufstand",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "961.05"
+   ]
+  },
+  "articulating-islam": {
+   "isbn": [
+    "9789400742666"
+   ],
+   "fp": "aeec334513",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990204915710206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4020588-5",
+     "label": "Gesellschaft",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "aufbruch-ins-postkoloniale-zeitalter": {
+   "isbn": [
+    "9783593397603"
+   ],
+   "fp": "c0e89d7f06",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1022501542"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990191745220206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4003860-9",
+     "label": "Außereuropäische Länder",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4557997-0",
+     "label": "Globalisierung",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "303.409042"
+   ]
+  },
+  "ausstellen-verorten-partizipieren": {
+   "isbn": [
+    "9783863311988"
+   ],
+   "fp": "5ef4a7fd26",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1051393264"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990205908010206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "1060931109",
+     "label": "Musée du judaïsme marocain",
+     "type": "CorporateBody"
+    },
+    {
+     "id": "4037680-1",
+     "label": "Marokko",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4028808-0",
+     "label": "Juden",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4020588-5",
+     "label": "Gesellschaft",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4137492-7",
+     "label": "Repräsentation",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "909.0492400746438",
+    "900"
+   ]
+  },
+  "between-social-skills-and-marketable-skills": {
+   "isbn": [
+    "9789004175426"
+   ],
+   "fp": "8b8eac8de8",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990177108690206441"
+    }
+   ],
+   "ddc": [
+    "371.077"
+   ]
+  },
+  "blogging-in-beirut": {
+   "isbn": [
+    "9783837641424"
+   ],
+   "fp": "3ab57ede2c",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1140129074"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990223000050206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4005348-9",
+     "label": "Beirut",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "1028592418",
+     "label": "Blogger",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4040364-6",
+     "label": "Motivation",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4077349-8",
+     "label": "Selbstbild",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4134262-8",
+     "label": "Politische Kommunikation",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4043183-6",
+     "label": "Öffentlichkeit",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "302.23140956925"
+   ]
+  },
+  "bombay-islam": {
+   "isbn": [
+    "9780511975165"
+   ],
+   "fp": "5330dc9446",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991014098832406445"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370670607806441"
+    }
+   ],
+   "ddc": [
+    "330.954792031"
+   ]
+  },
+  "brave-men-pretty-women": {
+   "isbn": [
+    "9783938712030"
+   ],
+   "fp": "5dfefe9b43",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1013865073"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990180207550206441"
+    }
+   ],
+   "ddc": [
+    "305.3095672"
+   ]
+  },
+  "bush-bound": {
+   "isbn": [
+    "9781782387794"
+   ],
+   "fp": "8b7b3c6e48",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990218869360206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4019197-7",
+     "label": "Gambia",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4120730-0",
+     "label": "Migration",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4039785-3",
+     "label": "Mobilität",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "bush-bound-young-men-and-rural-permanence-in-migrant-west-africa-reprint-2015-paperback-edition": {
+   "isbn": [
+    "9781785338274"
+   ],
+   "fp": "ba7b8ca4f4",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990225784510206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4077517-3",
+     "label": "Soninke",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4317743-8",
+     "label": "Junger Mann",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4034026-0",
+     "label": "Ländlicher Raum",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4120730-0",
+     "label": "Migration",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4039785-3",
+     "label": "Mobilität",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "central-asian-intellectuals-on-islam": {
+   "isbn": [
+    "9783879977178"
+   ],
+   "fp": "a029a0e9e6",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1036282007"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990197653750206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4039661-7",
+     "label": "Mittelasien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4027249-7",
+     "label": "Intellektueller",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4354651-1",
+     "label": "Religiöse Identität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4020588-5",
+     "label": "Gesellschaft",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4247231-3",
+     "label": "Reislamisierung",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "306.6970958"
+   ]
+  },
+  "changing-identities": {
+   "isbn": [
+    "9783860930625"
+   ],
+   "fp": "17341df66e",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/941738655"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990067495280206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4000695-5",
+     "label": "Afrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4073624-6",
+     "label": "Kolonialismus",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4153096-2",
+     "label": "Ethnische Identität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4003217-6",
+     "label": "Asien",
+     "type": "PlaceOrGeographicName"
+    }
+   ]
+  },
+  "changing-values-among-youth": {
+   "isbn": [
+    "9783879976379"
+   ],
+   "fp": "866546746c",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/982970714"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990166398980206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4068789-2",
+     "label": "Arabische Staaten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4028859-6",
+     "label": "Jugend",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4117636-4",
+     "label": "Wertwandel",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "305.23509174927"
+   ]
+  },
+  "chinese-indonesians-reassessed": {
+   "isbn": [
+    "9780415608015"
+   ],
+   "fp": "b3a1b30d2e",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990225335160206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4026761-1",
+     "label": "Indonesien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4009946-5",
+     "label": "Chinesen",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "chinese-ways-of-being-muslim-negotiating-ethnicity-and-religiosity-in-indonesia": {
+   "isbn": [
+    "9788776942113"
+   ],
+   "fp": "4901e82fc3",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990225936910206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4026761-1",
+     "label": "Indonesien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4009946-5",
+     "label": "Chinesen",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4040921-1",
+     "label": "Muslim",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4153096-2",
+     "label": "Ethnische Identität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4354651-1",
+     "label": "Religiöse Identität",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "297.09598"
+   ]
+  },
+  "claiming-and-making-muslim-worlds": {
+   "isbn": [
+    "9783110726534"
+   ],
+   "fp": "3104feb3e8",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1238695175"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1267527730"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990010315860108971"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990010316370108971"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990011477860108971"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991001862319706485"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370770429706441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370881473406441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99371986749006441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4020588-5",
+     "label": "Gesellschaft",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4046514-7",
+     "label": "Politik",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4557997-0",
+     "label": "Globalisierung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4073172-8",
+     "label": "Islamische Staaten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "7612596-8",
+     "label": "Transnationalisierung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4040921-1",
+     "label": "Muslim",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4077349-8",
+     "label": "Selbstbild",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4354651-1",
+     "label": "Religiöse Identität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4120730-0",
+     "label": "Migration",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4077570-7",
+     "label": "Soziale Integration",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4049396-9",
+     "label": "Religion",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "297.09051",
+    "297.09"
+   ]
+  },
+  "connecting-seas-and-connected-ocean-rims": {
+   "isbn": [
+    "9789004193161"
+   ],
+   "fp": "a55568cc80",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990186967610206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4195650-3",
+     "label": "Indischer Ozean (Region)",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4206638-4",
+     "label": "Atlantischer Raum",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4044982-8",
+     "label": "Pazifischer Raum",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4120730-0",
+     "label": "Migration",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4026737-4",
+     "label": "Indischer Ozean",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4003388-0",
+     "label": "Atlantischer Ozean",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4044981-6",
+     "label": "Pazifischer Ozean",
+     "type": "PlaceOrGeographicName"
+    }
+   ],
+   "ddc": [
+    "304.809034"
+   ]
+  },
+  "construction-of-the-other-identification-of-the-self": {
+   "isbn": [
+    "9783643902603"
+   ],
+   "fp": "8102f3be7d",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1025470486"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990192844560206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4026722-2",
+     "label": "Indien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4070334-4",
+     "label": "Deutsche",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4039567-4",
+     "label": "Mission",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4033569-0",
+     "label": "Kulturkontakt",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4033542-2",
+     "label": "Kulturelle Identität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4153096-2",
+     "label": "Ethnische Identität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4200132-8",
+     "label": "Eurozentrismus",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "2043853-9",
+     "label": "Missionsanstalt Hermannsburg",
+     "type": "CorporateBody"
+    },
+    {
+     "id": "4077349-8",
+     "label": "Selbstbild",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4127240-7",
+     "label": "Fremdbild",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "266.02343054"
+   ]
+  },
+  "contemporary-moroccan-thought": {
+   "isbn": [
+    "9789004519527"
+   ],
+   "fp": "cd46e88caf",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99375174014706441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4037680-1",
+     "label": "Marokko",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4045791-6",
+     "label": "Philosophie",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4059758-1",
+     "label": "Theologie",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4274490-8",
+     "label": "Geistesleben",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4125698-0",
+     "label": "Kultur",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "199.64"
+   ]
+  },
+  "cordial-cold-war-1": {
+   "isbn": [
+    "9789354790225"
+   ],
+   "fp": "4e201c3659",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1282995952"
+    }
+   ]
+  },
+  "cosmopolitan-thought-zones": {
+   "isbn": [
+    "9780230243378"
+   ],
+   "fp": "78720e321c",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99373063162406441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4058406-9",
+     "label": "Südasien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4274490-8",
+     "label": "Geistesleben",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "cosmopolitanism-in-muslim-contexts": {
+   "isbn": [
+    "9780748644568"
+   ],
+   "fp": "13efd1eb0b",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990194167790206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990217690900206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4189574-5",
+     "label": "Weltbürgertum",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "cultural-encounters-in-india": {
+   "isbn": [
+    "9788187358725"
+   ],
+   "fp": "8501a48d9f",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/103732000X"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4244159-6",
+     "label": "Indien (Südost)",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "2098187-9",
+     "label": "Dänisch-Hallesche Mission in Tranquebar",
+     "type": "CorporateBody"
+    },
+    {
+     "id": "4120744-0",
+     "label": "Mitarbeiter",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "266.4109548209033"
+   ]
+  },
+  "cultural-politics-and-identity": {
+   "isbn": [
+    "9783643901262"
+   ],
+   "fp": "ea61a13507",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1015012892"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990188812930206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4214151-5",
+     "label": "Multikulturelle Gesellschaft",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4153096-2",
+     "label": "Ethnische Identität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4033542-2",
+     "label": "Kulturelle Identität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4128520-7",
+     "label": "Anerkennung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4045791-6",
+     "label": "Philosophie",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "303.48201"
+   ]
+  },
+  "cultural-transfers-in-dispute": {
+   "isbn": [
+    "9783593394046"
+   ],
+   "fp": "84ac750d5b",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1009107054"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990184026320206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4015701-5",
+     "label": "Europa",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4003217-6",
+     "label": "Asien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4002529-9",
+     "label": "Arabien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4033597-5",
+     "label": "Kulturwissenschaften",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4165992-2",
+     "label": "Kulturvermittlung",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "303.482"
+   ]
+  },
+  "currencies-of-the-indian-ocean-world": {
+   "isbn": [
+    "9783030209735"
+   ],
+   "fp": "afc250bf42",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/119338947X"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990363788450206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991001068579706482"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99371422186006441"
+    }
+   ],
+   "ddc": [
+    "909",
+    "332.46"
+   ]
+  },
+  "dawn-for-islam-in-eastern-nigeria": {
+   "isbn": [
+    "9783879973835"
+   ],
+   "fp": "de90b5f732",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1006328491"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990217507310206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4101234-3",
+     "label": "Nigeria (Ost)",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4072706-3",
+     "label": "Ibo (Volk)",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "297.096694"
+   ]
+  },
+  "default-b5a5f3f27b629721b8ebe9578fc08eef": {
+   "isbn": [
+    "9783447124973"
+   ],
+   "fp": "2f55b5678f",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1390828670"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99377355049006441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "1399461419",
+     "label": "Schultze, Benjamin: The Large And Renowned Town Of The English Nation In The East-Indies Upon The Coast Of Coromandel, Madras Or Fort St. George",
+     "type": "Work"
+    },
+    {
+     "id": "4026754-4",
+     "label": "Indien (Süd)",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "2098187-9",
+     "label": "Dänisch-Hallesche Mission in Tranquebar",
+     "type": "CorporateBody"
+    },
+    {
+     "id": "4039567-4",
+     "label": "Mission",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "11947381X",
+     "label": "Schultze, Benjamin",
+     "type": "Person"
+    },
+    {
+     "id": "4120355-0",
+     "label": "Telugu-Sprache",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4014777-0",
+     "label": "Englisch",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4074250-7",
+     "label": "Linguistik",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "266.0954809033"
+   ]
+  },
+  "der-erste-weltkrieg-auf-dem-balkan": {
+   "isbn": [
+    "9783937233680"
+   ],
+   "fp": "5a31fb4322",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1012352706"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990182162150206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4004334-4",
+     "label": "Balkanhalbinsel",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4079163-4",
+     "label": "Erster Weltkrieg",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "949.604"
+   ]
+  },
+  "der-weibliche-blick-auf-den-orient": {
+   "isbn": [
+    "9783035101621"
+   ],
+   "fp": "5b2f72b8be",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1042519552"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4015701-5",
+     "label": "Europa",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4076645-7",
+     "label": "Reisebericht",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4053311-6",
+     "label": "Schriftstellerin",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4122305-6",
+     "label": "Orientbild",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "809.39325082"
+   ]
+  },
+  "deutsche-agenten-bei-iranischen-staemmen-1942-1944-ein-augenzeugenbericht": {
+   "isbn": [
+    "9783879976485"
+   ],
+   "fp": "bd971cbdb2",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/988676680"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4027653-3",
+     "label": "Iran",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4182341-2",
+     "label": "Spion",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4070334-4",
+     "label": "Deutsche",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "955.053"
+   ]
+  },
+  "dictionary-of-african-biography": {
+   "isbn": [
+    "9780195382075"
+   ],
+   "fp": "6f3d1bc8cc",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990190300470206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4000695-5",
+     "label": "Afrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4025111-1",
+     "label": "Historische Persönlichkeit",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "die-erneuerung-der-tiganiya-in-mauretanien": {
+   "isbn": [
+    "9783879977161"
+   ],
+   "fp": "0417ec1f79",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1036281981"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990205333540206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4038051-8",
+     "label": "Mauretanien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4721077-1",
+     "label": "Tiǧānīya",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4452571-0",
+     "label": "Religiöse Erneuerung",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "297.4809661",
+    "290",
+    "960"
+   ]
+  },
+  "die-geretteten-goetter-aus-dem-palast-vom-tell-halaf": {
+   "isbn": [
+    "9783795424503"
+   ],
+   "fp": "d4fccad4e7",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1009254502"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990183991050206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "118736418",
+     "label": "Oppenheim, Max von",
+     "type": "Person"
+    },
+    {
+     "id": "4106164-0",
+     "label": "Tell Halaf",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4129464-6",
+     "label": "Ausgrabung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "5310583-7",
+     "label": "Tell-Halaf-Museum (Berlin)",
+     "type": "CorporateBody"
+    },
+    {
+     "id": "4441892-9",
+     "label": "Kriegsverlust",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4170515-4",
+     "label": "Monumentalplastik",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4049600-4",
+     "label": "Restaurierung",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "732.5"
+   ]
+  },
+  "die-indischen-mitarbeiter-der-tranquebarmission-1706-1845-1": {
+   "isbn": [
+    "9783484840263"
+   ],
+   "fp": "80a692035c",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/990846504"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4244159-6",
+     "label": "Indien (Südost)",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "2098187-9",
+     "label": "Dänisch-Hallesche Mission in Tranquebar",
+     "type": "CorporateBody"
+    },
+    {
+     "id": "4120744-0",
+     "label": "Mitarbeiter",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "266.4109548209033"
+   ]
+  },
+  "die-polygamiedebatte-in-der-spaetphase-des-osmanischen-reichs": {
+   "isbn": [
+    "9783879977154"
+   ],
+   "fp": "029cccf819",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1036281973"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990197467410206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4075720-1",
+     "label": "Osmanisches Reich",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4175193-0",
+     "label": "Polygamie",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4128337-5",
+     "label": "Kontroverse",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4061163-2",
+     "label": "Türkei",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4016419-6",
+     "label": "Familienrecht",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4115716-3",
+     "label": "Reform",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "306.8423095609041",
+    "305.420956109034",
+    "306.84230956109034"
+   ]
+  },
+  "die-regierung-des-waldes": {
+   "isbn": [
+    "9783837661514"
+   ],
+   "fp": "4af9972a98",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1244637599"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99371498174506441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4037680-1",
+     "label": "Marokko",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4164199-1",
+     "label": "Klimaänderung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4017949-7",
+     "label": "Forstnutzung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "1079427864",
+     "label": "Gouvernementalität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4171438-6",
+     "label": "Neoliberalismus",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4115585-3",
+     "label": "Politische Ökologie",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "333.750964",
+    "910"
+   ]
+  },
+  "die-unruhen-von-1850-in-aleppo": {
+   "isbn": [
+    "9783879977185"
+   ],
+   "fp": "601d477a54",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1062732871"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4001116-1",
+     "label": "Aleppo",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4402771-0",
+     "label": "Religiöser Konflikt",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4010074-1",
+     "label": "Christentum",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "297.283095691309034"
+   ]
+  },
+  "die-welt-im-20-jahrhundert-bis-1945": {
+   "isbn": [
+    "9783854763246"
+   ],
+   "fp": "91763cb0b8",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/99845723X"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990178157320206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4079158-0",
+     "label": "Weltgeschichte",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "909.82"
+   ]
+  },
+  "dubai": {
+   "isbn": [
+    "9780816656318"
+   ],
+   "fp": "a0c72e4971",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990188247940206441"
+    }
+   ],
+   "ddc": [
+    "307.76095357"
+   ]
+  },
+  "educating-the-middlemen": {
+   "isbn": [
+    "9783860930953"
+   ],
+   "fp": "5e44a3a37d",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/946928835"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990069011600206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4042300-1",
+     "label": "Nigeria",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4163033-6",
+     "label": "Kakaomarkt",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "egypt-in-the-future-tense": {
+   "isbn": [
+    "9780253015891"
+   ],
+   "fp": "01e78ab1eb",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991014125745906445"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370754463006441"
+    }
+   ],
+   "ddc": [
+    "306.0962"
+   ]
+  },
+  "entwicklung-in-afrika": {
+   "isbn": [
+    "9783631594889"
+   ],
+   "fp": "d76204a031",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1007745436"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990183673430206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4000695-5",
+     "label": "Afrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4046514-7",
+     "label": "Politik",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4066438-7",
+     "label": "Wirtschaftsentwicklung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4198756-1",
+     "label": "Entwicklungszusammenarbeit",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "320.96"
+   ]
+  },
+  "enzyklopaedie-der-neuzeit": {
+   "isbn": [
+    "9783476019356"
+   ],
+   "fp": "b9b8faec68",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971545332"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971545367"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971545626"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971545650"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971545677"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971545715"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971545782"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971545839"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971545847"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971546932"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971546940"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971546991"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971547386"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971547394"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971547408"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/971547459"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/976533936"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990000428420106473"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990000712960106473"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990121471680206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990204132290206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991000685129706483"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4079158-0",
+     "label": "Weltgeschichte",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "900",
+    "909.08"
+   ]
+  },
+  "esprit-civique-et-organisation-citadine-dans-lempire-ottoman-xve-xxe-siecles": {
+   "isbn": [
+    "9789004364516"
+   ],
+   "fp": "8ec0db42d5",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990227427860206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370739708006441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4075720-1",
+     "label": "Osmanisches Reich",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4138964-5",
+     "label": "Stadtbevölkerung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4056730-8",
+     "label": "Stadtentwicklung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4056754-0",
+     "label": "Stadtplanung",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "320.8509560903"
+   ]
+  },
+  "ethnographien-des-wandels-im-nahen-osten-und-nordafrika": {
+   "isbn": [
+    "9783960230137"
+   ],
+   "fp": "6662928d12",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1103242989"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990213472090206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4068878-1",
+     "label": "Naher Osten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4042482-0",
+     "label": "Nordafrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4227561-1",
+     "label": "Soziokultureller Wandel",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4026482-8",
+     "label": "Identität",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "303.40953",
+    "300"
+   ]
+  },
+  "ethnographies-of-islam": {
+   "isbn": [
+    "9780748645503"
+   ],
+   "fp": "a2d2a3d3b3",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990192659430206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4115741-2",
+     "label": "Religiöses Leben",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4020588-5",
+     "label": "Gesellschaft",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4012089-2",
+     "label": "Diaspora (Religion)",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4140349-6",
+     "label": "Gruppenidentität",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "305.697"
+   ]
+  },
+  "everyday-life-in-the-old-city-of-jerusalem": {
+   "isbn": [
+    "9781032887883"
+   ],
+   "fp": "09ea500171",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1390806685"
+    }
+   ]
+  },
+  "feminism-and-migration": {
+   "isbn": [
+    "9789400728318"
+   ],
+   "fp": "da2a738f6f",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1019517441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990190599680206441"
+    }
+   ]
+  },
+  "femmes-associations-et-politique-a-casablanca": {
+   "isbn": [
+    "9781092046039"
+   ],
+   "fp": "573e47dc5f",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990229027650206441"
+    }
+   ]
+  },
+  "formationen-des-politischen": {
+   "isbn": [
+    "9783837622638"
+   ],
+   "fp": "da14ae3773",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1028836732"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990203793520206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4293325-0",
+     "label": "Politische Anthropologie",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4651175-1",
+     "label": "Politisches Feld",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "320.11"
+   ]
+  },
+  "fremde-erfahrungen": {
+   "isbn": [
+    "9783860931110"
+   ],
+   "fp": "44a82675d5",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/948149418"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990069200030206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4070370-8",
+     "label": "Deutsches Sprachgebiet",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4198081-5",
+     "label": "Asiaten",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4133380-9",
+     "label": "Afrikaner",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "from-identity-based-conflict-to-identity-based-cooperation": {
+   "isbn": [
+    "9781461436782"
+   ],
+   "fp": "b7bb807c6b",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990206370660206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99374681285006441"
+    }
+   ],
+   "ddc": [
+    "305",
+    "155.2"
+   ]
+  },
+  "geld-und-macht": {
+   "isbn": [
+    "9783899303148"
+   ],
+   "fp": "92f50ea525",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1004070373"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990186653820206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4000556-2",
+     "label": "Ägypten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4302181-5",
+     "label": "Finanzdienstleistungsmarkt",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4120670-8",
+     "label": "Liberalisierung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4372106-0",
+     "label": "Wirtschaftliche Elite",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4131701-4",
+     "label": "Einflussnahme",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "332.0962"
+   ]
+  },
+  "gemeinschaften-in-einer-entgrenzten-welt": {
+   "isbn": [
+    "9783860932513"
+   ],
+   "fp": "349e3e5d30",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/957881053"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990101431810206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4014954-7",
+     "label": "Entwicklungsländer",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4020015-2",
+     "label": "Gemeinschaft",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "gender-and-islam-in-africa": {
+   "isbn": [
+    "9780804774819"
+   ],
+   "fp": "148d09a906",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990188002180206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4000695-5",
+     "label": "Afrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4120776-2",
+     "label": "Muslimin",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "305.48697096"
+   ]
+  },
+  "geschichte-als-ressource": {
+   "isbn": [
+    "9783879977260"
+   ],
+   "fp": "89d8883ef8",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1140929690"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990219895740206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4000695-5",
+     "label": "Afrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4003217-6",
+     "label": "Asien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4015701-5",
+     "label": "Europa",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4020531-9",
+     "label": "Geschichtsschreibung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "1041864515",
+     "label": "Geschichtspolitik",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4168427-8",
+     "label": "Machtpolitik",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4071769-0",
+     "label": "Geschichtsbild",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4193985-2",
+     "label": "Authentizität",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "320.9",
+    "900"
+   ]
+  },
+  "geschichte-in-afrika": {
+   "isbn": [
+    "9783860931677"
+   ],
+   "fp": "c63cffaaf8",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/952383438"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990070370640206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990208991920206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4000695-5",
+     "label": "Afrika",
+     "type": "PlaceOrGeographicName"
+    }
+   ]
+  },
+  "geschichte-saudi-arabiens": {
+   "isbn": [
+    "9783406849596"
+   ],
+   "fp": "baeaae76e2",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/139360742X"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991019970555008973"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99377269998106441"
+    }
+   ],
+   "ddc": [
+    "900"
+   ]
+  },
+  "global-mufti": {
+   "isbn": [
+    "9781850659396"
+   ],
+   "fp": "d4c678132c",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990208010090206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "123493390",
+     "label": "Qaraḍāwī, Yūsuf al-",
+     "type": "Person"
+    },
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4137178-1",
+     "label": "Fundamentalismus",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "global-south-scholars-in-the-western-academy-1": {
+   "isbn": [
+    "9780367625825"
+   ],
+   "fp": "feb27fc71f",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99371157013606441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4079237-7",
+     "label": "Westliche Welt",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4072560-1",
+     "label": "Hochschule",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4566658-1",
+     "label": "Postkolonialismus",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4519498-1",
+     "label": "Interkulturalität",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "handbuch-des-antisemitismus": {
+   "isbn": [
+    "9783110255140"
+   ],
+   "fp": "f3a8004001",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1108631630"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990193039870206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990369410870206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991013872935806445"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991014265621706445"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370753762906441"
+    }
+   ],
+   "ddc": [
+    "820.8",
+    "305.8924"
+   ]
+  },
+  "herausforderungen-in-arabischen-staaten": {
+   "isbn": [
+    "9783801204563"
+   ],
+   "fp": "4bf5679188",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1099934664"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990214162480206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4068789-2",
+     "label": "Arabische Staaten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "37498-2",
+     "label": "Friedrich-Ebert-Stiftung",
+     "type": "CorporateBody"
+    }
+   ],
+   "ddc": [
+    "324.243072",
+    "320"
+   ]
+  },
+  "heutiger-nachbar-gestriger-untertan": {
+   "isbn": [
+    "9783956508219"
+   ],
+   "fp": "fe8068ba7f",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1227350007"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370767669206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4075720-1",
+     "label": "Osmanisches Reich",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4061163-2",
+     "label": "Türkei",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4558569-6",
+     "label": "Balkanbild",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "7541927-0",
+     "label": "Südosteuropabild",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4076645-7",
+     "label": "Reisebericht",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "956"
+   ]
+  },
+  "highly-qualified-immigrants-and-refugees": {
+   "isbn": [
+    "9783837683127",
+    "9783839479186"
+   ],
+   "fp": "70e18766d8",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1403176116"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1419287966"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991014303510406445"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991019979060108973"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99377558100006441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99377560288506441"
+    }
+   ],
+   "ddc": [
+    "331.62",
+    "300"
+   ]
+  },
+  "historiography-in-saudi-arabia": {
+   "isbn": [
+    "9781780766645"
+   ],
+   "fp": "b4f7b71d9a",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990204514620206441"
+    }
+   ]
+  },
+  "humanistic-ethics-in-the-age-of-globality": {
+   "isbn": [
+    "9780230273276"
+   ],
+   "fp": "ec7dba140e",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990188280060206441"
+    }
+   ],
+   "ddc": [
+    "174"
+   ]
+  },
+  "ibn-taymiyya-and-his-times": {
+   "isbn": [
+    "9780195478341"
+   ],
+   "fp": "8d866ec8af",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990187410390206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990213322250206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "118708546",
+     "label": "Ibn-Taimīya, Aḥmad Ibn-ʿAbd-al-Ḥalīm",
+     "type": "Person"
+    },
+    {
+     "id": "4184103-7",
+     "label": "Sunniten",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4158967-1",
+     "label": "Hanbaliten",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "297.814092"
+   ]
+  },
+  "iconic-places-in-central-asia": {
+   "isbn": [
+    "9783839436301"
+   ],
+   "fp": "57ef1149a8",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1120548322"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990215004120206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990369839800206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991014120070806445"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370757265006441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4030848-0",
+     "label": "Kirgisien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4057020-4",
+     "label": "Staudamm",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4135837-5",
+     "label": "Weidewirtschaft",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4072395-1",
+     "label": "Heiligtum",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4058716-2",
+     "label": "Symbol",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4026482-8",
+     "label": "Identität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4138354-0",
+     "label": "Lebensstil",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4998161-4",
+     "label": "Postkommunismus",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "304.2095843",
+    "300",
+    "306"
+   ]
+  },
+  "imperiale-propaganda": {
+   "isbn": [
+    "9783879976546"
+   ],
+   "fp": "7102019e34",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1227694695"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/994960794"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990228485930206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4078094-6",
+     "label": "Swahili",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4153960-6",
+     "label": "Feldzeitung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4076374-2",
+     "label": "Propaganda",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "070.44994053"
+   ]
+  },
+  "in-search-of-europe": {
+   "isbn": [
+    "9789490322434"
+   ],
+   "fp": "8acd061067",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990202695390206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4078931-7",
+     "label": "Ethnologie",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4114333-4",
+     "label": "Kunst",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4115645-6",
+     "label": "Projekt",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4027274-6",
+     "label": "Interdisziplinäre Forschung",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "islam-in-europa": {
+   "isbn": [
+    "9783830923817"
+   ],
+   "fp": "bf31f41c8d",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1007491922"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990182540610206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4015701-5",
+     "label": "Europa",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4177706-2",
+     "label": "Religiöse Bewegung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4332868-4",
+     "label": "Reformbewegung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4077343-7",
+     "label": "Sekte",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4115741-2",
+     "label": "Religiöses Leben",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4171210-9",
+     "label": "Nationalbewegung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4145467-4",
+     "label": "Bildungseinrichtung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4317554-5",
+     "label": "Islamische Erziehung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4123450-9",
+     "label": "Islamischer Religionsunterricht",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "297.094"
+   ]
+  },
+  "islam-und-geschlechterpolitik-ueberlegungen-zu-afghanistan": {
+   "isbn": [
+    "9783934045149"
+   ],
+   "fp": "d0ca6b5923",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1009810375"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990184506400206441"
+    }
+   ],
+   "ddc": [
+    "361.6108209581"
+   ]
+  },
+  "islam-youth-and-modernity-in-the-gambia": {
+   "isbn": [
+    "9781139629133"
+   ],
+   "fp": "4693105d18",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991014100535006445"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370694476606441"
+    }
+   ],
+   "ddc": [
+    "297.65096651"
+   ]
+  },
+  "islamische-weltauffassung-und-aussenpolitische-konzeptionen-der-iranischen-staatsfuehrung-seit-dem-tod-ajatollah-khomeinis": {
+   "isbn": [
+    "9783860931837"
+   ],
+   "fp": "ce4801fff9",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/953879674"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990075065120206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4027653-3",
+     "label": "Iran",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4003846-4",
+     "label": "Außenpolitik",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4065352-3",
+     "label": "Weltbild",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "327.55"
+   ]
+  },
+  "ismailism-and-islam-in-modern-south-asia": {
+   "isbn": [
+    "9781107154087"
+   ],
+   "fp": "45176f914a",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990229335790206441"
+    }
+   ],
+   "ddc": [
+    "297.8220954"
+   ]
+  },
+  "jewish-spaces": {
+   "isbn": [
+    "9783706548106"
+   ],
+   "fp": "515ff9748a",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/994143583"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990177550420206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4028808-0",
+     "label": "Juden",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4139628-5",
+     "label": "Raumverhalten",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4354651-1",
+     "label": "Religiöse Identität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4033542-2",
+     "label": "Kulturelle Identität",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "305.8924"
+   ]
+  },
+  "kalter-krieg-auf-dem-indischen-subkontinent": {
+   "isbn": [
+    "9783110682038"
+   ],
+   "fp": "fe4479b720",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1266800891"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990367528100206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991006173499706485"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370937431606441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99371601062106441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4011889-7",
+     "label": "Deutschland (Bundesrepublik)",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4011890-3",
+     "label": "Deutschland (DDR)",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4058406-9",
+     "label": "Südasien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4138523-8",
+     "label": "Diplomatische Beziehungen",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "7661729-4",
+     "label": "Bangladesch-Krieg",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4075770-5",
+     "label": "Ost-West-Konflikt",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "327.4305409047",
+    "900",
+    "954.92051"
+   ]
+  },
+  "kashmir-as-a-borderland-1": {
+   "isbn": [
+    "9789463729406"
+   ],
+   "fp": "d2268bb799",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990363544210206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4029850-4",
+     "label": "Kaschmir",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4643118-4",
+     "label": "Distrikt Jammu",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4256270-3",
+     "label": "Jammu and Kashmir",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4026722-2",
+     "label": "Indien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4077575-6",
+     "label": "Soziale Situation",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4003974-2",
+     "label": "Autonomie",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4186820-1",
+     "label": "Unabhängigkeit",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4121814-0",
+     "label": "Unabhängigkeitsbewegung",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "320.9546",
+    "954.6053"
+   ]
+  },
+  "kautschuk-quarantaene-krieg": {
+   "isbn": [
+    "9783879976362"
+   ],
+   "fp": "1ecbcf2124",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/980643651"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990364255820206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4051641-6",
+     "label": "Sansibar",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4224912-0",
+     "label": "Seehandel",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4154026-8",
+     "label": "Fernhandel",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4209033-7",
+     "label": "Dau",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "380"
+   ]
+  },
+  "kern-und-rand": {
+   "isbn": [
+    "9783860932278"
+   ],
+   "fp": "b7c2a3c8b2",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/956652190"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990074789510206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4011882-4",
+     "label": "Deutschland",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4140292-3",
+     "label": "Religiöse Minderheit",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4061163-2",
+     "label": "Türkei",
+     "type": "PlaceOrGeographicName"
+    }
+   ]
+  },
+  "kleines-abc-des-nomadismus": {
+   "isbn": [
+    "9783981256659"
+   ],
+   "fp": "6bea9edb61",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1017738998"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990189694260206441"
+    }
+   ],
+   "ddc": [
+    "305.906918",
+    "305.906918074"
+   ]
+  },
+  "kurdistan-im-wandel": {
+   "isbn": [
+    "9783653007503"
+   ],
+   "fp": "3cccba9d12",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1042402841"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370767180006441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4033793-5",
+     "label": "Kurdistan",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4115589-0",
+     "label": "Politischer Konflikt",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4068878-1",
+     "label": "Naher Osten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4039409-8",
+     "label": "Nationale Minderheit",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4033792-3",
+     "label": "Kurden",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "323.1191597056",
+    "277"
+   ]
+  },
+  "les-conversions-a-lislam-fondamentaliste-en-afrique-au-sud-du-sahara": {
+   "isbn": [
+    "9782296062139"
+   ],
+   "fp": "091594746f",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990190121820206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4078149-5",
+     "label": "Tansania",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4127377-1",
+     "label": "Konversion (Religion)",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4030236-2",
+     "label": "Kenia",
+     "type": "PlaceOrGeographicName"
+    }
+   ],
+   "ddc": [
+    "320.55709676"
+   ]
+  },
+  "les-nouveaux-urbains-dans-lespace-sahara-sahel": {
+   "isbn": [
+    "9782845869516"
+   ],
+   "fp": "98656af291",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990164903530206441"
+    }
+   ]
+  },
+  "livresse-de-la-liberte": {
+   "isbn": [
+    "9789042924956"
+   ],
+   "fp": "6eaca9bcd8",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990197082170206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4162918-8",
+     "label": "Jungtürken",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4466989-6",
+     "label": "Revolution der Jungtürken",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "los-movimientos-islamicos-transnacionales-y-la-emergencia-de-un-islam-europeo": {
+   "isbn": [
+    "9788472905658"
+   ],
+   "fp": "65c183a33b",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990192725890206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990210802620206441"
+    }
+   ]
+  },
+  "medialitaet-der-naehe": {
+   "isbn": [
+    "9783837616446"
+   ],
+   "fp": "39abddeca1",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1008786543"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990000703090106473"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990184641980206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4196910-8",
+     "label": "Neue Medien",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4116546-9",
+     "label": "Sozialraum",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4140240-6",
+     "label": "Nähe",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4055762-5",
+     "label": "Soziales Netzwerk",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "302.231"
+   ]
+  },
+  "mediating-cultural-diversity-in-a-globalised-public-space": {
+   "isbn": [
+    "9780230348776"
+   ],
+   "fp": "332be71d8b",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990193963690206441"
+    }
+   ],
+   "ddc": [
+    "305.8"
+   ]
+  },
+  "medien-fatwasyusuf-al-qaradawi": {
+   "isbn": [
+    "9783879976539"
+   ],
+   "fp": "1e09ffc7fa",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1006644083"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990182496770206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4037877-9",
+     "label": "Massenmedien",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4200720-3",
+     "label": "Popularisierung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4409409-7",
+     "label": "Fikh",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4154247-2",
+     "label": "Fetwa",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "340.59",
+    "340.59092"
+   ]
+  },
+  "migrant-dreams": {
+   "isbn": [
+    "9789774169564"
+   ],
+   "fp": "abf0e737c1",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990368257110206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4068789-2",
+     "label": "Arabische Staaten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4162051-3",
+     "label": "Internationale Migration",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4003217-6",
+     "label": "Asien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4021571-4",
+     "label": "Golfstaaten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4002623-1",
+     "label": "Arbeitnehmer",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4120730-0",
+     "label": "Migration",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "migrationsbewegungen-aus-den-suedlichen-mittelmeerlaendern-und-subsahara-afrika-in-die-europaeische-union": {
+   "isbn": [
+    "9783879976591"
+   ],
+   "fp": "b078a97d6e",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1003419607"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990183199580206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "5098525-5",
+     "label": "Europäische Union",
+     "type": "CorporateBody"
+    },
+    {
+     "id": "4000695-5",
+     "label": "Afrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4013960-8",
+     "label": "Einwanderung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4003920-1",
+     "label": "Auswanderung",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "300"
+   ]
+  },
+  "milieus-of-rememory": {
+   "isbn": [
+    "9781527522992"
+   ],
+   "fp": "b649e21622",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990228948080206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4035567-6",
+     "label": "Libanon",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4037680-1",
+     "label": "Marokko",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "102321377X",
+     "label": "Arabischer Frühling",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4042482-0",
+     "label": "Nordafrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4068878-1",
+     "label": "Naher Osten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4057799-5",
+     "label": "Straftat",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4020832-1",
+     "label": "Gewalt",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4060748-3",
+     "label": "Trauma",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4135890-9",
+     "label": "Zeugenaussage",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "1188375210",
+     "label": "Diaspora (Sozialwissenschaften)",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "mining-frontiers-in-africa": {
+   "isbn": [
+    "9783896458322"
+   ],
+   "fp": "90066d1691",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1025905342"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990194841410206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4053770-5",
+     "label": "Subsaharisches Afrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4005614-4",
+     "label": "Bergbau",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4318539-3",
+     "label": "Sozioökonomischer Wandel",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4055747-9",
+     "label": "Sozialer Konflikt",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "303.40967"
+   ]
+  },
+  "mission-und-forschung": {
+   "isbn": [
+    "9783447063920"
+   ],
+   "fp": "a4ebc79b18",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1006976574"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990182584120206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4026754-4",
+     "label": "Indien (Süd)",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4015701-5",
+     "label": "Europa",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "2098187-9",
+     "label": "Dänisch-Hallesche Mission in Tranquebar",
+     "type": "CorporateBody"
+    },
+    {
+     "id": "4066562-8",
+     "label": "Wissenschaft",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "266.02343054"
+   ]
+  },
+  "muendliche-ueberlieferungen-geschichte-und-geschichten-der-wiya-im-grasland-von-kamerun": {
+   "isbn": [
+    "9783860931981"
+   ],
+   "fp": "072d518ff6",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/955225388"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990073343910206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4534829-7",
+     "label": "Wiya",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4040600-3",
+     "label": "Mündliche Überlieferung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4016674-0",
+     "label": "Feldforschung",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "mufti-papiere": {
+   "isbn": [
+    "9783879971800"
+   ],
+   "fp": "38c2ae3f52",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1111067600"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/963180045"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990121398730206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "11883679X",
+     "label": "Husainī, Muḥammad Amīn al-",
+     "type": "Person"
+    },
+    {
+     "id": "4135952-5",
+     "label": "Quelle",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "municipalites-mediterraneennes": {
+   "isbn": [
+    "9783879976348"
+   ],
+   "fp": "b6e8959223",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/976302799"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990143339360206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4074900-9",
+     "label": "Mittelmeerraum",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4056730-8",
+     "label": "Stadtentwicklung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4068878-1",
+     "label": "Naher Osten",
+     "type": "PlaceOrGeographicName"
+    }
+   ],
+   "ddc": [
+    "940"
+   ]
+  },
+  "muslim-schools-and-education-in-europe-and-south-africa": {
+   "isbn": [
+    "9783830925545"
+   ],
+   "fp": "06c0cf0fd7",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1013964101"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990188548640206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4015701-5",
+     "label": "Europa",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4078012-0",
+     "label": "Südafrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4123450-9",
+     "label": "Islamischer Religionsunterricht",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4317554-5",
+     "label": "Islamische Erziehung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4149063-0",
+     "label": "Demokratische Erziehung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4006681-2",
+     "label": "Bildungswesen",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4006667-8",
+     "label": "Bildungspolitik",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "297.770968"
+   ]
+  },
+  "muslime-in-der-mark": {
+   "isbn": [
+    "9783860931516"
+   ],
+   "fp": "ba164cfabb",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/950787949"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990151717790206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4007955-7",
+     "label": "Brandenburg",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4033131-3",
+     "label": "Kriegsgefangener",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4040921-1",
+     "label": "Muslim",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4492210-3",
+     "label": "Halbmondlager",
+     "type": "CorporateBody"
+    },
+    {
+     "id": "4492211-5",
+     "label": "Weinberglager",
+     "type": "CorporateBody"
+    }
+   ]
+  },
+  "nach-dem-oel": {
+   "isbn": [
+    "9783899303377"
+   ],
+   "fp": "3400da171a",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1016863942"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990191059490206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4204043-7",
+     "label": "Dubai",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4066438-7",
+     "label": "Wirtschaftsentwicklung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4129504-3",
+     "label": "Wirtschaftsstruktur",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "7637436-1",
+     "label": "Staatliche Investitionspolitik",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "338.95357"
+   ]
+  },
+  "negotiating-empire-in-the-middle-east-ottomans-and-arab-nomads-in-the-modern-era-1840-1914": {
+   "isbn": [
+    "9781108993852"
+   ],
+   "fp": "3ad8459b5e",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991014097531606445"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370930763706441"
+    }
+   ],
+   "ddc": [
+    "956.015"
+   ]
+  },
+  "nordafrika": {
+   "isbn": [
+    "9783506773265"
+   ],
+   "fp": "9b3a827683",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1011726971"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990187624560206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4042482-0",
+     "label": "Nordafrika",
+     "type": "PlaceOrGeographicName"
+    }
+   ],
+   "ddc": [
+    "961"
+   ]
+  },
+  "oase-zelt-und-zwischenraum": {
+   "isbn": [
+    "9783943057003"
+   ],
+   "fp": "54b41b4d63",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1013508599"
+    }
+   ],
+   "ddc": [
+    "305.891593"
+   ]
+  },
+  "of-matters-modern": {
+   "isbn": [
+    "9781905422623"
+   ],
+   "fp": "b434d96d46",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990174686940206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990176092390206441"
+    }
+   ],
+   "ddc": [
+    "954"
+   ]
+  },
+  "opposition-and-legitimacy-in-the-ottoman-empire": {
+   "isbn": [
+    "9781136852527"
+   ],
+   "fp": "29a2ddf07f",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370759002006441"
+    }
+   ],
+   "ddc": [
+    "956.015"
+   ]
+  },
+  "ordinary-lives-and-grand-schemes": {
+   "isbn": [
+    "9781785331992"
+   ],
+   "fp": "47b07bf1af",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990364457100206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4049396-9",
+     "label": "Religion",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4133903-4",
+     "label": "Kulturanthropologie",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "1125144521",
+     "label": "Religionsanthropologie",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "organisationswandel-in-afrika": {
+   "isbn": [
+    "9783860930731"
+   ],
+   "fp": "b36412723b",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/944281737"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990068153470206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4053770-5",
+     "label": "Subsaharisches Afrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4075693-2",
+     "label": "Organisationswandel",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4120755-5",
+     "label": "Modernisierung",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "orientalische-reisende-in-europa-europaeische-reisende-im-nahen-osten": {
+   "isbn": [
+    "9783868930115"
+   ],
+   "fp": "46e590efbd",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/998665274"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990181753050206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "7530345-0",
+     "label": "Orientalen",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4015704-0",
+     "label": "Europabild",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4077349-8",
+     "label": "Selbstbild",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4076645-7",
+     "label": "Reisebericht",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4068878-1",
+     "label": "Naher Osten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4134080-2",
+     "label": "Europäer",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4122305-6",
+     "label": "Orientbild",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "914"
+   ]
+  },
+  "orientalist-writers": {
+   "isbn": [
+    "9780787681845"
+   ],
+   "fp": "e35872099f",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990191261890206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4035964-5",
+     "label": "Literatur",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4121438-9",
+     "label": "Orient (Motiv)",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4053309-8",
+     "label": "Schriftsteller",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4122305-6",
+     "label": "Orientbild",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "ottoman-children-and-youth-during-world-war-i": {
+   "isbn": [
+    "9780815636274"
+   ],
+   "fp": "d7694b0037",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990365033230206441"
+    }
+   ]
+  },
+  "ozeanisches-gefuehl-der-unsterblichkeit": {
+   "isbn": [
+    "9783825811402"
+   ],
+   "fp": "8a580d3e65",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/992589088"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990175670720206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4648203-9",
+     "label": "Madhva: Kṛṣṇāmṛtamahārṇava",
+     "type": "Work"
+    },
+    {
+     "id": "118781219",
+     "label": "Madhva",
+     "type": "Person"
+    }
+   ],
+   "ddc": [
+    "294.544092"
+   ]
+  },
+  "palaestina-in-israel": {
+   "isbn": [
+    "9783879976478"
+   ],
+   "fp": "2b615d6271",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1236281896"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/98692993X"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990164793930206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4027808-6",
+     "label": "Israel",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4044383-8",
+     "label": "Palästinenser",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4076215-4",
+     "label": "Politische Beteiligung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4131014-7",
+     "label": "Nichtstaatliche Organisation",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "323.042095694"
+   ]
+  },
+  "peripheralization": {
+   "isbn": [
+    "9783531190181"
+   ],
+   "fp": "cc6c1f3b31",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/102964036X"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990194479900206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4173790-8",
+     "label": "Peripherer Raum",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4055736-4",
+     "label": "Soziale Ungleichheit",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4049043-9",
+     "label": "Regionalpolitik",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "307.72",
+    "301"
+   ]
+  },
+  "perspektiven-interkulturellen-philosophierens": {
+   "isbn": [
+    "9783708908847"
+   ],
+   "fp": "e38870a57d",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1021741442"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990192885810206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4494545-0",
+     "label": "Interkulturelle Philosophie",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "100"
+   ]
+  },
+  "port-cities-of-the-eastern-mediterranean-1": {
+   "isbn": [
+    "9781108477376"
+   ],
+   "fp": "3f2978f6a2",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99371000411506441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4075720-1",
+     "label": "Osmanisches Reich",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4061163-2",
+     "label": "Türkei",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "7631044-9",
+     "label": "Mittelmeerregion (Türkei)",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4022873-3",
+     "label": "Hafenstadt",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4071788-4",
+     "label": "Gesellschaftsleben",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4008017-1",
+     "label": "Brauch",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4189574-5",
+     "label": "Weltbürgertum",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4015701-5",
+     "label": "Europa",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4151276-5",
+     "label": "Einfluss",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "racializing-caste": {
+   "isbn": [
+    "9783111545561"
+   ],
+   "fp": "ee02ed1107",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1353046362"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99375558870106441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "125061862",
+     "label": "Karvé, Irawati",
+     "type": "Person"
+    },
+    {
+     "id": "4011882-4",
+     "label": "Deutschland",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4026722-2",
+     "label": "Indien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4002230-4",
+     "label": "Anthropologie",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4017894-8",
+     "label": "Forschung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4076527-1",
+     "label": "Rassismus",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4163401-9",
+     "label": "Kaste",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4152838-4",
+     "label": "Rassentheorie",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4048440-3",
+     "label": "Rasse",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "305.51220954"
+   ]
+  },
+  "rassischer-feind-politischer-freund": {
+   "isbn": [
+    "9783879973804"
+   ],
+   "fp": "db37981eb0",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1004408838"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990181879350206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4011882-4",
+     "label": "Deutschland",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4076374-2",
+     "label": "Propaganda",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4125965-8",
+     "label": "Araberbild",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4013021-6",
+     "label": "Drittes Reich",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "943"
+   ]
+  },
+  "refugee-cities": {
+   "isbn": [
+    "9781512822809"
+   ],
+   "fp": "61eae66517",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99371886654306441"
+    }
+   ],
+   "ddc": [
+    "305.89159305491"
+   ]
+  },
+  "reisen-durch-den-krieg": {
+   "isbn": [
+    "9783879976201"
+   ],
+   "fp": "03d96d9df7",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/969934076"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990363272240206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990363272270206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4018145-5",
+     "label": "Frankreich",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4164714-2",
+     "label": "Kolonialtruppe",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4055409-0",
+     "label": "Soldat",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4034869-6",
+     "label": "Lebenslauf",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4018143-1",
+     "label": "Frankophones Afrika",
+     "type": "PlaceOrGeographicName"
+    }
+   ],
+   "ddc": [
+    "940"
+   ]
+  },
+  "religion-als-reform": {
+   "isbn": [
+    "9783879977253"
+   ],
+   "fp": "ee24639619",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1156287901"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990225151310206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4037680-1",
+     "label": "Marokko",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4020588-5",
+     "label": "Gesellschaft",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4115716-3",
+     "label": "Reform",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4005248-5",
+     "label": "Begriff",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "297.096409034"
+   ]
+  },
+  "religious-activism-on-campuses-in-togo-and-benin": {
+   "isbn": [
+    "9783111427904"
+   ],
+   "fp": "9f33e5d236",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1326204203"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99376252334806441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4005503-6",
+     "label": "Benin",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4060344-1",
+     "label": "Togo",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4051238-1",
+     "label": "Säkularisierung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4175047-0",
+     "label": "Politischer Wandel",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4000973-7",
+     "label": "Aktivismus",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4183827-0",
+     "label": "Studentenvereinigung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4040921-1",
+     "label": "Muslim",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4010071-6",
+     "label": "Christ",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4055783-2",
+     "label": "Sozialisation",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4005227-8",
+     "label": "Umfrage",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "201.709668",
+    "322.409668",
+    "378.19830882",
+    "200",
+    "320",
+    "370"
+   ]
+  },
+  "resistance-is-futile": {
+   "isbn": [
+    "9783879976904"
+   ],
+   "fp": "c44a2fa279",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/100341964X"
+    }
+   ],
+   "ddc": [
+    "330"
+   ]
+  },
+  "revolutionary-pasts": {
+   "isbn": [
+    "9781108693875"
+   ],
+   "fp": "ba8dc13ea4",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991014097850806445"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370696415706441"
+    }
+   ],
+   "ddc": [
+    "320.532095409041"
+   ]
+  },
+  "saudi-arabias-urban-revolution": {
+   "isbn": [
+    "9789004735507"
+   ],
+   "fp": "13cfb3aa1b",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1402257546"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99376254329706441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4113937-9",
+     "label": "Hochschulschrift",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4051788-3",
+     "label": "Saudi-Arabien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "7673015-3",
+     "label": "Šarqīyah",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4095968-5",
+     "label": "Hasa",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4176036-0",
+     "label": "Provinz",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4152707-0",
+     "label": "Erdölwirtschaft",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4015186-4",
+     "label": "Erdölindustrie",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4063234-9",
+     "label": "Verstädterung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "124301735X",
+     "label": "Metropolisierung",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "saudi-arabien-1": {
+   "isbn": [
+    "9783506769329"
+   ],
+   "fp": "7054ed9efd",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/998878200"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990179128070206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4051788-3",
+     "label": "Saudi-Arabien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4073972-7",
+     "label": "Landeskunde",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "915.38"
+   ]
+  },
+  "sendungsbewusstsein-oder-eigennutz": {
+   "isbn": [
+    "9783860933084"
+   ],
+   "fp": "0db5e8907c",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1185452435"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/961423080"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990010353350108971"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990117259830206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4177706-2",
+     "label": "Religiöse Bewegung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4054438-2",
+     "label": "Selbstverständnis",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4020588-5",
+     "label": "Gesellschaft",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4046514-7",
+     "label": "Politik",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4137178-1",
+     "label": "Fundamentalismus",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4180984-1",
+     "label": "Sendungsbewusstsein",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "320.557",
+    "297.272"
+   ]
+  },
+  "sensational-movies": {
+   "isbn": [
+    "9780520287686"
+   ],
+   "fp": "14fc395323",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99371082731506441"
+    }
+   ]
+  },
+  "servants-pasts-16th-18th-century-south-asia-vol-1": {
+   "isbn": [
+    "9789352876648"
+   ],
+   "fp": "81ad5e310b",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/121297090X"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990364869480206441"
+    }
+   ]
+  },
+  "servants-pasts-18th-20th-century-south-asia-vol-2": {
+   "isbn": [
+    "9789352876945"
+   ],
+   "fp": "1f60f15043",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1212971108"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990364869550206441"
+    }
+   ]
+  },
+  "shared-margins": {
+   "isbn": [
+    "9783110726305"
+   ],
+   "fp": "c3873d2709",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1238695167"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991001862029706485"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370881315906441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99371986919906441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4001138-0",
+     "label": "Alexandria",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4053309-8",
+     "label": "Schriftsteller",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4074272-6",
+     "label": "Literarisches Leben",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4000556-2",
+     "label": "Ägypten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "102321377X",
+     "label": "Arabischer Frühling",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4078931-7",
+     "label": "Ethnologie",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4035964-5",
+     "label": "Literatur",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4241223-7",
+     "label": "Arabisch",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4076232-4",
+     "label": "Politisches Engagement",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "892.7099621",
+    "893.109",
+    "290"
+   ]
+  },
+  "sharing-sovereignty": {
+   "isbn": [
+    "9783879976263"
+   ],
+   "fp": "778cdb0981",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/969933959"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990184996220206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4058406-9",
+     "label": "Südasien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4031516-2",
+     "label": "König",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4056618-3",
+     "label": "Staat",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "950"
+   ]
+  },
+  "social-dynamics-20-researching-change-in-times-of-media-convergence": {
+   "isbn": [
+    "9783865963222"
+   ],
+   "fp": "9cbd51f827",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1010390767"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990187389060206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4058448-3",
+     "label": "Südostasien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4068878-1",
+     "label": "Naher Osten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "7548364-6",
+     "label": "World Wide Web 2.0",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4055707-8",
+     "label": "Soziale Bewegung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4077587-2",
+     "label": "Sozialer Wandel",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4175047-0",
+     "label": "Politischer Wandel",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "302.231095"
+   ]
+  },
+  "soldat-ram-singh-und-der-kaiser": {
+   "isbn": [
+    "9783937603841"
+   ],
+   "fp": "71dec6833d",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1046742558"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990203918940206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4011882-4",
+     "label": "Deutschland",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4033130-1",
+     "label": "Kriegsgefangenenlager",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4728927-2",
+     "label": "Indischer Kriegsgefangener",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4079163-4",
+     "label": "Erster Weltkrieg",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "940.47243",
+    "940"
+   ]
+  },
+  "sport-across-asia": {
+   "isbn": [
+    "9780203074626"
+   ],
+   "fp": "f0d2e289a7",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99371414122306441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99371998776706441"
+    }
+   ],
+   "ddc": [
+    "306.483095"
+   ]
+  },
+  "sports-around-the-world": {
+   "isbn": [
+    "9781598843002"
+   ],
+   "fp": "7e80a37dfa",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990193068500206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4056366-2",
+     "label": "Sport",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4182459-3",
+     "label": "Sportliche Aktivität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4114328-0",
+     "label": "Kulturvergleich",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "sprachreisen-nach-syrien": {
+   "isbn": [
+    "9783879977123"
+   ],
+   "fp": "223b0c15ba",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1019043733"
+    }
+   ],
+   "ddc": [
+    "330",
+    "910"
+   ]
+  },
+  "state-nationalisms-in-the-ottoman-empire-greece-and-turkey": {
+   "isbn": [
+    "9780415690560"
+   ],
+   "fp": "81abd8721f",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990217871350206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4061163-2",
+     "label": "Türkei",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4075720-1",
+     "label": "Osmanisches Reich",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4022047-3",
+     "label": "Griechenland",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4170001-6",
+     "label": "Minderheitenpolitik",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4041300-7",
+     "label": "Nationalismus",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "surviving-everyday-life": {
+   "isbn": [
+    "9781529211955"
+   ],
+   "fp": "7560b2ca16",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99371012710006441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4030848-0",
+     "label": "Kirgisien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "7716334-5",
+     "label": "Menschliche Sicherheit",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "sympathie-und-schrecken": {
+   "isbn": [
+    "9783879977109"
+   ],
+   "fp": "e7a8a1502f",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/101083570X"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990186899890206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4000556-2",
+     "label": "Ägypten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4049716-1",
+     "label": "Rezeption",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4016494-9",
+     "label": "Faschismus",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4041316-0",
+     "label": "Nationalsozialismus",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "962.051"
+   ]
+  },
+  "taaddued-i-zevcat-z-eyl-continuation-of-the-debate-on-polygamy": {
+   "isbn": [
+    "9783879973767"
+   ],
+   "fp": "1938896128",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1000680010"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990202209710206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4075720-1",
+     "label": "Osmanisches Reich",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4018202-2",
+     "label": "Frau",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4134078-4",
+     "label": "Rechtsstellung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4175193-0",
+     "label": "Polygamie",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "305.42095609034",
+    "306.84230956109034",
+    "300",
+    "340"
+   ]
+  },
+  "technologische-dramen": {
+   "isbn": [
+    "9783837625912"
+   ],
+   "fp": "bb979af77b",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1044929162"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990204325910206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4005503-6",
+     "label": "Benin",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4169187-8",
+     "label": "Medien",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4234987-4",
+     "label": "Wandel",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4025408-2",
+     "label": "Hörfunk",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4001307-8",
+     "label": "Alltag",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4120719-1",
+     "label": "Medienkonsum",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4160384-9",
+     "label": "Hörfunksendung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4031883-7",
+     "label": "Kommunikation",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4043183-6",
+     "label": "Öffentlichkeit",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "302.2344096683",
+    "300"
+   ]
+  },
+  "the-anthropology-of-writing": {
+   "isbn": [
+    "9781441136718"
+   ],
+   "fp": "0ab4baa126",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370761558906441"
+    }
+   ],
+   "ddc": [
+    "302.2244"
+   ]
+  },
+  "the-challenge-of-the-threshold": {
+   "isbn": [
+    "9780739165126"
+   ],
+   "fp": "e7e8b311f3",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990195286820206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370876342406441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4000695-5",
+     "label": "Afrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4120730-0",
+     "label": "Migration",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4015701-5",
+     "label": "Europa",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4123761-4",
+     "label": "Migrationspolitik",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "304.8096"
+   ]
+  },
+  "the-city-in-the-ottoman-empire": {
+   "isbn": [
+    "9780415583633"
+   ],
+   "fp": "2c91ec08b8",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990183301560206441"
+    }
+   ],
+   "ddc": [
+    "307.76095609034"
+   ]
+  },
+  "the-doenme": {
+   "isbn": [
+    "9780804768672"
+   ],
+   "fp": "bb7166a945",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990188442220206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4503930-6",
+     "label": "Dönme",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "297.5740956",
+    "956.004924"
+   ]
+  },
+  "the-faceless-terrorist": {
+   "isbn": [
+    "9783030038427"
+   ],
+   "fp": "7d67cd1405",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990229149160206441"
+    }
+   ]
+  },
+  "the-fragmenting-force-of-memory-self-literary-style-and-civil-war-in-lebanon": {
+   "isbn": [
+    "9781443839082"
+   ],
+   "fp": "defc6fa27b",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990211320550206441"
+    }
+   ]
+  },
+  "the-global-horizon": {
+   "isbn": [
+    "9789058679062"
+   ],
+   "fp": "9d1ef7f103",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990208306230206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4000695-5",
+     "label": "Afrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4068878-1",
+     "label": "Naher Osten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4120730-0",
+     "label": "Migration",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "the-hadhrami-diaspora-in-southeast-asia": {
+   "isbn": [
+    "9789047425786"
+   ],
+   "fp": "35e71ee2d9",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370738795806441"
+    }
+   ],
+   "ddc": [
+    "305.89275335"
+   ]
+  },
+  "the-limits-of-trauma-discourse": {
+   "isbn": [
+    "9783879977192"
+   ],
+   "fp": "4eb5b7ef62",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1067781374"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1227692633"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990208737060206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "1060958392",
+     "label": "Kurdistan-Irak",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4124385-7",
+     "label": "Verbrechen gegen die Menschlichkeit",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4136796-0",
+     "label": "Überlebender",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4018202-2",
+     "label": "Frau",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4060749-5",
+     "label": "Psychisches Trauma",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4195461-0",
+     "label": "Bewältigung",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "616.85210082",
+    "610",
+    "150",
+    "950"
+   ]
+  },
+  "the-madrasa-in-asia": {
+   "isbn": [
+    "9789048501380"
+   ],
+   "fp": "587707cd1d",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1191045994"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1210622270"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991000508351906454"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370736888106441"
+    }
+   ],
+   "ddc": [
+    "371.077095"
+   ]
+  },
+  "the-perils-of-joy": {
+   "isbn": [
+    "9780815651918"
+   ],
+   "fp": "88cbe7917e",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/991014132488206445"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370750956406441"
+    }
+   ],
+   "ddc": [
+    "297.36"
+   ]
+  },
+  "the-plurality-of-europe": {
+   "isbn": [
+    "9783865834867"
+   ],
+   "fp": "4524a7169e",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1004245629"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990183270410206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4071013-0",
+     "label": "Europäische Integration",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4129611-4",
+     "label": "Politische Identität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4041282-9",
+     "label": "Nationalbewusstsein",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "7612596-8",
+     "label": "Transnationalisierung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4275671-6",
+     "label": "Regionale Identität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4354651-1",
+     "label": "Religiöse Identität",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4200793-8",
+     "label": "Kollektives Gedächtnis",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "306.094"
+   ]
+  },
+  "the-postcolonial-state-in-africa": {
+   "isbn": [
+    "9780299291433"
+   ],
+   "fp": "db54bf1bd2",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370755744506441"
+    }
+   ],
+   "ddc": [
+    "960.32"
+   ]
+  },
+  "the-sage-handbook-of-islamic-studies": {
+   "isbn": [
+    "9780761943259"
+   ],
+   "fp": "59ef7294d9",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990187240590206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "297"
+   ]
+  },
+  "the-social-life-of-memory-violence-trauma-and-testimony-in-lebanon-and-morocco": {
+   "isbn": [
+    "9783319666211"
+   ],
+   "fp": "5f476ccca4",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1136878777"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990223385930206441"
+    }
+   ]
+  },
+  "the-time-of-youth": {
+   "isbn": [
+    "9781565494749"
+   ],
+   "fp": "8d5b6375d3",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990228740340206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4000695-5",
+     "label": "Afrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4028859-6",
+     "label": "Jugend",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4077575-6",
+     "label": "Soziale Situation",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4248362-1",
+     "label": "Wirtschaftliche Lage",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4002730-2",
+     "label": "Arbeitslosigkeit",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "the-world-in-world-wars": {
+   "isbn": [
+    "9789004185456"
+   ],
+   "fp": "f2240a6526",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990184442460206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4003217-6",
+     "label": "Asien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4000695-5",
+     "label": "Afrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4079163-4",
+     "label": "Erster Weltkrieg",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4079167-1",
+     "label": "Zweiter Weltkrieg",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "940.31095"
+   ]
+  },
+  "thinking-with-the-south": {
+   "isbn": [
+    "9783110780352"
+   ],
+   "fp": "36325ab2f7",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1294889427"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99373905600906441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "1281040304",
+     "label": "Globaler Süden",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4066562-8",
+     "label": "Wissenschaft",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4566658-1",
+     "label": "Postkolonialismus",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4660420-0",
+     "label": "Wissensproduktion",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4032386-9",
+     "label": "Kooperation",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4066602-5",
+     "label": "Wissenschaftsethik",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "001.4091724"
+   ]
+  },
+  "translocality": {
+   "isbn": [
+    "9789004186057"
+   ],
+   "fp": "6adb50dd25",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990197228300206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370739514206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4003217-6",
+     "label": "Asien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4120730-0",
+     "label": "Migration",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4077587-2",
+     "label": "Sozialer Wandel",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4557997-0",
+     "label": "Globalisierung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4000695-5",
+     "label": "Afrika",
+     "type": "PlaceOrGeographicName"
+    }
+   ],
+   "ddc": [
+    "304.82"
+   ]
+  },
+  "transnationale-charakteristika-und-netzwerke-libanesischer-migranten-in-deutschland": {
+   "isbn": [
+    "9783879977130"
+   ],
+   "fp": "4da3486316",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1019043784"
+    }
+   ],
+   "ddc": [
+    "300",
+    "330"
+   ]
+  },
+  "under-construction": {
+   "isbn": [
+    "9781478006411"
+   ],
+   "fp": "30e10637a9",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990045075880206443"
+    }
+   ]
+  },
+  "under-construction-1": {
+   "isbn": [
+    "9781472412881"
+   ],
+   "fp": "e6e916379f",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990205507670206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4063234-9",
+     "label": "Verstädterung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4075992-1",
+     "label": "Persischer Golf",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4021571-4",
+     "label": "Golfstaaten",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4056723-0",
+     "label": "Stadt",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4056730-8",
+     "label": "Stadtentwicklung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4064115-6",
+     "label": "Wachstum",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4002529-9",
+     "label": "Arabien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4027653-3",
+     "label": "Iran",
+     "type": "PlaceOrGeographicName"
+    }
+   ]
+  },
+  "unknown-islam-in-ukraine-1": {
+   "isbn": [
+    "9783112225172",
+    "9783112225165"
+   ],
+   "fp": "8dfe963594",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1397809485"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99377025750806441"
+    }
+   ],
+   "ddc": [
+    "297.0947"
+   ]
+  },
+  "urban-governance-under-the-ottomans": {
+   "isbn": [
+    "9780415725477"
+   ],
+   "fp": "59d74da586",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990204244810206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4075720-1",
+     "label": "Osmanisches Reich",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4424590-7",
+     "label": "Stadtleben",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4056784-9",
+     "label": "Stadtverwaltung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4077575-6",
+     "label": "Soziale Situation",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4056730-8",
+     "label": "Stadtentwicklung",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "320.8509560903"
+   ]
+  },
+  "varieties-of-friendship": {
+   "isbn": [
+    "9781280993374"
+   ],
+   "fp": "63a0a13e23",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990198123960206441"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99370701923706441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4018480-8",
+     "label": "Freundschaft",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4044925-7",
+     "label": "Patronage",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4027274-6",
+     "label": "Interdisziplinäre Forschung",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "177.62",
+    "302.34"
+   ]
+  },
+  "violences-juveniles-sous-expertises": {
+   "isbn": [
+    "9782874632594"
+   ],
+   "fp": "6b3d7f79da",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990229026830206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4028859-6",
+     "label": "Jugend",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4157237-3",
+     "label": "Gewalttätigkeit",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "1199322490",
+     "label": "Forensik",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4351590-3",
+     "label": "Expertise",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "was-wir-sehen": {
+   "isbn": [
+    "9783905758344"
+   ],
+   "fp": "d2079efdb6",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99371117055306441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4075202-1",
+     "label": "Namibia",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4073624-6",
+     "label": "Kolonialismus",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4011882-4",
+     "label": "Deutschland",
+     "type": "PlaceOrGeographicName"
+    }
+   ]
+  },
+  "welfare-as-gift": {
+   "isbn": [
+    "9783111138169"
+   ],
+   "fp": "edbf3dd285",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1285278437"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99377560798906441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4061163-2",
+     "label": "Türkei",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4128491-4",
+     "label": "Wohlfahrt",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4190155-1",
+     "label": "Wohltätigkeit",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4121808-5",
+     "label": "Umverteilung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4027743-4",
+     "label": "Islam",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4136229-9",
+     "label": "Kayseri",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4333058-7",
+     "label": "Islamische Stiftung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4018801-2",
+     "label": "Fürsorge",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4049396-9",
+     "label": "Religion",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4041110-2",
+     "label": "Nächstenliebe",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "297.650956412",
+    "297.540956412",
+    "361.0882970956412",
+    "290",
+    "360",
+    "330"
+   ]
+  },
+  "west-african-ulama-and-salafism-in-mecca-and-medina": {
+   "isbn": [
+    "9789004270312"
+   ],
+   "fp": "f3d650b113",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990208154510206441"
+    }
+   ]
+  },
+  "when-the-war-began-we-heard-of-several-kings": {
+   "isbn": [
+    "9788187358435"
+   ],
+   "fp": "18f4eab0f8",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990205123740206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4011882-4",
+     "label": "Deutschland",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4079163-4",
+     "label": "Erster Weltkrieg",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4728927-2",
+     "label": "Indischer Kriegsgefangener",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "wirtschaft-politik-und-raum": {
+   "isbn": [
+    "9783899303674"
+   ],
+   "fp": "a587fae510",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1016863977"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1027205674"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1027206794"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4042482-0",
+     "label": "Nordafrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4053770-5",
+     "label": "Subsaharisches Afrika",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4037680-1",
+     "label": "Marokko",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4038051-8",
+     "label": "Mauretanien",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4184802-0",
+     "label": "Territorialstaat",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4066438-7",
+     "label": "Wirtschaftsentwicklung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4076605-6",
+     "label": "Regionalentwicklung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4299722-7",
+     "label": "Internationale Verflechtung",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "330",
+    "320",
+    "337.640661"
+   ]
+  },
+  "women-and-the-city-women-in-the-city": {
+   "isbn": [
+    "9781782384113"
+   ],
+   "fp": "f62b509d43",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990206209870206441"
+    }
+   ]
+  },
+  "women-martyrs-and-stones-in-irans-post-war-politics": {
+   "isbn": [
+    "9781399536776"
+   ],
+   "fp": "07695dee9b",
+   "records": [
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/99376651020506441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4027653-3",
+     "label": "Iran",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4132471-7",
+     "label": "Golfkrieg (1980-1988)",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4293571-4",
+     "label": "Gefallener",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4036915-8",
+     "label": "Märtyrer",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4040949-1",
+     "label": "Mutter",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4066678-5",
+     "label": "Witwe",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4060742-2",
+     "label": "Trauer",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4018672-6",
+     "label": "Frömmigkeit",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4512697-5",
+     "label": "Materialität",
+     "type": "SubjectHeading"
+    }
+   ]
+  },
+  "zwischen-achse-und-mandatsmacht": {
+   "isbn": [
+    "9783879976409"
+   ],
+   "fp": "98ca5f43ff",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/117237158X"
+    },
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/985084952"
+    },
+    {
+     "catalogue": "lobid",
+     "id": "https://lobid.org/resources/990160073310206441"
+    }
+   ],
+   "subjects": [
+    {
+     "id": "4044381-4",
+     "label": "Palästina",
+     "type": "PlaceOrGeographicName"
+    },
+    {
+     "id": "4047150-0",
+     "label": "Presse",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4041316-0",
+     "label": "Nationalsozialismus",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4005709-4",
+     "label": "Berichterstattung",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4002528-7",
+     "label": "Araber",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4132042-6",
+     "label": "Panarabismus",
+     "type": "SubjectHeading"
+    },
+    {
+     "id": "4041300-7",
+     "label": "Nationalismus",
+     "type": "SubjectHeading"
+    }
+   ],
+   "ddc": [
+    "956.9404"
+   ]
+  },
+  "zwischenraeume-1": {
+   "isbn": [
+    "9783948297060"
+   ],
+   "fp": "ea09ce66e1",
+   "records": [
+    {
+     "catalogue": "dnb",
+     "id": "https://d-nb.info/1219371947"
+    }
+   ],
+   "ddc": [
+    "300"
+   ]
+  }
+ },
+ "unmatched": [
+  "%D9%87%D9%88%D8%A7%D9%85%D8%B4-%D9%85%D8%B4%D8%AA%D8%B1%D9%83%D8%A9",
+  "%E1%83%A5%E1%83%A3%E1%83%A9%E1%83%98%E1%83%A1-%E1%83%90%E1%83%9C%E1%83%A2%E1%83%98%E1%83%A1%E1%83%90%E1%83%91%E1%83%AD%E1%83%9D%E1%83%97%E1%83%90-%E1%83%AC%E1%83%98%E1%83%9C%E1%83%90%E1%83%90%E1%83%A6%E1%83%9B%E1%83%93%E1%83%94%E1%83%92%E1%83%9D%E1%83%91%E1%83%90-%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A8%E1%83%98-anti-soviet-street-resistance-in-georgia",
+  "a-geography-of-jihad-1",
+  "authoritarianism-displacement-and-syrian-family-life",
+  "baba-padmanji",
+  "between-social-skills-and-marketable-skills",
+  "bombay-islam",
+  "brave-men-pretty-women",
+  "bulldozer-capitalism",
+  "climate-justice-and-migration",
+  "communication-and-colonialism-in-eastern-india",
+  "cordial-cold-war-1",
+  "crises-in-european-integration-challenges-and-responses-1945-2005",
+  "currencies-of-the-indian-ocean-world",
+  "default-1f53adec61c2ba5814adf3116cb5ea56",
+  "default-6c9bc646a9",
+  "domesticating-vigilantism-in-africa",
+  "dubai",
+  "egypt-in-the-future-tense",
+  "embattled-dreamslands",
+  "everyday-life-in-the-old-city-of-jerusalem",
+  "feminism-and-migration",
+  "femmes-associations-et-politique-a-casablanca",
+  "from-identity-based-conflict-to-identity-based-cooperation",
+  "geschichte-saudi-arabiens",
+  "global-labour-history",
+  "governance-and-islam-in-east-africa",
+  "handbuch-des-antisemitismus",
+  "highly-qualified-immigrants-and-refugees",
+  "historiography-in-saudi-arabia",
+  "humanistic-ethics-in-the-age-of-globality",
+  "identiti-cina-muslim-di-malaysia-persempadanan-perundingan-dan-kacukan-budaya",
+  "ignac-goldziher",
+  "india-y-pakistan",
+  "intifaat-am-thawrat-fi-tarikh-mir-al-adith",
+  "islam-et-modernite-contribution-a-lanalyse-de-la-re-islamisation-au-niger",
+  "islam-und-geschlechterpolitik-ueberlegungen-zu-afghanistan",
+  "islam-youth-and-modernity-in-the-gambia",
+  "ismailism-and-islam-in-modern-south-asia",
+  "istanbul-as-seen-from-a-distance",
+  "juifs-dalgerie",
+  "kleines-abc-des-nomadismus",
+  "knowledge-in-practice",
+  "la-ville-de-diffa-face-a-boko-haram-et-a-lafflux-des-refugies-nigerians",
+  "lafrique-des-generations",
+  "les-nouveaux-urbains-dans-lespace-sahara-sahel",
+  "lesser-lives",
+  "los-movimientos-islamicos-transnacionales-y-la-emergencia-de-un-islam-europeo",
+  "masculinity-sexuality-and-illegal-migration",
+  "mediating-claims-to-authenticity-in-populist-discourses-in-the-post-colony",
+  "mediating-cultural-diversity-in-a-globalised-public-space",
+  "migration-and-welfare-austerity-1",
+  "migration-in-the-making-of-the-gulf-space",
+  "nafssiya-or-edward-saids-affective-phenomenology-of-racism",
+  "naseej",
+  "negotiating-empire-in-the-middle-east-ottomans-and-arab-nomads-in-the-modern-era-1840-1914",
+  "new-face-of-islam-in-eastern-nigeria-and-the-lake-chad-basin",
+  "oase-zelt-und-zwischenraum",
+  "of-matters-modern",
+  "opposition-and-legitimacy-in-the-ottoman-empire",
+  "ottoman-children-and-youth-during-world-war-i",
+  "playing-the-nation-game",
+  "refugee-cities",
+  "regionalizing-oman",
+  "research-heritage",
+  "resistance-is-futile",
+  "rethinking-islamic-modernism",
+  "revolutionary-pasts",
+  "sensational-movies",
+  "servants-pasts-16th-18th-century-south-asia-vol-1",
+  "servants-pasts-18th-20th-century-south-asia-vol-2",
+  "spaces-of-participation",
+  "spectral-imprints",
+  "sport-across-asia",
+  "sports-modernity-in-late-imperial-ethiopia",
+  "sprachreisen-nach-syrien",
+  "subverting-borders",
+  "swahili-muslim-publics-and-postcolonial-experience-1",
+  "the-anthropology-of-writing",
+  "the-city-in-the-ottoman-empire",
+  "the-coming-of-the-comforter",
+  "the-death-and-life-of-southern-soviet-cities-1",
+  "the-faceless-terrorist",
+  "the-fragmenting-force-of-memory-self-literary-style-and-civil-war-in-lebanon",
+  "the-hadhrami-diaspora-in-southeast-asia",
+  "the-madrasa-in-asia",
+  "the-making-of-the-arab-intellectual-1880-1960",
+  "the-national-mind",
+  "the-perils-of-joy",
+  "the-postcolonial-state-in-africa",
+  "the-social-life-of-memory-violence-trauma-and-testimony-in-lebanon-and-morocco",
+  "the-transformation-of-tajikistan",
+  "the-value-of-disorder",
+  "transnationale-charakteristika-und-netzwerke-libanesischer-migranten-in-deutschland",
+  "under-construction",
+  "understanding-the-city-through-its-margins",
+  "unknown-islam-in-ukraine-1",
+  "urban-neighbourhood-formations-1",
+  "urban-violence-in-the-middle-east",
+  "west-african-ulama-and-salafism-in-mecca-and-medina",
+  "women-and-the-city-women-in-the-city",
+  "womens-voices-from-west-africa",
+  "writing-the-modern-history-of-iraq",
+  "zukunftsperspektiven-der-entwicklungszusammenarbeit-als-erweiterte-kooperations-und-sicherheitspolitik",
+  "zwischenraeume-1"
+ ],
+ "invalid_isbn": [
+  "a-history-of-jeddah",
+  "afrika-geschichte-und-politik",
+  "blind-fuer-die-geschichte",
+  "id-al-hubb-fi-misr",
+  "konstantinopel-istanbul",
+  "speaking-the-nation",
+  "studying-islam-and-christianity-in-africa-moving-beyond-a-bifurcated-field"
+ ],
+ "searched": {
+  "%D9%87%D9%88%D8%A7%D9%85%D8%B4-%D9%85%D8%B4%D8%AA%D8%B1%D9%83%D8%A9": "3fc894bac6",
+  "%E1%83%A5%E1%83%A3%E1%83%A9%E1%83%98%E1%83%A1-%E1%83%90%E1%83%9C%E1%83%A2%E1%83%98%E1%83%A1%E1%83%90%E1%83%91%E1%83%AD%E1%83%9D%E1%83%97%E1%83%90-%E1%83%AC%E1%83%98%E1%83%9C%E1%83%90%E1%83%90%E1%83%A6%E1%83%9B%E1%83%93%E1%83%94%E1%83%92%E1%83%9D%E1%83%91%E1%83%90-%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A8%E1%83%98-anti-soviet-street-resistance-in-georgia": "62dc7259ea",
+  "authoritarianism-displacement-and-syrian-family-life": "c494046cd9",
+  "baba-padmanji": "cbca35b461",
+  "bulldozer-capitalism": "5a8c61ad1b",
+  "climate-justice-and-migration": "486f8a1439",
+  "communication-and-colonialism-in-eastern-india": "7865dd2f29",
+  "crises-in-european-integration-challenges-and-responses-1945-2005": "51a20658af",
+  "default-1f53adec61c2ba5814adf3116cb5ea56": "9d5fa9d575",
+  "default-6c9bc646a9": "03e9a78435",
+  "domesticating-vigilantism-in-africa": "85f048ba70",
+  "embattled-dreamslands": "a6f4eaba6a",
+  "global-labour-history": "bcf7890dfc",
+  "governance-and-islam-in-east-africa": "147e9eb8b1",
+  "identiti-cina-muslim-di-malaysia-persempadanan-perundingan-dan-kacukan-budaya": "253afa39ee",
+  "ignac-goldziher": "cad41567ef",
+  "india-y-pakistan": "67541861fd",
+  "intifaat-am-thawrat-fi-tarikh-mir-al-adith": "d7ce6e0e4a",
+  "islam-et-modernite-contribution-a-lanalyse-de-la-re-islamisation-au-niger": "a0799a3b02",
+  "istanbul-as-seen-from-a-distance": "6fefb514d6",
+  "juifs-dalgerie": "c2298dd668",
+  "knowledge-in-practice": "2ea54ba359",
+  "la-ville-de-diffa-face-a-boko-haram-et-a-lafflux-des-refugies-nigerians": "92c1daa212",
+  "lafrique-des-generations": "be6d82717a",
+  "lesser-lives": "6b95dd8c69",
+  "masculinity-sexuality-and-illegal-migration": "0c173309c4",
+  "mediating-claims-to-authenticity-in-populist-discourses-in-the-post-colony": "97e22e0ab5",
+  "migration-and-welfare-austerity-1": "9d697f6355",
+  "migration-in-the-making-of-the-gulf-space": "b8e72ae3c4",
+  "nafssiya-or-edward-saids-affective-phenomenology-of-racism": "93b22805ee",
+  "naseej": "2ae8925920",
+  "new-face-of-islam-in-eastern-nigeria-and-the-lake-chad-basin": "adc700ccab",
+  "playing-the-nation-game": "e9927d0624",
+  "regionalizing-oman": "09d6f26236",
+  "research-heritage": "6fcaf44f6c",
+  "rethinking-islamic-modernism": "24bd721458",
+  "spaces-of-participation": "6421db5c0b",
+  "spectral-imprints": "38d0790259",
+  "sports-modernity-in-late-imperial-ethiopia": "8c62a09b03",
+  "subverting-borders": "726080e28c",
+  "swahili-muslim-publics-and-postcolonial-experience-1": "ea6a9674b4",
+  "the-coming-of-the-comforter": "f18bf235e6",
+  "the-death-and-life-of-southern-soviet-cities-1": "c4cebf8fdc",
+  "the-making-of-the-arab-intellectual-1880-1960": "b6d4c293de",
+  "the-national-mind": "533892b7f4",
+  "the-transformation-of-tajikistan": "ead8020ac2",
+  "the-value-of-disorder": "43428280ec",
+  "understanding-the-city-through-its-margins": "c1774d8b0b",
+  "urban-neighbourhood-formations-1": "1d9c050376",
+  "urban-violence-in-the-middle-east": "a32d85c4e9",
+  "womens-voices-from-west-africa": "513995c551",
+  "writing-the-modern-history-of-iraq": "10df1d4324",
+  "zukunftsperspektiven-der-entwicklungszusammenarbeit-als-erweiterte-kooperations-und-sicherheitspolitik": "08d627c90b"
+ }
+}

@@ -170,3 +170,46 @@ test('open-access status is never inferred for unmatched records', () => {
     assert.equal(accessOf({ oa: 'closed' }), 'closed');
     assert.equal(accessOf({ oa: 'diamond' }), 'open');
 });
+
+test('region, place and subject filters use derived regions and exclude themselves', () => {
+    const recs = indexForSearch([
+        { slug:'a', url:'https://example.org/a', title:'One', places:['Q858','Q43'], $regions:['middle-east'], gnd:['4027743-2'] },
+        { slug:'b', url:'https://example.org/b', title:'Two', places:['Q668'], $regions:['south-asia'] },
+        { slug:'c', url:'https://example.org/c', title:'Three' }
+    ], null, { places:[{ id:'Q858', label:{ en:'Syria', de:'Syrien' } }] }, { headings:{ '4027743-2':{ label:'Islam' } } });
+    const f = createFilters(); f.region.add('middle-east');
+    assert.deepEqual(applyFilters(recs, f).map(r => r.slug), ['a']);
+    f.region.clear(); f.place.add('Q668');
+    assert.deepEqual(applyFilters(recs, f).map(r => r.slug), ['b']);
+    assert.equal(applyFilters(recs, f, { except:'place' }).length, 3);
+    const g = createFilters(); g.gnd.add('4027743-2');
+    assert.deepEqual(applyFilters(recs, g).map(r => r.slug), ['a']);
+    // Place names and subject headings are searchable in both languages.
+    const h = createFilters(); h.search = 'syrien';
+    assert.deepEqual(applyFilters(recs, h).map(r => r.slug), ['a']);
+    h.search = 'islam';
+    assert.deepEqual(applyFilters(recs, h).map(r => r.slug), ['a']);
+});
+
+test('URL keys for regions, places and subject headings validate their values', () => {
+    const f = createFilters(); f.region.add('north-africa'); f.place.add('Q858'); f.gnd.add('4027743-2');
+    assert.deepEqual(decodeFilters(new URLSearchParams(encodeFilters(f))), f);
+    const bad = decodeFilters('?region=North%20Africa&place=Syria&gnd=Islam');
+    assert.equal(bad.region.size + bad.place.size + bad.gnd.size, 0);
+});
+
+test('regions and subjects files validate against the committed dataset', async () => {
+    const { validateRegions, validateSubjects } = await import('../publications_dashboard/src/utils/contracts.js');
+    const { readFile } = await import('node:fs/promises');
+    const read = async name => JSON.parse(await readFile(new URL(`../publications_dashboard/data/${name}`, import.meta.url)));
+    const [meta, publications, regions, subjects] = await Promise.all(['meta.json', 'publications.json', 'regions.json', 'subjects.json'].map(read));
+    assert.equal(validateRegions(regions, meta), regions);
+    assert.equal(validateSubjects(subjects, meta), subjects);
+    assert.throws(() => validateRegions(regions, { ...meta, datasetId: 'another' }));
+    const known = new Set(regions.places.map(p => p.id));
+    assert.ok(publications.every(r => (r.places ?? []).every(id => known.has(id))));
+    assert.ok(publications.every(r => (r.gnd ?? []).every(id => id in subjects.headings)));
+    // Only the eight palette regions have a colour; the transregional group has none.
+    assert.equal(regions.macros.filter(m => m.slot).length, 8);
+    assert.ok(regions.places.filter(p => p.macro === 'transregional').every(p => !p.coord || ['sea', 'region'].includes(p.kind)));
+});

@@ -10,11 +10,15 @@
     "They have not been reviewed by ZMO staff. Editing a label here is fine; keep the signature.",
     "Each theme's signature is a hash of the records it was labelled for. After",
     "build_themes.py --refit the signatures no longer match and generate_publication_data.py",
-    "refuses these labels until the themes are labelled again from the new brief."
+    "refuses these labels until the themes are labelled again from the new brief.",
+    "",
+    "Once someone at ZMO has reviewed the labels, set \"reviewed\" to {\"by\": \"Name\", \"date\": \"YYYY-MM-DD\"}:",
+    "the dashboard then names the reviewer instead of saying the labels are unreviewed."
   ],
   "author": "Claude Opus 5.5 (Anthropic)",
   "model": "claude-opus-5-5",
   "date": "2026-10-22",
+  "reviewed": null,
   "fit_signature": "20188a9eb8ad680a",
   "areas": {
     "a1": {

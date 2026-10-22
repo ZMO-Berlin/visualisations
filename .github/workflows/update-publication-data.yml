@@ -94,11 +94,22 @@ jobs:
           if [[ '${{ inputs.refresh_all }}' == 'true' || $(date -u +%m) =~ ^(01|04|07|10)$ ]]; then refresh+=(--refresh-all); fi
           python data_prep/enrich_openalex.py "${refresh[@]}"
 
-      - name: Report enrichment failures
-        if: steps.people.outcome == 'failure' || steps.openalex.outcome == 'failure'
+      # GND subject headings for books, from the hbz union catalogue (lobid) and
+      # the German National Library. Incremental like OpenAlex: only new or
+      # changed ISBNs are looked up, except in the quarterly full run.
+      - name: Look up library subject headings
+        id: subjects
+        continue-on-error: true
         run: |
-          echo "::warning::An enrichment step failed (people: ${{ steps.people.outcome }}, OpenAlex: ${{ steps.openalex.outcome }}); the previous files were kept."
-          echo "Enrichment failed — people: ${{ steps.people.outcome }}, OpenAlex: ${{ steps.openalex.outcome }}. The previously committed files were kept." >> "$GITHUB_STEP_SUMMARY"
+          refresh=()
+          if [[ '${{ inputs.refresh_all }}' == 'true' || $(date -u +%m) =~ ^(01|04|07|10)$ ]]; then refresh+=(--refresh-all); fi
+          python data_prep/fetch_subjects.py "${refresh[@]}"
+
+      - name: Report enrichment failures
+        if: steps.people.outcome == 'failure' || steps.openalex.outcome == 'failure' || steps.subjects.outcome == 'failure'
+        run: |
+          echo "::warning::An enrichment step failed (people: ${{ steps.people.outcome }}, OpenAlex: ${{ steps.openalex.outcome }}, subjects: ${{ steps.subjects.outcome }}); the previous files were kept."
+          echo "Enrichment failed — people: ${{ steps.people.outcome }}, OpenAlex: ${{ steps.openalex.outcome }}, subjects: ${{ steps.subjects.outcome }}. The previously committed files were kept." >> "$GITHUB_STEP_SUMMARY"
 
       - name: Generate the dashboard dataset
         run: python data_prep/generate_publication_data.py
@@ -139,7 +150,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data_prep/raw_data data_prep/reports publications_dashboard/data units_wordcloud/data en/index.html de/index.html
           git commit -m 'Refresh publication data from zmo.de' \
-                     -m 'Automated monthly run of data_prep/scrape_publications.py, scrape_people.py, enrich_openalex.py and generate_publication_data.py.'
+                     -m 'Automated monthly run of data_prep/scrape_publications.py, scrape_people.py, enrich_openalex.py, fetch_subjects.py and generate_publication_data.py.'
           # Rebase before pushing: the word cloud refresh writes to the same
           # branch, and a long crawl can outlast the gap between the two jobs.
           git pull --rebase origin main

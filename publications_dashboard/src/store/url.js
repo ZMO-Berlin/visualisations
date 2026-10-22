@@ -1,5 +1,5 @@
 import { createFilters, VENUE_FIELDS, parseVenueKey } from './filters.js';
-export const FILTER_KEYS = ['type', 'author', 'venue', 'theme', 'lang', 'access', 'from', 'to', 'q'];
+export const FILTER_KEYS = ['type', 'author', 'venue', 'theme', 'lang', 'access', 'region', 'place', 'gnd', 'from', 'to', 'q'];
 /** Values a hand-edited or stale link may carry, checked before they reach the store. */
 const VALID = {
     type: () => true,
@@ -7,7 +7,10 @@ const VALID = {
     venue: value => VENUE_FIELDS.includes(parseVenueKey(value).field),
     theme: value => /^t\d{2}$/.test(value),
     lang: value => /^[a-z]{2,3}$/.test(value),
-    access: value => ['open', 'closed', 'unknown'].includes(value)
+    access: value => ['open', 'closed', 'unknown'].includes(value),
+    region: value => /^[a-z]+(?:-[a-z]+)*$/.test(value),
+    place: value => /^Q\d+$/.test(value),
+    gnd: value => /^[0-9]+-?[0-9X]$|^[0-9]{7,10}[0-9X]?$/.test(value)
 };
 export function decodeFilters(search) {
     const params = new URLSearchParams(search);

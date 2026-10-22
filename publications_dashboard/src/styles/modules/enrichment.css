@@ -305,3 +305,235 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* ------------------------------------------------------------ Regions map */
+
+/* The transregional group has no palette slot: a neutral grey, never a hue
+   that could be read as a ninth region. */
+.series-none { background: var(--c-line-strong); }
+.fill-none { fill: var(--c-line-strong); }
+
+.world {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--c-surface-sunk);
+    border-radius: var(--r-md);
+}
+
+.world__countries path {
+    fill: var(--c-surface);
+    stroke: var(--c-line-strong);
+    stroke-width: 0.6;
+}
+
+.world__bubble {
+    opacity: 0.78;
+    stroke: var(--c-surface);
+    stroke-width: 1;
+    cursor: pointer;
+    transition: r var(--dur-base) var(--ease-out), opacity var(--dur-fast) var(--ease-out);
+}
+
+.world__bubble:hover {
+    opacity: 1;
+    stroke: var(--c-ink);
+}
+
+.world__bubble--selected {
+    opacity: 1;
+    stroke: var(--c-ink);
+    stroke-width: 2;
+}
+
+/* In map units: the map is 1,000 wide and scaled to its panel, so 19 reads
+   as about 9px in a half-width column and grows on the full screen. */
+.world__label {
+    display: none;
+    font-family: var(--font-ui);
+    font-size: 19px;
+    font-weight: var(--weight-medium);
+    fill: var(--c-ink);
+    paint-order: stroke;
+    stroke: var(--c-surface-sunk);
+    stroke-width: 5px;
+    stroke-linejoin: round;
+    pointer-events: none;
+}
+
+.world__label--shown {
+    display: inline;
+}
+
+.focus-list {
+    display: grid;
+    grid-template-columns: minmax(10rem, max-content) 1fr;
+    gap: var(--s-2) var(--s-4);
+    margin: var(--s-3) 0;
+    font-size: var(--text-sm);
+}
+
+.focus-list dt {
+    font-weight: var(--weight-medium);
+}
+
+.focus-list a {
+    color: var(--c-brand);
+}
+
+.profile__focus {
+    color: var(--c-ink-muted);
+}
+
+/* --------------------------------------------------- Author timeline heatmap */
+
+/* One scale for the whole table: --heat is a cell's count over the busiest
+   author-year in the selection. */
+.heatmap td.heat-cell {
+    padding: 0;
+    text-align: center;
+    background: color-mix(in srgb, var(--c-brand) calc(var(--heat) * 100%), var(--c-surface));
+}
+
+.heatmap td.heat-cell button {
+    width: 100%;
+    min-width: 30px;
+    min-height: 30px;
+    color: var(--c-brand-strong);
+    text-decoration: none;
+}
+
+.heatmap td.heat-cell--dark button {
+    color: #ffffff;
+}
+
+.heatmap td.heat-cell button:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------ Year slider */
+
+.year-range-slot {
+    padding: 0 var(--s-5) var(--s-4);
+}
+
+.year-range {
+    display: flex;
+    align-items: center;
+    gap: var(--s-4);
+}
+
+.year-range__track {
+    position: relative;
+    flex: 1;
+    height: 28px;
+}
+
+.year-range__track::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 4px;
+    margin-top: -2px;
+    border-radius: var(--r-pill);
+    background: var(--c-surface-sunk);
+}
+
+.year-range__fill {
+    position: absolute;
+    top: 50%;
+    height: 4px;
+    margin-top: -2px;
+    border-radius: var(--r-pill);
+    background: var(--c-brand-soft);
+}
+
+/* Two inputs stacked on one track: only the thumbs take the pointer, so each
+   handle can be grabbed wherever the other lies. */
+.year-range__input {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    margin: 0;
+    background: none;
+    pointer-events: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.year-range__input::-webkit-slider-thumb {
+    pointer-events: auto;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--c-brand);
+    border-radius: 50%;
+    background: var(--c-surface);
+    cursor: grab;
+}
+
+.year-range__input::-moz-range-thumb {
+    pointer-events: auto;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--c-brand);
+    border-radius: 50%;
+    background: var(--c-surface);
+    cursor: grab;
+}
+
+.year-range__input::-webkit-slider-runnable-track { background: none; }
+.year-range__input::-moz-range-track { background: none; }
+
+.year-range__input:focus-visible::-webkit-slider-thumb { box-shadow: var(--ring-focus); }
+.year-range__input:focus-visible::-moz-range-thumb { box-shadow: var(--ring-focus); }
+
+.year-range__output {
+    min-width: 6.5em;
+    font-size: var(--text-sm);
+    font-variant-numeric: tabular-nums;
+    color: var(--c-ink-muted);
+    text-align: right;
+}
+
+/* ------------------------------------------------------------ Full screen */
+
+.panel__fullscreen {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    width: 32px;
+    height: 32px;
+    margin-left: auto;
+    padding: 0;
+    border: var(--border);
+    border-radius: var(--r-sm);
+    background: var(--c-surface);
+    color: var(--c-ink-muted);
+    cursor: pointer;
+}
+
+.panel__fullscreen:hover {
+    color: var(--c-brand);
+    border-color: var(--c-line-strong);
+}
+
+/* A panel on the whole screen scrolls inside itself and lets its pictures
+   grow, but never taller than the screen. */
+.panel--fullscreen {
+    overflow: auto;
+    padding: var(--s-6);
+    background: var(--c-surface);
+}
+
+.panel--fullscreen .map,
+.panel--fullscreen .world,
+.panel--fullscreen .citations {
+    max-height: calc(100vh - 10rem);
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}

@@ -10,8 +10,9 @@ and writes ``publications_dashboard/data/``:
   * ``meta.json`` — the source, the document types in filter order, and the
     counts the app shows before it has aggregated anything;
   * ``families.json`` — volume–chapter relationships;
-  * ``people.json``, ``themes.json``, ``openalex.json`` — the enrichment layers
-    (zmo.de people pages, the thematic map, OpenAlex), built by
+  * ``people.json``, ``themes.json``, ``openalex.json``, ``regions.json``,
+    ``subjects.json`` — the enrichment layers (zmo.de people pages, the
+    thematic map, OpenAlex, places studied, GND subject headings), built by
     ``dashboard_extras.py`` from whichever of their inputs exist.
 
 Fields the dashboard does not use — abstracts, cover images, ISBNs, the
@@ -62,9 +63,10 @@ RECORD_FIELDS = (
     "year", "journal", "publisher", "series", "doi",
 )
 # Added after consolidation by dashboard_extras.annotate, in this order: the
-# detected language, the theme, and what OpenAlex says (id, open-access status
-# and a free copy's URL). Each is omitted when there is nothing to say.
-ENRICHED_FIELDS = ("lang", "theme", "openalex", "oa", "oaUrl")
+# detected language, the theme, the places named (Wikidata ids), a book's GND
+# headings, and what OpenAlex says (id, open-access status and a free copy's
+# URL). Each is omitted when there is nothing to say.
+ENRICHED_FIELDS = ("lang", "theme", "places", "gnd", "openalex", "oa", "oaUrl")
 
 # Venue fields that get the same consolidation, and the section of aliases.json
 # each one reads.
@@ -499,6 +501,8 @@ def main(argv: list[str] | None = None) -> int:
     )
     themes = extras_module.themes_file(dataset, extras, meta["datasetId"])
     openalex = extras_module.openalex_file(dataset, extras, meta["datasetId"])
+    regions = extras_module.regions_file(dataset, extras, meta["datasetId"], people)
+    subjects = extras_module.subjects_file(dataset, extras, meta["datasetId"])
 
     if args.report_merges:
         print("\nauthors")
@@ -515,7 +519,8 @@ def main(argv: list[str] | None = None) -> int:
     write_json(args.output_dir / "publications.json", dataset)
     write_json(args.output_dir / "meta.json", meta)
     write_json(args.output_dir / "people.json", people)
-    for name, layer in (("themes.json", themes), ("openalex.json", openalex)):
+    for name, layer in (("themes.json", themes), ("openalex.json", openalex),
+                        ("regions.json", regions), ("subjects.json", subjects)):
         if layer is not None:
             write_json(args.output_dir / name, layer)
 
@@ -533,7 +538,8 @@ def main(argv: list[str] | None = None) -> int:
               f"{counts['withoutYear']} without one, {counts['untyped']} without a type")
     reach = meta["coverage"]
     print(f"{reach['zmoAuthors']} author(s) linked to zmo.de, {reach['openalex']} record(s) in OpenAlex, "
-          f"{reach['themed']} with a theme")
+          f"{reach['themed']} with a theme, {reach['withPlace']} naming a place, "
+          f"{reach['withHeadings']} with GND headings")
     print(f"wrote {args.output_dir / 'publications.json'} and its companion files")
     return 0
 

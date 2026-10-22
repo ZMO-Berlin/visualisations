@@ -1,4 +1,5 @@
 import { validateFamilies } from '../../../shared/data-contracts.js';
+import { fill } from '../utils/translations.js';
 import { el, mount } from '../utils/dom.js';
 import { countValues, rank, yearExtent } from '../utils/aggregate.js';
 import { Pager } from '../../../shared/pager.js';
@@ -86,18 +87,36 @@ export class Analysis {
         const extent = yearExtent(this.all);
         if (!extent) return;
         const years = Array.from({ length: extent[1] - extent[0] + 1 }, (_, i) => extent[0] + i);
-        const rows = names.map(name => {
-            const counts = countValues(records.filter(r => r.authors?.includes(name)), r => String(r.year ?? ''));
-            return [name, ...years.map(year => {
-                const count = counts.get(String(year)) ?? 0;
-                return count ? el('button', { type: 'button', text: count, 'aria-label': `${name}, ${year}: ${count}`, on: { click: () => {
-                    this.store.focusPublications([name], [year, year]);
-                    const results = document.getElementById('publication-results');
-                    results.tabIndex = -1; results.scrollIntoView(); results.focus({ preventScroll: true });
-                } } }) : '—';
-            })];
-        });
-        mount(this.sections.get('authors').body, el('div', {}, [el('p', { class: 'explore-hint', text: this.s.authorHint }), this.table([this.s.authorsOverTime, ...years.map(String)], rows, 'timeline-matrix')]));
+        // A heatmap: every cell shaded on one scale, the darkest the busiest
+        // author-year of the selection, so rows can be compared at a glance
+        // and the count is still there to read and to click.
+        const counts = new Map(names.map(name => [name, countValues(records.filter(r => r.authors?.includes(name)), r => String(r.year ?? ''))]));
+        const peak = Math.max(1, ...[...counts.values()].flatMap(map => [...map.values()]));
+        const open = (name, year) => {
+            this.store.focusPublications([name], [year, year]);
+            const results = document.getElementById('publication-results');
+            results.tabIndex = -1; results.scrollIntoView(); results.focus({ preventScroll: true });
+        };
+        const table = el('div', { class: 'table-scroll', tabindex: '0', role: 'region', 'aria-label': this.s.authorsOverTime }, [
+            el('table', { class: 'explore-table timeline-matrix heatmap' }, [
+                el('thead', {}, [el('tr', {}, [el('th', { scope: 'col', text: this.s.authorsOverTime }),
+                    ...years.map(year => el('th', { scope: 'col', text: String(year).slice(-2), title: String(year) }))])]),
+                el('tbody', {}, names.map(name => el('tr', {}, [
+                    el('th', { scope: 'row', text: name }),
+                    ...years.map(year => {
+                        const count = counts.get(name).get(String(year)) ?? 0;
+                        const heat = count / peak;
+                        return el('td', { class: `heat-cell${heat > 0.55 ? ' heat-cell--dark' : ''}`, style: { '--heat': heat.toFixed(3) } }, [count
+                            ? el('button', { type: 'button', text: String(count), 'aria-label': `${name}, ${year}: ${count}`, on: { click: () => open(name, year) } })
+                            : '']);
+                    })
+                ])))
+            ])
+        ]);
+        mount(this.sections.get('authors').body, el('div', {}, [
+            el('p', { class: 'explore-hint', text: `${this.s.authorHint} ${fill(this.s.heatLegend, { max: peak })}` }),
+            table
+        ]));
     }
     collaborators() {
         if (!this.records) return;

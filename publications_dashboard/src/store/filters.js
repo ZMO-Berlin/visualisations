@@ -36,7 +36,7 @@ export function accessOf(record) {
 }
 
 /** Set-valued dimensions, in the order chips and URLs list them. */
-export const SET_DIMENSIONS = ['type', 'author', 'venue', 'theme', 'lang', 'access'];
+export const SET_DIMENSIONS = ['type', 'author', 'venue', 'theme', 'lang', 'access', 'region', 'place', 'gnd'];
 
 export function createFilters() {
     return {
@@ -50,6 +50,12 @@ export function createFilters() {
         lang: new Set(),
         /** `open`, `closed`, `unknown`; see `accessOf`. */
         access: new Set(),
+        /** Macro-region ids from regions.json, e.g. `north-africa`. */
+        region: new Set(),
+        /** Wikidata ids of places named, e.g. `Q858`. */
+        place: new Set(),
+        /** GND ids of a book's subject headings. */
+        gnd: new Set(),
         /** `[from, to]` inclusive, or null for the whole range. */
         years: null,
         search: ''
@@ -108,6 +114,16 @@ const PREDICATES = {
     access: (record, filters) =>
         !filters.access.size || filters.access.has(accessOf(record)),
 
+    // `$regions` is derived on load from the record's places; see AppStore.
+    region: (record, filters) =>
+        !filters.region.size || (record.$regions ?? []).some(region => filters.region.has(region)),
+
+    place: (record, filters) =>
+        !filters.place.size || (record.places ?? []).some(place => filters.place.has(place)),
+
+    gnd: (record, filters) =>
+        !filters.gnd.size || (record.gnd ?? []).some(id => filters.gnd.has(id)),
+
     years: (record, filters) => {
         if (!filters.years) {
             return true;
@@ -151,10 +167,13 @@ export function applyFilters(records, filters, { except } = {}) {
  * the data arrives, and cached on the record under a `$`-prefixed key that
  * marks it as derived rather than part of the dataset.
  */
-export function indexForSearch(records, themes = null) {
+export function indexForSearch(records, themes = null, regions = null, subjects = null) {
     // A theme's label in both languages is searchable, so "Swahili" finds the
-    // theme's records even where no title says it.
+    // theme's records even where no title says it; so are the places an
+    // abstract names and a book's subject headings.
     const themeText = new Map((themes?.themes ?? []).map(theme => [theme.id, `${theme.label.en} ${theme.label.de}`]));
+    const placeText = new Map((regions?.places ?? []).map(place => [place.id, `${place.label.en} ${place.label.de}`]));
+    const headings = subjects?.headings ?? {};
     for (const record of records) {
         record.$haystack = fold([
             record.title,
@@ -165,7 +184,9 @@ export function indexForSearch(records, themes = null) {
             record.series,
             record.type,
             record.year,
-            themeText.get(record.theme)
+            themeText.get(record.theme),
+            ...(record.places ?? []).map(id => placeText.get(id)),
+            ...(record.gnd ?? []).map(id => headings[id]?.label)
         ].filter(Boolean).join(' '));
     }
     return records;

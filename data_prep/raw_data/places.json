@@ -1,0 +1,2262 @@
+{
+ "source": "https://www.wikidata.org",
+ "places": {
+  "Q1005": {
+   "label": {
+    "en": "The Gambia",
+    "de": "Gambia",
+    "fr": "Gambie"
+   },
+   "coord": [
+    -15.5,
+    13.5
+   ]
+  },
+  "Q1006": {
+   "label": {
+    "en": "Guinea",
+    "de": "Guinea",
+    "fr": "Guinée"
+   },
+   "coord": [
+    -11.0,
+    10.0
+   ]
+  },
+  "Q1007": {
+   "label": {
+    "en": "Guinea-Bissau",
+    "de": "Guinea-Bissau",
+    "fr": "Guinée-Bissau"
+   },
+   "coord": [
+    -15.0,
+    12.0
+   ]
+  },
+  "Q1008": {
+   "label": {
+    "en": "Ivory Coast",
+    "de": "Elfenbeinküste",
+    "fr": "Côte d'Ivoire"
+   },
+   "coord": [
+    -6.0,
+    8.0
+   ]
+  },
+  "Q1009": {
+   "label": {
+    "en": "Cameroon",
+    "de": "Kamerun",
+    "fr": "Cameroun"
+   },
+   "coord": [
+    12.65,
+    5.133
+   ]
+  },
+  "Q1014": {
+   "label": {
+    "en": "Liberia",
+    "de": "Liberia",
+    "fr": "Liberia"
+   },
+   "coord": [
+    -9.75,
+    6.533
+   ]
+  },
+  "Q1016": {
+   "label": {
+    "en": "Libya",
+    "de": "Libyen",
+    "fr": "Libye"
+   },
+   "coord": [
+    17.0,
+    27.0
+   ]
+  },
+  "Q101625": {
+   "label": {
+    "en": "Marrakech",
+    "de": "Marrakesch",
+    "fr": "Marrakech"
+   },
+   "coord": [
+    -7.981,
+    31.629
+   ]
+  },
+  "Q1019": {
+   "label": {
+    "en": "Madagascar",
+    "de": "Madagaskar",
+    "fr": "Madagascar"
+   },
+   "coord": [
+    47.0,
+    -20.0
+   ]
+  },
+  "Q1025": {
+   "label": {
+    "en": "Mauritania",
+    "de": "Mauretanien",
+    "fr": "Mauritanie"
+   },
+   "coord": [
+    -11.0,
+    21.0
+   ]
+  },
+  "Q1028": {
+   "label": {
+    "en": "Morocco",
+    "de": "Marokko",
+    "fr": "Maroc"
+   },
+   "coord": [
+    -6.0,
+    32.0
+   ]
+  },
+  "Q1029": {
+   "label": {
+    "en": "Mozambique",
+    "de": "Mosambik",
+    "fr": "Mozambique"
+   },
+   "coord": [
+    35.0,
+    -19.0
+   ]
+  },
+  "Q1030": {
+   "label": {
+    "en": "Namibia",
+    "de": "Namibia",
+    "fr": "Namibie"
+   },
+   "coord": [
+    17.0,
+    -23.0
+   ]
+  },
+  "Q1032": {
+   "label": {
+    "en": "Niger",
+    "de": "Niger",
+    "fr": "Niger"
+   },
+   "coord": [
+    10.0,
+    17.0
+   ]
+  },
+  "Q1033": {
+   "label": {
+    "en": "Nigeria",
+    "de": "Nigeria",
+    "fr": "Nigeria"
+   },
+   "coord": [
+    8.0,
+    9.0
+   ]
+  },
+  "Q1036": {
+   "label": {
+    "en": "Uganda",
+    "de": "Uganda",
+    "fr": "Ouganda"
+   },
+   "coord": [
+    32.39,
+    1.28
+   ]
+  },
+  "Q1037": {
+   "label": {
+    "en": "Rwanda",
+    "de": "Ruanda",
+    "fr": "Rwanda"
+   },
+   "coord": [
+    30.0,
+    -2.0
+   ]
+  },
+  "Q1041": {
+   "label": {
+    "en": "Senegal",
+    "de": "Senegal",
+    "fr": "Sénégal"
+   },
+   "coord": [
+    -14.283,
+    14.367
+   ]
+  },
+  "Q1044": {
+   "label": {
+    "en": "Sierra Leone",
+    "de": "Sierra Leone",
+    "fr": "Sierra Leone"
+   },
+   "coord": [
+    -12.1,
+    8.5
+   ]
+  },
+  "Q1045": {
+   "label": {
+    "en": "Somalia",
+    "de": "Somalia",
+    "fr": "Somalie"
+   },
+   "coord": [
+    47.0,
+    6.0
+   ]
+  },
+  "Q1049": {
+   "label": {
+    "en": "Sudan",
+    "de": "Sudan",
+    "fr": "Soudan"
+   },
+   "coord": [
+    32.0,
+    15.0
+   ]
+  },
+  "Q1070": {
+   "label": {
+    "en": "Ahmedabad",
+    "de": "Ahmedabad",
+    "fr": "Ahmedabad"
+   },
+   "coord": [
+    72.58,
+    23.022
+   ]
+  },
+  "Q114": {
+   "label": {
+    "en": "Kenya",
+    "de": "Kenia",
+    "fr": "Kenya"
+   },
+   "coord": [
+    38.0,
+    0.1
+   ]
+  },
+  "Q1149903": {
+   "label": {
+    "en": "Global South",
+    "de": "Globaler Süden",
+    "fr": "Sud global"
+   }
+  },
+  "Q115": {
+   "label": {
+    "en": "Ethiopia",
+    "de": "Äthiopien",
+    "fr": "Éthiopie"
+   },
+   "coord": [
+    40.0,
+    9.0
+   ]
+  },
+  "Q1156": {
+   "label": {
+    "en": "Mumbai",
+    "de": "Mumbai",
+    "fr": "Bombay"
+   },
+   "coord": [
+    72.877,
+    19.076
+   ]
+  },
+  "Q1165": {
+   "label": {
+    "en": "Bihar",
+    "de": "Bihar",
+    "fr": "Bihar"
+   },
+   "coord": [
+    85.13,
+    25.37
+   ]
+  },
+  "Q117": {
+   "label": {
+    "en": "Ghana",
+    "de": "Ghana",
+    "fr": "Ghana"
+   },
+   "coord": [
+    -1.023,
+    7.947
+   ]
+  },
+  "Q11708": {
+   "label": {
+    "en": "Southeast Asia",
+    "de": "Südostasien",
+    "fr": "Asie du Sud-Est"
+   },
+   "coord": [
+    105.1,
+    12.0
+   ]
+  },
+  "Q11739": {
+   "label": {
+    "en": "Lahore",
+    "de": "Lahore",
+    "fr": "Lahore"
+   },
+   "coord": [
+    74.344,
+    31.55
+   ]
+  },
+  "Q1218": {
+   "label": {
+    "en": "Jerusalem",
+    "de": "Jerusalem",
+    "fr": "Jérusalem"
+   },
+   "coord": [
+    35.234,
+    31.777
+   ]
+  },
+  "Q1239": {
+   "label": {
+    "en": "Indian Ocean",
+    "de": "Indischer Ozean",
+    "fr": "océan Indien"
+   },
+   "coord": [
+    80.0,
+    -20.0
+   ]
+  },
+  "Q12560": {
+   "label": {
+    "en": "Ottoman Empire",
+    "de": "Osmanisches Reich",
+    "fr": "Empire ottoman"
+   },
+   "coord": [
+    29.0,
+    41.0
+   ]
+  },
+  "Q1294439": {
+   "label": {
+    "en": "Salalah",
+    "de": "Salala",
+    "fr": "Salalah"
+   },
+   "coord": [
+    54.09,
+    17.02
+   ]
+  },
+  "Q131694": {
+   "label": {
+    "en": "Aden",
+    "de": "Aden",
+    "fr": "Aden"
+   },
+   "coord": [
+    45.033,
+    12.8
+   ]
+  },
+  "Q1348": {
+   "label": {
+    "en": "Kolkata",
+    "de": "Kolkata",
+    "fr": "Calcutta"
+   },
+   "coord": [
+    88.37,
+    22.567
+   ]
+  },
+  "Q1353": {
+   "label": {
+    "en": "Delhi",
+    "de": "Delhi",
+    "fr": "Delhi"
+   },
+   "coord": [
+    77.217,
+    28.667
+   ]
+  },
+  "Q1354": {
+   "label": {
+    "en": "Dhaka",
+    "de": "Dhaka",
+    "fr": "Dacca"
+   },
+   "coord": [
+    90.394,
+    23.729
+   ]
+  },
+  "Q142": {
+   "label": {
+    "en": "France",
+    "de": "Frankreich",
+    "fr": "France"
+   },
+   "coord": [
+    2.0,
+    47.0
+   ]
+  },
+  "Q143487": {
+   "label": {
+    "en": "Arab world",
+    "de": "Arabische Welt",
+    "fr": "monde arabe"
+   },
+   "coord": [
+    15.5,
+    10.5
+   ]
+  },
+  "Q145": {
+   "label": {
+    "en": "United Kingdom",
+    "de": "Vereinigtes Königreich",
+    "fr": "Royaume-Uni"
+   },
+   "coord": [
+    -2.0,
+    54.6
+   ]
+  },
+  "Q148": {
+   "label": {
+    "en": "People's Republic of China",
+    "de": "Volksrepublik China",
+    "fr": "République populaire de Chine"
+   },
+   "coord": [
+    103.452,
+    35.845
+   ]
+  },
+  "Q1498": {
+   "label": {
+    "en": "Uttar Pradesh",
+    "de": "Uttar Pradesh",
+    "fr": "Uttar Pradesh"
+   },
+   "coord": [
+    80.91,
+    26.85
+   ]
+  },
+  "Q15": {
+   "label": {
+    "en": "Africa",
+    "de": "Afrika",
+    "fr": "Afrique"
+   },
+   "coord": [
+    15.0,
+    0.0
+   ]
+  },
+  "Q1517159": {
+   "label": {
+    "en": "Hadhramaut",
+    "de": "Hadramaut",
+    "fr": "Hadramaout"
+   },
+   "coord": [
+    49.02,
+    15.982
+   ]
+  },
+  "Q15180": {
+   "label": {
+    "en": "Soviet Union",
+    "de": "Sowjetunion",
+    "fr": "Union soviétique"
+   },
+   "coord": [
+    90.0,
+    65.0
+   ]
+  },
+  "Q1530": {
+   "label": {
+    "en": "Baghdad",
+    "de": "Bagdad",
+    "fr": "Bagdad"
+   },
+   "coord": [
+    44.366,
+    33.315
+   ]
+  },
+  "Q1538": {
+   "label": {
+    "en": "Pune",
+    "de": "Pune",
+    "fr": "Pune"
+   },
+   "coord": [
+    73.855,
+    18.521
+   ]
+  },
+  "Q155": {
+   "label": {
+    "en": "Brazil",
+    "de": "Brasilien",
+    "fr": "Brésil"
+   },
+   "coord": [
+    -53.0,
+    -14.0
+   ]
+  },
+  "Q159": {
+   "label": {
+    "en": "Russia",
+    "de": "Russland",
+    "fr": "Russie"
+   },
+   "coord": [
+    94.25,
+    66.417
+   ]
+  },
+  "Q169132": {
+   "label": {
+    "en": "Punjab",
+    "de": "Punjab",
+    "fr": "Pendjab"
+   },
+   "coord": [
+    74.0,
+    31.0
+   ]
+  },
+  "Q16957": {
+   "label": {
+    "en": "East Germany",
+    "de": "Deutsche Demokratische Republik",
+    "fr": "République démocratique allemande"
+   },
+   "coord": [
+    12.389,
+    52.052
+   ]
+  },
+  "Q169977": {
+   "label": {
+    "en": "Hejaz",
+    "de": "Hedschas",
+    "fr": "Hedjaz"
+   },
+   "coord": [
+    40.86,
+    23.504
+   ]
+  },
+  "Q17": {
+   "label": {
+    "en": "Japan",
+    "de": "Japan",
+    "fr": "Japon"
+   },
+   "coord": [
+    136.0,
+    35.0
+   ]
+  },
+  "Q1774": {
+   "label": {
+    "en": "Zanzibar Islands",
+    "de": "Sansibar",
+    "fr": "Zanzibar"
+   },
+   "coord": [
+    39.3,
+    -5.9
+   ]
+  },
+  "Q182984": {
+   "label": {
+    "en": "Kano",
+    "de": "Kano",
+    "fr": "Kano"
+   },
+   "coord": [
+    8.517,
+    12.0
+   ]
+  },
+  "Q183": {
+   "label": {
+    "en": "Germany",
+    "de": "Deutschland",
+    "fr": "Allemagne"
+   },
+   "coord": [
+    10.0,
+    51.0
+   ]
+  },
+  "Q18869": {
+   "label": {
+    "en": "Caucasus",
+    "de": "Kaukasus",
+    "fr": "Caucase"
+   },
+   "coord": [
+    44.5,
+    42.75
+   ]
+  },
+  "Q190184": {
+   "label": {
+    "en": "Harar",
+    "de": "Harar",
+    "fr": "Harar"
+   },
+   "coord": [
+    42.128,
+    9.311
+   ]
+  },
+  "Q1960": {
+   "label": {
+    "en": "Dar es Salaam",
+    "de": "Daressalam",
+    "fr": "Dar es Salam"
+   },
+   "coord": [
+    39.28,
+    -6.816
+   ]
+  },
+  "Q1963": {
+   "label": {
+    "en": "Khartoum",
+    "de": "Chartum",
+    "fr": "Khartoum"
+   },
+   "coord": [
+    32.527,
+    15.603
+   ]
+  },
+  "Q212": {
+   "label": {
+    "en": "Ukraine",
+    "de": "Ukraine",
+    "fr": "Ukraine"
+   },
+   "coord": [
+    32.0,
+    49.0
+   ]
+  },
+  "Q219": {
+   "label": {
+    "en": "Bulgaria",
+    "de": "Bulgarien",
+    "fr": "Bulgarie"
+   },
+   "coord": [
+    25.5,
+    42.75
+   ]
+  },
+  "Q222": {
+   "label": {
+    "en": "Albania",
+    "de": "Albanien",
+    "fr": "Albanie"
+   },
+   "coord": [
+    20.0,
+    41.0
+   ]
+  },
+  "Q225": {
+   "label": {
+    "en": "Bosnia and Herzegovina",
+    "de": "Bosnien und Herzegowina",
+    "fr": "Bosnie-Herzégovine"
+   },
+   "coord": [
+    18.0,
+    44.0
+   ]
+  },
+  "Q225641": {
+   "label": {
+    "en": "Mombasa",
+    "de": "Mombasa",
+    "fr": "Mombasa"
+   },
+   "coord": [
+    39.667,
+    -4.05
+   ]
+  },
+  "Q227": {
+   "label": {
+    "en": "Azerbaijan",
+    "de": "Aserbaidschan",
+    "fr": "Azerbaïdjan"
+   },
+   "coord": [
+    47.7,
+    40.3
+   ]
+  },
+  "Q229": {
+   "label": {
+    "en": "Cyprus",
+    "de": "Zypern",
+    "fr": "Chypre"
+   },
+   "coord": [
+    33.0,
+    35.0
+   ]
+  },
+  "Q230": {
+   "label": {
+    "en": "Georgia",
+    "de": "Georgien",
+    "fr": "Géorgie"
+   },
+   "coord": [
+    44.0,
+    42.0
+   ]
+  },
+  "Q232": {
+   "label": {
+    "en": "Kazakhstan",
+    "de": "Kasachstan",
+    "fr": "Kazakhstan"
+   },
+   "coord": [
+    68.0,
+    48.0
+   ]
+  },
+  "Q23406": {
+   "label": {
+    "en": "Red Sea",
+    "de": "Rotes Meer",
+    "fr": "mer Rouge"
+   },
+   "coord": [
+    38.0,
+    22.0
+   ]
+  },
+  "Q23522": {
+   "label": {
+    "en": "Balkans",
+    "de": "Balkanhalbinsel",
+    "fr": "Balkans"
+   },
+   "coord": [
+    22.0,
+    42.0
+   ]
+  },
+  "Q23792": {
+   "label": {
+    "en": "Palestine",
+    "de": "Palästina",
+    "fr": "Palestine"
+   },
+   "coord": [
+    35.145,
+    31.625
+   ]
+  },
+  "Q2471": {
+   "label": {
+    "en": "Sanaa",
+    "de": "Sanaa",
+    "fr": "Sanaa"
+   },
+   "coord": [
+    44.2,
+    15.35
+   ]
+  },
+  "Q252": {
+   "label": {
+    "en": "Indonesia",
+    "de": "Indonesien",
+    "fr": "Indonésie"
+   },
+   "coord": [
+    118.0,
+    -2.0
+   ]
+  },
+  "Q258": {
+   "label": {
+    "en": "South Africa",
+    "de": "Südafrika",
+    "fr": "Afrique du Sud"
+   },
+   "coord": [
+    24.0,
+    -29.0
+   ]
+  },
+  "Q262": {
+   "label": {
+    "en": "Algeria",
+    "de": "Algerien",
+    "fr": "Algérie"
+   },
+   "coord": [
+    1.0,
+    28.0
+   ]
+  },
+  "Q265": {
+   "label": {
+    "en": "Uzbekistan",
+    "de": "Usbekistan",
+    "fr": "Ouzbékistan"
+   },
+   "coord": [
+    66.0,
+    41.0
+   ]
+  },
+  "Q269": {
+   "label": {
+    "en": "Tashkent",
+    "de": "Taschkent",
+    "fr": "Tachkent"
+   },
+   "coord": [
+    69.28,
+    41.311
+   ]
+  },
+  "Q27275": {
+   "label": {
+    "en": "Central Asia",
+    "de": "Zentralasien",
+    "fr": "Asie centrale"
+   },
+   "coord": [
+    63.9,
+    45.3
+   ]
+  },
+  "Q272799": {
+   "label": {
+    "en": "Lamu",
+    "de": "Lamu",
+    "fr": "Lamu"
+   },
+   "coord": [
+    40.9,
+    -2.269
+   ]
+  },
+  "Q27381": {
+   "label": {
+    "en": "North Africa",
+    "de": "Nordafrika",
+    "fr": "Afrique du Nord"
+   },
+   "coord": [
+    9.682,
+    30.441
+   ]
+  },
+  "Q2739014": {
+   "label": {
+    "en": "Swahili coast",
+    "fr": "Zanguebar"
+   },
+   "coord": [
+    39.0,
+    -9.0
+   ]
+  },
+  "Q27407": {
+   "label": {
+    "en": "East Africa",
+    "de": "Ostafrika",
+    "fr": "Afrique de l'Est"
+   },
+   "coord": [
+    36.847,
+    -1.3
+   ]
+  },
+  "Q28": {
+   "label": {
+    "en": "Hungary",
+    "de": "Ungarn",
+    "fr": "Hongrie"
+   },
+   "coord": [
+    19.0,
+    47.0
+   ]
+  },
+  "Q28227": {
+   "label": {
+    "en": "Maghreb",
+    "de": "Maghreb",
+    "fr": "Maghreb"
+   },
+   "coord": [
+    5.0,
+    30.0
+   ]
+  },
+  "Q29": {
+   "label": {
+    "en": "Spain",
+    "de": "Spanien",
+    "fr": "Espagne"
+   },
+   "coord": [
+    -3.5,
+    40.2
+   ]
+  },
+  "Q30": {
+   "label": {
+    "en": "United States",
+    "de": "Vereinigte Staaten",
+    "fr": "États-Unis"
+   },
+   "coord": [
+    -98.579,
+    39.828
+   ]
+  },
+  "Q31945": {
+   "label": {
+    "en": "Arabian Peninsula",
+    "de": "Arabische Halbinsel",
+    "fr": "Arabie"
+   },
+   "coord": [
+    46.0,
+    23.0
+   ]
+  },
+  "Q334": {
+   "label": {
+    "en": "Singapore",
+    "de": "Singapur",
+    "fr": "Singapour"
+   },
+   "coord": [
+    103.8,
+    1.3
+   ]
+  },
+  "Q336350": {
+   "label": {
+    "en": "Sokoto",
+    "de": "Sokoto",
+    "fr": "Sokoto"
+   },
+   "coord": [
+    5.234,
+    13.062
+   ]
+  },
+  "Q34675": {
+   "label": {
+    "en": "Persian Gulf",
+    "de": "Persischer Golf",
+    "fr": "golfe Persique"
+   },
+   "coord": [
+    52.0,
+    26.0
+   ]
+  },
+  "Q34800": {
+   "label": {
+    "en": "Xinjiang",
+    "de": "Xinjiang",
+    "fr": "Xinjiang"
+   },
+   "coord": [
+    87.614,
+    43.825
+   ]
+  },
+  "Q35484": {
+   "label": {
+    "en": "Medina",
+    "de": "Medina",
+    "fr": "Médine"
+   },
+   "coord": [
+    39.61,
+    24.47
+   ]
+  },
+  "Q35493": {
+   "label": {
+    "en": "Almaty",
+    "de": "Almaty",
+    "fr": "Almaty"
+   },
+   "coord": [
+    76.915,
+    43.24
+   ]
+  },
+  "Q3551": {
+   "label": {
+    "en": "Rabat",
+    "de": "Rabat",
+    "fr": "Rabat"
+   },
+   "coord": [
+    -6.841,
+    34.021
+   ]
+  },
+  "Q3561": {
+   "label": {
+    "en": "Algiers",
+    "de": "Algier",
+    "fr": "Alger"
+   },
+   "coord": [
+    3.059,
+    36.776
+   ]
+  },
+  "Q3572": {
+   "label": {
+    "en": "Tunis",
+    "de": "Tunis",
+    "fr": "Tunis"
+   },
+   "coord": [
+    10.18,
+    36.801
+   ]
+  },
+  "Q3579": {
+   "label": {
+    "en": "Tripoli",
+    "de": "Tripolis",
+    "fr": "Tripoli"
+   },
+   "coord": [
+    13.188,
+    32.888
+   ]
+  },
+  "Q35997": {
+   "label": {
+    "en": "İzmir",
+    "de": "Izmir",
+    "fr": "Izmir"
+   },
+   "coord": [
+    27.138,
+    38.413
+   ]
+  },
+  "Q36": {
+   "label": {
+    "en": "Poland",
+    "de": "Polen",
+    "fr": "Pologne"
+   },
+   "coord": [
+    19.0,
+    52.0
+   ]
+  },
+  "Q3616": {
+   "label": {
+    "en": "Tehran",
+    "de": "Teheran",
+    "fr": "Téhéran"
+   },
+   "coord": [
+    51.39,
+    35.689
+   ]
+  },
+  "Q3624": {
+   "label": {
+    "en": "Addis Ababa",
+    "de": "Addis Abeba",
+    "fr": "Addis-Abeba"
+   },
+   "coord": [
+    38.752,
+    9.036
+   ]
+  },
+  "Q3674": {
+   "label": {
+    "en": "Niamey",
+    "de": "Niamey",
+    "fr": "Niamey"
+   },
+   "coord": [
+    2.118,
+    13.515
+   ]
+  },
+  "Q3703": {
+   "label": {
+    "en": "Bamako",
+    "de": "Bamako",
+    "fr": "Bamako"
+   },
+   "coord": [
+    -7.992,
+    12.646
+   ]
+  },
+  "Q3718": {
+   "label": {
+    "en": "Dakar",
+    "de": "Dakar",
+    "fr": "Dakar"
+   },
+   "coord": [
+    -17.432,
+    14.673
+   ]
+  },
+  "Q374365": {
+   "label": {
+    "en": "Jeddah",
+    "de": "Dschidda",
+    "fr": "Djeddah"
+   },
+   "coord": [
+    39.161,
+    21.529
+   ]
+  },
+  "Q3761": {
+   "label": {
+    "en": "Accra",
+    "de": "Accra",
+    "fr": "Accra"
+   },
+   "coord": [
+    -0.197,
+    5.556
+   ]
+  },
+  "Q3766": {
+   "label": {
+    "en": "Damascus",
+    "de": "Damaskus",
+    "fr": "Damas"
+   },
+   "coord": [
+    36.292,
+    33.513
+   ]
+  },
+  "Q3777": {
+   "label": {
+    "en": "Ouagadougou",
+    "de": "Ouagadougou",
+    "fr": "Ouagadougou"
+   },
+   "coord": [
+    -1.528,
+    12.369
+   ]
+  },
+  "Q3792": {
+   "label": {
+    "en": "Lomé",
+    "de": "Lomé",
+    "fr": "Lomé"
+   },
+   "coord": [
+    1.216,
+    6.13
+   ]
+  },
+  "Q3799": {
+   "label": {
+    "en": "Porto-Novo",
+    "de": "Porto-Novo",
+    "fr": "Porto-Novo"
+   },
+   "coord": [
+    2.617,
+    6.483
+   ]
+  },
+  "Q38": {
+   "label": {
+    "en": "Italy",
+    "de": "Italien",
+    "fr": "Italie"
+   },
+   "coord": [
+    12.5,
+    42.5
+   ]
+  },
+  "Q3805": {
+   "label": {
+    "en": "Amman",
+    "de": "Amman",
+    "fr": "Amman"
+   },
+   "coord": [
+    35.926,
+    31.931
+   ]
+  },
+  "Q3820": {
+   "label": {
+    "en": "Beirut",
+    "de": "Beirut",
+    "fr": "Beyrouth"
+   },
+   "coord": [
+    35.513,
+    33.887
+   ]
+  },
+  "Q3826": {
+   "label": {
+    "en": "Muscat",
+    "de": "Maskat",
+    "fr": "Mascate"
+   },
+   "coord": [
+    58.592,
+    23.614
+   ]
+  },
+  "Q3861": {
+   "label": {
+    "en": "Doha",
+    "de": "Doha",
+    "fr": "Doha"
+   },
+   "coord": [
+    51.529,
+    25.286
+   ]
+  },
+  "Q3870": {
+   "label": {
+    "en": "Nairobi",
+    "de": "Nairobi",
+    "fr": "Nairobi"
+   },
+   "coord": [
+    36.817,
+    -1.286
+   ]
+  },
+  "Q398": {
+   "label": {
+    "en": "Bahrain",
+    "de": "Bahrain",
+    "fr": "Bahreïn"
+   },
+   "coord": [
+    50.551,
+    26.067
+   ]
+  },
+  "Q399": {
+   "label": {
+    "en": "Armenia",
+    "de": "Armenien",
+    "fr": "Arménie"
+   },
+   "coord": [
+    44.95,
+    40.383
+   ]
+  },
+  "Q40556": {
+   "label": {
+    "en": "Horn of Africa",
+    "de": "Horn von Afrika",
+    "fr": "Corne de l'Afrique"
+   },
+   "coord": [
+    48.0,
+    9.5
+   ]
+  },
+  "Q406": {
+   "label": {
+    "en": "Istanbul",
+    "de": "Istanbul",
+    "fr": "Istanbul"
+   },
+   "coord": [
+    28.96,
+    41.01
+   ]
+  },
+  "Q41": {
+   "label": {
+    "en": "Greece",
+    "de": "Griechenland",
+    "fr": "Grèce"
+   },
+   "coord": [
+    23.0,
+    38.5
+   ]
+  },
+  "Q41183": {
+   "label": {
+    "en": "Aleppo",
+    "de": "Aleppo",
+    "fr": "Alep"
+   },
+   "coord": [
+    37.16,
+    36.2
+   ]
+  },
+  "Q41470": {
+   "label": {
+    "en": "Kurdistan",
+    "de": "Kurdistan",
+    "fr": "Kurdistan"
+   },
+   "coord": [
+    43.55,
+    37.559
+   ]
+  },
+  "Q42053": {
+   "label": {
+    "en": "Isfahan",
+    "de": "Isfahan",
+    "fr": "Ispahan"
+   },
+   "coord": [
+    51.675,
+    32.653
+   ]
+  },
+  "Q43": {
+   "label": {
+    "en": "Turkey",
+    "de": "Türkei",
+    "fr": "Turquie"
+   },
+   "coord": [
+    36.0,
+    39.0
+   ]
+  },
+  "Q43100": {
+   "label": {
+    "en": "Kashmir",
+    "de": "Kaschmir",
+    "fr": "Cachemire"
+   },
+   "coord": [
+    76.0,
+    34.5
+   ]
+  },
+  "Q43387": {
+   "label": {
+    "en": "Edirne",
+    "de": "Edirne",
+    "fr": "Edirne"
+   },
+   "coord": [
+    26.574,
+    41.673
+   ]
+  },
+  "Q43595": {
+   "label": {
+    "en": "Cotonou",
+    "de": "Cotonou",
+    "fr": "Cotonou"
+   },
+   "coord": [
+    2.417,
+    6.367
+   ]
+  },
+  "Q4412": {
+   "label": {
+    "en": "West Africa",
+    "de": "Westafrika",
+    "fr": "Afrique de l’Ouest"
+   },
+   "coord": [
+    3.0,
+    12.0
+   ]
+  },
+  "Q46": {
+   "label": {
+    "en": "Europe",
+    "de": "Europa",
+    "fr": "Europe"
+   },
+   "coord": [
+    15.5,
+    53.5
+   ]
+  },
+  "Q46733": {
+   "label": {
+    "en": "Darfur",
+    "de": "Darfur",
+    "fr": "Darfour"
+   },
+   "coord": [
+    25.0,
+    13.0
+   ]
+  },
+  "Q47282": {
+   "label": {
+    "en": "Osh",
+    "de": "Osch",
+    "fr": "Och"
+   },
+   "coord": [
+    72.783,
+    40.533
+   ]
+  },
+  "Q48": {
+   "label": {
+    "en": "Asia",
+    "de": "Asien",
+    "fr": "Asie"
+   },
+   "coord": [
+    108.0,
+    35.0
+   ]
+  },
+  "Q486324": {
+   "label": {
+    "en": "Ferghana Valley",
+    "de": "Ferghanatal",
+    "fr": "vallée de Ferghana"
+   },
+   "coord": [
+    71.758,
+    40.901
+   ]
+  },
+  "Q4918": {
+   "label": {
+    "en": "Mediterranean Sea",
+    "de": "Mittelmeer",
+    "fr": "mer Méditerranée"
+   },
+   "coord": [
+    17.0,
+    38.0
+   ]
+  },
+  "Q55": {
+   "label": {
+    "en": "Netherlands",
+    "de": "Niederlande",
+    "fr": "Pays-Bas"
+   },
+   "coord": [
+    5.55,
+    52.317
+   ]
+  },
+  "Q5753": {
+   "label": {
+    "en": "Samarkand",
+    "de": "Samarqand",
+    "fr": "Samarcande"
+   },
+   "coord": [
+    66.976,
+    39.655
+   ]
+  },
+  "Q5764": {
+   "label": {
+    "en": "Bukhara",
+    "de": "Buchara",
+    "fr": "Boukhara"
+   },
+   "coord": [
+    64.429,
+    39.775
+   ]
+  },
+  "Q5806": {
+   "label": {
+    "en": "Mecca",
+    "de": "Mekka",
+    "fr": "La Mecque"
+   },
+   "coord": [
+    39.826,
+    21.422
+   ]
+  },
+  "Q5838": {
+   "label": {
+    "en": "Kabul",
+    "de": "Kabul",
+    "fr": "Kaboul"
+   },
+   "coord": [
+    69.166,
+    34.533
+   ]
+  },
+  "Q612": {
+   "label": {
+    "en": "Dubai",
+    "de": "Dubai",
+    "fr": "Dubaï"
+   },
+   "coord": [
+    55.309,
+    25.27
+   ]
+  },
+  "Q6250": {
+   "label": {
+    "en": "Western Sahara",
+    "de": "Westsahara",
+    "fr": "Sahara occidental"
+   },
+   "coord": [
+    -13.0,
+    25.0
+   ]
+  },
+  "Q64": {
+   "label": {
+    "en": "Berlin",
+    "de": "Berlin",
+    "fr": "Berlin"
+   },
+   "coord": [
+    13.383,
+    52.517
+   ]
+  },
+  "Q649": {
+   "label": {
+    "en": "Moscow",
+    "de": "Moskau",
+    "fr": "Moscou"
+   },
+   "coord": [
+    37.617,
+    55.751
+   ]
+  },
+  "Q657": {
+   "label": {
+    "en": "Chad",
+    "de": "Tschad",
+    "fr": "Tchad"
+   },
+   "coord": [
+    19.4,
+    15.467
+   ]
+  },
+  "Q6583": {
+   "label": {
+    "en": "Sahara",
+    "de": "Sahara",
+    "fr": "Sahara"
+   },
+   "coord": [
+    12.612,
+    23.08
+   ]
+  },
+  "Q66065": {
+   "label": {
+    "en": "Sahel",
+    "de": "Sahelzone",
+    "fr": "Sahel"
+   },
+   "coord": [
+    13.512,
+    14.475
+   ]
+  },
+  "Q668": {
+   "label": {
+    "en": "India",
+    "de": "Indien",
+    "fr": "Inde"
+   },
+   "coord": [
+    83.0,
+    22.8
+   ]
+  },
+  "Q7204": {
+   "label": {
+    "en": "Middle East",
+    "de": "Middle East",
+    "fr": "Moyen-Orient"
+   },
+   "coord": [
+    45.0,
+    28.0
+   ]
+  },
+  "Q771405": {
+   "label": {
+    "en": "South Asia",
+    "de": "Südasien",
+    "fr": "Asie du Sud"
+   },
+   "coord": [
+    72.2,
+    26.9
+   ]
+  },
+  "Q779924": {
+   "label": {
+    "en": "Muslim world",
+    "de": "islamische Welt",
+    "fr": "civilisation islamique"
+   }
+  },
+  "Q79": {
+   "label": {
+    "en": "Egypt",
+    "de": "Ägypten",
+    "fr": "Égypte"
+   },
+   "coord": [
+    29.0,
+    27.0
+   ]
+  },
+  "Q7903": {
+   "label": {
+    "en": "Casablanca",
+    "de": "Casablanca",
+    "fr": "Casablanca"
+   },
+   "coord": [
+    -7.62,
+    33.599
+   ]
+  },
+  "Q794": {
+   "label": {
+    "en": "Iran",
+    "de": "Iran",
+    "fr": "Iran"
+   },
+   "coord": [
+    53.0,
+    32.0
+   ]
+  },
+  "Q796": {
+   "label": {
+    "en": "Iraq",
+    "de": "Irak",
+    "fr": "Irak"
+   },
+   "coord": [
+    43.0,
+    33.0
+   ]
+  },
+  "Q801": {
+   "label": {
+    "en": "Israel",
+    "de": "Israel",
+    "fr": "Israël"
+   },
+   "coord": [
+    35.0,
+    31.0
+   ]
+  },
+  "Q80338": {
+   "label": {
+    "en": "Bengal",
+    "de": "Bengalen",
+    "fr": "Bengale"
+   },
+   "coord": [
+    88.731,
+    23.989
+   ]
+  },
+  "Q805": {
+   "label": {
+    "en": "Yemen",
+    "de": "Jemen",
+    "fr": "Yémen"
+   },
+   "coord": [
+    48.0,
+    15.5
+   ]
+  },
+  "Q80985": {
+   "label": {
+    "en": "Fez",
+    "de": "Fès",
+    "fr": "Fès"
+   },
+   "coord": [
+    -5.003,
+    34.043
+   ]
+  },
+  "Q810": {
+   "label": {
+    "en": "Jordan",
+    "de": "Jordanien",
+    "fr": "Jordanie"
+   },
+   "coord": [
+    36.5,
+    31.2
+   ]
+  },
+  "Q813": {
+   "label": {
+    "en": "Kyrgyzstan",
+    "de": "Kirgisistan",
+    "fr": "Kirghizistan"
+   },
+   "coord": [
+    75.0,
+    41.0
+   ]
+  },
+  "Q81483": {
+   "label": {
+    "en": "Levant",
+    "de": "Levante",
+    "fr": "Levant"
+   },
+   "coord": [
+    36.0,
+    34.0
+   ]
+  },
+  "Q817": {
+   "label": {
+    "en": "Kuwait",
+    "de": "Kuwait",
+    "fr": "Koweït"
+   },
+   "coord": [
+    47.6,
+    29.167
+   ]
+  },
+  "Q822": {
+   "label": {
+    "en": "Lebanon",
+    "de": "Libanon",
+    "fr": "Liban"
+   },
+   "coord": [
+    35.767,
+    33.833
+   ]
+  },
+  "Q833": {
+   "label": {
+    "en": "Malaysia",
+    "de": "Malaysia",
+    "fr": "Malaisie"
+   },
+   "coord": [
+    102.314,
+    3.781
+   ]
+  },
+  "Q836": {
+   "label": {
+    "en": "Myanmar",
+    "de": "Myanmar",
+    "fr": "Birmanie"
+   },
+   "coord": [
+    96.0,
+    22.0
+   ]
+  },
+  "Q837": {
+   "label": {
+    "en": "Nepal",
+    "de": "Nepal",
+    "fr": "Népal"
+   },
+   "coord": [
+    84.0,
+    28.0
+   ]
+  },
+  "Q842": {
+   "label": {
+    "en": "Oman",
+    "de": "Oman",
+    "fr": "Oman"
+   },
+   "coord": [
+    57.0,
+    21.0
+   ]
+  },
+  "Q843": {
+   "label": {
+    "en": "Pakistan",
+    "de": "Pakistan",
+    "fr": "Pakistan"
+   },
+   "coord": [
+    71.0,
+    30.0
+   ]
+  },
+  "Q846": {
+   "label": {
+    "en": "Qatar",
+    "de": "Katar",
+    "fr": "Qatar"
+   },
+   "coord": [
+    51.213,
+    25.27
+   ]
+  },
+  "Q85": {
+   "label": {
+    "en": "Cairo",
+    "de": "Kairo",
+    "fr": "Le Caire"
+   },
+   "coord": [
+    31.236,
+    30.044
+   ]
+  },
+  "Q851": {
+   "label": {
+    "en": "Saudi Arabia",
+    "de": "Saudi-Arabien",
+    "fr": "Arabie saoudite"
+   },
+   "coord": [
+    44.117,
+    23.717
+   ]
+  },
+  "Q854": {
+   "label": {
+    "en": "Sri Lanka",
+    "de": "Sri Lanka",
+    "fr": "Sri Lanka"
+   },
+   "coord": [
+    81.0,
+    7.0
+   ]
+  },
+  "Q858": {
+   "label": {
+    "en": "Syria",
+    "de": "Syrien",
+    "fr": "Syrie"
+   },
+   "coord": [
+    38.583,
+    35.217
+   ]
+  },
+  "Q863": {
+   "label": {
+    "en": "Tajikistan",
+    "de": "Tadschikistan",
+    "fr": "Tadjikistan"
+   },
+   "coord": [
+    71.367,
+    38.583
+   ]
+  },
+  "Q8660": {
+   "label": {
+    "en": "Karachi",
+    "de": "Karatschi",
+    "fr": "Karachi"
+   },
+   "coord": [
+    67.01,
+    24.86
+   ]
+  },
+  "Q8673": {
+   "label": {
+    "en": "Lagos",
+    "de": "Lagos",
+    "fr": "Lagos"
+   },
+   "coord": [
+    3.394,
+    6.456
+   ]
+  },
+  "Q869": {
+   "label": {
+    "en": "Thailand",
+    "de": "Thailand",
+    "fr": "Thaïlande"
+   },
+   "coord": [
+    101.0,
+    14.0
+   ]
+  },
+  "Q87": {
+   "label": {
+    "en": "Alexandria",
+    "de": "Alexandria",
+    "fr": "Alexandrie"
+   },
+   "coord": [
+    29.892,
+    31.198
+   ]
+  },
+  "Q874": {
+   "label": {
+    "en": "Turkmenistan",
+    "de": "Turkmenistan",
+    "fr": "Turkménistan"
+   },
+   "coord": [
+    60.0,
+    39.0
+   ]
+  },
+  "Q878": {
+   "label": {
+    "en": "United Arab Emirates",
+    "de": "Vereinigte Arabische Emirate",
+    "fr": "Émirats arabes unis"
+   },
+   "coord": [
+    54.3,
+    24.4
+   ]
+  },
+  "Q889": {
+   "label": {
+    "en": "Afghanistan",
+    "de": "Afghanistan",
+    "fr": "Afghanistan"
+   },
+   "coord": [
+    66.0,
+    33.0
+   ]
+  },
+  "Q900": {
+   "label": {
+    "en": "Kazan",
+    "de": "Kasan",
+    "fr": "Kazan"
+   },
+   "coord": [
+    49.114,
+    55.791
+   ]
+  },
+  "Q902": {
+   "label": {
+    "en": "Bangladesh",
+    "de": "Bangladesch",
+    "fr": "Bangladesh"
+   },
+   "coord": [
+    89.867,
+    24.017
+   ]
+  },
+  "Q912": {
+   "label": {
+    "en": "Mali",
+    "de": "Mali",
+    "fr": "Mali"
+   },
+   "coord": [
+    -4.0,
+    17.0
+   ]
+  },
+  "Q916": {
+   "label": {
+    "en": "Angola",
+    "de": "Angola",
+    "fr": "Angola"
+   },
+   "coord": [
+    17.35,
+    -12.35
+   ]
+  },
+  "Q924": {
+   "label": {
+    "en": "Tanzania",
+    "de": "Tansania",
+    "fr": "Tanzanie"
+   },
+   "coord": [
+    34.854,
+    -6.307
+   ]
+  },
+  "Q9248": {
+   "label": {
+    "en": "Baku",
+    "de": "Baku",
+    "fr": "Bakou"
+   },
+   "coord": [
+    49.835,
+    40.367
+   ]
+  },
+  "Q928": {
+   "label": {
+    "en": "Philippines",
+    "de": "Philippinen",
+    "fr": "Philippines"
+   },
+   "coord": [
+    123.0,
+    12.0
+   ]
+  },
+  "Q929": {
+   "label": {
+    "en": "Central African Republic",
+    "de": "Zentralafrikanische Republik",
+    "fr": "République centrafricaine"
+   },
+   "coord": [
+    20.9,
+    6.7
+   ]
+  },
+  "Q9361": {
+   "label": {
+    "en": "Bishkek",
+    "de": "Bischkek",
+    "fr": "Bichkek"
+   },
+   "coord": [
+    74.567,
+    42.867
+   ]
+  },
+  "Q9365": {
+   "label": {
+    "en": "Dushanbe",
+    "de": "Duschanbe",
+    "fr": "Douchanbé"
+   },
+   "coord": [
+    68.786,
+    38.573
+   ]
+  },
+  "Q9427": {
+   "label": {
+    "en": "Timbuktu",
+    "de": "Timbuktu",
+    "fr": "Tombouctou"
+   },
+   "coord": [
+    -3.007,
+    16.773
+   ]
+  },
+  "Q945": {
+   "label": {
+    "en": "Togo",
+    "de": "Togo",
+    "fr": "Togo"
+   },
+   "coord": [
+    1.183,
+    8.25
+   ]
+  },
+  "Q948": {
+   "label": {
+    "en": "Tunisia",
+    "de": "Tunesien",
+    "fr": "Tunisie"
+   },
+   "coord": [
+    10.0,
+    34.0
+   ]
+  },
+  "Q953": {
+   "label": {
+    "en": "Zambia",
+    "de": "Sambia",
+    "fr": "Zambie"
+   },
+   "coord": [
+    28.0,
+    -14.0
+   ]
+  },
+  "Q954": {
+   "label": {
+    "en": "Zimbabwe",
+    "de": "Simbabwe",
+    "fr": "Zimbabwe"
+   },
+   "coord": [
+    30.0,
+    -19.0
+   ]
+  },
+  "Q962": {
+   "label": {
+    "en": "Benin",
+    "de": "Benin",
+    "fr": "Bénin"
+   },
+   "coord": [
+    2.183,
+    8.833
+   ]
+  },
+  "Q965": {
+   "label": {
+    "en": "Burkina Faso",
+    "de": "Burkina Faso",
+    "fr": "Burkina Faso"
+   },
+   "coord": [
+    -2.067,
+    12.267
+   ]
+  },
+  "Q970": {
+   "label": {
+    "en": "Comoros",
+    "de": "Komoren",
+    "fr": "Comores"
+   },
+   "coord": [
+    43.7,
+    -12.3
+   ]
+  },
+  "Q974": {
+   "label": {
+    "en": "Democratic Republic of the Congo",
+    "de": "Demokratische Republik Kongo",
+    "fr": "République démocratique du Congo"
+   },
+   "coord": [
+    23.656,
+    -2.88
+   ]
+  },
+  "Q977": {
+   "label": {
+    "en": "Djibouti",
+    "de": "Dschibuti",
+    "fr": "Djibouti"
+   },
+   "coord": [
+    42.433,
+    11.8
+   ]
+  },
+  "Q986": {
+   "label": {
+    "en": "Eritrea",
+    "de": "Eritrea",
+    "fr": "Érythrée"
+   },
+   "coord": [
+    38.25,
+    15.483
+   ]
+  },
+  "Q994": {
+   "label": {
+    "en": "Tbilisi",
+    "de": "Tiflis",
+    "fr": "Tbilissi"
+   },
+   "coord": [
+    44.792,
+    41.722
+   ]
+  }
+ }
+}

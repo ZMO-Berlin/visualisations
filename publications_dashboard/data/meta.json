@@ -1,7 +1,7 @@
 {
  "source": "https://www.zmo.de/en/publications/publication-search",
  "schemaVersion": 2,
- "datasetId": "0590a614b247f7e6",
+ "datasetId": "7721e3b8afdfdaf0",
  "documentTypes": [
   "Monographs",
   "Book reviews",
@@ -181,6 +181,8 @@
    "open": 335,
    "unknown": 1143
   },
-  "themed": 1979
+  "themed": 1979,
+  "withPlace": 1367,
+  "withHeadings": 133
  }
 }

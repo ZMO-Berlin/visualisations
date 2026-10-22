@@ -137,7 +137,9 @@ export class PublicationList {
 
     /** DOI, free copy, OpenAlex record, theme and language. */
     #tags(record) {
-        const { themeLabel, themeSlot, languageName, onTheme } = this.enrichment;
+        const { themeLabel, themeSlot, languageName, onTheme, placeLabel, placeSlot, onPlace, headingLabel, onHeading } = this.enrichment;
+        const chip = (text, title, onClick, swatch) => el('button', { type: 'button', class: 'tag tag--theme', title, on: { click: onClick } },
+            [swatch && el('span', { class: `legend-swatch series-${swatch}`, 'aria-hidden': 'true' }), text]);
         const link = (href, text, extra = '') => el('a', {
             class: `tag tag--link${extra}`, href, target: '_blank', rel: 'noopener noreferrer', text
         });
@@ -151,7 +153,11 @@ export class PublicationList {
                 title: this.strings.filterTheme,
                 on: { click: () => onTheme(record.theme) }
             }, [el('span', { class: `legend-swatch series-${themeSlot(record.theme)}`, 'aria-hidden': 'true' }), themeLabel(record.theme)]),
-            record.lang && languageName && el('span', { class: 'tag', text: languageName(record.lang) })
+            record.lang && languageName && el('span', { class: 'tag', text: languageName(record.lang) }),
+            // No colour swatch on places: the theme tag beside them already uses
+            // the palette, for areas, and one colour must not mean two things.
+            ...(placeLabel ? (record.places ?? []).slice(0, 5).map(id => chip(placeLabel(id), this.strings.chipPlace, () => onPlace(id))) : []),
+            ...(headingLabel ? (record.gnd ?? []).slice(0, 5).map(id => chip(headingLabel(id), this.strings.chipSubject, () => onHeading(id))) : [])
         ].filter(Boolean);
         return tags.length ? el('p', { class: 'list__tags' }, tags) : null;
     }

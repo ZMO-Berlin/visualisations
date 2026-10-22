@@ -1,0 +1,3122 @@
+{
+ "_readme": [
+  "Places that publications in the register are about, matched in titles, subtitles and",
+  "abstracts by regions.py, and in the 'regional focus' line of zmo.de people pages.",
+  "",
+  "Hand-curated: each place has a Wikidata id (verified with gazetteer_check.py, which also",
+  "fills in coordinates in raw_data/places.json), its names in English, German and French, and",
+  "the demonyms and adjectives titles use. Name syntax: matching ignores case and works on",
+  "whole words; a trailing * matches any ending ('syrisch*' = syrisch, syrische, syrischen…);",
+  "a leading = makes the name case-sensitive ('=Chad', '=Georgia'). Longer names win, so",
+  "'Indian Ocean' is never read as India and 'Niger Delta' is Nigeria, not Niger.",
+  "",
+  "'wikidata_en' records an accepted difference between our name and Wikidata's label.",
+  "'ignore' phrases are removed before matching: an institution's name ('ZMO Berlin'), a",
+  "place named after another ('Gulf of Guinea'), a period ('Middle Ages').",
+  "",
+  "A place marked ambiguous ('Tripoli', 'Georgia', 'Jordan', 'Benin') has every match listed",
+  "in reports/regions-review.md; decisions on individual records go in regions_review.json.",
+  "",
+  "macro groups places into eight regions — the size of the categorical palette — plus a",
+  "grey 'transregional' group for continents, seas and worlds, which are listed but not mapped."
+ ],
+ "macro_regions": [
+  {
+   "id": "middle-east",
+   "en": "Middle East",
+   "de": "Naher und Mittlerer Osten"
+  },
+  {
+   "id": "north-africa",
+   "en": "North Africa",
+   "de": "Nordafrika"
+  },
+  {
+   "id": "west-central-africa",
+   "en": "West and Central Africa",
+   "de": "West- und Zentralafrika"
+  },
+  {
+   "id": "east-southern-africa",
+   "en": "East and Southern Africa",
+   "de": "Östliches und südliches Afrika"
+  },
+  {
+   "id": "south-asia",
+   "en": "South Asia",
+   "de": "Südasien"
+  },
+  {
+   "id": "central-asia-caucasus",
+   "en": "Central Asia and the Caucasus",
+   "de": "Zentralasien und Kaukasus"
+  },
+  {
+   "id": "east-asia",
+   "en": "Southeast and East Asia",
+   "de": "Südost- und Ostasien"
+  },
+  {
+   "id": "europe-elsewhere",
+   "en": "Europe, Russia and elsewhere",
+   "de": "Europa, Russland und andere"
+  },
+  {
+   "id": "transregional",
+   "en": "Transregional or continent-wide",
+   "de": "Überregional oder kontinental"
+  }
+ ],
+ "ignore": [
+  "ZMO Berlin",
+  "Zentrum Moderner Orient Berlin",
+  "Moderner Orient, Berlin",
+  "Moderner Orient (ZMO), Berlin",
+  "Humboldt-Universität zu Berlin",
+  "Freie Universität Berlin",
+  "Staatliche Museen zu Berlin",
+  "Berlin: ",
+  "West Indies",
+  "Indian Country",
+  "German Historical Institute",
+  "Deutsche Forschungsgemeinschaft",
+  "Deutsche Morgenländische",
+  "Gulf of Guinea",
+  "Papua New Guinea",
+  "Equatorial Guinea",
+  "New Guinea",
+  "Jordan Valley",
+  "River Jordan",
+  "Middle Ages",
+  "Mittelalter",
+  "Chinese Muslims",
+  "Turkish Historical Review",
+  "French Revolution",
+  "Latin America",
+  "Latin American",
+  "Lateinamerika",
+  "Amérique latine",
+  "English Club",
+  "Medina of",
+  "médina de",
+  "la médina"
+ ],
+ "places": [
+  {
+   "id": "Q858",
+   "en": "Syria",
+   "de": "Syrien",
+   "fr": "Syrie",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "Syria",
+    "Syrien",
+    "Syrie",
+    "Syrian*",
+    "Syrer*",
+    "syrisch*",
+    "syrien*",
+    "Bilad al-Sham",
+    "Bilād al-Shām"
+   ]
+  },
+  {
+   "id": "Q796",
+   "en": "Iraq",
+   "de": "Irak",
+   "fr": "Irak",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "Iraq",
+    "Irak",
+    "Iraqi*",
+    "irakisch*",
+    "irakien*",
+    "Mesopotamia",
+    "Mesopotamien",
+    "Mésopotamie"
+   ]
+  },
+  {
+   "id": "Q794",
+   "en": "Iran",
+   "de": "Iran",
+   "fr": "Iran",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "Iran",
+    "Iranian*",
+    "iranisch*",
+    "iranien*",
+    "Persia",
+    "Persien",
+    "Perse"
+   ]
+  },
+  {
+   "id": "Q43",
+   "en": "Turkey",
+   "de": "Türkei",
+   "fr": "Turquie",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "Turkey",
+    "Türkei",
+    "Turquie",
+    "Türkiye",
+    "Turkish",
+    "Turks",
+    "türkisch*",
+    "Türken",
+    "turque*",
+    "=Turcs",
+    "Anatolia",
+    "Anatolian",
+    "Anatolien",
+    "anatolisch*",
+    "Anatolie"
+   ]
+  },
+  {
+   "id": "Q822",
+   "en": "Lebanon",
+   "de": "Libanon",
+   "fr": "Liban",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "Lebanon",
+    "Libanon",
+    "Liban",
+    "Lebanese",
+    "libanesisch*",
+    "Libanes*",
+    "libanais*"
+   ]
+  },
+  {
+   "id": "Q810",
+   "en": "Jordan",
+   "de": "Jordanien",
+   "fr": "Jordanie",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "Jordanien",
+    "Jordanie",
+    "Jordanian*",
+    "jordanisch*",
+    "jordanien*",
+    "=Jordan"
+   ],
+   "ambiguous": true
+  },
+  {
+   "id": "Q23792",
+   "en": "Palestine",
+   "de": "Palästina",
+   "fr": "Palestine",
+   "kind": "region",
+   "macro": "middle-east",
+   "names": [
+    "Palestine",
+    "Palästina",
+    "Palestinian*",
+    "palästinensisch*",
+    "Palästinenser*",
+    "palestinien*",
+    "Gaza",
+    "West Bank",
+    "Westjordanland"
+   ]
+  },
+  {
+   "id": "Q801",
+   "en": "Israel",
+   "de": "Israel",
+   "fr": "Israël",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "Israel",
+    "Israël",
+    "Israeli*",
+    "israelisch*",
+    "israélien*"
+   ]
+  },
+  {
+   "id": "Q851",
+   "en": "Saudi Arabia",
+   "de": "Saudi-Arabien",
+   "fr": "Arabie saoudite",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "Saudi Arabia",
+    "Saudi-Arabien",
+    "Arabie saoudite",
+    "Saudi",
+    "saudi-arabisch*",
+    "saoudien*",
+    "Saudiarabien"
+   ]
+  },
+  {
+   "id": "Q805",
+   "en": "Yemen",
+   "de": "Jemen",
+   "fr": "Yémen",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "Yemen",
+    "Jemen",
+    "Yémen",
+    "Yemeni*",
+    "jemenitisch*",
+    "yéménite*"
+   ]
+  },
+  {
+   "id": "Q842",
+   "en": "Oman",
+   "de": "Oman",
+   "fr": "Oman",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "Omani*",
+    "omanisch*",
+    "=Oman"
+   ]
+  },
+  {
+   "id": "Q878",
+   "en": "United Arab Emirates",
+   "de": "Vereinigte Arabische Emirate",
+   "fr": "Émirats arabes unis",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "United Arab Emirates",
+    "Vereinigte Arabische Emirate",
+    "Émirats arabes unis",
+    "UAE",
+    "Emirati*",
+    "Emirates"
+   ]
+  },
+  {
+   "id": "Q846",
+   "en": "Qatar",
+   "de": "Katar",
+   "fr": "Qatar",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "Qatar",
+    "Katar",
+    "Qatari*",
+    "katarisch*"
+   ]
+  },
+  {
+   "id": "Q398",
+   "en": "Bahrain",
+   "de": "Bahrain",
+   "fr": "Bahreïn",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "Bahrain",
+    "Bahreïn",
+    "Bahraini*"
+   ]
+  },
+  {
+   "id": "Q817",
+   "en": "Kuwait",
+   "de": "Kuwait",
+   "fr": "Koweït",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "Kuwait",
+    "Koweït",
+    "Kuwaiti*"
+   ]
+  },
+  {
+   "id": "Q229",
+   "en": "Cyprus",
+   "de": "Zypern",
+   "fr": "Chypre",
+   "kind": "country",
+   "macro": "middle-east",
+   "names": [
+    "Cyprus",
+    "Zypern",
+    "Chypre",
+    "Cypriot*",
+    "zypriotisch*"
+   ]
+  },
+  {
+   "id": "Q41470",
+   "en": "Kurdistan",
+   "de": "Kurdistan",
+   "fr": "Kurdistan",
+   "kind": "region",
+   "macro": "middle-east",
+   "names": [
+    "Kurdistan",
+    "Kurdish",
+    "Kurds",
+    "kurdisch*",
+    "Kurden",
+    "kurde*"
+   ]
+  },
+  {
+   "id": "Q31945",
+   "en": "Arabian Peninsula",
+   "de": "Arabische Halbinsel",
+   "fr": "Péninsule arabique",
+   "kind": "region",
+   "macro": "middle-east",
+   "names": [
+    "Arabian Peninsula",
+    "Arabische Halbinsel",
+    "Péninsule arabique",
+    "Arabia",
+    "Arabien",
+    "Arabie"
+   ]
+  },
+  {
+   "id": "Q34675",
+   "en": "Persian Gulf",
+   "de": "Persischer Golf",
+   "fr": "Golfe Persique",
+   "kind": "region",
+   "macro": "middle-east",
+   "names": [
+    "Persian Gulf",
+    "Persischer Golf",
+    "Golfe Persique",
+    "Arabian Gulf",
+    "the Gulf",
+    "Gulf States",
+    "Gulf states",
+    "Gulf monarchies",
+    "Golfstaaten",
+    "Golfregion",
+    "Golfe",
+    "Khalij",
+    "al-Khalij"
+   ]
+  },
+  {
+   "id": "Q169977",
+   "en": "Hejaz",
+   "de": "Hedschas",
+   "fr": "Hedjaz",
+   "kind": "region",
+   "macro": "middle-east",
+   "names": [
+    "Hejaz",
+    "Hedschas",
+    "Hedjaz",
+    "Hijaz",
+    "Hidschas",
+    "Ḥijāz"
+   ]
+  },
+  {
+   "id": "Q1517159",
+   "en": "Hadhramaut",
+   "de": "Hadramaut",
+   "fr": "Hadramaout",
+   "kind": "region",
+   "macro": "middle-east",
+   "names": [
+    "Hadhramaut",
+    "Hadramaut",
+    "Hadramaout",
+    "Hadramawt",
+    "Hadhrami*",
+    "Hadrami*",
+    "Ḥaḍramawt"
+   ]
+  },
+  {
+   "id": "Q81483",
+   "en": "Levant",
+   "de": "Levante",
+   "fr": "Levant",
+   "kind": "region",
+   "macro": "middle-east",
+   "names": [
+    "Levant",
+    "Levante",
+    "Mashriq",
+    "Mashreq",
+    "Maschrek",
+    "Machrek"
+   ]
+  },
+  {
+   "id": "Q85",
+   "en": "Cairo",
+   "de": "Kairo",
+   "fr": "Le Caire",
+   "kind": "city",
+   "macro": "north-africa",
+   "names": [
+    "Cairo",
+    "Kairo",
+    "Le Caire",
+    "=Caire",
+    "Cairene"
+   ]
+  },
+  {
+   "id": "Q87",
+   "en": "Alexandria",
+   "de": "Alexandria",
+   "fr": "Alexandrie",
+   "kind": "city",
+   "macro": "north-africa",
+   "names": [
+    "Alexandria",
+    "Alexandrie",
+    "Alexandrian*",
+    "Iskandariyya",
+    "Iskandiriyya"
+   ]
+  },
+  {
+   "id": "Q406",
+   "en": "Istanbul",
+   "de": "Istanbul",
+   "fr": "Istanbul",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Istanbul",
+    "Constantinople",
+    "Konstantinopel",
+    "Stambul"
+   ]
+  },
+  {
+   "id": "Q3820",
+   "en": "Beirut",
+   "de": "Beirut",
+   "fr": "Beyrouth",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Beirut",
+    "Beyrouth"
+   ]
+  },
+  {
+   "id": "Q3766",
+   "en": "Damascus",
+   "de": "Damaskus",
+   "fr": "Damas",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Damascus",
+    "Damaskus",
+    "Damas",
+    "Dimashq"
+   ]
+  },
+  {
+   "id": "Q41183",
+   "en": "Aleppo",
+   "de": "Aleppo",
+   "fr": "Alep",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Aleppo",
+    "Alep",
+    "Halab",
+    "Ḥalab"
+   ]
+  },
+  {
+   "id": "Q1530",
+   "en": "Baghdad",
+   "de": "Bagdad",
+   "fr": "Bagdad",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Baghdad",
+    "Bagdad"
+   ]
+  },
+  {
+   "id": "Q374365",
+   "en": "Jeddah",
+   "de": "Dschidda",
+   "fr": "Djeddah",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Jeddah",
+    "Dschidda",
+    "Djeddah",
+    "Jidda",
+    "Jiddah"
+   ]
+  },
+  {
+   "id": "Q5806",
+   "en": "Mecca",
+   "de": "Mekka",
+   "fr": "La Mecque",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Mecca",
+    "Mekka",
+    "La Mecque",
+    "Makka",
+    "Makkah",
+    "=Mecque"
+   ]
+  },
+  {
+   "id": "Q35484",
+   "en": "Medina",
+   "de": "Medina",
+   "fr": "Médine",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Medina",
+    "Médine",
+    "Madina"
+   ],
+   "ambiguous": true
+  },
+  {
+   "id": "Q1218",
+   "en": "Jerusalem",
+   "de": "Jerusalem",
+   "fr": "Jérusalem",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Jerusalem",
+    "Jérusalem",
+    "al-Quds"
+   ]
+  },
+  {
+   "id": "Q3805",
+   "en": "Amman",
+   "de": "Amman",
+   "fr": "Amman",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Amman"
+   ]
+  },
+  {
+   "id": "Q612",
+   "en": "Dubai",
+   "de": "Dubai",
+   "fr": "Dubaï",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Dubai",
+    "Dubaï"
+   ]
+  },
+  {
+   "id": "Q3861",
+   "en": "Doha",
+   "de": "Doha",
+   "fr": "Doha",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Doha"
+   ]
+  },
+  {
+   "id": "Q3826",
+   "en": "Muscat",
+   "de": "Maskat",
+   "fr": "Mascate",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Muscat",
+    "Maskat",
+    "Mascate"
+   ]
+  },
+  {
+   "id": "Q1294439",
+   "en": "Salalah",
+   "de": "Salala",
+   "fr": "Salalah",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Salalah",
+    "Salala"
+   ]
+  },
+  {
+   "id": "Q2471",
+   "en": "Sanaa",
+   "de": "Sanaa",
+   "fr": "Sanaa",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Sanaa",
+    "Sana'a",
+    "Ṣanʿāʾ"
+   ]
+  },
+  {
+   "id": "Q131694",
+   "en": "Aden",
+   "de": "Aden",
+   "fr": "Aden",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Aden"
+   ]
+  },
+  {
+   "id": "Q3616",
+   "en": "Tehran",
+   "de": "Teheran",
+   "fr": "Téhéran",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Tehran",
+    "Teheran",
+    "Téhéran"
+   ]
+  },
+  {
+   "id": "Q42053",
+   "en": "Isfahan",
+   "de": "Isfahan",
+   "fr": "Ispahan",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Isfahan",
+    "Ispahan"
+   ]
+  },
+  {
+   "id": "Q35997",
+   "en": "Izmir",
+   "de": "Izmir",
+   "fr": "Izmir",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Izmir",
+    "Smyrna",
+    "Smyrne"
+   ],
+   "wikidata_en": "İzmir"
+  },
+  {
+   "id": "Q43387",
+   "en": "Edirne",
+   "de": "Edirne",
+   "fr": "Edirne",
+   "kind": "city",
+   "macro": "middle-east",
+   "names": [
+    "Edirne",
+    "Adrianople"
+   ]
+  },
+  {
+   "id": "Q12560",
+   "en": "Ottoman Empire",
+   "de": "Osmanisches Reich",
+   "fr": "Empire ottoman",
+   "kind": "historical",
+   "macro": "middle-east",
+   "names": [
+    "Ottoman Empire",
+    "Osmanisches Reich",
+    "Empire ottoman",
+    "Ottoman*",
+    "osmanisch*",
+    "Osmanen",
+    "ottoman*",
+    "Osmanli*",
+    "Osmanlı*"
+   ]
+  },
+  {
+   "id": "Q7204",
+   "en": "Middle East",
+   "de": "Naher Osten",
+   "fr": "Moyen-Orient",
+   "kind": "region",
+   "macro": "middle-east",
+   "names": [
+    "Middle East",
+    "Naher Osten",
+    "Moyen-Orient",
+    "Near East",
+    "Nahost",
+    "Nahen Osten",
+    "Nahe Osten",
+    "Mittlerer Osten",
+    "Mittleren Osten",
+    "Vorderer Orient",
+    "Vorderen Orients",
+    "Vorderasien",
+    "Proche-Orient",
+    "MENA",
+    "Middle-East",
+    "middle eastern"
+   ]
+  },
+  {
+   "id": "Q79",
+   "en": "Egypt",
+   "de": "Ägypten",
+   "fr": "Égypte",
+   "kind": "country",
+   "macro": "north-africa",
+   "names": [
+    "Egypt",
+    "Ägypten",
+    "Égypte",
+    "Egyptian*",
+    "ägyptisch*",
+    "Ägypter*",
+    "égyptien*",
+    "Misr",
+    "Miṣr"
+   ]
+  },
+  {
+   "id": "Q1028",
+   "en": "Morocco",
+   "de": "Marokko",
+   "fr": "Maroc",
+   "kind": "country",
+   "macro": "north-africa",
+   "names": [
+    "Morocco",
+    "Marokko",
+    "Maroc",
+    "Moroccan*",
+    "marokkanisch*",
+    "Marokkaner*",
+    "marocain*"
+   ]
+  },
+  {
+   "id": "Q262",
+   "en": "Algeria",
+   "de": "Algerien",
+   "fr": "Algérie",
+   "kind": "country",
+   "macro": "north-africa",
+   "names": [
+    "Algeria",
+    "Algerien",
+    "Algérie",
+    "Algerian*",
+    "algerisch*",
+    "algérien*"
+   ]
+  },
+  {
+   "id": "Q948",
+   "en": "Tunisia",
+   "de": "Tunesien",
+   "fr": "Tunisie",
+   "kind": "country",
+   "macro": "north-africa",
+   "names": [
+    "Tunisia",
+    "Tunesien",
+    "Tunisie",
+    "Tunisian*",
+    "tunesisch*",
+    "tunisien*"
+   ]
+  },
+  {
+   "id": "Q1016",
+   "en": "Libya",
+   "de": "Libyen",
+   "fr": "Libye",
+   "kind": "country",
+   "macro": "north-africa",
+   "names": [
+    "Libya",
+    "Libyen",
+    "Libye",
+    "Libyan*",
+    "libysch*",
+    "libyen*",
+    "Lībīya"
+   ]
+  },
+  {
+   "id": "Q1049",
+   "en": "Sudan",
+   "de": "Sudan",
+   "fr": "Soudan",
+   "kind": "country",
+   "macro": "north-africa",
+   "names": [
+    "Sudan",
+    "Soudan",
+    "Sudanese",
+    "sudanesisch*",
+    "soudanais*"
+   ]
+  },
+  {
+   "id": "Q1025",
+   "en": "Mauritania",
+   "de": "Mauretanien",
+   "fr": "Mauritanie",
+   "kind": "country",
+   "macro": "north-africa",
+   "names": [
+    "Mauritania",
+    "Mauretanien",
+    "Mauritanie",
+    "Mauritanian*",
+    "mauretanisch*",
+    "mauritanien*"
+   ]
+  },
+  {
+   "id": "Q6250",
+   "en": "Western Sahara",
+   "de": "Westsahara",
+   "fr": "Sahara occidental",
+   "kind": "region",
+   "macro": "north-africa",
+   "names": [
+    "Western Sahara",
+    "Westsahara",
+    "Sahara occidental"
+   ]
+  },
+  {
+   "id": "Q28227",
+   "en": "Maghreb",
+   "de": "Maghreb",
+   "fr": "Maghreb",
+   "kind": "region",
+   "macro": "north-africa",
+   "names": [
+    "Maghreb",
+    "Maghrib",
+    "maghrebinisch*",
+    "maghrébin*"
+   ]
+  },
+  {
+   "id": "Q27381",
+   "en": "North Africa",
+   "de": "Nordafrika",
+   "fr": "Afrique du Nord",
+   "kind": "region",
+   "macro": "north-africa",
+   "names": [
+    "North Africa",
+    "Nordafrika",
+    "Afrique du Nord",
+    "North African*",
+    "nordafrikanisch*",
+    "nord-africain*"
+   ]
+  },
+  {
+   "id": "Q3572",
+   "en": "Tunis",
+   "de": "Tunis",
+   "fr": "Tunis",
+   "kind": "city",
+   "macro": "north-africa",
+   "names": [
+    "Tunis"
+   ]
+  },
+  {
+   "id": "Q3579",
+   "en": "Tripoli",
+   "de": "Tripolis",
+   "fr": "Tripoli",
+   "kind": "city",
+   "macro": "north-africa",
+   "names": [
+    "Tripoli",
+    "Tripolis",
+    "Tarabulus",
+    "Tarablos",
+    "Tripolitania",
+    "Tripolitanien",
+    "Tripolitaine"
+   ],
+   "ambiguous": true
+  },
+  {
+   "id": "Q3561",
+   "en": "Algiers",
+   "de": "Algier",
+   "fr": "Alger",
+   "kind": "city",
+   "macro": "north-africa",
+   "names": [
+    "Algiers",
+    "Algier",
+    "Alger"
+   ]
+  },
+  {
+   "id": "Q80985",
+   "en": "Fez",
+   "de": "Fès",
+   "fr": "Fès",
+   "kind": "city",
+   "macro": "north-africa",
+   "names": [
+    "Fez",
+    "Fès",
+    "Fes",
+    "Fas"
+   ]
+  },
+  {
+   "id": "Q7903",
+   "en": "Casablanca",
+   "de": "Casablanca",
+   "fr": "Casablanca",
+   "kind": "city",
+   "macro": "north-africa",
+   "names": [
+    "Casablanca"
+   ]
+  },
+  {
+   "id": "Q101625",
+   "en": "Marrakesh",
+   "de": "Marrakesch",
+   "fr": "Marrakech",
+   "kind": "city",
+   "macro": "north-africa",
+   "names": [
+    "Marrakesh",
+    "Marrakesch",
+    "Marrakech"
+   ],
+   "wikidata_en": "Marrakech"
+  },
+  {
+   "id": "Q3551",
+   "en": "Rabat",
+   "de": "Rabat",
+   "fr": "Rabat",
+   "kind": "city",
+   "macro": "north-africa",
+   "names": [
+    "Rabat"
+   ]
+  },
+  {
+   "id": "Q1963",
+   "en": "Khartoum",
+   "de": "Khartum",
+   "fr": "Khartoum",
+   "kind": "city",
+   "macro": "north-africa",
+   "names": [
+    "Khartoum",
+    "Khartum"
+   ]
+  },
+  {
+   "id": "Q46733",
+   "en": "Darfur",
+   "de": "Darfur",
+   "fr": "Darfour",
+   "kind": "region",
+   "macro": "north-africa",
+   "names": [
+    "Darfur",
+    "Darfour"
+   ]
+  },
+  {
+   "id": "Q1033",
+   "en": "Nigeria",
+   "de": "Nigeria",
+   "fr": "Nigeria",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Nigeria",
+    "Nigerian*",
+    "nigerianisch*",
+    "nigérian*",
+    "Niger Delta",
+    "Nigerdelta"
+   ]
+  },
+  {
+   "id": "Q1032",
+   "en": "Niger",
+   "de": "Niger",
+   "fr": "Niger",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "=Niger",
+    "nigrisch*",
+    "nigérien*"
+   ]
+  },
+  {
+   "id": "Q912",
+   "en": "Mali",
+   "de": "Mali",
+   "fr": "Mali",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "=Mali",
+    "Malian*",
+    "malisch*",
+    "malien*"
+   ]
+  },
+  {
+   "id": "Q1041",
+   "en": "Senegal",
+   "de": "Senegal",
+   "fr": "Sénégal",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Senegal",
+    "Sénégal",
+    "Senegalese",
+    "senegalesisch*",
+    "sénégalais*"
+   ]
+  },
+  {
+   "id": "Q1005",
+   "en": "The Gambia",
+   "de": "Gambia",
+   "fr": "Gambie",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "The Gambia",
+    "Gambia",
+    "Gambie",
+    "Gambian*",
+    "gambisch*",
+    "gambien*"
+   ]
+  },
+  {
+   "id": "Q117",
+   "en": "Ghana",
+   "de": "Ghana",
+   "fr": "Ghana",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Ghana",
+    "Ghanaian*",
+    "ghanaisch*",
+    "ghanéen*"
+   ]
+  },
+  {
+   "id": "Q962",
+   "en": "Benin",
+   "de": "Benin",
+   "fr": "Bénin",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Benin",
+    "Bénin",
+    "Beninese",
+    "beninisch*",
+    "béninois*",
+    "Dahomey"
+   ],
+   "ambiguous": true
+  },
+  {
+   "id": "Q945",
+   "en": "Togo",
+   "de": "Togo",
+   "fr": "Togo",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Togo",
+    "Togolese",
+    "togoisch*",
+    "togolais*"
+   ]
+  },
+  {
+   "id": "Q965",
+   "en": "Burkina Faso",
+   "de": "Burkina Faso",
+   "fr": "Burkina Faso",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Burkina Faso",
+    "Burkinabè",
+    "Burkinabe",
+    "Upper Volta",
+    "Obervolta",
+    "Haute-Volta"
+   ]
+  },
+  {
+   "id": "Q1008",
+   "en": "Côte d'Ivoire",
+   "de": "Elfenbeinküste",
+   "fr": "Côte d'Ivoire",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Côte d'Ivoire",
+    "Elfenbeinküste",
+    "Ivory Coast",
+    "Ivorian*",
+    "ivoirien*",
+    "ivorisch*",
+    "Cote d'Ivoire",
+    "Côte d’Ivoire"
+   ],
+   "wikidata_en": "Ivory Coast"
+  },
+  {
+   "id": "Q1006",
+   "en": "Guinea",
+   "de": "Guinea",
+   "fr": "Guinée",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Guinée",
+    "=Guinea",
+    "guinéen*"
+   ]
+  },
+  {
+   "id": "Q1007",
+   "en": "Guinea-Bissau",
+   "de": "Guinea-Bissau",
+   "fr": "Guinée-Bissau",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Guinea-Bissau",
+    "Guinée-Bissau"
+   ]
+  },
+  {
+   "id": "Q1044",
+   "en": "Sierra Leone",
+   "de": "Sierra Leone",
+   "fr": "Sierra Leone",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Sierra Leone"
+   ]
+  },
+  {
+   "id": "Q1014",
+   "en": "Liberia",
+   "de": "Liberia",
+   "fr": "Liberia",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Liberia",
+    "Liberian*"
+   ]
+  },
+  {
+   "id": "Q1009",
+   "en": "Cameroon",
+   "de": "Kamerun",
+   "fr": "Cameroun",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Cameroon",
+    "Kamerun",
+    "Cameroun",
+    "Cameroonian*",
+    "kamerunisch*",
+    "camerounais*"
+   ]
+  },
+  {
+   "id": "Q657",
+   "en": "Chad",
+   "de": "Tschad",
+   "fr": "Tchad",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Tschad",
+    "Tchad",
+    "=Chad",
+    "Chadian*",
+    "tschadisch*",
+    "tchadien*"
+   ]
+  },
+  {
+   "id": "Q974",
+   "en": "Democratic Republic of the Congo",
+   "de": "Demokratische Republik Kongo",
+   "fr": "République démocratique du Congo",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Democratic Republic of the Congo",
+    "Demokratische Republik Kongo",
+    "République démocratique du Congo",
+    "Congo",
+    "Kongo",
+    "Congolese",
+    "kongolesisch*",
+    "congolais*",
+    "Zaire",
+    "Zaïre"
+   ]
+  },
+  {
+   "id": "Q929",
+   "en": "Central African Republic",
+   "de": "Zentralafrikanische Republik",
+   "fr": "République centrafricaine",
+   "kind": "country",
+   "macro": "west-central-africa",
+   "names": [
+    "Central African Republic",
+    "Zentralafrikanische Republik",
+    "République centrafricaine"
+   ]
+  },
+  {
+   "id": "Q66065",
+   "en": "Sahel",
+   "de": "Sahel",
+   "fr": "Sahel",
+   "kind": "region",
+   "macro": "west-central-africa",
+   "names": [
+    "Sahel",
+    "Sahelian"
+   ]
+  },
+  {
+   "id": "Q4412",
+   "en": "West Africa",
+   "de": "Westafrika",
+   "fr": "Afrique de l'Ouest",
+   "kind": "region",
+   "macro": "west-central-africa",
+   "names": [
+    "West Africa",
+    "Westafrika",
+    "Afrique de l'Ouest",
+    "West African*",
+    "westafrikanisch*",
+    "ouest-africain*",
+    "Afrique occidentale",
+    "Western Africa"
+   ]
+  },
+  {
+   "id": "Q3674",
+   "en": "Niamey",
+   "de": "Niamey",
+   "fr": "Niamey",
+   "kind": "city",
+   "macro": "west-central-africa",
+   "names": [
+    "Niamey"
+   ]
+  },
+  {
+   "id": "Q3703",
+   "en": "Bamako",
+   "de": "Bamako",
+   "fr": "Bamako",
+   "kind": "city",
+   "macro": "west-central-africa",
+   "names": [
+    "Bamako"
+   ]
+  },
+  {
+   "id": "Q3718",
+   "en": "Dakar",
+   "de": "Dakar",
+   "fr": "Dakar",
+   "kind": "city",
+   "macro": "west-central-africa",
+   "names": [
+    "Dakar"
+   ]
+  },
+  {
+   "id": "Q3777",
+   "en": "Ouagadougou",
+   "de": "Ouagadougou",
+   "fr": "Ouagadougou",
+   "kind": "city",
+   "macro": "west-central-africa",
+   "names": [
+    "Ouagadougou"
+   ]
+  },
+  {
+   "id": "Q3792",
+   "en": "Lomé",
+   "de": "Lomé",
+   "fr": "Lomé",
+   "kind": "city",
+   "macro": "west-central-africa",
+   "names": [
+    "Lomé",
+    "Lome"
+   ]
+  },
+  {
+   "id": "Q43595",
+   "en": "Cotonou",
+   "de": "Cotonou",
+   "fr": "Cotonou",
+   "kind": "city",
+   "macro": "west-central-africa",
+   "names": [
+    "Cotonou"
+   ]
+  },
+  {
+   "id": "Q3799",
+   "en": "Porto-Novo",
+   "de": "Porto-Novo",
+   "fr": "Porto-Novo",
+   "kind": "city",
+   "macro": "west-central-africa",
+   "names": [
+    "Porto-Novo"
+   ]
+  },
+  {
+   "id": "Q3761",
+   "en": "Accra",
+   "de": "Accra",
+   "fr": "Accra",
+   "kind": "city",
+   "macro": "west-central-africa",
+   "names": [
+    "Accra"
+   ]
+  },
+  {
+   "id": "Q182984",
+   "en": "Kano",
+   "de": "Kano",
+   "fr": "Kano",
+   "kind": "city",
+   "macro": "west-central-africa",
+   "names": [
+    "Kano"
+   ]
+  },
+  {
+   "id": "Q9427",
+   "en": "Timbuktu",
+   "de": "Timbuktu",
+   "fr": "Tombouctou",
+   "kind": "city",
+   "macro": "west-central-africa",
+   "names": [
+    "Timbuktu",
+    "Tombouctou"
+   ]
+  },
+  {
+   "id": "Q336350",
+   "en": "Sokoto",
+   "de": "Sokoto",
+   "fr": "Sokoto",
+   "kind": "city",
+   "macro": "west-central-africa",
+   "names": [
+    "Sokoto"
+   ]
+  },
+  {
+   "id": "Q8673",
+   "en": "Lagos",
+   "de": "Lagos",
+   "fr": "Lagos",
+   "kind": "city",
+   "macro": "west-central-africa",
+   "names": [
+    "Lagos"
+   ]
+  },
+  {
+   "id": "Q115",
+   "en": "Ethiopia",
+   "de": "Äthiopien",
+   "fr": "Éthiopie",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Ethiopia",
+    "Äthiopien",
+    "Éthiopie",
+    "Ethiopian*",
+    "äthiopisch*",
+    "éthiopien*",
+    "Abyssinia",
+    "Abessinien",
+    "Abyssinie"
+   ]
+  },
+  {
+   "id": "Q986",
+   "en": "Eritrea",
+   "de": "Eritrea",
+   "fr": "Érythrée",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Eritrea",
+    "Érythrée",
+    "Eritrean*",
+    "eritreisch*"
+   ]
+  },
+  {
+   "id": "Q977",
+   "en": "Djibouti",
+   "de": "Dschibuti",
+   "fr": "Djibouti",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Djibouti",
+    "Dschibuti"
+   ]
+  },
+  {
+   "id": "Q1045",
+   "en": "Somalia",
+   "de": "Somalia",
+   "fr": "Somalie",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Somalia",
+    "Somalie",
+    "Somali",
+    "Somalis",
+    "somalisch*",
+    "Somaliland"
+   ]
+  },
+  {
+   "id": "Q114",
+   "en": "Kenya",
+   "de": "Kenia",
+   "fr": "Kenya",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Kenya",
+    "Kenia",
+    "Kenyan*",
+    "kenianisch*",
+    "kényan*",
+    "Keya"
+   ]
+  },
+  {
+   "id": "Q924",
+   "en": "Tanzania",
+   "de": "Tansania",
+   "fr": "Tanzanie",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Tanzania",
+    "Tansania",
+    "Tanzanie",
+    "Tanzanian*",
+    "tansanisch*",
+    "tanzanien*",
+    "Tanganyika",
+    "Tanganjika"
+   ]
+  },
+  {
+   "id": "Q1036",
+   "en": "Uganda",
+   "de": "Uganda",
+   "fr": "Ouganda",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Uganda",
+    "Ouganda",
+    "Ugandan*",
+    "ugandisch*"
+   ]
+  },
+  {
+   "id": "Q1037",
+   "en": "Rwanda",
+   "de": "Ruanda",
+   "fr": "Rwanda",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Rwanda",
+    "Ruanda",
+    "Rwandan*"
+   ]
+  },
+  {
+   "id": "Q1019",
+   "en": "Madagascar",
+   "de": "Madagaskar",
+   "fr": "Madagascar",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Madagascar",
+    "Madagaskar",
+    "Malagasy",
+    "madagassisch*"
+   ]
+  },
+  {
+   "id": "Q970",
+   "en": "Comoros",
+   "de": "Komoren",
+   "fr": "Comores",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Comoros",
+    "Komoren",
+    "Comores",
+    "Comorian*",
+    "Mayotte"
+   ]
+  },
+  {
+   "id": "Q1029",
+   "en": "Mozambique",
+   "de": "Mosambik",
+   "fr": "Mozambique",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Mozambique",
+    "Mosambik",
+    "Mozambican*"
+   ]
+  },
+  {
+   "id": "Q916",
+   "en": "Angola",
+   "de": "Angola",
+   "fr": "Angola",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Angola",
+    "Angolan*",
+    "angolanisch*"
+   ]
+  },
+  {
+   "id": "Q258",
+   "en": "South Africa",
+   "de": "Südafrika",
+   "fr": "Afrique du Sud",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "South Africa",
+    "Südafrika",
+    "Afrique du Sud",
+    "South African*",
+    "südafrikanisch*"
+   ]
+  },
+  {
+   "id": "Q1030",
+   "en": "Namibia",
+   "de": "Namibia",
+   "fr": "Namibie",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Namibia",
+    "Namibie",
+    "Namibian*"
+   ]
+  },
+  {
+   "id": "Q953",
+   "en": "Zambia",
+   "de": "Sambia",
+   "fr": "Zambie",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Zambia",
+    "Sambia",
+    "Zambie"
+   ]
+  },
+  {
+   "id": "Q954",
+   "en": "Zimbabwe",
+   "de": "Simbabwe",
+   "fr": "Zimbabwe",
+   "kind": "country",
+   "macro": "east-southern-africa",
+   "names": [
+    "Zimbabwe",
+    "Simbabwe"
+   ]
+  },
+  {
+   "id": "Q1774",
+   "en": "Zanzibar",
+   "de": "Sansibar",
+   "fr": "Zanzibar",
+   "kind": "region",
+   "macro": "east-southern-africa",
+   "names": [
+    "Zanzibar",
+    "Sansibar",
+    "Zanzibari*",
+    "sansibarisch*"
+   ],
+   "wikidata_en": "Zanzibar Islands"
+  },
+  {
+   "id": "Q27407",
+   "en": "East Africa",
+   "de": "Ostafrika",
+   "fr": "Afrique de l'Est",
+   "kind": "region",
+   "macro": "east-southern-africa",
+   "names": [
+    "East Africa",
+    "Ostafrika",
+    "Afrique de l'Est",
+    "East African*",
+    "ostafrikanisch*",
+    "est-africain*",
+    "Eastern Africa",
+    "Afrique orientale"
+   ]
+  },
+  {
+   "id": "Q40556",
+   "en": "Horn of Africa",
+   "de": "Horn von Afrika",
+   "fr": "Corne de l'Afrique",
+   "kind": "region",
+   "macro": "east-southern-africa",
+   "names": [
+    "Horn of Africa",
+    "Horn von Afrika",
+    "Corne de l'Afrique"
+   ]
+  },
+  {
+   "id": "Q2739014",
+   "en": "Swahili coast",
+   "de": "Swahili-Küste",
+   "fr": "Côte swahilie",
+   "kind": "region",
+   "macro": "east-southern-africa",
+   "names": [
+    "Swahili coast",
+    "Swahili-Küste",
+    "Côte swahilie",
+    "Swahili",
+    "Kiswahili",
+    "Waswahili"
+   ]
+  },
+  {
+   "id": "Q3870",
+   "en": "Nairobi",
+   "de": "Nairobi",
+   "fr": "Nairobi",
+   "kind": "city",
+   "macro": "east-southern-africa",
+   "names": [
+    "Nairobi"
+   ]
+  },
+  {
+   "id": "Q225641",
+   "en": "Mombasa",
+   "de": "Mombasa",
+   "fr": "Mombasa",
+   "kind": "city",
+   "macro": "east-southern-africa",
+   "names": [
+    "Mombasa"
+   ]
+  },
+  {
+   "id": "Q1960",
+   "en": "Dar es Salaam",
+   "de": "Daressalam",
+   "fr": "Dar es Salaam",
+   "kind": "city",
+   "macro": "east-southern-africa",
+   "names": [
+    "Dar es Salaam",
+    "Daressalam",
+    "Dar es-Salaam"
+   ]
+  },
+  {
+   "id": "Q272799",
+   "en": "Lamu",
+   "de": "Lamu",
+   "fr": "Lamu",
+   "kind": "city",
+   "macro": "east-southern-africa",
+   "names": [
+    "Lamu"
+   ]
+  },
+  {
+   "id": "Q3624",
+   "en": "Addis Ababa",
+   "de": "Addis Abeba",
+   "fr": "Addis-Abeba",
+   "kind": "city",
+   "macro": "east-southern-africa",
+   "names": [
+    "Addis Ababa",
+    "Addis Abeba",
+    "Addis-Abeba"
+   ]
+  },
+  {
+   "id": "Q190184",
+   "en": "Harar",
+   "de": "Harar",
+   "fr": "Harar",
+   "kind": "city",
+   "macro": "east-southern-africa",
+   "names": [
+    "Harar"
+   ]
+  },
+  {
+   "id": "Q668",
+   "en": "India",
+   "de": "Indien",
+   "fr": "Inde",
+   "kind": "country",
+   "macro": "south-asia",
+   "names": [
+    "India",
+    "Indien",
+    "Inde",
+    "Indian*",
+    "indisch*",
+    "Inder*",
+    "indien*",
+    "Hindustan",
+    "Hindostan",
+    "British Raj",
+    "Bharat"
+   ]
+  },
+  {
+   "id": "Q843",
+   "en": "Pakistan",
+   "de": "Pakistan",
+   "fr": "Pakistan",
+   "kind": "country",
+   "macro": "south-asia",
+   "names": [
+    "Pakistan",
+    "Pakistani*",
+    "pakistanisch*",
+    "pakistanais*"
+   ]
+  },
+  {
+   "id": "Q902",
+   "en": "Bangladesh",
+   "de": "Bangladesch",
+   "fr": "Bangladesh",
+   "kind": "country",
+   "macro": "south-asia",
+   "names": [
+    "Bangladesh",
+    "Bangladesch",
+    "Bangladeshi*",
+    "East Pakistan",
+    "Ostpakistan"
+   ]
+  },
+  {
+   "id": "Q889",
+   "en": "Afghanistan",
+   "de": "Afghanistan",
+   "fr": "Afghanistan",
+   "kind": "country",
+   "macro": "south-asia",
+   "names": [
+    "Afghanistan",
+    "Afghan*",
+    "afghanisch*"
+   ]
+  },
+  {
+   "id": "Q854",
+   "en": "Sri Lanka",
+   "de": "Sri Lanka",
+   "fr": "Sri Lanka",
+   "kind": "country",
+   "macro": "south-asia",
+   "names": [
+    "Sri Lanka",
+    "Ceylon",
+    "Sri Lankan*"
+   ]
+  },
+  {
+   "id": "Q837",
+   "en": "Nepal",
+   "de": "Nepal",
+   "fr": "Népal",
+   "kind": "country",
+   "macro": "south-asia",
+   "names": [
+    "Nepal",
+    "Népal",
+    "Nepali*",
+    "Nepalese"
+   ]
+  },
+  {
+   "id": "Q771405",
+   "en": "South Asia",
+   "de": "Südasien",
+   "fr": "Asie du Sud",
+   "kind": "region",
+   "macro": "south-asia",
+   "names": [
+    "South Asia",
+    "Südasien",
+    "Asie du Sud",
+    "South Asian*",
+    "südasiatisch*",
+    "sud-asiatique*",
+    "Indian subcontinent",
+    "subcontinent"
+   ]
+  },
+  {
+   "id": "Q43100",
+   "en": "Kashmir",
+   "de": "Kaschmir",
+   "fr": "Cachemire",
+   "kind": "region",
+   "macro": "south-asia",
+   "names": [
+    "Kashmir",
+    "Kaschmir",
+    "Cachemire",
+    "Kashmiri*",
+    "kaschmirisch*"
+   ]
+  },
+  {
+   "id": "Q169132",
+   "en": "Punjab",
+   "de": "Pandschab",
+   "fr": "Pendjab",
+   "kind": "region",
+   "macro": "south-asia",
+   "names": [
+    "Punjab",
+    "Pandschab",
+    "Pendjab",
+    "Punjabi*",
+    "Panjab*"
+   ]
+  },
+  {
+   "id": "Q80338",
+   "en": "Bengal",
+   "de": "Bengalen",
+   "fr": "Bengale",
+   "kind": "region",
+   "macro": "south-asia",
+   "names": [
+    "Bengal",
+    "Bengalen",
+    "Bengale",
+    "Bengali*",
+    "bengalisch*"
+   ]
+  },
+  {
+   "id": "Q1353",
+   "en": "Delhi",
+   "de": "Delhi",
+   "fr": "Delhi",
+   "kind": "city",
+   "macro": "south-asia",
+   "names": [
+    "Delhi",
+    "New Delhi",
+    "Neu-Delhi"
+   ]
+  },
+  {
+   "id": "Q1156",
+   "en": "Mumbai",
+   "de": "Mumbai",
+   "fr": "Bombay",
+   "kind": "city",
+   "macro": "south-asia",
+   "names": [
+    "Mumbai",
+    "Bombay"
+   ]
+  },
+  {
+   "id": "Q1348",
+   "en": "Kolkata",
+   "de": "Kalkutta",
+   "fr": "Calcutta",
+   "kind": "city",
+   "macro": "south-asia",
+   "names": [
+    "Kolkata",
+    "Kalkutta",
+    "Calcutta"
+   ]
+  },
+  {
+   "id": "Q11739",
+   "en": "Lahore",
+   "de": "Lahore",
+   "fr": "Lahore",
+   "kind": "city",
+   "macro": "south-asia",
+   "names": [
+    "Lahore"
+   ]
+  },
+  {
+   "id": "Q8660",
+   "en": "Karachi",
+   "de": "Karatschi",
+   "fr": "Karachi",
+   "kind": "city",
+   "macro": "south-asia",
+   "names": [
+    "Karachi",
+    "Karatschi"
+   ]
+  },
+  {
+   "id": "Q1354",
+   "en": "Dhaka",
+   "de": "Dhaka",
+   "fr": "Dacca",
+   "kind": "city",
+   "macro": "south-asia",
+   "names": [
+    "Dhaka",
+    "Dacca"
+   ]
+  },
+  {
+   "id": "Q5838",
+   "en": "Kabul",
+   "de": "Kabul",
+   "fr": "Kaboul",
+   "kind": "city",
+   "macro": "south-asia",
+   "names": [
+    "Kabul",
+    "Kaboul"
+   ]
+  },
+  {
+   "id": "Q1538",
+   "en": "Pune",
+   "de": "Pune",
+   "fr": "Pune",
+   "kind": "city",
+   "macro": "south-asia",
+   "names": [
+    "Pune",
+    "Poona"
+   ]
+  },
+  {
+   "id": "Q1070",
+   "en": "Ahmedabad",
+   "de": "Ahmedabad",
+   "fr": "Ahmedabad",
+   "kind": "city",
+   "macro": "south-asia",
+   "names": [
+    "Ahmedabad"
+   ]
+  },
+  {
+   "id": "Q1165",
+   "en": "Bihar",
+   "de": "Bihar",
+   "fr": "Bihar",
+   "kind": "region",
+   "macro": "south-asia",
+   "names": [
+    "Bihar"
+   ]
+  },
+  {
+   "id": "Q1498",
+   "en": "Uttar Pradesh",
+   "de": "Uttar Pradesh",
+   "fr": "Uttar Pradesh",
+   "kind": "region",
+   "macro": "south-asia",
+   "names": [
+    "Uttar Pradesh",
+    "Awadh",
+    "Oudh"
+   ]
+  },
+  {
+   "id": "Q265",
+   "en": "Uzbekistan",
+   "de": "Usbekistan",
+   "fr": "Ouzbékistan",
+   "kind": "country",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Uzbekistan",
+    "Usbekistan",
+    "Ouzbékistan",
+    "Uzbek*",
+    "usbekisch*",
+    "Usbeken",
+    "ouzbek*"
+   ]
+  },
+  {
+   "id": "Q813",
+   "en": "Kyrgyzstan",
+   "de": "Kirgistan",
+   "fr": "Kirghizistan",
+   "kind": "country",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Kyrgyzstan",
+    "Kirgistan",
+    "Kirghizistan",
+    "Kyrgyz",
+    "kirgisisch*",
+    "Kirgisen",
+    "kirghiz*",
+    "Kirghiz"
+   ]
+  },
+  {
+   "id": "Q863",
+   "en": "Tajikistan",
+   "de": "Tadschikistan",
+   "fr": "Tadjikistan",
+   "kind": "country",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Tajikistan",
+    "Tadschikistan",
+    "Tadjikistan",
+    "Tajik*",
+    "tadschikisch*",
+    "tadjik*"
+   ]
+  },
+  {
+   "id": "Q232",
+   "en": "Kazakhstan",
+   "de": "Kasachstan",
+   "fr": "Kazakhstan",
+   "kind": "country",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Kazakhstan",
+    "Kasachstan",
+    "Kazakh*",
+    "kasachisch*",
+    "Kasachen"
+   ]
+  },
+  {
+   "id": "Q874",
+   "en": "Turkmenistan",
+   "de": "Turkmenistan",
+   "fr": "Turkménistan",
+   "kind": "country",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Turkmenistan",
+    "Turkménistan",
+    "Turkmen*"
+   ]
+  },
+  {
+   "id": "Q227",
+   "en": "Azerbaijan",
+   "de": "Aserbaidschan",
+   "fr": "Azerbaïdjan",
+   "kind": "country",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Azerbaijan",
+    "Aserbaidschan",
+    "Azerbaïdjan",
+    "Azerbaijani*",
+    "aserbaidschanisch*"
+   ]
+  },
+  {
+   "id": "Q230",
+   "en": "Georgia",
+   "de": "Georgien",
+   "fr": "Géorgie",
+   "kind": "country",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Georgien",
+    "Géorgie",
+    "=Georgia",
+    "Georgian*",
+    "georgisch*",
+    "géorgien*",
+    "Sakartvelo"
+   ],
+   "ambiguous": true
+  },
+  {
+   "id": "Q399",
+   "en": "Armenia",
+   "de": "Armenien",
+   "fr": "Arménie",
+   "kind": "country",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Armenia",
+    "Armenien",
+    "Arménie"
+   ]
+  },
+  {
+   "id": "Q27275",
+   "en": "Central Asia",
+   "de": "Zentralasien",
+   "fr": "Asie centrale",
+   "kind": "region",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Central Asia",
+    "Zentralasien",
+    "Asie centrale",
+    "Central Asian*",
+    "zentralasiatisch*",
+    "Mittelasien",
+    "Turkestan",
+    "Turkistan"
+   ]
+  },
+  {
+   "id": "Q18869",
+   "en": "Caucasus",
+   "de": "Kaukasus",
+   "fr": "Caucase",
+   "kind": "region",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Caucasus",
+    "Kaukasus",
+    "Caucase",
+    "Caucasian",
+    "kaukasisch*",
+    "Dagestan",
+    "Chechnya",
+    "Tschetschenien",
+    "Circassia"
+   ]
+  },
+  {
+   "id": "Q34800",
+   "en": "Xinjiang",
+   "de": "Xinjiang",
+   "fr": "Xinjiang",
+   "kind": "region",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Xinjiang",
+    "Uyghur*",
+    "Uighur*",
+    "uigurisch*",
+    "Ouïghour*"
+   ]
+  },
+  {
+   "id": "Q486324",
+   "en": "Fergana Valley",
+   "de": "Ferghanatal",
+   "fr": "Vallée de Ferghana",
+   "kind": "region",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Fergana Valley",
+    "Ferghanatal",
+    "Vallée de Ferghana",
+    "Ferghana",
+    "Fergana",
+    "Farghona"
+   ],
+   "wikidata_en": "Ferghana Valley"
+  },
+  {
+   "id": "Q5764",
+   "en": "Bukhara",
+   "de": "Buchara",
+   "fr": "Boukhara",
+   "kind": "city",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Bukhara",
+    "Buchara",
+    "Boukhara",
+    "Bokhara",
+    "Buxoro"
+   ]
+  },
+  {
+   "id": "Q5753",
+   "en": "Samarkand",
+   "de": "Samarkand",
+   "fr": "Samarcande",
+   "kind": "city",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Samarkand",
+    "Samarcande"
+   ]
+  },
+  {
+   "id": "Q269",
+   "en": "Tashkent",
+   "de": "Taschkent",
+   "fr": "Tachkent",
+   "kind": "city",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Tashkent",
+    "Taschkent",
+    "Tachkent"
+   ]
+  },
+  {
+   "id": "Q9361",
+   "en": "Bishkek",
+   "de": "Bischkek",
+   "fr": "Bichkek",
+   "kind": "city",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Bishkek",
+    "Bischkek",
+    "Bichkek",
+    "Frunze"
+   ]
+  },
+  {
+   "id": "Q47282",
+   "en": "Osh",
+   "de": "Osch",
+   "fr": "Och",
+   "kind": "city",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Osch",
+    "Och",
+    "=Osh"
+   ]
+  },
+  {
+   "id": "Q9365",
+   "en": "Dushanbe",
+   "de": "Duschanbe",
+   "fr": "Douchanbé",
+   "kind": "city",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Dushanbe",
+    "Duschanbe",
+    "Douchanbé"
+   ]
+  },
+  {
+   "id": "Q35493",
+   "en": "Almaty",
+   "de": "Almaty",
+   "fr": "Almaty",
+   "kind": "city",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Almaty",
+    "Alma-Ata"
+   ]
+  },
+  {
+   "id": "Q9248",
+   "en": "Baku",
+   "de": "Baku",
+   "fr": "Bakou",
+   "kind": "city",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Baku",
+    "Bakou"
+   ]
+  },
+  {
+   "id": "Q994",
+   "en": "Tbilisi",
+   "de": "Tiflis",
+   "fr": "Tbilissi",
+   "kind": "city",
+   "macro": "central-asia-caucasus",
+   "names": [
+    "Tbilisi",
+    "Tiflis",
+    "Tbilissi"
+   ]
+  },
+  {
+   "id": "Q252",
+   "en": "Indonesia",
+   "de": "Indonesien",
+   "fr": "Indonésie",
+   "kind": "country",
+   "macro": "east-asia",
+   "names": [
+    "Indonesia",
+    "Indonesien",
+    "Indonésie",
+    "Indonesian*",
+    "indonesisch*",
+    "indonésien*",
+    "Java",
+    "Javanese",
+    "Sumatra",
+    "Aceh"
+   ]
+  },
+  {
+   "id": "Q833",
+   "en": "Malaysia",
+   "de": "Malaysia",
+   "fr": "Malaisie",
+   "kind": "country",
+   "macro": "east-asia",
+   "names": [
+    "Malaysia",
+    "Malaisie",
+    "Malaysian*",
+    "malaysisch*",
+    "Malay",
+    "Malays",
+    "Malaya"
+   ]
+  },
+  {
+   "id": "Q334",
+   "en": "Singapore",
+   "de": "Singapur",
+   "fr": "Singapour",
+   "kind": "country",
+   "macro": "east-asia",
+   "names": [
+    "Singapore",
+    "Singapur",
+    "Singapour"
+   ]
+  },
+  {
+   "id": "Q928",
+   "en": "Philippines",
+   "de": "Philippinen",
+   "fr": "Philippines",
+   "kind": "country",
+   "macro": "east-asia",
+   "names": [
+    "Philippines",
+    "Philippinen",
+    "Filipino*",
+    "Mindanao"
+   ]
+  },
+  {
+   "id": "Q869",
+   "en": "Thailand",
+   "de": "Thailand",
+   "fr": "Thaïlande",
+   "kind": "country",
+   "macro": "east-asia",
+   "names": [
+    "Thailand",
+    "Thaïlande"
+   ]
+  },
+  {
+   "id": "Q836",
+   "en": "Myanmar",
+   "de": "Myanmar",
+   "fr": "Birmanie",
+   "kind": "country",
+   "macro": "east-asia",
+   "names": [
+    "Myanmar",
+    "Birmanie",
+    "Burma",
+    "Burmese",
+    "Birma",
+    "Rohingya"
+   ]
+  },
+  {
+   "id": "Q148",
+   "en": "China",
+   "de": "China",
+   "fr": "Chine",
+   "kind": "country",
+   "macro": "east-asia",
+   "names": [
+    "China",
+    "Chine"
+   ],
+   "wikidata_en": "People's Republic of China"
+  },
+  {
+   "id": "Q17",
+   "en": "Japan",
+   "de": "Japan",
+   "fr": "Japon",
+   "kind": "country",
+   "macro": "east-asia",
+   "names": [
+    "Japan",
+    "Japon"
+   ]
+  },
+  {
+   "id": "Q11708",
+   "en": "Southeast Asia",
+   "de": "Südostasien",
+   "fr": "Asie du Sud-Est",
+   "kind": "region",
+   "macro": "east-asia",
+   "names": [
+    "Southeast Asia",
+    "Südostasien",
+    "Asie du Sud-Est",
+    "Southeast Asian*",
+    "South-East Asia",
+    "südostasiatisch*",
+    "South East Asia"
+   ]
+  },
+  {
+   "id": "Q183",
+   "en": "Germany",
+   "de": "Deutschland",
+   "fr": "Allemagne",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Germany",
+    "Deutschland",
+    "Allemagne",
+    "German",
+    "Germans",
+    "deutsch*",
+    "allemand*"
+   ]
+  },
+  {
+   "id": "Q16957",
+   "en": "German Democratic Republic",
+   "de": "Deutsche Demokratische Republik",
+   "fr": "République démocratique allemande",
+   "kind": "historical",
+   "macro": "europe-elsewhere",
+   "names": [
+    "German Democratic Republic",
+    "Deutsche Demokratische Republik",
+    "République démocratique allemande",
+    "GDR",
+    "DDR",
+    "RDA",
+    "East Germany",
+    "East German",
+    "Ostdeutschland"
+   ],
+   "wikidata_en": "East Germany"
+  },
+  {
+   "id": "Q64",
+   "en": "Berlin",
+   "de": "Berlin",
+   "fr": "Berlin",
+   "kind": "city",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Berlin",
+    "Berliner"
+   ]
+  },
+  {
+   "id": "Q142",
+   "en": "France",
+   "de": "Frankreich",
+   "fr": "France",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "France",
+    "Frankreich"
+   ]
+  },
+  {
+   "id": "Q145",
+   "en": "United Kingdom",
+   "de": "Vereinigtes Königreich",
+   "fr": "Royaume-Uni",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "United Kingdom",
+    "Vereinigtes Königreich",
+    "Royaume-Uni",
+    "Britain",
+    "British",
+    "Great Britain",
+    "Großbritannien",
+    "britisch*",
+    "Grande-Bretagne",
+    "britannique*",
+    "England"
+   ]
+  },
+  {
+   "id": "Q38",
+   "en": "Italy",
+   "de": "Italien",
+   "fr": "Italie",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Italy",
+    "Italien",
+    "Italie"
+   ]
+  },
+  {
+   "id": "Q29",
+   "en": "Spain",
+   "de": "Spanien",
+   "fr": "Espagne",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Spain",
+    "Spanien",
+    "Espagne",
+    "al-Andalus",
+    "Andalusia"
+   ]
+  },
+  {
+   "id": "Q55",
+   "en": "Netherlands",
+   "de": "Niederlande",
+   "fr": "Pays-Bas",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Netherlands",
+    "Niederlande",
+    "Pays-Bas"
+   ]
+  },
+  {
+   "id": "Q41",
+   "en": "Greece",
+   "de": "Griechenland",
+   "fr": "Grèce",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Greece",
+    "Griechenland",
+    "Grèce"
+   ]
+  },
+  {
+   "id": "Q23522",
+   "en": "Balkans",
+   "de": "Balkan",
+   "fr": "Balkans",
+   "kind": "region",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Balkans",
+    "Balkan",
+    "Southeastern Europe",
+    "Südosteuropa",
+    "südosteuropäisch*",
+    "Rumelia",
+    "Rumelien"
+   ]
+  },
+  {
+   "id": "Q225",
+   "en": "Bosnia and Herzegovina",
+   "de": "Bosnien und Herzegowina",
+   "fr": "Bosnie-Herzégovine",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Bosnia and Herzegovina",
+    "Bosnien und Herzegowina",
+    "Bosnie-Herzégovine",
+    "Bosnia",
+    "Bosnian*",
+    "Bosnien",
+    "bosnisch*"
+   ]
+  },
+  {
+   "id": "Q222",
+   "en": "Albania",
+   "de": "Albanien",
+   "fr": "Albanie",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Albania",
+    "Albanien",
+    "Albanie",
+    "Albanian*",
+    "albanisch*"
+   ]
+  },
+  {
+   "id": "Q219",
+   "en": "Bulgaria",
+   "de": "Bulgarien",
+   "fr": "Bulgarie",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Bulgaria",
+    "Bulgarien",
+    "Bulgarie",
+    "Bulgarian*",
+    "bulgarisch*"
+   ]
+  },
+  {
+   "id": "Q36",
+   "en": "Poland",
+   "de": "Polen",
+   "fr": "Pologne",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Poland",
+    "Polen",
+    "Pologne"
+   ]
+  },
+  {
+   "id": "Q159",
+   "en": "Russia",
+   "de": "Russland",
+   "fr": "Russie",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Russia",
+    "Russland",
+    "Russie",
+    "Russian*",
+    "russisch*",
+    "russe*",
+    "Tsarist",
+    "zaristisch*"
+   ]
+  },
+  {
+   "id": "Q15180",
+   "en": "Soviet Union",
+   "de": "Sowjetunion",
+   "fr": "Union soviétique",
+   "kind": "historical",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Soviet Union",
+    "Sowjetunion",
+    "Union soviétique",
+    "USSR",
+    "UdSSR",
+    "Soviet*",
+    "sowjetisch*",
+    "soviétique*",
+    "post-Soviet",
+    "postsowjetisch*"
+   ],
+   "mapped": false
+  },
+  {
+   "id": "Q212",
+   "en": "Ukraine",
+   "de": "Ukraine",
+   "fr": "Ukraine",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Ukraine",
+    "Ukrainian*",
+    "ukrainisch*",
+    "ukrainien*",
+    "Crimea",
+    "Krim",
+    "Crimée"
+   ]
+  },
+  {
+   "id": "Q28",
+   "en": "Hungary",
+   "de": "Ungarn",
+   "fr": "Hongrie",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Hungary",
+    "Ungarn",
+    "Hongrie",
+    "Hungarian*",
+    "ungarisch*"
+   ]
+  },
+  {
+   "id": "Q30",
+   "en": "United States",
+   "de": "Vereinigte Staaten",
+   "fr": "États-Unis",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "United States",
+    "Vereinigte Staaten",
+    "États-Unis",
+    "USA",
+    "United States of America",
+    "US-amerikanisch*"
+   ]
+  },
+  {
+   "id": "Q155",
+   "en": "Brazil",
+   "de": "Brasilien",
+   "fr": "Brésil",
+   "kind": "country",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Brazil",
+    "Brasilien",
+    "Brésil",
+    "Brazilian*",
+    "brasilianisch*"
+   ]
+  },
+  {
+   "id": "Q900",
+   "en": "Kazan",
+   "de": "Kasan",
+   "fr": "Kazan",
+   "kind": "city",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Kazan",
+    "Kasan",
+    "Tatarstan"
+   ]
+  },
+  {
+   "id": "Q649",
+   "en": "Moscow",
+   "de": "Moskau",
+   "fr": "Moscou",
+   "kind": "city",
+   "macro": "europe-elsewhere",
+   "names": [
+    "Moscow",
+    "Moskau",
+    "Moscou"
+   ]
+  },
+  {
+   "id": "Q15",
+   "en": "Africa",
+   "de": "Afrika",
+   "fr": "Afrique",
+   "kind": "continent",
+   "macro": "transregional",
+   "names": [
+    "Africa",
+    "Afrika",
+    "Afrique",
+    "African*",
+    "afrikanisch*",
+    "africain*",
+    "Sub-Saharan",
+    "subsaharisch*",
+    "subsaharien*",
+    "=Afro"
+   ],
+   "mapped": false
+  },
+  {
+   "id": "Q48",
+   "en": "Asia",
+   "de": "Asien",
+   "fr": "Asie",
+   "kind": "continent",
+   "macro": "transregional",
+   "names": [
+    "Asia",
+    "Asien",
+    "Asie",
+    "Asian*",
+    "asiatisch*",
+    "asiatique*",
+    "Eurasia",
+    "Eurasien",
+    "eurasisch*"
+   ],
+   "mapped": false
+  },
+  {
+   "id": "Q46",
+   "en": "Europe",
+   "de": "Europa",
+   "fr": "Europe",
+   "kind": "continent",
+   "macro": "transregional",
+   "names": [
+    "Europe",
+    "Europa",
+    "European*",
+    "europäisch*",
+    "européen*"
+   ],
+   "mapped": false
+  },
+  {
+   "id": "Q1239",
+   "en": "Indian Ocean",
+   "de": "Indischer Ozean",
+   "fr": "Océan Indien",
+   "kind": "sea",
+   "macro": "transregional",
+   "names": [
+    "Indian Ocean",
+    "Indischer Ozean",
+    "Océan Indien",
+    "Indischen Ozean",
+    "Indischen Ozeans",
+    "Indian Ocean world"
+   ]
+  },
+  {
+   "id": "Q4918",
+   "en": "Mediterranean Sea",
+   "de": "Mittelmeer",
+   "fr": "Méditerranée",
+   "kind": "sea",
+   "macro": "transregional",
+   "names": [
+    "Mediterranean Sea",
+    "Mittelmeer",
+    "Méditerranée",
+    "Mediterranean",
+    "Mittelmeerraum",
+    "mediterran*",
+    "méditerranéen*",
+    "Mittelmeer*"
+   ]
+  },
+  {
+   "id": "Q23406",
+   "en": "Red Sea",
+   "de": "Rotes Meer",
+   "fr": "Mer Rouge",
+   "kind": "sea",
+   "macro": "transregional",
+   "names": [
+    "Red Sea",
+    "Rotes Meer",
+    "Mer Rouge",
+    "Roten Meer",
+    "Roten Meeres"
+   ]
+  },
+  {
+   "id": "Q6583",
+   "en": "Sahara",
+   "de": "Sahara",
+   "fr": "Sahara",
+   "kind": "region",
+   "macro": "transregional",
+   "names": [
+    "Sahara",
+    "Saharan*",
+    "saharien*",
+    "trans-Saharan",
+    "transsaharisch*"
+   ]
+  },
+  {
+   "id": "Q779924",
+   "en": "Muslim world",
+   "de": "Islamische Welt",
+   "fr": "Monde musulman",
+   "kind": "world",
+   "macro": "transregional",
+   "names": [
+    "Islamic world",
+    "Islamische Welt",
+    "Monde musulman",
+    "Muslim world",
+    "Muslim worlds",
+    "muslimische Welt",
+    "islamische Welt",
+    "monde musulman",
+    "Ummah",
+    "umma"
+   ],
+   "mapped": false
+  },
+  {
+   "id": "Q143487",
+   "en": "Arab world",
+   "de": "Arabische Welt",
+   "fr": "Monde arabe",
+   "kind": "world",
+   "macro": "transregional",
+   "names": [
+    "Arab world",
+    "Arabische Welt",
+    "Monde arabe",
+    "arabischen Welt",
+    "arabische Welt",
+    "monde arabe",
+    "Arab countries",
+    "arabischen Staaten"
+   ],
+   "mapped": false
+  },
+  {
+   "id": "Q1149903",
+   "en": "Global South",
+   "de": "Globaler Süden",
+   "fr": "Sud global",
+   "kind": "world",
+   "macro": "transregional",
+   "names": [
+    "Global South",
+    "Globaler Süden",
+    "Sud global",
+    "Globalen Süden"
+   ],
+   "mapped": false
+  }
+ ]
+}

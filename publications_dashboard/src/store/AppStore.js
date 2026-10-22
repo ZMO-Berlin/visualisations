@@ -25,6 +25,10 @@ export class AppStore {
             people: {},
             /** Themes, areas and map positions, or null without them. */
             themes: null,
+            /** Places, regions and researchers' stated focus, or null. */
+            regions: null,
+            /** GND subject headings of the register's books, or null. */
+            subjects: null,
             filters: createFilters()
         };
     }
@@ -44,17 +48,24 @@ export class AppStore {
         this.#update({ status: 'loading', error: null });
 
         try {
-            const { publications, meta, people = {}, themes = null } = await this.service.load();
+            const { publications, meta, people = {}, themes = null, regions = null, subjects = null } = await this.service.load();
             if (this.destroyed || request !== this.request) return;
             // Companion files refer to records by position, so each record
-            // keeps its own; filtering produces subsets, not new indices.
-            publications.forEach((record, index) => { record.$index = index; });
+            // keeps its own; filtering produces subsets, not new indices. A
+            // record's regions follow from its places, once, here.
+            const macroOf = new Map((regions?.places ?? []).map(place => [place.id, place.macro]));
+            publications.forEach((record, index) => {
+                record.$index = index;
+                if (record.places) record.$regions = [...new Set(record.places.map(id => macroOf.get(id)).filter(Boolean))];
+            });
             this.#update({
                 status: 'ready',
-                publications: indexForSearch(publications, themes),
+                publications: indexForSearch(publications, themes, regions, subjects),
                 meta,
                 people,
-                themes
+                themes,
+                regions,
+                subjects
             });
         } catch (error) {
             if (this.destroyed || request !== this.request) return;

@@ -63,6 +63,8 @@ from pathlib import Path
 
 import numpy as np
 
+from titles import GENERIC, clean_title, fold, own_title, strip_imprint  # noqa: F401  (re-exported for tests)
+
 SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_INPUT = SCRIPT_DIR / "raw_data" / "publications.json"
 DEFAULT_OUTPUT = SCRIPT_DIR / "raw_data" / "themes.json"
@@ -88,47 +90,6 @@ MIN_TERM_RECORDS = 3
 BRIEF_TITLES = 18
 BRIEF_SAMPLE = 8
 
-# Formulaic openings that say what kind of text this is, not what it is about.
-PREFIX = re.compile(
-    r"^\s*(rev|rez|review|rezension|tagungsbericht|forschungsbericht|literaturbericht|"
-    r"conference report|special issue|sonderheft|editorial|editors?['’]? preface|"
-    r"introduction|einleitung|einführung|preface|vorwort|foreword|afterword|nachwort|"
-    r"epilogue|prologue|conclusion|schluss|commentary|kommentar)\s*[:.–—-]\s*",
-    re.IGNORECASE,
-)
-# Where a reviewed book's imprint begins. Places are listed rather than matched
-# as "Word: Word", because titles have colons too: "Locale, Everyday Islam and
-# Modernity: Qasbah Towns" must not be cut at "Modernity".
-PUBLISHING_PLACES = (
-    "London|New York|Oxford|Cambridge|Princeton|Stanford|Leiden|Boston|Berlin|Paris|Chicago|"
-    "Edinburgh|Bloomington|Durham|Wiesbaden|Göttingen|Würzburg|Istanbul|Beirut|Cairo|Austin|"
-    "Berkeley|Los Angeles|Ithaca|Manchester|Toronto|New Delhi|Delhi|Seattle|Syracuse|Minneapolis|"
-    "Philadelphia|Bielefeld|Frankfurt|München|Munich|Hamburg|Leipzig|Abingdon|Basingstoke|"
-    "Farnham|Amsterdam|Tübingen|Baden-Baden|Bern|Wien|Vienna|Moscow|Montreal|Albany|Lanham|"
-    "Bristol|Lahore|Karachi|Dhaka|Tehran|Ankara|Tunis|Rabat|Casablanca|Dakar|Nairobi|"
-    "Johannesburg|Cape Town|Madison|New Haven|Ann Arbor|Columbus|Notre Dame|Pittsburgh|"
-    "Baltimore|Washington|Lincoln|Rome|Roma|Milano|Madrid|Barcelona|Lisboa|Konstanz|Zürich|"
-    "Freiburg|Heidelberg|Köln|Cologne|Bonn|Münster|Bochum|Halle|Marburg|Erlangen|Bamberg|"
-    "Hildesheim|Stuttgart|Bayreuth|Mainz|Aix-en-Provence|Marseille|Lyon|Louvain|Brussels"
-)
-IMPRINT = [
-    re.compile(rf"[,.;(]\s*(?:{PUBLISHING_PLACES})\b(?:,\s*[A-Z][\w.]*)?\s*[:,]"),  # ", London: Hurst"
-    re.compile(r"[,;(]\s*(?:\d+\s*(?:pp|S|pages)\b|\d{4}\b)"),                   # ", 2005", ", 307 pp"
-    re.compile(r"[,;:]\s*(?:by|ed\.|eds\.|hrsg\.)\s", re.IGNORECASE),            # "; by …", ": by …"
-    re.compile(r"\s[Bb]y\s[A-Z][\w'’.-]+\s[A-Z]"),                                # " by Nomi Stone"
-    re.compile(r"[,;]\s*[^,;]*\b(?:University Press|Press|Verlag|Publishers|Publishing)\b"),
-]
-# "Dennerlein, Bettina: Religion als Reform" — the reviewed author, inverted.
-# Given names are one to three capitalised words, so "Locale, Everyday Islam and
-# Modernity:" — a title — is left alone.
-LEADING_AUTHOR = re.compile(r"^[A-ZÀ-Ž][\w'’.-]+,\s+[A-ZÀ-Ž][\w'’.-]*(?:\s[A-ZÀ-Ž][\w'’.-]*){0,2}:\s+(?=[A-ZÀ-Ž\"“‘'])")
-GENERIC = {
-    "introduction", "einleitung", "einführung", "editorial", "preface", "vorwort",
-    "foreword", "afterword", "nachwort", "epilogue", "prologue", "conclusion",
-    "commentary", "response", "reply", "beiträge", "editor's preface",
-    "editors' preface", "editorial preface", "introduction to the special issue",
-}
-
 # Function words, from languages.py, plus words that describe the genre of a
 # title rather than its subject. Used only for the distinctive-term lists.
 GENRE_WORDS = set("""
@@ -136,40 +97,6 @@ introduction einleitung einführung editorial preface review rev rez special iss
 vol volume part chapter essays essay studies study perspectives approaches
 reflections research new history histories historical case report notes book
 """.split())
-
-
-def fold(text: str) -> str:
-    decomposed = unicodedata.normalize("NFKD", text.lower())
-    return "".join(c for c in decomposed if not unicodedata.combining(c))
-
-
-def clean_title(text: str) -> str:
-    previous = None
-    while previous != text:
-        previous = text
-        text = PREFIX.sub("", text)
-    return text.strip(" :.-–—")
-
-
-def strip_imprint(text: str) -> str:
-    """A reviewed book's title without its place, publisher, year and pages.
-
-    Left in, "London: Hurst, 2020, 307 pp." made reviews a theme of their own,
-    held together by "Press", "University" and "Verlag".
-    """
-    text = LEADING_AUTHOR.sub("", text)
-    cut = min((m.start() for m in (pattern.search(text) for pattern in IMPRINT) if m), default=len(text))
-    return text[:cut].strip(" ,;:.([")
-
-
-def own_title(record: dict) -> str:
-    """Cleaned title and subtitle: what the record says about itself."""
-    title = clean_title(record.get("title") or "")
-    subtitle = (record.get("subtitle") or "").strip()
-    head = f"{title}: {subtitle}" if title and subtitle else title or subtitle
-    if record.get("document_type") == "Book reviews":
-        head = strip_imprint(head)
-    return head
 
 
 def theme_text(record: dict, by_slug: dict[str, dict]) -> str:
@@ -489,7 +416,12 @@ def main(argv=None) -> int:
     languages = [detect_language({"title": text}) for text in texts]
     vectors = normalise(embed(texts, args.cache, args.threads))
 
-    if args.refit or not args.output.is_file():
+    # A re-fit changes every theme and rewrites the brief the labels come from,
+    # so it is never implied by a missing file — only asked for.
+    if not args.refit and not args.output.is_file():
+        print(f"error: no fit at {args.output}; run with --refit to make one", file=sys.stderr)
+        return 1
+    if args.refit:
         payload, centred, _, _, _ = build_fit(records, texts, vectors, languages, args.themes, args.areas)
         atomic_json(args.output, payload, indent=1)
         write_brief(args.brief_path, payload, records, texts, centred)

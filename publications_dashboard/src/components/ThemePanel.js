@@ -108,12 +108,19 @@ export class ThemePanel {
         mount(this.notes, el('div', {}, [
             el('p', { class: 'provenance' }, [
                 el('span', { class: 'provenance__badge', text: 'AI' }),
-                fill(this.strings.themeProvenance, { model: 'EmbeddingGemma 2', date }),
+                fill(this.strings.themeProvenance, { model: 'EmbeddingGemma 2', date, review: this.#review(attribution.labels.reviewed) }),
                 ' ',
                 el('a', { href: attribution.embedding.url, target: '_blank', rel: 'noopener noreferrer', text: attribution.embedding.model })
             ]),
             points.added.length ? el('p', { class: 'explore-hint', text: fill(this.strings.themesAdded, { n: points.added.length }) }) : null
         ]));
+    }
+
+    /** Who reviewed the names, once someone has; until then, that no one has. */
+    #review(reviewed) {
+        if (!reviewed?.by) return this.strings.themeUnreviewed;
+        const date = reviewed.date ? new Intl.DateTimeFormat(this.locale, { dateStyle: 'long' }).format(new Date(reviewed.date)) : '';
+        return fill(this.strings.themeReviewed, { name: reviewed.by, date });
     }
 
     destroy() {

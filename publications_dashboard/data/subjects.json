@@ -1,0 +1,1653 @@
+{
+ "datasetId": "7721e3b8afdfdaf0",
+ "sources": {
+  "lobid": "https://lobid.org/resources",
+  "dnb": "https://services.dnb.de/sru/dnb"
+ },
+ "coverage": {
+  "books": 315,
+  "withHeadings": 133
+ },
+ "headings": {
+  "102321377X": {
+   "label": "Arabischer Frühling",
+   "type": "SubjectHeading"
+  },
+  "1028592418": {
+   "label": "Blogger",
+   "type": "SubjectHeading"
+  },
+  "1041864515": {
+   "label": "Geschichtspolitik",
+   "type": "SubjectHeading"
+  },
+  "1060931109": {
+   "label": "Musée du judaïsme marocain",
+   "type": "CorporateBody"
+  },
+  "1060958392": {
+   "label": "Kurdistan-Irak",
+   "type": "PlaceOrGeographicName"
+  },
+  "1079427864": {
+   "label": "Gouvernementalität",
+   "type": "SubjectHeading"
+  },
+  "1125144521": {
+   "label": "Religionsanthropologie",
+   "type": "SubjectHeading"
+  },
+  "118708546": {
+   "label": "Ibn-Taimīya, Aḥmad Ibn-ʿAbd-al-Ḥalīm",
+   "type": "Person"
+  },
+  "118724479": {
+   "label": "Krischna",
+   "type": "Person"
+  },
+  "118736418": {
+   "label": "Oppenheim, Max von",
+   "type": "Person"
+  },
+  "118781219": {
+   "label": "Madhva",
+   "type": "Person"
+  },
+  "11883679X": {
+   "label": "Husainī, Muḥammad Amīn al-",
+   "type": "Person"
+  },
+  "1188375210": {
+   "label": "Diaspora (Sozialwissenschaften)",
+   "type": "SubjectHeading"
+  },
+  "11947381X": {
+   "label": "Schultze, Benjamin",
+   "type": "Person"
+  },
+  "1199322490": {
+   "label": "Forensik",
+   "type": "SubjectHeading"
+  },
+  "123493390": {
+   "label": "Qaraḍāwī, Yūsuf al-",
+   "type": "Person"
+  },
+  "124301735X": {
+   "label": "Metropolisierung",
+   "type": "SubjectHeading"
+  },
+  "125061862": {
+   "label": "Karvé, Irawati",
+   "type": "Person"
+  },
+  "1281040304": {
+   "label": "Globaler Süden",
+   "type": "PlaceOrGeographicName"
+  },
+  "1399461419": {
+   "label": "Schultze, Benjamin: The Large And Renowned Town Of The English Nation In The East-Indies Upon The Coast Of Coromandel, Madras Or Fort St. George",
+   "type": "Work"
+  },
+  "2043853-9": {
+   "label": "Missionsanstalt Hermannsburg",
+   "type": "CorporateBody"
+  },
+  "2098187-9": {
+   "label": "Dänisch-Hallesche Mission in Tranquebar",
+   "type": "CorporateBody"
+  },
+  "37498-2": {
+   "label": "Friedrich-Ebert-Stiftung",
+   "type": "CorporateBody"
+  },
+  "4000556-2": {
+   "label": "Ägypten",
+   "type": "PlaceOrGeographicName"
+  },
+  "4000695-5": {
+   "label": "Afrika",
+   "type": "PlaceOrGeographicName"
+  },
+  "4000973-7": {
+   "label": "Aktivismus",
+   "type": "SubjectHeading"
+  },
+  "4001116-1": {
+   "label": "Aleppo",
+   "type": "PlaceOrGeographicName"
+  },
+  "4001138-0": {
+   "label": "Alexandria",
+   "type": "PlaceOrGeographicName"
+  },
+  "4001307-8": {
+   "label": "Alltag",
+   "type": "SubjectHeading"
+  },
+  "4001670-5": {
+   "label": "Amerika",
+   "type": "PlaceOrGeographicName"
+  },
+  "4002230-4": {
+   "label": "Anthropologie",
+   "type": "SubjectHeading"
+  },
+  "4002528-7": {
+   "label": "Araber",
+   "type": "SubjectHeading"
+  },
+  "4002529-9": {
+   "label": "Arabien",
+   "type": "PlaceOrGeographicName"
+  },
+  "4002623-1": {
+   "label": "Arbeitnehmer",
+   "type": "SubjectHeading"
+  },
+  "4002730-2": {
+   "label": "Arbeitslosigkeit",
+   "type": "SubjectHeading"
+  },
+  "4003217-6": {
+   "label": "Asien",
+   "type": "PlaceOrGeographicName"
+  },
+  "4003388-0": {
+   "label": "Atlantischer Ozean",
+   "type": "PlaceOrGeographicName"
+  },
+  "4003554-2": {
+   "label": "Aufstand",
+   "type": "SubjectHeading"
+  },
+  "4003846-4": {
+   "label": "Außenpolitik",
+   "type": "SubjectHeading"
+  },
+  "4003860-9": {
+   "label": "Außereuropäische Länder",
+   "type": "PlaceOrGeographicName"
+  },
+  "4003920-1": {
+   "label": "Auswanderung",
+   "type": "SubjectHeading"
+  },
+  "4003974-2": {
+   "label": "Autonomie",
+   "type": "SubjectHeading"
+  },
+  "4004334-4": {
+   "label": "Balkanhalbinsel",
+   "type": "PlaceOrGeographicName"
+  },
+  "4005227-8": {
+   "label": "Umfrage",
+   "type": "SubjectHeading"
+  },
+  "4005248-5": {
+   "label": "Begriff",
+   "type": "SubjectHeading"
+  },
+  "4005348-9": {
+   "label": "Beirut",
+   "type": "PlaceOrGeographicName"
+  },
+  "4005503-6": {
+   "label": "Benin",
+   "type": "PlaceOrGeographicName"
+  },
+  "4005614-4": {
+   "label": "Bergbau",
+   "type": "SubjectHeading"
+  },
+  "4005709-4": {
+   "label": "Berichterstattung",
+   "type": "SubjectHeading"
+  },
+  "4005728-8": {
+   "label": "Berlin",
+   "type": "PlaceOrGeographicName"
+  },
+  "4006667-8": {
+   "label": "Bildungspolitik",
+   "type": "SubjectHeading"
+  },
+  "4006681-2": {
+   "label": "Bildungswesen",
+   "type": "SubjectHeading"
+  },
+  "4007955-7": {
+   "label": "Brandenburg",
+   "type": "PlaceOrGeographicName"
+  },
+  "4008017-1": {
+   "label": "Brauch",
+   "type": "SubjectHeading"
+  },
+  "4009946-5": {
+   "label": "Chinesen",
+   "type": "SubjectHeading"
+  },
+  "4010071-6": {
+   "label": "Christ",
+   "type": "SubjectHeading"
+  },
+  "4010074-1": {
+   "label": "Christentum",
+   "type": "SubjectHeading"
+  },
+  "4011882-4": {
+   "label": "Deutschland",
+   "type": "PlaceOrGeographicName"
+  },
+  "4011889-7": {
+   "label": "Deutschland (Bundesrepublik)",
+   "type": "PlaceOrGeographicName"
+  },
+  "4011890-3": {
+   "label": "Deutschland (DDR)",
+   "type": "PlaceOrGeographicName"
+  },
+  "4012089-2": {
+   "label": "Diaspora (Religion)",
+   "type": "SubjectHeading"
+  },
+  "4013021-6": {
+   "label": "Drittes Reich",
+   "type": "SubjectHeading"
+  },
+  "4013960-8": {
+   "label": "Einwanderung",
+   "type": "SubjectHeading"
+  },
+  "4014777-0": {
+   "label": "Englisch",
+   "type": "SubjectHeading"
+  },
+  "4014954-7": {
+   "label": "Entwicklungsländer",
+   "type": "PlaceOrGeographicName"
+  },
+  "4015186-4": {
+   "label": "Erdölindustrie",
+   "type": "SubjectHeading"
+  },
+  "4015602-3": {
+   "label": "Ethik",
+   "type": "SubjectHeading"
+  },
+  "4015701-5": {
+   "label": "Europa",
+   "type": "PlaceOrGeographicName"
+  },
+  "4015704-0": {
+   "label": "Europabild",
+   "type": "SubjectHeading"
+  },
+  "4016419-6": {
+   "label": "Familienrecht",
+   "type": "SubjectHeading"
+  },
+  "4016494-9": {
+   "label": "Faschismus",
+   "type": "SubjectHeading"
+  },
+  "4016674-0": {
+   "label": "Feldforschung",
+   "type": "SubjectHeading"
+  },
+  "4017894-8": {
+   "label": "Forschung",
+   "type": "SubjectHeading"
+  },
+  "4017949-7": {
+   "label": "Forstnutzung",
+   "type": "SubjectHeading"
+  },
+  "4018143-1": {
+   "label": "Frankophones Afrika",
+   "type": "PlaceOrGeographicName"
+  },
+  "4018145-5": {
+   "label": "Frankreich",
+   "type": "PlaceOrGeographicName"
+  },
+  "4018202-2": {
+   "label": "Frau",
+   "type": "SubjectHeading"
+  },
+  "4018480-8": {
+   "label": "Freundschaft",
+   "type": "SubjectHeading"
+  },
+  "4018672-6": {
+   "label": "Frömmigkeit",
+   "type": "SubjectHeading"
+  },
+  "4018801-2": {
+   "label": "Fürsorge",
+   "type": "SubjectHeading"
+  },
+  "4019197-7": {
+   "label": "Gambia",
+   "type": "PlaceOrGeographicName"
+  },
+  "4020015-2": {
+   "label": "Gemeinschaft",
+   "type": "SubjectHeading"
+  },
+  "4020531-9": {
+   "label": "Geschichtsschreibung",
+   "type": "SubjectHeading"
+  },
+  "4020588-5": {
+   "label": "Gesellschaft",
+   "type": "SubjectHeading"
+  },
+  "4020832-1": {
+   "label": "Gewalt",
+   "type": "SubjectHeading"
+  },
+  "4021571-4": {
+   "label": "Golfstaaten",
+   "type": "PlaceOrGeographicName"
+  },
+  "4022047-3": {
+   "label": "Griechenland",
+   "type": "PlaceOrGeographicName"
+  },
+  "4022873-3": {
+   "label": "Hafenstadt",
+   "type": "SubjectHeading"
+  },
+  "4025111-1": {
+   "label": "Historische Persönlichkeit",
+   "type": "SubjectHeading"
+  },
+  "4025408-2": {
+   "label": "Hörfunk",
+   "type": "SubjectHeading"
+  },
+  "4026482-8": {
+   "label": "Identität",
+   "type": "SubjectHeading"
+  },
+  "4026722-2": {
+   "label": "Indien",
+   "type": "PlaceOrGeographicName"
+  },
+  "4026737-4": {
+   "label": "Indischer Ozean",
+   "type": "PlaceOrGeographicName"
+  },
+  "4026754-4": {
+   "label": "Indien (Süd)",
+   "type": "PlaceOrGeographicName"
+  },
+  "4026761-1": {
+   "label": "Indonesien",
+   "type": "PlaceOrGeographicName"
+  },
+  "4027249-7": {
+   "label": "Intellektueller",
+   "type": "SubjectHeading"
+  },
+  "4027274-6": {
+   "label": "Interdisziplinäre Forschung",
+   "type": "SubjectHeading"
+  },
+  "4027653-3": {
+   "label": "Iran",
+   "type": "PlaceOrGeographicName"
+  },
+  "4027743-4": {
+   "label": "Islam",
+   "type": "SubjectHeading"
+  },
+  "4027808-6": {
+   "label": "Israel",
+   "type": "PlaceOrGeographicName"
+  },
+  "4028808-0": {
+   "label": "Juden",
+   "type": "SubjectHeading"
+  },
+  "4028859-6": {
+   "label": "Jugend",
+   "type": "SubjectHeading"
+  },
+  "4029850-4": {
+   "label": "Kaschmir",
+   "type": "PlaceOrGeographicName"
+  },
+  "4030236-2": {
+   "label": "Kenia",
+   "type": "PlaceOrGeographicName"
+  },
+  "4030848-0": {
+   "label": "Kirgisien",
+   "type": "PlaceOrGeographicName"
+  },
+  "4031516-2": {
+   "label": "König",
+   "type": "SubjectHeading"
+  },
+  "4031883-7": {
+   "label": "Kommunikation",
+   "type": "SubjectHeading"
+  },
+  "4032386-9": {
+   "label": "Kooperation",
+   "type": "SubjectHeading"
+  },
+  "4033130-1": {
+   "label": "Kriegsgefangenenlager",
+   "type": "SubjectHeading"
+  },
+  "4033131-3": {
+   "label": "Kriegsgefangener",
+   "type": "SubjectHeading"
+  },
+  "4033542-2": {
+   "label": "Kulturelle Identität",
+   "type": "SubjectHeading"
+  },
+  "4033569-0": {
+   "label": "Kulturkontakt",
+   "type": "SubjectHeading"
+  },
+  "4033597-5": {
+   "label": "Kulturwissenschaften",
+   "type": "SubjectHeading"
+  },
+  "4033792-3": {
+   "label": "Kurden",
+   "type": "SubjectHeading"
+  },
+  "4033793-5": {
+   "label": "Kurdistan",
+   "type": "PlaceOrGeographicName"
+  },
+  "4034026-0": {
+   "label": "Ländlicher Raum",
+   "type": "SubjectHeading"
+  },
+  "4034288-8": {
+   "label": "Landflucht",
+   "type": "SubjectHeading"
+  },
+  "4034869-6": {
+   "label": "Lebenslauf",
+   "type": "SubjectHeading"
+  },
+  "4034929-9": {
+   "label": "Lebenswelt",
+   "type": "SubjectHeading"
+  },
+  "4035567-6": {
+   "label": "Libanon",
+   "type": "PlaceOrGeographicName"
+  },
+  "4035964-5": {
+   "label": "Literatur",
+   "type": "SubjectHeading"
+  },
+  "4036915-8": {
+   "label": "Märtyrer",
+   "type": "SubjectHeading"
+  },
+  "4037680-1": {
+   "label": "Marokko",
+   "type": "PlaceOrGeographicName"
+  },
+  "4037877-9": {
+   "label": "Massenmedien",
+   "type": "SubjectHeading"
+  },
+  "4038051-8": {
+   "label": "Mauretanien",
+   "type": "PlaceOrGeographicName"
+  },
+  "4039305-7": {
+   "label": "Militär",
+   "type": "SubjectHeading"
+  },
+  "4039409-8": {
+   "label": "Nationale Minderheit",
+   "type": "SubjectHeading"
+  },
+  "4039567-4": {
+   "label": "Mission",
+   "type": "SubjectHeading"
+  },
+  "4039661-7": {
+   "label": "Mittelasien",
+   "type": "PlaceOrGeographicName"
+  },
+  "4039785-3": {
+   "label": "Mobilität",
+   "type": "SubjectHeading"
+  },
+  "4040364-6": {
+   "label": "Motivation",
+   "type": "SubjectHeading"
+  },
+  "4040600-3": {
+   "label": "Mündliche Überlieferung",
+   "type": "SubjectHeading"
+  },
+  "4040921-1": {
+   "label": "Muslim",
+   "type": "SubjectHeading"
+  },
+  "4040949-1": {
+   "label": "Mutter",
+   "type": "SubjectHeading"
+  },
+  "4041110-2": {
+   "label": "Nächstenliebe",
+   "type": "SubjectHeading"
+  },
+  "4041282-9": {
+   "label": "Nationalbewusstsein",
+   "type": "SubjectHeading"
+  },
+  "4041300-7": {
+   "label": "Nationalismus",
+   "type": "SubjectHeading"
+  },
+  "4041316-0": {
+   "label": "Nationalsozialismus",
+   "type": "SubjectHeading"
+  },
+  "4042300-1": {
+   "label": "Nigeria",
+   "type": "PlaceOrGeographicName"
+  },
+  "4042482-0": {
+   "label": "Nordafrika",
+   "type": "PlaceOrGeographicName"
+  },
+  "4043183-6": {
+   "label": "Öffentlichkeit",
+   "type": "SubjectHeading"
+  },
+  "4044381-4": {
+   "label": "Palästina",
+   "type": "PlaceOrGeographicName"
+  },
+  "4044383-8": {
+   "label": "Palästinenser",
+   "type": "SubjectHeading"
+  },
+  "4044660-8": {
+   "label": "Paris",
+   "type": "PlaceOrGeographicName"
+  },
+  "4044925-7": {
+   "label": "Patronage",
+   "type": "SubjectHeading"
+  },
+  "4044981-6": {
+   "label": "Pazifischer Ozean",
+   "type": "PlaceOrGeographicName"
+  },
+  "4044982-8": {
+   "label": "Pazifischer Raum",
+   "type": "PlaceOrGeographicName"
+  },
+  "4045791-6": {
+   "label": "Philosophie",
+   "type": "SubjectHeading"
+  },
+  "4046514-7": {
+   "label": "Politik",
+   "type": "SubjectHeading"
+  },
+  "4047150-0": {
+   "label": "Presse",
+   "type": "SubjectHeading"
+  },
+  "4048440-3": {
+   "label": "Rasse",
+   "type": "SubjectHeading"
+  },
+  "4049043-9": {
+   "label": "Regionalpolitik",
+   "type": "SubjectHeading"
+  },
+  "4049396-9": {
+   "label": "Religion",
+   "type": "SubjectHeading"
+  },
+  "4049600-4": {
+   "label": "Restaurierung",
+   "type": "SubjectHeading"
+  },
+  "4049716-1": {
+   "label": "Rezeption",
+   "type": "SubjectHeading"
+  },
+  "4051238-1": {
+   "label": "Säkularisierung",
+   "type": "SubjectHeading"
+  },
+  "4051641-6": {
+   "label": "Sansibar",
+   "type": "PlaceOrGeographicName"
+  },
+  "4051788-3": {
+   "label": "Saudi-Arabien",
+   "type": "PlaceOrGeographicName"
+  },
+  "4053309-8": {
+   "label": "Schriftsteller",
+   "type": "SubjectHeading"
+  },
+  "4053311-6": {
+   "label": "Schriftstellerin",
+   "type": "SubjectHeading"
+  },
+  "4053770-5": {
+   "label": "Subsaharisches Afrika",
+   "type": "PlaceOrGeographicName"
+  },
+  "4054438-2": {
+   "label": "Selbstverständnis",
+   "type": "SubjectHeading"
+  },
+  "4055409-0": {
+   "label": "Soldat",
+   "type": "SubjectHeading"
+  },
+  "4055707-8": {
+   "label": "Soziale Bewegung",
+   "type": "SubjectHeading"
+  },
+  "4055736-4": {
+   "label": "Soziale Ungleichheit",
+   "type": "SubjectHeading"
+  },
+  "4055747-9": {
+   "label": "Sozialer Konflikt",
+   "type": "SubjectHeading"
+  },
+  "4055762-5": {
+   "label": "Soziales Netzwerk",
+   "type": "SubjectHeading"
+  },
+  "4055783-2": {
+   "label": "Sozialisation",
+   "type": "SubjectHeading"
+  },
+  "4056366-2": {
+   "label": "Sport",
+   "type": "SubjectHeading"
+  },
+  "4056618-3": {
+   "label": "Staat",
+   "type": "SubjectHeading"
+  },
+  "4056723-0": {
+   "label": "Stadt",
+   "type": "SubjectHeading"
+  },
+  "4056730-8": {
+   "label": "Stadtentwicklung",
+   "type": "SubjectHeading"
+  },
+  "4056754-0": {
+   "label": "Stadtplanung",
+   "type": "SubjectHeading"
+  },
+  "4056784-9": {
+   "label": "Stadtverwaltung",
+   "type": "SubjectHeading"
+  },
+  "4057020-4": {
+   "label": "Staudamm",
+   "type": "SubjectHeading"
+  },
+  "4057799-5": {
+   "label": "Straftat",
+   "type": "SubjectHeading"
+  },
+  "4058406-9": {
+   "label": "Südasien",
+   "type": "PlaceOrGeographicName"
+  },
+  "4058448-3": {
+   "label": "Südostasien",
+   "type": "PlaceOrGeographicName"
+  },
+  "4058716-2": {
+   "label": "Symbol",
+   "type": "SubjectHeading"
+  },
+  "4059758-1": {
+   "label": "Theologie",
+   "type": "SubjectHeading"
+  },
+  "4060344-1": {
+   "label": "Togo",
+   "type": "PlaceOrGeographicName"
+  },
+  "4060742-2": {
+   "label": "Trauer",
+   "type": "SubjectHeading"
+  },
+  "4060748-3": {
+   "label": "Trauma",
+   "type": "SubjectHeading"
+  },
+  "4060749-5": {
+   "label": "Psychisches Trauma",
+   "type": "SubjectHeading"
+  },
+  "4061163-2": {
+   "label": "Türkei",
+   "type": "PlaceOrGeographicName"
+  },
+  "4063234-9": {
+   "label": "Verstädterung",
+   "type": "SubjectHeading"
+  },
+  "4064115-6": {
+   "label": "Wachstum",
+   "type": "SubjectHeading"
+  },
+  "4065352-3": {
+   "label": "Weltbild",
+   "type": "SubjectHeading"
+  },
+  "4066399-1": {
+   "label": "Wirtschaft",
+   "type": "SubjectHeading"
+  },
+  "4066438-7": {
+   "label": "Wirtschaftsentwicklung",
+   "type": "SubjectHeading"
+  },
+  "4066562-8": {
+   "label": "Wissenschaft",
+   "type": "SubjectHeading"
+  },
+  "4066602-5": {
+   "label": "Wissenschaftsethik",
+   "type": "SubjectHeading"
+  },
+  "4066678-5": {
+   "label": "Witwe",
+   "type": "SubjectHeading"
+  },
+  "4067461-7": {
+   "label": "Zeit",
+   "type": "SubjectHeading"
+  },
+  "4068789-2": {
+   "label": "Arabische Staaten",
+   "type": "PlaceOrGeographicName"
+  },
+  "4068878-1": {
+   "label": "Naher Osten",
+   "type": "PlaceOrGeographicName"
+  },
+  "4070334-4": {
+   "label": "Deutsche",
+   "type": "SubjectHeading"
+  },
+  "4070370-8": {
+   "label": "Deutsches Sprachgebiet",
+   "type": "PlaceOrGeographicName"
+  },
+  "4071013-0": {
+   "label": "Europäische Integration",
+   "type": "SubjectHeading"
+  },
+  "4071769-0": {
+   "label": "Geschichtsbild",
+   "type": "SubjectHeading"
+  },
+  "4071788-4": {
+   "label": "Gesellschaftsleben",
+   "type": "SubjectHeading"
+  },
+  "4072395-1": {
+   "label": "Heiligtum",
+   "type": "SubjectHeading"
+  },
+  "4072560-1": {
+   "label": "Hochschule",
+   "type": "SubjectHeading"
+  },
+  "4072706-3": {
+   "label": "Ibo (Volk)",
+   "type": "SubjectHeading"
+  },
+  "4073172-8": {
+   "label": "Islamische Staaten",
+   "type": "PlaceOrGeographicName"
+  },
+  "4073624-6": {
+   "label": "Kolonialismus",
+   "type": "SubjectHeading"
+  },
+  "4073972-7": {
+   "label": "Landeskunde",
+   "type": "SubjectHeading"
+  },
+  "4074250-7": {
+   "label": "Linguistik",
+   "type": "SubjectHeading"
+  },
+  "4074272-6": {
+   "label": "Literarisches Leben",
+   "type": "SubjectHeading"
+  },
+  "4074900-9": {
+   "label": "Mittelmeerraum",
+   "type": "PlaceOrGeographicName"
+  },
+  "4075202-1": {
+   "label": "Namibia",
+   "type": "PlaceOrGeographicName"
+  },
+  "4075693-2": {
+   "label": "Organisationswandel",
+   "type": "SubjectHeading"
+  },
+  "4075720-1": {
+   "label": "Osmanisches Reich",
+   "type": "PlaceOrGeographicName"
+  },
+  "4075770-5": {
+   "label": "Ost-West-Konflikt",
+   "type": "SubjectHeading"
+  },
+  "4075992-1": {
+   "label": "Persischer Golf",
+   "type": "PlaceOrGeographicName"
+  },
+  "4076215-4": {
+   "label": "Politische Beteiligung",
+   "type": "SubjectHeading"
+  },
+  "4076232-4": {
+   "label": "Politisches Engagement",
+   "type": "SubjectHeading"
+  },
+  "4076374-2": {
+   "label": "Propaganda",
+   "type": "SubjectHeading"
+  },
+  "4076527-1": {
+   "label": "Rassismus",
+   "type": "SubjectHeading"
+  },
+  "4076605-6": {
+   "label": "Regionalentwicklung",
+   "type": "SubjectHeading"
+  },
+  "4076645-7": {
+   "label": "Reisebericht",
+   "type": "SubjectHeading"
+  },
+  "4077343-7": {
+   "label": "Sekte",
+   "type": "SubjectHeading"
+  },
+  "4077349-8": {
+   "label": "Selbstbild",
+   "type": "SubjectHeading"
+  },
+  "4077517-3": {
+   "label": "Soninke",
+   "type": "SubjectHeading"
+  },
+  "4077570-7": {
+   "label": "Soziale Integration",
+   "type": "SubjectHeading"
+  },
+  "4077575-6": {
+   "label": "Soziale Situation",
+   "type": "SubjectHeading"
+  },
+  "4077587-2": {
+   "label": "Sozialer Wandel",
+   "type": "SubjectHeading"
+  },
+  "4078012-0": {
+   "label": "Südafrika",
+   "type": "PlaceOrGeographicName"
+  },
+  "4078094-6": {
+   "label": "Swahili",
+   "type": "SubjectHeading"
+  },
+  "4078149-5": {
+   "label": "Tansania",
+   "type": "PlaceOrGeographicName"
+  },
+  "4078931-7": {
+   "label": "Ethnologie",
+   "type": "SubjectHeading"
+  },
+  "4079158-0": {
+   "label": "Weltgeschichte",
+   "type": "SubjectHeading"
+  },
+  "4079163-4": {
+   "label": "Erster Weltkrieg",
+   "type": "SubjectHeading"
+  },
+  "4079167-1": {
+   "label": "Zweiter Weltkrieg",
+   "type": "SubjectHeading"
+  },
+  "4079237-7": {
+   "label": "Westliche Welt",
+   "type": "PlaceOrGeographicName"
+  },
+  "4095968-5": {
+   "label": "Hasa",
+   "type": "PlaceOrGeographicName"
+  },
+  "4101234-3": {
+   "label": "Nigeria (Ost)",
+   "type": "PlaceOrGeographicName"
+  },
+  "4106164-0": {
+   "label": "Tell Halaf",
+   "type": "PlaceOrGeographicName"
+  },
+  "4113937-9": {
+   "label": "Hochschulschrift",
+   "type": "SubjectHeading"
+  },
+  "4114328-0": {
+   "label": "Kulturvergleich",
+   "type": "SubjectHeading"
+  },
+  "4114333-4": {
+   "label": "Kunst",
+   "type": "SubjectHeading"
+  },
+  "4115585-3": {
+   "label": "Politische Ökologie",
+   "type": "SubjectHeading"
+  },
+  "4115589-0": {
+   "label": "Politischer Konflikt",
+   "type": "SubjectHeading"
+  },
+  "4115645-6": {
+   "label": "Projekt",
+   "type": "SubjectHeading"
+  },
+  "4115716-3": {
+   "label": "Reform",
+   "type": "SubjectHeading"
+  },
+  "4115741-2": {
+   "label": "Religiöses Leben",
+   "type": "SubjectHeading"
+  },
+  "4116433-7": {
+   "label": "Schwarze",
+   "type": "SubjectHeading"
+  },
+  "4116546-9": {
+   "label": "Sozialraum",
+   "type": "SubjectHeading"
+  },
+  "4117636-4": {
+   "label": "Wertwandel",
+   "type": "SubjectHeading"
+  },
+  "4120355-0": {
+   "label": "Telugu-Sprache",
+   "type": "SubjectHeading"
+  },
+  "4120670-8": {
+   "label": "Liberalisierung",
+   "type": "SubjectHeading"
+  },
+  "4120719-1": {
+   "label": "Medienkonsum",
+   "type": "SubjectHeading"
+  },
+  "4120730-0": {
+   "label": "Migration",
+   "type": "SubjectHeading"
+  },
+  "4120744-0": {
+   "label": "Mitarbeiter",
+   "type": "SubjectHeading"
+  },
+  "4120755-5": {
+   "label": "Modernisierung",
+   "type": "SubjectHeading"
+  },
+  "4120776-2": {
+   "label": "Muslimin",
+   "type": "SubjectHeading"
+  },
+  "4121438-9": {
+   "label": "Orient (Motiv)",
+   "type": "SubjectHeading"
+  },
+  "4121808-5": {
+   "label": "Umverteilung",
+   "type": "SubjectHeading"
+  },
+  "4121814-0": {
+   "label": "Unabhängigkeitsbewegung",
+   "type": "SubjectHeading"
+  },
+  "4122305-6": {
+   "label": "Orientbild",
+   "type": "SubjectHeading"
+  },
+  "4123450-9": {
+   "label": "Islamischer Religionsunterricht",
+   "type": "SubjectHeading"
+  },
+  "4123761-4": {
+   "label": "Migrationspolitik",
+   "type": "SubjectHeading"
+  },
+  "4124385-7": {
+   "label": "Verbrechen gegen die Menschlichkeit",
+   "type": "SubjectHeading"
+  },
+  "4125698-0": {
+   "label": "Kultur",
+   "type": "SubjectHeading"
+  },
+  "4125965-8": {
+   "label": "Araberbild",
+   "type": "SubjectHeading"
+  },
+  "4127240-7": {
+   "label": "Fremdbild",
+   "type": "SubjectHeading"
+  },
+  "4127377-1": {
+   "label": "Konversion (Religion)",
+   "type": "SubjectHeading"
+  },
+  "4128337-5": {
+   "label": "Kontroverse",
+   "type": "SubjectHeading"
+  },
+  "4128491-4": {
+   "label": "Wohlfahrt",
+   "type": "SubjectHeading"
+  },
+  "4128520-7": {
+   "label": "Anerkennung",
+   "type": "SubjectHeading"
+  },
+  "4129464-6": {
+   "label": "Ausgrabung",
+   "type": "SubjectHeading"
+  },
+  "4129504-3": {
+   "label": "Wirtschaftsstruktur",
+   "type": "SubjectHeading"
+  },
+  "4129611-4": {
+   "label": "Politische Identität",
+   "type": "SubjectHeading"
+  },
+  "4131014-7": {
+   "label": "Nichtstaatliche Organisation",
+   "type": "SubjectHeading"
+  },
+  "4131701-4": {
+   "label": "Einflussnahme",
+   "type": "SubjectHeading"
+  },
+  "4132042-6": {
+   "label": "Panarabismus",
+   "type": "SubjectHeading"
+  },
+  "4132471-7": {
+   "label": "Golfkrieg (1980-1988)",
+   "type": "SubjectHeading"
+  },
+  "4133133-3": {
+   "label": "Afrikabild",
+   "type": "SubjectHeading"
+  },
+  "4133380-9": {
+   "label": "Afrikaner",
+   "type": "SubjectHeading"
+  },
+  "4133903-4": {
+   "label": "Kulturanthropologie",
+   "type": "SubjectHeading"
+  },
+  "4134078-4": {
+   "label": "Rechtsstellung",
+   "type": "SubjectHeading"
+  },
+  "4134080-2": {
+   "label": "Europäer",
+   "type": "SubjectHeading"
+  },
+  "4134262-8": {
+   "label": "Politische Kommunikation",
+   "type": "SubjectHeading"
+  },
+  "4135837-5": {
+   "label": "Weidewirtschaft",
+   "type": "SubjectHeading"
+  },
+  "4135890-9": {
+   "label": "Zeugenaussage",
+   "type": "SubjectHeading"
+  },
+  "4135952-5": {
+   "label": "Quelle",
+   "type": "SubjectHeading"
+  },
+  "4136229-9": {
+   "label": "Kayseri",
+   "type": "PlaceOrGeographicName"
+  },
+  "4136796-0": {
+   "label": "Überlebender",
+   "type": "SubjectHeading"
+  },
+  "4137178-1": {
+   "label": "Fundamentalismus",
+   "type": "SubjectHeading"
+  },
+  "4137492-7": {
+   "label": "Repräsentation",
+   "type": "SubjectHeading"
+  },
+  "4138354-0": {
+   "label": "Lebensstil",
+   "type": "SubjectHeading"
+  },
+  "4138523-8": {
+   "label": "Diplomatische Beziehungen",
+   "type": "SubjectHeading"
+  },
+  "4138964-5": {
+   "label": "Stadtbevölkerung",
+   "type": "SubjectHeading"
+  },
+  "4139628-5": {
+   "label": "Raumverhalten",
+   "type": "SubjectHeading"
+  },
+  "4140240-6": {
+   "label": "Nähe",
+   "type": "SubjectHeading"
+  },
+  "4140292-3": {
+   "label": "Religiöse Minderheit",
+   "type": "SubjectHeading"
+  },
+  "4140349-6": {
+   "label": "Gruppenidentität",
+   "type": "SubjectHeading"
+  },
+  "4143584-9": {
+   "label": "Auslandskorrespondent",
+   "type": "SubjectHeading"
+  },
+  "4145467-4": {
+   "label": "Bildungseinrichtung",
+   "type": "SubjectHeading"
+  },
+  "4149063-0": {
+   "label": "Demokratische Erziehung",
+   "type": "SubjectHeading"
+  },
+  "4151276-5": {
+   "label": "Einfluss",
+   "type": "SubjectHeading"
+  },
+  "4152707-0": {
+   "label": "Erdölwirtschaft",
+   "type": "SubjectHeading"
+  },
+  "4152838-4": {
+   "label": "Rassentheorie",
+   "type": "SubjectHeading"
+  },
+  "4153096-2": {
+   "label": "Ethnische Identität",
+   "type": "SubjectHeading"
+  },
+  "4153960-6": {
+   "label": "Feldzeitung",
+   "type": "SubjectHeading"
+  },
+  "4154026-8": {
+   "label": "Fernhandel",
+   "type": "SubjectHeading"
+  },
+  "4154247-2": {
+   "label": "Fetwa",
+   "type": "SubjectHeading"
+  },
+  "4157237-3": {
+   "label": "Gewalttätigkeit",
+   "type": "SubjectHeading"
+  },
+  "4158967-1": {
+   "label": "Hanbaliten",
+   "type": "SubjectHeading"
+  },
+  "4160384-9": {
+   "label": "Hörfunksendung",
+   "type": "SubjectHeading"
+  },
+  "4162051-3": {
+   "label": "Internationale Migration",
+   "type": "SubjectHeading"
+  },
+  "4162918-8": {
+   "label": "Jungtürken",
+   "type": "SubjectHeading"
+  },
+  "4163033-6": {
+   "label": "Kakaomarkt",
+   "type": "SubjectHeading"
+  },
+  "4163401-9": {
+   "label": "Kaste",
+   "type": "SubjectHeading"
+  },
+  "4164199-1": {
+   "label": "Klimaänderung",
+   "type": "SubjectHeading"
+  },
+  "4164714-2": {
+   "label": "Kolonialtruppe",
+   "type": "SubjectHeading"
+  },
+  "4165992-2": {
+   "label": "Kulturvermittlung",
+   "type": "SubjectHeading"
+  },
+  "4168427-8": {
+   "label": "Machtpolitik",
+   "type": "SubjectHeading"
+  },
+  "4169187-8": {
+   "label": "Medien",
+   "type": "SubjectHeading"
+  },
+  "4170001-6": {
+   "label": "Minderheitenpolitik",
+   "type": "SubjectHeading"
+  },
+  "4170515-4": {
+   "label": "Monumentalplastik",
+   "type": "SubjectHeading"
+  },
+  "4171210-9": {
+   "label": "Nationalbewegung",
+   "type": "SubjectHeading"
+  },
+  "4171438-6": {
+   "label": "Neoliberalismus",
+   "type": "SubjectHeading"
+  },
+  "4173790-8": {
+   "label": "Peripherer Raum",
+   "type": "SubjectHeading"
+  },
+  "4175047-0": {
+   "label": "Politischer Wandel",
+   "type": "SubjectHeading"
+  },
+  "4175193-0": {
+   "label": "Polygamie",
+   "type": "SubjectHeading"
+  },
+  "4176036-0": {
+   "label": "Provinz",
+   "type": "SubjectHeading"
+  },
+  "4177706-2": {
+   "label": "Religiöse Bewegung",
+   "type": "SubjectHeading"
+  },
+  "4180984-1": {
+   "label": "Sendungsbewusstsein",
+   "type": "SubjectHeading"
+  },
+  "4182341-2": {
+   "label": "Spion",
+   "type": "SubjectHeading"
+  },
+  "4182459-3": {
+   "label": "Sportliche Aktivität",
+   "type": "SubjectHeading"
+  },
+  "4183827-0": {
+   "label": "Studentenvereinigung",
+   "type": "SubjectHeading"
+  },
+  "4184103-7": {
+   "label": "Sunniten",
+   "type": "SubjectHeading"
+  },
+  "4184802-0": {
+   "label": "Territorialstaat",
+   "type": "SubjectHeading"
+  },
+  "4186820-1": {
+   "label": "Unabhängigkeit",
+   "type": "SubjectHeading"
+  },
+  "4189574-5": {
+   "label": "Weltbürgertum",
+   "type": "SubjectHeading"
+  },
+  "4190155-1": {
+   "label": "Wohltätigkeit",
+   "type": "SubjectHeading"
+  },
+  "4193985-2": {
+   "label": "Authentizität",
+   "type": "SubjectHeading"
+  },
+  "4195461-0": {
+   "label": "Bewältigung",
+   "type": "SubjectHeading"
+  },
+  "4195650-3": {
+   "label": "Indischer Ozean (Region)",
+   "type": "PlaceOrGeographicName"
+  },
+  "4196910-8": {
+   "label": "Neue Medien",
+   "type": "SubjectHeading"
+  },
+  "4198081-5": {
+   "label": "Asiaten",
+   "type": "SubjectHeading"
+  },
+  "4198756-1": {
+   "label": "Entwicklungszusammenarbeit",
+   "type": "SubjectHeading"
+  },
+  "4200132-8": {
+   "label": "Eurozentrismus",
+   "type": "SubjectHeading"
+  },
+  "4200720-3": {
+   "label": "Popularisierung",
+   "type": "SubjectHeading"
+  },
+  "4200793-8": {
+   "label": "Kollektives Gedächtnis",
+   "type": "SubjectHeading"
+  },
+  "4204043-7": {
+   "label": "Dubai",
+   "type": "PlaceOrGeographicName"
+  },
+  "4206638-4": {
+   "label": "Atlantischer Raum",
+   "type": "PlaceOrGeographicName"
+  },
+  "4209033-7": {
+   "label": "Dau",
+   "type": "SubjectHeading"
+  },
+  "4214151-5": {
+   "label": "Multikulturelle Gesellschaft",
+   "type": "SubjectHeading"
+  },
+  "4224912-0": {
+   "label": "Seehandel",
+   "type": "SubjectHeading"
+  },
+  "4227561-1": {
+   "label": "Soziokultureller Wandel",
+   "type": "SubjectHeading"
+  },
+  "4234987-4": {
+   "label": "Wandel",
+   "type": "SubjectHeading"
+  },
+  "4241223-7": {
+   "label": "Arabisch",
+   "type": "SubjectHeading"
+  },
+  "4244159-6": {
+   "label": "Indien (Südost)",
+   "type": "PlaceOrGeographicName"
+  },
+  "4247231-3": {
+   "label": "Reislamisierung",
+   "type": "SubjectHeading"
+  },
+  "4248362-1": {
+   "label": "Wirtschaftliche Lage",
+   "type": "SubjectHeading"
+  },
+  "4253135-4": {
+   "label": "Berufsethik",
+   "type": "SubjectHeading"
+  },
+  "4256270-3": {
+   "label": "Jammu and Kashmir",
+   "type": "PlaceOrGeographicName"
+  },
+  "4274490-8": {
+   "label": "Geistesleben",
+   "type": "SubjectHeading"
+  },
+  "4275671-6": {
+   "label": "Regionale Identität",
+   "type": "SubjectHeading"
+  },
+  "4293325-0": {
+   "label": "Politische Anthropologie",
+   "type": "SubjectHeading"
+  },
+  "4293571-4": {
+   "label": "Gefallener",
+   "type": "SubjectHeading"
+  },
+  "4299722-7": {
+   "label": "Internationale Verflechtung",
+   "type": "SubjectHeading"
+  },
+  "4302181-5": {
+   "label": "Finanzdienstleistungsmarkt",
+   "type": "SubjectHeading"
+  },
+  "4317554-5": {
+   "label": "Islamische Erziehung",
+   "type": "SubjectHeading"
+  },
+  "4317743-8": {
+   "label": "Junger Mann",
+   "type": "SubjectHeading"
+  },
+  "4318539-3": {
+   "label": "Sozioökonomischer Wandel",
+   "type": "SubjectHeading"
+  },
+  "4332868-4": {
+   "label": "Reformbewegung",
+   "type": "SubjectHeading"
+  },
+  "4333058-7": {
+   "label": "Islamische Stiftung",
+   "type": "SubjectHeading"
+  },
+  "4351590-3": {
+   "label": "Expertise",
+   "type": "SubjectHeading"
+  },
+  "4354651-1": {
+   "label": "Religiöse Identität",
+   "type": "SubjectHeading"
+  },
+  "4372106-0": {
+   "label": "Wirtschaftliche Elite",
+   "type": "SubjectHeading"
+  },
+  "4402771-0": {
+   "label": "Religiöser Konflikt",
+   "type": "SubjectHeading"
+  },
+  "4409409-7": {
+   "label": "Fikh",
+   "type": "SubjectHeading"
+  },
+  "4424590-7": {
+   "label": "Stadtleben",
+   "type": "SubjectHeading"
+  },
+  "4441892-9": {
+   "label": "Kriegsverlust",
+   "type": "SubjectHeading"
+  },
+  "4452571-0": {
+   "label": "Religiöse Erneuerung",
+   "type": "SubjectHeading"
+  },
+  "4466989-6": {
+   "label": "Revolution der Jungtürken",
+   "type": "SubjectHeading"
+  },
+  "4492210-3": {
+   "label": "Halbmondlager",
+   "type": "CorporateBody"
+  },
+  "4492211-5": {
+   "label": "Weinberglager",
+   "type": "CorporateBody"
+  },
+  "4494545-0": {
+   "label": "Interkulturelle Philosophie",
+   "type": "SubjectHeading"
+  },
+  "4503930-6": {
+   "label": "Dönme",
+   "type": "SubjectHeading"
+  },
+  "4512697-5": {
+   "label": "Materialität",
+   "type": "SubjectHeading"
+  },
+  "4519498-1": {
+   "label": "Interkulturalität",
+   "type": "SubjectHeading"
+  },
+  "4534829-7": {
+   "label": "Wiya",
+   "type": "SubjectHeading"
+  },
+  "4557997-0": {
+   "label": "Globalisierung",
+   "type": "SubjectHeading"
+  },
+  "4558569-6": {
+   "label": "Balkanbild",
+   "type": "SubjectHeading"
+  },
+  "4563270-4": {
+   "label": "Soziale Konstruktion",
+   "type": "SubjectHeading"
+  },
+  "4566658-1": {
+   "label": "Postkolonialismus",
+   "type": "SubjectHeading"
+  },
+  "4643118-4": {
+   "label": "Distrikt Jammu",
+   "type": "PlaceOrGeographicName"
+  },
+  "4648203-9": {
+   "label": "Madhva: Kṛṣṇāmṛtamahārṇava",
+   "type": "Work"
+  },
+  "4651175-1": {
+   "label": "Politisches Feld",
+   "type": "SubjectHeading"
+  },
+  "4660420-0": {
+   "label": "Wissensproduktion",
+   "type": "SubjectHeading"
+  },
+  "4699478-6": {
+   "label": "Al-Jazeera",
+   "type": "CorporateBody"
+  },
+  "4721077-1": {
+   "label": "Tiǧānīya",
+   "type": "SubjectHeading"
+  },
+  "4728927-2": {
+   "label": "Indischer Kriegsgefangener",
+   "type": "SubjectHeading"
+  },
+  "4757098-2": {
+   "label": "Tripolis (Libyen, Region)",
+   "type": "PlaceOrGeographicName"
+  },
+  "4998161-4": {
+   "label": "Postkommunismus",
+   "type": "SubjectHeading"
+  },
+  "5098525-5": {
+   "label": "Europäische Union",
+   "type": "CorporateBody"
+  },
+  "5310583-7": {
+   "label": "Tell-Halaf-Museum (Berlin)",
+   "type": "CorporateBody"
+  },
+  "7530345-0": {
+   "label": "Orientalen",
+   "type": "SubjectHeading"
+  },
+  "7541927-0": {
+   "label": "Südosteuropabild",
+   "type": "SubjectHeading"
+  },
+  "7548364-6": {
+   "label": "World Wide Web 2.0",
+   "type": "SubjectHeading"
+  },
+  "7612596-8": {
+   "label": "Transnationalisierung",
+   "type": "SubjectHeading"
+  },
+  "7631044-9": {
+   "label": "Mittelmeerregion (Türkei)",
+   "type": "PlaceOrGeographicName"
+  },
+  "7637436-1": {
+   "label": "Staatliche Investitionspolitik",
+   "type": "SubjectHeading"
+  },
+  "7661729-4": {
+   "label": "Bangladesch-Krieg",
+   "type": "SubjectHeading"
+  },
+  "7673015-3": {
+   "label": "Šarqīyah",
+   "type": "PlaceOrGeographicName"
+  },
+  "7716334-5": {
+   "label": "Menschliche Sicherheit",
+   "type": "SubjectHeading"
+  }
+ }
+}

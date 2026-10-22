@@ -11,7 +11,14 @@ what other sources say about it, each kept apart so its origin stays visible:
 * ``raw_data/themes.json`` (``build_themes.py``) and ``theme_labels.json``
   (written by Claude Opus 5.5) → ``themes.json``: themes, areas and map
   positions — plus each record's theme;
-* ``languages.py`` → each record's detected language.
+* ``languages.py`` → each record's detected language;
+* ``gazetteer.json`` and ``regions_review.json`` (``regions.py``), with
+  coordinates from ``raw_data/places.json`` (Wikidata) → ``regions.json``: the
+  places each record names, their regions and positions, and the regional
+  focus current researchers state on zmo.de — plus each record's places;
+* ``raw_data/subjects.json`` (``fetch_subjects.py``) → ``subjects.json``: the
+  GND subject headings German libraries gave the register's books — plus each
+  book's headings.
 
 Every layer is optional: a missing input leaves its fields out rather than
 failing the register. A present but inconsistent one fails loudly — above all
@@ -44,7 +51,16 @@ def load(raw_dir: Path, labels_path: Path) -> dict:
         "openalex": read_json(raw_dir / "openalex.json"),
         "themes": read_json(raw_dir / "themes.json"),
         "labels": read_json(labels_path),
+        "places": read_json(raw_dir / "places.json"),
+        "subjects": read_json(raw_dir / "subjects.json"),
+        "gazetteer": _gazetteer(),
     }
+
+
+def _gazetteer():
+    from regions import GAZETTEER, Gazetteer
+
+    return Gazetteer.load() if GAZETTEER.is_file() else None
 
 
 def check_labels(themes: dict, labels: dict | None) -> None:
@@ -71,6 +87,8 @@ def annotate(dataset: list[dict], records: list[dict], extras: dict) -> None:
     raw = {record["slug"]: record for record in records}
     works = (extras.get("openalex") or {}).get("works", {})
     themed = (extras.get("themes") or {}).get("records", {})
+    gazetteer = extras.get("gazetteer")
+    books = (extras.get("subjects") or {}).get("books", {})
 
     for record in dataset:
         lang = detect_language(raw[record["slug"]])
@@ -78,6 +96,13 @@ def annotate(dataset: list[dict], records: list[dict], extras: dict) -> None:
             record["lang"] = lang
         if record["slug"] in themed:
             record["theme"] = themed[record["slug"]]["theme"]
+        if gazetteer:
+            places = gazetteer.places_of(raw[record["slug"]])
+            if places:
+                record["places"] = places
+        headings = [subject["id"] for subject in books.get(record["slug"], {}).get("subjects", [])]
+        if headings:
+            record["gnd"] = headings
         work = works.get(record["slug"])
         if work:
             record["openalex"] = work["id"]
@@ -113,7 +138,8 @@ def themes_file(dataset: list[dict], extras: dict, dataset_id: str) -> dict | No
     return {
         "datasetId": dataset_id,
         "attribution": {
-            "labels": {"author": labels["author"], "model": labels["model"], "date": labels["date"]},
+            "labels": {"author": labels["author"], "model": labels["model"], "date": labels["date"],
+                       **({"reviewed": labels["reviewed"]} if labels.get("reviewed") else {})},
             "embedding": {"model": method["embedding"]["model"],
                           "revision": method["embedding"]["model_revision"],
                           "url": f"https://huggingface.co/{method['embedding']['model']}"},
@@ -191,6 +217,69 @@ def openalex_file(dataset: list[dict], extras: dict, dataset_id: str) -> dict | 
     }
 
 
+def regions_file(dataset: list[dict], extras: dict, dataset_id: str, people: dict) -> dict | None:
+    """Places, regions and researchers' stated focus, for the regions view."""
+    gazetteer, coordinates = extras.get("gazetteer"), (extras.get("places") or {}).get("places", {})
+    if not gazetteer:
+        return None
+    pages = (extras.get("people") or {}).get("people", [])
+    author_of = {entry["url"]: name for name, entry in people.items()}
+    focus = []
+    for person in pages:
+        current = any(category != "former-fellows-and-staff" for category in person.get("categories", []))
+        if not current or not person.get("regional_focus"):
+            continue
+        found = list(dict.fromkeys(m.place for m in gazetteer.find(person["regional_focus"], "focus")))
+        focus.append({"name": author_of.get(person["url"], person["name"]), "url": person["url"],
+                      "text": person["regional_focus"], "places": found})
+    used = {place for record in dataset for place in record.get("places", [])} | \
+           {place for person in focus for place in person["places"]}
+    slots = {macro["id"]: index + 1 for index, macro in enumerate(m for m in gazetteer.macros.values()
+                                                                  if m["id"] != "transregional")}
+
+    def place_entry(pid: str) -> dict:
+        place = gazetteer.places[pid]
+        entry = {"id": pid, "label": {"en": place["en"], "de": place["de"]}, "macro": place["macro"], "kind": place["kind"]}
+        coord = coordinates.get(pid, {}).get("coord")
+        if coord and place.get("mapped", True):
+            entry["coord"] = coord
+        return entry
+
+    reviewed = gazetteer.reviewed or {}
+    return {
+        "datasetId": dataset_id,
+        "attribution": {"gazetteer": len(gazetteer.places), "coordinates": "https://www.wikidata.org",
+                        "reviewed": {k: reviewed[k] for k in ("by", "date", "scope", "scope_de") if k in reviewed}},
+        "macros": [{"id": macro["id"], "label": {"en": macro["en"], "de": macro["de"]},
+                    **({"slot": slots[macro["id"]]} if macro["id"] in slots else {})}
+                   for macro in gazetteer.macros.values()],
+        "places": [place_entry(pid) for pid in sorted(used)],
+        "focus": focus,
+    }
+
+
+def subjects_file(dataset: list[dict], extras: dict, dataset_id: str) -> dict | None:
+    """GND headings of the register's books, labelled as the catalogues give them."""
+    source = extras.get("subjects")
+    if not source:
+        return None
+    labels: dict[str, dict] = {}
+    for book in source.get("books", {}).values():
+        for subject in book.get("subjects", []):
+            labels.setdefault(subject["id"], {"label": subject["label"], "type": subject.get("type", "SubjectHeading")})
+    used = sorted({gid for record in dataset for gid in record.get("gnd", [])})
+    in_scope = {"Monographs", "Edited volumes"}
+    return {
+        "datasetId": dataset_id,
+        "sources": source.get("sources", {}),
+        "coverage": {
+            "books": sum(1 for record in dataset if record.get("type") in in_scope),
+            "withHeadings": sum(1 for record in dataset if record.get("gnd")),
+        },
+        "headings": {gid: labels[gid] for gid in used},
+    }
+
+
 def coverage(dataset: list[dict], people: dict, extras: dict) -> dict:
     """The counts the dashboard states next to every enriched view."""
     languages = Counter(record.get("lang", "und") for record in dataset)
@@ -203,4 +292,6 @@ def coverage(dataset: list[dict], people: dict, extras: dict) -> dict:
         "openalex": sum(1 for r in dataset if r.get("openalex")),
         "access": dict(sorted(access.items())),
         "themed": sum(1 for r in dataset if r.get("theme")),
+        "withPlace": sum(1 for r in dataset if r.get("places")),
+        "withHeadings": sum(1 for r in dataset if r.get("gnd")),
     }

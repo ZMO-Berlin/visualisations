@@ -488,7 +488,8 @@ export class FilterBar {
             chips.push(chip(parseVenueKey(key).value, () => this.store.toggle('venue', key)));
         }
 
-        const named = [['theme', this.strings.chipTheme], ['lang', this.strings.chipLanguage], ['access', this.strings.chipAccess]];
+        const named = [['theme', this.strings.chipTheme], ['region', this.strings.chipRegion], ['place', this.strings.chipPlace],
+            ['gnd', this.strings.chipSubject], ['lang', this.strings.chipLanguage], ['access', this.strings.chipAccess]];
         for (const [dimension, prefix] of named) {
             for (const value of filters[dimension]) {
                 const label = this.labels[dimension]?.(value) ?? value;

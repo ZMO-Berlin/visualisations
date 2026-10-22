@@ -99,6 +99,8 @@ def profile(person: dict) -> dict:
         entry["position"] = person["position"]
     if current and person.get("units"):
         entry["units"] = person["units"]
+    if current and person.get("regional_focus"):
+        entry["focus"] = person["regional_focus"]
     if person.get("orcid"):
         entry["orcid"] = person["orcid"]
     return entry

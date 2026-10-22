@@ -41,7 +41,8 @@ export class AuthorProfiles {
                     el('strong', { text: name }), ' — ', parts.join(' · '), ' · ',
                     link(person.url, s.zmoProfile),
                     person.orcid ? ' · ' : null,
-                    person.orcid ? link(`https://orcid.org/${person.orcid}`, `ORCID ${person.orcid}`) : null
+                    person.orcid ? link(`https://orcid.org/${person.orcid}`, `ORCID ${person.orcid}`) : null,
+                    person.focus ? el('span', { class: 'profile__focus', text: ` · ${s.regionalFocus}: ${person.focus}` }) : null
                 ]);
             })),
             el('p', { class: 'explore-hint', text: s.peopleNote })

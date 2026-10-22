@@ -52,7 +52,7 @@ function shareTable({ caption, rows, columns, cell, header }) {
     ]);
 }
 
-export function enrichedSections({ store, strings, locale, service, d3, tooltip, themePanel }) {
+export function enrichedSections({ store, strings, locale, service, d3, tooltip, themePanel, regionPanel }) {
     let openalex = null;
     const loadOpenAlex = () => {
         const { meta, publications } = store.getState();
@@ -142,6 +142,47 @@ export function enrichedSections({ store, strings, locale, service, d3, tooltip,
                         const count = counts.get(`${code}|${column[0]}`) ?? 0;
                         const share = count / (totals.get(column[0]) || 1) * 100;
                         return el('td', { class: 'matrix-cell number', style: { '--share': `${share.toFixed(1)}%` },
+                            title: count ? `${share.toFixed(0)}%` : null, text: count ? String(count) : '' });
+                    }
+                })
+            ]));
+        }
+    };
+
+    const regionsOverTime = {
+        key: 'regionsOverTime',
+        title: strings.regionsOverTime,
+        available: () => Boolean(store.getState().regions),
+        render(body, { all, filters }) {
+            // Without its own filter, like the rankings.
+            const records = store.select('region');
+            const columns = periods(all);
+            const { regions } = store.getState();
+            const totals = new Map();
+            const counts = new Map();
+            for (const record of records) {
+                if (!record.year) continue;
+                const start = Math.floor(record.year / PERIOD) * PERIOD;
+                totals.set(start, (totals.get(start) ?? 0) + 1);
+                for (const region of record.$regions ?? []) {
+                    counts.set(`${region}|${start}`, (counts.get(`${region}|${start}`) ?? 0) + 1);
+                }
+            }
+            const rows = regions.macros.map(macro => macro.id).filter(id => columns.some(c => counts.get(`${id}|${c[0]}`)));
+            mount(body, el('div', {}, [
+                el('p', { class: 'explore-hint', text: strings.regionsOverTimeHint }),
+                shareTable({
+                    caption: strings.regionsOverTime, rows, columns,
+                    header: id => {
+                        const macro = regions.macros.find(m => m.id === id);
+                        const label = macro.label[locale] ?? macro.label.en;
+                        return [el('span', { class: `legend-swatch series-${macro.slot ?? 'none'}`, 'aria-hidden': 'true' }),
+                            filters.region.has(id) ? el('strong', { text: label }) : label];
+                    },
+                    cell: (id, column) => {
+                        const count = counts.get(`${id}|${column[0]}`) ?? 0;
+                        const share = count / (totals.get(column[0]) || 1) * 100;
+                        return el('td', { class: 'matrix-cell number', style: { '--share': `${Math.min(share, 100).toFixed(1)}%` },
                             title: count ? `${share.toFixed(0)}%` : null, text: count ? String(count) : '' });
                     }
                 })
@@ -269,5 +310,5 @@ export function enrichedSections({ store, strings, locale, service, d3, tooltip,
         destroy: () => network?.destroy()
     };
 
-    return [themesOverTime, languagesOverTime, institutions, citations];
+    return [themesOverTime, regionsOverTime, languagesOverTime, institutions, citations];
 }

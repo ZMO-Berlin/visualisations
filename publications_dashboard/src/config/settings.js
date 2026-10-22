@@ -15,6 +15,10 @@ export function createSettings({ basePath }) {
             meta: `${basePath}/data/meta.json`,
             people: `${basePath}/data/people.json`,
             themes: `${basePath}/data/themes.json`,
+            regions: `${basePath}/data/regions.json`,
+            subjects: `${basePath}/data/subjects.json`,
+            // Country outlines for the regions map (world-atlas, Natural Earth).
+            world: `${basePath}/../shared/geo/countries-110m.json`,
             // Loaded only when a view that needs it is opened: it is the
             // largest of the companion files and most readers never ask.
             openalex: `${basePath}/data/openalex.json`

@@ -20,6 +20,9 @@ export function validateDataset(records, meta) {
         for (const key of ['title', 'subtitle', 'journal', 'publisher', 'series', 'type', 'doi', 'lang', 'theme', 'openalex', 'oa']) {
             if (record[key] != null && typeof record[key] !== 'string') throw new Error(`Invalid ${key}`);
         }
+        for (const key of ['places', 'gnd']) {
+            if (record[key] != null && !(Array.isArray(record[key]) && record[key].every(isString))) throw new Error(`Invalid ${key}`);
+        }
         if (record.oaUrl != null && !safeURL(record.oaUrl)) throw new Error('Invalid open-access URL');
     }
     if (!meta || !safeURL(meta.source) || meta.counts?.publications !== records.length || meta.schemaVersion !== 2) {
@@ -34,6 +37,7 @@ export function validatePeople(data) {
         if (!safeURL(entry?.url) || new URL(entry.url).hostname !== 'www.zmo.de' || typeof entry.current !== 'boolean'
             || (entry.units != null && !(Array.isArray(entry.units) && entry.units.every(isString)))
             || (entry.position != null && !isString(entry.position))
+            || (entry.focus != null && !isString(entry.focus))
             || (entry.orcid != null && !/^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/.test(entry.orcid))) {
             throw new Error(`Invalid people entry: ${name}`);
         }
@@ -67,6 +71,36 @@ export function validateThemes(data, meta, count) {
         || !Array.isArray(added) || !added.every(i => isIndex(i, count))) throw new Error('Invalid theme map');
     if (!safeURL(data.attribution?.embedding?.url) || !isString(data.attribution?.labels?.model)) {
         throw new Error('Theme attribution missing');
+    }
+    return data;
+}
+export function validateRegions(data, meta) {
+    sameDataset(data, meta, 'regions.json');
+    const label = value => value && isString(value.en) && isString(value.de);
+    const macros = new Set();
+    for (const macro of data.macros ?? []) {
+        if (!/^[a-z-]+$/.test(macro.id) || !label(macro.label) || (macro.slot != null && !(macro.slot >= 1 && macro.slot <= 8))) {
+            throw new Error('Invalid region');
+        }
+        macros.add(macro.id);
+    }
+    for (const place of data.places ?? []) {
+        if (!/^Q\d+$/.test(place.id) || !label(place.label) || !macros.has(place.macro)
+            || (place.coord != null && !(Array.isArray(place.coord) && Math.abs(place.coord[0]) <= 180 && Math.abs(place.coord[1]) <= 90))) {
+            throw new Error('Invalid place');
+        }
+    }
+    for (const person of data.focus ?? []) {
+        if (!isString(person.name) || !safeURL(person.url) || !isString(person.text) || !person.places.every(isString)) throw new Error('Invalid regional focus');
+    }
+    if (!macros.size || !data.places?.length) throw new Error('Empty regions data');
+    return data;
+}
+export function validateSubjects(data, meta) {
+    sameDataset(data, meta, 'subjects.json');
+    if (!data.headings || typeof data.headings !== 'object'
+        || Object.entries(data.headings).some(([id, h]) => !/^[0-9X-]+$/.test(id) || !isString(h?.label))) {
+        throw new Error('Invalid subject headings');
     }
     return data;
 }

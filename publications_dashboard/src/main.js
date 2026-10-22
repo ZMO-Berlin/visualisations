@@ -8,6 +8,8 @@ import { Analysis } from './components/Analysis.js';
 import { AuthorProfiles } from './components/AuthorProfiles.js';
 import { enrichedSections } from './components/EnrichedSections.js';
 import { ThemePanel } from './components/ThemePanel.js';
+import { RegionPanel } from './components/RegionPanel.js';
+import { YearRange } from './components/YearRange.js';
 /**
  * Application root: the one place where dependencies are constructed and wired.
  *
@@ -131,29 +133,42 @@ function bootstrap() {
 
     // --- Panels -------------------------------------------------------------
 
-    const timelinePanel = makePanel({ title: strings.overTime, hint: strings.overTimeHint });
-    const themesPanel = makePanel({ title: strings.themes, hint: strings.themesHint });
-    const typePanel = makePanel({ title: strings.documentTypes });
-    const authorPanel = makePanel({ title: strings.topAuthors });
-    const languagePanel = makePanel({ title: strings.languages, hint: strings.languagesHint });
-    const accessPanel = makePanel({ title: strings.access, hint: strings.accessHint });
-    const venuePanel = makePanel({ title: strings.venues });
+    // Every chart panel can be shown on the whole screen.
+    const fullscreen = { enter: strings.fullscreen, exit: strings.exitFullscreen };
+    const timelinePanel = makePanel({ title: strings.overTime, hint: strings.overTimeHint, fullscreen });
+    const themesPanel = makePanel({ title: strings.themes, hint: strings.themesHint, fullscreen });
+    const regionsPanel = makePanel({ title: strings.regions, hint: strings.regionsHint, fullscreen });
+    const typePanel = makePanel({ title: strings.documentTypes, fullscreen });
+    const authorPanel = makePanel({ title: strings.topAuthors, fullscreen });
+    const languagePanel = makePanel({ title: strings.languages, hint: strings.languagesHint, fullscreen });
+    const accessPanel = makePanel({ title: strings.access, hint: strings.accessHint, fullscreen });
+    const subjectsPanel = makePanel({ title: strings.subjects, fullscreen });
+    const venuePanel = makePanel({ title: strings.venues, fullscreen });
     const networkPanel = makePanel({ title: strings.coauthorship, hint: strings.coauthorshipHint });
     const listPanel = makePanel({ title: strings.publicationList });
 
     timelinePanel.section.classList.add('panel--wide');
     themesPanel.section.classList.add('panel--wide');
     themesPanel.section.hidden = true;
+    regionsPanel.section.classList.add('panel--wide');
+    regionsPanel.section.hidden = true;
+    subjectsPanel.section.classList.add('panel--wide');
+    subjectsPanel.section.hidden = true;
     networkPanel.section.classList.add('panel--wide');
     venuePanel.section.classList.add('panel--wide');
     listPanel.section.id = 'publication-results';
     listPanel.section.classList.add('panel--wide');
 
     panels.replaceChildren(
-        timelinePanel.section, themesPanel.section, typePanel.section, authorPanel.section,
-        languagePanel.section, accessPanel.section,
+        timelinePanel.section, themesPanel.section, regionsPanel.section, typePanel.section, authorPanel.section,
+        languagePanel.section, accessPanel.section, subjectsPanel.section,
         venuePanel.section, networkPanel.section, listPanel.section
     );
+
+    // Under the timeline, inside its panel: a second way to set the same years.
+    const yearRangeBox = el('div', { class: 'year-range-slot' });
+    timelinePanel.section.append(yearRangeBox);
+    const yearRange = new YearRange(yearRangeBox, { strings, store });
 
     // Built before the analysis sections and the list, which borrow its theme
     // labels and colours; configured once the themes file has arrived.
@@ -162,13 +177,17 @@ function bootstrap() {
     const themeSlot = id => themePanel.slotOf?.get(id) ?? 8;
     const personOf = name => store.getState().people[name];
 
+    const regionPanel = new RegionPanel(regionsPanel.body, { settings, strings, locale, tooltip, store, service });
+    const placeLabel = id => regionPanel.label?.(id) ?? id;
+    const headingLabel = id => store.getState().subjects?.headings?.[id]?.label ?? id;
+
     const analysisBody = el('div');
-    const analysisPanel = panel({ title: extra.analysis }, analysisBody);
+    const analysisPanel = panel({ title: extra.analysis, fullscreen }, analysisBody);
     analysisPanel.classList.add('panel--wide');
     networkPanel.section.before(analysisPanel);
     const analysis = new Analysis(analysisBody, {
         store, strings: extra, typeLabel,
-        sections: enrichedSections({ store, strings, locale, service, d3: window.d3, tooltip, themePanel })
+        sections: enrichedSections({ store, strings, locale, service, d3: window.d3, tooltip, themePanel, regionPanel })
     });
     const networkContent = networkPanel.section.querySelector('.panel__body');
     const disclosure = el('details', { class: 'analysis-section' }, [el('summary', { text: strings.coauthorship }), networkContent]);
@@ -190,9 +209,10 @@ function bootstrap() {
         el('button', { type: 'button', text: extra.copyLink, on: { click: e => copyView(e.currentTarget, extra) } }),
         el('button', { type: 'button', text: extra.csv, dataset: { export: '' }, on: { click: () => {
             const state = store.getState();
-            download(csv([['title', 'authors', 'year', 'type', 'journal', 'publisher', 'doi', 'url', 'language_detected', 'theme_ai_label', 'open_access_openalex', 'openalex', 'dataset', 'scope'],
+            download(csv([['title', 'authors', 'year', 'type', 'journal', 'publisher', 'doi', 'url', 'language_detected', 'theme_ai_label', 'places_named', 'gnd_subjects', 'open_access_openalex', 'openalex', 'dataset', 'scope'],
                 ...store.select().map(r => [r.title, r.authors?.join('; '), r.year, r.type, r.journal, r.publisher, r.doi, r.url,
-                    r.lang ?? UNDETERMINED, r.theme ? themeLabel(r.theme) : '', accessOf(r), r.openalex, state.meta.datasetId, scope()])]), 'zmo-publications.csv');
+                    r.lang ?? UNDETERMINED, r.theme ? themeLabel(r.theme) : '', (r.places ?? []).map(placeLabel).join('; '),
+                    (r.gnd ?? []).map(headingLabel).join('; '), accessOf(r), r.openalex, state.meta.datasetId, scope()])]), 'zmo-publications.csv');
         } } }));
     for (const format of ['svg', 'png']) actions.append(el('button', { type: 'button', text: extra[format], dataset: { export: '' }, on: { click: async e => {
         const button = e.currentTarget; button.disabled = true;
@@ -217,7 +237,10 @@ function bootstrap() {
         labels: {
             theme: themeLabel,
             lang: code => languageName(strings, locale, code),
-            access: value => strings.accessLabel[value] ?? value
+            access: value => strings.accessLabel[value] ?? value,
+            region: id => regionPanel.macroLabel?.(id) ?? id,
+            place: placeLabel,
+            gnd: headingLabel
         }
     });
     const summary = new Summary(filterBar.countsSlot, { strings, locale });
@@ -311,6 +334,15 @@ function bootstrap() {
         personOf
     });
 
+    const subjectsHint = el('p', { class: 'explore-hint' });
+    const subjectsBars = el('div');
+    subjectsPanel.body.append(subjectsHint, subjectsBars);
+    const subjectChart = new BarChart(subjectsBars, {
+        settings, strings,
+        onSelect: id => store.toggle('gnd', id),
+        formatLabel: headingLabel
+    });
+
     const list = new PublicationList(listPanel.body, {
         settings, strings, locale,
         formatLabel: typeLabel,
@@ -319,7 +351,11 @@ function bootstrap() {
             person: personOf,
             themeLabel, themeSlot,
             languageName: code => languageName(strings, locale, code),
-            onTheme: id => store.toggle('theme', id)
+            onTheme: id => store.toggle('theme', id),
+            placeLabel, placeSlot: id => regionPanel.placeSlot?.(id) ?? 'none',
+            onPlace: id => store.toggle('place', id),
+            headingLabel,
+            onHeading: id => store.toggle('gnd', id)
         }
     });
 
@@ -414,6 +450,17 @@ function bootstrap() {
             themePanel.configure(state.themes);
             themesPanel.section.hidden = false;
         }
+        if (state.regions && !regionPanel.regions) {
+            regionPanel.configure(state.regions);
+            regionsPanel.section.hidden = false;
+        }
+        if (state.subjects && subjectsPanel.section.hidden) {
+            subjectsPanel.section.hidden = false;
+            subjectsHint.textContent = fill(strings.subjectsHint, {
+                with: formatNumber(state.subjects.coverage.withHeadings, locale),
+                books: formatNumber(state.subjects.coverage.books, locale)
+            });
+        }
         writeParams(encodeFilters(state.filters), FILTER_KEYS);
 
         const filtered = store.select();
@@ -447,6 +494,9 @@ function bootstrap() {
         safely(venueChart, () => venueChart.render(store.select('venue'), state.filters.venue));
 
         safely(themePanel, () => themePanel.render(state, store.select('theme'), filtered));
+        safely(regionPanel, () => regionPanel.render(state, store.select('place'), filtered));
+        safely(subjectChart, () => subjectChart.render(memo(store.select('gnd'), 'gnd', r => rank(countValues(r, record => record.gnd))), state.filters.gnd));
+        yearRange.render(fullExtent, state.filters.years);
         safely(languageChart, () => languageChart.render(memo(store.select('lang'), 'langs', r => rank(countValues(r, record => record.lang ?? UNDETERMINED))), state.filters.lang));
         safely(accessChart, () => accessChart.render(memo(store.select('access'), 'access', r => {
             const counts = countValues(r, accessOf);
@@ -475,7 +525,8 @@ function bootstrap() {
     bindLifecycle({ suspend: () => network.suspend(), resume: () => { if (disclosure.open) network.resume(); }, destroy: () => {
         window.removeEventListener('popstate', restore);
         unsubscribe();
-        [summary, filterBar, timeline, typeChart, authorChart, venueChart, themePanel, languageChart, accessChart, profiles, network, list, tooltip, analysis].forEach(component => component.destroy());
+        [summary, filterBar, timeline, typeChart, authorChart, venueChart, themePanel, regionPanel, subjectChart, yearRange,
+            languageChart, accessChart, profiles, network, list, tooltip, analysis].forEach(component => component.destroy());
         store.destroy();
     } });
 }

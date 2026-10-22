@@ -33,7 +33,8 @@
   "position": "Research Fellow",
   "units": [
    "lives-and-ecologies"
-  ]
+  ],
+  "focus": "Middle East and Europe, particularly Turkey, Syria and Germany"
  },
  "Almazova, Leila": {
   "url": "https://www.zmo.de/en/people/dr-leila-almazova",
@@ -58,6 +59,7 @@
   "units": [
    "state-and-society"
   ],
+  "focus": "Armenia, Russia, Iran, South Caucasus",
   "orcid": "0000-0001-6999-4187"
  },
  "Ayachi, Mehdi": {
@@ -66,7 +68,8 @@
   "position": "Affiliated Researcher",
   "units": [
    "religion-and-intellectual-culture"
-  ]
+  ],
+  "focus": "Arabian Peninsula and notably the Sultanate of Oman"
  },
  "Baer, Marc D.": {
   "url": "https://www.zmo.de/en/people/prof-marc-baer",
@@ -83,7 +86,8 @@
   "position": "Research Fellow",
   "units": [
    "state-and-society"
-  ]
+  ],
+  "focus": "South Asia, especially India; India–The German Democratic Republic–The Federal Republic of Germany entanglements"
  },
  "Barbosa, Thiago P.": {
   "url": "https://www.zmo.de/en/people/thiago-pinto-barbosa",
@@ -92,7 +96,8 @@
  "Bazarbaev, Akmal": {
   "url": "https://www.zmo.de/en/people/akmal-bazarbaev",
   "current": true,
-  "position": "Research Fellow"
+  "position": "Research Fellow",
+  "focus": "Central Asia, especially Uzbekistan"
  },
  "Becker, Johannes": {
   "url": "https://www.zmo.de/en/people/dr-johannes-becker",
@@ -128,17 +133,20 @@
   "position": "Associated Researcher",
   "units": [
    "religion-and-intellectual-culture"
-  ]
+  ],
+  "focus": "Russia, especially the Volga-Urals region; Ukraine; Middle East, especially Turkey"
  },
  "Bromber, Katrin": {
   "url": "https://www.zmo.de/en/people/pd-dr-katrin-bromber",
   "current": true,
-  "position": "Former Head of Research Unit \"Age and Generation\""
+  "position": "Former Head of Research Unit \"Age and Generation\"",
+  "focus": "East- and Northeast Africa"
  },
  "Brylov, Denys": {
   "url": "https://www.zmo.de/en/people/brylov-denys",
   "current": true,
-  "position": "Associated Researcher"
+  "position": "Associated Researcher",
+  "focus": "Post-Soviet countries, especially Ukraine and Russia"
  },
  "Bühler, Brigitte": {
   "url": "https://www.zmo.de/en/people/dr-brigitte-buehler",
@@ -171,7 +179,8 @@
   "position": "Affiliated Researcher",
   "units": [
    "state-and-society"
-  ]
+  ],
+  "focus": "Central Asia, especially Kyrgyzstan, Russia"
  },
  "Dandekar, Deepra": {
   "url": "https://www.zmo.de/en/people/deepra-dandekar",
@@ -236,7 +245,8 @@
   "position": "Director",
   "units": [
    "state-and-society"
-  ]
+  ],
+  "focus": "Arab countries (notably Arabian Peninsula and Bilād al-Shām), Indian Ocean"
  },
  "Frenz, Margret": {
   "url": "https://www.zmo.de/en/people/dr-margret-frenz",
@@ -320,7 +330,8 @@
   "position": "Vice Director, Head of Public Relations & Knowledge Transfer",
   "units": [
    "religion-and-intellectual-culture"
-  ]
+  ],
+  "focus": "Middle East and North Africa"
  },
  "Heidrich, Petra": {
   "url": "https://www.zmo.de/en/people/dr-petra-heidrich",
@@ -332,7 +343,8 @@
   "position": "Affiliated Researcher",
   "units": [
    "state-and-society"
-  ]
+  ],
+  "focus": "South Asia, especially India"
  },
  "Hermann, Katja": {
   "url": "https://www.zmo.de/en/people/katja-hermann",
@@ -356,7 +368,8 @@
   "position": "Associated Researcher",
   "units": [
    "state-and-society"
-  ]
+  ],
+  "focus": "Middle East and Europe"
  },
  "Hussein, Jamshid": {
   "url": "https://www.zmo.de/en/people/jamshid-hussein",
@@ -376,7 +389,8 @@
   "position": "Research Fellow",
   "units": [
    "lives-and-ecologies"
-  ]
+  ],
+  "focus": "Central Asia, especially Kyrgyzstan"
  },
  "Janson, Marloes": {
   "url": "https://www.zmo.de/en/people/dr-marloes-janson",
@@ -404,7 +418,8 @@
   "position": "Vice Director, Head of Research Unit \"Religion and Intellectual Culture\"",
   "units": [
    "religion-and-intellectual-culture"
-  ]
+  ],
+  "focus": "Africa, especially East Africa and the Swahili coast, also to Southern Africa; transregional connections, especially across the Indian Ocean and the Muslim world; open for projects to all regions."
  },
  "Kamp, Melanie": {
   "url": "https://www.zmo.de/en/people/melanie-kamp",
@@ -414,6 +429,7 @@
   "url": "https://www.zmo.de/en/people/alisher-karabaev",
   "current": true,
   "position": "Open Science and Special Collection",
+  "focus": "Central Asia, South Asia, Togo",
   "orcid": "0000-0002-6207-3200"
  },
  "Karim, Farhan": {
@@ -423,7 +439,8 @@
  "Katrin, Bromber": {
   "url": "https://www.zmo.de/en/people/pd-dr-katrin-bromber",
   "current": true,
-  "position": "Former Head of Research Unit \"Age and Generation\""
+  "position": "Former Head of Research Unit \"Age and Generation\"",
+  "focus": "East- and Northeast Africa"
  },
  "Ketzmerick-Calandrino, Maria": {
   "url": "https://www.zmo.de/en/people/dr-maria-ketzmerick-calandrino",
@@ -447,7 +464,8 @@
   "position": "Senior Research Fellow and Research Coordinator",
   "units": [
    "state-and-society"
-  ]
+  ],
+  "focus": "Central Asia, Caucasus, Russia, Ukraine"
  },
  "Klausmann, Kyara": {
   "url": "https://www.zmo.de/en/people/kyara-klausmann",
@@ -467,7 +485,8 @@
   "position": "Vice Director, Head of Research Unit \"Religion and Intellectual Culture\"",
   "units": [
    "religion-and-intellectual-culture"
-  ]
+  ],
+  "focus": "Africa, especially East Africa and the Swahili coast, also to Southern Africa; transregional connections, especially across the Indian Ocean and the Muslim world; open for projects to all regions."
  },
  "Krimsti, Feras": {
   "url": "https://www.zmo.de/en/people/feras-krimsti",
@@ -487,7 +506,8 @@
   "position": "Head of Research Unit \"Lives and Ecologies\"",
   "units": [
    "lives-and-ecologies"
-  ]
+  ],
+  "focus": "Middle East, especially Syria and Kurdistan-Iraq"
  },
  "Leupold, David": {
   "url": "https://www.zmo.de/en/people/david-leupold",
@@ -495,7 +515,8 @@
   "position": "Affiliated Researcher",
   "units": [
    "state-and-society"
-  ]
+  ],
+  "focus": "Central Asia, Southern Caucasus, Turkey"
  },
  "Liebau, Heike": {
   "url": "https://www.zmo.de/en/people/dr-heike-liebau",
@@ -503,7 +524,8 @@
   "position": "Affiliated Researcher",
   "units": [
    "state-and-society"
-  ]
+  ],
+  "focus": "South Asia, especially India"
  },
  "Loimeier, Roman": {
   "url": "https://www.zmo.de/en/people/prof-dr-roman-loimeier",
@@ -515,7 +537,8 @@
   "position": "Affiliated Researcher",
   "units": [
    "religion-and-intellectual-culture"
-  ]
+  ],
+  "focus": "Togo, Benin, Burkina Faso, Côte d’Ivoire"
  },
  "Mahamadou, Bello Adamou": {
   "url": "https://www.zmo.de/en/people/bello-adamou-mahamadou",
@@ -527,7 +550,8 @@
   "position": "Affiliated Researcher",
   "units": [
    "lives-and-ecologies"
-  ]
+  ],
+  "focus": "Western Indian Ocean, Swahili coast"
  },
  "Maksudyan, Nazan": {
   "url": "https://www.zmo.de/en/people/dr-nazan-maksudyan",
@@ -611,7 +635,8 @@
   "position": "Affiliated Researcher",
   "units": [
    "state-and-society"
-  ]
+  ],
+  "focus": "South Asia"
  },
  "Nikro, Norman Saadi": {
   "url": "https://www.zmo.de/en/people/pd-dr-norman-saadi-nikro",
@@ -640,7 +665,8 @@
  "Pontzen, Benedikt": {
   "url": "https://www.zmo.de/en/people/dr-phil-benedikt-pontzen",
   "current": true,
-  "position": "Affiliated Researcher"
+  "position": "Affiliated Researcher",
+  "focus": "West Africa, especially Ghana and Mali"
  },
  "Prange, Sebastian R.": {
   "url": "https://www.zmo.de/en/people/dr-sebastian-r-prange",
@@ -652,7 +678,8 @@
   "position": "Affiliated Researcher",
   "units": [
    "state-and-society"
-  ]
+  ],
+  "focus": "South Asia"
  },
  "Raza, Ali": {
   "url": "https://www.zmo.de/en/people/dr-m-ali-raza",
@@ -661,7 +688,8 @@
  "Reetz, Dietrich": {
   "url": "https://www.zmo.de/en/people/pd-dr-dietrich-reetz",
   "current": true,
-  "position": "Affiliated Researcher"
+  "position": "Affiliated Researcher",
+  "focus": "South Asia, related to the research subject also Islam in Europe and North America, South East Asia, Central Asia, South Africa"
  },
  "Reinwald, Brigitte": {
   "url": "https://www.zmo.de/en/people/prof-dr-brigitte-reinwald",
@@ -706,6 +734,7 @@
   "units": [
    "lives-and-ecologies"
   ],
+  "focus": "Central A sia, Soviet Union",
   "orcid": "0000-0002-3991-4331"
  },
  "Sarreiter, Regina": {
@@ -727,7 +756,8 @@
   "position": "Head of Research Unit \"Lives and Ecologies\"",
   "units": [
    "lives-and-ecologies"
-  ]
+  ],
+  "focus": "Egypt, Arabic speaking countries, translocal relations between Egypt, Arab Gulf states and Western Europe"
  },
  "Schmahl, Robin F. C.": {
   "url": "https://www.zmo.de/en/people/robin-schmahl",
@@ -735,7 +765,8 @@
   "position": "Affiliated Researcher",
   "units": [
    "state-and-society"
-  ]
+  ],
+  "focus": "Arab World, particularly Egypt and European Imperialism in the Middle East"
  },
  "Schmid, Larissa": {
   "url": "https://www.zmo.de/en/people/larissa-schmid",
@@ -755,7 +786,8 @@
   "position": "Associated Researcher",
   "units": [
    "lives-and-ecologies"
-  ]
+  ],
+  "focus": "Middle East & North Africa; Mediterranean; West Africa"
  },
  "Schöne, Ellinor": {
   "url": "https://www.zmo.de/en/people/dr-ellinor-schoene",
@@ -783,7 +815,8 @@
   "position": "Head of Research Unit \"State and Society\"",
   "units": [
    "state-and-society"
-  ]
+  ],
+  "focus": "South Asia"
  },
  "Sounaye, Abdoulaye": {
   "url": "https://www.zmo.de/en/people/dr-abdoulaye-sounaye",
@@ -791,7 +824,8 @@
   "position": "Head of Research Unit \"Religion and Intellectual Culture\"",
   "units": [
    "religion-and-intellectual-culture"
-  ]
+  ],
+  "focus": "West Africa"
  },
  "Suerbaum, Magdalena": {
   "url": "https://www.zmo.de/en/people/dr-magdalena-suerbaum",
@@ -877,6 +911,7 @@
   "position": "Research Fellow",
   "units": [
    "lives-and-ecologies"
-  ]
+  ],
+  "focus": "Caucasus, Abkhazia, Cyprus, the EU and Turkey"
  }
 }

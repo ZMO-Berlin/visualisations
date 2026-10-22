@@ -1,0 +1,296 @@
+{
+ "_readme": [
+  "Review decisions for places matched by regions.py. One entry per publication and place:",
+  "\"accept\": false drops the match; \"to\": <Wikidata id> reassigns it to another place. Every",
+  "match of a name marked ambiguous in gazetteer.json is listed in reports/regions-review.md;",
+  "one without a decision here keeps the gazetteer default and is shown there as unreviewed."
+ ],
+ "reviewed": {
+  "by": "Claude Opus 5.5 (Anthropic)",
+  "date": "2026-10-22",
+  "scope": "every match of the five names marked ambiguous (Benin, Georgia, Jordan, Medina, Tripoli), record by record, and a seeded sample of twelve matches per region; not reviewed by ZMO staff",
+  "scope_de": "alle Treffer der fünf als mehrdeutig markierten Namen (Benin, Georgien, Jordanien, Medina, Tripolis), Eintrag für Eintrag, und eine Stichprobe von zwölf Treffern je Region; nicht von Mitarbeitenden des ZMO geprüft"
+ },
+ "decisions": [
+  {
+   "slug": "%E1%83%A5%E1%83%A3%E1%83%A9%E1%83%98%E1%83%A1-%E1%83%90%E1%83%9C%E1%83%A2%E1%83%98%E1%83%A1%E1%83%90%E1%83%91%E1%83%AD%E1%83%9D%E1%83%97%E1%83%90-%E1%83%AC%E1%83%98%E1%83%9C%E1%83%90%E1%83%90%E1%83%A6%E1%83%9B%E1%83%93%E1%83%94%E1%83%92%E1%83%9D%E1%83%91%E1%83%90-%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A8%E1%83%98-anti-soviet-street-resistance-in-georgia",
+   "place": "Q230",
+   "name": "Georgia",
+   "accept": true
+  },
+  {
+   "slug": "georgischsprachige-tonaufnahmen-von-kriegsgefangenen-in-deutschen-lagern-im-ersten-weltkrieg",
+   "place": "Q230",
+   "name": "Georgia",
+   "accept": true
+  },
+  {
+   "slug": "highly-qualified-immigrants-and-refugees",
+   "place": "Q230",
+   "name": "Georgia",
+   "accept": true
+  },
+  {
+   "slug": "russian-imperial-borderlands-georgian-jews-and-the-struggle-for-justice-and-legality-1",
+   "place": "Q230",
+   "name": "Georgia",
+   "accept": true
+  },
+  {
+   "slug": "a-history-of-jeddah",
+   "place": "Q35484",
+   "name": "Medina",
+   "accept": true
+  },
+  {
+   "slug": "default-903c2f5677",
+   "place": "Q35484",
+   "name": "Medina",
+   "accept": false,
+   "note": "Transliterated Arabic al-madina, 'the city' (Alexandria), not Medina."
+  },
+  {
+   "slug": "food-insecurity-and-political-instability-in-the-southern-red-sea-region-during-the-little-ice-age-1650-1840",
+   "place": "Q35484",
+   "name": "Medina",
+   "accept": true
+  },
+  {
+   "slug": "for-the-saudis-kingdom-or-for-the-umma",
+   "place": "Q35484",
+   "name": "Medina",
+   "accept": true
+  },
+  {
+   "slug": "geschichte-saudi-arabiens",
+   "place": "Q35484",
+   "name": "Medina",
+   "accept": true
+  },
+  {
+   "slug": "hattuscha-gegen-hellas-medina-gegen-rom",
+   "place": "Q35484",
+   "name": "Medina",
+   "accept": true
+  },
+  {
+   "slug": "policing-the-medina-public-order-in-tunis-at-the-time-of-the-tanzimat-1857-1864",
+   "place": "Q35484",
+   "name": "Medina",
+   "accept": false,
+   "note": "The medina (old town) of Tunis, not the city of Medina."
+  },
+  {
+   "slug": "rez-chanfi-ahmed-west-african-ulama-and-salafism-in-mecca-and-medina-jawab-al-ifrq-the-response-of-the-african-leiden-brill-2015-213pp",
+   "place": "Q35484",
+   "name": "Medina",
+   "accept": true
+  },
+  {
+   "slug": "rez-malik-and-medina-islamic-legal-reasoning-in-the-formative-period-by-umar-f-abd-allah-wymann-landgraf-brill-2013-566p",
+   "place": "Q35484",
+   "name": "Medina",
+   "accept": true
+  },
+  {
+   "slug": "west-african-ulama-and-salafism-in-mecca-and-medina",
+   "place": "Q35484",
+   "name": "Medina",
+   "accept": true
+  },
+  {
+   "slug": "a-bridgehead-to-africa",
+   "place": "Q3579",
+   "name": "Tripoli",
+   "accept": true
+  },
+  {
+   "slug": "al-alaqat-al-thaqafiyya-wa-l-ijtimaiyya-bayn-wilayat-tunis-wa-tarabulis-al-gharb-khilal-al-fatra-1835-1881",
+   "place": "Q3579",
+   "name": "Tripoli",
+   "accept": true
+  },
+  {
+   "slug": "cronache-civiche-e-microcosmi-cittadini",
+   "place": "Q3579",
+   "name": "Tripoli",
+   "accept": true
+  },
+  {
+   "slug": "esprit-civique-et-organisation-citadine-dans-lempire-ottoman-xve-xxe-siecles",
+   "place": "Q3579",
+   "name": "Tripoli",
+   "accept": true
+  },
+  {
+   "slug": "finding-women-and-gender-in-the-sources-toward-a-historical-anthropology-of-ottoman-tripoli",
+   "place": "Q3579",
+   "name": "Tripoli",
+   "accept": true
+  },
+  {
+   "slug": "finding-women-and-gender-in-the-sources-toward-a-historical-anthropology-of-ottoman-tripoli-1",
+   "place": "Q3579",
+   "name": "Tripoli",
+   "accept": true
+  },
+  {
+   "slug": "tripoli-1",
+   "place": "Q3579",
+   "name": "Tripoli",
+   "accept": true,
+   "note": "Entry by Nora Lafi in an Abécédaire of Maghreb and Middle Eastern cities; her work is on Ottoman Tripoli in Libya."
+  },
+  {
+   "slug": "violence-factueuse-enjeux-internationaux-et-regulation-ottomane-de-la-confictualite-urbaine-a-tripoli-doccident-entre-xviiie-et-xixe-siecles",
+   "place": "Q3579",
+   "name": "Tripoli",
+   "accept": true
+  },
+  {
+   "slug": "women-resisting-colonization",
+   "place": "Q3579",
+   "name": "Tripoli",
+   "accept": true
+  },
+  {
+   "slug": "a-space-of-appearance-romani-publics-and-privates-in-the-middle-east",
+   "place": "Q810",
+   "name": "Jordan",
+   "accept": true
+  },
+  {
+   "slug": "at-the-states-gate",
+   "place": "Q810",
+   "name": "Jordan",
+   "accept": true
+  },
+  {
+   "slug": "believers-dont-do-politics",
+   "place": "Q810",
+   "name": "Jordan",
+   "accept": true
+  },
+  {
+   "slug": "hyper-familiarity-in-profound-uncertainty",
+   "place": "Q810",
+   "name": "Jordan",
+   "accept": true
+  },
+  {
+   "slug": "lives-and-futures-from-ruination",
+   "place": "Q810",
+   "name": "Jordan",
+   "accept": true
+  },
+  {
+   "slug": "practising-the-future-against-perception",
+   "place": "Q810",
+   "name": "Jordan",
+   "accept": true
+  },
+  {
+   "slug": "rez-daniel-jordan-smith-to-be-a-man-is-not-a-one-day-job-masculinity-money-and-intimacy-in-nigeria-university-of-chicago-press-2017-272-pp",
+   "place": "Q810",
+   "name": "Jordan",
+   "accept": false,
+   "note": "The reviewed book's author, Daniel Jordan Smith; the book is about Nigeria."
+  },
+  {
+   "slug": "state-building-and-the-transregionalization-of-families-in-the-middle-east",
+   "place": "Q810",
+   "name": "Jordan",
+   "accept": true
+  },
+  {
+   "slug": "the-possibilities-and-limits-of-ethnography-two-examples-from-syria-and-jordan",
+   "place": "Q810",
+   "name": "Jordan",
+   "accept": true
+  },
+  {
+   "slug": "we-dont-need-to-be-saved",
+   "place": "Q810",
+   "name": "Jordan",
+   "accept": true
+  },
+  {
+   "slug": "a-beninese-imams-controversial-2019-election-campaign-muslim-leadership-and-political-engagement-in-a-minority-context",
+   "place": "Q962",
+   "name": "Benin",
+   "accept": true
+  },
+  {
+   "slug": "christian-religious-radio-production-in-benin-the-case-of-radio-maranatha",
+   "place": "Q962",
+   "name": "Benin",
+   "accept": true
+  },
+  {
+   "slug": "gold-mining-in-the-atakora-mountains-benin",
+   "place": "Q962",
+   "name": "Benin",
+   "accept": true
+  },
+  {
+   "slug": "labour-migration-and-moral-dimensions-of-interethnic-friendships",
+   "place": "Q962",
+   "name": "Benin",
+   "accept": true
+  },
+  {
+   "slug": "lutte-contre-le-terrorisme-et-securitisation-du-salafisme-au-benin-et-au-togo-instrumentalisations-diverses-dune-menace-etrangere",
+   "place": "Q962",
+   "name": "Benin",
+   "accept": true
+  },
+  {
+   "slug": "media-development-censorship-and-working-conditions-of-journalists-in-the-republic-of-benin-west-africa",
+   "place": "Q962",
+   "name": "Benin",
+   "accept": true
+  },
+  {
+   "slug": "mediale-wechselwirkungen-medienwandel-am-beispiel-des-radios-in-benin-westafrika",
+   "place": "Q962",
+   "name": "Benin",
+   "accept": true
+  },
+  {
+   "slug": "medienethnographische-forschung-zu-radiokulturen-in-benin-westafrika",
+   "place": "Q962",
+   "name": "Benin",
+   "accept": true
+  },
+  {
+   "slug": "radio-advertising-and-entrepreneurial-conjunctions-in-benin",
+   "place": "Q962",
+   "name": "Benin",
+   "accept": true
+  },
+  {
+   "slug": "radio-call-in-shows-on-intimate-issues-in-benin-crossroads-of-sentiments",
+   "place": "Q962",
+   "name": "Benin",
+   "accept": true
+  },
+  {
+   "slug": "religious-activism-on-campuses-in-togo-and-benin",
+   "place": "Q962",
+   "name": "Benin",
+   "accept": true
+  },
+  {
+   "slug": "repenser-la-categorisation-religieuse-a-partir-du-benin-terre-du-vodun",
+   "place": "Q962",
+   "name": "Benin",
+   "accept": true
+  },
+  {
+   "slug": "technologische-dramen",
+   "place": "Q962",
+   "name": "Benin",
+   "accept": true
+  }
+ ]
+}

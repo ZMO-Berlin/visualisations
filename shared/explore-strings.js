@@ -21,6 +21,7 @@ const en = {
     previousPage: 'Previous page', nextPage: 'Next page', ofTotal: 'of', loadError: 'The data could not be loaded.', retry: 'Try again',
     chooseTerm: 'Choose a term to read its source passages.', selected: 'Selected', year: 'Year', publications: 'Publications',
     view: 'View', exportError: 'Export failed. Please try again.', records: 'records', refresh: 'Last successful refresh',
+    heatLegend: 'Darker cells hold more publications (darkest: {max}).',
 };
 const de = {
     percentageHint: '100 % sind alle ausgewählten Publikationen des jeweiligen Jahres.', scaleMaximum: 'Gemeinsamer Höchstwert der vertikalen Skala', datedOnly: 'Nur datierte Einträge werden dargestellt.',
@@ -45,5 +46,6 @@ const de = {
     previousPage: 'Vorherige Seite', nextPage: 'Nächste Seite', ofTotal: 'von', loadError: 'Die Daten konnten nicht geladen werden.', retry: 'Erneut versuchen',
     chooseTerm: 'Einen Begriff auswählen, um die Quelltexte zu lesen.', selected: 'Ausgewählt', year: 'Jahr', publications: 'Publikationen',
     view: 'Ansicht', exportError: 'Export fehlgeschlagen. Bitte erneut versuchen.', records: 'Einträge', refresh: 'Letzte erfolgreiche Aktualisierung',
+    heatLegend: 'Dunklere Zellen enthalten mehr Publikationen (am dunkelsten: {max}).',
 };
 export function exploreStrings(locale) { return locale === 'de' ? de : en; }
