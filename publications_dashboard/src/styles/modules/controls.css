@@ -388,7 +388,8 @@
     flex-wrap: nowrap;
     overflow-x: auto;
     scrollbar-width: thin;
-    padding: 2px 0;
+    /* Room below the chips so the scrollbar, when there is one, clears them. */
+    padding: 2px 0 var(--s-2);
 }
 
 .filter-dock__chips .chip {
