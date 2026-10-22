@@ -408,6 +408,11 @@ so once the filter bar has scrolled out of sight and a filter is active, a slim
 bar slides in at the top of the window: the count, each filter as a removable
 chip (on a phone, "3 filters"), "Clear filters", and a button back to the bar.
 It is fixed rather than sticky, so it never pushes the page down as it appears.
+A filter change also keeps the reader's place: choosing a place on the map
+shortens the theme and language panels above it, and the page now scrolls by
+the same amount so what was clicked stays under the pointer
+(`utils/reading-place.js`; the browser's own scroll anchoring cannot do it,
+because the charts replace the nodes it anchors on).
 
 The regions map opens on Africa, Europe and Asia but draws the whole world:
 drag it to the Americas, zoom with the buttons or Ctrl/⌘ + scroll, or press the

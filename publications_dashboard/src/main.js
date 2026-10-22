@@ -33,6 +33,7 @@ import { Tooltip } from './components/Tooltip.js';
 import { Summary } from './components/Summary.js';
 import { FilterBar } from './components/FilterBar.js';
 import { FilterDock } from './components/FilterDock.js';
+import { ReadingPlace } from './utils/reading-place.js';
 import { Timeline } from './components/charts/Timeline.js';
 import { BarChart } from './components/charts/BarChart.js';
 import { VenueChart } from './components/charts/VenueChart.js';
@@ -98,6 +99,7 @@ function bootstrap() {
     const header = document.getElementById('header');
     const status = document.getElementById('status');
     const panels = document.getElementById('panels');
+    const place = new ReadingPlace(panels.closest('main') ?? document.body);
     const tooltip = new Tooltip();
 
     document.title = strings.title;
@@ -531,7 +533,13 @@ function bootstrap() {
         if (!filtered.length) list.container.append(el('button', { type: 'button', class: 'button', text: extra.reset, on: { click: () => store.clearFilters() } }));
     }
 
-    const unsubscribe = store.subscribe(render);
+    // A filter change re-lays the page above the reader: keep their place
+    // (see utils/reading-place.js).
+    const unsubscribe = store.subscribe((state, previous) => {
+        const chain = previous && previous.filters !== state.filters && state.status === 'ready' ? place.mark() : null;
+        render(state, previous);
+        place.restore(chain);
+    });
     render(store.getState(), null);
     store.load();
 
@@ -540,7 +548,7 @@ function bootstrap() {
     bindLifecycle({ suspend: () => network.suspend(), resume: () => { if (disclosure.open) network.resume(); }, destroy: () => {
         window.removeEventListener('popstate', restore);
         unsubscribe();
-        [summary, filterBar, filterDock, timeline, typeChart, authorChart, venueChart, themePanel, regionPanel, subjectChart, yearRange,
+        [place, summary, filterBar, filterDock, timeline, typeChart, authorChart, venueChart, themePanel, regionPanel, subjectChart, yearRange,
             languageChart, accessChart, profiles, network, list, tooltip, analysis].forEach(component => component.destroy());
         store.destroy();
     } });
