@@ -1,0 +1,303 @@
+{
+  "_readme": [
+    "Labels for the themes and areas in raw_data/themes.json, shown in the publications dashboard.",
+    "",
+    "Written by Claude Opus 5.5 (Anthropic, model id claude-opus-5-5) from reports/theme-brief.md:",
+    "each theme's distinctive terms, the titles nearest its centre and a seeded sample of the rest.",
+    "The brief leaves out author names, so labels describe subjects rather than people. A theme",
+    "held together by the form of its titles rather than a subject is labelled 'Mixed:'.",
+    "",
+    "They have not been reviewed by ZMO staff. Editing a label here is fine; keep the signature.",
+    "Each theme's signature is a hash of the records it was labelled for. After",
+    "build_themes.py --refit the signatures no longer match and generate_publication_data.py",
+    "refuses these labels until the themes are labelled again from the new brief."
+  ],
+  "author": "Claude Opus 5.5 (Anthropic)",
+  "model": "claude-opus-5-5",
+  "date": "2026-10-22",
+  "fit_signature": "20188a9eb8ad680a",
+  "areas": {
+    "a1": {
+      "en": "Culture, colonialism and knowledge",
+      "de": "Kultur, Kolonialismus und Wissen",
+      "description": {
+        "en": "Cultural politics, colonial and postcolonial Africa, Russia and European Orientalism, Swahili and West African cultures, museums and images.",
+        "de": "Kulturpolitik, koloniales und postkoloniales Afrika, Russland und europäischer Orientalismus, Swahili- und westafrikanische Kulturen, Museen und Bilder."
+      }
+    },
+    "a2": {
+      "en": "Conflict, social change and migration",
+      "de": "Konflikt, sozialer Wandel und Migration",
+      "description": {
+        "en": "Violence and memory in Syria, Iraq and Kurdistan, youth and social change in North Africa and the Levant, Central Asia, and migration and refuge.",
+        "de": "Gewalt und Erinnerung in Syrien, Irak und Kurdistan, Jugend und sozialer Wandel in Nordafrika und der Levante, Zentralasien sowie Migration und Flucht."
+      }
+    },
+    "a3": {
+      "en": "Islam and Muslim societies",
+      "de": "Islam und muslimische Gesellschaften",
+      "description": {
+        "en": "Muslim worlds in comparison, Islam and Christianity in West Africa, and Islamic thought, scholars and movements.",
+        "de": "Muslimische Welten im Vergleich, Islam und Christentum in Westafrika sowie islamisches Denken, Gelehrte und Bewegungen."
+      }
+    },
+    "a4": {
+      "en": "Ottoman and Arab history",
+      "de": "Osmanische und arabische Geschichte",
+      "description": {
+        "en": "Ottoman cities and empire, Arab intellectual history and the politics of memory, and the Arab provinces and the Arabian Peninsula.",
+        "de": "Osmanische Städte und Reich, arabische Ideengeschichte und Geschichtspolitik sowie die arabischen Provinzen und die Arabische Halbinsel."
+      }
+    },
+    "a5": {
+      "en": "Mixed and short titles",
+      "de": "Gemischte und kurze Titel",
+      "description": {
+        "en": "Groups formed by the brevity or form of their titles rather than by a shared subject.",
+        "de": "Gruppen, die eher durch die Kürze oder Form ihrer Titel als durch ein gemeinsames Thema entstehen."
+      }
+    },
+    "a6": {
+      "en": "Cities, environment and the Gulf",
+      "de": "Städte, Umwelt und Golfregion",
+      "description": {
+        "en": "Cities and urban margins, resources and environmental frontiers, and the Gulf states.",
+        "de": "Städte und städtische Ränder, Ressourcen und ökologische Grenzräume sowie die Golfstaaten."
+      }
+    },
+    "a7": {
+      "en": "South Asia and the world wars",
+      "de": "Südasien und die Weltkriege",
+      "description": {
+        "en": "Colonial and modern South Asia, and the world wars as experienced beyond Europe.",
+        "de": "Koloniales und modernes Südasien sowie die Weltkriege jenseits Europas."
+      }
+    },
+    "a8": {
+      "en": "Film",
+      "de": "Film",
+      "description": {
+        "en": "Cinema and filmmaking, especially in Pakistan.",
+        "de": "Kino und Filmschaffen, vor allem in Pakistan."
+      }
+    }
+  },
+  "themes": {
+    "t01": {
+      "signature": "3cd59e23eac5d797",
+      "en": "Cultural politics and global entanglements",
+      "de": "Kulturpolitik und globale Verflechtungen",
+      "description": {
+        "en": "Culture, identity and recognition in a global frame: cultural exchange in the Cold War and the world wars, humanitarianism, intelligence agencies and the politics of knowledge.",
+        "de": "Kultur, Identität und Anerkennung im globalen Rahmen: Kulturaustausch im Kalten Krieg und in den Weltkriegen, Humanitarismus, Geheimdienste und die Politik des Wissens."
+      }
+    },
+    "t02": {
+      "signature": "b74e4e6004f394f3",
+      "en": "Africa: colonial and postcolonial history",
+      "de": "Afrika: koloniale und postkoloniale Geschichte",
+      "description": {
+        "en": "Histories of Africa and its colonial past: colonial rule and liberation, the postcolonial state, Ethiopia and Cameroon, African studies in Berlin, and decolonial debates.",
+        "de": "Geschichte Afrikas und seiner kolonialen Vergangenheit: Kolonialherrschaft und Befreiung, der postkoloniale Staat, Äthiopien und Kamerun, Afrikawissenschaften in Berlin und dekoloniale Debatten."
+      }
+    },
+    "t03": {
+      "signature": "25f24c2b672f656a",
+      "en": "The Russian Empire, Europe and Orientalism",
+      "de": "Russisches Reich, Europa und Orientalismus",
+      "description": {
+        "en": "Law and diversity in the Tsarist empire, Russia and Ukraine today, the history of European Orientalism (Silvestre de Sacy), and religion, art and myth in anthropology.",
+        "de": "Recht und Vielfalt im Zarenreich, Russland und die Ukraine heute, die Geschichte des europäischen Orientalismus (Silvestre de Sacy) sowie Religion, Kunst und Mythos in der Anthropologie."
+      }
+    },
+    "t04": {
+      "signature": "dd2c57aa4ee86eb2",
+      "en": "Swahili and West African cultures",
+      "de": "Swahili- und westafrikanische Kulturen",
+      "description": {
+        "en": "Swahili poetry and philosophy on the East African coast, radio and media in Benin and Mali, oral history in Cameroon, and migration and slave descent in the Gambia.",
+        "de": "Swahili-Dichtung und -Philosophie an der ostafrikanischen Küste, Radio und Medien in Benin und Mali, mündliche Überlieferung in Kamerun sowie Migration und Sklavennachfahren in Gambia."
+      }
+    },
+    "t05": {
+      "signature": "9180eb6af992aef5",
+      "en": "Museums, objects, images and memory",
+      "de": "Museen, Objekte, Bilder und Erinnerung",
+      "description": {
+        "en": "Exhibitions and museums, photography and visual culture, objects from fieldwork, and memory and space in post-war cities, including ZMO's own exhibitions and history.",
+        "de": "Ausstellungen und Museen, Fotografie und visuelle Kultur, Objekte aus der Feldforschung sowie Erinnerung und Raum in Nachkriegsstädten, einschließlich der Ausstellungen und der Geschichte des ZMO."
+      }
+    },
+    "t06": {
+      "signature": "81dbb37041c76777",
+      "en": "Violence, war and memory in Syria, Iraq and Kurdistan",
+      "de": "Gewalt, Krieg und Erinnerung in Syrien, Irak und Kurdistan",
+      "description": {
+        "en": "Genocide and its memory in Iraqi Kurdistan, war and displacement in Syria and Lebanon, protest and uprisings in the Arab world, and violence in the history of the Middle East.",
+        "de": "Genozid und Erinnerung in Irakisch-Kurdistan, Krieg und Vertreibung in Syrien und im Libanon, Proteste und Aufstände in der arabischen Welt sowie Gewalt in der Geschichte des Nahen Ostens."
+      }
+    },
+    "t07": {
+      "signature": "c5481bede82f9af1",
+      "en": "Youth, social change and memory in North Africa and the Levant",
+      "de": "Jugend, sozialer Wandel und Erinnerung in Nordafrika und der Levante",
+      "description": {
+        "en": "Political participation and changing values among young people in Morocco, Egypt and Palestine, associations and media, and memory after violence in Lebanon and Morocco.",
+        "de": "Politische Teilhabe und Wertewandel junger Menschen in Marokko, Ägypten und Palästina, Vereine und Medien sowie Erinnerung nach Gewalt im Libanon und in Marokko."
+      }
+    },
+    "t08": {
+      "signature": "f94efd402e7141b8",
+      "en": "Central Asia, Soviet and post-Soviet",
+      "de": "Zentralasien, sowjetisch und postsowjetisch",
+      "description": {
+        "en": "Kyrgyzstan, Uzbekistan and Tajikistan: conflict in Osh, power and informality, kinship, migration and women, Soviet modernisation, and Bukhara before the Soviet era.",
+        "de": "Kirgistan, Usbekistan und Tadschikistan: der Konflikt in Osch, Macht und Informalität, Verwandtschaft, Migration und Frauen, sowjetische Modernisierung und Buchara vor der Sowjetzeit."
+      }
+    },
+    "t09": {
+      "signature": "b93d0725d3d42632",
+      "en": "Migration, flight and refuge",
+      "de": "Migration, Flucht und Asyl",
+      "description": {
+        "en": "Migrants and refugees between Africa, the Middle East, South Asia and Europe: Syrians in Turkey and Germany, Afghans in Pakistan, borders and migration management, and making a home.",
+        "de": "Migrantinnen, Migranten und Geflüchtete zwischen Afrika, dem Nahen Osten, Südasien und Europa: Syrer in der Türkei und in Deutschland, Afghanen in Pakistan, Grenzen und Migrationsmanagement sowie das Ankommen."
+      }
+    },
+    "t10": {
+      "signature": "c744b6e22b915da4",
+      "en": "Muslim worlds and the study of Islam",
+      "de": "Muslimische Welten und Islamforschung",
+      "description": {
+        "en": "Islam and Muslim societies in comparison, from Europe to South and Southeast Asia: transnational movements, modernism, Islam and the state, Chinese Muslims in Indonesia and Malaysia, and the field of Islamic studies itself.",
+        "de": "Islam und muslimische Gesellschaften im Vergleich, von Europa bis Süd- und Südostasien: transnationale Bewegungen, Modernismus, Islam und Staat, chinesische Muslime in Indonesien und Malaysia sowie die Islamwissenschaft selbst."
+      }
+    },
+    "t11": {
+      "signature": "549faf0fb72579fb",
+      "en": "Islam and Christianity in West Africa",
+      "de": "Islam und Christentum in Westafrika",
+      "description": {
+        "en": "Religious life in Niger, Nigeria, Burkina Faso and beyond: preaching and revival, Muslim–Christian encounters, women preachers and media, and religion on university campuses.",
+        "de": "Religiöses Leben in Niger, Nigeria, Burkina Faso und darüber hinaus: Predigt und Erweckung, muslimisch-christliche Begegnungen, Predigerinnen und Medien sowie Religion an Universitäten."
+      }
+    },
+    "t12": {
+      "signature": "9e2c3ba5acf28de1",
+      "en": "Islamic thought, scholars and movements",
+      "de": "Islamisches Denken, Gelehrte und Bewegungen",
+      "description": {
+        "en": "Scholars, reformers and movements from the Tablighi Jamaʿat and the Deobandis to Salafism and Yusuf al-Qaradawi, many of them written as encyclopaedia and handbook entries.",
+        "de": "Gelehrte, Reformer und Bewegungen von der Tablighi Jamaʿat und den Deobandis bis zum Salafismus und Yusuf al-Qaradawi, viele davon als Enzyklopädie- und Handbuchartikel."
+      }
+    },
+    "t13": {
+      "signature": "415bdf826762065e",
+      "en": "Ottoman cities and empire",
+      "de": "Osmanische Städte und Reich",
+      "description": {
+        "en": "The late Ottoman Empire: urban governance and petitions, migration and modernity, Istanbul, Tunis and Tripoli, children and youth, and the revolution of 1908.",
+        "de": "Das späte Osmanische Reich: städtische Verwaltung und Petitionen, Migration und Moderne, Istanbul, Tunis und Tripolis, Kinder und Jugendliche sowie die Revolution von 1908."
+      }
+    },
+    "t14": {
+      "signature": "1efb29416c2a4f40",
+      "en": "Arab intellectual history and the politics of memory",
+      "de": "Arabische Ideengeschichte und Geschichtspolitik",
+      "description": {
+        "en": "Arab intellectuals and thinkers such as al-Jabri, Laroui and Edward Said, Arab encounters with National Socialism, historiography and the politics of history, and the Arab uprisings of 2011.",
+        "de": "Arabische Intellektuelle und Denker wie al-Dschabiri, Laroui und Edward Said, arabische Begegnungen mit dem Nationalsozialismus, Historiografie und Geschichtspolitik sowie die arabischen Aufstände von 2011."
+      }
+    },
+    "t15": {
+      "signature": "a435bed0124cc4df",
+      "en": "The Arab provinces and the Arabian Peninsula in history",
+      "de": "Arabische Provinzen und die Arabische Halbinsel in der Geschichte",
+      "description": {
+        "en": "The Arab provinces of the Ottoman Empire, Jeddah and the Hijaz, Aleppo and the Maghreb, the Arabian Peninsula as a trading space, and historical writing about the region, often in book reviews.",
+        "de": "Die arabischen Provinzen des Osmanischen Reiches, Dschidda und der Hidschas, Aleppo und der Maghreb, die Arabische Halbinsel als Handelsraum und die Geschichtsschreibung über die Region, oft in Rezensionen."
+      }
+    },
+    "t16": {
+      "signature": "ac85b84900dc91d0",
+      "en": "Mixed: concepts, methods and short titles",
+      "de": "Gemischt: Begriffe, Methoden und kurze Titel",
+      "description": {
+        "en": "A group held together by brevity rather than subject: introductions, replies and essays on knowledge, memory, translocality and method whose titles say little about their topic.",
+        "de": "Eine Gruppe, die eher durch Kürze als durch ein Thema zusammengehalten wird: Einleitungen, Erwiderungen und Essays zu Wissen, Erinnerung, Translokalität und Methode, deren Titel wenig über ihr Thema verraten."
+      }
+    },
+    "t17": {
+      "signature": "189a42f614a38889",
+      "en": "Mixed: short entries and place headings",
+      "de": "Gemischt: kurze Einträge und Ortsstichwörter",
+      "description": {
+        "en": "Short titles grouped by form more than subject: encyclopaedia and dictionary entries, place names and newspaper pieces, mostly on North Africa and the Middle East.",
+        "de": "Kurze Titel, eher nach Form als nach Thema gruppiert: Enzyklopädie- und Wörterbucheinträge, Ortsnamen und Zeitungsbeiträge, meist zu Nordafrika und dem Nahen Osten."
+      }
+    },
+    "t18": {
+      "signature": "4dab0fc4d5dab8da",
+      "en": "Mixed: uranium, climate and research projects",
+      "de": "Gemischt: Uran, Klima und Forschungsprojekte",
+      "description": {
+        "en": "A small mixed group: uranium mining and the nuclear frontier in Tanzania, climate change and academic research, and ZMO's own projects, archives and digital resources.",
+        "de": "Eine kleine gemischte Gruppe: Uranbergbau und die nukleare Grenze in Tansania, Klimawandel und Wissenschaft sowie Projekte, Archive und digitale Ressourcen des ZMO."
+      }
+    },
+    "t19": {
+      "signature": "f023a29a19cf69c4",
+      "en": "Cities, urbanity and urban margins",
+      "de": "Städte, Urbanität und städtische Ränder",
+      "description": {
+        "en": "Urban theory and urban life across Africa, Asia and the Middle East: marginality, neighbourhoods, citizenship, protest and development, from Tunis and Salalah to Indian and Soviet cities.",
+        "de": "Stadttheorie und städtisches Leben in Afrika, Asien und dem Nahen Osten: Marginalität, Nachbarschaften, Bürgerschaft, Protest und Entwicklung, von Tunis und Salala bis zu indischen und sowjetischen Städten."
+      }
+    },
+    "t20": {
+      "signature": "1c1f6b084a10befc",
+      "en": "Resources, environment and frontiers",
+      "de": "Ressourcen, Umwelt und Grenzräume",
+      "description": {
+        "en": "Natural resources and environmental change, dams and mining frontiers, the Sahara and the Sahel, the Red Sea and the Indian Ocean, and borders and rural mobility.",
+        "de": "Natürliche Ressourcen und Umweltwandel, Staudämme und Bergbaugrenzen, Sahara und Sahel, Rotes Meer und Indischer Ozean sowie Grenzen und ländliche Mobilität."
+      }
+    },
+    "t21": {
+      "signature": "290ffd19a3a447c5",
+      "en": "The Gulf states",
+      "de": "Die Golfstaaten",
+      "description": {
+        "en": "Politics, economy and urban development in Saudi Arabia, the United Arab Emirates, Oman, Qatar and Bahrain since the oil age.",
+        "de": "Politik, Wirtschaft und Stadtentwicklung in Saudi-Arabien, den Vereinigten Arabischen Emiraten, Oman, Katar und Bahrain seit dem Ölzeitalter."
+      }
+    },
+    "t22": {
+      "signature": "b110fe4d967c9eb6",
+      "en": "Colonial and modern South Asia",
+      "de": "Koloniales und modernes Südasien",
+      "description": {
+        "en": "India and South Asia from colonial rule to independence and the Cold War: nationalism and the left, Indians in Germany, Indo-German relations and the GDR, and the journal Nidan.",
+        "de": "Indien und Südasien von der Kolonialherrschaft bis zur Unabhängigkeit und zum Kalten Krieg: Nationalismus und Linke, Inder in Deutschland, deutsch-indische Beziehungen und die DDR sowie die Zeitschrift Nidan."
+      }
+    },
+    "t23": {
+      "signature": "15b5bd75410a7625",
+      "en": "The world wars beyond Europe",
+      "de": "Die Weltkriege jenseits Europas",
+      "description": {
+        "en": "The First and Second World Wars as experienced in Africa, Asia and the Middle East: colonial soldiers, prisoners of war at Wünsdorf and Zossen, propaganda, and commemoration.",
+        "de": "Der Erste und der Zweite Weltkrieg in Afrika, Asien und dem Nahen Osten: Kolonialsoldaten, Kriegsgefangene in Wünsdorf und Zossen, Propaganda und Gedenken."
+      }
+    },
+    "t24": {
+      "signature": "a898f1eb73d26768",
+      "en": "Film and cinema, especially in Pakistan",
+      "de": "Film und Kino, vor allem in Pakistan",
+      "description": {
+        "en": "Pakistani cinema and filmmaking, film in Muslim societies, and documentary and newsreel images of India in the GDR.",
+        "de": "Pakistanisches Kino und Filmschaffen, Film in muslimischen Gesellschaften sowie Dokumentar- und Wochenschaubilder Indiens in der DDR."
+      }
+    }
+  }
+}

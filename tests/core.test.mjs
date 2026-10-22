@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createFilters, indexForSearch, applyFilters } from '../publications_dashboard/src/store/filters.js';
+import { createFilters, indexForSearch, applyFilters, accessOf, countActive } from '../publications_dashboard/src/store/filters.js';
 import { decodeFilters, encodeFilters } from '../publications_dashboard/src/store/url.js';
 import { AppStore } from '../publications_dashboard/src/store/AppStore.js';
 import { coauthorGraph, stackedYearSeries } from '../publications_dashboard/src/utils/aggregate.js';
@@ -50,7 +50,8 @@ test('timeline retains empty years and series counts', () => {
     assert.deepEqual(result.map(r=>r.total),[0,1,1]);
 });
 test('contract rejects unsafe URLs, duplicate IDs and malformed authors', () => {
-    const meta={schemaVersion:1,source:'https://example.org',counts:{publications:3}};
+    const meta={schemaVersion:2,source:'https://example.org',counts:{publications:3}};
+    assert.throws(()=>validateDataset(records,{...meta,schemaVersion:1}));
     assert.equal(validateDataset(records,meta).publications,records);
     assert.throws(()=>validateDataset([{...records[0],url:'javascript:alert(1)'}],meta));
     assert.throws(()=>validateDataset([{...records[0],authors:'A'}],meta));
@@ -114,4 +115,58 @@ test('functional secondary text clears 4.5:1 on its supported surfaces', async (
         const ratio = (luminance(value(surface))+.05)/(luminance(value(ink))+.05);
         assert.ok(ratio >= 4.5, `${ink} on ${surface}: ${ratio}`);
     }
+});
+
+
+test('theme, language and access filters combine with the others and exclude themselves', () => {
+    const enriched = indexForSearch([
+        { slug:'x', url:'https://example.org/x', title:'Swahili poetry', theme:'t04', lang:'en', oa:'gold', year:2020 },
+        { slug:'y', url:'https://example.org/y', title:'Dichtung', theme:'t04', lang:'de', oa:'closed', year:2021 },
+        { slug:'z', url:'https://example.org/z', title:'Untitled', year:2022 }
+    ], { themes:[{ id:'t04', label:{ en:'Swahili and West African cultures', de:'Swahili-Kulturen' } }] });
+    assert.deepEqual(enriched.map(accessOf), ['open', 'closed', 'unknown']);
+    const f = createFilters(); f.theme.add('t04'); f.lang.add('und'); f.lang.add('de');
+    assert.deepEqual(applyFilters(enriched, f).map(r => r.slug), ['y']);
+    assert.equal(applyFilters(enriched, f, { except:'lang' }).length, 2);
+    f.lang.clear(); f.access.add('unknown');
+    assert.equal(applyFilters(enriched, f).length, 0);
+    assert.equal(countActive(f), 2);
+    // A theme's label is searchable in both languages.
+    const g = createFilters(); g.search = 'swahili-kulturen';
+    assert.deepEqual(applyFilters(enriched, g).map(r => r.slug), ['x', 'y']);
+});
+
+test('URL round trip covers the new dimensions and drops malformed values', () => {
+    const f = createFilters(); f.theme.add('t07'); f.lang.add('und'); f.access.add('open');
+    assert.deepEqual(decodeFilters(new URLSearchParams(encodeFilters(f))), f);
+    const bad = decodeFilters('?theme=7&theme=t07&lang=English&access=free');
+    assert.deepEqual([...bad.theme], ['t07']);
+    assert.equal(bad.lang.size + bad.access.size, 0);
+});
+
+test('companion files validate against the committed dataset and refuse another', async () => {
+    const { validateThemes, validateOpenAlex, validatePeople } = await import('../publications_dashboard/src/utils/contracts.js');
+    const { readFile } = await import('node:fs/promises');
+    const read = async name => JSON.parse(await readFile(new URL(`../publications_dashboard/data/${name}`, import.meta.url)));
+    const [meta, publications, themes, openalex, people] = await Promise.all(
+        ['meta.json', 'publications.json', 'themes.json', 'openalex.json', 'people.json'].map(read));
+    assert.equal(validateDataset(publications, meta).meta, meta);
+    assert.equal(validateThemes(themes, meta, publications.length), themes);
+    assert.equal(validateOpenAlex(openalex, meta, publications.length), openalex);
+    assert.equal(validatePeople(people), people);
+    const other = { ...meta, datasetId: 'another' };
+    assert.throws(() => validateThemes(themes, other, publications.length));
+    assert.throws(() => validateOpenAlex(openalex, other, publications.length));
+    assert.throws(() => validateThemes(themes, meta, publications.length - 1));
+    assert.throws(() => validatePeople({ 'Doe, Jane': { url: 'https://example.org/jane', current: true } }));
+    // Every record's theme is one the themes file names, and every label is attributed.
+    const ids = new Set(themes.themes.map(t => t.id));
+    assert.ok(publications.every(r => !r.theme || ids.has(r.theme)));
+    assert.match(themes.attribution.labels.author, /Claude Opus 5\.5/);
+});
+
+test('open-access status is never inferred for unmatched records', () => {
+    assert.equal(accessOf({}), 'unknown');
+    assert.equal(accessOf({ oa: 'closed' }), 'closed');
+    assert.equal(accessOf({ oa: 'diamond' }), 'open');
 });

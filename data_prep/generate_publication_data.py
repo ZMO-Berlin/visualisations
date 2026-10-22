@@ -8,7 +8,11 @@ and writes ``publications_dashboard/data/``:
     journal, publisher and series names consolidated so the same entity is one
     entry in every chart;
   * ``meta.json`` — the source, the document types in filter order, and the
-    counts the app shows before it has aggregated anything.
+    counts the app shows before it has aggregated anything;
+  * ``families.json`` — volume–chapter relationships;
+  * ``people.json``, ``themes.json``, ``openalex.json`` — the enrichment layers
+    (zmo.de people pages, the thematic map, OpenAlex), built by
+    ``dashboard_extras.py`` from whichever of their inputs exist.
 
 Fields the dashboard does not use — abstracts, cover images, ISBNs, the
 chapter/volume links — stay in ``raw_data`` rather than being shipped to every
@@ -46,6 +50,7 @@ REPO_ROOT = SCRIPT_DIR.parent
 
 DEFAULT_INPUT = SCRIPT_DIR / "raw_data" / "publications.json"
 DEFAULT_ALIASES = SCRIPT_DIR / "aliases.json"
+DEFAULT_LABELS = SCRIPT_DIR / "theme_labels.json"
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "publications_dashboard" / "data"
 
 # Fields the dashboard actually reads. Everything else stays in raw_data — the
@@ -56,6 +61,10 @@ RECORD_FIELDS = (
     "slug", "url", "title", "subtitle", "authors", "type",
     "year", "journal", "publisher", "series", "doi",
 )
+# Added after consolidation by dashboard_extras.annotate, in this order: the
+# detected language, the theme, and what OpenAlex says (id, open-access status
+# and a free copy's URL). Each is omitted when there is nothing to say.
+ENRICHED_FIELDS = ("lang", "theme", "openalex", "oa", "oaUrl")
 
 # Venue fields that get the same consolidation, and the section of aliases.json
 # each one reads.
@@ -369,7 +378,7 @@ def build_dataset(records: list[dict], aliases: dict) -> tuple[list[dict], NameI
     return dataset, names, venues
 
 
-def build_meta(dataset: list[dict], source: str, document_types: list[str]) -> dict:
+def build_meta(dataset: list[dict], source: str, document_types: list[str], coverage: dict | None = None) -> dict:
     years = sorted(record["year"] for record in dataset if record.get("year"))
     authors = {name for record in dataset for name in record.get("authors", [])}
     types = Counter(record.get("type", "") for record in dataset)
@@ -377,7 +386,7 @@ def build_meta(dataset: list[dict], source: str, document_types: list[str]) -> d
 
     return {
         "source": source,
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "datasetId": __import__("output").identity(dataset),
         # Filter order, then whatever the crawl found that the filter does not
         # list, so a new type appears in the UI rather than vanishing.
@@ -401,6 +410,8 @@ def build_meta(dataset: list[dict], source: str, document_types: list[str]) -> d
         ]
         if years
         else [],
+        # What the enrichment layers cover, stated beside each of their views.
+        "coverage": coverage or {},
     }
 
 
@@ -435,6 +446,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR,
         help=f"where to write the JSON (default: {DEFAULT_OUTPUT_DIR.relative_to(REPO_ROOT)})",
+    )
+    parser.add_argument(
+        "--labels", type=Path, default=DEFAULT_LABELS,
+        help="theme labels (default: data_prep/theme_labels.json)",
     )
     parser.add_argument(
         "--report-merges", action="store_true",
@@ -472,11 +487,18 @@ def main(argv: list[str] | None = None) -> int:
             raise ValueError('Unsafe publication URL')
         if record.get('year') is not None and (not isinstance(record['year'], int) or not 1000 <= record['year'] <= 9999):
             raise ValueError('Invalid publication year')
+    import dashboard_extras as extras_module
+    extras = extras_module.load(args.input.parent, args.labels)
+    extras_module.annotate(dataset, records, extras)
+    people = extras_module.people_file(dataset, extras)
     meta = build_meta(
         dataset,
         source=payload.get("source", ""),
         document_types=payload.get("document_types", []),
+        coverage=extras_module.coverage(dataset, people, extras),
     )
+    themes = extras_module.themes_file(dataset, extras, meta["datasetId"])
+    openalex = extras_module.openalex_file(dataset, extras, meta["datasetId"])
 
     if args.report_merges:
         print("\nauthors")
@@ -492,6 +514,10 @@ def main(argv: list[str] | None = None) -> int:
     write_json(args.output_dir / "families.json", build_families(records))
     write_json(args.output_dir / "publications.json", dataset)
     write_json(args.output_dir / "meta.json", meta)
+    write_json(args.output_dir / "people.json", people)
+    for name, layer in (("themes.json", themes), ("openalex.json", openalex)):
+        if layer is not None:
+            write_json(args.output_dir / name, layer)
 
     counts = meta["counts"]
     merged = len(names.merges()) + sum(len(venues[field].merges()) for field in VENUE_FIELDS)
@@ -505,7 +531,10 @@ def main(argv: list[str] | None = None) -> int:
     if meta["years"]:
         print(f"years {meta['years']['min']}–{meta['years']['max']}, "
               f"{counts['withoutYear']} without one, {counts['untyped']} without a type")
-    print(f"wrote {args.output_dir / 'publications.json'} and meta.json")
+    reach = meta["coverage"]
+    print(f"{reach['zmoAuthors']} author(s) linked to zmo.de, {reach['openalex']} record(s) in OpenAlex, "
+          f"{reach['themed']} with a theme")
+    print(f"wrote {args.output_dir / 'publications.json'} and its companion files")
     return 0
 
 

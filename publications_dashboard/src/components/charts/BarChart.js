@@ -27,11 +27,13 @@ export class BarChart {
      * @param {(key: string) => void} deps.onSelect
      * @param {(key: string) => string} [deps.formatLabel]
      */
-    constructor(container, { settings, strings, onSelect, formatLabel, seriesIndex }) {
+    constructor(container, { settings, strings, onSelect, formatLabel, formatTitle, seriesIndex }) {
         this.container = container;
         this.strings = strings;
         this.onSelect = onSelect;
         this.formatLabel = formatLabel ?? (key => key);
+        // The hover text; the theme ranking puts each theme's description here.
+        this.formatTitle = formatTitle ?? ((key, count) => `${this.formatLabel(key)} — ${count}`);
         // Only the document-type chart passes this: its bars share the stacked
         // timeline's colours, so one type is the same colour in both panels.
         // The author and venue rankings stay single-hue.
@@ -85,7 +87,7 @@ export class BarChart {
             type: 'button',
             'aria-pressed': String(isSelected),
             dataset: { key },
-            title: `${this.formatLabel(key)} — ${count}`,
+            title: this.formatTitle(key, count),
             on: { click: () => this.onSelect(key) }
         }, [
             el('span', { class: 'bar__label', text: this.formatLabel(key) }),

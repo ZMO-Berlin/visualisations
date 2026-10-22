@@ -3,10 +3,18 @@ import { el, mount } from '../utils/dom.js';
 import { countValues, rank, yearExtent } from '../utils/aggregate.js';
 import { Pager } from '../../../shared/pager.js';
 
-/** Expanded views are rendered on demand; every pattern links to source records. */
+/**
+ * Expanded views are rendered on demand; every pattern links to source records.
+ *
+ * `sections` adds views defined elsewhere — the enrichment layers' — as
+ * `{ key, title, available(), render(body, context), reset?(), destroy?() }`.
+ * They open, close and redraw exactly like the built-in ones, and stay hidden
+ * while the data they need is absent.
+ */
 export class Analysis {
-    constructor(container, { store, strings, typeLabel }) {
+    constructor(container, { store, strings, typeLabel, sections = [] }) {
         Object.assign(this, { container, store, s: strings, typeLabel });
+        this.extras = new Map(sections.map(section => [section.key, section]));
         this.mode = 'count';
         this.sections = new Map();
         this.pairPager = new Pager({ strings, pageSize: 15, onChange: () => this.collaborators() });
@@ -16,11 +24,26 @@ export class Analysis {
             const details = el('details', { class: 'analysis-section', on: { toggle: () => { if (details.open) this[key](); } } }, [el('summary', { text: title }), body]);
             this.sections.set(key, { details, body }); container.append(details);
         }
+        for (const section of sections) {
+            const body = el('div');
+            const details = el('details', { class: 'analysis-section', hidden: true, on: { toggle: () => { if (details.open) this.#draw(section.key); } } }, [el('summary', { text: section.title }), body]);
+            this.sections.set(section.key, { details, body }); container.append(details);
+        }
+    }
+    #draw(key) {
+        const extra = this.extras.get(key);
+        if (!extra) return this[key]();
+        if (!this.records) return;
+        extra.render(this.sections.get(key).body, { records: this.records, all: this.all, filters: this.filters });
     }
     render(records, all, filters) {
         this.records = records; this.all = all; this.filters = filters;
         this.pairPager.reset(); this.familyPager.reset();
-        for (const [key, { details }] of this.sections) if (details.open) this[key]();
+        for (const extra of this.extras.values()) {
+            extra.reset?.();
+            this.sections.get(extra.key).details.hidden = !extra.available();
+        }
+        for (const [key, { details }] of this.sections) if (details.open && !details.hidden) this.#draw(key);
     }
     sourceList(records) {
         return el('ul', {}, records.map(record => el('li', {}, [el('a', { href: record.url, target: '_blank', rel: 'noopener noreferrer', text: `${record.year ? `${record.year} · ` : ''}${record.title || record.slug}` })])));
@@ -116,5 +139,9 @@ export class Analysis {
             if (!this.destroyed) mount(body, el('div', {}, [this.s.loadError, el('button', { type: 'button', text: this.s.retry, on: { click: () => this.families() } })]));
         }
     }
-    destroy() { this.destroyed = true; this.container.replaceChildren(); }
+    destroy() {
+        this.destroyed = true;
+        for (const extra of this.extras.values()) extra.destroy?.();
+        this.container.replaceChildren();
+    }
 }

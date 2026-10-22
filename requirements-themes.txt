@@ -1,0 +1,18 @@
+# Thematic map only: data_prep/build_themes.py and data_prep/gemma_encoder.py.
+#
+# Not installed by Validate or Deploy. The dashboard generator reads the
+# committed data_prep/raw_data/themes.json and never needs these, so the
+# everyday CI stays light; only the Update themes workflow and a local re-fit
+# install them. The model itself (google/embeddinggemma-2, ONNX export, fp32,
+# ~1.1 GB) is downloaded by huggingface_hub at the revisions pinned in
+# gemma_encoder.py.
+#
+# On Windows on ARM, numba (a umap-learn dependency) crashes inside LLVM when
+# UMAP compiles; use an x64 Python there. Everything else has native wheels.
+-r requirements.txt
+onnxruntime==1.31.0
+tokenizers==0.23.3
+huggingface_hub==2.2.0
+numpy==2.5.4
+scikit-learn==1.9.1
+umap-learn==0.5.12

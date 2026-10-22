@@ -21,6 +21,7 @@
 @import './modules/charts.css';
 @import './modules/list.css';
 @import './modules/tooltip.css';
+@import './modules/enrichment.css';
 
 /* Breakpoint overrides — must stay last */
 @import './modules/responsive.css';

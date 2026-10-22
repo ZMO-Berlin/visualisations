@@ -1,5 +1,8 @@
 # Python
 /.venv
+# Theme-map environments (requirements-themes.txt); see build_themes.py
+/.venv-themes
+/.venv-embed
 __pycache__/
 *.py[cod]
 
@@ -14,3 +17,6 @@ data_prep/word_frequencies_*.json
 # OS cruft
 .DS_Store
 Thumbs.db
+
+# Embedding cache written by build_themes.py: rebuilt from the model, not committed
+data_prep/.cache/

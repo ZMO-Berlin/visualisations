@@ -1,7 +1,9 @@
 name: Update publication data
 
-# Re-crawls the ZMO publication register and regenerates the dashboard dataset.
-# Successful completion triggers the validated Deploy Pages workflow.
+# Re-crawls the ZMO publication register, refreshes the enrichment layers
+# (zmo.de people pages, OpenAlex) and regenerates the dashboard dataset.
+# Successful completion triggers the validated Deploy Pages workflow, and the
+# Update themes workflow, which places new publications on the thematic map.
 
 on:
   schedule:
@@ -64,6 +66,40 @@ jobs:
           if [[ '${{ inputs.refresh_all }}' == 'true' || $(date -u +%m) =~ ^(01|04|07|10)$ ]]; then refresh+=(--refresh-all); fi
           python data_prep/scrape_publications.py "${refresh[@]}"
 
+      # The enrichment layers. Both scripts write atomically, so a step that
+      # fails leaves last month's committed file in place: a redesign of the
+      # people pages or an OpenAlex outage costs this month's enrichment, not
+      # the register refresh. The failure is still reported below.
+      - name: Crawl the people pages
+        id: people
+        continue-on-error: true
+        run: python data_prep/scrape_people.py
+
+      - name: Check people identities
+        if: steps.people.outcome == 'success'
+        run: python data_prep/check_refresh.py people
+
+      # Incremental by default: known matches are refreshed by id and only new
+      # or changed records are searched. The quarterly full run re-searches
+      # everything, as the register crawl does. OPENALEX_API_KEY (a repository
+      # secret) raises the daily budget; a full run fits within a free key's.
+      - name: Match the register in OpenAlex
+        id: openalex
+        continue-on-error: true
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          OPENALEX_MAILTO: ${{ vars.OPENALEX_MAILTO }}
+        run: |
+          refresh=()
+          if [[ '${{ inputs.refresh_all }}' == 'true' || $(date -u +%m) =~ ^(01|04|07|10)$ ]]; then refresh+=(--refresh-all); fi
+          python data_prep/enrich_openalex.py "${refresh[@]}"
+
+      - name: Report enrichment failures
+        if: steps.people.outcome == 'failure' || steps.openalex.outcome == 'failure'
+        run: |
+          echo "::warning::An enrichment step failed (people: ${{ steps.people.outcome }}, OpenAlex: ${{ steps.openalex.outcome }}); the previous files were kept."
+          echo "Enrichment failed — people: ${{ steps.people.outcome }}, OpenAlex: ${{ steps.openalex.outcome }}. The previously committed files were kept." >> "$GITHUB_STEP_SUMMARY"
+
       - name: Generate the dashboard dataset
         run: python data_prep/generate_publication_data.py
 
@@ -101,9 +137,9 @@ jobs:
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data_prep/raw_data publications_dashboard/data units_wordcloud/data en/index.html de/index.html
+          git add data_prep/raw_data data_prep/reports publications_dashboard/data units_wordcloud/data en/index.html de/index.html
           git commit -m 'Refresh publication data from zmo.de' \
-                     -m 'Automated monthly run of data_prep/scrape_publications.py and data_prep/generate_publication_data.py.'
+                     -m 'Automated monthly run of data_prep/scrape_publications.py, scrape_people.py, enrich_openalex.py and generate_publication_data.py.'
           # Rebase before pushing: the word cloud refresh writes to the same
           # branch, and a long crawl can outlast the gap between the two jobs.
           git pull --rebase origin main

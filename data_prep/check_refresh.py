@@ -23,14 +23,16 @@ def check_sets(before, after, label):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('kind', choices=['publications', 'units'])
+    parser.add_argument('kind', choices=['publications', 'units', 'people'])
     args = parser.parse_args()
     path = Path(f'data_prep/raw_data/{args.kind}.json')
     before = previous(path)
     after = json.loads(path.read_text(encoding='utf-8'))
     if before is None:
         return
-    if args.kind == 'publications':
+    if args.kind == 'people':
+        check_sets({p['slug'] for p in before['people']}, {p['slug'] for p in after['people']}, 'People')
+    elif args.kind == 'publications':
         check_sets({r['slug'] for r in before['publications']}, {r['slug'] for r in after['publications']}, 'Publications')
     else:
         current = {u['stem']: u for u in after['units']}
