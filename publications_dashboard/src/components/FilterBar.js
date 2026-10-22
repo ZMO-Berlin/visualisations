@@ -108,7 +108,7 @@ export class FilterBar {
 
         this.#clearButton.disabled = countActive(filters) === 0;
 
-        const chips = this.#chips(filters);
+        const chips = this.chips(filters);
         replaceContent(this.#chipsRow, ...chips);
         this.#chipsRow.hidden = chips.length === 0;
     }
@@ -162,7 +162,7 @@ export class FilterBar {
             class: 'button button--ghost',
             type: 'button',
             text: this.strings.clearFilters,
-            on: { click: () => { clearTimeout(this.#searchTimer); this.#searchInput.value = ''; this.#closeSuggestions(); this.store.clearFilters(); } }
+            on: { click: () => this.clear() }
         });
 
         this.#controlsRow = el('div', { class: 'command__row' }, [
@@ -449,7 +449,31 @@ export class FilterBar {
         ]);
     }
 
-    #chips(filters) {
+    /** Every filter, including a search still being typed, back to none. */
+    clear() {
+        clearTimeout(this.#searchTimer);
+        this.#searchInput.value = '';
+        this.#closeSuggestions();
+        this.store.clearFilters();
+    }
+
+    /**
+     * Back to the bar. Focus goes to the panel, not the search box: focusing an
+     * input would open the keyboard on a phone, over the bar just scrolled to.
+     */
+    reveal() {
+        this.container.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+        this.container.setAttribute('tabindex', '-1');
+        this.container.focus({ preventScroll: true });
+    }
+
+    /**
+     * One removable chip per active filter.
+     *
+     * Built afresh on every call, so the sticky summary (`FilterDock`) can show
+     * its own set beside this bar's.
+     */
+    chips(filters) {
         const chips = [];
 
         const chip = (label, onRemove) => el('span', { class: 'chip', role: 'listitem' }, [

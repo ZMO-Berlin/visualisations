@@ -32,6 +32,7 @@ import { formatNumber } from './utils/format.js';
 import { Tooltip } from './components/Tooltip.js';
 import { Summary } from './components/Summary.js';
 import { FilterBar } from './components/FilterBar.js';
+import { FilterDock } from './components/FilterDock.js';
 import { Timeline } from './components/charts/Timeline.js';
 import { BarChart } from './components/charts/BarChart.js';
 import { VenueChart } from './components/charts/VenueChart.js';
@@ -249,6 +250,7 @@ function bootstrap() {
         }
     });
     const summary = new Summary(filterBar.countsSlot, { strings, locale });
+    const filterDock = new FilterDock({ filterBar, strings, extra, locale });
 
     /**
      * Document types in a fixed order, with the smallest folded into one
@@ -475,6 +477,7 @@ function bootstrap() {
 
         summary.render(filtered, state.publications, !isEmpty(state.filters));
         filterBar.render(state, fullExtent);
+        filterDock.render(state.filters, filtered.length, state.publications.length);
 
         // Each chart is counted against everything *except* its own dimension,
         // so selecting one bar leaves the alternatives visible to switch to.
@@ -537,7 +540,7 @@ function bootstrap() {
     bindLifecycle({ suspend: () => network.suspend(), resume: () => { if (disclosure.open) network.resume(); }, destroy: () => {
         window.removeEventListener('popstate', restore);
         unsubscribe();
-        [summary, filterBar, timeline, typeChart, authorChart, venueChart, themePanel, regionPanel, subjectChart, yearRange,
+        [summary, filterBar, filterDock, timeline, typeChart, authorChart, venueChart, themePanel, regionPanel, subjectChart, yearRange,
             languageChart, accessChart, profiles, network, list, tooltip, analysis].forEach(component => component.destroy());
         store.destroy();
     } });

@@ -403,6 +403,18 @@ the author timelines are a heatmap on one scale; and every chart panel has a
 full-screen button. When the dashboard is embedded, the `<iframe>` needs
 `allow="fullscreen"` for that button to appear.
 
+Filters are set from charts all the way down the page but cleared at the top,
+so once the filter bar has scrolled out of sight and a filter is active, a slim
+bar slides in at the top of the window: the count, each filter as a removable
+chip (on a phone, "3 filters"), "Clear filters", and a button back to the bar.
+It is fixed rather than sticky, so it never pushes the page down as it appears.
+
+The regions map opens on Africa, Europe and Asia but draws the whole world:
+drag it to the Americas, zoom with the buttons or Ctrl/⌘ + scroll, or press the
+globe to see every place. A plain scroll keeps moving the page and the map
+says how to zoom instead; on a touch screen one finger scrolls the page and two
+move the map; on the full screen both work on the map directly.
+
 Both language pages accept `?debug`, which logs every state transition to the
 console.
 

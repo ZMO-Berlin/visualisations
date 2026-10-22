@@ -214,3 +214,12 @@ test('regions and subjects files validate against the committed dataset', async 
     // Continents and world regions have no single location and are never drawn.
     assert.ok(regions.places.every(p => !p.coord || !['continent', 'world'].includes(p.kind)));
 });
+
+test('English and German strings have the same keys', async () => {
+    const { getTranslations } = await import('../publications_dashboard/src/utils/translations.js');
+    const keys = locale => Object.keys(getTranslations(locale)).sort();
+    assert.deepEqual(keys('de'), keys('en'));
+    for (const key of ['oneFilter', 'manyFilters', 'wholeWorld', 'mapScrollHint', 'mapTouchHint', 'filterPlace']) {
+        assert.ok(getTranslations('de')[key], key);
+    }
+});

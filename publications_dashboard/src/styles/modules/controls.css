@@ -340,3 +340,112 @@
     color: var(--c-brand-strong);
     border-bottom-color: var(--c-brand);
 }
+
+/* ------------------------------------------------------------ Filter dock */
+
+/* The selection, pinned to the top of the window once the filter bar has
+   scrolled away (FilterDock.js). Fixed, not sticky, so appearing never pushes
+   the page; below the tooltip, which may need to pass over it. */
+.filter-dock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background: var(--c-surface);
+    border-bottom: 1px solid var(--c-line);
+    box-shadow: var(--shadow-2);
+    transform: translateY(-110%);
+    visibility: hidden;
+    transition: transform var(--dur-base) var(--ease-out), visibility 0s linear var(--dur-base);
+}
+
+.filter-dock--shown {
+    transform: none;
+    visibility: visible;
+    transition: transform var(--dur-base) var(--ease-out), visibility 0s;
+}
+
+.filter-dock__inner {
+    display: flex;
+    align-items: center;
+    gap: var(--s-3);
+    max-width: var(--w-page);
+    margin: 0 auto;
+    padding: var(--s-2) var(--s-8);
+}
+
+.filter-dock__count {
+    flex: none;
+    font-size: var(--text-sm);
+    font-weight: var(--weight-medium);
+    color: var(--c-ink);
+}
+
+/* One line however many filters: the chips scroll sideways. */
+.filter-dock__chips {
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    padding: 2px 0;
+}
+
+.filter-dock__chips .chip {
+    flex: none;
+}
+
+/* "3 filters" stands in for the chips on a phone only. */
+.filter-dock__active {
+    display: none;
+    font-size: var(--text-sm);
+    color: var(--c-ink-muted);
+}
+
+.filter-dock__actions {
+    display: flex;
+    flex: none;
+    gap: var(--s-2);
+    margin-left: auto;
+}
+
+.filter-dock__up {
+    display: inline-flex;
+    gap: var(--s-1);
+    align-items: center;
+}
+
+/* Where "Back to filters" lands: a little below the window's edge. */
+.filters {
+    scroll-margin-top: var(--s-4);
+}
+
+.filters:focus {
+    outline: none;
+}
+
+@media (max-width: 37.5rem) {
+    .filter-dock__inner {
+        padding: var(--s-2) var(--s-4);
+        gap: var(--s-2);
+    }
+
+    .filter-dock__chips,
+    .filter-dock__up-label {
+        display: none;
+    }
+
+    .filter-dock__active {
+        display: inline;
+    }
+
+    .filter-dock__count {
+        font-size: var(--text-xs);
+    }
+}
+
+@media print {
+    .filter-dock {
+        display: none;
+    }
+}

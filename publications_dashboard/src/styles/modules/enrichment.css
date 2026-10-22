@@ -324,10 +324,50 @@
     border-radius: var(--r-md);
 }
 
+/* One finger scrolls the page past the map; two move it (WorldMap.js). On the
+   full screen there is no page to scroll, and the map takes every gesture. */
 .world {
     --k: 1;
     cursor: grab;
+    touch-action: pan-x pan-y;
+}
+
+.world:active {
+    cursor: grabbing;
+}
+
+.panel--fullscreen .world {
     touch-action: none;
+}
+
+/* The edge of the world, seen once the map is zoomed out. */
+.world__sphere {
+    fill: none;
+    stroke: var(--c-line-strong);
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+}
+
+/* "Ctrl + scroll to zoom", shown briefly over the map after a plain scroll. */
+.world__nudge {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    margin: 0;
+    padding: var(--s-2) var(--s-3);
+    font-size: var(--text-sm);
+    text-align: center;
+    color: var(--c-surface);
+    background: var(--c-ink);
+    border-radius: var(--r-md);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--dur-fast) var(--ease-out);
+}
+
+.world__nudge--shown {
+    opacity: 0.88;
 }
 
 /* Outlines and bubble rims keep their width on screen at any zoom. */
@@ -345,6 +385,17 @@
     display: flex;
     flex-direction: column;
     gap: var(--s-1);
+}
+
+/* On a phone the map is shorter than four 44px buttons: they go in a row
+   beneath it instead. */
+@media (max-width: 36rem) {
+    .world__controls {
+        position: static;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: var(--s-2);
+    }
 }
 
 .fullscreen-row {

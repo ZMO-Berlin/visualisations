@@ -13,6 +13,7 @@
  */
 
 import { svg, el, mount } from '../../utils/dom.js';
+import { wheelDelta } from '../../utils/zoom.js';
 
 const WIDTH = 800;
 const HEIGHT = 460;
@@ -99,6 +100,7 @@ export class CitationNetwork {
             [svg('defs', {}, [marker]), viewport]);
         d3.select(canvas).call(d3.zoom().scaleExtent([0.4, 6])
             .filter(event => event.type !== 'wheel' || event.ctrlKey || event.metaKey)
+            .wheelDelta(wheelDelta)
             .on('zoom', event => viewport.setAttribute('transform', event.transform)));
         mount(this.container, canvas);
     }
