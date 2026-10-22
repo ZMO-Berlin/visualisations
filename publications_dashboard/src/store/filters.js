@@ -19,12 +19,37 @@ import { fold } from '../utils/format.js';
  */
 export const VENUE_FIELDS = ['journal', 'publisher'];
 
+/** The language key of a record whose title gave no confident answer. */
+export const UNDETERMINED = 'und';
+
+/** OpenAlex open-access statuses that mean a copy is free to read. */
+const OPEN_STATUSES = new Set(['gold', 'diamond', 'hybrid', 'bronze', 'green']);
+
+/**
+ * `open`, `closed`, or `unknown` — the last for every record OpenAlex did not
+ * match, which is most of them. Unknown is never folded into closed: a book
+ * chapter missing from OpenAlex says nothing about whether it can be read.
+ */
+export function accessOf(record) {
+    if (!record.oa) return 'unknown';
+    return OPEN_STATUSES.has(record.oa) ? 'open' : 'closed';
+}
+
+/** Set-valued dimensions, in the order chips and URLs list them. */
+export const SET_DIMENSIONS = ['type', 'author', 'venue', 'theme', 'lang', 'access'];
+
 export function createFilters() {
     return {
         type: new Set(),
         author: new Set(),
         /** Entries are `field:value`, e.g. `journal:Ethnos`. */
         venue: new Set(),
+        /** Theme ids from themes.json, e.g. `t07`. */
+        theme: new Set(),
+        /** ISO 639-1 codes, or `und`. */
+        lang: new Set(),
+        /** `open`, `closed`, `unknown`; see `accessOf`. */
+        access: new Set(),
         /** `[from, to]` inclusive, or null for the whole range. */
         years: null,
         search: ''
@@ -41,30 +66,23 @@ export function parseVenueKey(key) {
 }
 
 export function isEmpty(filters) {
-    return !filters.type.size
-        && !filters.author.size
-        && !filters.venue.size
-        && !filters.years
-        && !filters.search.trim();
+    return countActive(filters) === 0;
 }
 
 export function countActive(filters) {
-    return filters.type.size
-        + filters.author.size
-        + filters.venue.size
+    return SET_DIMENSIONS.reduce((sum, dimension) => sum + filters[dimension].size, 0)
         + (filters.years ? 1 : 0)
         + (filters.search.trim() ? 1 : 0);
 }
 
 /** A shallow clone; Sets are copied so state updates stay immutable. */
 export function cloneFilters(filters) {
-    return {
-        type: new Set(filters.type),
-        author: new Set(filters.author),
-        venue: new Set(filters.venue),
-        years: filters.years ? [...filters.years] : null,
-        search: filters.search
-    };
+    // Same key order as createFilters, so a clone serialises like the original.
+    const clone = {};
+    for (const dimension of SET_DIMENSIONS) clone[dimension] = new Set(filters[dimension]);
+    clone.years = filters.years ? [...filters.years] : null;
+    clone.search = filters.search;
+    return clone;
 }
 
 const PREDICATES = {
@@ -80,6 +98,15 @@ const PREDICATES = {
         }
         return VENUE_FIELDS.some(field => record[field] && filters.venue.has(venueKey(field, record[field])));
     },
+
+    theme: (record, filters) =>
+        !filters.theme.size || filters.theme.has(record.theme ?? ''),
+
+    lang: (record, filters) =>
+        !filters.lang.size || filters.lang.has(record.lang ?? UNDETERMINED),
+
+    access: (record, filters) =>
+        !filters.access.size || filters.access.has(accessOf(record)),
 
     years: (record, filters) => {
         if (!filters.years) {
@@ -124,7 +151,10 @@ export function applyFilters(records, filters, { except } = {}) {
  * the data arrives, and cached on the record under a `$`-prefixed key that
  * marks it as derived rather than part of the dataset.
  */
-export function indexForSearch(records) {
+export function indexForSearch(records, themes = null) {
+    // A theme's label in both languages is searchable, so "Swahili" finds the
+    // theme's records even where no title says it.
+    const themeText = new Map((themes?.themes ?? []).map(theme => [theme.id, `${theme.label.en} ${theme.label.de}`]));
     for (const record of records) {
         record.$haystack = fold([
             record.title,
@@ -134,7 +164,8 @@ export function indexForSearch(records) {
             record.publisher,
             record.series,
             record.type,
-            record.year
+            record.year,
+            themeText.get(record.theme)
         ].filter(Boolean).join(' '));
     }
     return records;

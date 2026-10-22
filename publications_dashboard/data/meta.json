@@ -1,7 +1,7 @@
 {
  "source": "https://www.zmo.de/en/publications/publication-search",
- "schemaVersion": 1,
- "datasetId": "95c3c7069581e4de",
+ "schemaVersion": 2,
+ "datasetId": "fb1a12563c92e51d",
  "documentTypes": [
   "Monographs",
   "Book reviews",
@@ -156,5 +156,31 @@
    "year": 2026,
    "count": 45
   }
- ]
+ ],
+ "coverage": {
+  "languages": {
+   "en": 1157,
+   "de": 343,
+   "und": 338,
+   "fr": 79,
+   "ar": 22,
+   "tr": 15,
+   "it": 8,
+   "es": 6,
+   "ms": 2,
+   "ru": 2,
+   "sw": 2,
+   "pl": 1,
+   "zh": 1
+  },
+  "zmoAuthors": 174,
+  "withZmoAuthor": 1718,
+  "openalex": 833,
+  "access": {
+   "closed": 499,
+   "open": 334,
+   "unknown": 1143
+  },
+  "themed": 1976
+ }
 }

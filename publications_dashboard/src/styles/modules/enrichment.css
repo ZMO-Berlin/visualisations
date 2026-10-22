@@ -1,0 +1,307 @@
+/*
+ * The enrichment layers: thematic map, theme ranking, provenance notes,
+ * author profiles, open-access and theme tags, and the citation graph.
+ *
+ * Area colours reuse the eight categorical series of `tokens.css`; SVG needs
+ * them as `fill`, which the `series-N` background classes cannot supply.
+ */
+
+.fill-1 { fill: var(--series-1); }
+.fill-2 { fill: var(--series-2); }
+.fill-3 { fill: var(--series-3); }
+.fill-4 { fill: var(--series-4); }
+.fill-5 { fill: var(--series-5); }
+.fill-6 { fill: var(--series-6); }
+.fill-7 { fill: var(--series-7); }
+.fill-8 { fill: var(--series-8); }
+
+/* ------------------------------------------------------------ Theme panel */
+
+.theme-panel__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(16rem, 1fr);
+    gap: var(--s-6);
+    align-items: start;
+    margin-top: var(--s-3);
+}
+
+.theme-panel__subtitle {
+    margin: var(--s-4) 0 var(--s-2);
+    font-family: var(--font-display);
+    font-size: var(--text-md);
+    font-weight: var(--weight-regular);
+    color: var(--c-brand-strong);
+}
+
+.theme-panel__grid .theme-panel__subtitle {
+    margin-top: 0;
+}
+
+.map-frame {
+    position: relative;
+}
+
+.map {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--c-surface-sunk);
+    border-radius: var(--r-md);
+}
+
+.map__point {
+    opacity: 0.82;
+    cursor: pointer;
+    transition: opacity var(--dur-fast) var(--ease-out);
+}
+
+.map__point:hover {
+    opacity: 1;
+    stroke: var(--c-ink);
+    stroke-width: 1.5;
+}
+
+/* A filter greys out what it leaves out instead of removing it, so the
+   selection is seen against the whole register. */
+.map--filtered .map__point--out {
+    fill: var(--c-line-strong);
+    opacity: 0.32;
+}
+
+/* Pointing at a theme or area beside the map: its points stay, the rest
+   recede. Declared after the filter rule so a highlight can show a theme the
+   current filter has greyed out. */
+.map--highlighting .map__point {
+    opacity: 0.1;
+}
+
+.map--highlighting .map__point--hl {
+    opacity: 1;
+}
+
+.map__status {
+    min-height: 1.4em;
+    margin-top: var(--s-1);
+    font-size: var(--text-xs);
+    color: var(--c-ink-soft);
+}
+
+.map-legend__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+}
+
+.map-legend__item {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+    min-height: 32px;
+    padding: var(--s-1) var(--s-3);
+    border: var(--border);
+    border-radius: var(--r-pill);
+    background: var(--c-surface);
+    font: inherit;
+    font-size: var(--text-sm);
+    color: var(--c-ink);
+    cursor: pointer;
+}
+
+.map-legend__item:hover {
+    border-color: var(--c-line-strong);
+}
+
+.map-legend__item--on {
+    background: var(--c-brand-tint-strong);
+    border-color: var(--c-brand);
+}
+
+.map-legend__swatch,
+.legend-swatch {
+    display: inline-block;
+    flex: none;
+    width: 10px;
+    height: 10px;
+    border-radius: var(--r-xs);
+}
+
+.legend-swatch {
+    margin-right: var(--s-2);
+    vertical-align: baseline;
+}
+
+/* ----------------------------------------------------- Provenance, caveats */
+
+/* Marked by its "AI" badge rather than a coloured rule: the badge says what
+   the note is, which a stripe down the side cannot. */
+.provenance {
+    margin-top: var(--s-4);
+    max-width: 92ch;
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    color: var(--c-ink-muted);
+}
+
+.provenance a {
+    color: var(--c-brand);
+}
+
+.provenance__badge {
+    display: inline-block;
+    margin-right: var(--s-2);
+    padding: 0 var(--s-2);
+    border-radius: var(--r-xs);
+    background: var(--c-accent-tint);
+    color: var(--c-accent-strong);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--track-caps);
+}
+
+.caveat {
+    margin: var(--s-3) 0 var(--s-4);
+    padding: var(--s-3) var(--s-4);
+    max-width: 92ch;
+    border: 1px solid color-mix(in srgb, var(--c-accent) 30%, var(--c-surface));
+    border-radius: var(--r-md);
+    background: var(--c-accent-tint);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    color: var(--c-ink);
+}
+
+.inline-ranking {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+    color: var(--c-ink-muted);
+}
+
+/* ------------------------------------------------------- Author profiles */
+
+.profiles-slot {
+    margin: var(--s-3) 0;
+    padding: var(--s-3) var(--s-4);
+    border: var(--border);
+    border-radius: var(--r-md);
+    background: var(--c-surface);
+}
+
+.profiles__title {
+    font-size: var(--text-xs);
+    font-weight: var(--weight-medium);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--c-ink-soft);
+}
+
+.profiles__list {
+    list-style: none;
+    margin: var(--s-2) 0;
+    padding: 0;
+}
+
+.profile {
+    margin: var(--s-1) 0;
+    font-size: var(--text-sm);
+    line-height: 1.6;
+}
+
+.profile a {
+    color: var(--c-brand);
+}
+
+.profile__none {
+    color: var(--c-ink-soft);
+}
+
+/* ------------------------------------------------------------ List tags */
+
+.list__author {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--c-line-strong);
+    text-underline-offset: 2px;
+}
+
+.list__author:hover {
+    color: var(--c-brand);
+    text-decoration-color: currentColor;
+}
+
+.tag--open {
+    background: color-mix(in srgb, var(--series-6) 14%, var(--c-surface));
+    color: #135c13;
+}
+
+.tag--theme {
+    display: inline-flex;
+    align-items: center;
+    border: 0;
+    font: inherit;
+    font-size: var(--text-2xs);
+    cursor: pointer;
+}
+
+.tag--theme:hover {
+    background: var(--c-brand-tint-strong);
+}
+
+.tag--theme .legend-swatch {
+    width: 8px;
+    height: 8px;
+    margin-right: var(--s-1);
+}
+
+/* ------------------------------------------------- Co-authorship network */
+
+/* People with a zmo.de page are darker; outside co-authors keep the light
+   default. Selection still wins. */
+.network__node--zmo:not(.network__node--selected) {
+    fill: var(--c-brand-soft);
+}
+
+/* --------------------------------------------------------- Citation graph */
+
+.citations {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--c-surface-sunk);
+    border-radius: var(--r-md);
+    cursor: grab;
+}
+
+.citations__link {
+    stroke: var(--c-line-strong);
+    stroke-width: 1;
+}
+
+.citations__arrowhead {
+    fill: var(--c-ink-faint);
+}
+
+.citations__node {
+    stroke: var(--c-surface);
+    stroke-width: 1;
+    cursor: pointer;
+}
+
+.citations__node:hover,
+.citations__node:focus-visible {
+    stroke: var(--c-ink);
+    stroke-width: 2;
+    outline: none;
+}
+
+.share-table th[scope="row"] {
+    white-space: nowrap;
+    max-width: 22rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 56rem) {
+    .theme-panel__grid {
+        grid-template-columns: 1fr;
+    }
+}

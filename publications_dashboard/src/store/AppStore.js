@@ -21,6 +21,10 @@ export class AppStore {
             error: null,
             publications: [],
             meta: {},
+            /** Register author → their zmo.de page; see people.json. */
+            people: {},
+            /** Themes, areas and map positions, or null without them. */
+            themes: null,
             filters: createFilters()
         };
     }
@@ -40,12 +44,17 @@ export class AppStore {
         this.#update({ status: 'loading', error: null });
 
         try {
-            const { publications, meta } = await this.service.load();
+            const { publications, meta, people = {}, themes = null } = await this.service.load();
             if (this.destroyed || request !== this.request) return;
+            // Companion files refer to records by position, so each record
+            // keeps its own; filtering produces subsets, not new indices.
+            publications.forEach((record, index) => { record.$index = index; });
             this.#update({
                 status: 'ready',
-                publications: indexForSearch(publications),
-                meta
+                publications: indexForSearch(publications, themes),
+                meta,
+                people,
+                themes
             });
         } catch (error) {
             if (this.destroyed || request !== this.request) return;
@@ -109,6 +118,14 @@ export class AppStore {
         this.#setFilters(filters);
     }
 
+    /** One theme in one period, from a cell of the themes-over-time table. */
+    focusTheme(theme, years) {
+        const filters = cloneFilters(this.state.filters);
+        filters.theme = new Set([theme]);
+        filters.years = years;
+        this.#setFilters(filters);
+    }
+
     setSearch(text) {
         if (text === this.state.filters.search) {
             return;
@@ -147,6 +164,7 @@ export class AppStore {
     select(except) {
         const key = except ?? '*';
         const signature = JSON.stringify(Object.entries(this.state.filters).filter(([dimension]) => dimension !== except)
+            .sort(([a], [b]) => a.localeCompare(b))
             .map(([dimension, value]) => [dimension, value instanceof Set ? [...value].sort() : value]));
         const cached = this.#cache.get(key);
         if (!cached || cached.signature !== signature) {
@@ -187,7 +205,6 @@ export class AppStore {
             try {
                 listener(this.state, previous);
             } catch (error) {
-            if (this.destroyed || request !== this.request) return;
                 console.error('A subscriber threw while rendering state', error);
             }
         }

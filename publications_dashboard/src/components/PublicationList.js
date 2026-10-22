@@ -9,6 +9,7 @@
 
 import { el, mount } from '../utils/dom.js';
 import { formatNumber } from '../utils/format.js';
+import { accessOf } from '../store/filters.js';
 import { Pager } from './Pager.js';
 
 export class PublicationList {
@@ -21,12 +22,18 @@ export class PublicationList {
      * @param {(key: string) => number} deps.seriesIndex The type's palette slot,
      *   so a row's square is the same colour as its band in the timeline.
      */
-    constructor(container, { settings, strings, locale, formatLabel, seriesIndex }) {
+    /**
+     * @param {object} deps.enrichment Optional lookups from the enrichment
+     *   layers: `person(name)` → zmo.de profile or undefined, `themeLabel(id)`,
+     *   `themeSlot(id)`, `languageName(code)`, `onTheme(id)`.
+     */
+    constructor(container, { settings, strings, locale, formatLabel, seriesIndex, enrichment = {} }) {
         this.container = container;
         this.strings = strings;
         this.locale = locale;
         this.formatLabel = formatLabel;
         this.seriesIndex = seriesIndex;
+        this.enrichment = enrichment;
         this.pager = new Pager({
             strings,
             pageSize: settings.list.pageSize,
@@ -81,7 +88,7 @@ export class PublicationList {
         const title = [record.title, record.subtitle].filter(Boolean).join(': ')
             || record.slug;
         const venue = record.journal || record.publisher || record.series;
-        const authors = record.authors?.join('; ');
+        const authors = this.#authors(record.authors ?? []);
 
         return el('li', { class: 'list__item' }, [
             el('span', { class: 'list__year', text: record.year ?? '—' }),
@@ -101,22 +108,52 @@ export class PublicationList {
                     title: this.strings.openOnZmo,
                     text: title
                 }),
-                (authors || venue) && el('p', { class: 'list__meta' }, [
-                    authors,
-                    authors && venue && ' · ',
+                (authors.length || venue) && el('p', { class: 'list__meta' }, [
+                    ...authors,
+                    authors.length && venue && ' · ',
                     venue && el('span', { class: 'list__venue', text: venue })
                 ]),
-                record.doi && el('p', { class: 'list__tags' }, [
-                    el('a', {
-                        class: 'tag tag--link',
-                        href: `https://doi.org/${record.doi}`,
-                        target: '_blank',
-                        rel: 'noopener noreferrer',
-                        text: `DOI ${record.doi}`
-                    })
-                ])
+                this.#tags(record)
             ])
         ]);
+    }
+
+    /** Names, each linked to its zmo.de page when one was matched. */
+    #authors(names) {
+        const parts = [];
+        names.forEach((name, index) => {
+            if (index) parts.push('; ');
+            const person = this.enrichment.person?.(name);
+            parts.push(person
+                ? el('a', {
+                    class: 'list__author', href: person.url, target: '_blank', rel: 'noopener noreferrer',
+                    title: `${this.strings.zmoProfile}${person.position ? ` — ${person.position}` : ''}`,
+                    text: name
+                })
+                : name);
+        });
+        return parts;
+    }
+
+    /** DOI, free copy, OpenAlex record, theme and language. */
+    #tags(record) {
+        const { themeLabel, themeSlot, languageName, onTheme } = this.enrichment;
+        const link = (href, text, extra = '') => el('a', {
+            class: `tag tag--link${extra}`, href, target: '_blank', rel: 'noopener noreferrer', text
+        });
+        const tags = [
+            record.doi && link(`https://doi.org/${record.doi}`, `DOI ${record.doi}`),
+            accessOf(record) === 'open' && record.oaUrl && link(record.oaUrl, this.strings.freeToRead, ' tag--open'),
+            accessOf(record) === 'open' && !record.oaUrl && el('span', { class: 'tag tag--open', text: this.strings.freeToRead }),
+            record.openalex && link(`https://openalex.org/${record.openalex}`, this.strings.openalexRecord),
+            record.theme && themeLabel && el('button', {
+                type: 'button', class: 'tag tag--theme',
+                title: this.strings.filterTheme,
+                on: { click: () => onTheme(record.theme) }
+            }, [el('span', { class: `legend-swatch series-${themeSlot(record.theme)}`, 'aria-hidden': 'true' }), themeLabel(record.theme)]),
+            record.lang && languageName && el('span', { class: 'tag', text: languageName(record.lang) })
+        ].filter(Boolean);
+        return tags.length ? el('p', { class: 'list__tags' }, tags) : null;
     }
 
     destroy() {

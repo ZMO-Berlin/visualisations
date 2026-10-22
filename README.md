@@ -6,7 +6,7 @@ Two static web apps built from data scraped from the
 | App | What it shows | Lives in | Published at |
 | --- | --- | --- | --- |
 | **Word cloud** | The most frequent terms in each research unit's description and project abstracts | `units_wordcloud/` | [/units_wordcloud/](https://zmo-berlin.github.io/visualisations/units_wordcloud/) |
-| **Publications dashboard** | The publication register — output per year, document types, authors, co-authorship, journals and publishers | `publications_dashboard/` | [/publications_dashboard/](https://zmo-berlin.github.io/visualisations/publications_dashboard/) |
+| **Publications dashboard** | The publication register — output per year, research themes, document types, authors, languages, open access, co-authorship, journals and publishers, collaborating institutions and citations | `publications_dashboard/` | [/publications_dashboard/](https://zmo-berlin.github.io/visualisations/publications_dashboard/) |
 
 The site root is a landing page that introduces the two and links to them, in
 English and German. The Deploy Pages workflow validates `main` and publishes an
@@ -74,17 +74,30 @@ data_prep/                   Offline data pipelines (Python)
   scrape_zmo.py              zmo.de research units -> text
   generate_word_data.py      Text -> word-frequency JSON
   scrape_publications.py     zmo.de publication register -> publications.json
-  generate_publication_data.py   publications.json -> dashboard dataset
+  scrape_people.py           zmo.de people pages -> people.json
+  enrich_openalex.py         register -> OpenAlex matches, citations -> openalex.json
+  build_themes.py            titles -> embeddings -> themes and map -> themes.json
+  gemma_encoder.py           EmbeddingGemma 2 (ONNX, fp32) for build_themes.py
+  languages.py               Language of a title (Lingua plus register-specific rules)
+  people.py                  Register author <-> people page, by name
+  dashboard_extras.py        The enrichment layers of the dashboard dataset
+  generate_publication_data.py   publications.json + layers -> dashboard dataset
   aliases.json               Hand-curated spelling merges (typos, renamed venues)
+  theme_labels.json          Theme names, written by Claude Opus 5.5 from the brief
+  reports/                   Not deployed: OpenAlex gap report, theme brief
   raw_data/                  Scraper output, committed for readable diffs
     <Unit>.txt               One file per research unit
     units.json               Manifest of what the unit scraper collected
     publications.json        Every publication, with all fields the site shows
+    people.json              People pages: position, current units, ORCID
+    openalex.json            OpenAlex matches, references and citations
+    themes.json              Theme, area and map position of every publication
 
 units_wordcloud/             Word cloud app (static)
 publications_dashboard/      Publications dashboard app (static)
 
 requirements.txt             Python dependencies for the pipelines only
+requirements-themes.txt      Plus the embedding model's runtime, for build_themes.py
 ```
 
 Each app follows the same shape:
@@ -334,9 +347,17 @@ is lazy-loaded; a failed cloud dependency still leaves the frequency list usable
 # The publications dashboard
 
 Everything in ZMO's [publication register](https://www.zmo.de/en/publications/publication-search)
-— 1,976 publications, 1994–2026, 668 authors — as five linked views: output per
-year, document types, most-published authors, where ZMO publishes, and who
-publishes with whom, over the full list of publications underneath.
+— 1,976 publications, 1994–2026, 668 authors — as linked views: output per
+year, research themes, document types, most-published authors, the language of
+each title, open access, where ZMO publishes, and who publishes with whom, over
+the full list of publications underneath. *Explore patterns* adds themes and
+languages over time, collaborating institutions and citations.
+
+Four sources beyond the register feed those views, each named where its data
+appears: zmo.de's people pages, OpenAlex, automatic language detection, and a
+thematic map computed with an embedding model and named by a language model.
+See [Enrichment layers](#enrichment-layers) for what each contributes and where
+it stops.
 
 **Every chart is a filter.** Click a column, a bar, a legend entry or an author
 node and the whole dashboard narrows to it; the choices stack, and each one
@@ -368,11 +389,15 @@ console.
 
 ## Regenerating the publications data
 
-Two stages, the same shape as the word cloud: crawl the register, then reduce it
-to what the app loads.
+The same shape as the word cloud — crawl, then reduce to what the app loads —
+with the enrichment layers in between. Each layer is optional to the generator:
+a missing input leaves its fields out.
 
 ```bash
 python data_prep/scrape_publications.py          # zmo.de -> data_prep/raw_data/publications.json
+python data_prep/scrape_people.py                # zmo.de -> data_prep/raw_data/people.json
+python data_prep/enrich_openalex.py              # OpenAlex -> data_prep/raw_data/openalex.json
+python data_prep/build_themes.py                 # titles -> data_prep/raw_data/themes.json (requirements-themes.txt)
 python data_prep/generate_publication_data.py    # -> publications_dashboard/data/*.json
 ```
 
@@ -543,6 +568,117 @@ and ellipsize for free. The co-authorship graph is the exception: it needs
 
 ---
 
+## Enrichment layers
+
+What the register does not say, four other sources do — each kept in its own
+file, each named in the dashboard next to what it produced, and each stating
+its coverage before its figures. The generator joins them in
+[`dashboard_extras.py`](data_prep/dashboard_extras.py); the plan and the
+measurements that shaped them are in
+[the roadmap](docs/roadmap-2026-10-22.md).
+
+| Layer | Source | Reach (October 2026) | Shown as |
+| --- | --- | --- | --- |
+| People | zmo.de people pages | 290 people; 174 register authors linked, in 1,718 publications | author links, profile line, darker network nodes |
+| OpenAlex | [OpenAlex](https://openalex.org) (CC0) | 833 of 1,976 publications matched | open access, institutions, citations |
+| Language | titles, [Lingua](https://github.com/pemistahl/lingua-py) | 1,638 of 1,976 determined | language ranking, languages over time |
+| Themes | [EmbeddingGemma 2](https://huggingface.co/google/embeddinggemma-2), names by Claude Opus 5.5 | every publication | map, theme ranking, themes over time |
+
+The secondary dashboard files (`themes.json`, `openalex.json`) refer to
+records by their position in `publications.json` and carry the dataset id they
+were built against; the dashboard refuses a mismatched pair rather than attach
+institutions to the wrong publications.
+
+### People pages — `scrape_people.py`
+
+Crawls the directorate, research fellows, associated and affiliated
+researchers, guests, research support and former fellows and staff — every
+listing is paginated ten to a page, and the former staff alone run to 21 pages
+— and each person's page. It keeps the name, position, the research units of
+the projects linked in the *current research* lines (German links mapped to the
+English unit slugs), regional focus and an ORCID iD if one is linked. It never
+stores email addresses, phone numbers or CV text, and does not crawl student
+assistants.
+
+[`people.py`](data_prep/people.py) joins people to register authors by name,
+with the rules the generator already trusts for merges: the same words in any
+order, or a given name that extends the other — and only when the pairing is
+unique both ways. "Ahmed, M." stays unlinked between a Mohammed and a Mahmoud.
+Research units are shown for current members only: a former fellow's unit is
+not a current one, and units are never projected back onto older publications.
+
+### OpenAlex — `enrich_openalex.py`
+
+Matches the register to OpenAlex by DOI, then against the works OpenAlex
+attributes to ZMO, then by title — requiring title similarity, the year within
+one and a shared author surname, refusing ties. Book reviews are matched by DOI
+only: a review's title is the reviewed book's. The run is incremental: known
+matches are refreshed by id and only new or changed records are searched;
+`--refresh-all` (used quarterly by the workflow) re-searches everything.
+OpenAlex now meters requests, so title searches are batched; an
+`OPENALEX_API_KEY` raises the daily budget and is sent as a header, never in a
+URL. Abstracts are not copied — they belong to the publishers.
+
+Coverage is the story here, and the dashboard tells it first. Books, chapters
+and work not in English are poorly represented, and fewer than two in five
+matched works carry a reference list, so the citations view opens with a caveat stating
+how much of the current selection it can see, and nothing in it ranks people.
+The gap report, `data_prep/reports/openalex-gaps.csv`, lists ZMO-affiliated
+works OpenAlex knows that the register does not, and register DOIs OpenAlex
+cannot resolve — for ZMO's library, not for the site.
+
+### Language — `languages.py`
+
+The register records no language, so it is detected from title and subtitle,
+and labelled as detected. Lingua alone misread the register in four ways the
+rules now handle: bracketed translations outvoted the title, Arabic-script
+titles carrying a transliteration went to German or Malay, transliterated
+Arabic was read as Indonesian, and place names outvoted grammar ("… in Burkina
+Faso" as French). Function words decide first; Lingua is consulted only when
+they are inconclusive, and only at high confidence. A book review's title is the
+reviewed book's, so reviews are "undetermined", as are titles too short to tell.
+
+### Themes — `build_themes.py`
+
+Every title and subtitle is embedded with EmbeddingGemma 2 through its pinned
+ONNX export in fp32 (the same model build as the IWAC pipeline), with the
+model's clustering prefix. Formulaic prefixes and reviews' imprints are
+removed; a generic title such as "Introduction" gets its volume's title as
+context. Each language's mean vector is subtracted so that themes follow
+subject rather than language. k-means makes 24 themes, grouped by Ward linkage
+into eight areas — the categorical palette's limit — and UMAP lays out the map.
+All seeds are fixed and the method is recorded in `themes.json`.
+
+Two trial runs shaped this and are worth knowing before changing it: adding
+abstracts made clusters split by *whether a record had an abstract*, and
+journal or series names as context made genres (encyclopaedia entries, a
+project's online resources) into themes. Three of the 24 still group short or
+generic titles; their labels begin "Mixed".
+
+**The labels are written by a language model, and say so.** `--refit` writes
+[`reports/theme-brief.md`](data_prep/reports/theme-brief.md) — each theme's
+distinctive terms, the titles nearest its centre and a seeded sample, without
+author names — and Claude Opus 5.5 (Anthropic) wrote the English and German
+names and descriptions in [`theme_labels.json`](data_prep/theme_labels.json)
+from it. They have not been reviewed by ZMO staff; the dashboard says this
+under the map. Each label carries a signature of the membership it was written
+for, and the generator refuses labels whose signature no longer matches, so a
+re-fit cannot ship old names on new groups.
+
+Day to day the fit is kept: the *Update themes* workflow embeds new
+publications and gives each the theme with the nearest centroid and a place
+beside its most similar neighbours. A re-fit is a deliberate local act:
+
+```bash
+python -m venv .venv-themes && .venv-themes/Scripts/pip install -r requirements-themes.txt
+.venv-themes/Scripts/python data_prep/build_themes.py --refit   # then relabel from reports/theme-brief.md
+```
+
+On Windows on ARM, numba (used by UMAP) crashes inside LLVM; use an x64 Python.
+Embedding is several times faster with four onnxruntime threads than with all
+cores on a hybrid-core laptop (`--threads`, default 4). Embeddings are cached in
+`data_prep/.cache/`, which is not committed.
+
 ## Shared pipeline code
 
 [`data_prep/zmo_site.py`](data_prep/zmo_site.py) holds what both scrapers need:
@@ -563,8 +699,14 @@ those dates without changing the content-derived dataset IDs.
 | Workflow | Runs | Does |
 | --- | --- | --- |
 | [`update-word-data.yml`](.github/workflows/update-word-data.yml) | 04:00 UTC on the 1st | Both word cloud stages |
-| [`update-publication-data.yml`](.github/workflows/update-publication-data.yml) | 05:00 UTC on the 1st | Both publications stages |
+| [`update-publication-data.yml`](.github/workflows/update-publication-data.yml) | 05:00 UTC on the 1st | Both publications stages, plus the people pages and OpenAlex |
+| [`update-themes.yml`](.github/workflows/update-themes.yml) | After each publication refresh | Places new publications on the thematic map (no re-fit) |
 | [`validate.yml`](.github/workflows/validate.yml) | Every push and pull request | Tests, syntax, JSON and generated-data checks |
+
+The OpenAlex step reads an `OPENALEX_API_KEY` repository secret and an
+optional `OPENALEX_MAILTO` variable. The people and OpenAlex steps may fail
+without failing the refresh: both write atomically, so last month's file stays
+and the run summary reports the failure.
 
 Each commits to `main` only if something changed. Successful completion triggers
 Deploy Pages explicitly through `workflow_run`; this also works for commits made
@@ -692,12 +834,15 @@ Split, because the repository holds two different things:
 | | Licence | Covers |
 | --- | --- | --- |
 | Code | [MIT](LICENSE) | Everything in `data_prep/`, `shared/`, `landing/`, `tests/`, and both apps' `src/` and HTML |
-| Data | [CC BY 4.0](LICENSE-DATA) | `data_prep/raw_data/`, `data_prep/aliases.json`, and both apps' `data/` |
+| Data | [CC BY 4.0](LICENSE-DATA) | `data_prep/raw_data/`, `data_prep/aliases.json`, `data_prep/theme_labels.json`, and both apps' `data/` |
 
 The data is derived from zmo.de — the research-unit and project descriptions,
-and the publication register — so the rights in the source material are the
-institute's, and the CC BY grant rests on this repository being published by
-the institute itself.
+the publication register and the people pages — so the rights in the source
+material are the institute's, and the CC BY grant rests on this repository
+being published by the institute itself. `raw_data/openalex.json` holds
+OpenAlex metadata, which OpenAlex releases under CC0. The theme names in
+`theme_labels.json` were generated by Claude Opus 5.5 and are marked as such
+wherever they are shown.
 
 Two things are excluded from both. The bundled Newsreader and Instrument Sans
 typefaces in `shared/fonts/` are third-party, under the SIL Open Font License.

@@ -133,9 +133,12 @@ export class CoauthorNetwork {
      * @param {object} deps.d3 The global d3 bundle, injected rather than reached for.
      * @param {import('../Tooltip.js').Tooltip} deps.tooltip
      * @param {(author: string) => void} deps.onSelect
+     * @param {(author: string) => object|undefined} [deps.personOf] The
+     *   author's zmo.de profile, if matched; such nodes are drawn darker.
      */
-    constructor(container, { settings, strings, locale, d3, tooltip, onSelect }) {
+    constructor(container, { settings, strings, locale, d3, tooltip, onSelect, personOf = () => undefined }) {
         this.container = container;
+        this.personOf = personOf;
         this.settings = settings;
         this.strings = strings;
         this.locale = locale;
@@ -261,8 +264,9 @@ export class CoauthorNetwork {
         const labels = [];
 
         for (const node of graph.nodes) {
+            const person = this.personOf(node.id);
             const circle = svg('circle', {
-                class: 'network__node',
+                class: `network__node${person ? ' network__node--zmo' : ''}`,
                 r: scale(node.count),
                 tabindex: '0',
                 role: 'button',
@@ -276,7 +280,8 @@ export class CoauthorNetwork {
                         }
                     },
                     pointerenter: event => this.tooltip.show(
-                        [node.id, `${node.count} ${this.strings.publications}`], event
+                        [node.id, `${node.count} ${this.strings.publications}`,
+                            person && (person.current ? this.strings.zmoCurrent : this.strings.zmoFormer)], event
                     ),
                     pointermove: event => this.tooltip.move(event),
                     pointerleave: () => this.tooltip.hide()

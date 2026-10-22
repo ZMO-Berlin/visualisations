@@ -5,6 +5,9 @@ import { copyView, csv, download } from '../../shared/download.js';
 import { exportTimeline } from '../../shared/chart-export.js';
 import { decodeFilters, encodeFilters, FILTER_KEYS } from './store/url.js';
 import { Analysis } from './components/Analysis.js';
+import { AuthorProfiles } from './components/AuthorProfiles.js';
+import { enrichedSections } from './components/EnrichedSections.js';
+import { ThemePanel } from './components/ThemePanel.js';
 /**
  * Application root: the one place where dependencies are constructed and wired.
  *
@@ -15,14 +18,15 @@ import { Analysis } from './components/Analysis.js';
  */
 
 import { createSettings } from './config/settings.js';
-import { getLocale, getTranslations, translateType } from './utils/translations.js';
+import { fill, getLocale, getTranslations, languageName, translateType } from './utils/translations.js';
 import { PublicationService } from './services/PublicationService.js';
 import { AppStore } from './store/AppStore.js';
-import { isEmpty } from './store/filters.js';
+import { accessOf, isEmpty, UNDETERMINED } from './store/filters.js';
 import {
     coauthorGraph, countValues, rank, stackedYearSeries, topKeysWithOther, yearExtent
 } from './utils/aggregate.js';
 import { el, mount, panel } from './utils/dom.js';
+import { formatNumber } from './utils/format.js';
 import { Tooltip } from './components/Tooltip.js';
 import { Summary } from './components/Summary.js';
 import { FilterBar } from './components/FilterBar.js';
@@ -128,38 +132,55 @@ function bootstrap() {
     // --- Panels -------------------------------------------------------------
 
     const timelinePanel = makePanel({ title: strings.overTime, hint: strings.overTimeHint });
+    const themesPanel = makePanel({ title: strings.themes, hint: strings.themesHint });
     const typePanel = makePanel({ title: strings.documentTypes });
     const authorPanel = makePanel({ title: strings.topAuthors });
+    const languagePanel = makePanel({ title: strings.languages, hint: strings.languagesHint });
+    const accessPanel = makePanel({ title: strings.access, hint: strings.accessHint });
     const venuePanel = makePanel({ title: strings.venues });
     const networkPanel = makePanel({ title: strings.coauthorship, hint: strings.coauthorshipHint });
     const listPanel = makePanel({ title: strings.publicationList });
 
     timelinePanel.section.classList.add('panel--wide');
+    themesPanel.section.classList.add('panel--wide');
+    themesPanel.section.hidden = true;
     networkPanel.section.classList.add('panel--wide');
     venuePanel.section.classList.add('panel--wide');
     listPanel.section.id = 'publication-results';
     listPanel.section.classList.add('panel--wide');
 
     panels.replaceChildren(
-        timelinePanel.section, typePanel.section, authorPanel.section,
+        timelinePanel.section, themesPanel.section, typePanel.section, authorPanel.section,
+        languagePanel.section, accessPanel.section,
         venuePanel.section, networkPanel.section, listPanel.section
     );
+
+    // Built before the analysis sections and the list, which borrow its theme
+    // labels and colours; configured once the themes file has arrived.
+    const themePanel = new ThemePanel(themesPanel.body, { settings, strings, locale, tooltip, store });
+    const themeLabel = id => themePanel.label?.(id) ?? id;
+    const themeSlot = id => themePanel.slotOf?.get(id) ?? 8;
+    const personOf = name => store.getState().people[name];
 
     const analysisBody = el('div');
     const analysisPanel = panel({ title: extra.analysis }, analysisBody);
     analysisPanel.classList.add('panel--wide');
     networkPanel.section.before(analysisPanel);
-    const analysis = new Analysis(analysisBody, { store, strings: extra, typeLabel });
+    const analysis = new Analysis(analysisBody, {
+        store, strings: extra, typeLabel,
+        sections: enrichedSections({ store, strings, locale, service, d3: window.d3, tooltip, themePanel })
+    });
     const networkContent = networkPanel.section.querySelector('.panel__body');
     const disclosure = el('details', { class: 'analysis-section' }, [el('summary', { text: strings.coauthorship }), networkContent]);
     networkPanel.section.append(disclosure);
     networkPanel.section.querySelector('.panel__head').hidden = true;
-    networkContent.prepend(el('p', { class: 'explore-hint', text: extra.networkLegend }));
+    networkContent.prepend(el('p', { class: 'explore-hint', text: `${extra.networkLegend} ${strings.networkZmo}` }));
     disclosure.addEventListener('toggle', () => {
         if (disclosure.open) renderNetwork(); else network.suspend();
     });
     const methods = el('details', { class: 'methodology' }, [el('summary', { text: extra.methodology }), el('p', { text: extra.publicationMethod })]);
-    const coverage = el('p'); methods.append(coverage);
+    const sources = el('p');
+    const coverage = el('p'); methods.append(sources, coverage);
     header.after(methods);
     showFreshness('publication', methods, locale, extra.refresh);
     const actions = el('div', { class: 'explore-actions' });
@@ -169,7 +190,9 @@ function bootstrap() {
         el('button', { type: 'button', text: extra.copyLink, on: { click: e => copyView(e.currentTarget, extra) } }),
         el('button', { type: 'button', text: extra.csv, dataset: { export: '' }, on: { click: () => {
             const state = store.getState();
-            download(csv([['title', 'authors', 'year', 'type', 'journal', 'publisher', 'doi', 'url', 'dataset', 'scope'], ...store.select().map(r => [r.title, r.authors?.join('; '), r.year, r.type, r.journal, r.publisher, r.doi, r.url, state.meta.datasetId, scope()])]), 'zmo-publications.csv');
+            download(csv([['title', 'authors', 'year', 'type', 'journal', 'publisher', 'doi', 'url', 'language_detected', 'theme_ai_label', 'open_access_openalex', 'openalex', 'dataset', 'scope'],
+                ...store.select().map(r => [r.title, r.authors?.join('; '), r.year, r.type, r.journal, r.publisher, r.doi, r.url,
+                    r.lang ?? UNDETERMINED, r.theme ? themeLabel(r.theme) : '', accessOf(r), r.openalex, state.meta.datasetId, scope()])]), 'zmo-publications.csv');
         } } }));
     for (const format of ['svg', 'png']) actions.append(el('button', { type: 'button', text: extra[format], dataset: { export: '' }, on: { click: async e => {
         const button = e.currentTarget; button.disabled = true;
@@ -182,12 +205,21 @@ function bootstrap() {
         finally { button.disabled = false; }
     } } }));
     actions.append(exportStatus);
-    document.getElementById('filters').after(actions, el('p', { class: 'explore-hint', text: extra.scope }));
+    const profilesSlot = el('div', { class: 'profiles-slot', hidden: true });
+    document.getElementById('filters').after(profilesSlot, actions, el('p', { class: 'explore-hint', text: extra.scope }));
+    const profiles = new AuthorProfiles(profilesSlot, { strings });
     listPanel.section.append(el('a', { href: '#filters', text: extra.backFilters }));
 
     // Order matters: the filter bar owns the command panel, and the summary is
     // written into a slot inside it.
-    const filterBar = new FilterBar(document.getElementById('filters'), { strings, store });
+    const filterBar = new FilterBar(document.getElementById('filters'), {
+        strings, store,
+        labels: {
+            theme: themeLabel,
+            lang: code => languageName(strings, locale, code),
+            access: value => strings.accessLabel[value] ?? value
+        }
+    });
     const summary = new Summary(filterBar.countsSlot, { strings, locale });
 
     /**
@@ -255,18 +287,40 @@ function bootstrap() {
 
     const venueChart = new VenueChart(venuePanel.body, { settings, strings, store });
 
+    const languageChart = new BarChart(languagePanel.body, {
+        settings, strings,
+        onSelect: code => store.toggle('lang', code),
+        formatLabel: code => languageName(strings, locale, code)
+    });
+
+    // Fixed order rather than ranked: unknown is the largest bar and would
+    // otherwise come first, reading as the headline.
+    const ACCESS = ['open', 'closed', 'unknown'];
+    const accessChart = new BarChart(accessPanel.body, {
+        settings, strings,
+        onSelect: value => store.toggle('access', value),
+        formatLabel: value => strings.accessLabel[value] ?? value
+    });
+
     const network = new CoauthorNetwork(networkPanel.body, {
         settings, strings, locale, tooltip,
         // d3 is loaded by the page as a global; injecting it here keeps the
         // component free of that assumption and testable with a stub.
         d3: window.d3,
-        onSelect: author => store.toggle('author', author)
+        onSelect: author => store.toggle('author', author),
+        personOf
     });
 
     const list = new PublicationList(listPanel.body, {
         settings, strings, locale,
         formatLabel: typeLabel,
-        seriesIndex: typeSlot
+        seriesIndex: typeSlot,
+        enrichment: {
+            person: personOf,
+            themeLabel, themeSlot,
+            languageName: code => languageName(strings, locale, code),
+            onTheme: id => store.toggle('theme', id)
+        }
     });
 
     // --- Rendering ----------------------------------------------------------
@@ -354,6 +408,12 @@ function bootstrap() {
         );
         renderSource(state.meta.source);
         coverage.textContent = `${extra.missing}: ${state.meta.counts.withoutYear} ${extra.undated}; ${state.meta.counts.untyped} ${extra.untyped}. Dataset ${state.meta.datasetId}.`;
+        sources.textContent = fill(strings.sourcesNote, Object.fromEntries(Object.entries(state.meta.coverage ?? {})
+            .map(([key, value]) => [key, typeof value === 'number' ? formatNumber(value, locale) : value])));
+        if (state.themes && !themePanel.themes) {
+            themePanel.configure(state.themes);
+            themesPanel.section.hidden = false;
+        }
         writeParams(encodeFilters(state.filters), FILTER_KEYS);
 
         const filtered = store.select();
@@ -386,6 +446,14 @@ function bootstrap() {
 
         safely(venueChart, () => venueChart.render(store.select('venue'), state.filters.venue));
 
+        safely(themePanel, () => themePanel.render(state, store.select('theme'), filtered));
+        safely(languageChart, () => languageChart.render(memo(store.select('lang'), 'langs', r => rank(countValues(r, record => record.lang ?? UNDETERMINED))), state.filters.lang));
+        safely(accessChart, () => accessChart.render(memo(store.select('access'), 'access', r => {
+            const counts = countValues(r, accessOf);
+            return ACCESS.filter(key => counts.get(key)).map(key => ({ key, count: counts.get(key) }));
+        }), state.filters.access));
+        profiles.render(state.filters.author, state.people);
+
         // Like the author ranking, the network excludes the author filter: the
         // whole graph stays on screen instead of collapsing to the one author
         // and their co-authors, which would leave nothing to click next. The
@@ -407,7 +475,7 @@ function bootstrap() {
     bindLifecycle({ suspend: () => network.suspend(), resume: () => { if (disclosure.open) network.resume(); }, destroy: () => {
         window.removeEventListener('popstate', restore);
         unsubscribe();
-        [summary, filterBar, timeline, typeChart, authorChart, venueChart, network, list, tooltip, analysis].forEach(component => component.destroy());
+        [summary, filterBar, timeline, typeChart, authorChart, venueChart, themePanel, languageChart, accessChart, profiles, network, list, tooltip, analysis].forEach(component => component.destroy());
         store.destroy();
     } });
 }

@@ -66,10 +66,12 @@ export class FilterBar {
      * @param {object} deps.strings
      * @param {import('../store/AppStore.js').AppStore} deps.store
      */
-    constructor(container, { strings, store }) {
+    constructor(container, { strings, store, labels = {} }) {
         this.container = container;
         this.strings = strings;
         this.store = store;
+        // How a theme id, language code or access value reads in a chip.
+        this.labels = labels;
         // Eagerly, not on first render: the counts slot below has to exist
         // before `Summary` can be constructed against it, and the whole point
         // of the merge is that the counts live inside this panel.
@@ -484,6 +486,14 @@ export class FilterBar {
 
         for (const key of filters.venue) {
             chips.push(chip(parseVenueKey(key).value, () => this.store.toggle('venue', key)));
+        }
+
+        const named = [['theme', this.strings.chipTheme], ['lang', this.strings.chipLanguage], ['access', this.strings.chipAccess]];
+        for (const [dimension, prefix] of named) {
+            for (const value of filters[dimension]) {
+                const label = this.labels[dimension]?.(value) ?? value;
+                chips.push(chip(`${prefix}: ${label}`, () => this.store.toggle(dimension, value)));
+            }
         }
 
         return chips;

@@ -3,7 +3,7 @@ name: Deploy Pages
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: [Validate, Update publication data, Update word cloud data]
+    workflows: [Validate, Update publication data, Update word cloud data, Update themes]
     types: [completed]
     branches: [main]
 

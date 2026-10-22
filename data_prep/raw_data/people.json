@@ -1,0 +1,3160 @@
+{
+ "source": "https://www.zmo.de/en/people",
+ "listings": [
+  "directorate",
+  "research-fellows",
+  "associated-researchers",
+  "affiliated-researchers",
+  "guests",
+  "research-support",
+  "former-fellows-and-staff"
+ ],
+ "people": [
+  {
+   "slug": "abdel-qader-amer",
+   "url": "https://www.zmo.de/en/people/abdel-qader-amer",
+   "name": "Abdel Qader Amer",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "agit-kadino",
+   "url": "https://www.zmo.de/en/people/agit-kadino",
+   "name": "Agit Kadino",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "ahlem-hajaji",
+   "url": "https://www.zmo.de/en/people/ahlem-hajaji",
+   "name": "Ahlem Hajaji",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "aikaterini-lykoudi",
+   "url": "https://www.zmo.de/en/people/aikaterini-lykoudi",
+   "name": "Aikaterini Lykoudi",
+   "display_name": "Dr. Aikaterini Lykoudi",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Russian–Ottoman Relations and the Karaite Question in Late Imperial Russia",
+     "url": "https://www.zmo.de/en/research/state-and-society/justimino/aikaterini-lykoudi-state-and-society"
+    }
+   ]
+  },
+  {
+   "slug": "akmal-bazarbaev",
+   "url": "https://www.zmo.de/en/people/akmal-bazarbaev",
+   "name": "Akmal Bazarbaev",
+   "display_name": "Dr. Akmal Bazarbaev",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "regional_focus": "Central Asia, especially Uzbekistan"
+  },
+  {
+   "slug": "ali-dogan",
+   "url": "https://www.zmo.de/en/people/ali-dogan",
+   "name": "Ali Dogan",
+   "display_name": "Dr. Ali Dogan",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "alisher-karabaev",
+   "url": "https://www.zmo.de/en/people/alisher-karabaev",
+   "name": "Alisher Karabaev",
+   "categories": [
+    "research-support"
+   ],
+   "position": "Open Science and Special Collection",
+   "regional_focus": "Central Asia, South Asia, Togo",
+   "orcid": "0000-0002-6207-3200"
+  },
+  {
+   "slug": "amrita-chattopadhyay",
+   "url": "https://www.zmo.de/en/people/amrita-chattopadhyay",
+   "name": "Amrita Chattopadhyay",
+   "display_name": "Dr. Amrita Chattopadhyay",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "an-seebach",
+   "url": "https://www.zmo.de/en/people/an-seebach",
+   "name": "An Seebach",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "andre-chappatte",
+   "url": "https://www.zmo.de/en/people/andre-chappatte",
+   "name": "André Chappatte",
+   "display_name": "Dr. André Chappatte",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "anna-helfer",
+   "url": "https://www.zmo.de/en/people/anna-helfer",
+   "name": "Anna Helfer",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher"
+  },
+  {
+   "slug": "annegret-roelcke",
+   "url": "https://www.zmo.de/en/people/annegret-roelcke",
+   "name": "Annegret Roelcke",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "antoinette-ferrand",
+   "url": "https://www.zmo.de/en/people/antoinette-ferrand",
+   "name": "Antoinette Ferrand",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "anu-krishna",
+   "url": "https://www.zmo.de/en/people/anu-krishna",
+   "name": "Anu Krishna",
+   "display_name": "Dr. Anu Krishna",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliierte"
+  },
+  {
+   "slug": "arpan-roy",
+   "url": "https://www.zmo.de/en/people/arpan-roy",
+   "name": "Arpan Roy",
+   "display_name": "Dr. Arpan Roy",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "ashesh-kumar-dhar",
+   "url": "https://www.zmo.de/en/people/ashesh-kumar-dhar",
+   "name": "Ashesh Kumar Dhar",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "bello-adamou-mahamadou",
+   "url": "https://www.zmo.de/en/people/bello-adamou-mahamadou",
+   "name": "Bello Adamou Mahamadou",
+   "display_name": "Dr. Bello Adamou Mahamadou",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "benajamin-vrucak",
+   "url": "https://www.zmo.de/en/people/benajamin-vrucak",
+   "name": "Benjamin Vrucak",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "benita-kawalla",
+   "url": "https://www.zmo.de/en/people/benita-kawalla",
+   "name": "Benita Kawalla",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher"
+  },
+  {
+   "slug": "benjamin-heidrich",
+   "url": "https://www.zmo.de/en/people/benjamin-heidrich",
+   "name": "Benjamin Heidrich",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "besnik-sinani",
+   "url": "https://www.zmo.de/en/people/besnik-sinani",
+   "name": "Besnik Sinani",
+   "display_name": "Dr. Besnik Sinani",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "britta-frede",
+   "url": "https://www.zmo.de/en/people/britta-frede",
+   "name": "Britta Frede",
+   "display_name": "Dr. Britta Frede",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "brylov-denys",
+   "url": "https://www.zmo.de/en/people/brylov-denys",
+   "name": "Denys Brylov",
+   "display_name": "Dr. Denys Brylov",
+   "categories": [
+    "associated-researchers"
+   ],
+   "position": "Associated Researcher",
+   "regional_focus": "Post-Soviet countries, especially Ukraine and Russia"
+  },
+  {
+   "slug": "burcu-kalpaklioglu",
+   "url": "https://www.zmo.de/en/people/burcu-kalpaklioglu",
+   "name": "Burcu Kalpaklıoğlu",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "Rights and Lives: Tracing Haqq Through Divorce in Turkey",
+     "url": "https://www.zmo.de/en/forschung/lebenswege-und-oekologien/burcu-kalpaklioglu-lebenswege-und-oekologien"
+    }
+   ]
+  },
+  {
+   "slug": "christoph-s-sprung",
+   "url": "https://www.zmo.de/en/people/christoph-s-sprung",
+   "name": "Christoph S. Sprung",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "claudia-eggart",
+   "url": "https://www.zmo.de/en/people/claudia-eggart",
+   "name": "Claudia Eggart",
+   "display_name": "Dr. Claudia Eggart",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "claudia-schulz",
+   "url": "https://www.zmo.de/en/people/claudia-schulz",
+   "name": "Claudia Schulz",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dalila-nadi",
+   "url": "https://www.zmo.de/en/people/dalila-nadi",
+   "name": "Dalila Nadi",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "daniel-adde",
+   "url": "https://www.zmo.de/en/people/daniel-adde",
+   "name": "Daniel Adde",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "daniela-swarowsky",
+   "url": "https://www.zmo.de/en/people/daniela-swarowsky",
+   "name": "Daniela Swarowsky",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "david-leupold",
+   "url": "https://www.zmo.de/en/people/david-leupold",
+   "name": "David Leupold",
+   "display_name": "Dr. David Leupold",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "‘Relicts of (Another) Future?’ – The Afterlife of the Socialist City in Central Asia and the Southern Caucasus",
+     "url": "https://www.zmo.de/en/research/state-and-society/david-leupold-state-and-society"
+    }
+   ],
+   "regional_focus": "Central Asia, Southern Caucasus, Turkey"
+  },
+  {
+   "slug": "david-sarota",
+   "url": "https://www.zmo.de/en/people/david-sarota",
+   "name": "David Sarota",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "deepra-dandekar",
+   "url": "https://www.zmo.de/en/people/deepra-dandekar",
+   "name": "Deepra Dandekar",
+   "display_name": "Dr. Deepra Dandekar",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dipl-soz-dipl-krim-robert-pelzer",
+   "url": "https://www.zmo.de/en/people/dipl-soz-dipl-krim-robert-pelzer",
+   "name": "Robert Pelzer",
+   "display_name": "Dipl.-Soz., Dipl.-Krim. Robert Pelzer",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dorothee-peter",
+   "url": "https://www.zmo.de/en/people/dorothee-peter",
+   "name": "Dorothee Peter",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dozent-dr-samuli-schielke",
+   "url": "https://www.zmo.de/en/people/dozent-dr-samuli-schielke",
+   "name": "Samuli Schielke",
+   "display_name": "Dozent Dr. Samuli Schielke",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Head of Research Unit \"Lives and Ecologies\"",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "The Dream of Stability: Egyptian migrations and homes in the age of growth",
+     "url": "https://www.zmo.de/en/research/lives-and-ecologies/samuli-schielke-lives-and-ecologies"
+    }
+   ],
+   "regional_focus": "Egypt, Arabic speaking countries, translocal relations between Egypt, Arab Gulf states and Western Europe"
+  },
+  {
+   "slug": "dr-abdoulaye-sounaye",
+   "url": "https://www.zmo.de/en/people/dr-abdoulaye-sounaye",
+   "name": "Abdoulaye Sounaye",
+   "display_name": "PD Dr. Abdoulaye Sounaye",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Head of Research Unit \"Religion and Intellectual Culture\"",
+   "units": [
+    "religion-and-intellectual-culture"
+   ],
+   "projects": [
+    {
+     "title": "Boko: Europe, Intellectualism and Religiosity in Hausa Context",
+     "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/abdoulaye-sounaye-religion-and-intellectual-culture"
+    }
+   ],
+   "regional_focus": "West Africa"
+  },
+  {
+   "slug": "dr-abdulkader-tayob",
+   "url": "https://www.zmo.de/en/people/dr-abdulkader-tayob",
+   "name": "Abdulkader Tayob",
+   "display_name": "Dr. Abdulkader Tayob",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher"
+  },
+  {
+   "slug": "dr-ahmad-moradi",
+   "url": "https://www.zmo.de/en/people/dr-ahmad-moradi",
+   "name": "Ahmad Moradi",
+   "display_name": "Dr. Ahmad Moradi",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "Beyond Humanitarianism: Disability Care and Belonging of Afghan Veterans in Iran (DFG)",
+     "url": "https://www.zmo.de/en/research/lives-and-ecologies/ahmad-moradi"
+    }
+   ]
+  },
+  {
+   "slug": "dr-ahmed-badawi",
+   "url": "https://www.zmo.de/en/people/dr-ahmed-badawi",
+   "name": "Ahmed Badawi",
+   "display_name": "Dr. Ahmed Badawi",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-ahmed-el-shamsy",
+   "url": "https://www.zmo.de/en/people/dr-ahmed-el-shamsy",
+   "name": "Ahmed El Shamsy",
+   "display_name": "Dr. Ahmed El Shamsy",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-aissatou-mbodj",
+   "url": "https://www.zmo.de/en/people/dr-aissatou-mbodj",
+   "name": "Aïssatou Mbodj",
+   "display_name": "Dr. Aïssatou Mbodj",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-aksana-ismailbekova",
+   "url": "https://www.zmo.de/en/people/dr-aksana-ismailbekova",
+   "name": "Aksana Ismailbekova",
+   "display_name": "Dr. Aksana Ismailbekova",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "Future Building in Central Asia: Intergenerational Cooperation, Infrastructure, and Translocal Mobilities",
+     "url": "https://www.zmo.de/en/research/lives-and-ecologies/aksana-ismailbekova-lives-and-ecologies"
+    }
+   ],
+   "regional_focus": "Central Asia, especially Kyrgyzstan"
+  },
+  {
+   "slug": "dr-ali-nobil-ahmad",
+   "url": "https://www.zmo.de/en/people/dr-ali-nobil-ahmad",
+   "name": "Ali Nobil Ahmad",
+   "display_name": "Dr. Ali Nobil Ahmad",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-anandita-bajpai",
+   "url": "https://www.zmo.de/en/people/dr-anandita-bajpai",
+   "name": "Anandita Bajpai",
+   "display_name": "Dr. Anandita Bajpai",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Crafting Entanglements: Afro-Asian Pasts of the Global Cold War (CRAFTE)",
+     "url": "https://www.zmo.de/en/research/state-and-society/crafting-entanglements-afro-asian-pasts-of-the-global-cold-war-crafte"
+    },
+    {
+     "title": "Entangled Wavelengths: International Radio Broadcasters & their Afro-Asian Listening Publics",
+     "url": "https://www.zmo.de/en/research/state-and-society/crafte/anandita-bajpai-state-and-society"
+    }
+   ],
+   "regional_focus": "South Asia, especially India; India–The German Democratic Republic–The Federal Republic of Germany entanglements"
+  },
+  {
+   "slug": "dr-andrea-fischer-tahir",
+   "url": "https://www.zmo.de/en/people/dr-andrea-fischer-tahir",
+   "name": "Andrea Fischer-Tahir",
+   "display_name": "Dr. Andrea Fischer-Tahir",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-anja-peleikis",
+   "url": "https://www.zmo.de/en/people/dr-anja-peleikis",
+   "name": "Anja Peleikis",
+   "display_name": "Dr. Anja Peleikis",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-anna-safronova",
+   "url": "https://www.zmo.de/en/people/dr-anna-safronova",
+   "name": "Anna Safronova",
+   "display_name": "Dr. Anna Safronova",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "Fisherfolk of the Steppe: Water, Resource Use, and Environmental Transformation in Kazakhstan, 1950s–Present",
+     "url": "https://www.zmo.de/en/research/lives-and-ecologies/anna-safronova"
+    }
+   ],
+   "regional_focus": "Central A sia, Soviet Union",
+   "orcid": "0000-0002-3991-4331"
+  },
+  {
+   "slug": "dr-annemarie-hafner",
+   "url": "https://www.zmo.de/en/people/dr-annemarie-hafner",
+   "name": "Annemarie Hafner",
+   "display_name": "Dr. Annemarie Hafner",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-antia-mato-bouzas",
+   "url": "https://www.zmo.de/en/people/dr-antia-mato-bouzas",
+   "name": "Antía Mato Bouzas",
+   "display_name": "Dr. Antía Mato Bouzas",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-benjamin-zachariah",
+   "url": "https://www.zmo.de/en/people/dr-benjamin-zachariah",
+   "name": "Benjamin Zachariah",
+   "display_name": "Dr. Benjamin Zachariah",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-bernt-glatzer",
+   "url": "https://www.zmo.de/en/people/dr-bernt-glatzer",
+   "name": "Bernt Glatzer",
+   "display_name": "Dr. Bernt Glatzer",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-bettina-graef",
+   "url": "https://www.zmo.de/en/people/dr-bettina-graef",
+   "name": "Bettina Gräf",
+   "display_name": "Dr. Bettina Gräf",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-birgitte-stampe-holst",
+   "url": "https://www.zmo.de/en/people/dr-birgitte-stampe-holst",
+   "name": "Birgitte Stampe Holst",
+   "display_name": "Dr. Birgitte Stampe Holst",
+   "categories": [
+    "associated-researchers"
+   ],
+   "position": "Associated Researcher",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "After authoritarianism: How political thinking travels with Syrians to Germany and Denmark",
+     "url": "https://www.zmo.de/en/research/state-and-society/birgitte-holst-state-and-society"
+    }
+   ],
+   "regional_focus": "Middle East and Europe"
+  },
+  {
+   "slug": "dr-birk-laursen",
+   "url": "https://www.zmo.de/en/people/dr-birk-laursen",
+   "name": "Ole Birk Laursen",
+   "display_name": "Dr. Ole Birk Laursen",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-boerte-sagaster",
+   "url": "https://www.zmo.de/en/people/dr-boerte-sagaster",
+   "name": "Börte Sagaster",
+   "display_name": "Dr. Börte Sagaster",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-brigitte-buehler",
+   "url": "https://www.zmo.de/en/people/dr-brigitte-buehler",
+   "name": "Brigitte Bühler",
+   "display_name": "Dr. Brigitte Bühler",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-burkhard-ganzer",
+   "url": "https://www.zmo.de/en/people/dr-burkhard-ganzer",
+   "name": "Burkhard Ganzer",
+   "display_name": "Dr. Burkhard Ganzer",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-canay-sahin",
+   "url": "https://www.zmo.de/en/people/dr-canay-sahin",
+   "name": "Canay Şahin",
+   "display_name": "Dr. Canay Şahin",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-chanfi-ahmed",
+   "url": "https://www.zmo.de/en/people/dr-chanfi-ahmed",
+   "name": "Chanfi Ahmed",
+   "display_name": "Dr. Chanfi Ahmed",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-claudia-ghrawi",
+   "url": "https://www.zmo.de/en/people/dr-claudia-ghrawi",
+   "name": "Claudia Ghrawi",
+   "display_name": "Dr. Claudia Ghrawi",
+   "categories": [
+    "associated-researchers"
+   ],
+   "position": "Associated Researcher",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "The Inherited Garden: How Material and Remembered Legacies Shape Future-Making in Post-War Syria",
+     "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-claudia-ghrawi-lebenswege-und-oekologien"
+    }
+   ]
+  },
+  {
+   "slug": "dr-daniele-cantini",
+   "url": "https://www.zmo.de/en/people/dr-daniele-cantini",
+   "name": "Daniele Cantini",
+   "display_name": "Dr. Daniele Cantini",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher"
+  },
+  {
+   "slug": "dr-deniz-t-kilincoglu",
+   "url": "https://www.zmo.de/en/people/dr-deniz-t-kilincoglu",
+   "name": "Deniz T. Kilincoglu",
+   "display_name": "Dr. Deniz T. Kilincoglu",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Learning to feel like a nation: nationalism and emotions in Turkish school books",
+     "url": "https://www.zmo.de/en/research/state-and-society/deniz-t-kilincoglu-state-and-society"
+    }
+   ]
+  },
+  {
+   "slug": "dr-des-nils-riecken",
+   "url": "https://www.zmo.de/en/people/dr-des-nils-riecken",
+   "name": "Nils Riecken",
+   "display_name": "Dr. Nils Riecken",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-diliara-brileva",
+   "url": "https://www.zmo.de/en/people/dr-diliara-brileva",
+   "name": "Diliara Brileva",
+   "display_name": "Dr. Diliara Brileva",
+   "categories": [
+    "associated-researchers"
+   ],
+   "position": "Associated Researcher",
+   "units": [
+    "religion-and-intellectual-culture"
+   ],
+   "projects": [
+    {
+     "title": "Public Theology: The Formation of New Theological Discourse in the Periodical Press of Muslim Tatars in Late Imperial Russia",
+     "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/diliara-brileva-religion-and-intellectual-culture"
+    }
+   ],
+   "regional_focus": "Russia, especially the Volga-Urals region; Ukraine; Middle East, especially Turkey"
+  },
+  {
+   "slug": "dr-dina-wilkowsky",
+   "url": "https://www.zmo.de/en/people/dr-dina-wilkowsky",
+   "name": "Dina Wilkowsky",
+   "display_name": "Dr. Dina Wilkowsky",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-dyala-hamzah",
+   "url": "https://www.zmo.de/en/people/dr-dyala-hamzah",
+   "name": "Dyala Hamzah",
+   "display_name": "Prof. Dr. Dyala Hamzah",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-elisabeth-boesen",
+   "url": "https://www.zmo.de/en/people/dr-elisabeth-boesen",
+   "name": "Elisabeth Boesen",
+   "display_name": "Dr. Elisabeth Boesen",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-ellinor-schoene",
+   "url": "https://www.zmo.de/en/people/dr-ellinor-schoene",
+   "name": "Ellinor Schöne",
+   "display_name": "Dr. Ellinor Schöne",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-erdem-evren",
+   "url": "https://www.zmo.de/en/people/dr-erdem-evren",
+   "name": "Erdem Evren",
+   "display_name": "Dr. Erdem Evren",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-erguen-oezguer",
+   "url": "https://www.zmo.de/en/people/dr-erguen-oezguer",
+   "name": "Ergün Özgür",
+   "display_name": "Dr. Ergün Özgür",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "Highly-Qualified Syrian Circassian Refugees in Multicultural Capitals of Amsterdam and Berlin: Challenges and Opportunities",
+     "url": "https://www.zmo.de/en/research/lives-and-ecologies/erguen-oezguer-lives-and-ecologies"
+    }
+   ],
+   "regional_focus": "Caucasus, Abkhazia, Cyprus, the EU and Turkey"
+  },
+  {
+   "slug": "dr-farhan-karim-university-of-kansas",
+   "url": "https://www.zmo.de/en/people/dr-farhan-karim-university-of-kansas",
+   "name": "Farhan Karim",
+   "display_name": "Dr. Farhan Karim",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-farish-noor",
+   "url": "https://www.zmo.de/en/people/dr-farish-noor",
+   "name": "Farish Noor",
+   "display_name": "Dr. Farish Noor",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-florian-riedler",
+   "url": "https://www.zmo.de/en/people/dr-florian-riedler",
+   "name": "Florian Riedler",
+   "display_name": "Dr. Florian Riedler",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-frederick-madore",
+   "url": "https://www.zmo.de/en/people/dr-frederick-madore",
+   "name": "Frédérick Madore",
+   "display_name": "Dr. Frédérick Madore",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "religion-and-intellectual-culture"
+   ],
+   "projects": [
+    {
+     "title": "Digital Humanities and Artificial Intelligence in African Studies",
+     "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/frederick-madore"
+    }
+   ],
+   "regional_focus": "Togo, Benin, Burkina Faso, Côte d’Ivoire"
+  },
+  {
+   "slug": "dr-friedhelm-hartwig",
+   "url": "https://www.zmo.de/en/people/dr-friedhelm-hartwig",
+   "name": "Friedhelm Hartwig",
+   "display_name": "Dr. Friedhelm Hartwig",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-gevorg-avetikyan",
+   "url": "https://www.zmo.de/en/people/dr-gevorg-avetikyan",
+   "name": "Gevorg Avetikyan",
+   "display_name": "Dr. Gevorg Avetikyan",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Legal Nationalism: Strategies of Seeking Justice in Post-Stalinist Armenian SSR",
+     "url": "https://www.zmo.de/en/research/state-and-society/justimino/gevorg-avetikyan-state-and-society"
+    },
+    {
+     "title": "In Pursuit of Legality and Justice: Minority Struggles in the Russian Empire and the Soviet Union",
+     "url": "https://www.zmo.de/en/research/state-and-society/justimino"
+    }
+   ],
+   "regional_focus": "Armenia, Russia, Iran, South Caucasus",
+   "orcid": "0000-0001-6999-4187"
+  },
+  {
+   "slug": "dr-habil-tilo-graetz",
+   "url": "https://www.zmo.de/en/people/dr-habil-tilo-graetz",
+   "name": "Tilo Grätz",
+   "display_name": "Dr. habil. Tilo Grätz",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-hagen-findeis",
+   "url": "https://www.zmo.de/en/people/dr-hagen-findeis",
+   "name": "Hagen Findeis",
+   "display_name": "Dr. Hagen Findeis",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-hassan-mwakimako",
+   "url": "https://www.zmo.de/en/people/dr-hassan-mwakimako",
+   "name": "Hassan Mwakimako",
+   "display_name": "Dr. Hassan Mwakimako",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-hatsuki-aishima",
+   "url": "https://www.zmo.de/en/people/dr-hatsuki-aishima",
+   "name": "Hatsuki Aishima",
+   "display_name": "Dr. Hatsuki Aishima",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-heike-liebau",
+   "url": "https://www.zmo.de/en/people/dr-heike-liebau",
+   "name": "Heike Liebau",
+   "display_name": "Dr. Heike Liebau",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Historical Icons and Representations of the Past",
+     "url": "https://www.zmo.de/en/research/state-and-society/heike-liebau-state-and-society"
+    }
+   ],
+   "regional_focus": "South Asia, especially India"
+  },
+  {
+   "slug": "dr-henner-fuertig",
+   "url": "https://www.zmo.de/en/people/dr-henner-fuertig",
+   "name": "Henner Fürtig",
+   "display_name": "Prof. Dr. Henner Fürtig",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-hilal-alkan",
+   "url": "https://www.zmo.de/en/people/dr-hilal-alkan",
+   "name": "Hilal Alkan",
+   "display_name": "Dr. Hilal Alkan",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "PLANTH - Shifting landscapes of human-plant co-mobilities between Europe and Asia. Leibniz Collaborative Excellence project with ZALF",
+     "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-hilal-alkan-shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth"
+    }
+   ],
+   "regional_focus": "Middle East and Europe, particularly Turkey, Syria and Germany"
+  },
+  {
+   "slug": "dr-ilkay-yilmaz",
+   "url": "https://www.zmo.de/en/people/dr-ilkay-yilmaz",
+   "name": "İlkay Yilmaz",
+   "display_name": "Dr. İlkay Yilmaz",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-izabela-orlowska",
+   "url": "https://www.zmo.de/en/people/dr-izabela-orlowska",
+   "name": "Izabela Orlowska",
+   "display_name": "Dr. Izabela Orlowska",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-jacob-nerenberg",
+   "url": "https://www.zmo.de/en/people/dr-jacob-nerenberg",
+   "name": "Jacob Nerenberg",
+   "display_name": "Dr. Jacob Nerenberg",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-jasmin-mahazi",
+   "url": "https://www.zmo.de/en/people/dr-jasmin-mahazi",
+   "name": "Jasmin Mahazi",
+   "display_name": "Dr. Jasmin Mahazi",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "Bahari yetu (Our ocean/genre): A matrifocal anthropological study of oral archives and embodied knowledge practices along the Swahili coast",
+     "url": "https://www.zmo.de/en/research/lives-and-ecologies/jasmin-mahazi-lives-and-ecologies"
+    }
+   ],
+   "regional_focus": "Western Indian Ocean, Swahili coast"
+  },
+  {
+   "slug": "dr-jeanine-dagyeli",
+   "url": "https://www.zmo.de/en/people/dr-jeanine-dagyeli",
+   "name": "Jeanine Dagyeli",
+   "display_name": "Prof. Dr. Jeanine Dagyeli",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-jeanne-feaux-de-la-croix",
+   "url": "https://www.zmo.de/en/people/dr-jeanne-feaux-de-la-croix",
+   "name": "Jeanne Féaux de la Croix",
+   "display_name": "Dr. Jeanne Féaux de la Croix",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-jeffrey-culang",
+   "url": "https://www.zmo.de/en/people/dr-jeffrey-culang",
+   "name": "Jeffrey Culang",
+   "display_name": "Dr. Jeffrey Culang",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-joerg-matthias-determann",
+   "url": "https://www.zmo.de/en/people/dr-joerg-matthias-determann",
+   "name": "Jörg Matthias Determann",
+   "display_name": "Dr. Jörg Matthias Determann",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-johannes-becker",
+   "url": "https://www.zmo.de/en/people/dr-johannes-becker",
+   "name": "Johannes Becker",
+   "display_name": "PD Dr. Johannes Becker",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "Migrant arrival contexts in transregional comparison. Local figurations and differing collective histories of Assyrians/Arameans in Germany and Jordan",
+     "url": "https://www.zmo.de/en/research/lives-and-ecologies/johannes-becker-orhan-nassif-lives-and-ecologies"
+    }
+   ]
+  },
+  {
+   "slug": "dr-judith-scheele",
+   "url": "https://www.zmo.de/en/people/dr-judith-scheele",
+   "name": "Judith Scheele",
+   "display_name": "Dr. Judith Scheele",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-karin-mlodoch",
+   "url": "https://www.zmo.de/en/people/dr-karin-mlodoch",
+   "name": "Karin Mlodoch",
+   "display_name": "Dr. Karin Mlodoch",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-khaled-adham",
+   "url": "https://www.zmo.de/en/people/dr-khaled-adham",
+   "name": "Khaled Adham",
+   "display_name": "Dr. Khaled Adham",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-knut-graw",
+   "url": "https://www.zmo.de/en/people/dr-knut-graw",
+   "name": "Knut Graw",
+   "display_name": "Dr. Knut Graw",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-laura-menin",
+   "url": "https://www.zmo.de/en/people/dr-laura-menin",
+   "name": "Laura Menin",
+   "display_name": "Dr. Laura Menin",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-laurence-marfaing",
+   "url": "https://www.zmo.de/en/people/dr-laurence-marfaing",
+   "name": "Laurence Marfaing",
+   "display_name": "Dr. Laurence Marfaing",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-leila-almazova",
+   "url": "https://www.zmo.de/en/people/dr-leila-almazova",
+   "name": "Leila Almazova",
+   "display_name": "Dr. Leila Almazova",
+   "categories": [
+    "associated-researchers"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "religion-and-intellectual-culture"
+   ],
+   "projects": [
+    {
+     "title": "In Search of a ‘New Orthodoxy': Islamic Education in Post-Soviet Tatarstan",
+     "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/leila-almazova-religion-and-intellectual-culture"
+    }
+   ]
+  },
+  {
+   "slug": "dr-lutz-rogler",
+   "url": "https://www.zmo.de/en/people/dr-lutz-rogler",
+   "name": "Lutz Rogler",
+   "display_name": "Dr. Lutz Rogler",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-m-ali-raza",
+   "url": "https://www.zmo.de/en/people/dr-m-ali-raza",
+   "name": "M. Ali Raza",
+   "display_name": "Dr. M. Ali Raza",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-magdalena-suerbaum",
+   "url": "https://www.zmo.de/en/people/dr-magdalena-suerbaum",
+   "name": "Magdalena Suerbaum",
+   "display_name": "Dr. Magdalena Suerbaum",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher"
+  },
+  {
+   "slug": "dr-mallika-leuzinger",
+   "url": "https://www.zmo.de/en/people/dr-mallika-leuzinger",
+   "name": "Mallika Leuzinger",
+   "display_name": "Dr. Mallika Leuzinger",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-malte-fuhrmann",
+   "url": "https://www.zmo.de/en/people/dr-malte-fuhrmann",
+   "name": "Malte Fuhrmann",
+   "display_name": "Dr. Malte Fuhrmann",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-margret-frenz",
+   "url": "https://www.zmo.de/en/people/dr-margret-frenz",
+   "name": "Margret Frenz",
+   "display_name": "Dr. Margret Frenz",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-maria-ketzmerick-calandrino",
+   "url": "https://www.zmo.de/en/people/dr-maria-ketzmerick-calandrino",
+   "name": "Maria Ketzmerick-Calandrino",
+   "display_name": "Dr. Maria Ketzmerick-Calandrino",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "CRAFTE",
+     "url": "https://www.zmo.de/en/research/state-and-society/crafting-entanglements-afro-asian-pasts-of-the-global-cold-war-crafte"
+    },
+    {
+     "title": "The Global South and the Global Cold War in Berlin – the Divided City as a Locale for African-Asian-Solidarities",
+     "url": "https://www.zmo.de/en/research/state-and-society/crafte/maria-ketzmerick-calandrino-state-and-society"
+    }
+   ]
+  },
+  {
+   "slug": "dr-maria-magdalena-pruss",
+   "url": "https://www.zmo.de/en/people/dr-maria-magdalena-pruss",
+   "name": "Maria-Magdalena Pruß",
+   "display_name": "Dr. Maria-Magdalena Pruß",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-marloes-janson",
+   "url": "https://www.zmo.de/en/people/dr-marloes-janson",
+   "name": "Marloes Janson",
+   "display_name": "Dr. Marloes Janson",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-martin-christof-fuechsle",
+   "url": "https://www.zmo.de/en/people/dr-martin-christof-fuechsle",
+   "name": "Martin Christof-Füchsle",
+   "display_name": "Dr. Martin Christof-Füchsle",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Wissenschaftlicher Mitarbeiter",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Modern Indian Literature in Translation in the GDR – Between Ideology, Censorship and Cultural Diplomacy",
+     "url": "https://www.zmo.de/en/research/state-and-society/mida/martin-christof-fuechsle-state-and-society"
+    }
+   ]
+  },
+  {
+   "slug": "dr-michael-baers",
+   "url": "https://www.zmo.de/en/people/dr-michael-baers",
+   "name": "Michael Baers",
+   "display_name": "Dr. Michael Baers",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher"
+  },
+  {
+   "slug": "dr-mohammed-aidarus-noor",
+   "url": "https://www.zmo.de/en/people/dr-mohammed-aidarus-noor",
+   "name": "Mohamed Aidarus Noor",
+   "display_name": "Dr. Mohamed Aidarus Noor",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-nazan-maksudyan",
+   "url": "https://www.zmo.de/en/people/dr-nazan-maksudyan",
+   "name": "Nazan Maksudyan",
+   "display_name": "Dr. Nazan Maksudyan",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-nikolaos-olma",
+   "url": "https://www.zmo.de/en/people/dr-nikolaos-olma",
+   "name": "Nikolaos Olma",
+   "display_name": "Dr. Nikolaos Olma",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-ninos-sanherib",
+   "url": "https://www.zmo.de/en/people/dr-ninos-sanherib",
+   "name": "Sanherib Ninos",
+   "display_name": "Dr. Sanherib Ninos",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "Migrant arrival contexts in transregional comparison. Local figurations and differing collective histories of Assyrians/Arameans in Germany and Jordan",
+     "url": "https://www.zmo.de/en/research/lives-and-ecologies/johannes-becker-orhan-nassif-lives-and-ecologies"
+    }
+   ]
+  },
+  {
+   "slug": "dr-nitin-sinha",
+   "url": "https://www.zmo.de/en/people/dr-nitin-sinha",
+   "name": "Nitin Sinha",
+   "display_name": "Dr. Nitin Sinha",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Head of Research Unit \"State and Society\"",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Timely Histories: A Social History of Time in South Asia",
+     "url": "https://www.zmo.de/en/research/state-and-society/timely-histories"
+    },
+    {
+     "title": "South Asian Nights: A History",
+     "url": "https://www.zmo.de/en/research/state-and-society/timely-histories/nitin-sinha-timely-histories"
+    }
+   ],
+   "regional_focus": "South Asia"
+  },
+  {
+   "slug": "dr-odile-moreau",
+   "url": "https://www.zmo.de/en/people/dr-odile-moreau",
+   "name": "Odile Moreau",
+   "display_name": "Dr. Odile Moreau",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-paolo-gaibazzi",
+   "url": "https://www.zmo.de/en/people/dr-paolo-gaibazzi",
+   "name": "Paolo Gaibazzi",
+   "display_name": "PD Dr. Paolo Gaibazzi",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-patrick-desplat",
+   "url": "https://www.zmo.de/en/people/dr-patrick-desplat",
+   "name": "Patrick Desplat",
+   "display_name": "Dr. Patrick Desplat",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-peter-wien",
+   "url": "https://www.zmo.de/en/people/dr-peter-wien",
+   "name": "Peter Wien",
+   "display_name": "Prof. Dr. Peter Wien",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-petra-heidrich",
+   "url": "https://www.zmo.de/en/people/dr-petra-heidrich",
+   "name": "Petra Heidrich",
+   "display_name": "Dr. Petra Heidrich",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-phil-benedikt-pontzen",
+   "url": "https://www.zmo.de/en/people/dr-phil-benedikt-pontzen",
+   "name": "Benedikt Pontzen",
+   "display_name": "Dr. Benedikt Pontzen",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "regional_focus": "West Africa, especially Ghana and Mali"
+  },
+  {
+   "slug": "dr-rami-zeedan",
+   "url": "https://www.zmo.de/en/people/dr-rami-zeedan",
+   "name": "Rami Zeedan",
+   "display_name": "Dr. Rami Zeedan",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-rana-von-mende-altayli",
+   "url": "https://www.zmo.de/en/people/dr-rana-von-mende-altayli",
+   "name": "Rana von Mende Altayli",
+   "display_name": "Dr. Rana von Mende Altayli",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-roy",
+   "url": "https://www.zmo.de/en/people/dr-roy",
+   "name": "Franziska Roy",
+   "display_name": "Dr. Franziska Roy",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-saeed-ur-rehman",
+   "url": "https://www.zmo.de/en/people/dr-saeed-ur-rehman",
+   "name": "Saeed Ur Rehman",
+   "display_name": "Dr. Saeed Ur Rehman",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-samuel-wright",
+   "url": "https://www.zmo.de/en/people/dr-samuel-wright",
+   "name": "Samuel Wright",
+   "display_name": "Dr. Samuel Wright",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-sana-chavoshian",
+   "url": "https://www.zmo.de/en/people/dr-sana-chavoshian",
+   "name": "Sana Chavoshian",
+   "display_name": "Dr. Sana Chavoshian",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow"
+  },
+  {
+   "slug": "dr-sanaa-alimia",
+   "url": "https://www.zmo.de/en/people/dr-sanaa-alimia",
+   "name": "Sanaa Alimia",
+   "display_name": "Dr. Sanaa Alimia",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-sarah-jurkiewicz",
+   "url": "https://www.zmo.de/en/people/dr-sarah-jurkiewicz",
+   "name": "Sarah Jurkiewicz",
+   "display_name": "Dr. Sarah Jurkiewicz",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-sebastian-r-prange",
+   "url": "https://www.zmo.de/en/people/dr-sebastian-r-prange",
+   "name": "Sebastian Prange",
+   "display_name": "Dr. Sebastian Prange",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-silke-nagel",
+   "url": "https://www.zmo.de/en/people/dr-silke-nagel",
+   "name": "Silke Nagel",
+   "display_name": "Dr. Silke Nagel",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-sonja-hegasy",
+   "url": "https://www.zmo.de/en/people/dr-sonja-hegasy",
+   "name": "Sonja Hegasy",
+   "display_name": "Dr. Sonja Hegasy",
+   "categories": [
+    "directorate"
+   ],
+   "position": "Vice Director, Head of Public Relations & Knowledge Transfer",
+   "units": [
+    "religion-and-intellectual-culture"
+   ],
+   "projects": [
+    {
+     "title": "Hassan Heshmat – A Decolonial Artist, Then and Now",
+     "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/sonja-hegasy-religion-and-intellectual-culture"
+    }
+   ],
+   "regional_focus": "Middle East and North Africa"
+  },
+  {
+   "slug": "dr-sophia-hoffmann",
+   "url": "https://www.zmo.de/en/people/dr-sophia-hoffmann",
+   "name": "Sophia Hoffmann",
+   "display_name": "Prof. Dr. Sophia Hoffmann",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-sophie-roche",
+   "url": "https://www.zmo.de/en/people/dr-sophie-roche",
+   "name": "Sophie Roche",
+   "display_name": "Dr. Sophie Roche",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-sophie-wagenhofer",
+   "url": "https://www.zmo.de/en/people/dr-sophie-wagenhofer",
+   "name": "Sophie Wagenhofer",
+   "display_name": "Dr. Sophie Wagenhofer",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-soumen-mukherjee",
+   "url": "https://www.zmo.de/en/people/dr-soumen-mukherjee",
+   "name": "Soumen Mukherjee",
+   "display_name": "Dr. Soumen Mukherjee",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-steven-serels",
+   "url": "https://www.zmo.de/en/people/dr-steven-serels",
+   "name": "Steven Serels",
+   "display_name": "Dr. Steven Serels",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-suaad-al-ghafal",
+   "url": "https://www.zmo.de/en/people/dr-suaad-al-ghafal",
+   "name": "Suaad Alghafal",
+   "display_name": "Dr. Suaad Alghafal",
+   "categories": [
+    "associated-researchers"
+   ],
+   "position": "Associated",
+   "units": [
+    "religion-and-intellectual-culture"
+   ],
+   "projects": [
+    {
+     "title": "The Ghadames Heritage Project",
+     "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/the-ghadames-heritage-project"
+    }
+   ]
+  },
+  {
+   "slug": "dr-tabea-scharrer",
+   "url": "https://www.zmo.de/en/people/dr-tabea-scharrer",
+   "name": "Tabea Scharrer",
+   "display_name": "Dr. Tabea Scharrer",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher"
+  },
+  {
+   "slug": "dr-talha-cicek",
+   "url": "https://www.zmo.de/en/people/dr-talha-cicek",
+   "name": "Talha Çiçek",
+   "display_name": "Dr. Talha Çiçek",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-thomas-ripper",
+   "url": "https://www.zmo.de/en/people/dr-thomas-ripper",
+   "name": "Thomas Ripper",
+   "display_name": "Dr. Thomas Ripper",
+   "categories": [
+    "research-support"
+   ],
+   "position": "Head of Library"
+  },
+  {
+   "slug": "dr-tobias-delfs",
+   "url": "https://www.zmo.de/en/people/dr-tobias-delfs",
+   "name": "Tobias Delfs",
+   "display_name": "Dr. Tobias Delfs",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-veronica-ferreri",
+   "url": "https://www.zmo.de/en/people/dr-veronica-ferreri",
+   "name": "Veronica Ferreri",
+   "display_name": "Dr. Veronica Ferreri",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-wai-weng-hew",
+   "url": "https://www.zmo.de/en/people/dr-wai-weng-hew",
+   "name": "Wai Weng Hew",
+   "display_name": "Dr. Wai Weng Hew",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "dr-yasmine-berriane",
+   "url": "https://www.zmo.de/en/people/dr-yasmine-berriane",
+   "name": "Yasmine Berriane",
+   "display_name": "Dr. Yasmine Berriane",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "elisa-nobel",
+   "url": "https://www.zmo.de/en/people/elisa-nobel",
+   "name": "Elisa Nobel-Dilaty",
+   "categories": [
+    "directorate",
+    "research-support"
+   ],
+   "position": "Knowledge Transfer Officer"
+  },
+  {
+   "slug": "fatemeh-masjedi",
+   "url": "https://www.zmo.de/en/people/fatemeh-masjedi",
+   "name": "Fatemeh Masjedi",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "feras-krimsti",
+   "url": "https://www.zmo.de/en/people/feras-krimsti",
+   "name": "Feras Krimsti",
+   "display_name": "Dr. Feras Krimsti",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "flavia-gerner",
+   "url": "https://www.zmo.de/en/people/flavia-gerner",
+   "name": "Flavia Gerner",
+   "categories": [
+    "research-support"
+   ],
+   "position": "Reporting and Internship Coordination (Parental Leave Replacement)"
+  },
+  {
+   "slug": "florian-coppenrath",
+   "url": "https://www.zmo.de/en/people/florian-coppenrath",
+   "name": "Florian Coppenrath",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "The Economy of Hip-Hop Music Production in Bishkek, Kyrgyzstan (1990s–2021)",
+     "url": "https://www.zmo.de/en/research/state-and-society/florian-coppenrath-state-and-society"
+    }
+   ],
+   "regional_focus": "Central Asia, especially Kyrgyzstan, Russia"
+  },
+  {
+   "slug": "fouad-gehad-marei",
+   "url": "https://www.zmo.de/en/people/fouad-gehad-marei",
+   "name": "Fouad Gehad Marei",
+   "display_name": "Dr. Fouad Gehad Marei",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "frank-oesterheld",
+   "url": "https://www.zmo.de/en/people/frank-oesterheld",
+   "name": "Frank Oesterheld",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "friedhelm-hoffmann",
+   "url": "https://www.zmo.de/en/people/friedhelm-hoffmann",
+   "name": "Friedhelm Hoffmann",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "gerdien-jonker",
+   "url": "https://www.zmo.de/en/people/gerdien-jonker",
+   "name": "Gerdien Jonker",
+   "display_name": "Dr. Gerdien Jonker",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "giorgi-ghvinjilia",
+   "url": "https://www.zmo.de/en/people/giorgi-ghvinjilia",
+   "name": "Giorgi Ghvinjilia",
+   "categories": [
+    "guests"
+   ],
+   "position": "Guest"
+  },
+  {
+   "slug": "goeksel-yaman",
+   "url": "https://www.zmo.de/en/people/goeksel-yaman",
+   "name": "Göksel Yaman",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "hala-mardini",
+   "url": "https://www.zmo.de/en/people/hala-mardini",
+   "name": "Hala Mardini",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "heidemarie-dengel",
+   "url": "https://www.zmo.de/en/people/heidemarie-dengel",
+   "name": "Heidemarie Dengel",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "ibrahima-niang",
+   "url": "https://www.zmo.de/en/people/ibrahima-niang",
+   "name": "Ibrahima Niang",
+   "display_name": "Dr. Ibrahima Niang",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "inana-othman",
+   "url": "https://www.zmo.de/en/people/inana-othman",
+   "name": "Inana Othman",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "ingrid-malsch",
+   "url": "https://www.zmo.de/en/people/ingrid-malsch",
+   "name": "Ingrid Malsch",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "irmgard-dietrich",
+   "url": "https://www.zmo.de/en/people/irmgard-dietrich",
+   "name": "Irmgard Dietrich",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "jamshid-hussein",
+   "url": "https://www.zmo.de/en/people/jamshid-hussein",
+   "name": "Jamshid Hussein",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "jan-brauburger",
+   "url": "https://www.zmo.de/en/people/jan-brauburger",
+   "name": "Jan Brauburger",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "jannes-thode",
+   "url": "https://www.zmo.de/en/people/jannes-thode",
+   "name": "Jannes Thode",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "State of Tranquillity? Affect, Atmosphere and Violence in Early Colonial Bengal",
+     "url": "https://www.zmo.de/en/research/state-and-society/mida/jannes-thode"
+    }
+   ]
+  },
+  {
+   "slug": "jens-adam-von-juli-2012-bis-dezember-2013-wissenschaftlicher-mitarbeiter",
+   "url": "https://www.zmo.de/en/people/jens-adam-von-juli-2012-bis-dezember-2013-wissenschaftlicher-mitarbeiter",
+   "name": "Jens Adam",
+   "display_name": "Dr. Jens Adam",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "jona-vantard",
+   "url": "https://www.zmo.de/en/people/jona-vantard",
+   "name": "Jona Vantard",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "regional_focus": "South Asia"
+  },
+  {
+   "slug": "joseph-desire-som-i",
+   "url": "https://www.zmo.de/en/people/joseph-desire-som-i",
+   "name": "Joseph Désiré Som I",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "juergen-schaflechner",
+   "url": "https://www.zmo.de/en/people/juergen-schaflechner",
+   "name": "Jürgen Schaflechner",
+   "display_name": "Dr. Jürgen Schaflechner",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher"
+  },
+  {
+   "slug": "julian-tadesse",
+   "url": "https://www.zmo.de/en/people/julian-tadesse",
+   "name": "Julian Tadesse",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "juliane-el-maneie",
+   "url": "https://www.zmo.de/en/people/juliane-el-maneie",
+   "name": "Juliane El-Maneie",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "juliane-schumacher",
+   "url": "https://www.zmo.de/en/people/juliane-schumacher",
+   "name": "Juliane Schumacher",
+   "display_name": "Dr. Juliane Schumacher",
+   "categories": [
+    "associated-researchers"
+   ],
+   "position": "Associated Researcher",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "Knowledge, Temporalities and Questions of Justice. Negotiating Coastal Futures in West Africa in Times of Climate Change",
+     "url": "https://www.zmo.de/en/research/lives-and-ecologies/juliane-schumacher-lives-and-ecologies"
+    }
+   ],
+   "regional_focus": "Middle East & North Africa; Mediterranean; West Africa"
+  },
+  {
+   "slug": "just-boedeker",
+   "url": "https://www.zmo.de/en/people/just-boedeker",
+   "name": "Just Boedeker",
+   "display_name": "Dr. Just Boedeker",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "katie-sartania",
+   "url": "https://www.zmo.de/en/people/katie-sartania",
+   "name": "Ketevan Sartania",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "From Revolutionary to Socialist Legality: Georgian Perspectives",
+     "url": "https://www.zmo.de/en/research/state-and-society/justimino/katie-sartania"
+    }
+   ]
+  },
+  {
+   "slug": "katja-hermann",
+   "url": "https://www.zmo.de/en/people/katja-hermann",
+   "name": "Katja Hermann",
+   "display_name": "Dr. Katja Hermann",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "konstantin-lasaridis",
+   "url": "https://www.zmo.de/en/people/konstantin-lasaridis",
+   "name": "Konstantin Lasaridis",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "kuebra-sariyar",
+   "url": "https://www.zmo.de/en/people/kuebra-sariyar",
+   "name": "Kübra Sariyar",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "kyara-klausmann",
+   "url": "https://www.zmo.de/en/people/kyara-klausmann",
+   "name": "Kyara Klausmann",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "larissa-schmid",
+   "url": "https://www.zmo.de/en/people/larissa-schmid",
+   "name": "Larissa Schmid",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "laure-guirguis",
+   "url": "https://www.zmo.de/en/people/laure-guirguis",
+   "name": "Laure Guirguis",
+   "display_name": "Dr. Laure Guirguis",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "lena-herzog",
+   "url": "https://www.zmo.de/en/people/lena-herzog",
+   "name": "Lena Herzog",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "lena-wassermeier",
+   "url": "https://www.zmo.de/en/people/lena-wassermeier",
+   "name": "Lena Wassermeier",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "leonie-hedrich",
+   "url": "https://www.zmo.de/en/people/leonie-hedrich",
+   "name": "Leo Hedrich",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Muslim Parliamentary Groups in the Russian State Duma, 1906–1916",
+     "url": "https://www.zmo.de/en/research/state-and-society/justimino/leo-hedrich-state-and-society"
+    }
+   ]
+  },
+  {
+   "slug": "leyla-von-mende",
+   "url": "https://www.zmo.de/en/people/leyla-von-mende",
+   "name": "Leyla von Mende",
+   "display_name": "Dr. Leyla von Mende",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "lisa-joeris",
+   "url": "https://www.zmo.de/en/people/lisa-joeris",
+   "name": "Lisa Jöris",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "lotte-knote",
+   "url": "https://www.zmo.de/en/people/lotte-knote",
+   "name": "Lotte Knote",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "lucien-turczan-lipets",
+   "url": "https://www.zmo.de/en/people/lucien-turczan-lipets",
+   "name": "Lucien Turczan-Lipets",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Forums of Dissidence: Ukrainian and Jewish Thinkers in Kyiv and Lviv, 1960s-1980s",
+     "url": "https://www.zmo.de/en/research/state-and-society/justimino/lucien-turczan-lipets"
+    },
+    {
+     "title": "In Pursuit of Legality and Justice: Minority Struggles in the Russian Empire and the Soviet Union",
+     "url": "https://www.zmo.de/en/research/state-and-society/justimino"
+    }
+   ]
+  },
+  {
+   "slug": "luisa-fruehbrodt",
+   "url": "https://www.zmo.de/en/people/luisa-fruehbrodt",
+   "name": "Luisa Frühbrodt",
+   "categories": [
+    "research-support"
+   ],
+   "position": "Office"
+  },
+  {
+   "slug": "magdalena-moorthy-kloss",
+   "url": "https://www.zmo.de/en/people/magdalena-moorthy-kloss",
+   "name": "Magdalena Moorthy-Kloss",
+   "display_name": "Dr. Magdalena Moorthy-Kloss",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "maija-susarina",
+   "url": "https://www.zmo.de/en/people/maija-susarina",
+   "name": "Maija Susarina",
+   "categories": [
+    "directorate",
+    "research-support"
+   ],
+   "position": "Assistant to the Director and Academic Coordinator for Joint Research Projects"
+  },
+  {
+   "slug": "mamadou-diallo",
+   "url": "https://www.zmo.de/en/people/mamadou-diallo",
+   "name": "Mamadou Diallo",
+   "categories": [
+    "affiliated-researchers"
+   ]
+  },
+  {
+   "slug": "manal-jadir",
+   "url": "https://www.zmo.de/en/people/manal-jadir",
+   "name": "Manal Jadir",
+   "display_name": "Dr. Manal Jadir",
+   "categories": [
+    "associated-researchers"
+   ],
+   "position": "Associated Researcher",
+   "units": [
+    "religion-and-intellectual-culture"
+   ],
+   "projects": [
+    {
+     "title": "Memorialization of Holy Wars: Commemorative Practices and Memorial Policies in Morocco and Spain",
+     "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/manal-jadir"
+    }
+   ]
+  },
+  {
+   "slug": "marat-uraimov",
+   "url": "https://www.zmo.de/en/people/marat-uraimov",
+   "name": "Marat Uraimov",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Justice in the Making: Moral Responsibility and the Resilience of Aksakal Courts in Kyrgyzstan",
+     "url": "https://www.zmo.de/en/research/state-and-society/translate-to-english-marat-uraimov-staat-und-gesellschaft"
+    }
+   ]
+  },
+  {
+   "slug": "margret-liepach",
+   "url": "https://www.zmo.de/en/people/margret-liepach",
+   "name": "Margret Liepach",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "mariam-aboughazi",
+   "url": "https://www.zmo.de/en/people/mariam-aboughazi",
+   "name": "Mariam Aboughazi",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliierte"
+  },
+  {
+   "slug": "marta-schultz",
+   "url": "https://www.zmo.de/en/people/marta-schultz",
+   "name": "Marta Schultz",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "mattin-biglari",
+   "url": "https://www.zmo.de/en/people/mattin-biglari",
+   "name": "Mattin Biglari",
+   "display_name": "Dr. Mattin Biglari",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "max-kramer",
+   "url": "https://www.zmo.de/en/people/max-kramer",
+   "name": "Max Kramer",
+   "display_name": "Dr. Max Kramer",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "religion-and-intellectual-culture"
+   ],
+   "projects": [
+    {
+     "title": "When Anonymity is No Longer Enough: 'Fictionalization' as a New Way of Writing Ethnography in the Age of Digital Surveillance",
+     "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/max-kramer"
+    }
+   ]
+  },
+  {
+   "slug": "mehdi-ayachi",
+   "url": "https://www.zmo.de/en/people/mehdi-ayachi",
+   "name": "Mehdi Ayachi",
+   "display_name": "Dr. Mehdi Ayachi",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "religion-and-intellectual-culture"
+   ],
+   "projects": [
+    {
+     "title": "The 'Omani Enlightenment': Circulation of Ideas and the Cultivation of Critical Thought in the Sultanate of Oman",
+     "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/mehdi-ayachi-religion-and-intellectual-culture"
+    }
+   ],
+   "regional_focus": "Arabian Peninsula and notably the Sultanate of Oman"
+  },
+  {
+   "slug": "melanie-kamp",
+   "url": "https://www.zmo.de/en/people/melanie-kamp",
+   "name": "Melanie Kamp",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "michael-schutz",
+   "url": "https://www.zmo.de/en/people/michael-schutz",
+   "name": "Michael Schutz",
+   "categories": [
+    "research-support"
+   ],
+   "position": "IT Infrastructure & Service"
+  },
+  {
+   "slug": "minerwa-tahir",
+   "url": "https://www.zmo.de/en/people/minerwa-tahir",
+   "name": "Minerwa Tahir",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "mohamed-zine",
+   "url": "https://www.zmo.de/en/people/mohamed-zine",
+   "name": "Mohamed Zine",
+   "categories": [
+    "research-support"
+   ],
+   "position": "Janitor"
+  },
+  {
+   "slug": "mohammed-hashas",
+   "url": "https://www.zmo.de/en/people/mohammed-hashas",
+   "name": "Mohammed Hashas",
+   "display_name": "Dr. Mohammed Hashas",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "religion-and-intellectual-culture"
+   ],
+   "projects": [
+    {
+     "title": "Ethics in the Realist Idealism of Rabat School: Al-Fassi, Lahbabi, and Taha",
+     "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/mohammed-hashas-religion-and-intellectual-culture"
+    }
+   ]
+  },
+  {
+   "slug": "mukhtar-saad-shehata",
+   "url": "https://www.zmo.de/en/people/mukhtar-saad-shehata",
+   "name": "Mukhtar Saad Shehata",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "nico-putz",
+   "url": "https://www.zmo.de/en/people/nico-putz",
+   "name": "Nico Putz",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Crafting Entanglements: Afro-Asian Pasts of the Global Cold War (CRAFTE);",
+     "url": "https://www.zmo.de/en/research/state-and-society/crafting-entanglements-afro-asian-pasts-of-the-global-cold-war-crafte"
+    },
+    {
+     "title": "Student Networks and Trajectories",
+     "url": "https://www.zmo.de/en/research/state-and-society/crafte/nico-putz-state-and-society"
+    }
+   ],
+   "regional_focus": "South Asia"
+  },
+  {
+   "slug": "nitin-varma",
+   "url": "https://www.zmo.de/en/people/nitin-varma",
+   "name": "Nitin Varma",
+   "display_name": "Dr. Nitin Varma",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "noel-van-den-heuvel",
+   "url": "https://www.zmo.de/en/people/noel-van-den-heuvel",
+   "name": "Noël van den Heuvel",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "noura-chalati",
+   "url": "https://www.zmo.de/en/people/noura-chalati",
+   "name": "Noura Chalati",
+   "display_name": "Dr. Noura Chalati",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "nushin-atmaca",
+   "url": "https://www.zmo.de/en/people/nushin-atmaca",
+   "name": "Nushin Atmaca",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "omri-polatsek",
+   "url": "https://www.zmo.de/en/people/omri-polatsek",
+   "name": "Omri Polatsek",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "orhan-nassif",
+   "url": "https://www.zmo.de/en/people/orhan-nassif",
+   "name": "Orhan Nassif",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "Migrant arrival contexts in transregional comparison. Local figurations and differing collective histories of Assyrians/Arameans in Germany and Jordan",
+     "url": "https://www.zmo.de/en/research/lives-and-ecologies/johannes-becker-orhan-nassif-lives-and-ecologies"
+    }
+   ]
+  },
+  {
+   "slug": "patrick-krajewski",
+   "url": "https://www.zmo.de/en/people/patrick-krajewski",
+   "name": "Patrick Krajewski",
+   "display_name": "Dr. Patrick Krajewski",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "patrycja-komor",
+   "url": "https://www.zmo.de/en/people/patrycja-komor",
+   "name": "Patrycja Komor",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "pd-dr-antje-linkenbach-fuchs",
+   "url": "https://www.zmo.de/en/people/pd-dr-antje-linkenbach-fuchs",
+   "name": "Antje Linkenbach-Fuchs",
+   "display_name": "PD Dr. Antje Linkenbach-Fuchs",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "pd-dr-axel-harneit-sievers",
+   "url": "https://www.zmo.de/en/people/pd-dr-axel-harneit-sievers",
+   "name": "Axel Harneit Sievers",
+   "display_name": "PD Dr. Axel Harneit Sievers",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "pd-dr-dietrich-reetz",
+   "url": "https://www.zmo.de/en/people/pd-dr-dietrich-reetz",
+   "name": "Dietrich Reetz",
+   "display_name": "PD Dr. Dietrich Reetz",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "regional_focus": "South Asia, related to the research subject also Islam in Europe and North America, South East Asia, Central Asia, South Africa"
+  },
+  {
+   "slug": "pd-dr-jan-georg-deutsch",
+   "url": "https://www.zmo.de/en/people/pd-dr-jan-georg-deutsch",
+   "name": "Jan-Georg Deutsch",
+   "display_name": "PD Dr. Jan-Georg Deutsch",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "pd-dr-katharina-lange",
+   "url": "https://www.zmo.de/en/people/pd-dr-katharina-lange",
+   "name": "Katharina Lange",
+   "display_name": "PD Dr. Katharina Lange",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Head of Research Unit \"Lives and Ecologies\"",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "Revisions of Rurality: Ecology, Conflict and Violence in a Changing Middle East",
+     "url": "https://www.zmo.de/en/research/lives-and-ecologies/katharina-lange-lives-ecologies"
+    }
+   ],
+   "regional_focus": "Middle East, especially Syria and Kurdistan-Iraq"
+  },
+  {
+   "slug": "pd-dr-katja-fuellberg-stolberg",
+   "url": "https://www.zmo.de/en/people/pd-dr-katja-fuellberg-stolberg",
+   "name": "Katja Füllberg-Stolberg",
+   "display_name": "PD. Dr. Katja Füllberg-Stolberg",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "pd-dr-katrin-bromber",
+   "url": "https://www.zmo.de/en/people/pd-dr-katrin-bromber",
+   "name": "Katrin Bromber",
+   "display_name": "PD Dr. Katrin Bromber",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Former Head of Research Unit \"Age and Generation\"",
+   "regional_focus": "East- and Northeast Africa"
+  },
+  {
+   "slug": "pd-dr-nora-lafi",
+   "url": "https://www.zmo.de/en/people/pd-dr-nora-lafi",
+   "name": "Nora Lafi",
+   "display_name": "PD Dr. Nora Lafi",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "religion-and-intellectual-culture"
+   ],
+   "projects": [
+    {
+     "title": "The Ghadames Heritage Project",
+     "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/the-ghadames-heritage-project"
+    }
+   ]
+  },
+  {
+   "slug": "pd-dr-norman-saadi-nikro",
+   "url": "https://www.zmo.de/en/people/pd-dr-norman-saadi-nikro",
+   "name": "Norman Saadi Nikro",
+   "display_name": "PD Dr. Norman Saadi Nikro",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "pd-dr-steffen-wippel",
+   "url": "https://www.zmo.de/en/people/pd-dr-steffen-wippel",
+   "name": "Steffen Wippel",
+   "display_name": "PD Dr. Steffen Wippel",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "pd-dr-thomas-zitelmann",
+   "url": "https://www.zmo.de/en/people/pd-dr-thomas-zitelmann",
+   "name": "Thomas Zitelmann",
+   "display_name": "PD Dr. Thomas Zitelmann",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "petra-engler",
+   "url": "https://www.zmo.de/en/people/petra-engler",
+   "name": "Petra Engler",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "phd-rahina-muazu",
+   "url": "https://www.zmo.de/en/people/phd-rahina-muazu",
+   "name": "Rahina Muazu",
+   "display_name": "Dr. Rahina Muazu",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "philipp-liegmann",
+   "url": "https://www.zmo.de/en/people/philipp-liegmann",
+   "name": "Philipp Liegmann",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-achim-von-oppen",
+   "url": "https://www.zmo.de/en/people/prof-dr-achim-von-oppen",
+   "name": "Achim von Oppen",
+   "display_name": "Prof. Dr. Achim von Oppen",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-albrecht-hofheinz",
+   "url": "https://www.zmo.de/en/people/prof-dr-albrecht-hofheinz",
+   "name": "Albrecht Hofheinz",
+   "display_name": "Prof. Dr. Albrecht Hofheinz",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-andreas-eckert",
+   "url": "https://www.zmo.de/en/people/prof-dr-andreas-eckert",
+   "name": "Andreas Eckert",
+   "display_name": "Prof. Dr. Andreas Eckert",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-baz-lecocq",
+   "url": "https://www.zmo.de/en/people/prof-dr-baz-lecocq",
+   "name": "Baz Lecocq",
+   "display_name": "Prof. Dr. Baz Lecocq",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-bettina-dennerlein",
+   "url": "https://www.zmo.de/en/people/prof-dr-bettina-dennerlein",
+   "name": "Bettina Dennerlein",
+   "display_name": "Prof. Dr. Bettina Dennerlein",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-birgit-krawietz",
+   "url": "https://www.zmo.de/en/people/prof-dr-birgit-krawietz",
+   "name": "Birgit Krawietz",
+   "display_name": "Prof. Dr. Birgit Krawietz",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-brigitte-reinwald",
+   "url": "https://www.zmo.de/en/people/prof-dr-brigitte-reinwald",
+   "name": "Brigitte Reinwald",
+   "display_name": "Prof. Dr. Brigitte Reinwald",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-christoph-herzog",
+   "url": "https://www.zmo.de/en/people/prof-dr-christoph-herzog",
+   "name": "Christoph Herzog",
+   "display_name": "Prof. Dr. Christoph Herzog",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-georg-klute",
+   "url": "https://www.zmo.de/en/people/prof-dr-georg-klute",
+   "name": "Georg Klute",
+   "display_name": "Prof. Dr. Georg Klute",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-gerhard-hoepp",
+   "url": "https://www.zmo.de/en/people/prof-dr-gerhard-hoepp",
+   "name": "Gerhard Höpp",
+   "display_name": "Prof. Dr. Gerhard Höpp",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-ingeborg-baldauf",
+   "url": "https://www.zmo.de/en/people/prof-dr-ingeborg-baldauf",
+   "name": "Ingeborg Baldauf",
+   "display_name": "Prof. Dr. Ingeborg Baldauf",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-joachim-oesterheld",
+   "url": "https://www.zmo.de/en/people/prof-dr-joachim-oesterheld",
+   "name": "Joachim Oesterheld",
+   "display_name": "Prof. Dr. Joachim Oesterheld",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-kai-kresse",
+   "url": "https://www.zmo.de/en/people/prof-dr-kai-kresse",
+   "name": "Kai Kresse",
+   "display_name": "Prof. Dr. Kai Kresse",
+   "categories": [
+    "directorate",
+    "research-fellows"
+   ],
+   "position": "Vice Director, Head of Research Unit \"Religion and Intellectual Culture\"",
+   "units": [
+    "religion-and-intellectual-culture"
+   ],
+   "projects": [
+    {
+     "title": "Contested Knowledge, Sociality, and Religion: Intellectual Culture Under Postcolonial Conditions on the Swahili Coast and Beyond",
+     "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/kai-kresse-religion-and-intellectual-culture"
+    }
+   ],
+   "regional_focus": "Africa, especially East Africa and the Swahili coast, also to Southern Africa; transregional connections, especially across the Indian Ocean and the Muslim world; open for projects to all regions."
+  },
+  {
+   "slug": "prof-dr-margrit-pernau",
+   "url": "https://www.zmo.de/en/people/prof-dr-margrit-pernau",
+   "name": "Margrit Pernau",
+   "display_name": "Prof. Dr. Margrit Pernau",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-nadja-christina-schneider",
+   "url": "https://www.zmo.de/en/people/prof-dr-nadja-christina-schneider",
+   "name": "Nadja-Christina Schneider",
+   "display_name": "Prof. Dr. Nadja-Christina Schneider",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-peter-heine",
+   "url": "https://www.zmo.de/en/people/prof-dr-peter-heine",
+   "name": "Peter Heine",
+   "display_name": "Prof. Dr. Peter Heine",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-phil-fritz-steppat",
+   "url": "https://www.zmo.de/en/people/prof-dr-phil-fritz-steppat",
+   "name": "Fritz Steppat",
+   "display_name": "Prof. Dr. phil. Fritz Steppat",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-roland-wenzlhuemer",
+   "url": "https://www.zmo.de/en/people/prof-dr-roland-wenzlhuemer",
+   "name": "Roland Wenzlhuemer",
+   "display_name": "Prof. Dr. Roland Wenzlhuemer",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-roman-loimeier",
+   "url": "https://www.zmo.de/en/people/prof-dr-roman-loimeier",
+   "name": "Roman Loimeier",
+   "display_name": "Prof. Dr. Roman Loimeier",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-stefan-b-kirmse",
+   "url": "https://www.zmo.de/en/people/prof-dr-stefan-b-kirmse",
+   "name": "Stefan B. Kirmse",
+   "display_name": "Prof. Dr. Stefan B. Kirmse",
+   "categories": [
+    "directorate",
+    "research-fellows"
+   ],
+   "position": "Senior Research Fellow and Research Coordinator",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "In Pursuit of Legality and Justice: Minority Struggles in the Russian Empire and the Soviet Union",
+     "url": "https://www.zmo.de/en/research/state-and-society/justimino"
+    },
+    {
+     "title": "Russian Colonialism, Georgian Jews, and Blood Libel in the Late Imperial Caucasus, 1850-1914",
+     "url": "https://www.zmo.de/en/research/state-and-society/justimino/stefan-kirmse"
+    },
+    {
+     "title": "‘Traditional Crime’ in Central Asia: Bride-kidnapping and the Payment of Kalym in Long-Term Perspective, 1860s-Present",
+     "url": "https://www.zmo.de/en/research/state-and-society/justimino/stefan-kirmse-ii"
+    }
+   ],
+   "regional_focus": "Central Asia, Caucasus, Russia, Ukraine"
+  },
+  {
+   "slug": "prof-dr-ulrich-haarmann",
+   "url": "https://www.zmo.de/en/people/prof-dr-ulrich-haarmann",
+   "name": "Ulrich Haarmann",
+   "display_name": "Prof. Dr. Ulrich Haarmann",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-dr-ulrike-freitag",
+   "url": "https://www.zmo.de/en/people/prof-dr-ulrike-freitag",
+   "name": "Ulrike Freitag",
+   "display_name": "Prof. Dr. Ulrike Freitag",
+   "categories": [
+    "directorate",
+    "research-fellows"
+   ],
+   "position": "Director",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "An Oasis Facing Globalisation: The History and Development of Hegra (Saudi Arabia) since the late 19th Century",
+     "url": "https://www.zmo.de/en/research/state-and-society/ulrike-freitag-state-and-society"
+    }
+   ],
+   "regional_focus": "Arab countries (notably Arabian Peninsula and Bilād al-Shām), Indian Ocean"
+  },
+  {
+   "slug": "prof-marc-baer",
+   "url": "https://www.zmo.de/en/people/prof-marc-baer",
+   "name": "Marc David Baer",
+   "display_name": "Prof. Marc David Baer",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "prof-ravi-ahuja",
+   "url": "https://www.zmo.de/en/people/prof-ravi-ahuja",
+   "name": "Ravi Ahuja",
+   "display_name": "Prof. Dr. Ravi Ahuja",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "rafet-koca",
+   "url": "https://www.zmo.de/en/people/rafet-koca",
+   "name": "Rafet Koca",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "rakiya-el-matine",
+   "url": "https://www.zmo.de/en/people/rakiya-el-matine",
+   "name": "Rakiya El Matine",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "rand-el-zein",
+   "url": "https://www.zmo.de/en/people/rand-el-zein",
+   "name": "Rand El Zein",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "randa-abou-bakr",
+   "url": "https://www.zmo.de/en/people/randa-abou-bakr",
+   "name": "Randa Abou Bakr",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher"
+  },
+  {
+   "slug": "raschad-salem",
+   "url": "https://www.zmo.de/en/people/raschad-salem",
+   "name": "Raschad Salem",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "regina-sarreiter",
+   "url": "https://www.zmo.de/en/people/regina-sarreiter",
+   "name": "Regina Sarreiter",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "rene-wildangel",
+   "url": "https://www.zmo.de/en/people/rene-wildangel",
+   "name": "René Wildangel",
+   "display_name": "Dr. René Wildangel",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "reyazul-haque",
+   "url": "https://www.zmo.de/en/people/reyazul-haque",
+   "name": "Reyazul Haque",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "ritam-sengupta",
+   "url": "https://www.zmo.de/en/people/ritam-sengupta",
+   "name": "Ritam Sengupta",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "robin-schmahl",
+   "url": "https://www.zmo.de/en/people/robin-schmahl",
+   "name": "Robin Schmahl",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "A Tale of Two Narratives: Deliberative Systems in Egypt during the French Military Campaign of 1798-1801 and the Inception of the Modern Middle East",
+     "url": "https://www.zmo.de/en/research/state-and-society/robin-schmahl-state-and-society"
+    }
+   ],
+   "regional_focus": "Arab World, particularly Egypt and European Imperialism in the Middle East"
+  },
+  {
+   "slug": "s-m-faizan-ahmed-society-for-social-research-new-delhi-indien",
+   "url": "https://www.zmo.de/en/people/s-m-faizan-ahmed-society-for-social-research-new-delhi-indien",
+   "name": "S. M. Faizan Ahmed",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "sagnik-kar",
+   "url": "https://www.zmo.de/en/people/sagnik-kar",
+   "name": "Sagnik Kar",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Time and Delay: Gendered Temporalities in Bengal in the 19th and 20th Centuries",
+     "url": "https://www.zmo.de/en/research/state-and-society/timely-histories/sagnik-kar-timely-histories"
+    }
+   ],
+   "regional_focus": "South Asia, especially India"
+  },
+  {
+   "slug": "said-djadoun",
+   "url": "https://www.zmo.de/en/people/said-djadoun",
+   "name": "Said Djadoun",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Lived Socialism: On the Deployment of the FDJ Friendship Brigades of the Former GDR in Algeria 1964–1989: Development Aid, Socialism, and Diplomacy",
+     "url": "https://www.zmo.de/en/forschung/staat-und-gesellschaft/crafte/said-djadoun"
+    }
+   ]
+  },
+  {
+   "slug": "saidolimkhon-gaziev",
+   "url": "https://www.zmo.de/en/people/saidolimkhon-gaziev",
+   "name": "Saidolimkhon Gaziev",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "sari-chreiteh",
+   "url": "https://www.zmo.de/en/people/sari-chreiteh",
+   "name": "Sari Chreiteh",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Predictive Narratives and Magical Thinking as Coping Mechanisms in Lebanon’s Radical Uncertainty (2019-2024)",
+     "url": "https://www.zmo.de/en/research/state-and-society/sari-chreiteh"
+    }
+   ]
+  },
+  {
+   "slug": "schukalla",
+   "url": "https://www.zmo.de/en/people/schukalla",
+   "name": "Patrick Schukalla",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "shadia-husseini-de-araujo",
+   "url": "https://www.zmo.de/en/people/shadia-husseini-de-araujo",
+   "name": "Shadia Husseini de Araújo",
+   "display_name": "Dr. Shadia Husseini de Araújo",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "sibylle-wegener",
+   "url": "https://www.zmo.de/en/people/sibylle-wegener",
+   "name": "Sibylle Wegener",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "simon-ullrich",
+   "url": "https://www.zmo.de/en/people/simon-ullrich",
+   "name": "Simon Ullrich",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "sinan-erensue",
+   "url": "https://www.zmo.de/en/people/sinan-erensue",
+   "name": "Sinan Erensü",
+   "display_name": "Dr. Sinan Erensü",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Research Fellow",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "(Un)Just Transitions: Labor, Resource Nationalism, and Climate Skepticism Amidst an Unplanned Exit from Coal",
+     "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/unjust-transitions-labor-resource-nationalism-and-climate-skepticism-amidst-an-unplanned-exit-from-coal"
+    }
+   ],
+   "orcid": "0000-0001-6305-4071"
+  },
+  {
+   "slug": "sohaib-ali",
+   "url": "https://www.zmo.de/en/people/sohaib-ali",
+   "name": "Sohaib Ali",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "religion-and-intellectual-culture"
+   ],
+   "projects": [
+    {
+     "title": "The Contending Political Theologies of Pakistan’s Transnational Islamic Actors: A Comparison of Mainstream Deobandi Discourses and Militant Islamism",
+     "url": "https://www.zmo.de/en/research/religion-and-intellectual-culture/sohaib-ali-religion-and-intellectual-culture"
+    }
+   ]
+  },
+  {
+   "slug": "sophie-wilske",
+   "url": "https://www.zmo.de/en/people/sophie-wilske",
+   "name": "Sophie Wilske",
+   "categories": [
+    "research-support"
+   ],
+   "position": "Reporting and Internship Coordination"
+  },
+  {
+   "slug": "stefan-tetzlaff",
+   "url": "https://www.zmo.de/en/people/stefan-tetzlaff",
+   "name": "Stefan Tetzlaff",
+   "display_name": "Dr. Stefan Tetzlaff",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "susann-ruscher",
+   "url": "https://www.zmo.de/en/people/susann-ruscher",
+   "name": "Susann Ruscher",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "svenja-becherer",
+   "url": "https://www.zmo.de/en/people/svenja-becherer",
+   "name": "Svenja Becherer",
+   "categories": [
+    "research-support"
+   ],
+   "position": "Publications"
+  },
+  {
+   "slug": "tamalika-roy",
+   "url": "https://www.zmo.de/en/people/tamalika-roy",
+   "name": "Tamalika Roy",
+   "categories": [
+    "research-fellows"
+   ],
+   "position": "Doctoral Research Fellow",
+   "units": [
+    "state-and-society"
+   ],
+   "projects": [
+    {
+     "title": "Crafting Entanglements: Afro-Asian Pasts of the Global Cold War (CRAFTE)",
+     "url": "https://www.zmo.de/en/research/state-and-society/crafting-entanglements-afro-asian-pasts-of-the-global-cold-war-crafte"
+    },
+    {
+     "title": "Women's Internationalism(s) and Afro-Asian Networks: Cultural politics and Cold War in India",
+     "url": "https://www.zmo.de/en/research/state-and-society/crafte/tamalika-roy-state-and-society"
+    }
+   ]
+  },
+  {
+   "slug": "thanzeel-nazer",
+   "url": "https://www.zmo.de/en/people/thanzeel-nazer",
+   "name": "Thanzeel Nazer",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher",
+   "units": [
+    "lives-and-ecologies"
+   ],
+   "projects": [
+    {
+     "title": "“Shoot that Elephant”: Anthropology of Inter-Species Entanglements in Kerala, South India",
+     "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-thanzeel-nazer-lebenswege-und-oekologien"
+    }
+   ]
+  },
+  {
+   "slug": "thiago-pinto-barbosa",
+   "url": "https://www.zmo.de/en/people/thiago-pinto-barbosa",
+   "name": "Thiago Pinto Barbosa",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "thomas-k-gugler",
+   "url": "https://www.zmo.de/en/people/thomas-k-gugler",
+   "name": "Thomas K. Gugler",
+   "display_name": "Dr. Thomas K. Gugler",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "tika-ramadhini",
+   "url": "https://www.zmo.de/en/people/tika-ramadhini",
+   "name": "Tika Ramadhini",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "tilman-boecker",
+   "url": "https://www.zmo.de/en/people/tilman-boecker",
+   "name": "Tilman Böcker",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "trenner-dr-caterina-bori",
+   "url": "https://www.zmo.de/en/people/trenner-dr-caterina-bori",
+   "name": "Caterina Bori",
+   "display_name": "Dr. Caterina Bori",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "ursula-benzin",
+   "url": "https://www.zmo.de/en/people/ursula-benzin",
+   "name": "Ursula Benzin",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "vanessa-diaz-rivas",
+   "url": "https://www.zmo.de/en/people/vanessa-diaz-rivas",
+   "name": "Vanessa Díaz Rivas",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "vidhya-raveendranathan",
+   "url": "https://www.zmo.de/en/people/vidhya-raveendranathan",
+   "name": "Vidhya Raveendranathan",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  },
+  {
+   "slug": "vincent-favier",
+   "url": "https://www.zmo.de/en/people/vincent-favier",
+   "name": "Vincent Favier",
+   "categories": [
+    "affiliated-researchers"
+   ],
+   "position": "Affiliated Researcher"
+  },
+  {
+   "slug": "yasser-mehanna",
+   "url": "https://www.zmo.de/en/people/yasser-mehanna",
+   "name": "Yasser Mehanna",
+   "categories": [
+    "former-fellows-and-staff"
+   ]
+  }
+ ]
+}

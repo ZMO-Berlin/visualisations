@@ -12,7 +12,12 @@ export function createSettings({ basePath }) {
     return Object.freeze({
         paths: {
             publications: `${basePath}/data/publications.json`,
-            meta: `${basePath}/data/meta.json`
+            meta: `${basePath}/data/meta.json`,
+            people: `${basePath}/data/people.json`,
+            themes: `${basePath}/data/themes.json`,
+            // Loaded only when a view that needs it is opened: it is the
+            // largest of the companion files and most readers never ask.
+            openalex: `${basePath}/data/openalex.json`
         },
 
         charts: {
@@ -52,6 +57,13 @@ export function createSettings({ basePath }) {
             radius: { min: 4, max: 18 },
             charge: -180,
             linkDistance: 60
+        },
+
+        map: {
+            /** Height of the thematic map; its width follows the panel. */
+            height: 460,
+            /** In map units: the map is 1,000 wide, scaled to its panel. */
+            radius: 4
         },
 
         list: {

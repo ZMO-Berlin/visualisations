@@ -1,0 +1,873 @@
+{
+ "Adam, Jens": {
+  "url": "https://www.zmo.de/en/people/jens-adam-von-juli-2012-bis-dezember-2013-wissenschaftlicher-mitarbeiter",
+  "current": false
+ },
+ "Ahmad, Ali Nobil": {
+  "url": "https://www.zmo.de/en/people/dr-ali-nobil-ahmad",
+  "current": false
+ },
+ "Ahmed, Chanfi": {
+  "url": "https://www.zmo.de/en/people/dr-chanfi-ahmed",
+  "current": false
+ },
+ "Ahuja, Ravi": {
+  "url": "https://www.zmo.de/en/people/prof-ravi-ahuja",
+  "current": false
+ },
+ "Alghafal, Suaad": {
+  "url": "https://www.zmo.de/en/people/dr-suaad-al-ghafal",
+  "current": true,
+  "position": "Associated",
+  "units": [
+   "religion-and-intellectual-culture"
+  ]
+ },
+ "Alimia, Sanaa": {
+  "url": "https://www.zmo.de/en/people/dr-sanaa-alimia",
+  "current": false
+ },
+ "Alkan, Hilal": {
+  "url": "https://www.zmo.de/en/people/dr-hilal-alkan",
+  "current": true,
+  "position": "Research Fellow",
+  "units": [
+   "lives-and-ecologies"
+  ]
+ },
+ "Almazova, Leila": {
+  "url": "https://www.zmo.de/en/people/dr-leila-almazova",
+  "current": true,
+  "position": "Research Fellow",
+  "units": [
+   "religion-and-intellectual-culture"
+  ]
+ },
+ "Amer, Abdel Qader": {
+  "url": "https://www.zmo.de/en/people/abdel-qader-amer",
+  "current": false
+ },
+ "Atmaca, Nushin": {
+  "url": "https://www.zmo.de/en/people/nushin-atmaca",
+  "current": false
+ },
+ "Avetikyan, Gevorg": {
+  "url": "https://www.zmo.de/en/people/dr-gevorg-avetikyan",
+  "current": true,
+  "position": "Affiliated Researcher",
+  "units": [
+   "state-and-society"
+  ],
+  "orcid": "0000-0001-6999-4187"
+ },
+ "Ayachi, Mehdi": {
+  "url": "https://www.zmo.de/en/people/mehdi-ayachi",
+  "current": true,
+  "position": "Affiliated Researcher",
+  "units": [
+   "religion-and-intellectual-culture"
+  ]
+ },
+ "Baer, Marc D.": {
+  "url": "https://www.zmo.de/en/people/prof-marc-baer",
+  "current": false
+ },
+ "Baers, Michael": {
+  "url": "https://www.zmo.de/en/people/dr-michael-baers",
+  "current": true,
+  "position": "Affiliated Researcher"
+ },
+ "Bajpai, Anandita": {
+  "url": "https://www.zmo.de/en/people/dr-anandita-bajpai",
+  "current": true,
+  "position": "Research Fellow",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Barbosa, Thiago P.": {
+  "url": "https://www.zmo.de/en/people/thiago-pinto-barbosa",
+  "current": false
+ },
+ "Bazarbaev, Akmal": {
+  "url": "https://www.zmo.de/en/people/akmal-bazarbaev",
+  "current": true,
+  "position": "Research Fellow"
+ },
+ "Becker, Johannes": {
+  "url": "https://www.zmo.de/en/people/dr-johannes-becker",
+  "current": true,
+  "position": "Research Fellow",
+  "units": [
+   "lives-and-ecologies"
+  ]
+ },
+ "Berriane, Yasmine": {
+  "url": "https://www.zmo.de/en/people/dr-yasmine-berriane",
+  "current": false
+ },
+ "Boedeker, Just": {
+  "url": "https://www.zmo.de/en/people/just-boedeker",
+  "current": false
+ },
+ "Boesen, Elisabeth": {
+  "url": "https://www.zmo.de/en/people/dr-elisabeth-boesen",
+  "current": false
+ },
+ "Bori, Caterina": {
+  "url": "https://www.zmo.de/en/people/trenner-dr-caterina-bori",
+  "current": false
+ },
+ "Brauburger, Jan": {
+  "url": "https://www.zmo.de/en/people/jan-brauburger",
+  "current": false
+ },
+ "Brileva, Diliara": {
+  "url": "https://www.zmo.de/en/people/dr-diliara-brileva",
+  "current": true,
+  "position": "Associated Researcher",
+  "units": [
+   "religion-and-intellectual-culture"
+  ]
+ },
+ "Bromber, Katrin": {
+  "url": "https://www.zmo.de/en/people/pd-dr-katrin-bromber",
+  "current": true,
+  "position": "Former Head of Research Unit \"Age and Generation\""
+ },
+ "Brylov, Denys": {
+  "url": "https://www.zmo.de/en/people/brylov-denys",
+  "current": true,
+  "position": "Associated Researcher"
+ },
+ "Bühler, Brigitte": {
+  "url": "https://www.zmo.de/en/people/dr-brigitte-buehler",
+  "current": false
+ },
+ "Chalati, Noura": {
+  "url": "https://www.zmo.de/en/people/noura-chalati",
+  "current": false
+ },
+ "Chappatte, André": {
+  "url": "https://www.zmo.de/en/people/andre-chappatte",
+  "current": false
+ },
+ "Chavoshian, Sana": {
+  "url": "https://www.zmo.de/en/people/dr-sana-chavoshian",
+  "current": true,
+  "position": "Research Fellow"
+ },
+ "Christof-Füchsle, Martin": {
+  "url": "https://www.zmo.de/en/people/dr-martin-christof-fuechsle",
+  "current": true,
+  "position": "Wissenschaftlicher Mitarbeiter",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Coppenrath, Florian": {
+  "url": "https://www.zmo.de/en/people/florian-coppenrath",
+  "current": true,
+  "position": "Affiliated Researcher",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Dandekar, Deepra": {
+  "url": "https://www.zmo.de/en/people/deepra-dandekar",
+  "current": false
+ },
+ "Daǧyeli, Jeanine Elif": {
+  "url": "https://www.zmo.de/en/people/dr-jeanine-dagyeli",
+  "current": false
+ },
+ "Delfs, Tobias": {
+  "url": "https://www.zmo.de/en/people/dr-tobias-delfs",
+  "current": false
+ },
+ "Dennerlein, Bettina": {
+  "url": "https://www.zmo.de/en/people/prof-dr-bettina-dennerlein",
+  "current": false
+ },
+ "Determann, Jörg Matthias": {
+  "url": "https://www.zmo.de/en/people/dr-joerg-matthias-determann",
+  "current": false
+ },
+ "Deutsch, Jan-Georg": {
+  "url": "https://www.zmo.de/en/people/pd-dr-jan-georg-deutsch",
+  "current": false
+ },
+ "Dogan, Ali": {
+  "url": "https://www.zmo.de/en/people/ali-dogan",
+  "current": false
+ },
+ "Eggart, Claudia": {
+  "url": "https://www.zmo.de/en/people/claudia-eggart",
+  "current": false
+ },
+ "Evren, Erdem": {
+  "url": "https://www.zmo.de/en/people/dr-erdem-evren",
+  "current": false
+ },
+ "Favier, Vincent": {
+  "url": "https://www.zmo.de/en/people/vincent-favier",
+  "current": true,
+  "position": "Affiliated Researcher"
+ },
+ "Ferrand, Antoinette": {
+  "url": "https://www.zmo.de/en/people/antoinette-ferrand",
+  "current": false
+ },
+ "Ferreri, Veronica": {
+  "url": "https://www.zmo.de/en/people/dr-veronica-ferreri",
+  "current": false
+ },
+ "Fischer-Tahir, Andrea": {
+  "url": "https://www.zmo.de/en/people/dr-andrea-fischer-tahir",
+  "current": false
+ },
+ "Frede, Britta": {
+  "url": "https://www.zmo.de/en/people/britta-frede",
+  "current": false
+ },
+ "Freitag, Ulrike": {
+  "url": "https://www.zmo.de/en/people/prof-dr-ulrike-freitag",
+  "current": true,
+  "position": "Director",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Frenz, Margret": {
+  "url": "https://www.zmo.de/en/people/dr-margret-frenz",
+  "current": false
+ },
+ "Fuhrmann, Malte": {
+  "url": "https://www.zmo.de/en/people/dr-malte-fuhrmann",
+  "current": false
+ },
+ "Féaux de la Croix, Jeanne": {
+  "url": "https://www.zmo.de/en/people/dr-jeanne-feaux-de-la-croix",
+  "current": false
+ },
+ "Füllberg-Stolberg, Katja": {
+  "url": "https://www.zmo.de/en/people/pd-dr-katja-fuellberg-stolberg",
+  "current": false
+ },
+ "Fürtig, Henner": {
+  "url": "https://www.zmo.de/en/people/dr-henner-fuertig",
+  "current": false
+ },
+ "Gaibazzi, Paolo": {
+  "url": "https://www.zmo.de/en/people/dr-paolo-gaibazzi",
+  "current": false
+ },
+ "Ganzer, Burkhard": {
+  "url": "https://www.zmo.de/en/people/dr-burkhard-ganzer",
+  "current": false
+ },
+ "Ghrawi, Claudia": {
+  "url": "https://www.zmo.de/en/people/dr-claudia-ghrawi",
+  "current": true,
+  "position": "Associated Researcher",
+  "units": [
+   "lives-and-ecologies"
+  ]
+ },
+ "Graw, Knut": {
+  "url": "https://www.zmo.de/en/people/dr-knut-graw",
+  "current": false
+ },
+ "Gräf, Bettina": {
+  "url": "https://www.zmo.de/en/people/dr-bettina-graef",
+  "current": false
+ },
+ "Grätz, Tilo": {
+  "url": "https://www.zmo.de/en/people/dr-habil-tilo-graetz",
+  "current": false
+ },
+ "Gugler, Thomas K.": {
+  "url": "https://www.zmo.de/en/people/thomas-k-gugler",
+  "current": false
+ },
+ "Haarmann, Ulrich": {
+  "url": "https://www.zmo.de/en/people/prof-dr-ulrich-haarmann",
+  "current": false
+ },
+ "Hafner, Annemarie": {
+  "url": "https://www.zmo.de/en/people/dr-annemarie-hafner",
+  "current": false
+ },
+ "Hamzah, Dyala": {
+  "url": "https://www.zmo.de/en/people/dr-dyala-hamzah",
+  "current": false
+ },
+ "Haque, Reyazul": {
+  "url": "https://www.zmo.de/en/people/reyazul-haque",
+  "current": false
+ },
+ "Hedrich, Leo": {
+  "url": "https://www.zmo.de/en/people/leonie-hedrich",
+  "current": true,
+  "position": "Research Fellow",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Hegasy, Sonja": {
+  "url": "https://www.zmo.de/en/people/dr-sonja-hegasy",
+  "current": true,
+  "position": "Vice Director, Head of Public Relations & Knowledge Transfer",
+  "units": [
+   "religion-and-intellectual-culture"
+  ]
+ },
+ "Heidrich, Petra": {
+  "url": "https://www.zmo.de/en/people/dr-petra-heidrich",
+  "current": false
+ },
+ "Heike, Liebau": {
+  "url": "https://www.zmo.de/en/people/dr-heike-liebau",
+  "current": true,
+  "position": "Affiliated Researcher",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Hermann, Katja": {
+  "url": "https://www.zmo.de/en/people/katja-hermann",
+  "current": false
+ },
+ "Hew, Wai Weng": {
+  "url": "https://www.zmo.de/en/people/dr-wai-weng-hew",
+  "current": false
+ },
+ "Hoffmann, Friedhelm": {
+  "url": "https://www.zmo.de/en/people/friedhelm-hoffmann",
+  "current": false
+ },
+ "Hoffmann, Sophia": {
+  "url": "https://www.zmo.de/en/people/dr-sophia-hoffmann",
+  "current": false
+ },
+ "Holst, Birgitte Stampe": {
+  "url": "https://www.zmo.de/en/people/dr-birgitte-stampe-holst",
+  "current": true,
+  "position": "Associated Researcher",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Hussein, Jamshid": {
+  "url": "https://www.zmo.de/en/people/jamshid-hussein",
+  "current": false
+ },
+ "Husseini de Araújo, Shadia": {
+  "url": "https://www.zmo.de/en/people/shadia-husseini-de-araujo",
+  "current": false
+ },
+ "Höpp, Gerhard": {
+  "url": "https://www.zmo.de/en/people/prof-dr-gerhard-hoepp",
+  "current": false
+ },
+ "Ismailbekova, Aksana": {
+  "url": "https://www.zmo.de/en/people/dr-aksana-ismailbekova",
+  "current": true,
+  "position": "Research Fellow",
+  "units": [
+   "lives-and-ecologies"
+  ]
+ },
+ "Janson, Marloes": {
+  "url": "https://www.zmo.de/en/people/dr-marloes-janson",
+  "current": false
+ },
+ "Jonker, Gerdien": {
+  "url": "https://www.zmo.de/en/people/gerdien-jonker",
+  "current": false
+ },
+ "Jurkiewicz, Sarah": {
+  "url": "https://www.zmo.de/en/people/dr-sarah-jurkiewicz",
+  "current": false
+ },
+ "Jöris, Lisa": {
+  "url": "https://www.zmo.de/en/people/lisa-joeris",
+  "current": false
+ },
+ "Kadino, Agit": {
+  "url": "https://www.zmo.de/en/people/agit-kadino",
+  "current": false
+ },
+ "Kai, Kresse": {
+  "url": "https://www.zmo.de/en/people/prof-dr-kai-kresse",
+  "current": true,
+  "position": "Vice Director, Head of Research Unit \"Religion and Intellectual Culture\"",
+  "units": [
+   "religion-and-intellectual-culture"
+  ]
+ },
+ "Kamp, Melanie": {
+  "url": "https://www.zmo.de/en/people/melanie-kamp",
+  "current": false
+ },
+ "Karabaev, Alisher": {
+  "url": "https://www.zmo.de/en/people/alisher-karabaev",
+  "current": true,
+  "position": "Open Science and Special Collection",
+  "orcid": "0000-0002-6207-3200"
+ },
+ "Karim, Farhan": {
+  "url": "https://www.zmo.de/en/people/dr-farhan-karim-university-of-kansas",
+  "current": false
+ },
+ "Katrin, Bromber": {
+  "url": "https://www.zmo.de/en/people/pd-dr-katrin-bromber",
+  "current": true,
+  "position": "Former Head of Research Unit \"Age and Generation\""
+ },
+ "Ketzmerick-Calandrino, Maria": {
+  "url": "https://www.zmo.de/en/people/dr-maria-ketzmerick-calandrino",
+  "current": true,
+  "position": "Research Fellow",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Kilincoglu, Deniz T.": {
+  "url": "https://www.zmo.de/en/people/dr-deniz-t-kilincoglu",
+  "current": true,
+  "position": "Research Fellow",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Kirmse, Stefan B.": {
+  "url": "https://www.zmo.de/en/people/prof-dr-stefan-b-kirmse",
+  "current": true,
+  "position": "Senior Research Fellow and Research Coordinator",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Klausmann, Kyara": {
+  "url": "https://www.zmo.de/en/people/kyara-klausmann",
+  "current": false
+ },
+ "Krajewski, Patrick": {
+  "url": "https://www.zmo.de/en/people/patrick-krajewski",
+  "current": false
+ },
+ "Krawietz, Birgit": {
+  "url": "https://www.zmo.de/en/people/prof-dr-birgit-krawietz",
+  "current": false
+ },
+ "Kresse, Kai": {
+  "url": "https://www.zmo.de/en/people/prof-dr-kai-kresse",
+  "current": true,
+  "position": "Vice Director, Head of Research Unit \"Religion and Intellectual Culture\"",
+  "units": [
+   "religion-and-intellectual-culture"
+  ]
+ },
+ "Krimsti, Feras": {
+  "url": "https://www.zmo.de/en/people/feras-krimsti",
+  "current": false
+ },
+ "Lafi, Nora": {
+  "url": "https://www.zmo.de/en/people/pd-dr-nora-lafi",
+  "current": true,
+  "position": "Affiliated Researcher",
+  "units": [
+   "religion-and-intellectual-culture"
+  ]
+ },
+ "Lange, Katharina": {
+  "url": "https://www.zmo.de/en/people/pd-dr-katharina-lange",
+  "current": true,
+  "position": "Head of Research Unit \"Lives and Ecologies\"",
+  "units": [
+   "lives-and-ecologies"
+  ]
+ },
+ "Leupold, David": {
+  "url": "https://www.zmo.de/en/people/david-leupold",
+  "current": true,
+  "position": "Affiliated Researcher",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Liebau, Heike": {
+  "url": "https://www.zmo.de/en/people/dr-heike-liebau",
+  "current": true,
+  "position": "Affiliated Researcher",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Loimeier, Roman": {
+  "url": "https://www.zmo.de/en/people/prof-dr-roman-loimeier",
+  "current": false
+ },
+ "Madore, Frédérick": {
+  "url": "https://www.zmo.de/en/people/dr-frederick-madore",
+  "current": true,
+  "position": "Affiliated Researcher",
+  "units": [
+   "religion-and-intellectual-culture"
+  ]
+ },
+ "Mahamadou, Bello Adamou": {
+  "url": "https://www.zmo.de/en/people/bello-adamou-mahamadou",
+  "current": false
+ },
+ "Mahazi, Jasmin": {
+  "url": "https://www.zmo.de/en/people/dr-jasmin-mahazi",
+  "current": true,
+  "position": "Affiliated Researcher",
+  "units": [
+   "lives-and-ecologies"
+  ]
+ },
+ "Maksudyan, Nazan": {
+  "url": "https://www.zmo.de/en/people/dr-nazan-maksudyan",
+  "current": false
+ },
+ "Marfaing, Laurence": {
+  "url": "https://www.zmo.de/en/people/dr-laurence-marfaing",
+  "current": false
+ },
+ "Masjedi, Fatemeh": {
+  "url": "https://www.zmo.de/en/people/fatemeh-masjedi",
+  "current": false
+ },
+ "Mato Bouzas, Antía": {
+  "url": "https://www.zmo.de/en/people/dr-antia-mato-bouzas",
+  "current": false
+ },
+ "Mbodj, Aïssatou": {
+  "url": "https://www.zmo.de/en/people/dr-aissatou-mbodj",
+  "current": false
+ },
+ "Mehanna, Yasser": {
+  "url": "https://www.zmo.de/en/people/yasser-mehanna",
+  "current": false
+ },
+ "Mende, Leyla von": {
+  "url": "https://www.zmo.de/en/people/leyla-von-mende",
+  "current": false
+ },
+ "Mende-Altaylı, Rana von": {
+  "url": "https://www.zmo.de/en/people/dr-rana-von-mende-altayli",
+  "current": false
+ },
+ "Menin, Laura": {
+  "url": "https://www.zmo.de/en/people/dr-laura-menin",
+  "current": false
+ },
+ "Mlodoch, Karin": {
+  "url": "https://www.zmo.de/en/people/dr-karin-mlodoch",
+  "current": false
+ },
+ "Moradi, Ahmad": {
+  "url": "https://www.zmo.de/en/people/dr-ahmad-moradi",
+  "current": true,
+  "position": "Research Fellow",
+  "units": [
+   "lives-and-ecologies"
+  ]
+ },
+ "Mukherjee, Soumen": {
+  "url": "https://www.zmo.de/en/people/dr-soumen-mukherjee",
+  "current": false
+ },
+ "Mwakimako, Hassan A.": {
+  "url": "https://www.zmo.de/en/people/dr-hassan-mwakimako",
+  "current": false
+ },
+ "Nadi, Dalila": {
+  "url": "https://www.zmo.de/en/people/dalila-nadi",
+  "current": false
+ },
+ "Nagel, Silke": {
+  "url": "https://www.zmo.de/en/people/dr-silke-nagel",
+  "current": false
+ },
+ "Nassif, Orhan": {
+  "url": "https://www.zmo.de/en/people/orhan-nassif",
+  "current": true,
+  "position": "Research Fellow",
+  "units": [
+   "lives-and-ecologies"
+  ]
+ },
+ "Nerenberg, Jacob": {
+  "url": "https://www.zmo.de/en/people/dr-jacob-nerenberg",
+  "current": false
+ },
+ "Nico, Putz": {
+  "url": "https://www.zmo.de/en/people/nico-putz",
+  "current": true,
+  "position": "Affiliated Researcher",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Nikro, Norman Saadi": {
+  "url": "https://www.zmo.de/en/people/pd-dr-norman-saadi-nikro",
+  "current": false
+ },
+ "Noor, Farish A.": {
+  "url": "https://www.zmo.de/en/people/dr-farish-noor",
+  "current": false
+ },
+ "Olma, Nikolaos": {
+  "url": "https://www.zmo.de/en/people/dr-nikolaos-olma",
+  "current": false
+ },
+ "Oppen, Achim von": {
+  "url": "https://www.zmo.de/en/people/prof-dr-achim-von-oppen",
+  "current": false
+ },
+ "Orlowska, Izabela": {
+  "url": "https://www.zmo.de/en/people/dr-izabela-orlowska",
+  "current": false
+ },
+ "Peleikis, Anja": {
+  "url": "https://www.zmo.de/en/people/dr-anja-peleikis",
+  "current": false
+ },
+ "Pontzen, Benedikt": {
+  "url": "https://www.zmo.de/en/people/dr-phil-benedikt-pontzen",
+  "current": true,
+  "position": "Affiliated Researcher"
+ },
+ "Prange, Sebastian R.": {
+  "url": "https://www.zmo.de/en/people/dr-sebastian-r-prange",
+  "current": false
+ },
+ "Putz, Nico": {
+  "url": "https://www.zmo.de/en/people/nico-putz",
+  "current": true,
+  "position": "Affiliated Researcher",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Raza, Ali": {
+  "url": "https://www.zmo.de/en/people/dr-m-ali-raza",
+  "current": false
+ },
+ "Reetz, Dietrich": {
+  "url": "https://www.zmo.de/en/people/pd-dr-dietrich-reetz",
+  "current": true,
+  "position": "Affiliated Researcher"
+ },
+ "Reinwald, Brigitte": {
+  "url": "https://www.zmo.de/en/people/prof-dr-brigitte-reinwald",
+  "current": false
+ },
+ "Riecken, Nils": {
+  "url": "https://www.zmo.de/en/people/dr-des-nils-riecken",
+  "current": false
+ },
+ "Riedler, Florian": {
+  "url": "https://www.zmo.de/en/people/dr-florian-riedler",
+  "current": false
+ },
+ "Roche, Sophie": {
+  "url": "https://www.zmo.de/en/people/dr-sophie-roche",
+  "current": false
+ },
+ "Roelcke, Annegret": {
+  "url": "https://www.zmo.de/en/people/annegret-roelcke",
+  "current": false
+ },
+ "Roy, Arpan": {
+  "url": "https://www.zmo.de/en/people/arpan-roy",
+  "current": false
+ },
+ "Roy, Franziska": {
+  "url": "https://www.zmo.de/en/people/dr-roy",
+  "current": false
+ },
+ "Roy, Tamalika": {
+  "url": "https://www.zmo.de/en/people/tamalika-roy",
+  "current": true,
+  "position": "Doctoral Research Fellow",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Sarreiter, Regina": {
+  "url": "https://www.zmo.de/en/people/regina-sarreiter",
+  "current": false
+ },
+ "Scharrer, Tabea": {
+  "url": "https://www.zmo.de/en/people/dr-tabea-scharrer",
+  "current": true,
+  "position": "Affiliated Researcher"
+ },
+ "Scheele, Judith": {
+  "url": "https://www.zmo.de/en/people/dr-judith-scheele",
+  "current": false
+ },
+ "Schielke, Samuli": {
+  "url": "https://www.zmo.de/en/people/dozent-dr-samuli-schielke",
+  "current": true,
+  "position": "Head of Research Unit \"Lives and Ecologies\"",
+  "units": [
+   "lives-and-ecologies"
+  ]
+ },
+ "Schmahl, Robin F. C.": {
+  "url": "https://www.zmo.de/en/people/robin-schmahl",
+  "current": true,
+  "position": "Affiliated Researcher",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Schmid, Larissa": {
+  "url": "https://www.zmo.de/en/people/larissa-schmid",
+  "current": false
+ },
+ "Schneider, Nadja-Christina": {
+  "url": "https://www.zmo.de/en/people/prof-dr-nadja-christina-schneider",
+  "current": false
+ },
+ "Schukalla, Patrick": {
+  "url": "https://www.zmo.de/en/people/schukalla",
+  "current": false
+ },
+ "Schumacher, Juliane M.": {
+  "url": "https://www.zmo.de/en/people/juliane-schumacher",
+  "current": true,
+  "position": "Associated Researcher",
+  "units": [
+   "lives-and-ecologies"
+  ]
+ },
+ "Schöne, Ellinor": {
+  "url": "https://www.zmo.de/en/people/dr-ellinor-schoene",
+  "current": false
+ },
+ "Sengupta, Ritam": {
+  "url": "https://www.zmo.de/en/people/ritam-sengupta",
+  "current": false
+ },
+ "Serels, Steven": {
+  "url": "https://www.zmo.de/en/people/dr-steven-serels",
+  "current": false
+ },
+ "Shehata, Mukhtar Saad": {
+  "url": "https://www.zmo.de/en/people/mukhtar-saad-shehata",
+  "current": false
+ },
+ "Sinani, Besnik": {
+  "url": "https://www.zmo.de/en/people/besnik-sinani",
+  "current": false
+ },
+ "Sinha, Nitin": {
+  "url": "https://www.zmo.de/en/people/dr-nitin-sinha",
+  "current": true,
+  "position": "Head of Research Unit \"State and Society\"",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Sounaye, Abdoulaye": {
+  "url": "https://www.zmo.de/en/people/dr-abdoulaye-sounaye",
+  "current": true,
+  "position": "Head of Research Unit \"Religion and Intellectual Culture\"",
+  "units": [
+   "religion-and-intellectual-culture"
+  ]
+ },
+ "Suerbaum, Magdalena": {
+  "url": "https://www.zmo.de/en/people/dr-magdalena-suerbaum",
+  "current": true,
+  "position": "Affiliated Researcher"
+ },
+ "Swarowsky, Daniela": {
+  "url": "https://www.zmo.de/en/people/daniela-swarowsky",
+  "current": false
+ },
+ "Tadesse, Julian": {
+  "url": "https://www.zmo.de/en/people/julian-tadesse",
+  "current": false
+ },
+ "Tayob, Abdulkader": {
+  "url": "https://www.zmo.de/en/people/dr-abdulkader-tayob",
+  "current": true,
+  "position": "Affiliated Researcher"
+ },
+ "Tetzlaff, Stefan": {
+  "url": "https://www.zmo.de/en/people/stefan-tetzlaff",
+  "current": false
+ },
+ "Thode, Jannes Thode": {
+  "url": "https://www.zmo.de/en/people/jannes-thode",
+  "current": true,
+  "position": "Research Fellow",
+  "units": [
+   "state-and-society"
+  ]
+ },
+ "Varma, Nitin": {
+  "url": "https://www.zmo.de/en/people/nitin-varma",
+  "current": false
+ },
+ "Wagenhofer, Sophie": {
+  "url": "https://www.zmo.de/en/people/dr-sophie-wagenhofer",
+  "current": false
+ },
+ "Wien, Peter": {
+  "url": "https://www.zmo.de/en/people/dr-peter-wien",
+  "current": false
+ },
+ "Wildangel, René": {
+  "url": "https://www.zmo.de/en/people/rene-wildangel",
+  "current": false
+ },
+ "Wilkowsky, Dina": {
+  "url": "https://www.zmo.de/en/people/dr-dina-wilkowsky",
+  "current": false
+ },
+ "Wippel, Steffen": {
+  "url": "https://www.zmo.de/en/people/pd-dr-steffen-wippel",
+  "current": false
+ },
+ "Wright, Samuel": {
+  "url": "https://www.zmo.de/en/people/dr-samuel-wright",
+  "current": false
+ },
+ "Yilmaz, İlkay": {
+  "url": "https://www.zmo.de/en/people/dr-ilkay-yilmaz",
+  "current": false
+ },
+ "Yılmaz, İlkay": {
+  "url": "https://www.zmo.de/en/people/dr-ilkay-yilmaz",
+  "current": false
+ },
+ "Zachariah, Benjamin": {
+  "url": "https://www.zmo.de/en/people/dr-benjamin-zachariah",
+  "current": false
+ },
+ "van den Heuvel, Noel": {
+  "url": "https://www.zmo.de/en/people/noel-van-den-heuvel",
+  "current": false
+ },
+ "Çiçek, M. Talha": {
+  "url": "https://www.zmo.de/en/people/dr-talha-cicek",
+  "current": false
+ },
+ "Özgür, Ergün": {
+  "url": "https://www.zmo.de/en/people/dr-erguen-oezguer",
+  "current": true,
+  "position": "Research Fellow",
+  "units": [
+   "lives-and-ecologies"
+  ]
+ }
+}
