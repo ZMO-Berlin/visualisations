@@ -113,7 +113,7 @@ const COLLAPSE = 'M9 4v5H4M20 9h-5V4M15 20v-5h5M4 15h5v5';
  * @param {HTMLElement} section
  * @param {{enter: string, exit: string}} labels
  */
-function fullscreenButton(section, labels) {
+export function fullscreenButton(section, labels) {
     if (!document.fullscreenEnabled) return null;
     const path = svg('path', {
         d: EXPAND, fill: 'none', stroke: 'currentColor',

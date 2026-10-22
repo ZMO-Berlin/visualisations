@@ -211,5 +211,6 @@ test('regions and subjects files validate against the committed dataset', async 
     assert.ok(publications.every(r => (r.gnd ?? []).every(id => id in subjects.headings)));
     // Only the eight palette regions have a colour; the transregional group has none.
     assert.equal(regions.macros.filter(m => m.slot).length, 8);
-    assert.ok(regions.places.filter(p => p.macro === 'transregional').every(p => !p.coord || ['sea', 'region'].includes(p.kind)));
+    // Continents and world regions have no single location and are never drawn.
+    assert.ok(regions.places.every(p => !p.coord || !['continent', 'world'].includes(p.kind)));
 });

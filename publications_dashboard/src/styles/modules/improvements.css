@@ -1,4 +1,4 @@
-.panel__hint { font-size:0.8125rem; color:var(--c-ink-muted); max-width:65ch; }
+.panel__hint { font-size:0.8125rem; color:var(--c-ink-muted); }
 .panel__head { flex-wrap:wrap; }
 .panel__title { font-size:1.25rem; }
 .timeline { overflow-x:auto; padding-bottom:0.5rem; }

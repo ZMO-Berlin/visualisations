@@ -27,7 +27,7 @@ import { accessOf, isEmpty, UNDETERMINED } from './store/filters.js';
 import {
     coauthorGraph, countValues, rank, stackedYearSeries, topKeysWithOther, yearExtent
 } from './utils/aggregate.js';
-import { el, mount, panel } from './utils/dom.js';
+import { el, fullscreenButton, mount, panel } from './utils/dom.js';
 import { formatNumber } from './utils/format.js';
 import { Tooltip } from './components/Tooltip.js';
 import { Summary } from './components/Summary.js';
@@ -193,7 +193,12 @@ function bootstrap() {
     const disclosure = el('details', { class: 'analysis-section' }, [el('summary', { text: strings.coauthorship }), networkContent]);
     networkPanel.section.append(disclosure);
     networkPanel.section.querySelector('.panel__head').hidden = true;
-    networkContent.prepend(el('p', { class: 'explore-hint', text: `${extra.networkLegend} ${strings.networkZmo}` }));
+    networkContent.prepend(
+        // The panel's own head is hidden behind the disclosure, so its
+        // full-screen button sits with the graph.
+        el('div', { class: 'fullscreen-row' }, [fullscreenButton(networkPanel.section, fullscreen)]),
+        el('p', { class: 'explore-hint', text: `${extra.networkLegend} ${strings.networkZmo}` })
+    );
     disclosure.addEventListener('toggle', () => {
         if (disclosure.open) renderNetwork(); else network.suspend();
     });
@@ -361,7 +366,7 @@ function bootstrap() {
 
     // --- Rendering ----------------------------------------------------------
 
-    /** The year axis stays fixed to the whole dataset so bars keep their place. */
+    /** The whole register's year span: the slider's limits and the default axis. */
     let fullExtent = null;
 
     /**
@@ -475,14 +480,21 @@ function bootstrap() {
         // so selecting one bar leaves the alternatives visible to switch to.
         // The timeline is split by document type but filters by year, so it is
         // the year dimension it excludes.
+        //
+        // A range of several years — from the slider or the selects — zooms
+        // the axis to it, as a reader dragging a slider expects. A single year,
+        // usually a clicked column, keeps the whole axis with that column
+        // marked, so the next year is still there to click.
         if (fullExtent) {
+            const years = state.filters.years;
+            const zoomed = Boolean(years && years[0] < years[1]);
             safely(timeline, () => timeline.render({
                 series: stackedYearSeries(
-                    store.select('years'), fullExtent,
+                    store.select('years'), zoomed ? years : fullExtent,
                     record => types.keyOf(record.type || UNTYPED), types.order
                 ),
                 order: types.order,
-                selectedYears: state.filters.years,
+                selectedYears: zoomed ? null : years,
                 selectedSeries: legendSelection(state.filters.type)
             }));
         }

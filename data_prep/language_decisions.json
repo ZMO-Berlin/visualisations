@@ -1,0 +1,2050 @@
+{
+ "_readme": [
+  "Languages decided by Claude Haiku 5.5 agents for records whose title languages.py leaves",
+  "undetermined (book reviews, bare names, bilingual titles). Per record: the language (ISO 639-1,",
+  "or und), the agent's confidence and its reason, and a fingerprint of the title and venue it",
+  "read. The generator uses high- and medium-confidence decisions whose fingerprint still matches.",
+  "Refresh: --pending DIR, run the agents on the batches, then --merge DIR/out_*.json."
+ ],
+ "model": {
+  "name": "Claude Haiku 5.5",
+  "id": "claude-haiku-5-5",
+  "vendor": "Anthropic"
+ },
+ "records": {
+  "%E1%83%A5%E1%83%A3%E1%83%A9%E1%83%98%E1%83%A1-%E1%83%90%E1%83%9C%E1%83%A2%E1%83%98%E1%83%A1%E1%83%90%E1%83%91%E1%83%AD%E1%83%9D%E1%83%97%E1%83%90-%E1%83%AC%E1%83%98%E1%83%9C%E1%83%90%E1%83%90%E1%83%A6%E1%83%9B%E1%83%93%E1%83%94%E1%83%92%E1%83%9D%E1%83%91%E1%83%90-%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A8%E1%83%98-anti-soviet-street-resistance-in-georgia": {
+   "fp": "2822ac418d",
+   "lang": "ka",
+   "confidence": "high",
+   "basis": "Georgian title, subtitle and abstract"
+  },
+  "a-landscape-of-war-munira-khayyat-2022": {
+   "fp": "9692756e29",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Conflict and Society)"
+  },
+  "a-special-issue-of-language-et-societe-on-literacy-studies": {
+   "fp": "0e0db8d4b8",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English title; journal is French, so the title is the main clue"
+  },
+  "actors-in-translocal-spaces": {
+   "fp": "b7e5502cd7",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and English volume title"
+  },
+  "african-dynamics-in-a-multipolar-world-aegis-ecas-lisbon-26-29-june-2013": {
+   "fp": "c19438075c",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; ZMO Orient Bulletin report in English"
+  },
+  "afterword": {
+   "fp": "21d4b14706",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and English volume title"
+  },
+  "ahl-sunna-in-niger": {
+   "fp": "0a692c5b9a",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "Encyclopaedia of Islam, Three is an English-language reference work"
+  },
+  "ai-silvestre-de-sacy": {
+   "fp": "d24cccc166",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "Name-only title; Gale Cengage English-language reference volume"
+  },
+  "annika-toerners-dersim-geographie-der-erinnerungen-eine-untersuchung-von-narrativen-ueber-verfolgung-und-gewalt": {
+   "fp": "2e9671eae5",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language journal (Iran and the Caucasus); Rez. prefix points the other way"
+  },
+  "armenia": {
+   "fp": "05c7612b1e",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "Name-only title; SAGE English-language encyclopaedia"
+  },
+  "baba-padmanji": {
+   "fp": "c2f39ed9fe",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title, subtitle and abstract"
+  },
+  "barelwi-movement": {
+   "fp": "70a53f2b5a",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Princeton Encyclopedia of Islamic Political Thought is English"
+  },
+  "bargash": {
+   "fp": "ee5ed26eb9",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "Name-only title; Encyclopaedia of Islam, Three is English"
+  },
+  "beduinenkriege": {
+   "fp": "a8abca88b6",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German title; German-language volume Kleines abc des Nomadismus"
+  },
+  "benjamin-schultze": {
+   "fp": "75dfeb8fa7",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "Name-only title; Christian-Muslim Relations (Brill) is English"
+  },
+  "bilad": {
+   "fp": "ae5f03b012",
+   "lang": "fr",
+   "confidence": "high",
+   "basis": "French container: L'aventure des mots de la ville (Robert Laffont)"
+  },
+  "bilder-im-kopf": {
+   "fp": "005e0dbcba",
+   "lang": "und",
+   "confidence": "low",
+   "basis": "German main title with English subtitle in an English-language volume; no decisive clue"
+  },
+  "book-review-madawi-al-rasheed-the-son-king-reform-and-repression-in-saudi-arabia": {
+   "fp": "444c1a3851",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "multilingual journal (Die Welt des Islams)"
+  },
+  "book-review-romain-grancher-la-mer-en-commun-le-monde-de-la-peche-a-dieppe-xviiie-xixe-siecle-editions-de-la-sorbonne-histoire-environnementale": {
+   "fp": "bb90e13204",
+   "lang": "fr",
+   "confidence": "high",
+   "basis": "French-language journal (Etudes)"
+  },
+  "brakna": {
+   "fp": "dec6b165c1",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "Name-only title; Encyclopaedia of Islam, Three is English"
+  },
+  "buxorodagi-jangi-yatim-va-amir-shohmurodning-diniy-ijtimoiy-islohotlari": {
+   "fp": "22fe83e2bd",
+   "lang": "uz",
+   "confidence": "high",
+   "basis": "Uzbek title in Latin script; Uzbek journal Sharqshunoslik"
+  },
+  "censorship-in-africa": {
+   "fp": "b6d12dd50a",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English-language edited volume"
+  },
+  "chattopadhyaya-virendranath": {
+   "fp": "8892cc8a72",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "Name-only title; 1914-1918-online encyclopaedia is English-language"
+  },
+  "cinema-in-muslim-societies": {
+   "fp": "6009cb90bd",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and English abstract; Routledge"
+  },
+  "circassians-multiple-displacements-homelands-diasporas-diaspora-organisations-1": {
+   "fp": "710219e49e",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title, subtitle, volume title and abstract"
+  },
+  "cites-barbaresques": {
+   "fp": "4eb6dab449",
+   "lang": "fr",
+   "confidence": "high",
+   "basis": "French title; Actes Sud and French volume Dictionnaire de la Mediterranee"
+  },
+  "colum-mccann-apeirogon-a-novel-storytelling-as-empathetic-unsettlement": {
+   "fp": "3724226345",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English volume title; no journal or abstract"
+  },
+  "con-temporary-art": {
+   "fp": "33a08325a0",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title words"
+  },
+  "cosmopolitanism-in-a-global-perspective": {
+   "fp": "fb50a1ca35",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; GHI London lecture series"
+  },
+  "das-arabische-gedaechtnis-befreien": {
+   "fp": "4be1cdd617",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (Qantara.de) and German abstract"
+  },
+  "das-hawala-system": {
+   "fp": "832fe429ae",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German title; German volume title; ZMO publisher"
+  },
+  "default-4aaa37118e": {
+   "fp": "7c338ed284",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "No title; English-language series Gender and Islam (I.B. Tauris)"
+  },
+  "dennerlein-bettina-religion-als-reform-islah-und-gesellschaft-in-marokko-1830-1912-berlin-klaus-schwarz-2018-271-s-8-leibniz-zentrum-moderner-orient-studien-35-brosch-eur-3000-isbn-978-3-87997-725-3": {
+   "fp": "bd3eaafca3",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (Orientalistische Literaturzeitung)"
+  },
+  "deobandi-movement": {
+   "fp": "c1b3cc5c23",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Princeton Encyclopedia of Islamic Political Thought"
+  },
+  "dissociation-and-appropriation-responses-to-globalization-in-asia-and-africa": {
+   "fp": "be77bc3bc4",
+   "lang": "und",
+   "confidence": "low",
+   "basis": "no journal or abstract; only English book title and series"
+  },
+  "doenme": {
+   "fp": "9107e692c0",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language volume Handbuch des Antisemitismus"
+  },
+  "doing-global-sociology-2": {
+   "fp": "c232d5a870",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume Shared World"
+  },
+  "domesticating-vigilantism-in-africa": {
+   "fp": "f7c6b1faab",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; James Currey (UK publisher)"
+  },
+  "dubai-sport-city": {
+   "fp": "4e2221355b",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; ABC-CLIO volume Sports Around the World"
+  },
+  "dynamika-mejetnichekih-brakov-posle-konflikta-v-oshe": {
+   "fp": "1a26d955c0",
+   "lang": "ru",
+   "confidence": "high",
+   "basis": "Russian title in transliteration; Russian journal Etnograficheskoe Obozrenie; English is a bracketed gloss"
+  },
+  "dynamika-mejetnichekih-brakov-posle-konflikta-v-oshe-dynamics-of-inter-ethnic-marriages-in-the-aftermath-of-conflict-in-osh": {
+   "fp": "95a1b7cdcc",
+   "lang": "ru",
+   "confidence": "high",
+   "basis": "Russian title in transliteration; Russian journal; English in brackets is a translation"
+  },
+  "editorial": {
+   "fp": "2d3bc9828c",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English-language special issue"
+  },
+  "editorial-1": {
+   "fp": "d7ce2ddb3f",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English abstract; English-language container"
+  },
+  "editorial-preface": {
+   "fp": "fb77d49094",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English abstract; Nidan is an English-language journal"
+  },
+  "editorial-preface-1": {
+   "fp": "226e3d13a7",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English abstract; Nidan is an English-language journal"
+  },
+  "editors-preface": {
+   "fp": "9a2fc694d7",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English abstract; Nidan is an English-language journal"
+  },
+  "editors-preface-a-new-beginning": {
+   "fp": "55afe8e1c3",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and abstract; Nidan is an English-language journal"
+  },
+  "educational-methods": {
+   "fp": "5851716c68",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Oxford Encyclopaedia of the Islamic World"
+  },
+  "edward-w-said-a-german-egyptian-memory-1": {
+   "fp": "09395f8c79",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title phrase; Goethe-Institut magazine Latitude"
+  },
+  "einleitung": {
+   "fp": "dcca0d4cdf",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German title; German volume Soldat Ram Singh und der Kaiser; German publisher"
+  },
+  "einleitung-2": {
+   "fp": "bc89e7bc02",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German title; German volume Islam und Rechtsstaat"
+  },
+  "einleitung-3": {
+   "fp": "b67234a176",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German title; German volume Mission und Forschung"
+  },
+  "einleitung-kulturgeographien": {
+   "fp": "5ef6e9ebe0",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German title; German volume Humangeographie"
+  },
+  "einleitung-zu-the-tartar-poor-von-konstantin-lavrskii-1884": {
+   "fp": "0c5fe3d63a",
+   "lang": "und",
+   "confidence": "low",
+   "basis": "English title, but German introduction in subtitle; bilingual at best"
+  },
+  "en-kultur-av-tro-og-haap-a-culture-of-faith-and-hope": {
+   "fp": "a58d261c23",
+   "lang": "no",
+   "confidence": "high",
+   "basis": "Norwegian title; Norwegian magazine Verdensmagasinet"
+  },
+  "encyclopaedia-universalis": {
+   "fp": "5c3fb0fb01",
+   "lang": "fr",
+   "confidence": "high",
+   "basis": "Encyclopaedia Universalis is a French-language encyclopaedia"
+  },
+  "ettore-rossi": {
+   "fp": "90bec8f170",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "Name-only title; Gale Cengage English-language reference volume"
+  },
+  "fay-franziska-disputing-discipline-child-protection-punishment-and-piety-in-zanzibar-schools": {
+   "fp": "6a24a18de3",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "bilingual German/English journal"
+  },
+  "foreword": {
+   "fp": "edaf1f29fc",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Routledge English volume Under Construction"
+  },
+  "forschungsbericht-modern-india-in-german-archives-1706-1989-inaugural-project-workshop": {
+   "fp": "cf68146b2d",
+   "lang": "en",
+   "confidence": "low",
+   "basis": "English title and subtitle; ZMO Orient Bulletin mostly English; German genre word Forschungsbericht"
+  },
+  "gambia": {
+   "fp": "df29cd30ea",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "Place name only; Oxford Encyclopaedia of the Islamic World is English"
+  },
+  "genealogie": {
+   "fp": "e13d6fd702",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German title; German volume Kleines abc des Nomadismus"
+  },
+  "grandpas-rubber-tree": {
+   "fp": "384b343b50",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Otherwise Magazine is English-language"
+  },
+  "hakanreview-of-rev-hakan-t-karateke-h-erdem-cipa-helga-anetshofer-eds-disliking-others-loathing-hostility-and-distrust-in-premodern-ottoman-lands": {
+   "fp": "41378e965f",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Turkish Historical Review)"
+  },
+  "hammams-a-sanaa-culture-architecture-histoire-et-societe-ed-by-michel-tuscherer-and-nabil-boutros": {
+   "fp": "d15006de39",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "multilingual journal (Die Welt des Islams)"
+  },
+  "hassan-heshmat-1": {
+   "fp": "2ce944951d",
+   "lang": "und",
+   "confidence": "low",
+   "basis": "Name-only title; publisher is a Berlin cultural house with a German name; no language clue"
+  },
+  "heinrich-freiherr-von-maltzans-my-pilgrimage-to-mecca-a-critical-investigation": {
+   "fp": "b64e0fef66",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English-language Brill volume The Hajj and Europe in the Age of Empire"
+  },
+  "hindostan-newspaper": {
+   "fp": "e256d6e5fe",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English parenthetical (newspaper); 1914-1918-online is English-language"
+  },
+  "hisdemab-project-blog": {
+   "fp": "ebb41bfee1",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and English publisher description"
+  },
+  "history-of-law-in-russia-from-the-council-code-ulozhenie-of-tsar-aleksei-mikhailovich-of-1649-to-the-bolshevik-revolution-of-1917-by-ferdinand-j-m-feldbrugge": {
+   "fp": "fbfe1d2dee",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (The Russian Review)"
+  },
+  "hudud-as-identity-politics-in-chinese": {
+   "fp": "f2e4ae6b7f",
+   "lang": "zh",
+   "confidence": "high",
+   "basis": "Title states it is in Chinese"
+  },
+  "humanitarian-corridor": {
+   "fp": "6335024d9d",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Brill volume Humanitarianism"
+  },
+  "iconic-religion-in-urban-space": {
+   "fp": "8275914b86",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and English abstract"
+  },
+  "iconic-religion-in-urban-space-1": {
+   "fp": "83d9350972",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title"
+  },
+  "ignac-goldziher": {
+   "fp": "5e9aa6e894",
+   "lang": "fr",
+   "confidence": "high",
+   "basis": "French subtitle, French colloquium title, Geuthner (French publisher)"
+  },
+  "immersive-soundscapes-rana-eids-panoptic": {
+   "fp": "700d9bb9a1",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Jump Cut is an English-language journal"
+  },
+  "impartiality": {
+   "fp": "ff1b80c6da",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Brill volume Humanitarianism"
+  },
+  "imperial-mecca-ottoman-arabia-and-the-indian-ocean-hajjby-michael-christopher-low": {
+   "fp": "b8ad746570",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Oxford Journal of Islamic Studies)"
+  },
+  "indian-seamen-in-world-war-i-prison-camps-in-germany": {
+   "fp": "a600ee3d2b",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and English abstract"
+  },
+  "inhale": {
+   "fp": "80184dfeb5",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and subtitle; Routledge English volume"
+  },
+  "international-cooperation": {
+   "fp": "0a5256421e",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Brill volume Humanitarianism"
+  },
+  "interpreting-rural-doxiadis-vis-a-vis-east-pakistan": {
+   "fp": "f0ccd897d8",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; journal is bilingual German/English"
+  },
+  "introduction-1": {
+   "fp": "4d0656f93c",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Routledge English volume"
+  },
+  "introduction-10": {
+   "fp": "26a86b2977",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Berghahn English volume"
+  },
+  "introduction-11": {
+   "fp": "0ba0081a69",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Capitalism Nature Socialism is English-language"
+  },
+  "introduction-12": {
+   "fp": "ed0c23b058",
+   "lang": "fr",
+   "confidence": "medium",
+   "basis": "Name-only volume title; Editions du Cerf is a French publisher"
+  },
+  "introduction-13": {
+   "fp": "fce1474b6d",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume Central Asian Intellectuals on Islam"
+  },
+  "introduction-14": {
+   "fp": "480f0c6d0d",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Berghahn English volume"
+  },
+  "introduction-16": {
+   "fp": "dcc25bc2b6",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume In Search of Europe?"
+  },
+  "introduction-17": {
+   "fp": "f86955c45b",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Routledge English volume"
+  },
+  "introduction-2": {
+   "fp": "59f970289a",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Bristol University Press English volume"
+  },
+  "introduction-20": {
+   "fp": "e054483190",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German volume title Islam und Geschlechterpolitik; Wissenschaftskolleg zu Berlin"
+  },
+  "introduction-21": {
+   "fp": "8e67eb0026",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Brill English volume"
+  },
+  "introduction-25": {
+   "fp": "76ae3d1392",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume Gendered Memory"
+  },
+  "introduction-26": {
+   "fp": "d331b31f9d",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume Servants' Pasts"
+  },
+  "introduction-27": {
+   "fp": "9cd9290229",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume Servants' Pasts"
+  },
+  "introduction-28": {
+   "fp": "fdb030b12a",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Routledge English volume"
+  },
+  "introduction-29": {
+   "fp": "8625be6eca",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume Rethinking Sage Philosophy"
+  },
+  "introduction-3": {
+   "fp": "9a4b2300e3",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and English abstract; Berghahn"
+  },
+  "introduction-31": {
+   "fp": "73540ef97c",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Edinburgh University Press English volume"
+  },
+  "introduction-32": {
+   "fp": "189c197dec",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English title; English-language publisher Pluto Press; volume name is Arabic"
+  },
+  "introduction-33": {
+   "fp": "0a5bf3f579",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Springer English volume"
+  },
+  "introduction-5": {
+   "fp": "b54ada7ddd",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; AUC Press English volume"
+  },
+  "introduction-9": {
+   "fp": "dc710c8a8b",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Anthropology of East Europe Review is English-language"
+  },
+  "iran": {
+   "fp": "d5c463e566",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "Place name only; Worldmark Encyclopedia (Gale Cengage) is English"
+  },
+  "islam": {
+   "fp": "a1065a441a",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language Cambridge Encyclopaedia of Anthropology"
+  },
+  "islam-as-world-religion-in-northern-mali": {
+   "fp": "74294d1d9f",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English abstract; English volume Claiming and Making Muslim Worlds"
+  },
+  "islam-burkina-faso-collection": {
+   "fp": "2572d199b5",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and abstract"
+  },
+  "islamonlinenet": {
+   "fp": "b8fd0b0cbf",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and subtitle; Arab Media and Society is English-language"
+  },
+  "it-was-not-a-chinese-tsunami": {
+   "fp": "1bd2f94d12",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; malaysiakini English article"
+  },
+  "jidda": {
+   "fp": "b6f94e4cff",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "Place name only; Encyclopaedia of Islam, Three is English"
+  },
+  "keita-modibo": {
+   "fp": "68184107df",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "Name-only title; Dictionary of African Biography (OUP) is English"
+  },
+  "kenya-entry": {
+   "fp": "97507108cf",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English word entry in title; place name only"
+  },
+  "kleines-abc-des-nomadismus": {
+   "fp": "1abee3537a",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German title and subtitle; German publisher"
+  },
+  "kursiu-nerijos-burvalciu-vetrunges": {
+   "fp": "963e5af0eb",
+   "lang": "lt",
+   "confidence": "high",
+   "basis": "Lithuanian title; Lithuanian publisher Libra Memelensis"
+  },
+  "la-chorale-universitaire-de-niamey": {
+   "fp": "51bc885be2",
+   "lang": "fr",
+   "confidence": "high",
+   "basis": "French title"
+  },
+  "la-yamaat-al-tabligh": {
+   "fp": "16953d1276",
+   "lang": "es",
+   "confidence": "high",
+   "basis": "Spanish-language volume title; Ed. Bellaterra (Barcelona)"
+  },
+  "laiku-kaita-kurenu-vetrungese": {
+   "fp": "d2e440d8af",
+   "lang": "lt",
+   "confidence": "high",
+   "basis": "Lithuanian title and subtitle; Lithuanian volume"
+  },
+  "landed-internationals-planning-cultures-the-academy-and-the-making-of-the-modern-middle-east": {
+   "fp": "15fba27744",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives)"
+  },
+  "lets-do-good-for-islam-two-muslim-entrepreneurs-in-niamey-niger": {
+   "fp": "1c3ad5b5ba",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Routledge English volume"
+  },
+  "libye": {
+   "fp": "543c6d7ad5",
+   "lang": "fr",
+   "confidence": "high",
+   "basis": "French title word Libye; Encyclopaedia Universalis is French"
+  },
+  "literaturbericht-islam": {
+   "fp": "3579ec3995",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German title; German journal"
+  },
+  "locale-everyday-islam-and-modernity-qasbah-towns-and-muslim-life-in-colonial-india": {
+   "fp": "da3250d7e4",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "multilingual journal (Studia Islamica)"
+  },
+  "m-talha-cicek-negotiating-empire-in-the-middle-east-ottomans-and-arab-nomads-in-the-modern-era-1840-1914-cambridge-cambridge-university-press-2023": {
+   "fp": "8ab1a44043",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (Historische Zeitschrift)"
+  },
+  "managing-uncertainty": {
+   "fp": "c0c2deaf54",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume Dealing with Elusive Futures"
+  },
+  "mida-archival-reflexicon-2021": {
+   "fp": "bccdb84737",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English-language reflexicon"
+  },
+  "mida-thematische-ressourcen-/-thematic-resources-2021": {
+   "fp": "ce5b5af562",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "Parallel German and English titles; bilingual volume"
+  },
+  "missionary-agendas-in-colonial-india": {
+   "fp": "da5c0c900f",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and abstract; Routledge English volume"
+  },
+  "muhammad-said-al-qaddal-1935-2008": {
+   "fp": "65cad85482",
+   "lang": "und",
+   "confidence": "low",
+   "basis": "Name and dates only; Die Welt des Islams publishes in several languages"
+  },
+  "muslim-minorities-in-africa-part-1": {
+   "fp": "80b8497a7a",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Islamic Africa (Brill) is English-language"
+  },
+  "muslim-minorities-in-africa-part-2": {
+   "fp": "627fbb29a8",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Islamic Africa (Brill) is English-language"
+  },
+  "muslim-networks": {
+   "fp": "35efe5fe00",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Palgrave Dictionary of Transnational History"
+  },
+  "nafssiya-mediating-emotional-distances": {
+   "fp": "c4c12ee262",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and abstract; English-language special issue"
+  },
+  "nordafrika": {
+   "fp": "7bb337fe4c",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German title; German publisher Schoeningh"
+  },
+  "object-1": {
+   "fp": "0714e60948",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English word Object as title; bilingual German/English volume"
+  },
+  "object-2": {
+   "fp": "d940475ad8",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English word Object as title; bilingual German/English volume"
+  },
+  "object-3": {
+   "fp": "3c7d34a542",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English word Object as title; bilingual German/English volume"
+  },
+  "object-4": {
+   "fp": "8de64b2a5f",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English word Object as title; bilingual German/English volume"
+  },
+  "object-5": {
+   "fp": "92d2b5751d",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English word Object as title; bilingual German/English volume"
+  },
+  "object-6": {
+   "fp": "d133c31379",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English word Object as title; bilingual German/English volume"
+  },
+  "opposition-and-legitimacy-in-the-ottoman-empirebook-review": {
+   "fp": "7670870d9e",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Insight Turkey)"
+  },
+  "osmanisches-reich": {
+   "fp": "4d3e955c5e",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German title; Handbuch des Antisemitismus"
+  },
+  "pakistan": {
+   "fp": "03ea2b58ec",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Oxford University Press English volume"
+  },
+  "pakistani-cinema": {
+   "fp": "d3f700cbfb",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; BioScope special issue"
+  },
+  "paramilitary-organisations-in-interwar-india": {
+   "fp": "9cde61c831",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and abstract; South Asia Journal of South Asian Studies"
+  },
+  "pinelandia-an-anthropology-and-field-poetics-of-war-and-empire": {
+   "fp": "3f484c7ee1",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Politics, Religion and Ideology)"
+  },
+  "plant-intimacies-exploitation-survival-and-care": {
+   "fp": "cb77fdf3d1",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Social and Cultural Geography"
+  },
+  "playing-the-nation-game-the-ambiguties-of-nationalism-in-india": {
+   "fp": "e2c434c368",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language magazine (The Book Review)"
+  },
+  "politicalengagements-defiant-engagements": {
+   "fp": "bacbd89b68",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; AllegraLab"
+  },
+  "politics": {
+   "fp": "5c8161ba02",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume Coping with Uncertainty"
+  },
+  "politik": {
+   "fp": "5f5ff6ee8b",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German title; German publisher J.H.W. Dietz; German volume"
+  },
+  "popular-diplomacy": {
+   "fp": "1eb48c5fc3",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English title; Auswaertiges Amt publication; German series name"
+  },
+  "post-salafism-religious-revisionism-in-contemporary-saudi-arabia": {
+   "fp": "18ba4958b1",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and abstract; Religions (MDPI)"
+  },
+  "postcolonialism": {
+   "fp": "9104da0eaf",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume Historical Authenticity"
+  },
+  "practising-pluriversalism-in-africa": {
+   "fp": "dfdf42af7a",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and abstract; Africa Spectrum"
+  },
+  "preface": {
+   "fp": "6e792c1aa7",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume Cinema in Muslim Societies"
+  },
+  "problesk-nadeody-v-okrovavlennom-kyrgyzstane": {
+   "fp": "71cb4b2a52",
+   "lang": "ru",
+   "confidence": "high",
+   "basis": "Russian title and Russian subtitle in transliteration"
+  },
+  "protestants-gender-and-the-arab-renaissance-in-late-ottoman-syria-by-deanna-ferree-womack": {
+   "fp": "92fc7b27cc",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal and English abstract"
+  },
+  "rap-in-kyrgyz": {
+   "fp": "9465c113ac",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; ZOiS Spotlight"
+  },
+  "recursive-thoughts-how-the-impossible-real-of-the-coronavirus-takes-place-1": {
+   "fp": "147357eb7a",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Postcolonial Text) and English subtitle"
+  },
+  "rediscovering-istanbuls-cosmopolitan-past": {
+   "fp": "c3514657f2",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; ISIM Review"
+  },
+  "rethinking-the-absence-of-fascism-in-india-c-1922-1945": {
+   "fp": "abd6b1fe60",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume Cosmopolitan Thought Zones"
+  },
+  "rev-axel-gehring-vom-mythos-des-starken-staates-und-der-europaeischen-integration-der-tuerkei-ueber-eine-oekonomie-an-der-peripherie-des-euro-atlantischen-raumes-the-myth-of-the-strong-state-and-european-integration-of-turkey-on-an-economy-on-the-peripher": {
+   "fp": "137e7c0b51",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language journal (Comparative Southeast European Studies); German book title"
+  },
+  "rev-cairo-collage-everyday-life-practices-after-the-event": {
+   "fp": "95597ba9e8",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives)"
+  },
+  "rev-healing-labor-japanese-sex-work-in-the-gendered-economy-gabriele-koch-stanford-stanford-university-press-2020": {
+   "fp": "431af3bd91",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Japanese Studies)"
+  },
+  "rev-michael-lambek-island-in-the-stream-an-ethnographic-history-of-mayotte-toronto-university-of-toronto-press-2018": {
+   "fp": "85c79e7557",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Anthropological Quarterly)"
+  },
+  "rev-national-socialism-islam-and-the-middle-east-questioning-intellectual-continuities-conceptual-stakes-and-methodology": {
+   "fp": "ad072bcdd3",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language bulletin (German Historical Institute London Bulletin)"
+  },
+  "rev-saint-joseph-in-south-india-poetry-mission-and-theology-in-costanzo-gioseffo-beschis-tempavani-written-by-francis-x-clooney-s-j": {
+   "fp": "2c2e5a24ce",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Mission Studies) and English abstract"
+  },
+  "rev-sara-tassi-ville-de-lignages-genealogies-urbaines-a-ajace/xogbonu/porto-novo-2023": {
+   "fp": "53d525aac0",
+   "lang": "und",
+   "confidence": "low",
+   "basis": "journal language unclear (Plateia); French book title only"
+  },
+  "rev-stephen-badalyan-riegg-russias-entangled-embrace-the-tsarist-empire-and-the-armenians-1801-1914-cornell-university-press-ithaca-2020-xiv-314-pp": {
+   "fp": "33e7635dc3",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language journal (Analytical Bulletin of Armenian and Regional Studies); no abstract"
+  },
+  "rev-thierry-boissiere-ed-chaalan-formation-et-mutation-dun-quartier-de-damas-1920-2010": {
+   "fp": "bd4bdb7552",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives); French book title"
+  },
+  "rev-violence-and-ideology-in-contemporary-syria-salwa-ismails-the-rule-of-violence-and-lisa-wedeens-authoritarian-apprehension": {
+   "fp": "19bf5bb285",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (DAVO-Nachrichten)"
+  },
+  "rev-yigit-akin-when-the-war-came-home-the-ottomans-great-war-and-the-devastation-of-an-empire-stanford-calif-stanford-university-press-2018-288p": {
+   "fp": "4938afe705",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (IJMES)"
+  },
+  "rev-youth-and-memory-regimes-in-europe": {
+   "fp": "2a84717c34",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language review (CEU Review of Books) and English abstract"
+  },
+  "rev-zainabs-traffic-moving-saints-selves-and-others-across-borders-by-emrah-yildiz-oakland-university-of-california-press-2024-191-pp": {
+   "fp": "d0fdc36b4d",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (American Ethnologist)"
+  },
+  "review-living-in-two-worlds-rethinking-transnationalism-and-translocality": {
+   "fp": "900e4830ef",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language outlet and English abstract"
+  },
+  "review-of-architecture-of-counterrevolution-the-french-army-in-northern-algeria-by-samia-henni": {
+   "fp": "44d68631f5",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives)"
+  },
+  "review-of-bauer-susanne-and-tanja-penter-eds-2022-tracing-the-atom-nuclear-legacies-in-russia-and-central-asia-routledge": {
+   "fp": "9d22a5a301",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Central Asian Survey) and English abstract"
+  },
+  "review-of-exchange-ideologies-commerce-language-and-patriarchy-in-preconflict-aleppo-by-paul-anderson": {
+   "fp": "dabd0d8e2c",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Anthropology of the Middle East)"
+  },
+  "review-of-home-belonging-and-memory-in-migration-leaving-and-living-ed-by-sadan-jha-and-pushpendra-routledge-2022": {
+   "fp": "3546ee85f2",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language blog and English Review-of title"
+  },
+  "review-of-waiting-for-the-revolution-to-end-syrian-displacement-time-and-subjectivity-by-charlotte-al-khalili-ucl-press-2023": {
+   "fp": "e3cf1dc584",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Journal of Middle East Womens Studies) and English abstract"
+  },
+  "revolutionary-pasts": {
+   "fp": "8a3b320e75",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and abstract; Cambridge University Press"
+  },
+  "rez-abdellatif-r-benhima-y-koenig-d-and-ruchaud-e-eds-construire-la-mediterranee-penser-les-transferts-culturels-approches-historiographiques-et-perspectives-de-recherches-2012-195p": {
+   "fp": "ec890bc98d",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language venue (H-Soz-Kult)"
+  },
+  "rez-adam-mestyan-arab-patriotism-the-ideology-and-culture-of-power-in-late-ottoman-egypt-princeton-prineceton-university-press-2017": {
+   "fp": "699e3d6f31",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Urban History)"
+  },
+  "rez-alexander-cooley-and-john-heathershaw-dictators-without-borders-power-and-money-in-central-asia-yale-university-press-2017": {
+   "fp": "9bb3f61cb6",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language newsletter (BASEES); German date format only"
+  },
+  "rez-ali-yaycioglu-partners-of-the-empire-the-crisis-of-the-ottoman-order-in-the-age-of-revolutions-stanford-calif-stanford-university-press-2016-347p": {
+   "fp": "1799300c81",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (American Historical Review)"
+  },
+  "rez-amira-mittermaier-dreams-that-matter-egyptian-landscapes-of-the-imagination-berkeley-university-of-california-press": {
+   "fp": "4711ec0e38",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "multilingual journal (Die Welt des Islams); Rez. prefix not decisive"
+  },
+  "rez-andrew-duff-sikkim-requiem-for-a-himalayan-kingdom-edinburg-birlinn-2015": {
+   "fp": "516ad39183",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language review journal (Sehepunkte)"
+  },
+  "rez-arnold-d-2015-everyday-technology-machines-and-the-making-of-indias-modernity-chicago-the-university-of-chicago-press": {
+   "fp": "6589f47bfe",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language newsletter (IIAS The Newsletter)"
+  },
+  "rez-avner-giladi-muslim-midwives-the-craft-of-birthing-in-the-premodern-middle-east": {
+   "fp": "efa53ad5c7",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (American Historical Review)"
+  },
+  "rez-axel-fleisch/rhiannon-stephens-eds-doing-conceptual-history-in-africa-new-york/oxford-berghahn-books-2016": {
+   "fp": "588e93227b",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language review journal (Sehepunkte)"
+  },
+  "rez-b-florin-o-legros-n-semmoud-f-trouin-eds-marges-urbaines-et-neoliberalisme-en-mediterranee": {
+   "fp": "da3a23c976",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives)"
+  },
+  "rez-benjamin-c-fortna-ed-childhood-in-the-late-ottoman-empire-and-after-leiden-brill-2016-285-s": {
+   "fp": "5063ef0608",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (International Journal of Turkish Studies)"
+  },
+  "rez-berna-turam-gaining-freedoms-claiming-space-in-istanbul-and-berlin-2015-264p": {
+   "fp": "f8e6d4b5ee",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Arab Studies Journal)"
+  },
+  "rez-beth-buggenhagen-muslim-families-in-global-senegal-money-takes-care-of-shame-bloomington-indiana-university-press-2012": {
+   "fp": "6f4b303262",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Journal of Religion in Africa)"
+  },
+  "rez-carola-lentz-and-david-lowe-remembering-independence-london/new-york-routldge-244p": {
+   "fp": "86f46a7f38",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-named Trafo blog; Rez. prefix points the other way"
+  },
+  "rez-celeste-hicks-the-trial-of-hissene-habre-how-the-people-of-chad-brought-a-tyrant-to-justice-london-zed-books-2017-chicago-university-press-217-pp": {
+   "fp": "9dca76ffcb",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (African Studies Review)"
+  },
+  "rez-chanfi-ahmed-west-african-ulama-and-salafism-in-mecca-and-medina-jawab-al-ifrq-the-response-of-the-african-leiden-brill-2015-213pp": {
+   "fp": "24478c2f52",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Journal of Religion in Africa)"
+  },
+  "rez-constructing-a-muslim-public-sphere-in-burkina-faso-la-construction-dune-sphere-publique-musulmane-en-afrique-de-louest-by-frederick-madore-laval-canada-presses-de-luniversite-laval-2016-pp-viii-208": {
+   "fp": "3ef2f2b95e",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (The Journal of African History)"
+  },
+  "rez-dabashi-hamid-the-arab-spring-the-end-of-postcolonialism-london-zed-books-2012": {
+   "fp": "aae30d994f",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (Orientalistische Literaturzeitung)"
+  },
+  "rez-daniel-jordan-smith-to-be-a-man-is-not-a-one-day-job-masculinity-money-and-intimacy-in-nigeria-university-of-chicago-press-2017-272-pp": {
+   "fp": "19ef91b730",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (American Anthropologist)"
+  },
+  "rez-david-aslanian-sebouh-from-the-indian-ocean-to-the-mediterranean-the-global-trade-networks-of-armenian-merchants-from-new-julfa-von-california-world-history-library-17-berkeley-university-of-california-press-2011": {
+   "fp": "a28fdd8e21",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language venue (H-Soz-u-Kult, geschichte.transnational)"
+  },
+  "rez-devin-naar-jewish-salonica-between-the-ottoman-empire-and-modern-greece-2016": {
+   "fp": "8b1ba87a67",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language online journal (Connections)"
+  },
+  "rez-elif-mahir-metinsoy-ed-ottoman-women-during-world-war-i-everyday-experiences-politics-and-conflict-shy044": {
+   "fp": "945025bf88",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Journal of Social History)"
+  },
+  "rez-fariba-zarinebaf-mediterranean-encounters-trade-and-pluralism-in-early-modern-galata-oakland-university-of-california-press-2018": {
+   "fp": "34044e7508",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language venue (H-Soz-Kult)"
+  },
+  "rez-feldman-gregory-the-migration-apparatus-security-labor-and-policymaking-in-the-european-union-stanford-2011": {
+   "fp": "5764de0d96",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language venue (H-Soz-u-Kult)"
+  },
+  "rez-feras-krimsti-die-unruhen-von-1850-in-aleppo-gewalt-im-urbanen-raum-schiler-berlin-2014-523-s": {
+   "fp": "311bc27ccb",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language journal (Planning Perspectives); Rez. prefix and German book title point the other way"
+  },
+  "rez-franck-mermier-recits-de-villes-daden-a-beyrouth-arles-actes-sud-2015-270-pp": {
+   "fp": "3ccd5d881f",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives); French book title"
+  },
+  "rez-h-khosravi-tehran-life-within-walls-a-city-its-territory-and-forms-of-dwelling": {
+   "fp": "5e71cf75e7",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives)"
+  },
+  "rez-hoffnung-in-der-stadt-der-rebellion": {
+   "fp": "40a62e3ac8",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language magazine (iz3w) and German title"
+  },
+  "rez-holm-sundhaussen-sarajevo-die-geschichte-einer-stadt-boehlau-wien-2014-409-s": {
+   "fp": "8baedc180c",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language journal (Planning Perspectives); Rez. prefix and German book title point the other way"
+  },
+  "rez-hout-syrine-post-war-anglophone-lebanese-fiction-home-matters-in-the-diaspora": {
+   "fp": "84b3db1ac2",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language journal (Al Raida)"
+  },
+  "rez-islam-und-philosophie-in-der-nahoestlichen-moderne-anke-von-kuegelgen-hg-wissenschaft-philosophie-und-religion-religionskritische-positionen-um-1900-berlin-2017-klaus-schwarz-verlag-326-seiten-isbn-9783879974801": {
+   "fp": "cfd4714ce8",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language outlet (Qantara.de) and German title"
+  },
+  "rez-jan-patrick-heiss-musa-an-essay-or-experiment-in-the-anthropology-of-the-individual-berlin-duncker-humblot-2015-329-pp": {
+   "fp": "dca045b6be",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Africa, IAI)"
+  },
+  "rez-jean-claude-david-and-thierry-boissiere-eds-alep-et-ses-territoires-fabrique-et-politique-dune-ville-1868-2011": {
+   "fp": "d5f0fcf820",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives); French book title"
+  },
+  "rez-konrad-hirschler-the-written-word-in-the-medieval-arabic-lands": {
+   "fp": "d4e02c9bf2",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Journal of the American Oriental Society)"
+  },
+  "rez-leila-ammar-la-rue-a-tunis-realites-permanences-transformations-de-lespace-urbain-1835-1935-centre-de-publications-universitaires-laboratoire-archeologie-et-architecture-maghrebines-2017-360-pp": {
+   "fp": "fc88b70f98",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives); French book title"
+  },
+  "rez-lerna-ekmekcioglu-recovering-armenia-the-limits-of-belonging-in-post-genocide-turkey-palo-alto-ca-stanford-university-press-2016-xvi-240-pages": {
+   "fp": "76f2408b3e",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (New Perspectives on Turkey)"
+  },
+  "rez-luna-kirfan-world-heritage-urban-design-and-tourism-three-cities-in-the-middle-east": {
+   "fp": "f149954991",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives)"
+  },
+  "rez-madawi-al-rasheed-salmans-legacy-the-dilemmas-of-a-new-era-in-saudi-arabia-london-hurst-company-2018-xiii-367-pages": {
+   "fp": "9f7df97420",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "multilingual journal (Die Welt des Islams)"
+  },
+  "rez-malik-and-medina-islamic-legal-reasoning-in-the-formative-period-by-umar-f-abd-allah-wymann-landgraf-brill-2013-566p": {
+   "fp": "1affaa9ac7",
+   "lang": "und",
+   "confidence": "low",
+   "basis": "journal language unclear (Ilahiyat); English book title only"
+  },
+  "rez-mary-dewhurst-lewis-divided-rule-sovereignty-and-empire-in-french-tunisia-1881-1938": {
+   "fp": "6905ed2f03",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Law and History Review)"
+  },
+  "rez-mcdougall-james-judith-scheele-eds-saharan-frontiers-space-and-mobility-in-northwest-africa": {
+   "fp": "a39d405be8",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Journal of the Royal Anthropological Institute)"
+  },
+  "rez-modjtaba-sadria-ed-homogenisation-of-representations-geneva-aga-khan-development-network-2012-230-pp": {
+   "fp": "c698723615",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives)"
+  },
+  "rez-mohamed-ourfelli-elise-voguet-eds-le-monde-rural-dans-loccident-musulman-medieval-aix-en-provence-2009-remmm-126-313-pp": {
+   "fp": "1d8162a107",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "multilingual journal (Die Welt des Islams)"
+  },
+  "rez-morgan-liu-under-solomons-throne-uzbek-visions-of-renewal-in-osh-pittsburgh-university-of-pittsburgh-press-2012-xv-280pp": {
+   "fp": "22c7f34eaa",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (The Asia-Europe Studies Journal)"
+  },
+  "rez-nayanika-mathur-paper-tiger-law-bureaucracy-and-the-developmental-state-in-himalayan-india": {
+   "fp": "03b9e3aab0",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (South Asia: Journal of South Asian Studies)"
+  },
+  "rez-new-urban-spaces-urban-theory-and-the-scale-question-by-neil-brenner-new-york-oxford-university-press-464-pp-2019": {
+   "fp": "c7bf0c16b6",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Eurasian Geography and Economics)"
+  },
+  "rez-noemie-levy-aksu-ordre-et-desordres-dans-listanbul-ottomane-1879-1909-paris-2013": {
+   "fp": "78007c4075",
+   "lang": "fr",
+   "confidence": "high",
+   "basis": "French-language journal (Histoire urbaine)"
+  },
+  "rez-oneill-kelly-claiming-crimea-a-history-of-catherine-the-greats-southern-empire-new-haven-2017": {
+   "fp": "a810603134",
+   "lang": "de",
+   "confidence": "medium",
+   "basis": "German-language venue (H-Soz-Kult); English abstract describes a different book"
+  },
+  "rez-pascal-firges-french-revolutionaries-in-the-ottoman-empire-diplomacy-political-culture-and-the-limits-of-universal-revolution-1792-1798-oxford-university-press-2017": {
+   "fp": "b778b45ce3",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (Historische Zeitschrift)"
+  },
+  "rez-paul-stoller-the-sorcerers-burden-the-ethnographic-saga-of-a-global-family-xi-209-pp-bibliogr-heidelberg-springer-2016": {
+   "fp": "b5d9b74a59",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Journal of the Royal Anthropological Institute)"
+  },
+  "rez-peter-h-christensen-germany-and-the-ottoman-railways-art-empire-and-infrastructure-new-haven-yale-university-press-2017": {
+   "fp": "43b229b438",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (Vierteljahrschrift fuer Sozial- und Wirtschaftsgeschichte)"
+  },
+  "rez-ralph-bodenstein-ed-villen-in-beirut-wohnkultur-und-sozialer-wandel-1860-1930-petersberg-germany-michael-imhof-verlag-2012-397-pp": {
+   "fp": "fad6c08a77",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language journal (Planning Perspectives); Rez. prefix and German book title point the other way"
+  },
+  "rez-randall-fowler-more-than-a-doctrine-the-eisenhower-era-in-the-middle-east": {
+   "fp": "f9fa90a3b4",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language review journal (Sehepunkte)"
+  },
+  "rez-returning-to-accra-between-nina-simone-ama-ata-aidoo-fassbinder-and-the-cockettes": {
+   "fp": "f07a579afc",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language essay headline and subtitle; journal name not decisive"
+  },
+  "rez-rhea-marie-richter-frauensport-in-kenia-laufsportkultur-zwischen-kenia-und-den-usa-hildesheim-arete-verlag-2016-264-s": {
+   "fp": "14d294d6b5",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "bilingual journal (Stichproben: Vienna Journal of African Studies)"
+  },
+  "rez-robert-gleave-islam-and-literalism-literal-meaning-and-interpretation-in-islamic-legal-theory": {
+   "fp": "c49fbd030c",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Islamic Law and Society)"
+  },
+  "rez-s-milich-f-pannewick-l-tramontini-eds-conflicting-narratives-war-trauma-and-memory-in-iraqi-culture": {
+   "fp": "4fbafa1cf2",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (Orientalistische Literaturzeitung)"
+  },
+  "rez-schneider-nadja-christina-and-titzmann-fritzi-marie-eds-studying-youth-media-and-gender-in-post-liberalization-india-focus-on-and-beyond-the-delhi-gang-rape-berlin-frank-timme-2015": {
+   "fp": "cafd89ac38",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language bulletin (Humboldt-Universitaet Berlin) and German month"
+  },
+  "rez-sharif-malek-imperial-norms-and-local-realities-the-ottoman-municipal-laws-and-the-municipality-of-beirut-1860-1908-wuerzburg-ergon-verlag-2014": {
+   "fp": "94f76749fe",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language venue (H-Soz-Kult)"
+  },
+  "rez-sibel-zandi-sayek-ottoman-izmir-the-rise-of-a-cosmopolitan-port-1840-1880-minneapolis-university-of-minnesota-press-2012-273-s": {
+   "fp": "26b4829c62",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "multilingual journal (Die Welt des Islams)"
+  },
+  "rez-susan-gilson-miller-a-history-of-modern-morocco-cambridge-cambridge-university-press-2013-306-s": {
+   "fp": "5306ff6a60",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Islamic Africa)"
+  },
+  "rez-talin-suciyan-the-armenians-in-modern-turkey-post-genocide-society-politics-and-history": {
+   "fp": "99f843901b",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Global Affairs)"
+  },
+  "rez-the-long-end-of-the-first-world-war-ruptures-continuities-and-memories-ed-by-katrin-bromber-katharina-lange-heike-liebau-anorthe-wetzel-frankfurt-campus-2018": {
+   "fp": "1679a1810e",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-named Trafo blog; Rez. prefix points the other way"
+  },
+  "rez-the-repressive-regime-of-the-vigilant-state": {
+   "fp": "cf784c3624",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Journal of Perpetrator Research) and English subtitle"
+  },
+  "rez-the-volga-a-history-of-russias-greatest-river-janet-m-hartley-new-haven-ct-london-yale-university-press-2021": {
+   "fp": "cbb1ba1117",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language journal (Europe-Asia Studies); Rez. prefix points the other way"
+  },
+  "rez-this-is-a-mans-world-on-fathers-and-architects-taalat-pasha-father-of-modern-turkey-architect-of-genocide-by-hans-lukas-kieser-princeton-princeton-university-press-2018-552p": {
+   "fp": "cd0b20daab",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Journal of Genocide Research)"
+  },
+  "rez-tuckett-anna-rules-papers-status-migrants-and-precarious-bureaucracy-in-italy-stanford-california-stanford-university-press-2018": {
+   "fp": "b468a23455",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language platform (AllegraLaboratory)"
+  },
+  "rez-umut-oezkirimli-ed-the-making-of-a-protest-movement-in-turkey-occupygezi": {
+   "fp": "016ab59ab9",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-named journal (Middle East - Topics & Arguments)"
+  },
+  "rez-when-the-war-began-we-heard-of-several-kings-ed-by-franziska-roy-heike-liebau-and-ravi-ahuja-social-science-press-2011": {
+   "fp": "7e1b52e638",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language blog and English title"
+  },
+  "rez-yuval-ben-bassat-petitioning-the-sultan-protests-and-justice-in-late-ottoman-palestine-library-of-ottoman-studies-42-london-ib-tauris-2013-331p": {
+   "fp": "254ae7aeea",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (IJMES)"
+  },
+  "rez-zohra-hakimi-alger-politiques-urbaines-1846-1958": {
+   "fp": "c9d4bfb94f",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives); French book title"
+  },
+  "reza-anastasopoulos-ed-the-eastern-mediterranean-under-ottoman-rule-crete-1645-1840-rethymno-crete-university-press-2008-411-s": {
+   "fp": "8b7ea537b5",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "multilingual journal (Die Welt des Islams)"
+  },
+  "rezc-l-wilkins-forging-urban-solidarities-ottoman-aleppo-1640-1700-leiden-boston-brill-2010-323-s": {
+   "fp": "1cfa39783e",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (Comparativ)"
+  },
+  "rezension-a-havemann-at-tari-wa-kitabat-at-tari-fi-lubnan-ilal-al-qarnain-at-tasi-asar-wa-l-isrin-al-fahm-a-ati-li-t-tari-askaluhu-wa-waaifuhu": {
+   "fp": "ee96af16c5",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "multilingual journal (Wiener Zeitschrift fuer die Kunde des Morgenlandes)"
+  },
+  "rezension-a-j-fromherz-qatar-a-modern-history-london-new-york-ib-tauris-2012-204-s": {
+   "fp": "efa09d30c6",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language bulletin (BFSA)"
+  },
+  "rezension-a-mills-streets-of-memory-landscape-tolerance-and-national-identity-in-istanbul-athens-university-of-georgia-press-2010-288-s": {
+   "fp": "82758417bd",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives)"
+  },
+  "rezension-a-sawalha-reconstructing-beirut-memory-and-space-in-a-post-war-arab-city-austin-university-of-texas-press-2010-176-s": {
+   "fp": "8e7bb77fbc",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives)"
+  },
+  "rezension-a-wheatcroft-the-enemy-at-the-gate-habsburgs-ottomans-and-the-battle-for-europe-london-the-bodley-head-2008-339-s": {
+   "fp": "bc43612652",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language outlet (Times Higher Education)"
+  },
+  "rezension-between-maitatsine-and-boko-haram": {
+   "fp": "dcc94b6345",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Africa Today)"
+  },
+  "rezension-c-jahani-a-korn-und-p-titus-hrsg-the-baloch-and-others-linguistic-historical-and-socio-political-perspectives-on-pluralism-in-balochistan-wiesbaden-reichert-verlag-2008-399-s": {
+   "fp": "592b25d3f5",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (Orientalistische Literaturzeitung)"
+  },
+  "rezension-c-p-sidorko-dschihad-im-kaukasus-antikolonialer-widerstand-der-dagestaner-und-tschetschenen-gegen-das-zarenreich-18-jahrhundert-bis-1859-wiesbaden-reichert-2007-483-s": {
+   "fp": "a76b370ea2",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (Orientalistische Literaturzeitung)"
+  },
+  "rezension-d-berdahl-on-the-social-life-of-postsocialism-memory-consumption-germany-bloomington-indiana-university-press-2010-166-s": {
+   "fp": "e2904e8c94",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language journal (Anthropological Notebooks)"
+  },
+  "rezension-d-taylor-hrsg-islam-in-south-asia-london-routledge-2010-1662-s": {
+   "fp": "6624b8ef39",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language venue (H-Soz-u-Kult) and German title"
+  },
+  "rezension-e-ho-the-graves-of-tarim-genealogy-and-mobility-across-the-indian-ocean-berkeley-university-of-california-press-2006-379-s": {
+   "fp": "0781fc2804",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Journal of Global History)"
+  },
+  "rezension-e-nolte-die-dritte-radikale-widerstandsbewegung-der-islamismus-berlin-land-verlag-2009-413-s": {
+   "fp": "e9316e9fc7",
+   "lang": "de",
+   "confidence": "medium",
+   "basis": "German book title and Rez. prefix; no journal named"
+  },
+  "rezension-f-becker-becoming-muslim-in-mainland-tanzania-1890-2000-oxford-oxford-university-press-for-the-british-academy-2008-364-s": {
+   "fp": "6a00f7a76a",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Journal of Religion in Africa)"
+  },
+  "rezension-f-f-jacobsen-hadrami-arabs-in-present-day-indonesia-an-indonesia-oriented-group-with-an-arab-signature-by-abingdon-und-new-york-routledge-2009-132-s": {
+   "fp": "664000c06b",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Journal for Islamic Studies)"
+  },
+  "rezension-f-georgeon-sous-le-signe-des-reformes-etat-et-societe-de-lempire-ottoman-a-la-turquie-kemaliste-1789-1939-istanbul-les-editions-isis-2009-429-s": {
+   "fp": "5d758a979f",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (New Perspectives on Turkey)"
+  },
+  "rezension-g-s-gregg-culture-and-identity-in-a-muslim-society-oxford-oxford-university-press-2007-369-s": {
+   "fp": "9f9b39a235",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Social Anthropology)"
+  },
+  "rezension-h-stoecker-afrikawissenschaften-in-berlin-von-1919-bis-1945-zur-geschichte-und-topographie-eines-wissenschaftlichen-netzwerkes-stuttgart-steiner-2008-359-s": {
+   "fp": "869f28c92b",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language journal (Africa Spectrum); Rez. prefix and German book title point the other way"
+  },
+  "rezension-i-iqbal-the-bengal-delta-ecology-state-and-social-change-1840-1943-basingstoke-palgrave-macmillan-2010-268-s": {
+   "fp": "479dfc5165",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "bilingual journal (Suedasien-Chronik / South Asia-Chronicle)"
+  },
+  "rezension-j-a-kechichian-legal-and-political-reforms-in-saudi-arabia-london-routledge-2012-352-s": {
+   "fp": "84331873c1",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Middle Eastern Studies)"
+  },
+  "rezension-j-grehan-everyday-life-and-consumer-culture-in-eighteenth-century-damascus-publications-on-the-near-east-seattle-university-of-washington-press-2007-320-s": {
+   "fp": "074aa601a9",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (American Historical Review)"
+  },
+  "rezension-j-hanssen-fin-de-siecle-beirut-the-making-of-an-ottoman-provincial-capital-oxford-clarendon-press-2005-307-s": {
+   "fp": "ff54edd835",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "multilingual journal (Die Welt des Islams)"
+  },
+  "rezension-j-mcintosh-the-edge-of-islam-power-personhood-and-ethnoreligious-boundaries-on-the-kenya-coast-durham-duke-university-press-2009-325-s": {
+   "fp": "11170818be",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (American Ethnologist)"
+  },
+  "rezension-j-p-olivier-de-sardan-und-m-tidjani-alou-hrsg-les-pouvoirs-locaux-au-niger-tome-1-a-la-veille-de-la-decentralisation-dakar-codesria-paris-karthala-2009-379-s": {
+   "fp": "c9f209e968",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Africa, IAI); French book title"
+  },
+  "rezension-k-barkey-empire-of-difference-the-ottomans-in-comparative-perspective-new-york-cambridge-university-press-2008-342-s": {
+   "fp": "c98cf057d7",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (Comparativ)"
+  },
+  "rezension-k-h-karpat-und-r-w-zens-hrsg-ottoman-borderlands-issues-personalities-and-political-changes-madison-university-of-wisconsin-press-2003-347-s": {
+   "fp": "810afc3237",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (IJMES)"
+  },
+  "rezension-l-volk-memorials-and-martyrs-in-modern-libanon-bloomington-indiana-university-press-2010-250-s": {
+   "fp": "99eb28a9d1",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Review of Middle East Studies)"
+  },
+  "rezension-masquelier-adeline-marie-women-and-islamic-revival-in-a-west-african-town-bloomington-indiana-university-press-2009-343-s": {
+   "fp": "f9c951e119",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (American Anthropologist)"
+  },
+  "rezension-n-scharfenort-dubai-projekt-und-visionen-der-urbanen-entwicklung-und-der-diversifizierung-der-wirtschaft-hamburg-deutsches-orient-institut-2004": {
+   "fp": "0d7e4e16ef",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (Orientalistische Literaturzeitung)"
+  },
+  "rezension-o-weintritt-arabische-geschichtsschreibung-in-den-arabischen-provinzen-des-osmanischen-reiches-16-18-jahrhundert-schenefeld-eb-verlag-2008-270-s": {
+   "fp": "f9effd81bd",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language venue (H-Soz-u-Kult) and German title"
+  },
+  "rezension-onley-james-the-arabian-frontier-of-the-british-raj-merchants-rulers-and-the-british-in-the-nineteenth-century-gulf-oxford-oxford-university-press-2007-352-s": {
+   "fp": "0d1ae3491d",
+   "lang": "de",
+   "confidence": "medium",
+   "basis": "German-language venue (H-Soz-u-Kult) in publisher field; English book title"
+  },
+  "rezension-p-wilson-und-s-michelle-hrsg-global-indigenous-media-cultures-poetics-and-politics-durham-duke-university-press-2008-362-s": {
+   "fp": "10957af9f8",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Social Anthropology)"
+  },
+  "rezension-r-loimeier-und-r-seesemann-the-global-worlds-of-the-swahili-interfaces-of-islam-identity-and-space-in-19th-and-20th-century-east-africa-409-s": {
+   "fp": "c91eeb6e3e",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "multilingual journal (Die Welt des Islams)"
+  },
+  "rezension-r-west-pavlov-temporalities-london-routledge-211-s": {
+   "fp": "87f86e1102",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language journal (Journal of the Association for the Study of Australian Literature); Rez. prefix points the other way"
+  },
+  "rezension-s-ben-nefissa-n-abd-al-fattah-s-hanafi-c-milani-hrsg-ngos-and-governance-in-the-arab-world-kairo-american-university-press-2005-388-s": {
+   "fp": "4cb4b94884",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (DAVO-Nachrichten)"
+  },
+  "rezension-s-cronin-hrsg-subalterns-and-social-protest-history-from-below-in-the-middle-east-and-north-africa-london-new-york-routledge-2008-320-s": {
+   "fp": "f4e6ae826c",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (IJMES)"
+  },
+  "rezension-s-hamadeh-the-citys-pleasures-istanbul-in-the-eighteenth-century-publications-on-the-near-east-seattle-university-of-washington-press-2008-350-s": {
+   "fp": "f135ce8648",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (American Historical Review)"
+  },
+  "rezension-s-weber-damascus-ottoman-modernity-and-urban-transformation-1808-1918-arhus-aarhus-university-press-2009-463-s": {
+   "fp": "505d502e69",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Planning Perspectives)"
+  },
+  "rezension-sitten-und-traditionen-dokumente-aus-dem-hadramawt-mikhail-rodinov-hanne-schoenig-the-hadramawt-documents-1904-51-family-life-and-social-customs-under-the-last-sultans-orient-institut-beirut-beiruter-texte-und-studien-130-ergon-verlag-wuerzburg": {
+   "fp": "d5c78e6f4f",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language journal (Jemen Report)"
+  },
+  "rezension-w-dostal-hrsg-tribale-gesellschaften-der-suedwestlichen-regionen-des-koenigreiches-saudi-arabien-sozialanthropologische-untersuchungen-wien-verlag-der-osterreichischen-akademie-der-wissenschaften-713-s": {
+   "fp": "5334d1571c",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "multilingual journal (Anthropos)"
+  },
+  "rezension-zu-freitag-ulrike-gershoni-israel-hrsg-arab-encounters-with-fascist-propaganda-1933-1945-geschichte-und-gesellschaft-373-goettingen-2011": {
+   "fp": "f70a714794",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German-language venue (H-Soz-u-Kult) and German title"
+  },
+  "rezension-zu-riegg-stephen-badalyan-russias-entangled-embrace-the-tsarist-empire-and-the-armenians-1801-1914-ithaca-2020-isbn-9781501750113": {
+   "fp": "a5fdb00d5a",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language online journal (Connections)"
+  },
+  "rezenzion-ita-heinze-greenberg-europa-in-palaestina-die-architekten-des-zionistischen-projekts-1902-1923-zuerich-gta-verlag-2011-239-s-273-486-487": {
+   "fp": "12a9920ba5",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "English-language journal (Planning Perspectives); German book title and Rez. prefix point the other way"
+  },
+  "rezenzion-s-jacquesson-pastorealismes-anthropologie-historique-des-processus-dintegration-chez-les-kirghiz-du-tian-shan-interieur-wiesbaden-reichert-verlag-2010-281-s": {
+   "fp": "050b3905c5",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Social Anthropology)"
+  },
+  "rida-rashid": {
+   "fp": "5e0441a911",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "Name-only title; Princeton Encyclopedia of Islamic Political Thought"
+  },
+  "ritualmordvorwurf-in-amasya": {
+   "fp": "0bc4793f5b",
+   "lang": "de",
+   "confidence": "high",
+   "basis": "German title; Handbuch des Antisemitismus"
+  },
+  "rosie-bsheer-archive-wars-the-politics-of-history-in-saudi-arabia": {
+   "fp": "a8e19e2612",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "multilingual journal (Die Welt des Islams)"
+  },
+  "sachedina-a-2023-cultivating-the-past-living-the-modern-the-politics-of-time-in-the-sultanate-of-oman": {
+   "fp": "8d0f96d11e",
+   "lang": "fr",
+   "confidence": "high",
+   "basis": "French-language journal (Critique internationale)"
+  },
+  "saharan-prisons": {
+   "fp": "dc6e66af69",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and abstract; History and Anthropology"
+  },
+  "salafi-revolution-in-west-africa": {
+   "fp": "5aa17d33e5",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and abstract; ZMO Working Papers"
+  },
+  "saudi-arabias-neom-diplomacy": {
+   "fp": "ee8c8a2632",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Sada (Carnegie Endowment)"
+  },
+  "shaykhani-ould-muhammad-al-tulba": {
+   "fp": "6c156d0af4",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "Name-only title; Dictionary of African Biography (OUP)"
+  },
+  "situating-postcolonial-trauma-studies-1": {
+   "fp": "e84717910e",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and abstract; Postcolonial Text"
+  },
+  "slumdog-cities": {
+   "fp": "cb810815bf",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and subtitle; IJURR"
+  },
+  "some-final-remarks": {
+   "fp": "5be502eba5",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume"
+  },
+  "sovereignity": {
+   "fp": "a689963351",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English word (misspelled); Brill volume Humanitarianism"
+  },
+  "spectral-imprints": {
+   "fp": "f56c2cbd7a",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Abraaj Capital Art Prize"
+  },
+  "sports": {
+   "fp": "b86243934b",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title word Sports; English volume Ethiopia. History, Culture and Challenges"
+  },
+  "sports-modernity-in-late-imperial-ethiopia": {
+   "fp": "f1311808d8",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and abstract; James Currey Eastern Africa Series"
+  },
+  "state-society-and-islam-in-the-western-regions-of-the-sahara-edited-by-francisco-freire": {
+   "fp": "0944976cc3",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Journal of Islamic Studies)"
+  },
+  "suspension": {
+   "fp": "1bded62af9",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title word Suspension; English volume Thinking through Translocal Entanglements"
+  },
+  "sustainable-development": {
+   "fp": "a1d2ec4d2f",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume Imperialism and Expansionism in American History"
+  },
+  "tagungsbericht-modern-india-in-german-archives-1706-1989": {
+   "fp": "31a0eb0bc8",
+   "lang": "de",
+   "confidence": "medium",
+   "basis": "German genre label Tagungsbericht; H-Soz-Kult is a German-language portal; German date format"
+  },
+  "tagungsbericht-servants-pasts-2nd-international-conference-11042018-13042018-berlin": {
+   "fp": "3c73a78f65",
+   "lang": "de",
+   "confidence": "medium",
+   "basis": "German genre label Tagungsbericht; H-Soz-Kult is a German-language portal; German date format"
+  },
+  "tajikistans-marginalised-youth": {
+   "fp": "326dc093e3",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; oD Russia (openDemocracy) English"
+  },
+  "taksovanie-uzbekistan": {
+   "fp": "fb330cb1c0",
+   "lang": "en",
+   "confidence": "medium",
+   "basis": "Transliterated term in title; English-language UCL Press encyclopaedia"
+  },
+  "taran-kai-arutpa-n-iyil-penkal-in-pan-ku-die-stellung-der-frauen-in-der-tranquebar-mission": {
+   "fp": "4d26cb7331",
+   "lang": "ta",
+   "confidence": "high",
+   "basis": "Tamil transliterated title (penkal = women); Chengalpattu; German in brackets is a gloss"
+  },
+  "the-agency-of-historians-or-what-edward-said-missed-out-on-1": {
+   "fp": "4f319053b7",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English headline and Review-of subtitle; Qantara.de is usually German"
+  },
+  "the-lives-and-deaths-of-jubrail-dabdoub-or-how-the-bethlehemites-discovered-amerka-written-by-jacob-norris": {
+   "fp": "29664276c1",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "multilingual journal (Die Welt des Islams)"
+  },
+  "the-neighborhood-effect-the-imperial-roots-of-regional-fracture-in-eurasia-by-anna-ohanyan": {
+   "fp": "947932e68c",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal and English abstract"
+  },
+  "the-wahubiri-wa-kislamu-preachers-of-islam-in-east-africa": {
+   "fp": "9747da31c6",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Africa Today"
+  },
+  "thematische-ressourcen-2020": {
+   "fp": "aabd97a0bb",
+   "lang": "und",
+   "confidence": "medium",
+   "basis": "Parallel German and English titles; bilingual volume"
+  },
+  "translocalita": {
+   "fp": "97625fffe7",
+   "lang": "it",
+   "confidence": "high",
+   "basis": "Italian title word Translocalita; Italian publisher Ombre Corte"
+  },
+  "travel-a-post-covid-19-fantasyschielke": {
+   "fp": "1382948544",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; American Ethnologist"
+  },
+  "tripoli-1": {
+   "fp": "821d61af41",
+   "lang": "fr",
+   "confidence": "high",
+   "basis": "French publisher Presses universitaires Francois Rabelais; French volume title"
+  },
+  "turkey": {
+   "fp": "0994808fa0",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume"
+  },
+  "universalising-islam-in-malaysia": {
+   "fp": "1dcebc9be8",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; New Mandala"
+  },
+  "us-military-bases": {
+   "fp": "222b3b8998",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; English volume"
+  },
+  "ustadh-mahmoud-mau-mtu-wa-watu-a-man-of-the-people-poet-imam-and-engaged-intellectual": {
+   "fp": "5d3a981097",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English subtitle and abstract; English-language Brill volume"
+  },
+  "visions-of-development-in-central-asia-revitalizing-the-culture-concept": {
+   "fp": "ae419f4b3a",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Central Asian Survey)"
+  },
+  "western-jesuit-scholars-in-india-tracing-their-paths-reassessing-their-goals-sj-francis-x-clooney": {
+   "fp": "b53f03d3fd",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English-language journal (Nidan) and English abstract"
+  },
+  "womens-islamic-activism-rises-in-kyrgyzstan": {
+   "fp": "43f1e954c8",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title; Current History"
+  },
+  "yamunas-journey": {
+   "fp": "82dea87dec",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and abstract; Speaking Tiger"
+  },
+  "youth-in-nassers-time-a-class-identity": {
+   "fp": "dd9f10d21b",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "English title and abstract; ZMO Working Papers"
+  },
+  "yusuf-al-qaradawi": {
+   "fp": "d73b6144f7",
+   "lang": "en",
+   "confidence": "high",
+   "basis": "Name-only title; Oxford Handbook of Islam and Politics is English"
+  }
+ }
+}

@@ -11,11 +11,14 @@ what other sources say about it, each kept apart so its origin stays visible:
 * ``raw_data/themes.json`` (``build_themes.py``) and ``theme_labels.json``
   (written by Claude Opus 5.5) → ``themes.json``: themes, areas and map
   positions — plus each record's theme;
-* ``languages.py`` → each record's detected language;
+* ``languages.py`` → each record's detected language, and where it cannot
+  tell, ``language_decisions.json`` (Claude Haiku 5.5, ``language_decisions.py``);
 * ``gazetteer.json`` and ``regions_review.json`` (``regions.py``), with
-  coordinates from ``raw_data/places.json`` (Wikidata) → ``regions.json``: the
-  places each record names, their regions and positions, and the regional
-  focus current researchers state on zmo.de — plus each record's places;
+  coordinates from ``raw_data/places.json`` (Wikidata), and the places Claude
+  Haiku 5.5 found in titles and abstracts (``place_mentions.json``,
+  ``place_mentions.py``) → ``regions.json``: the places each record names,
+  their regions and positions, and the regional focus current researchers
+  state on zmo.de — plus each record's places;
 * ``raw_data/subjects.json`` (``fetch_subjects.py``) → ``subjects.json``: the
   GND subject headings German libraries gave the register's books — plus each
   book's headings.
@@ -37,6 +40,7 @@ import json
 from collections import Counter, defaultdict
 from pathlib import Path
 
+SCRIPT_DIR = Path(__file__).resolve().parent
 ZMO_INSTITUTION = "I2801953415"
 OPEN_STATUSES = {"gold", "diamond", "hybrid", "bronze", "green"}
 
@@ -54,6 +58,8 @@ def load(raw_dir: Path, labels_path: Path) -> dict:
         "places": read_json(raw_dir / "places.json"),
         "subjects": read_json(raw_dir / "subjects.json"),
         "gazetteer": _gazetteer(),
+        "mentions": read_json(SCRIPT_DIR / "place_mentions.json"),
+        "decisions": read_json(SCRIPT_DIR / "language_decisions.json"),
     }
 
 
@@ -80,8 +86,32 @@ def check_labels(themes: dict, labels: dict | None) -> None:
             raise ValueError(f"area {area['id']} has no label; relabel")
 
 
+def places_of(record: dict, gazetteer, mentions: dict | None) -> tuple[list[str], list[str]]:
+    """A record's places: the gazetteer's, then those only the language model
+    named. Returns them with the ones the model added."""
+    from place_mentions import mentioned
+
+    places = gazetteer.places_of(record)
+    known = (mentions or {}).get("places", {})
+    added = []
+    for mention in mentioned(record, mentions):
+        place = mention["id"]
+        # A reviewed decision on this record (Jordan the river, not the
+        # country) holds for the model's mention too.
+        decision = gazetteer.decisions.get((record["slug"], place))
+        if decision:
+            place = decision.get("to") or (place if decision.get("accept", True) else None)
+        if place and place not in places and (place in gazetteer.places or place in known):
+            places.append(place)
+            added.append(place)
+    return places, added
+
+
 def annotate(dataset: list[dict], records: list[dict], extras: dict) -> None:
-    """Add per-record fields: language, theme, open access, OpenAlex id."""
+    """Add per-record fields: language, theme, places, open access, OpenAlex id.
+
+    What the language model contributed is counted in ``extras["stats"]``."""
+    from language_decisions import decided_language
     from languages import UNDETERMINED, detect_language
 
     raw = {record["slug"]: record for record in records}
@@ -89,17 +119,24 @@ def annotate(dataset: list[dict], records: list[dict], extras: dict) -> None:
     themed = (extras.get("themes") or {}).get("records", {})
     gazetteer = extras.get("gazetteer")
     books = (extras.get("subjects") or {}).get("books", {})
+    stats = extras.setdefault("stats", {"languageDecided": 0, "placesAdded": set(), "recordsWithAdded": 0})
 
     for record in dataset:
-        lang = detect_language(raw[record["slug"]])
+        source = raw[record["slug"]]
+        lang = detect_language(source)
+        if lang == UNDETERMINED:
+            lang = decided_language(source, extras.get("decisions")) or UNDETERMINED
+            stats["languageDecided"] += lang != UNDETERMINED
         if lang != UNDETERMINED:
             record["lang"] = lang
         if record["slug"] in themed:
             record["theme"] = themed[record["slug"]]["theme"]
         if gazetteer:
-            places = gazetteer.places_of(raw[record["slug"]])
+            places, added = places_of(source, gazetteer, extras.get("mentions"))
             if places:
                 record["places"] = places
+            stats["placesAdded"].update(added)
+            stats["recordsWithAdded"] += bool(added)
         headings = [subject["id"] for subject in books.get(record["slug"], {}).get("subjects", [])]
         if headings:
             record["gnd"] = headings
@@ -237,19 +274,44 @@ def regions_file(dataset: list[dict], extras: dict, dataset_id: str, people: dic
     slots = {macro["id"]: index + 1 for index, macro in enumerate(m for m in gazetteer.macros.values()
                                                                   if m["id"] != "transregional")}
 
+    mentions = extras.get("mentions") or {}
+    details, own_regions = mentions.get("places", {}), mentions.get("regions", {})
+
     def place_entry(pid: str) -> dict:
-        place = gazetteer.places[pid]
-        entry = {"id": pid, "label": {"en": place["en"], "de": place["de"]}, "macro": place["macro"], "kind": place["kind"]}
-        coord = coordinates.get(pid, {}).get("coord")
-        if coord and place.get("mapped", True):
-            entry["coord"] = coord
+        from place_mentions import macro_of
+
+        if pid in gazetteer.places:
+            place = gazetteer.places[pid]
+            entry = {"id": pid, "label": {"en": place["en"], "de": place["de"]}, "macro": place["macro"], "kind": place["kind"]}
+            coord = coordinates.get(pid, {}).get("coord")
+            if coord and place.get("mapped", True):
+                entry["coord"] = coord
+            return entry
+        detail = details[pid]
+        label = detail.get("label", {})
+        en = label.get("en") or label.get("de") or label.get("fr") or pid
+        entry = {"id": pid, "label": {"en": en, "de": label.get("de") or en},
+                 "macro": macro_of(pid, detail, gazetteer, own_regions) or "transregional", "kind": detail.get("kind", "other")}
+        # A world region has no single location, whatever Wikidata's centroid.
+        if detail.get("coord") and entry["kind"] not in ("world", "continent"):
+            entry["coord"] = detail["coord"]
         return entry
 
     reviewed = gazetteer.reviewed or {}
+    stats = extras.get("stats") or {}
+    attribution = {"gazetteer": len(gazetteer.places), "coordinates": "https://www.wikidata.org",
+                   "reviewed": {k: reviewed[k] for k in ("by", "date", "scope", "scope_de") if k in reviewed}}
+    if mentions:
+        checked = mentions.get("reviewed", {})
+        attribution["mentions"] = {
+            "model": mentions["model"]["name"],
+            "places": sum(1 for place in stats.get("placesAdded", ()) if place not in gazetteer.places),
+            "records": stats.get("recordsWithAdded", 0),
+            "reviewed": {k: checked[k] for k in ("by", "date", "scope", "scope_de") if k in checked},
+        }
     return {
         "datasetId": dataset_id,
-        "attribution": {"gazetteer": len(gazetteer.places), "coordinates": "https://www.wikidata.org",
-                        "reviewed": {k: reviewed[k] for k in ("by", "date", "scope", "scope_de") if k in reviewed}},
+        "attribution": attribution,
         "macros": [{"id": macro["id"], "label": {"en": macro["en"], "de": macro["de"]},
                     **({"slot": slots[macro["id"]]} if macro["id"] in slots else {})}
                    for macro in gazetteer.macros.values()],
@@ -293,5 +355,6 @@ def coverage(dataset: list[dict], people: dict, extras: dict) -> dict:
         "access": dict(sorted(access.items())),
         "themed": sum(1 for r in dataset if r.get("theme")),
         "withPlace": sum(1 for r in dataset if r.get("places")),
+        "languageDecided": (extras.get("stats") or {}).get("languageDecided", 0),
         "withHeadings": sum(1 for r in dataset if r.get("gnd")),
     }

@@ -10,9 +10,17 @@
  *
  * Like the theme map, the bubbles are not focusable: the place ranking holds
  * the same counts as buttons, which is the keyboard route.
+ *
+ * The map zooms and pans like the co-authorship graph — buttons, Ctrl/⌘ +
+ * scroll, drag — so a crowded Levant or Swahili coast can be opened up. Bubbles,
+ * outlines and names keep their size on screen as the map grows under them, and
+ * more names find room the closer one looks.
  */
 
 import { svg, el, mount } from '../../utils/dom.js';
+
+const SCALE_EXTENT = [1, 16];
+const ZOOM_STEP = 1.6;
 
 const WIDTH = 1000;
 const HEIGHT = 560;
@@ -31,6 +39,7 @@ export class WorldMap {
 
     constructor(container, { d3, topojson, strings, tooltip, label, slotOf, onSelectPlace }) {
         Object.assign(this, { container, d3, topojson, strings, tooltip, label, slotOf, onSelectPlace });
+        this.k = 1;
     }
 
     /** Draws the outlines and one (hidden) bubble per mapped place. */
@@ -60,6 +69,7 @@ export class WorldMap {
             labels.append(text);
         }
 
+        const viewport = svg('g', {}, [outlines, bubbles, labels]);
         this.#canvas = svg('svg', {
             class: 'world', viewBox: `0 0 ${WIDTH} ${HEIGHT}`, role: 'img', 'aria-label': this.strings.regions,
             on: {
@@ -68,8 +78,31 @@ export class WorldMap {
                 pointerout: event => { if (event.target.matches?.('.world__bubble')) this.tooltip.hide(); },
                 click: event => { const id = event.target.dataset?.id; if (id) this.onSelectPlace(id); }
             }
-        }, [outlines, bubbles, labels]);
-        mount(this.container, el('div', { class: 'map-frame' }, [this.#canvas]));
+        }, [viewport]);
+
+        // Wheel zoom only with Ctrl/⌘, so scrolling the page past the map
+        // never zooms it by accident.
+        this.zoom = d3.zoom().scaleExtent(SCALE_EXTENT).translateExtent([[0, 0], [WIDTH, HEIGHT]])
+            .filter(event => (event.type !== 'wheel' || event.ctrlKey || event.metaKey) && !event.button)
+            .on('zoom', event => {
+                viewport.setAttribute('transform', event.transform);
+                this.k = event.transform.k;
+                this.#canvas.style.setProperty('--k', this.k);
+                this.#paint();
+            });
+        d3.select(this.#canvas).call(this.zoom);
+        const button = (text, label, action) => el('button', { type: 'button', class: 'network__zoom', text, 'aria-label': label, title: label, on: { click: action } });
+        // Applied at once rather than animated: a transition waits on animation
+        // frames, which a background tab or a reduced-motion setting withholds.
+        const by = factor => d3.select(this.#canvas).call(this.zoom.scaleBy, factor);
+        mount(this.container, el('div', { class: 'map-frame' }, [
+            this.#canvas,
+            el('div', { class: 'world__controls' }, [
+                button('+', this.strings.zoomIn, () => by(ZOOM_STEP)),
+                button('−', this.strings.zoomOut, () => by(1 / ZOOM_STEP)),
+                button('⟲', this.strings.resetView, () => d3.select(this.#canvas).call(this.zoom.transform, d3.zoomIdentity))
+            ])
+        ]));
     }
 
     /**
@@ -80,29 +113,40 @@ export class WorldMap {
         if (!this.#canvas) return;
         this.counts = counts;
         const peak = Math.max(1, ...this.#places.map(place => counts.get(place.id) ?? 0));
-        const radius = count => (count ? MIN_RADIUS + Math.sqrt(count / peak) * (MAX_RADIUS - MIN_RADIUS) : 0);
+        this.radius = count => (count ? MIN_RADIUS + Math.sqrt(count / peak) * (MAX_RADIUS - MIN_RADIUS) : 0);
 
         // Largest drawn first, so a small place is never hidden under a large one.
-        const order = [...this.#places].sort((a, b) => (counts.get(b.id) ?? 0) - (counts.get(a.id) ?? 0) || a.id.localeCompare(b.id));
-        const group = this.#bubbles.get(order[0]?.id)?.parentNode;
-        for (const place of order) {
+        this.order = [...this.#places].sort((a, b) => (counts.get(b.id) ?? 0) - (counts.get(a.id) ?? 0) || a.id.localeCompare(b.id));
+        const group = this.#bubbles.get(this.order[0]?.id)?.parentNode;
+        for (const place of this.order) {
             const bubble = this.#bubbles.get(place.id);
-            bubble.setAttribute('r', radius(counts.get(place.id) ?? 0).toFixed(1));
             bubble.classList.toggle('world__bubble--selected', selected.has(place.id));
             group?.append(bubble);
         }
+        this.#paint();
+    }
 
-        // Names for the largest bubbles that do not collide with one already placed.
+    /**
+     * Sizes in map units divided by the zoom, so they stay the same on screen;
+     * then names for the largest bubbles that do not collide, more of them the
+     * further in the reader has zoomed.
+     */
+    #paint() {
+        if (!this.order) return;
+        const k = this.k;
         const placed = [];
-        for (const place of order) {
+        const limit = Math.round(LABELS * k);
+        for (const place of this.order) {
+            const r = this.radius(this.counts.get(place.id) ?? 0) / k;
+            this.#bubbles.get(place.id).setAttribute('r', r.toFixed(2));
             const text = this.#labels.get(place.id);
-            const r = radius(counts.get(place.id) ?? 0);
-            const width = this.label(place.id).length * CHAR_WIDTH;
-            const box = [place.x + r + 4, place.y - 12, place.x + r + 4 + width, place.y + 12];
-            const show = r > 0 && placed.length < LABELS && box[2] < WIDTH
+            const width = this.label(place.id).length * CHAR_WIDTH / k;
+            const half = 12 / k;
+            const box = [place.x + r + 4 / k, place.y - half, place.x + r + 4 / k + width, place.y + half];
+            const show = r > 0 && placed.length < limit
                 && placed.every(other => box[2] < other[0] || box[0] > other[2] || box[3] < other[1] || box[1] > other[3]);
-            text.setAttribute('x', box[0].toFixed(1));
-            text.setAttribute('y', (place.y + 6).toFixed(1));
+            text.setAttribute('x', box[0].toFixed(2));
+            text.setAttribute('y', (place.y + 6 / k).toFixed(2));
             text.classList.toggle('world__label--shown', show);
             if (show) placed.push(box);
         }

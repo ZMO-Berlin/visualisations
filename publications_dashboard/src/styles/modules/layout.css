@@ -135,12 +135,14 @@ body {
 }
 
 /*
- * The hint sits on the title's line, right-aligned, rather than under it: it
- * says how to drive the chart, which is worth one glance and no vertical space.
+ * The hint runs the full width under the title. On the title's line, right-
+ * aligned, it was squeezed into a narrow column that wrapped into a ragged
+ * block beside the heading.
  */
 .panel__hint {
-    flex: 0 1 auto;
-    text-align: right;
+    flex: 1 1 100%;
+    order: 3;
+    text-align: left;
     font-size: var(--text-2xs);
     line-height: 1.4;
     color: var(--c-ink-faint);

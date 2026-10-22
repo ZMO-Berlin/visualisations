@@ -103,13 +103,21 @@ export class RegionPanel {
 
     #renderNotes() {
         const { attribution } = this.regions;
-        const reviewed = attribution.reviewed ?? {};
-        const date = reviewed.date ? new Intl.DateTimeFormat(this.locale, { dateStyle: 'long' }).format(new Date(reviewed.date)) : '';
+        const check = reviewed => ({
+            by: reviewed?.by ?? '—',
+            date: reviewed?.date ? new Intl.DateTimeFormat(this.locale, { dateStyle: 'long' }).format(new Date(reviewed.date)) : '',
+            scope: (this.locale === 'de' && reviewed?.scope_de) || reviewed?.scope || ''
+        });
+        const model = attribution.mentions;
+        const number = n => new Intl.NumberFormat(this.locale).format(n);
         mount(this.notes, el('p', { class: 'provenance' }, [
-            fill(this.strings.regionsProvenance, {
-                count: attribution.gazetteer, by: reviewed.by ?? '—', date,
-                scope: (this.locale === 'de' && reviewed.scope_de) || reviewed.scope || ''
-            })
+            [
+                fill(this.strings.regionsProvenance, { count: attribution.gazetteer, ...check(attribution.reviewed) }),
+                model ? fill(this.strings.regionsProvenanceModel, {
+                    model: model.model, places: number(model.places), records: number(model.records), ...check(model.reviewed)
+                }) : null,
+                this.strings.regionsProvenanceEnd
+            ].filter(Boolean).join(' ')
         ]));
     }
 

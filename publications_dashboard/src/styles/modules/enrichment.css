@@ -136,7 +136,6 @@
    the note is, which a stripe down the side cannot. */
 .provenance {
     margin-top: var(--s-4);
-    max-width: 92ch;
     font-size: var(--text-sm);
     line-height: 1.6;
     color: var(--c-ink-muted);
@@ -161,13 +160,17 @@
 .caveat {
     margin: var(--s-3) 0 var(--s-4);
     padding: var(--s-3) var(--s-4);
-    max-width: 92ch;
     border: 1px solid color-mix(in srgb, var(--c-accent) 30%, var(--c-surface));
     border-radius: var(--r-md);
     background: var(--c-accent-tint);
     font-size: var(--text-sm);
     line-height: 1.6;
     color: var(--c-ink);
+}
+
+/* Inside a panel, notes run its full width like the chart above them. */
+.panel .explore-hint {
+    max-width: none;
 }
 
 .inline-ranking {
@@ -321,16 +324,54 @@
     border-radius: var(--r-md);
 }
 
+.world {
+    --k: 1;
+    cursor: grab;
+    touch-action: none;
+}
+
+/* Outlines and bubble rims keep their width on screen at any zoom. */
 .world__countries path {
     fill: var(--c-surface);
     stroke: var(--c-line-strong);
     stroke-width: 0.6;
+    vector-effect: non-scaling-stroke;
+}
+
+.world__controls {
+    position: absolute;
+    top: var(--s-2);
+    right: var(--s-2);
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-1);
+}
+
+.fullscreen-row {
+    display: flex;
+    justify-content: flex-end;
+    margin: var(--s-2) 0;
+}
+
+.citations-frame.panel--fullscreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.citations-frame.panel--fullscreen .citations,
+.panel--fullscreen .network {
+    max-height: calc(100vh - 6rem);
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .world__bubble {
     opacity: 0.78;
     stroke: var(--c-surface);
     stroke-width: 1;
+    vector-effect: non-scaling-stroke;
     cursor: pointer;
     transition: r var(--dur-base) var(--ease-out), opacity var(--dur-fast) var(--ease-out);
 }
@@ -347,16 +388,17 @@
 }
 
 /* In map units: the map is 1,000 wide and scaled to its panel, so 19 reads
-   as about 9px in a half-width column and grows on the full screen. */
+   as about 9px in a half-width column and grows on the full screen. Divided
+   by the zoom (--k) so names keep their size when the map is zoomed. */
 .world__label {
     display: none;
     font-family: var(--font-ui);
-    font-size: 19px;
+    font-size: calc(19px / var(--k));
     font-weight: var(--weight-medium);
     fill: var(--c-ink);
     paint-order: stroke;
     stroke: var(--c-surface-sunk);
-    stroke-width: 5px;
+    stroke-width: calc(5px / var(--k));
     stroke-linejoin: round;
     pointer-events: none;
 }
@@ -501,6 +543,7 @@
 /* ------------------------------------------------------------ Full screen */
 
 .panel__fullscreen {
+    order: 2;
     display: inline-flex;
     align-items: center;
     justify-content: center;

@@ -15,7 +15,8 @@
   "theme": "t10",
   "places": [
    "Q374365",
-   "Q612"
+   "Q612",
+   "Q31945"
   ],
   "openalex": "W4406934785",
   "oa": "bronze",
@@ -33,7 +34,10 @@
   "year": 2023,
   "publisher": "Alaan Publishers & Distributers",
   "lang": "ar",
-  "theme": "t02"
+  "theme": "t02",
+  "places": [
+   "Q143487"
+  ]
  },
  {
   "slug": "%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE-%D9%85%D9%86-%D9%84%D8%A7-%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE-%D9%84%D9%87%D9%85-%D9%8A%D9%88%D9%85%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D8%AC%D9%8A%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%B3%D9%88%D9%8A%D8%AF%D8%A7%D9%86-1991-1992-history-of-those-who-have-none-diaries-of-prisoner-ahmad-suwaydan-1991-1992",
@@ -65,7 +69,10 @@
   "year": 2025,
   "publisher": "Sefsafa Publishing House",
   "lang": "ar",
-  "theme": "t05"
+  "theme": "t05",
+  "places": [
+   "Q87"
+  ]
  },
  {
   "slug": "%E1%83%A5%E1%83%A3%E1%83%A9%E1%83%98%E1%83%A1-%E1%83%90%E1%83%9C%E1%83%A2%E1%83%98%E1%83%A1%E1%83%90%E1%83%91%E1%83%AD%E1%83%9D%E1%83%97%E1%83%90-%E1%83%AC%E1%83%98%E1%83%9C%E1%83%90%E1%83%90%E1%83%A6%E1%83%9B%E1%83%93%E1%83%94%E1%83%92%E1%83%9D%E1%83%91%E1%83%90-%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A8%E1%83%98-anti-soviet-street-resistance-in-georgia",
@@ -79,6 +86,7 @@
   "year": 2026,
   "publisher": "Artanuji Publishing Hause",
   "series": "სამეცნიერო გამოცემები, ახალი თაობის ისტორიკოსები (Scientific Publications, New Generation of Historians)",
+  "lang": "ka",
   "theme": "t03",
   "places": [
    "Q15180",
@@ -115,7 +123,8 @@
   "lang": "de",
   "theme": "t05",
   "places": [
-   "Q64"
+   "Q64",
+   "Q576653"
   ]
  },
  {
@@ -131,7 +140,11 @@
   "journal": "The Academy Journal for Humanities and Social Sciences",
   "publisher": "Los Angeles",
   "lang": "ar",
-  "theme": "t15"
+  "theme": "t15",
+  "places": [
+   "Q796",
+   "Q12536"
+  ]
  },
  {
   "slug": "14-km-vor-europa-islam-und-globalisierung-in-marokko",
@@ -176,7 +189,10 @@
   "journal": "In Pursuit of ‘Legality’ and ‘Justice’",
   "publisher": "Hypotheses",
   "lang": "de",
-  "theme": "t03"
+  "theme": "t03",
+  "places": [
+   "Q34266"
+  ]
  },
  {
   "slug": "3al-janib",
@@ -256,7 +272,8 @@
    "Q79",
    "Q46",
    "Q30",
-   "Q34675"
+   "Q34675",
+   "Q2218629"
   ],
   "openalex": "W3000619975",
   "oa": "diamond",
@@ -342,7 +359,8 @@
   "lang": "en",
   "theme": "t24",
   "places": [
-   "Q1008"
+   "Q1008",
+   "Q506811"
   ]
  },
  {
@@ -378,7 +396,8 @@
   "theme": "t11",
   "places": [
    "Q336350",
-   "Q4412"
+   "Q4412",
+   "Q600524"
   ],
   "openalex": "W3213356948",
   "oa": "closed"
@@ -445,7 +464,8 @@
   "theme": "t04",
   "places": [
    "Q657",
-   "Q6583"
+   "Q6583",
+   "Q516769"
   ]
  },
  {
@@ -507,6 +527,7 @@
   "year": 2025,
   "journal": "Conflict and Society",
   "doi": "10.3167/arcs.2025.110114",
+  "lang": "en",
   "theme": "t06",
   "openalex": "W7125677619",
   "oa": "diamond"
@@ -576,7 +597,8 @@
   "lang": "de",
   "theme": "t22",
   "places": [
-   "Q668"
+   "Q668",
+   "Q713750"
   ]
  },
  {
@@ -672,6 +694,7 @@
   "type": "Editorship of journal, book series",
   "year": 2010,
   "journal": "Language et Société",
+  "lang": "en",
   "theme": "t01"
  },
  {
@@ -888,7 +911,10 @@
   "year": 2012,
   "journal": "Toplumsal Tarih",
   "lang": "tr",
-  "theme": "t06"
+  "theme": "t06",
+  "places": [
+   "Q41470"
+  ]
  },
  {
   "slug": "about-the-book",
@@ -985,7 +1011,9 @@
    "Q212",
    "Q269",
    "Q4918",
-   "Q27275"
+   "Q27275",
+   "Q399",
+   "Q1953"
   ],
   "openalex": "W7092179616",
   "oa": "hybrid"
@@ -1015,6 +1043,7 @@
   ],
   "type": "Contributions to an edited volume",
   "year": 2014,
+  "lang": "en",
   "theme": "t10"
  },
  {
@@ -1146,6 +1175,7 @@
   "type": "Journal articles",
   "year": 2013,
   "journal": "ZMO Orient Bulletin",
+  "lang": "en",
   "theme": "t20",
   "places": [
    "Q15"
@@ -1257,7 +1287,8 @@
   "lang": "de",
   "theme": "t20",
   "places": [
-   "Q15"
+   "Q15",
+   "Q132959"
   ],
   "openalex": "W7206282571",
   "oa": "closed"
@@ -1288,6 +1319,7 @@
   "type": "Contributions to an edited volume",
   "year": 2014,
   "publisher": "Brunei Gallery",
+  "lang": "en",
   "theme": "t11"
  },
  {
@@ -1368,6 +1400,7 @@
   "type": "Contributions to an edited volume",
   "publisher": "Brill Online",
   "doi": "10.1163/1573-3912_ei3_COM_32006",
+  "lang": "en",
   "theme": "t12",
   "places": [
    "Q1032"
@@ -1385,6 +1418,7 @@
   "type": "Contributions to an edited volume",
   "year": 2012,
   "publisher": "Gale Cengage Learning",
+  "lang": "en",
   "theme": "t03"
  },
  {
@@ -1485,7 +1519,8 @@
   "lang": "ar",
   "theme": "t06",
   "places": [
-   "Q858"
+   "Q858",
+   "Q950873"
   ]
  },
  {
@@ -1527,7 +1562,8 @@
   "lang": "ar",
   "theme": "t22",
   "places": [
-   "Q1517159"
+   "Q1517159",
+   "Q1239"
   ]
  },
  {
@@ -1542,7 +1578,10 @@
   "year": 2011,
   "publisher": "Cadmous Press",
   "lang": "ar",
-  "theme": "t06"
+  "theme": "t06",
+  "places": [
+   "Q858"
+  ]
  },
  {
   "slug": "ala-al-din-fi-dimashq-ramzan-li-qalb-al-uruba-al-nabi",
@@ -1610,7 +1649,8 @@
   "places": [
    "Q262",
    "Q15",
-   "Q148"
+   "Q148",
+   "Q132959"
   ],
   "openalex": "W1568266154",
   "oa": "green",
@@ -1741,7 +1781,11 @@
   "type": "Contributions to an edited volume",
   "year": 2016,
   "lang": "de",
-  "theme": "t23"
+  "theme": "t23",
+  "places": [
+   "Q226884",
+   "Q1566135"
+  ]
  },
  {
   "slug": "alternate-globalities",
@@ -1836,7 +1880,8 @@
   "lang": "en",
   "theme": "t22",
   "places": [
-   "Q1538"
+   "Q1538",
+   "Q1191"
   ]
  },
  {
@@ -1849,7 +1894,10 @@
   "year": 2018,
   "journal": "ZMO Orient Bulletin",
   "lang": "en",
-  "theme": "t02"
+  "theme": "t02",
+  "places": [
+   "Q15"
+  ]
  },
  {
   "slug": "an-unfulfilled-dream",
@@ -1963,7 +2011,11 @@
   "type": "Book reviews",
   "year": 2020,
   "journal": "Iran and the Caucasus",
-  "theme": "t06"
+  "lang": "en",
+  "theme": "t06",
+  "places": [
+   "Q4728314"
+  ]
  },
  {
   "slug": "anthropologie-historique-de-la-violence-urbaine-dans-le-monde-arabe-le-caire-alep-tunis-1797-1857",
@@ -2098,7 +2150,10 @@
   "journal": "Geschichte und Gesellschaft",
   "publisher": "Vandenhoeck & Ruprecht",
   "lang": "en",
-  "theme": "t14"
+  "theme": "t14",
+  "places": [
+   "Q143487"
+  ]
  },
  {
   "slug": "arab-students-and-the-stasi-agents-and-objects-of-intelligence",
@@ -2114,7 +2169,8 @@
   "lang": "en",
   "theme": "t14",
   "places": [
-   "Q16957"
+   "Q16957",
+   "Q143487"
   ],
   "openalex": "W3014909088",
   "oa": "closed"
@@ -2174,7 +2230,8 @@
   "theme": "t14",
   "places": [
    "Q46",
-   "Q183"
+   "Q183",
+   "Q143487"
   ]
  },
  {
@@ -2211,7 +2268,10 @@
   "year": 2008,
   "publisher": "Campus Verlag",
   "lang": "de",
-  "theme": "t14"
+  "theme": "t14",
+  "places": [
+   "Q143487"
+  ]
  },
  {
   "slug": "arabische-zeitenwende",
@@ -2265,7 +2325,10 @@
   "year": 2012,
   "publisher": "Bundeszentrale für Politische Bildung",
   "lang": "de",
-  "theme": "t07"
+  "theme": "t07",
+  "places": [
+   "Q143487"
+  ]
  },
  {
   "slug": "archaeologisches-erbe-und-soziale-praxis",
@@ -2334,6 +2397,7 @@
   "type": "Contributions to an edited volume",
   "year": 2009,
   "publisher": "SAGE",
+  "lang": "en",
   "theme": "t03",
   "places": [
    "Q399"
@@ -2352,7 +2416,8 @@
   "lang": "en",
   "theme": "t13",
   "places": [
-   "Q406"
+   "Q406",
+   "Q399"
   ],
   "openalex": "W2891886589",
   "oa": "closed"
@@ -2432,7 +2497,8 @@
    "Q15180",
    "Q863",
    "Q47282",
-   "Q813"
+   "Q813",
+   "Q373808"
   ]
  },
  {
@@ -2532,7 +2598,8 @@
    "Q15",
    "Q1033",
    "Q6583",
-   "Q183"
+   "Q183",
+   "Q132959"
   ]
  },
  {
@@ -2574,7 +2641,8 @@
   "theme": "t08",
   "places": [
    "Q265",
-   "Q47282"
+   "Q47282",
+   "Q750190"
   ]
  },
  {
@@ -2613,11 +2681,14 @@
   "publisher": "Routledge",
   "series": "Pathfinders",
   "doi": "10.4324/9781003049760",
+  "lang": "en",
   "theme": "t22",
   "places": [
    "Q668",
    "Q1156",
-   "Q771405"
+   "Q771405",
+   "Q891827",
+   "Q1191"
   ],
   "openalex": "W4242523926",
   "oa": "closed"
@@ -2637,7 +2708,8 @@
   "theme": "t18",
   "places": [
    "Q9361",
-   "Q15180"
+   "Q15180",
+   "Q813"
   ],
   "openalex": "W4402611892",
   "oa": "closed"
@@ -2679,7 +2751,9 @@
    "Q3766",
    "Q796",
    "Q23792",
-   "Q38"
+   "Q38",
+   "Q283368",
+   "Q7204"
   ],
   "openalex": "W4415947253",
   "oa": "hybrid"
@@ -2731,6 +2805,7 @@
   "type": "Contributions to an edited volume",
   "year": 2013,
   "publisher": "Princeton University Press",
+  "lang": "en",
   "theme": "t12"
  },
  {
@@ -2742,6 +2817,7 @@
   ],
   "type": "Contributions to an edited volume",
   "publisher": "Brill Online",
+  "lang": "en",
   "theme": "t12",
   "openalex": "W4251695747",
   "oa": "closed"
@@ -2775,7 +2851,8 @@
   "lang": "en",
   "theme": "t07",
   "places": [
-   "Q858"
+   "Q858",
+   "Q139708"
   ],
   "openalex": "W2061421045",
   "oa": "closed"
@@ -2790,6 +2867,7 @@
   "type": "Contributions to an edited volume",
   "year": 2011,
   "publisher": "Museum für Völkerkunde",
+  "lang": "de",
   "theme": "t06"
  },
  {
@@ -2995,6 +3073,7 @@
   "type": "Contributions to an edited volume",
   "year": 2018,
   "publisher": "Brill",
+  "lang": "en",
   "theme": "t12"
  },
  {
@@ -3068,7 +3147,8 @@
   "theme": "t10",
   "places": [
    "Q159",
-   "Q212"
+   "Q212",
+   "Q779924"
   ],
   "openalex": "W7113908457",
   "oa": "diamond",
@@ -3105,7 +3185,8 @@
   "lang": "en",
   "theme": "t07",
   "places": [
-   "Q79"
+   "Q79",
+   "Q312723"
   ],
   "openalex": "W2017631763",
   "oa": "closed"
@@ -3129,7 +3210,9 @@
    "Q1028",
    "Q34675",
    "Q846",
-   "Q878"
+   "Q878",
+   "Q143487",
+   "Q2218629"
   ],
   "openalex": "W4379618590",
   "oa": "closed"
@@ -3340,6 +3423,7 @@
   "type": "Contributions to an edited volume",
   "year": 2010,
   "publisher": "Robert Laffont",
+  "lang": "fr",
   "theme": "t17"
  },
  {
@@ -3424,7 +3508,10 @@
   "year": 2016,
   "publisher": "Iletisim Press",
   "lang": "tr",
-  "theme": "t13"
+  "theme": "t13",
+  "places": [
+   "Q1027153"
+  ]
  },
  {
   "slug": "blick-zurueck-und-nach-vorn",
@@ -3464,7 +3551,8 @@
    "Q145",
    "Q143487",
    "Q27381",
-   "Q183"
+   "Q183",
+   "Q7318"
   ],
   "openalex": "W604564263",
   "oa": "closed"
@@ -3481,7 +3569,10 @@
   "journal": "Medizinethnologie, boasblog. Witnessing Corona",
   "publisher": "Curare: Journal of Medical Anthropology; Global South Studies Center Cologne",
   "lang": "en",
-  "theme": "t20"
+  "theme": "t20",
+  "places": [
+   "Q252"
+  ]
  },
  {
   "slug": "blogging-in-beirut",
@@ -3580,7 +3671,11 @@
   "year": 2026,
   "journal": "Études",
   "doi": "10.3917/etu.4337.0134",
+  "lang": "fr",
   "theme": "t03",
+  "places": [
+   "Q183557"
+  ],
   "openalex": "W7160104424",
   "oa": "closed"
  },
@@ -3600,7 +3695,8 @@
   "theme": "t11",
   "places": [
    "Q15",
-   "Q4412"
+   "Q4412",
+   "Q398417"
   ],
   "openalex": "W4200082222",
   "oa": "hybrid"
@@ -3650,6 +3746,9 @@
   "series": "ZMO Working Papers 12",
   "lang": "en",
   "theme": "t14",
+  "places": [
+   "Q143487"
+  ],
   "openalex": "W2181561059",
   "oa": "green",
   "oaUrl": "http://www.ssoar.info/ssoar/handle/document/50515"
@@ -3682,7 +3781,11 @@
   ],
   "type": "Contributions to an edited volume",
   "publisher": "Brill Online",
+  "lang": "en",
   "theme": "t12",
+  "places": [
+   "Q12632"
+  ],
   "openalex": "W4212910035",
   "oa": "closed"
  },
@@ -3701,7 +3804,8 @@
   "theme": "t06",
   "places": [
    "Q796",
-   "Q41470"
+   "Q41470",
+   "Q66711956"
   ]
  },
  {
@@ -3800,7 +3904,8 @@
    "Q813",
    "Q27275",
    "Q47282",
-   "Q46"
+   "Q46",
+   "Q33946"
   ],
   "openalex": "W4248108165",
   "oa": "gold",
@@ -3838,7 +3943,8 @@
   "theme": "t20",
   "places": [
    "Q4412",
-   "Q1005"
+   "Q1005",
+   "Q160819"
   ],
   "gnd": [
    "4019197-7",
@@ -3880,7 +3986,11 @@
   "type": "Journal articles",
   "year": 2013,
   "journal": "Sharqshunoslik",
-  "theme": "t12"
+  "lang": "uz",
+  "theme": "t12",
+  "places": [
+   "Q5764"
+  ]
  },
  {
   "slug": "can-migration-from-west-africa-be-prevented-by-climate-resilient-agriculture",
@@ -4026,7 +4136,8 @@
    "Q183",
    "Q43",
    "Q406",
-   "Q64"
+   "Q64",
+   "Q2079"
   ],
   "openalex": "W4288385316",
   "oa": "hybrid"
@@ -4042,6 +4153,7 @@
   "type": "Edited volumes",
   "year": 2014,
   "publisher": "Center of African Studies of the University Institute of Lisbon",
+  "lang": "en",
   "theme": "t04",
   "places": [
    "Q15"
@@ -4134,7 +4246,8 @@
    "Q183",
    "Q55",
    "Q43",
-   "Q41470"
+   "Q41470",
+   "Q31"
   ],
   "openalex": "W4304891627",
   "oa": "diamond",
@@ -4194,7 +4307,8 @@
    "Q889",
    "Q843",
    "Q668",
-   "Q43100"
+   "Q43100",
+   "Q1017658"
   ],
   "openalex": "W3122367678",
   "oa": "closed"
@@ -4264,6 +4378,7 @@
   ],
   "type": "Contributions to an edited volume",
   "year": 2014,
+  "lang": "en",
   "theme": "t22"
  },
  {
@@ -4280,7 +4395,8 @@
   "lang": "en",
   "theme": "t19",
   "places": [
-   "Q1538"
+   "Q1538",
+   "Q7679597"
   ],
   "openalex": "W4200594693",
   "oa": "closed"
@@ -4340,7 +4456,9 @@
   "lang": "en",
   "theme": "t20",
   "places": [
-   "Q912"
+   "Q912",
+   "Q848574",
+   "Q148"
   ],
   "openalex": "W2165066715",
   "oa": "green",
@@ -4389,6 +4507,9 @@
   "publisher": "Aboki Publishers",
   "lang": "en",
   "theme": "t11",
+  "places": [
+   "Q1033"
+  ],
   "openalex": "W1932761803",
   "oa": "closed"
  },
@@ -4462,11 +4583,13 @@
   "type": "Edited volumes",
   "year": 2016,
   "publisher": "Routledge",
+  "lang": "en",
   "theme": "t24",
   "places": [
    "Q779924",
    "Q27381",
-   "Q48"
+   "Q48",
+   "Q143487"
   ],
   "openalex": "W2889539793",
   "oa": "closed"
@@ -4489,7 +4612,9 @@
    "Q43",
    "Q183",
    "Q55",
-   "Q18869"
+   "Q18869",
+   "Q31",
+   "Q37736"
   ],
   "openalex": "W7203446237",
   "oa": "closed"
@@ -4506,13 +4631,16 @@
   ],
   "type": "Contributions to an edited volume",
   "year": 2026,
+  "lang": "en",
   "theme": "t09",
   "places": [
    "Q18869",
    "Q858",
    "Q159",
    "Q212",
-   "Q43"
+   "Q43",
+   "Q37736",
+   "Q34266"
   ],
   "openalex": "W7213472595",
   "oa": "closed"
@@ -4545,6 +4673,10 @@
   "doi": "10.1080/02684527.2021.1938371",
   "lang": "en",
   "theme": "t01",
+  "places": [
+   "Q30",
+   "Q713750"
+  ],
   "openalex": "W3180254033",
   "oa": "hybrid"
  },
@@ -4558,7 +4690,11 @@
   "type": "Contributions to an edited volume",
   "year": 2016,
   "publisher": "Actes Sud",
-  "theme": "t17"
+  "lang": "fr",
+  "theme": "t17",
+  "places": [
+   "Q501768"
+  ]
  },
  {
   "slug": "civilian-and-military-power-ottoman-empire",
@@ -4595,7 +4731,8 @@
   "places": [
    "Q779924",
    "Q771405",
-   "Q46"
+   "Q46",
+   "Q30"
   ],
   "gnd": [
    "4027743-4",
@@ -4796,6 +4933,7 @@
   "type": "Book reviews",
   "year": 2023,
   "publisher": "Leibniz-Zentrum Moderner Orient",
+  "lang": "en",
   "theme": "t03"
  },
  {
@@ -4855,7 +4993,8 @@
   "theme": "t22",
   "places": [
    "Q668",
-   "Q1165"
+   "Q1165",
+   "Q1151572"
   ],
   "openalex": "W4250220168",
   "oa": "closed"
@@ -4876,7 +5015,8 @@
   "lang": "en",
   "theme": "t12",
   "places": [
-   "Q7204"
+   "Q7204",
+   "Q12536"
   ],
   "openalex": "W4382992709",
   "oa": "diamond",
@@ -4898,7 +5038,8 @@
   "theme": "t19",
   "places": [
    "Q3805",
-   "Q1218"
+   "Q1218",
+   "Q212938"
   ],
   "openalex": "W4402544708",
   "oa": "closed"
@@ -4917,7 +5058,8 @@
   "lang": "en",
   "theme": "t23",
   "places": [
-   "Q183"
+   "Q183",
+   "Q668"
   ]
  },
  {
@@ -4934,7 +5076,8 @@
   "lang": "en",
   "theme": "t14",
   "places": [
-   "Q64"
+   "Q64",
+   "Q183"
   ],
   "openalex": "W2237833272",
   "oa": "green",
@@ -4970,6 +5113,7 @@
   "year": 2016,
   "journal": "Tohu, April",
   "publisher": "Tel Aviv",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -5126,7 +5270,8 @@
   "lang": "it",
   "theme": "t10",
   "places": [
-   "Q15"
+   "Q15",
+   "Q48"
   ]
  },
  {
@@ -5143,7 +5288,8 @@
   "theme": "t06",
   "places": [
    "Q7204",
-   "Q15"
+   "Q15",
+   "Q27381"
   ]
  },
  {
@@ -5183,7 +5329,11 @@
   "theme": "t20",
   "places": [
    "Q668",
-   "Q148"
+   "Q148",
+   "Q1239",
+   "Q97",
+   "Q98",
+   "Q398805"
   ],
   "gnd": [
    "4195650-3",
@@ -5246,7 +5396,9 @@
   "lang": "en",
   "theme": "t19",
   "places": [
-   "Q12560"
+   "Q12560",
+   "Q406",
+   "Q673073"
   ],
   "openalex": "W2964088501",
   "oa": "green",
@@ -5366,7 +5518,8 @@
   "lang": "en",
   "theme": "t14",
   "places": [
-   "Q1028"
+   "Q1028",
+   "Q69808"
   ]
  },
  {
@@ -5382,6 +5535,10 @@
   "publisher": "Edinburgh University Press",
   "lang": "en",
   "theme": "t06",
+  "places": [
+   "Q858",
+   "Q950873"
+  ],
   "openalex": "W4402657813",
   "oa": "hybrid",
   "oaUrl": "https://www.degruyterbrill.com/document/doi/10.1515/9781474487986-011/pdf"
@@ -5400,7 +5557,8 @@
   "theme": "t22",
   "places": [
    "Q668",
-   "Q145"
+   "Q145",
+   "Q1151572"
   ],
   "openalex": "W2335338018",
   "oa": "bronze",
@@ -5567,6 +5725,7 @@
   "year": 2020,
   "publisher": "German Historical Institute London",
   "series": "The Annual Lectures",
+  "lang": "en",
   "theme": "t18",
   "openalex": "W3048480239",
   "oa": "closed"
@@ -5585,6 +5744,9 @@
   "publisher": "Edinburgh University Press",
   "lang": "en",
   "theme": "t10",
+  "places": [
+   "Q779924"
+  ],
   "gnd": [
    "4027743-4",
    "4189574-5"
@@ -5659,7 +5821,8 @@
   "lang": "en",
   "theme": "t04",
   "places": [
-   "Q657"
+   "Q657",
+   "Q242587"
   ]
  },
  {
@@ -5802,7 +5965,8 @@
   "theme": "t11",
   "places": [
    "Q1033",
-   "Q1032"
+   "Q1032",
+   "Q7058792"
   ],
   "openalex": "W3186938383",
   "oa": "gold",
@@ -5906,7 +6070,9 @@
   "lang": "en",
   "theme": "t19",
   "places": [
-   "Q817"
+   "Q817",
+   "Q35178",
+   "Q2218629"
   ],
   "openalex": "W2612836940",
   "oa": "green",
@@ -5928,7 +6094,9 @@
   "theme": "t22",
   "places": [
    "Q668",
-   "Q183"
+   "Q183",
+   "Q542146",
+   "Q732594"
   ],
   "gnd": [
    "4244159-6",
@@ -6038,7 +6206,8 @@
   "lang": "en",
   "theme": "t19",
   "places": [
-   "Q817"
+   "Q817",
+   "Q35178"
   ],
   "openalex": "W4285474800",
   "oa": "closed"
@@ -6065,7 +6234,9 @@
    "Q23406",
    "Q27407",
    "Q1774",
-   "Q1019"
+   "Q1019",
+   "Q58705",
+   "Q1027"
   ],
   "openalex": "W3097559852",
   "oa": "closed"
@@ -6167,6 +6338,7 @@
   "type": "Book reviews",
   "year": 2021,
   "journal": "Qantara",
+  "lang": "de",
   "theme": "t14",
   "places": [
    "Q183",
@@ -6219,7 +6391,8 @@
   "theme": "t13",
   "places": [
    "Q183",
-   "Q12560"
+   "Q12560",
+   "Q40"
   ]
  },
  {
@@ -6232,6 +6405,7 @@
   "type": "Other publications",
   "year": 2021,
   "publisher": "Leibniz-Zentrum Moderner Orient",
+  "lang": "de",
   "theme": "t06"
  },
  {
@@ -6332,7 +6506,8 @@
   "theme": "t06",
   "places": [
    "Q41470",
-   "Q796"
+   "Q796",
+   "Q66711956"
   ]
  },
  {
@@ -6412,7 +6587,8 @@
   "lang": "en",
   "theme": "t11",
   "places": [
-   "Q1033"
+   "Q1033",
+   "Q14234624"
   ],
   "gnd": [
    "4101234-3",
@@ -6472,7 +6648,9 @@
    "Q771405",
    "Q7204",
    "Q46",
-   "Q1149903"
+   "Q1149903",
+   "Q828",
+   "Q97365082"
   ],
   "openalex": "W4410842396",
   "oa": "closed"
@@ -6521,6 +6699,7 @@
   "year": 2021,
   "publisher": "I.B. Tauris",
   "series": "Gender and Islam",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -6537,7 +6716,10 @@
   "lang": "ar",
   "theme": "t17",
   "places": [
-   "Q34675"
+   "Q34675",
+   "Q79",
+   "Q846",
+   "Q2218629"
   ]
  },
  {
@@ -6554,7 +6736,8 @@
   "lang": "ar",
   "theme": "t15",
   "places": [
-   "Q87"
+   "Q87",
+   "Q79"
   ]
  },
  {
@@ -6574,7 +6757,9 @@
   "theme": "t22",
   "places": [
    "Q668",
-   "Q183"
+   "Q183",
+   "Q1352",
+   "Q542146"
   ],
   "gnd": [
    "1399461419",
@@ -6598,7 +6783,11 @@
   "type": "Contributions to an edited volume",
   "publisher": "Friedrich-Ebert-Stiftung",
   "lang": "ar",
-  "theme": "t01"
+  "theme": "t01",
+  "places": [
+   "Q7204",
+   "Q27381"
+  ]
  },
  {
   "slug": "deliberation-in-the-name-of-the-people-assessing-the-role-of-the-diwan-of-cairo-1798-1801",
@@ -6652,6 +6841,7 @@
   "journal": "Orientalistische Literaturzeitung",
   "publisher": "De Gruyter",
   "doi": "10.1515/olzg-2020-0155",
+  "lang": "de",
   "theme": "t10",
   "places": [
    "Q1028"
@@ -6669,7 +6859,11 @@
   "type": "Contributions to an edited volume",
   "year": 2013,
   "publisher": "Princeton University Press",
-  "theme": "t12"
+  "lang": "en",
+  "theme": "t12",
+  "places": [
+   "Q1017658"
+  ]
  },
  {
   "slug": "der-blick-nach-sueden-globalisierung-im-sozialismus",
@@ -6685,6 +6879,9 @@
   "doi": "10.58144/20240104-000",
   "lang": "de",
   "theme": "t02",
+  "places": [
+   "Q1149903"
+  ],
   "openalex": "W6899366503",
   "oa": "green"
  },
@@ -6827,7 +7024,8 @@
   "lang": "de",
   "theme": "t23",
   "places": [
-   "Q668"
+   "Q668",
+   "Q771405"
   ]
  },
  {
@@ -6845,6 +7043,9 @@
   "publisher": "Peter Lang Verlag",
   "lang": "de",
   "theme": "t03",
+  "places": [
+   "Q46"
+  ],
   "gnd": [
    "4015701-5",
    "4076645-7",
@@ -6886,7 +7087,8 @@
   "theme": "t10",
   "places": [
    "Q155",
-   "Q779924"
+   "Q779924",
+   "Q664"
   ],
   "openalex": "W3129736062",
   "oa": "closed"
@@ -6980,7 +7182,8 @@
   "lang": "en",
   "theme": "t12",
   "places": [
-   "Q851"
+   "Q851",
+   "Q5806"
   ],
   "openalex": "W4383065270",
   "oa": "hybrid",
@@ -7018,7 +7221,8 @@
   "lang": "en",
   "theme": "t04",
   "places": [
-   "Q1005"
+   "Q1005",
+   "Q160819"
   ],
   "openalex": "W1874917830",
   "oa": "bronze",
@@ -7129,7 +7333,10 @@
   "year": 2010,
   "journal": "Europäische Geschichte online",
   "lang": "de",
-  "theme": "t03"
+  "theme": "t03",
+  "places": [
+   "Q732594"
+  ]
  },
  {
   "slug": "die-dar-al-ulum-deoband",
@@ -7209,7 +7416,8 @@
   "lang": "de",
   "theme": "t05",
   "places": [
-   "Q64"
+   "Q64",
+   "Q2142541"
   ],
   "gnd": [
    "118736418",
@@ -7236,7 +7444,8 @@
   "theme": "t15",
   "places": [
    "Q7204",
-   "Q183"
+   "Q183",
+   "Q27381"
   ]
  },
  {
@@ -7250,7 +7459,10 @@
   "year": 2016,
   "publisher": "Leipziger Universitätsverlag",
   "lang": "de",
-  "theme": "t02"
+  "theme": "t02",
+  "places": [
+   "Q7204"
+  ]
  },
  {
   "slug": "die-hohepriesterin-des-liberalen-extremismus-pakistans",
@@ -7262,7 +7474,10 @@
   "type": "Other publications",
   "year": 2008,
   "lang": "de",
-  "theme": "t06"
+  "theme": "t06",
+  "places": [
+   "Q843"
+  ]
  },
  {
   "slug": "die-indischen-mitarbeiter-der-tranquebarmission-1706-1845",
@@ -7278,7 +7493,8 @@
   "lang": "de",
   "theme": "t22",
   "places": [
-   "Q668"
+   "Q668",
+   "Q732594"
   ]
  },
  {
@@ -7296,7 +7512,8 @@
   "lang": "de",
   "theme": "t22",
   "places": [
-   "Q668"
+   "Q668",
+   "Q732594"
   ],
   "gnd": [
    "4244159-6",
@@ -7364,7 +7581,8 @@
   "places": [
    "Q48",
    "Q15",
-   "Q46"
+   "Q46",
+   "Q21051459"
   ]
  },
  {
@@ -7385,7 +7603,8 @@
   "places": [
    "Q12560",
    "Q46",
-   "Q43"
+   "Q43",
+   "Q779924"
   ],
   "gnd": [
    "4075720-1",
@@ -7411,7 +7630,8 @@
   "lang": "de",
   "theme": "t13",
   "places": [
-   "Q12560"
+   "Q12560",
+   "Q46"
   ]
  },
  {
@@ -7489,7 +7709,10 @@
   "year": 2012,
   "publisher": "Bundeszentrale für Politische Bildung",
   "lang": "de",
-  "theme": "t10"
+  "theme": "t10",
+  "places": [
+   "Q143487"
+  ]
  },
  {
   "slug": "die-saekularisierung-des-denkens-in-der-arabischen-welt",
@@ -7548,7 +7771,10 @@
   "year": 2016,
   "journal": "Blog „Medizinethnologie Körper, Gesundheit und Heilung in einer globalisierten Welt“, 14. September 2016",
   "lang": "de",
-  "theme": "t05"
+  "theme": "t05",
+  "places": [
+   "Q1731"
+  ]
  },
  {
   "slug": "die-welt-im-20-jahrhundert-bis-1945",
@@ -7581,6 +7807,9 @@
   "doi": "10.1163/9789004362116_006",
   "lang": "en",
   "theme": "t06",
+  "places": [
+   "Q3491757"
+  ],
   "openalex": "W4253871408",
   "oa": "closed"
  },
@@ -7619,7 +7848,10 @@
   "series": "ZMO Working Papers 15",
   "doi": "urn:nbn:de:101:1-20160810362",
   "lang": "en",
-  "theme": "t20"
+  "theme": "t20",
+  "places": [
+   "Q843"
+  ]
  },
  {
   "slug": "discovering-internationalist-practices-of-women-of-the-whole-world-reflections-from-the-iisg-amsterdam-archive-on-afro-asian-entanglements-during-the-cold-war",
@@ -7779,6 +8011,7 @@
   "type": "Contributions to an edited volume",
   "year": 2011,
   "publisher": "Saur",
+  "lang": "de",
   "theme": "t03"
  },
  {
@@ -7813,7 +8046,13 @@
   "journal": "Historical Social Research",
   "doi": "10.12759/hsr.48.2023.37",
   "lang": "en",
-  "theme": "t02"
+  "theme": "t02",
+  "places": [
+   "Q414",
+   "Q1515",
+   "Q5465",
+   "Q424"
+  ]
  },
  {
   "slug": "doing-global-sociology-2",
@@ -7826,6 +8065,7 @@
   "type": "Other publications",
   "year": 2025,
   "doi": "10.58144/20260225-000",
+  "lang": "en",
   "theme": "t01",
   "openalex": "W7133340129",
   "oa": "green"
@@ -7877,6 +8117,7 @@
   "type": "Edited volumes",
   "year": 2010,
   "publisher": "James Currey",
+  "lang": "en",
   "theme": "t04",
   "places": [
    "Q15"
@@ -7912,7 +8153,8 @@
   "lang": "de",
   "theme": "t06",
   "places": [
-   "Q43"
+   "Q43",
+   "Q796"
   ]
  },
  {
@@ -7932,7 +8174,8 @@
   "theme": "t09",
   "places": [
    "Q229",
-   "Q43"
+   "Q43",
+   "Q23681"
   ],
   "openalex": "W2769561006",
   "oa": "green",
@@ -8025,9 +8268,11 @@
   "type": "Contributions to an edited volume",
   "year": 2012,
   "publisher": "ABC-CLIO",
+  "lang": "en",
   "theme": "t17",
   "places": [
-   "Q612"
+   "Q612",
+   "Q910493"
   ]
  },
  {
@@ -8041,6 +8286,7 @@
   "type": "Journal articles",
   "year": 2012,
   "journal": "Etnograficheskoe Obozrenie",
+  "lang": "ru",
   "theme": "t08",
   "places": [
    "Q47282"
@@ -8056,6 +8302,7 @@
   "type": "Journal articles",
   "year": 2013,
   "journal": "Etnograficheskoe Obozrenie",
+  "lang": "ru",
   "theme": "t08",
   "places": [
    "Q47282"
@@ -8084,7 +8331,8 @@
    "Q115",
    "Q986",
    "Q977",
-   "Q145"
+   "Q145",
+   "Q3392"
   ],
   "openalex": "W2766179379",
   "oa": "closed"
@@ -8135,6 +8383,7 @@
   "type": "Journal articles",
   "year": 2019,
   "doi": "10.1177/1750698019836182",
+  "lang": "en",
   "theme": "t06",
   "openalex": "W4239302745",
   "oa": "bronze"
@@ -8149,6 +8398,7 @@
   "type": "Other publications",
   "year": 2022,
   "publisher": "University of KwaZulu-Natal",
+  "lang": "en",
   "theme": "t22",
   "places": [
    "Q48"
@@ -8165,6 +8415,7 @@
   "type": "Other publications",
   "year": 2020,
   "publisher": "University of KwaZulu-Natal",
+  "lang": "en",
   "theme": "t22"
  },
  {
@@ -8177,9 +8428,14 @@
   "type": "Other publications",
   "year": 2021,
   "publisher": "University of KwaZulu-Natal",
+  "lang": "en",
   "theme": "t22",
   "places": [
-   "Q668"
+   "Q668",
+   "Q1191",
+   "Q1142402",
+   "Q1164",
+   "Q1193"
   ]
  },
  {
@@ -8192,6 +8448,7 @@
   "type": "Other publications",
   "year": 2022,
   "publisher": "University of KwaZulu-Natal",
+  "lang": "en",
   "theme": "t22",
   "places": [
    "Q668"
@@ -8207,6 +8464,7 @@
   "year": 2023,
   "publisher": "Heidelberg Asian Studies Publishing",
   "doi": "10.58125/nidan.2023.1.22218",
+  "lang": "en",
   "theme": "t16",
   "openalex": "W6936642078",
   "oa": "green"
@@ -8278,6 +8536,7 @@
   "type": "Contributions to an edited volume",
   "year": 2009,
   "publisher": "Oxford University Press",
+  "lang": "en",
   "theme": "t12"
  },
  {
@@ -8306,6 +8565,7 @@
   "year": 2021,
   "journal": "Latitude",
   "publisher": "Goethe-Institut",
+  "lang": "en",
   "theme": "t23",
   "places": [
    "Q183",
@@ -8498,6 +8758,7 @@
   "type": "Contributions to an edited volume",
   "year": 2014,
   "publisher": "Draupadi Verlag",
+  "lang": "de",
   "theme": "t22"
  },
  {
@@ -8522,6 +8783,7 @@
   "type": "Contributions to an edited volume",
   "year": 2008,
   "publisher": "Konrad Adenauer Stiftung",
+  "lang": "de",
   "theme": "t10"
  },
  {
@@ -8534,6 +8796,7 @@
   "type": "Contributions to an edited volume",
   "year": 2010,
   "publisher": "Verl. der Franckeschen Stiftungen Halle; Harrassowitz",
+  "lang": "de",
   "theme": "t18"
  },
  {
@@ -8583,6 +8846,7 @@
   "type": "Contributions to an edited volume",
   "year": 2021,
   "publisher": "Westermann",
+  "lang": "de",
   "theme": "t01"
  },
  {
@@ -8652,7 +8916,10 @@
    "Q43",
    "Q399",
    "Q12560",
-   "Q15180"
+   "Q15180",
+   "Q2311567",
+   "Q3240533",
+   "Q126307"
   ]
  },
  {
@@ -8671,7 +8938,9 @@
   "places": [
    "Q212",
    "Q159",
-   "Q43"
+   "Q43",
+   "Q34266",
+   "Q656"
   ],
   "openalex": "W4319787644",
   "oa": "closed"
@@ -8723,7 +8992,10 @@
   "theme": "t02",
   "places": [
    "Q46",
-   "Q159"
+   "Q159",
+   "Q34266",
+   "Q12837",
+   "Q1414323"
   ],
   "openalex": "W4321452225",
   "oa": "hybrid"
@@ -8744,7 +9016,8 @@
   "places": [
    "Q27275",
    "Q145",
-   "Q668"
+   "Q668",
+   "Q129286"
   ]
  },
  {
@@ -8757,6 +9030,7 @@
   "type": "Journal articles",
   "year": 2008,
   "journal": "Verdensmagasinet",
+  "lang": "no",
   "theme": "t17"
  },
  {
@@ -8775,7 +9049,9 @@
   "places": [
    "Q1008",
    "Q912",
-   "Q4412"
+   "Q4412",
+   "Q15244460",
+   "Q506811"
   ]
  },
  {
@@ -8785,6 +9061,7 @@
   "type": "Edited volumes",
   "year": 2011,
   "publisher": "Encyclopædia Universalis",
+  "lang": "fr",
   "theme": "t03"
  },
  {
@@ -8873,7 +9150,10 @@
   "year": 2016,
   "journal": "Interdisziplinäre Zeitung für Südasienforschung",
   "lang": "en",
-  "theme": "t22"
+  "theme": "t22",
+  "places": [
+   "Q668"
+  ]
  },
  {
   "slug": "entering-the-black-hole",
@@ -8889,7 +9169,8 @@
   "lang": "en",
   "theme": "t05",
   "places": [
-   "Q145"
+   "Q145",
+   "Q2734136"
   ],
   "openalex": "W1982621604",
   "oa": "closed"
@@ -9008,7 +9289,8 @@
    "Q986",
    "Q115",
    "Q977",
-   "Q1045"
+   "Q1045",
+   "Q958"
   ]
  },
  {
@@ -9060,7 +9342,10 @@
   "year": 2011,
   "journal": "Toplumsal Tarih",
   "lang": "tr",
-  "theme": "t13"
+  "theme": "t13",
+  "places": [
+   "Q4728314"
+  ]
  },
  {
   "slug": "erken-cumhuriyet-doeneminde-kadin-intiharlari",
@@ -9098,7 +9383,11 @@
    "Q87",
    "Q3766",
    "Q85",
-   "Q3579"
+   "Q3579",
+   "Q17151",
+   "Q12544",
+   "Q3708094",
+   "Q83891"
   ],
   "gnd": [
    "4075720-1",
@@ -9219,7 +9508,10 @@
   "year": 2011,
   "publisher": "Schnell & Steiner",
   "lang": "de",
-  "theme": "t15"
+  "theme": "t15",
+  "places": [
+   "Q2142541"
+  ]
  },
  {
   "slug": "etre-juif-dans-lalgerie-ottomane",
@@ -9234,7 +9526,8 @@
   "lang": "fr",
   "theme": "t17",
   "places": [
-   "Q12560"
+   "Q12560",
+   "Q262"
   ]
  },
  {
@@ -9247,6 +9540,7 @@
   "type": "Contributions to an edited volume",
   "year": 2012,
   "publisher": "Gale Cengage Learning",
+  "lang": "en",
   "theme": "t03"
  },
  {
@@ -9264,6 +9558,10 @@
   "publisher": "Palgrave Macmillan",
   "lang": "en",
   "theme": "t09",
+  "places": [
+   "Q46",
+   "Q15"
+  ],
   "openalex": "W3083608269",
   "oa": "closed"
  },
@@ -9300,7 +9598,9 @@
   "places": [
    "Q4918",
    "Q48",
-   "Q15"
+   "Q15",
+   "Q46",
+   "Q16896634"
   ]
  },
  {
@@ -9336,7 +9636,8 @@
   "theme": "t15",
   "places": [
    "Q1218",
-   "Q23792"
+   "Q23792",
+   "Q1186403"
   ],
   "openalex": "W7115897383",
   "oa": "closed"
@@ -9354,7 +9655,10 @@
   "year": 2009,
   "publisher": "Perlen-Verlag",
   "lang": "de",
-  "theme": "t14"
+  "theme": "t14",
+  "places": [
+   "Q143487"
+  ]
  },
  {
   "slug": "exile-and-fieldwork-as-liminal-conditions",
@@ -9430,7 +9734,10 @@
   "places": [
    "Q159",
    "Q212",
-   "Q900"
+   "Q900",
+   "Q34266",
+   "Q7835",
+   "Q1634214"
   ]
  },
  {
@@ -9462,6 +9769,9 @@
   "publisher": "Routledge",
   "lang": "en",
   "theme": "t10",
+  "places": [
+   "Q148"
+  ],
   "openalex": "W4238718054",
   "oa": "closed"
  },
@@ -9479,7 +9789,10 @@
   "lang": "en",
   "theme": "t06",
   "places": [
-   "Q889"
+   "Q889",
+   "Q721468",
+   "Q6667298",
+   "Q32056"
   ],
   "openalex": "W7202292286",
   "oa": "hybrid"
@@ -9536,7 +9849,8 @@
   "places": [
    "Q23406",
    "Q15",
-   "Q145"
+   "Q145",
+   "Q27928"
   ],
   "openalex": "W2783281317",
   "oa": "closed"
@@ -9653,6 +9967,9 @@
   "publisher": "Springer",
   "lang": "en",
   "theme": "t07",
+  "places": [
+   "Q490"
+  ],
   "openalex": "W2223781333",
   "oa": "closed"
  },
@@ -9833,7 +10150,8 @@
   "lang": "fr",
   "theme": "t20",
   "places": [
-   "Q657"
+   "Q657",
+   "Q1139666"
   ],
   "openalex": "W2937450674",
   "oa": "bronze",
@@ -9877,7 +10195,9 @@
   "theme": "t22",
   "places": [
    "Q668",
-   "Q771405"
+   "Q771405",
+   "Q5089",
+   "Q129286"
   ],
   "openalex": "W2314107507",
   "oa": "closed"
@@ -9907,7 +10227,8 @@
    "Q31945",
    "Q12560",
    "Q5806",
-   "Q35484"
+   "Q35484",
+   "Q27928"
   ],
   "openalex": "W2740494661",
   "oa": "closed"
@@ -9927,7 +10248,8 @@
   "theme": "t12",
   "places": [
    "Q779924",
-   "Q35484"
+   "Q35484",
+   "Q851"
   ],
   "openalex": "W1525649297",
   "oa": "closed"
@@ -9966,7 +10288,10 @@
   "year": 2013,
   "publisher": "Jap Sam Books",
   "lang": "en",
-  "theme": "t17"
+  "theme": "t17",
+  "places": [
+   "Q87"
+  ]
  },
  {
   "slug": "foreword",
@@ -9978,6 +10303,7 @@
   "type": "Contributions to an edited volume",
   "year": 2014,
   "publisher": "Routledge",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -10127,7 +10453,9 @@
    "Q34675",
    "Q843",
    "Q817",
-   "Q43100"
+   "Q43100",
+   "Q2218629",
+   "Q805804"
   ],
   "openalex": "W3177428135",
   "oa": "hybrid"
@@ -10160,7 +10488,9 @@
   "lang": "de",
   "theme": "t23",
   "places": [
-   "Q183"
+   "Q183",
+   "Q40",
+   "Q39"
   ],
   "gnd": [
    "4070370-8",
@@ -10278,7 +10608,8 @@
   "lang": "de",
   "theme": "t19",
   "places": [
-   "Q406"
+   "Q406",
+   "Q3630"
   ]
  },
  {
@@ -10311,7 +10642,8 @@
   "lang": "en",
   "theme": "t06",
   "places": [
-   "Q43"
+   "Q43",
+   "Q46"
   ]
  },
  {
@@ -10562,7 +10894,8 @@
   "theme": "t08",
   "places": [
    "Q159",
-   "Q27275"
+   "Q27275",
+   "Q34266"
   ],
   "openalex": "W7163197539",
   "oa": "closed"
@@ -10601,7 +10934,8 @@
   "theme": "t17",
   "places": [
    "Q863",
-   "Q805"
+   "Q805",
+   "Q82859"
   ],
   "openalex": "W4401180974",
   "oa": "diamond"
@@ -10645,7 +10979,8 @@
   "lang": "en",
   "theme": "t15",
   "places": [
-   "Q34675"
+   "Q34675",
+   "Q5469"
   ]
  },
  {
@@ -10713,6 +11048,7 @@
   "type": "Contributions to an edited volume",
   "year": 2009,
   "publisher": "Oxford University Press",
+  "lang": "en",
   "theme": "t12",
   "places": [
    "Q1005"
@@ -10904,7 +11240,8 @@
   "theme": "t07",
   "places": [
    "Q7204",
-   "Q27381"
+   "Q27381",
+   "Q984212"
   ],
   "openalex": "W2900095916",
   "oa": "closed"
@@ -10919,6 +11256,7 @@
   "type": "Contributions to an edited volume",
   "year": 2011,
   "publisher": "Museum für Völkerkunde",
+  "lang": "de",
   "theme": "t03"
  },
  {
@@ -11051,7 +11389,9 @@
   "places": [
    "Q851",
    "Q5806",
-   "Q35484"
+   "Q35484",
+   "Q34675",
+   "Q104772074"
   ],
   "openalex": "W7204893543",
   "oa": "closed"
@@ -11080,7 +11420,11 @@
   "year": 2019,
   "journal": "Archivum Ottomanicum",
   "lang": "de",
-  "theme": "t13"
+  "theme": "t13",
+  "places": [
+   "Q12560",
+   "Q43"
+  ]
  },
  {
   "slug": "gesellschaftliche-konfigurationen-waehrend-des-aufstands-1819/20-in-aleppo-nach-den-aufzeichnungen-des-armenisch-katholischen-bischofs-abraham-kubilyan",
@@ -11150,7 +11494,8 @@
   "theme": "t06",
   "places": [
    "Q796",
-   "Q41470"
+   "Q41470",
+   "Q66711956"
   ]
  },
  {
@@ -11271,7 +11616,8 @@
   "lang": "en",
   "theme": "t02",
   "places": [
-   "Q1149903"
+   "Q1149903",
+   "Q97365082"
   ],
   "gnd": [
    "4079237-7",
@@ -11297,7 +11643,8 @@
   "theme": "t10",
   "places": [
    "Q15180",
-   "Q212"
+   "Q212",
+   "Q302045"
   ]
  },
  {
@@ -11337,7 +11684,8 @@
    "Q117",
    "Q1044",
    "Q965",
-   "Q974"
+   "Q974",
+   "Q581452"
   ],
   "openalex": "W747121052",
   "oa": "closed"
@@ -11483,6 +11831,7 @@
   "type": "Other publications",
   "year": 2024,
   "journal": "Otherwise Magazine",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -11527,7 +11876,10 @@
   "year": 2013,
   "journal": "Zeitschrift für Ethnologie",
   "lang": "en",
-  "theme": "t01"
+  "theme": "t01",
+  "places": [
+   "Q813"
+  ]
  },
  {
   "slug": "guardians-of-abandoned-children",
@@ -11595,6 +11947,7 @@
   "year": 2020,
   "journal": "Turkish Historical Review",
   "doi": "10.1163/18775462-01002002",
+  "lang": "en",
   "theme": "t13",
   "places": [
    "Q12560"
@@ -11732,7 +12085,10 @@
   "theme": "t13",
   "places": [
    "Q35484",
-   "Q43"
+   "Q43",
+   "Q181007",
+   "Q11772",
+   "Q220"
   ]
  },
  {
@@ -11746,6 +12102,7 @@
   "year": 2016,
   "publisher": "Brill",
   "doi": "10.1163/9789004323353_007",
+  "lang": "en",
   "theme": "t12",
   "places": [
    "Q5806"
@@ -11864,7 +12221,8 @@
   "lang": "en",
   "theme": "t15",
   "places": [
-   "Q1016"
+   "Q1016",
+   "Q192237"
   ]
  },
  {
@@ -11921,7 +12279,8 @@
   "theme": "t09",
   "places": [
    "Q183",
-   "Q79"
+   "Q79",
+   "Q1731"
   ]
  },
  {
@@ -11992,7 +12351,8 @@
    "Q12560",
    "Q43",
    "Q23522",
-   "Q46"
+   "Q46",
+   "Q263686"
   ],
   "gnd": [
    "4075720-1",
@@ -12057,6 +12417,7 @@
   ],
   "type": "Contributions to an edited volume",
   "year": 2014,
+  "lang": "en",
   "theme": "t22",
   "places": [
    "Q668"
@@ -12071,6 +12432,7 @@
   ],
   "year": 2021,
   "publisher": "Academic Blog of the HISDEMAB collaborative research project of the Leibniz-Association on the Historicity of Democracy in the Arab and Muslim Worlds",
+  "lang": "en",
   "theme": "t18"
  },
  {
@@ -12156,6 +12518,7 @@
   "journal": "The Russian Review",
   "publisher": "Wiley Online Library",
   "doi": "10.1111/russ.12681",
+  "lang": "en",
   "theme": "t03",
   "places": [
    "Q159"
@@ -12221,7 +12584,8 @@
    "Q1045",
    "Q805",
    "Q851",
-   "Q46"
+   "Q46",
+   "Q27928"
   ],
   "openalex": "W3044614657",
   "oa": "closed"
@@ -12367,6 +12731,7 @@
   "type": "Other publications",
   "year": 2014,
   "journal": "Malaysiakini",
+  "lang": "zh",
   "theme": "t01"
  },
  {
@@ -12398,6 +12763,7 @@
   "type": "Contributions to an edited volume",
   "year": 2020,
   "publisher": "Brill",
+  "lang": "en",
   "theme": "t01",
   "openalex": "W4213370704",
   "oa": "hybrid",
@@ -12507,7 +12873,8 @@
   "theme": "t15",
   "places": [
    "Q41183",
-   "Q12560"
+   "Q12560",
+   "Q641"
   ]
  },
  {
@@ -12577,7 +12944,8 @@
   "lang": "de",
   "theme": "t01",
   "places": [
-   "Q668"
+   "Q668",
+   "Q732594"
   ]
  },
  {
@@ -12632,6 +13000,7 @@
   "type": "Other publications",
   "year": 2016,
   "doi": "10.1080/17432200.2016.1172759",
+  "lang": "en",
   "theme": "t19",
   "openalex": "W2463975688",
   "oa": "hybrid"
@@ -12647,6 +13016,7 @@
   ],
   "type": "Contributions to an edited volume",
   "year": 2016,
+  "lang": "en",
   "theme": "t19"
  },
  {
@@ -12747,6 +13117,7 @@
   "year": 2011,
   "journal": "Colloque Ignác Goldziher (1850 - 1921): un Classique des Études Orientales ou un Autre Orientalisme?",
   "publisher": "Geuthner",
+  "lang": "fr",
   "theme": "t03"
  },
  {
@@ -12793,7 +13164,10 @@
   "year": 2013,
   "publisher": "Ediesse Edizioni",
   "lang": "it",
-  "theme": "t17"
+  "theme": "t17",
+  "places": [
+   "Q1028"
+  ]
  },
  {
   "slug": "immersive-soundscapes-rana-eids-panoptic",
@@ -12805,6 +13179,7 @@
   "type": "Journal articles",
   "year": 2021,
   "journal": "Jump Cut. A Review of Contemporary Media",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -12817,6 +13192,7 @@
   "type": "Contributions to an edited volume",
   "year": 2020,
   "publisher": "Brill",
+  "lang": "en",
   "theme": "t01",
   "openalex": "W4229937060",
   "oa": "hybrid",
@@ -12834,6 +13210,7 @@
   "journal": "Oxford Journal of Islamic Studies",
   "publisher": "Oxford University Press",
   "doi": "10.1093/jis/etab067",
+  "lang": "en",
   "theme": "t15",
   "places": [
    "Q5806",
@@ -12867,7 +13244,8 @@
    "Q1019",
    "Q771405",
    "Q15",
-   "Q46"
+   "Q46",
+   "Q27433"
   ],
   "gnd": [
    "4078094-6",
@@ -12890,7 +13268,13 @@
   "publisher": "НЛО",
   "series": "Historia Rossica",
   "lang": "ru",
-  "theme": "t03"
+  "theme": "t03",
+  "places": [
+   "Q159",
+   "Q34266",
+   "Q7835",
+   "Q1425322"
+  ]
  },
  {
   "slug": "importing-the-participatory-budgeting-model-from-porto-alegre-to-la-marsa",
@@ -12905,6 +13289,10 @@
   "publisher": "Routledge",
   "lang": "en",
   "theme": "t19",
+  "places": [
+   "Q40269",
+   "Q27230"
+  ],
   "openalex": "W3207720050",
   "oa": "closed"
  },
@@ -13009,7 +13397,8 @@
    "Q4412",
    "Q7204",
    "Q15",
-   "Q23522"
+   "Q23522",
+   "Q7569281"
   ],
   "gnd": [
    "4078931-7",
@@ -13066,7 +13455,9 @@
    "Q28227",
    "Q66065",
    "Q6583",
-   "Q1049"
+   "Q1049",
+   "Q848574",
+   "Q508014"
   ],
   "openalex": "W4300955220",
   "oa": "closed"
@@ -13151,7 +13542,10 @@
   "theme": "t22",
   "places": [
    "Q668",
-   "Q48"
+   "Q48",
+   "Q843",
+   "Q771405",
+   "Q43100"
   ]
  },
  {
@@ -13182,6 +13576,7 @@
   "year": 2015,
   "publisher": "Berlin",
   "doi": "10.18452/8493",
+  "lang": "en",
   "theme": "t23",
   "places": [
    "Q668",
@@ -13242,7 +13637,9 @@
    "Q183",
    "Q55",
    "Q41470",
-   "Q46"
+   "Q46",
+   "Q31",
+   "Q9337"
   ]
  },
  {
@@ -13307,6 +13704,10 @@
   "journal": "Cultural Anthropology : Journal of the Society for Cultural Anthropology",
   "lang": "en",
   "theme": "t19",
+  "places": [
+   "Q3838",
+   "Q974"
+  ],
   "openalex": "W2114080797",
   "oa": "diamond",
   "oaUrl": "https://doi.org/10.1111/j.1548-1360.2011.01099.x"
@@ -13335,6 +13736,7 @@
   "year": 2026,
   "publisher": "Routledge",
   "series": "Routledge Critical Perspectives on Breath and Breathing series",
+  "lang": "en",
   "theme": "t16",
   "openalex": "W7165663713",
   "oa": "closed"
@@ -13375,7 +13777,8 @@
   "lang": "en",
   "theme": "t04",
   "places": [
-   "Q15"
+   "Q15",
+   "Q27407"
   ],
   "openalex": "W4398193434",
   "oa": "closed"
@@ -13394,7 +13797,8 @@
   "lang": "fr",
   "theme": "t09",
   "places": [
-   "Q262"
+   "Q262",
+   "Q205792"
   ]
  },
  {
@@ -13420,6 +13824,7 @@
   "type": "Contributions to an edited volume",
   "year": 2020,
   "publisher": "Brill",
+  "lang": "en",
   "theme": "t01",
   "openalex": "W4250237065",
   "oa": "hybrid",
@@ -13478,6 +13883,7 @@
   "year": 2019,
   "journal": "Südasien-Chronik /South Asia-Chronicle",
   "doi": "10.18452/20984",
+  "lang": "en",
   "theme": "t22",
   "places": [
    "Q902"
@@ -13532,7 +13938,8 @@
   "lang": "fr",
   "theme": "t24",
   "places": [
-   "Q262"
+   "Q262",
+   "Q3561"
   ]
  },
  {
@@ -13598,6 +14005,7 @@
   "type": "Contributions to an edited volume",
   "year": 2020,
   "publisher": "Routledge",
+  "lang": "en",
   "theme": "t19"
  },
  {
@@ -13613,6 +14021,7 @@
   "type": "Contributions to an edited volume",
   "year": 2015,
   "publisher": "Berghahn Books",
+  "lang": "en",
   "theme": "t06",
   "openalex": "W4389039865",
   "oa": "closed"
@@ -13629,6 +14038,7 @@
   "year": 2015,
   "journal": "Capitalism Nature Socialism",
   "doi": "10.1080/10455752.2015.1067632",
+  "lang": "en",
   "theme": "t16",
   "openalex": "W4240316979",
   "oa": "closed"
@@ -13645,6 +14055,7 @@
   "type": "Contributions to an edited volume",
   "year": 2014,
   "publisher": "Editions du Cerf",
+  "lang": "fr",
   "theme": "t16"
  },
  {
@@ -13658,6 +14069,7 @@
   "type": "Contributions to an edited volume",
   "year": 2014,
   "publisher": "Klaus Schwarz Verlag",
+  "lang": "en",
   "theme": "t12"
  },
  {
@@ -13671,6 +14083,7 @@
   "type": "Contributions to an edited volume",
   "year": 2016,
   "publisher": "Berghahn Books",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -13704,6 +14117,7 @@
   "type": "Contributions to an edited volume",
   "year": 2013,
   "publisher": "Jap Sam Books",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -13716,6 +14130,7 @@
   "type": "Contributions to an edited volume",
   "year": 2013,
   "publisher": "Routledge",
+  "lang": "en",
   "theme": "t14"
  },
  {
@@ -13766,6 +14181,7 @@
   "type": "Contributions to an edited volume",
   "year": 2020,
   "publisher": "Bristol University Press",
+  "lang": "en",
   "theme": "t16",
   "openalex": "W4248008902",
   "oa": "closed"
@@ -13780,6 +14196,7 @@
   "type": "Contributions to an edited volume",
   "year": 2011,
   "publisher": "Wissenschaftskolleg zu Berlin",
+  "lang": "de",
   "theme": "t10",
   "openalex": "W4312800675",
   "oa": "bronze",
@@ -13798,6 +14215,7 @@
   "type": "Contributions to an edited volume",
   "year": 2010,
   "publisher": "Brill",
+  "lang": "en",
   "theme": "t23",
   "openalex": "W4252454131",
   "oa": "closed"
@@ -13844,6 +14262,7 @@
   ],
   "type": "Contributions to an edited volume",
   "year": 2012,
+  "lang": "en",
   "theme": "t07"
  },
  {
@@ -13857,6 +14276,7 @@
   "type": "Contributions to an edited volume",
   "year": 2019,
   "publisher": "Orient Blackswan",
+  "lang": "en",
   "theme": "t22"
  },
  {
@@ -13871,6 +14291,7 @@
   "type": "Contributions to an edited volume",
   "year": 2019,
   "publisher": "Orient Blackswan",
+  "lang": "en",
   "theme": "t22"
  },
  {
@@ -13885,6 +14306,7 @@
   "year": 2022,
   "publisher": "Routledge",
   "doi": "10.4324/9781003109808-1",
+  "lang": "en",
   "theme": "t01",
   "openalex": "W4241325638",
   "oa": "closed"
@@ -13900,6 +14322,7 @@
   "type": "Contributions to an edited volume",
   "year": 2023,
   "publisher": "Lexington Books / Rowman & Littlefield",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -13912,6 +14335,7 @@
   "type": "Contributions to an edited volume",
   "year": 2022,
   "publisher": "Berghahn Books",
+  "lang": "en",
   "theme": "t18",
   "places": [
    "Q34675"
@@ -13949,6 +14373,7 @@
   "type": "Contributions to an edited volume",
   "year": 2024,
   "publisher": "Edinburgh University Press",
+  "lang": "en",
   "theme": "t10"
  },
  {
@@ -13962,6 +14387,7 @@
   "type": "Contributions to an edited volume",
   "year": 2025,
   "publisher": "Pluto Press",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -13976,6 +14402,7 @@
   "type": "Contributions to an edited volume",
   "year": 2025,
   "publisher": "Springer",
+  "lang": "en",
   "theme": "t18",
   "openalex": "W4410846757",
   "oa": "closed"
@@ -14023,6 +14450,7 @@
   "type": "Contributions to an edited volume",
   "year": 2021,
   "publisher": "AUC Press",
+  "lang": "en",
   "theme": "t16",
   "openalex": "W4285474677",
   "oa": "closed"
@@ -14087,6 +14515,7 @@
   ],
   "type": "Contributions to an edited volume",
   "year": 2014,
+  "lang": "en",
   "theme": "t03"
  },
  {
@@ -14526,6 +14955,7 @@
   "type": "Contributions to an edited volume",
   "year": 2015,
   "publisher": "Gale Cengage Learning",
+  "lang": "en",
   "theme": "t12",
   "places": [
    "Q794"
@@ -14575,7 +15005,10 @@
   "year": 2016,
   "journal": "Kebikeç, Frühling",
   "lang": "tr",
-  "theme": "t13"
+  "theme": "t13",
+  "places": [
+   "Q406"
+  ]
  },
  {
   "slug": "islam",
@@ -14587,6 +15020,7 @@
   "type": "Contributions to an edited volume",
   "year": 2018,
   "doi": "10.29164/18islam",
+  "lang": "en",
   "theme": "t12",
   "openalex": "W4229861038",
   "oa": "diamond",
@@ -14665,6 +15099,7 @@
   "year": 2021,
   "publisher": "De Gruyter",
   "doi": "10.1515/9783110726534-007",
+  "lang": "en",
   "theme": "t11",
   "places": [
    "Q912"
@@ -14682,6 +15117,7 @@
   ],
   "type": "Edited volumes",
   "year": 2021,
+  "lang": "en",
   "theme": "t11",
   "places": [
    "Q965"
@@ -14884,6 +15320,7 @@
   "type": "Other publications",
   "year": 2008,
   "publisher": "Arab Media and Society",
+  "lang": "en",
   "theme": "t12"
  },
  {
@@ -15015,7 +15452,11 @@
   "type": "Other publications",
   "year": 2013,
   "publisher": "malaysiakini",
-  "theme": "t17"
+  "lang": "en",
+  "theme": "t17",
+  "places": [
+   "Q148"
+  ]
  },
  {
   "slug": "izmir-hapishanesi-ve-basgardiyan-ismail-hakki-saizili",
@@ -15085,6 +15526,7 @@
   ],
   "type": "Contributions to an edited volume",
   "publisher": "Brill Online",
+  "lang": "en",
   "theme": "t12",
   "places": [
    "Q374365"
@@ -15211,7 +15653,10 @@
   "journal": "Musée d’art et d’histoire du Judaïsme",
   "publisher": "Flammarion; Musée d'art et d'histoire du judaïsme",
   "lang": "fr",
-  "theme": "t17"
+  "theme": "t17",
+  "places": [
+   "Q262"
+  ]
  },
  {
   "slug": "kadhi-court-and-appointment-of-kadhi-in-kenya-colony",
@@ -15226,7 +15671,8 @@
   "lang": "en",
   "theme": "t17",
   "places": [
-   "Q114"
+   "Q114",
+   "Q2538511"
   ],
   "openalex": "W2026047807",
   "oa": "closed"
@@ -15244,6 +15690,9 @@
   "publisher": "Brill",
   "lang": "en",
   "theme": "t22",
+  "places": [
+   "Q1881042"
+  ],
   "openalex": "W2460251407",
   "oa": "closed"
  },
@@ -15271,7 +15720,9 @@
    "Q16957",
    "Q15180",
    "Q843",
-   "Q30"
+   "Q30",
+   "Q902",
+   "Q713750"
   ],
   "gnd": [
    "4011889-7",
@@ -15420,6 +15871,7 @@
   "type": "Contributions to an edited volume",
   "year": 2012,
   "publisher": "Oxford University Press",
+  "lang": "en",
   "theme": "t04",
   "openalex": "W7148199964",
   "oa": "closed"
@@ -15433,6 +15885,7 @@
   ],
   "type": "Contributions to an edited volume",
   "year": 2019,
+  "lang": "en",
   "theme": "t17",
   "places": [
    "Q114"
@@ -15455,7 +15908,8 @@
   "lang": "en",
   "theme": "t10",
   "places": [
-   "Q114"
+   "Q114",
+   "Q185371"
   ],
   "openalex": "W7106238844",
   "oa": "green"
@@ -15509,6 +15963,7 @@
   "type": "Edited volumes",
   "year": 2011,
   "publisher": "Museum für Völkerkunde",
+  "lang": "de",
   "theme": "t03"
  },
  {
@@ -15630,7 +16085,10 @@
   "year": 2012,
   "journal": "German Historical Institute London Bulletin",
   "lang": "en",
-  "theme": "t02"
+  "theme": "t02",
+  "places": [
+   "Q1149903"
+  ]
  },
  {
   "slug": "konkurrenz-kooperation-und-widerstand",
@@ -15774,7 +16232,8 @@
   "lang": "de",
   "theme": "t06",
   "places": [
-   "Q41470"
+   "Q41470",
+   "Q7204"
   ],
   "gnd": [
    "4033793-5",
@@ -15796,7 +16255,11 @@
   "type": "Edited volumes",
   "year": 2012,
   "publisher": "Leidykla „Libra Memelensis“",
-  "theme": "t17"
+  "lang": "lt",
+  "theme": "t17",
+  "places": [
+   "Q5595"
+  ]
  },
  {
   "slug": "la-budd-min-al-m-taraqqub-al-unf-wakhlaqiyyatuh-fi-mawsim-misr-al-asif",
@@ -15827,6 +16290,7 @@
   "year": 2019,
   "journal": "Remoboko Blog",
   "publisher": "Leibniz-Zentrum Moderner Orient",
+  "lang": "fr",
   "theme": "t04",
   "places": [
    "Q3674"
@@ -15866,7 +16330,9 @@
   "lang": "es",
   "theme": "t22",
   "places": [
-   "Q48"
+   "Q48",
+   "Q43100",
+   "Q771405"
   ]
  },
  {
@@ -15921,7 +16387,9 @@
   "lang": "fr",
   "theme": "t02",
   "places": [
-   "Q6583"
+   "Q6583",
+   "Q135581356",
+   "Q6250"
   ]
  },
  {
@@ -16027,7 +16495,11 @@
   "journal": "AA.VV., Atti della XVIII Conferenza Nazionale SIU. Italia '45-'45. Radici, Condizioni, Prospettive, Venezia, 11-13 giugno 2015",
   "publisher": "Planum Publisher",
   "lang": "it",
-  "theme": "t02"
+  "theme": "t02",
+  "places": [
+   "Q79",
+   "Q38"
+  ]
  },
  {
   "slug": "la-nuit-culturelle-de-letudiant-musulman-une-soiree-a-limage-des-recommandations-islamiques",
@@ -16098,7 +16570,8 @@
   "theme": "t04",
   "places": [
    "Q1033",
-   "Q1032"
+   "Q1032",
+   "Q990527"
   ]
  },
  {
@@ -16111,6 +16584,7 @@
   "type": "Contributions to an edited volume",
   "year": 2012,
   "publisher": "Ed. Bellaterra",
+  "lang": "es",
   "theme": "t10",
   "openalex": "W2244674432",
   "oa": "closed"
@@ -16164,7 +16638,10 @@
   "year": 2012,
   "publisher": "Karthala",
   "lang": "fr",
-  "theme": "t02"
+  "theme": "t02",
+  "places": [
+   "Q15"
+  ]
  },
  {
   "slug": "lafrique-militarisee-perspectives-historiques",
@@ -16177,7 +16654,10 @@
   "year": 2021,
   "journal": "Politique africaine",
   "lang": "fr",
-  "theme": "t02"
+  "theme": "t02",
+  "places": [
+   "Q15"
+  ]
  },
  {
   "slug": "laicidad-y-devocion",
@@ -16192,6 +16672,9 @@
   "publisher": "Ed. Bellaterra",
   "lang": "es",
   "theme": "t12",
+  "places": [
+   "Q142"
+  ],
   "openalex": "W2247341231",
   "oa": "closed"
  },
@@ -16222,6 +16705,7 @@
   "type": "Contributions to an edited volume",
   "year": 2012,
   "publisher": "Leidykla „Libra Memelensis“",
+  "lang": "lt",
   "theme": "t17"
  },
  {
@@ -16237,7 +16721,8 @@
   "lang": "fr",
   "theme": "t14",
   "places": [
-   "Q183"
+   "Q183",
+   "Q262"
   ],
   "openalex": "W2801739015",
   "oa": "green",
@@ -16254,6 +16739,7 @@
   "year": 2023,
   "journal": "Planning Perspectives",
   "doi": "10.1080/02665433.2023.2179261",
+  "lang": "en",
   "theme": "t21",
   "places": [
    "Q7204"
@@ -16273,7 +16759,8 @@
   "lang": "en",
   "theme": "t03",
   "places": [
-   "Q159"
+   "Q159",
+   "Q34266"
   ]
  },
  {
@@ -16335,7 +16822,8 @@
   "lang": "en",
   "theme": "t22",
   "places": [
-   "Q668"
+   "Q668",
+   "Q5089"
   ]
  },
  {
@@ -16556,7 +17044,8 @@
    "Q15",
    "Q6583",
    "Q924",
-   "Q114"
+   "Q114",
+   "Q132959"
   ],
   "gnd": [
    "4078149-5",
@@ -16651,7 +17140,8 @@
   "lang": "en",
   "theme": "t22",
   "places": [
-   "Q668"
+   "Q668",
+   "Q3522980"
   ]
  },
  {
@@ -16678,6 +17168,7 @@
   "type": "Contributions to an edited volume",
   "year": 2016,
   "publisher": "Routledge",
+  "lang": "en",
   "theme": "t11",
   "places": [
    "Q3674",
@@ -16780,6 +17271,7 @@
   "type": "Contributions to an edited volume",
   "year": 2011,
   "publisher": "Encyclopædia Universalis",
+  "lang": "fr",
   "theme": "t17",
   "places": [
    "Q1016"
@@ -16832,7 +17324,9 @@
   "lang": "en",
   "theme": "t03",
   "places": [
-   "Q159"
+   "Q159",
+   "Q34266",
+   "Q739"
   ]
  },
  {
@@ -16875,6 +17369,7 @@
   "type": "Journal articles",
   "year": 2008,
   "journal": "Zeitschrift des Verbandes der Geschichtslehrer Deutschlands: Geschichte in Wissenschaft und Unterricht",
+  "lang": "de",
   "theme": "t12"
  },
  {
@@ -17024,7 +17519,8 @@
   "lang": "en",
   "theme": "t04",
   "places": [
-   "Q4412"
+   "Q4412",
+   "Q90"
   ],
   "openalex": "W2736190337",
   "oa": "closed"
@@ -17093,6 +17589,9 @@
   "publisher": "Ed. Bellaterra",
   "lang": "es",
   "theme": "t10",
+  "places": [
+   "Q46"
+  ],
   "openalex": "W249756479",
   "oa": "closed"
  },
@@ -17153,6 +17652,7 @@
   "type": "Book reviews",
   "year": 2025,
   "journal": "Historische Zeitschrift",
+  "lang": "de",
   "theme": "t13",
   "places": [
    "Q7204",
@@ -17213,7 +17713,8 @@
   "lang": "en",
   "theme": "t01",
   "places": [
-   "Q64"
+   "Q64",
+   "Q1191"
   ],
   "openalex": "W2944783379",
   "oa": "green",
@@ -17234,7 +17735,8 @@
   "theme": "t08",
   "places": [
    "Q813",
-   "Q863"
+   "Q863",
+   "Q1018209"
   ],
   "openalex": "W2093811183",
   "oa": "closed"
@@ -17288,7 +17790,8 @@
   "theme": "t22",
   "places": [
    "Q668",
-   "Q1353"
+   "Q1353",
+   "Q3242297"
   ],
   "openalex": "W6936556623",
   "oa": "green"
@@ -17375,6 +17878,7 @@
   "type": "Contributions to an edited volume",
   "year": 2017,
   "publisher": "transcript",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -17513,7 +18017,8 @@
   "places": [
    "Q843",
    "Q46",
-   "Q38"
+   "Q38",
+   "Q145"
   ]
  },
  {
@@ -17711,7 +18216,8 @@
   "theme": "t13",
   "places": [
    "Q5806",
-   "Q12560"
+   "Q12560",
+   "Q39"
   ],
   "openalex": "W2782437772",
   "oa": "green",
@@ -17986,7 +18492,8 @@
   "lang": "en",
   "theme": "t22",
   "places": [
-   "Q668"
+   "Q668",
+   "Q200237"
   ]
  },
  {
@@ -18134,6 +18641,7 @@
   ],
   "type": "Editorship of journal, book series",
   "year": 2021,
+  "lang": "en",
   "theme": "t18"
  },
  {
@@ -18183,7 +18691,8 @@
   "places": [
    "Q79",
    "Q34675",
-   "Q7204"
+   "Q7204",
+   "Q2218629"
   ],
   "gnd": [
    "4068789-2",
@@ -18348,7 +18857,8 @@
   "lang": "en",
   "theme": "t21",
   "places": [
-   "Q34675"
+   "Q34675",
+   "Q2218629"
   ]
  },
  {
@@ -18368,7 +18878,9 @@
   "places": [
    "Q4918",
    "Q15",
-   "Q46"
+   "Q46",
+   "Q132959",
+   "Q458"
   ],
   "gnd": [
    "5098525-5",
@@ -18481,7 +18993,8 @@
   "lang": "en",
   "theme": "t15",
   "places": [
-   "Q23792"
+   "Q23792",
+   "Q39760"
   ],
   "openalex": "W4405590704",
   "oa": "gold"
@@ -18523,6 +19036,7 @@
   "type": "Contributions to an edited volume",
   "year": 2021,
   "publisher": "Routledge",
+  "lang": "en",
   "theme": "t22",
   "places": [
    "Q668",
@@ -18546,7 +19060,8 @@
   "lang": "de",
   "theme": "t22",
   "places": [
-   "Q668"
+   "Q668",
+   "Q2814"
   ]
  },
  {
@@ -18563,7 +19078,8 @@
   "lang": "en",
   "theme": "t06",
   "places": [
-   "Q43100"
+   "Q43100",
+   "Q976955"
   ],
   "openalex": "W2062390651",
   "oa": "closed"
@@ -18582,7 +19098,8 @@
   "lang": "en",
   "theme": "t06",
   "places": [
-   "Q43100"
+   "Q43100",
+   "Q976955"
   ]
  },
  {
@@ -18815,7 +19332,8 @@
   "lang": "de",
   "theme": "t04",
   "places": [
-   "Q1009"
+   "Q1009",
+   "Q1627312"
   ],
   "gnd": [
    "4534829-7",
@@ -18940,7 +19458,8 @@
    "Q3572",
    "Q3766",
    "Q1218",
-   "Q3820"
+   "Q3820",
+   "Q27449"
   ],
   "gnd": [
    "4074900-9",
@@ -19076,6 +19595,7 @@
   "year": 2021,
   "journal": "Islamic Africa",
   "publisher": "Brill",
+  "lang": "en",
   "theme": "t11",
   "places": [
    "Q15"
@@ -19095,6 +19615,7 @@
   "year": 2022,
   "journal": "Islamic Africa",
   "publisher": "Brill",
+  "lang": "en",
   "theme": "t11",
   "places": [
    "Q15"
@@ -19112,6 +19633,7 @@
   "type": "Contributions to an edited volume",
   "year": 2009,
   "publisher": "Palgrave Macmillan",
+  "lang": "en",
   "theme": "t10"
  },
  {
@@ -19222,6 +19744,11 @@
   "doi": "urn:nbn:de:101:1-201504232991",
   "lang": "de",
   "theme": "t23",
+  "places": [
+   "Q1208",
+   "Q1566135",
+   "Q226884"
+  ],
   "gnd": [
    "4007955-7",
    "4033131-3",
@@ -19353,6 +19880,7 @@
   "type": "Journal articles",
   "year": 2022,
   "journal": "Tohu Art Magazine, Special Issue: Politics of Love: Long Distance Relationship",
+  "lang": "en",
   "theme": "t16",
   "places": [
    "Q3820"
@@ -19392,7 +19920,8 @@
   "lang": "en",
   "theme": "t15",
   "places": [
-   "Q23792"
+   "Q23792",
+   "Q41621"
   ]
  },
  {
@@ -19407,7 +19936,10 @@
   "year": 2012,
   "journal": "Orient: Deutsche Zeitschrift für Politik, Wirtschaft und Kultur des Orients",
   "lang": "en",
-  "theme": "t09"
+  "theme": "t09",
+  "places": [
+   "Q163239"
+  ]
  },
  {
   "slug": "nationalismus-und-internationale-sensibilitaet",
@@ -19482,7 +20014,8 @@
    "Q12560",
    "Q858",
    "Q796",
-   "Q31945"
+   "Q31945",
+   "Q7834492"
   ],
   "openalex": "W4245999050",
   "oa": "closed"
@@ -19523,7 +20056,8 @@
   "lang": "en",
   "theme": "t11",
   "places": [
-   "Q1033"
+   "Q1033",
+   "Q14234624"
   ],
   "openalex": "W322564971",
   "oa": "closed"
@@ -19558,7 +20092,8 @@
   "lang": "en",
   "theme": "t11",
   "places": [
-   "Q15"
+   "Q15",
+   "Q132959"
   ],
   "openalex": "W1981603567",
   "oa": "closed"
@@ -19653,7 +20188,8 @@
   "theme": "t11",
   "places": [
    "Q1033",
-   "Q657"
+   "Q657",
+   "Q125309"
   ]
  },
  {
@@ -19689,7 +20225,8 @@
   "lang": "en",
   "theme": "t13",
   "places": [
-   "Q12560"
+   "Q12560",
+   "Q38545"
   ]
  },
  {
@@ -19791,7 +20328,8 @@
   "lang": "en",
   "theme": "t04",
   "places": [
-   "Q912"
+   "Q912",
+   "Q848574"
   ],
   "openalex": "W1500163910",
   "oa": "closed"
@@ -19806,6 +20344,7 @@
   "type": "Edited volumes",
   "year": 2011,
   "publisher": "Schöningh",
+  "lang": "de",
   "theme": "t17",
   "places": [
    "Q27381"
@@ -19848,7 +20387,10 @@
   "lang": "en",
   "theme": "t03",
   "places": [
-   "Q15180"
+   "Q15180",
+   "Q1953",
+   "Q399",
+   "Q30"
   ],
   "openalex": "W4406364532",
   "oa": "diamond"
@@ -19880,7 +20422,10 @@
   "year": 2010,
   "publisher": "EB-Verlag",
   "lang": "de",
-  "theme": "t04"
+  "theme": "t04",
+  "places": [
+   "Q6583"
+  ]
  },
  {
   "slug": "oase-zelt-und-zwischenraum",
@@ -19925,6 +20470,7 @@
   "type": "Contributions to an edited volume",
   "year": 2022,
   "publisher": "Leibniz-Zentrum Moderner Orient",
+  "lang": "en",
   "theme": "t05"
  },
  {
@@ -19937,6 +20483,7 @@
   "type": "Contributions to an edited volume",
   "year": 2022,
   "publisher": "Leibniz-Zentrum Moderner Orient",
+  "lang": "en",
   "theme": "t05"
  },
  {
@@ -19949,6 +20496,7 @@
   "type": "Contributions to an edited volume",
   "year": 2022,
   "publisher": "Leibniz-Zentrum Moderner Orient",
+  "lang": "en",
   "theme": "t05"
  },
  {
@@ -19961,6 +20509,7 @@
   "type": "Contributions to an edited volume",
   "year": 2022,
   "publisher": "Leibniz-Zentrum Moderner Orient",
+  "lang": "en",
   "theme": "t05"
  },
  {
@@ -19973,6 +20522,7 @@
   "type": "Contributions to an edited volume",
   "year": 2022,
   "publisher": "Leibniz-Zentrum Moderner Orient",
+  "lang": "en",
   "theme": "t05"
  },
  {
@@ -19985,6 +20535,7 @@
   "type": "Contributions to an edited volume",
   "year": 2022,
   "publisher": "Leibniz-Zentrum Moderner Orient",
+  "lang": "en",
   "theme": "t05"
  },
  {
@@ -20126,7 +20677,10 @@
   "year": 2015,
   "journal": "Tanqeed",
   "lang": "en",
-  "theme": "t06"
+  "theme": "t06",
+  "places": [
+   "Q1113311"
+  ]
  },
  {
   "slug": "on-exponentials-and-the-return-to-normality",
@@ -20300,6 +20854,7 @@
   "year": 2012,
   "journal": "Insight Turkey",
   "publisher": "Gale Academic OneFile",
+  "lang": "en",
   "theme": "t13",
   "places": [
    "Q12560"
@@ -20317,6 +20872,9 @@
   "publisher": "Brill Online",
   "lang": "en",
   "theme": "t11",
+  "places": [
+   "Q3787"
+  ],
   "openalex": "W2784310374",
   "oa": "closed"
  },
@@ -20518,7 +21076,8 @@
   "lang": "de",
   "theme": "t13",
   "places": [
-   "Q12560"
+   "Q12560",
+   "Q263686"
   ]
  },
  {
@@ -20532,6 +21091,7 @@
   "type": "Contributions to an edited volume",
   "year": 2011,
   "publisher": "Saur",
+  "lang": "de",
   "theme": "t13",
   "places": [
    "Q12560"
@@ -20587,7 +21147,8 @@
   "lang": "en",
   "theme": "t13",
   "places": [
-   "Q12560"
+   "Q12560",
+   "Q503282"
   ],
   "openalex": "W1995920935",
   "oa": "closed"
@@ -20624,7 +21185,10 @@
   "year": 2014,
   "journal": "The Kashmir Walla",
   "lang": "en",
-  "theme": "t06"
+  "theme": "t06",
+  "places": [
+   "Q1113311"
+  ]
  },
  {
   "slug": "outlaw-economics",
@@ -20689,7 +21253,8 @@
   "theme": "t14",
   "places": [
    "Q822",
-   "Q3820"
+   "Q3820",
+   "Q408"
   ]
  },
  {
@@ -20703,6 +21268,7 @@
   "type": "Contributions to an edited volume",
   "year": 2013,
   "publisher": "Oxford University Press",
+  "lang": "en",
   "theme": "t22",
   "places": [
    "Q843"
@@ -20721,6 +21287,7 @@
   "year": 2014,
   "journal": "Special issue of BioScope: South Asian Screen Studies",
   "publisher": "Sage Publications",
+  "lang": "en",
   "theme": "t24",
   "places": [
    "Q843"
@@ -20820,6 +21387,7 @@
   "year": 2016,
   "journal": "South Asia: Journal of South Asian Studies",
   "doi": "10.1080/00856401.2015.1079958",
+  "lang": "en",
   "theme": "t22",
   "places": [
    "Q668",
@@ -20913,7 +21481,8 @@
   "lang": "fr",
   "theme": "t03",
   "places": [
-   "Q12560"
+   "Q12560",
+   "Q46"
   ]
  },
  {
@@ -20988,7 +21557,8 @@
   "lang": "en",
   "theme": "t06",
   "places": [
-   "Q858"
+   "Q858",
+   "Q950873"
   ],
   "openalex": "W2281254137",
   "oa": "closed"
@@ -21102,7 +21672,9 @@
   "places": [
    "Q2739014",
    "Q225641",
-   "Q272799"
+   "Q272799",
+   "Q783117",
+   "Q618573"
   ]
  },
  {
@@ -21160,6 +21732,7 @@
   "year": 2023,
   "journal": "Politics, Religion and Ideology",
   "doi": "10.1080/21567689.2023.2193445",
+  "lang": "en",
   "theme": "t02",
   "openalex": "W4361204464",
   "oa": "closed"
@@ -21175,7 +21748,10 @@
   "year": 2015,
   "journal": "Revue La Géographie",
   "lang": "fr",
-  "theme": "t17"
+  "theme": "t17",
+  "places": [
+   "Q262"
+  ]
  },
  {
   "slug": "pitching-ethical-resonance-andrew-mcgahans-the-white-earth",
@@ -21189,6 +21765,9 @@
   "journal": "Journal of the Association for the Study of Australian Literature",
   "lang": "en",
   "theme": "t16",
+  "places": [
+   "Q408"
+  ],
   "openalex": "W1512310224",
   "oa": "closed"
  },
@@ -21203,6 +21782,7 @@
   "type": "Editorship of journal, book series",
   "year": 2025,
   "journal": "Social and Cultural Geography",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -21290,6 +21870,7 @@
   "type": "Book reviews",
   "year": 2012,
   "journal": "The Book Review, XXXVI",
+  "lang": "en",
   "theme": "t22",
   "places": [
    "Q668"
@@ -21341,7 +21922,8 @@
   "places": [
    "Q3572",
    "Q12560",
-   "Q46"
+   "Q46",
+   "Q3106527"
   ],
   "openalex": "W2612311254",
   "oa": "closed"
@@ -21442,6 +22024,7 @@
   "type": "Other publications",
   "year": 2021,
   "journal": "AllegraLab",
+  "lang": "en",
   "theme": "t01"
  },
  {
@@ -21455,6 +22038,7 @@
   "type": "Contributions to an edited volume",
   "year": 2018,
   "publisher": "Saqi books",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -21469,7 +22053,10 @@
   "year": 2014,
   "publisher": "Springer",
   "lang": "en",
-  "theme": "t06"
+  "theme": "t06",
+  "places": [
+   "Q1027153"
+  ]
  },
  {
   "slug": "politik",
@@ -21482,6 +22069,7 @@
   "type": "Contributions to an edited volume",
   "year": 2018,
   "publisher": "J. H. W. Dietz Nachf. GmbH",
+  "lang": "de",
   "theme": "t01"
  },
  {
@@ -21555,6 +22143,7 @@
   "year": 2005,
   "publisher": "Auswärtiges Amt",
   "series": "Edition Diplomatie",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -21617,7 +22206,8 @@
   "lang": "en",
   "theme": "t17",
   "places": [
-   "Q4918"
+   "Q4918",
+   "Q3301962"
   ]
  },
  {
@@ -21640,7 +22230,9 @@
    "Q406",
    "Q35997",
    "Q46",
-   "Q779924"
+   "Q779924",
+   "Q3301962",
+   "Q17151"
   ],
   "gnd": [
    "4075720-1",
@@ -21685,6 +22277,7 @@
   "year": 2022,
   "journal": "Religions. Special Issue \"Contemporary Muslim Thought and Identity\"",
   "doi": "10.3390/rel13040340",
+  "lang": "en",
   "theme": "t10",
   "places": [
    "Q851"
@@ -21707,7 +22300,8 @@
   "theme": "t04",
   "places": [
    "Q1005",
-   "Q4412"
+   "Q4412",
+   "Q3511003"
   ],
   "openalex": "W2470893295",
   "oa": "closed"
@@ -21744,6 +22338,7 @@
   "type": "Contributions to an edited volume",
   "year": 2025,
   "publisher": "Bloomsbury",
+  "lang": "en",
   "theme": "t02"
  },
  {
@@ -21758,7 +22353,13 @@
   "year": 2017,
   "publisher": "Wallstein",
   "lang": "de",
-  "theme": "t05"
+  "theme": "t05",
+  "places": [
+   "Q263686",
+   "Q43",
+   "Q7204",
+   "Q12560"
+  ]
  },
  {
   "slug": "potsdam",
@@ -21772,7 +22373,10 @@
   "year": 2007,
   "publisher": "Sutton",
   "lang": "de",
-  "theme": "t17"
+  "theme": "t17",
+  "places": [
+   "Q1711"
+  ]
  },
  {
   "slug": "poverty-and-the-transition-to-instability-the-italian-lira-in-eritrean-history",
@@ -21819,7 +22423,8 @@
   "lang": "de",
   "theme": "t06",
   "places": [
-   "Q843"
+   "Q843",
+   "Q30"
   ]
  },
  {
@@ -21866,6 +22471,7 @@
   "year": 2025,
   "journal": "Africa Spectrum",
   "doi": "10.1177/00020397251352",
+  "lang": "en",
   "theme": "t20",
   "places": [
    "Q15",
@@ -21943,7 +22549,11 @@
   "year": 2020,
   "publisher": "Springer VS",
   "lang": "en",
-  "theme": "t19"
+  "theme": "t19",
+  "places": [
+   "Q406",
+   "Q673073"
+  ]
  },
  {
   "slug": "preface",
@@ -21955,6 +22565,7 @@
   "type": "Contributions to an edited volume",
   "year": 2016,
   "publisher": "Routledge",
+  "lang": "en",
   "theme": "t24"
  },
  {
@@ -22012,7 +22623,12 @@
   ],
   "type": "Other publications",
   "year": 2010,
-  "theme": "t08"
+  "lang": "ru",
+  "theme": "t08",
+  "places": [
+   "Q813",
+   "Q27275"
+  ]
  },
  {
   "slug": "producing-tribal-history",
@@ -22082,7 +22698,8 @@
   "lang": "en",
   "theme": "t21",
   "places": [
-   "Q3572"
+   "Q3572",
+   "Q3106527"
   ]
  },
  {
@@ -22110,6 +22727,7 @@
   "year": 2020,
   "journal": "American Journal of Islam and Society",
   "doi": "10.35632/ajis.v37i1-2.705",
+  "lang": "en",
   "theme": "t15",
   "places": [
    "Q12560",
@@ -22152,6 +22770,9 @@
   "publisher": "Brill",
   "lang": "en",
   "theme": "t23",
+  "places": [
+   "Q503282"
+  ],
   "openalex": "W848063573",
   "oa": "closed"
  },
@@ -22201,7 +22822,9 @@
   "lang": "fr",
   "theme": "t17",
   "places": [
-   "Q41470"
+   "Q41470",
+   "Q66711956",
+   "Q796"
   ]
  },
  {
@@ -22348,7 +22971,8 @@
    "Q15",
    "Q48",
    "Q1498",
-   "Q668"
+   "Q668",
+   "Q526757"
   ],
   "openalex": "W6955637571",
   "oa": "green"
@@ -22366,7 +22990,8 @@
   "lang": "en",
   "theme": "t22",
   "places": [
-   "Q668"
+   "Q668",
+   "Q2734136"
   ]
  },
  {
@@ -22392,6 +23017,7 @@
   "type": "Other publications",
   "year": 2019,
   "journal": "ZOiS Spotlight",
+  "lang": "en",
   "theme": "t17",
   "places": [
    "Q813"
@@ -22412,7 +23038,8 @@
   "lang": "de",
   "theme": "t14",
   "places": [
-   "Q183"
+   "Q183",
+   "Q143487"
   ],
   "gnd": [
    "4011882-4",
@@ -22487,7 +23114,10 @@
   "year": 2019,
   "publisher": "Leibniz-Zentrum Moderner Orient",
   "lang": "en",
-  "theme": "t21"
+  "theme": "t21",
+  "places": [
+   "Q374365"
+  ]
  },
  {
   "slug": "recent-science-in-arabia",
@@ -22552,7 +23182,11 @@
   "type": "Book reviews",
   "year": 2023,
   "journal": "Postcolonial Text",
-  "theme": "t01"
+  "lang": "en",
+  "theme": "t01",
+  "places": [
+   "Q7461578"
+  ]
  },
  {
   "slug": "rediscovering-istanbuls-cosmopolitan-past",
@@ -22564,7 +23198,11 @@
   "type": "Journal articles",
   "year": 2008,
   "journal": "ISIM Review",
-  "theme": "t13"
+  "lang": "en",
+  "theme": "t13",
+  "places": [
+   "Q406"
+  ]
  },
  {
   "slug": "refaat-alareer-storytelling-and-memory-as-infrastructural-livelihood",
@@ -22674,7 +23312,10 @@
    "Q43",
    "Q16957",
    "Q64",
-   "Q406"
+   "Q406",
+   "Q3640",
+   "Q208005",
+   "Q1794"
   ]
  },
  {
@@ -22695,7 +23336,8 @@
    "Q843",
    "Q15180",
    "Q2471",
-   "Q8660"
+   "Q8660",
+   "Q1113311"
   ]
  },
  {
@@ -22798,7 +23440,8 @@
   "theme": "t22",
   "places": [
    "Q668",
-   "Q145"
+   "Q145",
+   "Q1534252"
   ],
   "openalex": "W7077486367",
   "oa": "green"
@@ -22995,7 +23638,8 @@
   "places": [
    "Q945",
    "Q962",
-   "Q3792"
+   "Q3792",
+   "Q2473939"
   ],
   "gnd": [
    "4005503-6",
@@ -23074,7 +23718,8 @@
   "lang": "en",
   "theme": "t07",
   "places": [
-   "Q1156"
+   "Q1156",
+   "Q649632"
   ]
  },
  {
@@ -23093,7 +23738,8 @@
   "theme": "t13",
   "places": [
    "Q43",
-   "Q12560"
+   "Q12560",
+   "Q143487"
   ],
   "openalex": "W3137361226",
   "oa": "bronze",
@@ -23274,7 +23920,8 @@
   "theme": "t18",
   "places": [
    "Q796",
-   "Q41470"
+   "Q41470",
+   "Q66711956"
   ],
   "openalex": "W1599440608",
   "oa": "bronze",
@@ -23412,7 +24059,8 @@
   "lang": "de",
   "theme": "t07",
   "places": [
-   "Q1028"
+   "Q1028",
+   "Q135671726"
   ]
  },
  {
@@ -23447,7 +24095,8 @@
   "lang": "en",
   "theme": "t01",
   "places": [
-   "Q183"
+   "Q183",
+   "Q143487"
   ],
   "openalex": "W4295990904",
   "oa": "hybrid"
@@ -23471,7 +24120,8 @@
    "Q668",
    "Q771405",
    "Q46",
-   "Q11739"
+   "Q11739",
+   "Q1058785"
   ],
   "openalex": "W7131827303",
   "oa": "closed"
@@ -23518,6 +24168,7 @@
   "type": "Contributions to an edited volume",
   "year": 2010,
   "publisher": "Palgrave Macmillan",
+  "lang": "en",
   "theme": "t22",
   "places": [
    "Q668"
@@ -23574,6 +24225,7 @@
   "year": 2021,
   "journal": "Comparative Southeast European Studies",
   "doi": "10.1515/soeu-2021-0012",
+  "lang": "en",
   "theme": "t02",
   "places": [
    "Q46",
@@ -23594,6 +24246,7 @@
   "year": 2021,
   "journal": "Planning Perspectives",
   "doi": "10.1080/02665433.2021.1888568",
+  "lang": "en",
   "theme": "t17",
   "places": [
    "Q85"
@@ -23612,7 +24265,11 @@
   "year": 2021,
   "journal": "Japanese Studies",
   "doi": "10.1080/10371397.2021.1952860",
+  "lang": "en",
   "theme": "t01",
+  "places": [
+   "Q17"
+  ],
   "openalex": "W3203363677",
   "oa": "closed"
  },
@@ -23643,6 +24300,7 @@
   "journal": "Anthropological Quarterly",
   "publisher": "Institute for Ethnographic Research",
   "doi": "10.1353/anq.2021.0017",
+  "lang": "en",
   "theme": "t04",
   "places": [
    "Q970"
@@ -23660,6 +24318,7 @@
   "type": "Book reviews",
   "year": 2016,
   "journal": "German Historical Institute London Bulletin",
+  "lang": "en",
   "theme": "t14",
   "places": [
    "Q7204"
@@ -23676,10 +24335,12 @@
   "year": 2023,
   "journal": "Mission Studies",
   "doi": "10.1163/15733831-12341917",
+  "lang": "en",
   "theme": "t03",
   "places": [
    "Q668",
-   "Q79"
+   "Q79",
+   "Q542146"
   ],
   "openalex": "W4379208951",
   "oa": "bronze",
@@ -23711,9 +24372,11 @@
   "year": 2023,
   "journal": "Analytical Bulletin of Armenian and Regional Studies",
   "doi": "10.56673/18294502-24.18-161",
+  "lang": "en",
   "theme": "t03",
   "places": [
-   "Q159"
+   "Q159",
+   "Q34266"
   ],
   "openalex": "W4401512315",
   "oa": "hybrid",
@@ -23729,6 +24392,7 @@
   "type": "Book reviews",
   "year": 2020,
   "journal": "Planning Perspectives",
+  "lang": "en",
   "theme": "t15",
   "places": [
    "Q3766"
@@ -23744,6 +24408,7 @@
   "type": "Book reviews",
   "year": 2021,
   "journal": "DAVO-Nachrichten",
+  "lang": "de",
   "theme": "t06",
   "places": [
    "Q858"
@@ -23760,6 +24425,7 @@
   "year": 2019,
   "journal": "International Journal of Middle East Studies",
   "doi": "doi:10.1017/S0020743819000539",
+  "lang": "en",
   "theme": "t13",
   "places": [
    "Q12560"
@@ -23778,6 +24444,7 @@
   "type": "Book reviews",
   "year": 2023,
   "journal": "CEU Review of Books, December 2023",
+  "lang": "en",
   "theme": "t01",
   "places": [
    "Q46"
@@ -23795,6 +24462,7 @@
   "journal": "American Ethnologist",
   "publisher": "AnthroSource",
   "doi": "ttps://doi.org/10.1111/amet.13375",
+  "lang": "en",
   "theme": "t17",
   "openalex": "W4404957355",
   "oa": "closed"
@@ -23821,7 +24489,9 @@
   "theme": "t20",
   "places": [
    "Q27407",
-   "Q48"
+   "Q48",
+   "Q7204",
+   "Q15"
   ],
   "openalex": "W2621191804",
   "oa": "green",
@@ -23854,6 +24524,7 @@
   "type": "Book reviews",
   "year": 2021,
   "journal": "The Oxus Society for Central Asian Affairs",
+  "lang": "en",
   "theme": "t01",
   "places": [
    "Q27275",
@@ -23872,9 +24543,11 @@
   "year": 2020,
   "journal": "Planning Perspectives",
   "doi": "10.1080/02665433.2020.1798119",
+  "lang": "en",
   "theme": "t06",
   "places": [
-   "Q262"
+   "Q262",
+   "Q142"
   ],
   "openalex": "W3045941231",
   "oa": "closed"
@@ -23890,13 +24563,17 @@
   "year": 2024,
   "journal": "Central Asian Survey",
   "doi": "10.1080/02634937.2023.2296546",
+  "lang": "en",
   "theme": "t18",
   "places": [
    "Q159",
    "Q27275",
    "Q15180",
    "Q486324",
-   "Q46"
+   "Q46",
+   "Q129677",
+   "Q175802",
+   "Q61944"
   ],
   "openalex": "W4391840205",
   "oa": "closed"
@@ -23912,6 +24589,7 @@
   "year": 2025,
   "journal": "Anthropology of the Middle East",
   "doi": "10.3167/ame.2025.200207",
+  "lang": "en",
   "theme": "t01",
   "openalex": "W4415749623",
   "oa": "diamond"
@@ -23927,6 +24605,7 @@
   "year": 2022,
   "journal": "Insights (Blog)",
   "publisher": "Impact and Policy Research Institute",
+  "lang": "en",
   "theme": "t09"
  },
  {
@@ -23957,10 +24636,12 @@
   "year": 2025,
   "journal": "Journal of Middle East Women's Studies",
   "doi": "10.1215/15525864-11575509",
+  "lang": "en",
   "theme": "t06",
   "places": [
    "Q858",
-   "Q43"
+   "Q43",
+   "Q93338"
   ],
   "openalex": "W4406242474",
   "oa": "closed"
@@ -24029,6 +24710,7 @@
   "year": 2020,
   "publisher": "Cambridge University Press",
   "doi": "10.1017/9781108693875",
+  "lang": "en",
   "theme": "t22",
   "places": [
    "Q668",
@@ -24068,6 +24750,7 @@
   "type": "Book reviews",
   "year": 2014,
   "journal": "H-Soz-u-Kult, 23.05.2014",
+  "lang": "de",
   "theme": "t15",
   "places": [
    "Q4918"
@@ -24084,6 +24767,7 @@
   "year": 2020,
   "journal": "Urban History",
   "doi": "10.1017/S096392682000005X",
+  "lang": "en",
   "theme": "t16",
   "openalex": "W3017853350",
   "oa": "closed"
@@ -24098,6 +24782,7 @@
   "type": "Book reviews",
   "year": 2018,
   "journal": "British Association for Slavonic and East European Studies (BASEES) Newsletter, 22. März 2018",
+  "lang": "en",
   "theme": "t08",
   "places": [
    "Q27275"
@@ -24113,6 +24798,7 @@
   "type": "Book reviews",
   "year": 2017,
   "journal": "The American Historical Review",
+  "lang": "en",
   "theme": "t13",
   "places": [
    "Q12560"
@@ -24146,7 +24832,12 @@
   "type": "Book reviews",
   "year": 2016,
   "journal": "Sehepunkte - Rezensionsjournal für die Geschichtswissenschaften, München",
-  "theme": "t17"
+  "lang": "de",
+  "theme": "t17",
+  "places": [
+   "Q1505",
+   "Q5451"
+  ]
  },
  {
   "slug": "rez-arnold-d-2015-everyday-technology-machines-and-the-making-of-indias-modernity-chicago-the-university-of-chicago-press",
@@ -24158,7 +24849,11 @@
   "type": "Book reviews",
   "year": 2016,
   "journal": "The Newsletter",
-  "theme": "t22"
+  "lang": "en",
+  "theme": "t22",
+  "places": [
+   "Q668"
+  ]
  },
  {
   "slug": "rez-avner-giladi-muslim-midwives-the-craft-of-birthing-in-the-premodern-middle-east",
@@ -24170,6 +24865,7 @@
   "type": "Book reviews",
   "year": 2016,
   "journal": "The American Historical Review",
+  "lang": "en",
   "theme": "t15",
   "places": [
    "Q7204"
@@ -24185,6 +24881,7 @@
   "type": "Book reviews",
   "year": 2016,
   "journal": "Sehepunkte - Rezensionsjournal für die Geschichtswissenschaften, München",
+  "lang": "de",
   "theme": "t02",
   "places": [
    "Q15"
@@ -24200,6 +24897,7 @@
   "type": "Book reviews",
   "year": 2014,
   "journal": "Planning Perspectives",
+  "lang": "en",
   "theme": "t01",
   "places": [
    "Q4918"
@@ -24215,6 +24913,7 @@
   "type": "Book reviews",
   "year": 2017,
   "journal": "International Journal of Turkish Studies, 23, 1&2",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -24227,6 +24926,7 @@
   "type": "Book reviews",
   "year": 2018,
   "journal": "Arab Studies Journal",
+  "lang": "en",
   "theme": "t16",
   "places": [
    "Q406",
@@ -24243,6 +24943,7 @@
   "type": "Book reviews",
   "year": 2013,
   "journal": "Journal of Religion in Africa",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -24255,6 +24956,7 @@
   "type": "Book reviews",
   "year": 2018,
   "journal": "Trafo - Blog for Transregional Research",
+  "lang": "en",
   "theme": "t03"
  },
  {
@@ -24268,6 +24970,7 @@
   "year": 2018,
   "journal": "African Studies Review",
   "doi": "10.1017/asr.2018.99",
+  "lang": "en",
   "theme": "t04",
   "places": [
    "Q657"
@@ -24286,6 +24989,7 @@
   "type": "Book reviews",
   "year": 2017,
   "journal": "Journal of Religion in Africa",
+  "lang": "en",
   "theme": "t12",
   "places": [
    "Q4412",
@@ -24305,6 +25009,7 @@
   "year": 2019,
   "journal": "The Journal of African History",
   "doi": "10.1017/S0021853719000677",
+  "lang": "en",
   "theme": "t11",
   "places": [
    "Q965",
@@ -24323,7 +25028,11 @@
   "type": "Book reviews",
   "year": 2014,
   "journal": "Orientalistische Literaturzeitung",
-  "theme": "t14"
+  "lang": "de",
+  "theme": "t14",
+  "places": [
+   "Q143487"
+  ]
  },
  {
   "slug": "rez-daniel-jordan-smith-to-be-a-man-is-not-a-one-day-job-masculinity-money-and-intimacy-in-nigeria-university-of-chicago-press-2017-272-pp",
@@ -24336,6 +25045,7 @@
   "year": 2019,
   "journal": "American Anthropologist",
   "doi": "10.1111/aman.13162",
+  "lang": "en",
   "theme": "t01",
   "openalex": "W2902017017",
   "oa": "closed"
@@ -24350,10 +25060,12 @@
   "type": "Book reviews",
   "year": 2014,
   "journal": "geschichte.transnational, H-Soz-u-Kult",
+  "lang": "de",
   "theme": "t15",
   "places": [
    "Q1239",
-   "Q4918"
+   "Q4918",
+   "Q1711781"
   ]
  },
  {
@@ -24366,10 +25078,12 @@
   "type": "Book reviews",
   "year": 2018,
   "journal": "Connections. A Journal for Historians and Area Specialists",
+  "lang": "en",
   "theme": "t13",
   "places": [
    "Q12560",
-   "Q41"
+   "Q41",
+   "Q17151"
   ]
  },
  {
@@ -24382,6 +25096,7 @@
   "type": "Book reviews",
   "year": 2019,
   "journal": "Journal of Social History",
+  "lang": "en",
   "theme": "t13",
   "places": [
    "Q12560"
@@ -24397,9 +25112,11 @@
   "type": "Book reviews",
   "year": 2019,
   "journal": "H-Soz-Kult, 26.02.2019",
+  "lang": "de",
   "theme": "t13",
   "places": [
-   "Q4918"
+   "Q4918",
+   "Q501817"
   ]
  },
  {
@@ -24412,9 +25129,11 @@
   "type": "Book reviews",
   "year": 2014,
   "journal": "H-Soz-u-Kult, ; 7.2.2014",
+  "lang": "de",
   "theme": "t09",
   "places": [
-   "Q46"
+   "Q46",
+   "Q458"
   ]
  },
  {
@@ -24428,6 +25147,7 @@
   "year": 2015,
   "journal": "Planning Perspectives",
   "doi": "10.1080/02665433.2015.1063324",
+  "lang": "en",
   "theme": "t06",
   "places": [
    "Q41183"
@@ -24445,9 +25165,11 @@
   "type": "Book reviews",
   "year": 2018,
   "journal": "Planning Perspectives",
+  "lang": "en",
   "theme": "t05",
   "places": [
-   "Q3820"
+   "Q3820",
+   "Q131694"
   ]
  },
  {
@@ -24460,6 +25182,7 @@
   "type": "Book reviews",
   "year": 2018,
   "journal": "Planning Perspectives",
+  "lang": "en",
   "theme": "t15",
   "places": [
    "Q3616"
@@ -24476,6 +25199,7 @@
   "type": "Book reviews",
   "year": 2020,
   "journal": "iz3w - Informationszentrum 3. Welt",
+  "lang": "de",
   "theme": "t04",
   "places": [
    "Q64"
@@ -24491,7 +25215,11 @@
   "type": "Book reviews",
   "year": 2015,
   "journal": "Planning Perspectives",
-  "theme": "t05"
+  "lang": "en",
+  "theme": "t05",
+  "places": [
+   "Q11194"
+  ]
  },
  {
   "slug": "rez-hout-syrine-post-war-anglophone-lebanese-fiction-home-matters-in-the-diaspora",
@@ -24503,6 +25231,7 @@
   "type": "Book reviews",
   "year": 2012,
   "journal": "Al Raida, Lebanese American University",
+  "lang": "en",
   "theme": "t14",
   "places": [
    "Q822"
@@ -24518,9 +25247,11 @@
   "type": "Book reviews",
   "year": 2017,
   "journal": "Qantara",
+  "lang": "de",
   "theme": "t12",
   "places": [
-   "Q64"
+   "Q64",
+   "Q7204"
   ]
  },
  {
@@ -24534,6 +25265,7 @@
   "year": 2017,
   "journal": "Africa",
   "doi": "10.1017/S0001972016001108",
+  "lang": "en",
   "theme": "t03",
   "openalex": "W2606187962",
   "oa": "closed"
@@ -24548,6 +25280,7 @@
   "type": "Book reviews",
   "year": 2015,
   "journal": "Planning Perspectives",
+  "lang": "en",
   "theme": "t15",
   "places": [
    "Q41183"
@@ -24563,7 +25296,11 @@
   "type": "Book reviews",
   "year": 2015,
   "journal": "Journal of the American Oriental Society",
-  "theme": "t14"
+  "lang": "en",
+  "theme": "t14",
+  "places": [
+   "Q143487"
+  ]
  },
  {
   "slug": "rez-leila-ammar-la-rue-a-tunis-realites-permanences-transformations-de-lespace-urbain-1835-1935-centre-de-publications-universitaires-laboratoire-archeologie-et-architecture-maghrebines-2017-360-pp",
@@ -24575,6 +25312,7 @@
   "type": "Book reviews",
   "year": 2019,
   "journal": "Planning Perspectives",
+  "lang": "en",
   "theme": "t05",
   "places": [
    "Q3572"
@@ -24591,6 +25329,7 @@
   "year": 2016,
   "journal": "New Perspectives on Turkey",
   "doi": "10.1017/npt.2016.26",
+  "lang": "en",
   "theme": "t06",
   "places": [
    "Q399",
@@ -24609,6 +25348,7 @@
   "type": "Book reviews",
   "year": 2017,
   "journal": "Planning Perspectives",
+  "lang": "en",
   "theme": "t15",
   "places": [
    "Q7204"
@@ -24657,9 +25397,11 @@
   "type": "Book reviews",
   "year": 2015,
   "journal": "Law and History Review",
+  "lang": "en",
   "theme": "t15",
   "places": [
-   "Q948"
+   "Q948",
+   "Q142"
   ]
  },
  {
@@ -24672,10 +25414,12 @@
   "type": "Book reviews",
   "year": 2014,
   "journal": "Journal of the Royal Anthropological Institute",
+  "lang": "en",
   "theme": "t18",
   "places": [
    "Q6583",
-   "Q15"
+   "Q15",
+   "Q135581356"
   ]
  },
  {
@@ -24689,6 +25433,7 @@
   "year": 2013,
   "journal": "Planning Perspectives",
   "doi": "10.1080/02665433.2013.828471",
+  "lang": "en",
   "theme": "t16",
   "openalex": "W2078905144",
   "oa": "closed"
@@ -24718,6 +25463,7 @@
   "type": "Book reviews",
   "year": 2014,
   "journal": "The Asia-Europe Studies Journal",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -24730,9 +25476,11 @@
   "type": "Book reviews",
   "year": 2018,
   "journal": "South Asia: Journal of South Asian Studies",
+  "lang": "en",
   "theme": "t22",
   "places": [
-   "Q668"
+   "Q668",
+   "Q5451"
   ]
  },
  {
@@ -24745,6 +25493,7 @@
   "type": "Book reviews",
   "year": 2020,
   "journal": "Eurasian Geography and Economics",
+  "lang": "en",
   "theme": "t19"
  },
  {
@@ -24757,9 +25506,11 @@
   "type": "Book reviews",
   "year": 2015,
   "journal": "Histoire Urbaine",
+  "lang": "fr",
   "theme": "t13",
   "places": [
-   "Q12560"
+   "Q12560",
+   "Q406"
   ]
  },
  {
@@ -24772,6 +25523,7 @@
   "type": "Book reviews",
   "year": 2019,
   "journal": "H-Soz-Kult",
+  "lang": "de",
   "theme": "t03",
   "places": [
    "Q212",
@@ -24780,7 +25532,8 @@
    "Q46",
    "Q779924",
    "Q4412",
-   "Q7204"
+   "Q7204",
+   "Q600524"
   ]
  },
  {
@@ -24793,9 +25546,11 @@
   "type": "Book reviews",
   "year": 2018,
   "journal": "Historische Zeitschrift",
+  "lang": "de",
   "theme": "t13",
   "places": [
-   "Q12560"
+   "Q12560",
+   "Q142"
   ],
   "openalex": "W2893214594",
   "oa": "closed"
@@ -24810,6 +25565,7 @@
   "type": "Book reviews",
   "year": 2017,
   "journal": "Journal of the Royal Anthropological Institute",
+  "lang": "en",
   "theme": "t03"
  },
  {
@@ -24822,6 +25578,7 @@
   "type": "Book reviews",
   "year": 2018,
   "journal": "in Vierteljahrschrift für Sozial- und Wirtschaftsgeschichte",
+  "lang": "de",
   "theme": "t13",
   "places": [
    "Q183",
@@ -24839,6 +25596,7 @@
   "year": 2013,
   "journal": "Planning Perspectives",
   "doi": "10.1080/02665433.2013.800707",
+  "lang": "en",
   "theme": "t15",
   "places": [
    "Q3820"
@@ -24856,6 +25614,7 @@
   "type": "Book reviews",
   "year": 2020,
   "journal": "Sehepunkte - Rezensionsjournal für die Geschichtswissenschaften",
+  "lang": "de",
   "theme": "t14",
   "places": [
    "Q7204"
@@ -24872,6 +25631,7 @@
   "type": "Book reviews",
   "year": 2018,
   "journal": "Tohu",
+  "lang": "en",
   "theme": "t24",
   "places": [
    "Q3761"
@@ -24903,6 +25663,7 @@
   "type": "Book reviews",
   "year": 2015,
   "journal": "Islamic Law and Society",
+  "lang": "en",
   "theme": "t12"
  },
  {
@@ -24915,6 +25676,7 @@
   "type": "Book reviews",
   "year": 2014,
   "journal": "Orientalistische Literaturzeitung",
+  "lang": "de",
   "theme": "t06",
   "places": [
    "Q796"
@@ -24930,6 +25692,7 @@
   "type": "Book reviews",
   "year": 2015,
   "journal": "Bulletin of the Zentrum fu¨r transdisziplinäre Geschlechterstudien, Humboldt-Universität zu Berlin, Oktober",
+  "lang": "de",
   "theme": "t07",
   "places": [
    "Q668",
@@ -24946,6 +25709,7 @@
   "type": "Book reviews",
   "year": 2015,
   "journal": "H-Soz-Kult, 26.6.2015",
+  "lang": "de",
   "theme": "t15",
   "places": [
    "Q12560",
@@ -24978,6 +25742,7 @@
   "type": "Book reviews",
   "year": 2016,
   "journal": "Islamic Africa",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -24990,6 +25755,7 @@
   "type": "Book reviews",
   "year": 2016,
   "journal": "Global Affairs",
+  "lang": "en",
   "theme": "t13",
   "places": [
    "Q43"
@@ -25005,6 +25771,7 @@
   "type": "Book reviews",
   "year": 2019,
   "journal": "Trafo - Blog for Transregional Research, https://trafo.hypotheses.org/17429",
+  "lang": "en",
   "theme": "t23"
  },
  {
@@ -25019,6 +25786,7 @@
   "year": 2018,
   "journal": "Journal of Perpetrator Research",
   "doi": "10.21039/jpr.2.1.27",
+  "lang": "en",
   "theme": "t06",
   "places": [
    "Q796"
@@ -25037,7 +25805,12 @@
   "year": 2022,
   "journal": "Europe-Asia Studies",
   "doi": "10.1080/09668136.2022.2083308",
+  "lang": "en",
   "theme": "t03",
+  "places": [
+   "Q626",
+   "Q159"
+  ],
   "openalex": "W4283313615",
   "oa": "closed"
  },
@@ -25052,6 +25825,7 @@
   "year": 2019,
   "journal": "Journal of Genocide Research",
   "doi": "10.1080/14623528.2019.1613816",
+  "lang": "en",
   "theme": "t13",
   "places": [
    "Q43"
@@ -25070,6 +25844,7 @@
   "year": 2019,
   "journal": "Allegra Laboratory",
   "publisher": "9 September",
+  "lang": "en",
   "theme": "t09",
   "places": [
    "Q38"
@@ -25085,6 +25860,7 @@
   "type": "Book reviews",
   "year": 2015,
   "journal": "Middle East - Topics & Arguments, \"Area Studies\"",
+  "lang": "en",
   "theme": "t06",
   "places": [
    "Q43"
@@ -25102,7 +25878,8 @@
   "lang": "en",
   "theme": "t03",
   "places": [
-   "Q159"
+   "Q159",
+   "Q34266"
   ]
  },
  {
@@ -25115,6 +25892,7 @@
   "type": "Book reviews",
   "year": 2012,
   "journal": "Blog Amitav Gosh",
+  "lang": "en",
   "theme": "t17"
  },
  {
@@ -25128,6 +25906,7 @@
   "year": 2019,
   "journal": "International Journal of Middle East Studies",
   "doi": "10.1017/S0020743819000515",
+  "lang": "en",
   "theme": "t13",
   "places": [
    "Q12560",
@@ -25146,6 +25925,7 @@
   "type": "Book reviews",
   "year": 2016,
   "journal": "Planning Perspectives",
+  "lang": "en",
   "theme": "t06",
   "places": [
    "Q3561"
@@ -25164,7 +25944,9 @@
   "theme": "t15",
   "places": [
    "Q4918",
-   "Q12560"
+   "Q12560",
+   "Q3301962",
+   "Q34374"
   ]
  },
  {
@@ -25177,6 +25959,7 @@
   "type": "Book reviews",
   "year": 2013,
   "journal": "Comparativ. Zeitschrift für Globalgeschichte und vergleichende Gesellschaftsforschung",
+  "lang": "de",
   "theme": "t19",
   "places": [
    "Q12560",
@@ -25194,7 +25977,10 @@
   "type": "Book reviews",
   "year": 2012,
   "journal": "Wiener Zeitschrift für die Kunde des Morgenlandes",
-  "theme": "t14"
+  "theme": "t14",
+  "places": [
+   "Q822"
+  ]
  },
  {
   "slug": "rezension-a-j-fromherz-qatar-a-modern-history-london-new-york-ib-tauris-2012-204-s",
@@ -25206,6 +25992,7 @@
   "type": "Book reviews",
   "year": 2013,
   "journal": "Bulletin of the British Foundation for the Study of Arabia",
+  "lang": "en",
   "theme": "t21",
   "places": [
    "Q846"
@@ -25221,6 +26008,7 @@
   "type": "Book reviews",
   "year": 2012,
   "journal": "Planning Perspectives",
+  "lang": "en",
   "theme": "t13",
   "places": [
    "Q406"
@@ -25236,6 +26024,7 @@
   "type": "Book reviews",
   "year": 2011,
   "journal": "Planning Perspectives",
+  "lang": "en",
   "theme": "t05",
   "places": [
    "Q3820"
@@ -25251,10 +26040,12 @@
   "type": "Book reviews",
   "year": 2008,
   "journal": "Times Higher Education",
+  "lang": "en",
   "theme": "t23",
   "places": [
    "Q12560",
-   "Q46"
+   "Q46",
+   "Q153136"
   ]
  },
  {
@@ -25267,6 +26058,7 @@
   "type": "Book reviews",
   "year": 2010,
   "journal": "Africa Today",
+  "lang": "en",
   "theme": "t17"
  },
  {
@@ -25279,7 +26071,11 @@
   "type": "Book reviews",
   "year": 2011,
   "journal": "Orientalistische Literaturzeitung",
-  "theme": "t06"
+  "lang": "de",
+  "theme": "t06",
+  "places": [
+   "Q163239"
+  ]
  },
  {
   "slug": "rezension-c-p-sidorko-dschihad-im-kaukasus-antikolonialer-widerstand-der-dagestaner-und-tschetschenen-gegen-das-zarenreich-18-jahrhundert-bis-1859-wiesbaden-reichert-2007-483-s",
@@ -25291,9 +26087,11 @@
   "type": "Book reviews",
   "year": 2009,
   "journal": "Orientalistische Literaturzeitung",
+  "lang": "de",
   "theme": "t06",
   "places": [
-   "Q18869"
+   "Q18869",
+   "Q34266"
   ]
  },
  {
@@ -25306,6 +26104,7 @@
   "type": "Book reviews",
   "year": 2011,
   "journal": "Anthropological Notebooks",
+  "lang": "en",
   "theme": "t01",
   "places": [
    "Q183"
@@ -25321,6 +26120,7 @@
   "type": "Book reviews",
   "year": 2013,
   "publisher": "H-Soz-u-Kult",
+  "lang": "de",
   "theme": "t22",
   "places": [
    "Q771405"
@@ -25336,9 +26136,11 @@
   "type": "Book reviews",
   "year": 2008,
   "journal": "Journal of Global History",
+  "lang": "en",
   "theme": "t15",
   "places": [
-   "Q1239"
+   "Q1239",
+   "Q1014010"
   ]
  },
  {
@@ -25351,6 +26153,7 @@
   ],
   "type": "Book reviews",
   "year": 2009,
+  "lang": "de",
   "theme": "t10"
  },
  {
@@ -25363,6 +26166,7 @@
   "type": "Book reviews",
   "year": 2010,
   "journal": "Journal of Religion in Africa",
+  "lang": "en",
   "theme": "t10",
   "places": [
    "Q924"
@@ -25378,6 +26182,7 @@
   "type": "Book reviews",
   "year": 2011,
   "journal": "Journal for Islamic Studies",
+  "lang": "en",
   "theme": "t14",
   "places": [
    "Q1517159",
@@ -25394,6 +26199,7 @@
   "type": "Book reviews",
   "year": 2010,
   "journal": "New Perspectives on Turkey",
+  "lang": "en",
   "theme": "t13",
   "places": [
    "Q12560",
@@ -25410,6 +26216,7 @@
   "type": "Book reviews",
   "year": 2009,
   "journal": "Social Anthropology",
+  "lang": "en",
   "theme": "t10"
  },
  {
@@ -25422,9 +26229,11 @@
   "type": "Book reviews",
   "year": 2009,
   "journal": "Africa Spectrum",
+  "lang": "en",
   "theme": "t02",
   "places": [
-   "Q64"
+   "Q64",
+   "Q15"
   ]
  },
  {
@@ -25439,7 +26248,8 @@
   "journal": "Südasien-Chronik /South Asia-Chronicle",
   "theme": "t22",
   "places": [
-   "Q80338"
+   "Q80338",
+   "Q1163759"
   ]
  },
  {
@@ -25453,6 +26263,7 @@
   "year": 2013,
   "journal": "Middle Eastern Studies",
   "doi": "https://www.tandfonline.com/doi/full/10.1080/00263206.2013.771474",
+  "lang": "en",
   "theme": "t14",
   "places": [
    "Q851"
@@ -25470,6 +26281,7 @@
   "type": "Book reviews",
   "year": 2009,
   "journal": "The American Historical Review",
+  "lang": "en",
   "theme": "t15",
   "places": [
    "Q3766",
@@ -25502,9 +26314,11 @@
   "type": "Book reviews",
   "year": 2011,
   "journal": "American Ethnologist",
+  "lang": "en",
   "theme": "t10",
   "places": [
-   "Q114"
+   "Q114",
+   "Q185371"
   ]
  },
  {
@@ -25517,6 +26331,7 @@
   "type": "Book reviews",
   "year": 2011,
   "journal": "Africa",
+  "lang": "en",
   "theme": "t02",
   "places": [
    "Q1032"
@@ -25532,6 +26347,7 @@
   "type": "Book reviews",
   "year": 2011,
   "journal": "Comparativ. Zeitschrift für Globalgeschichte und vergleichende Gesellschaftsforschung",
+  "lang": "de",
   "theme": "t13",
   "places": [
    "Q12560"
@@ -25548,6 +26364,7 @@
   "year": 2008,
   "journal": "International Journal of Middle East Studies",
   "doi": "10.1017/S0020743808081087",
+  "lang": "en",
   "theme": "t13",
   "places": [
    "Q12560"
@@ -25565,6 +26382,7 @@
   "type": "Book reviews",
   "year": 2012,
   "journal": "Review of Middle East Studies",
+  "lang": "en",
   "theme": "t06",
   "places": [
    "Q822"
@@ -25580,6 +26398,7 @@
   "type": "Book reviews",
   "year": 2010,
   "journal": "American Anthropologist",
+  "lang": "en",
   "theme": "t15",
   "places": [
    "Q4412"
@@ -25595,6 +26414,7 @@
   "type": "Book reviews",
   "year": 2009,
   "journal": "Orientalistische Literaturzeitung",
+  "lang": "de",
   "theme": "t21",
   "places": [
    "Q612"
@@ -25610,9 +26430,11 @@
   "type": "Book reviews",
   "year": 2009,
   "publisher": "H-Soz-u-Kult",
+  "lang": "de",
   "theme": "t15",
   "places": [
-   "Q12560"
+   "Q12560",
+   "Q143487"
   ]
  },
  {
@@ -25625,10 +26447,14 @@
   "type": "Book reviews",
   "year": 2009,
   "publisher": "H-Soz-u-Kult",
+  "lang": "de",
   "theme": "t15",
   "places": [
    "Q668",
-   "Q145"
+   "Q145",
+   "Q31945",
+   "Q129286",
+   "Q34675"
   ]
  },
  {
@@ -25641,6 +26467,7 @@
   "type": "Book reviews",
   "year": 2010,
   "journal": "Social Anthropology",
+  "lang": "en",
   "theme": "t01"
  },
  {
@@ -25669,6 +26496,7 @@
   "type": "Book reviews",
   "year": 2013,
   "journal": "Journal of the Association for the Study of Australian Literature",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -25681,6 +26509,7 @@
   "type": "Book reviews",
   "year": 2009,
   "journal": "DAVO-Nachrichten",
+  "lang": "de",
   "theme": "t21",
   "places": [
    "Q143487"
@@ -25696,6 +26525,7 @@
   "type": "Book reviews",
   "year": 2010,
   "journal": "International Journal of Middle East Studies",
+  "lang": "en",
   "theme": "t06",
   "places": [
    "Q7204",
@@ -25712,6 +26542,7 @@
   "type": "Book reviews",
   "year": 2008,
   "journal": "The American Historical Review",
+  "lang": "en",
   "theme": "t17"
  },
  {
@@ -25724,6 +26555,7 @@
   "type": "Book reviews",
   "year": 2011,
   "journal": "Planning Perspectives",
+  "lang": "en",
   "theme": "t13",
   "places": [
    "Q3766",
@@ -25740,6 +26572,7 @@
   "type": "Book reviews",
   "year": 2013,
   "journal": "Jemen Report: Mitteilungen der Deutsch-Jemenitischen Gesellschaft e.V.",
+  "lang": "de",
   "theme": "t15",
   "places": [
    "Q1517159"
@@ -25770,9 +26603,11 @@
   "type": "Book reviews",
   "year": 2012,
   "publisher": "H-Soz-u-Kult",
+  "lang": "de",
   "theme": "t14",
   "places": [
-   "Q801"
+   "Q801",
+   "Q143487"
   ]
  },
  {
@@ -25785,9 +26620,11 @@
   "type": "Book reviews",
   "year": 2024,
   "journal": "Connections. A Journal for Historians and Area Specialists",
+  "lang": "en",
   "theme": "t03",
   "places": [
-   "Q159"
+   "Q159",
+   "Q34266"
   ]
  },
  {
@@ -25800,6 +26637,7 @@
   "type": "Book reviews",
   "year": 2012,
   "journal": "Planning Perspectives",
+  "lang": "en",
   "theme": "t05",
   "places": [
    "Q46",
@@ -25816,9 +26654,11 @@
   "type": "Book reviews",
   "year": 2012,
   "journal": "Social Anthropology",
+  "lang": "en",
   "theme": "t08",
   "places": [
-   "Q813"
+   "Q813",
+   "Q5474"
   ]
  },
  {
@@ -25831,7 +26671,11 @@
   "type": "Contributions to an edited volume",
   "year": 2013,
   "publisher": "Princeton University Press",
-  "theme": "t12"
+  "lang": "en",
+  "theme": "t12",
+  "places": [
+   "Q30"
+  ]
  },
  {
   "slug": "ritual-space-and-religion-young-west-african-muslims-in-berlin-germany",
@@ -25870,7 +26714,11 @@
   "type": "Contributions to an edited volume",
   "year": 2011,
   "publisher": "Saur",
-  "theme": "t13"
+  "lang": "de",
+  "theme": "t13",
+  "places": [
+   "Q170532"
+  ]
  },
  {
   "slug": "rosie-bsheer-archive-wars-the-politics-of-history-in-saudi-arabia",
@@ -25908,7 +26756,9 @@
   "places": [
    "Q159",
    "Q230",
-   "Q18869"
+   "Q18869",
+   "Q34266",
+   "Q172415"
   ],
   "openalex": "W4391681145",
   "oa": "hybrid"
@@ -25925,6 +26775,7 @@
   "journal": "Critique Internationale",
   "publisher": "Sciences Po Les Presses",
   "doi": "10.3917/crii.108.0169",
+  "lang": "fr",
   "theme": "t14",
   "places": [
    "Q842"
@@ -25948,7 +26799,8 @@
   "theme": "t06",
   "places": [
    "Q183",
-   "Q796"
+   "Q796",
+   "Q713750"
   ]
  },
  {
@@ -25961,6 +26813,7 @@
   "type": "Journal articles",
   "year": 2019,
   "journal": "History and Anthropology",
+  "lang": "en",
   "theme": "t17",
   "places": [
    "Q6583"
@@ -25999,6 +26852,7 @@
   "publisher": "Leibniz-Zentrum Moderner Orient",
   "series": "ZMO Working Papers No. 19",
   "doi": "10.58144/20220623-002",
+  "lang": "en",
   "theme": "t11",
   "places": [
    "Q4412"
@@ -26074,7 +26928,10 @@
   "year": 2015,
   "publisher": "Arab Center for Research and Policy Studies: Al-tārīḫ al-šafawī (Mündliche Geschichte)",
   "lang": "ar",
-  "theme": "t04"
+  "theme": "t04",
+  "places": [
+   "Q18234383"
+  ]
  },
  {
   "slug": "sasa-popote-majeshi-yetu-duniani-swahili-poetry-and-the-translocal-moment-of-world-war-ii",
@@ -26127,7 +26984,9 @@
   "lang": "en",
   "theme": "t17",
   "places": [
-   "Q851"
+   "Q851",
+   "Q90",
+   "Q64"
   ],
   "openalex": "W6918077178",
   "oa": "green"
@@ -26141,9 +27000,11 @@
   ],
   "year": 2021,
   "journal": "Sada, Carnegie Endowment for International Peace",
+  "lang": "en",
   "theme": "t21",
   "places": [
-   "Q851"
+   "Q851",
+   "Q42310572"
   ]
  },
  {
@@ -26163,7 +27024,9 @@
   "places": [
    "Q851",
    "Q30",
-   "Q145"
+   "Q145",
+   "Q311341",
+   "Q953508"
   ],
   "gnd": [
    "4113937-9",
@@ -26374,7 +27237,8 @@
   "theme": "t18",
   "places": [
    "Q794",
-   "Q796"
+   "Q796",
+   "Q241119"
   ],
   "openalex": "W7128247988",
   "oa": "closed"
@@ -26559,7 +27423,8 @@
   "theme": "t11",
   "places": [
    "Q1033",
-   "Q8673"
+   "Q8673",
+   "Q3787"
   ],
   "openalex": "W2770530679",
   "oa": "green",
@@ -26580,7 +27445,8 @@
   "theme": "t22",
   "places": [
    "Q668",
-   "Q169132"
+   "Q169132",
+   "Q200237"
   ],
   "openalex": "W2077592920",
   "oa": "closed"
@@ -26749,7 +27615,8 @@
   "lang": "en",
   "theme": "t14",
   "places": [
-   "Q87"
+   "Q87",
+   "Q79"
   ],
   "gnd": [
    "4001138-0",
@@ -26816,6 +27683,7 @@
   "type": "Contributions to an edited volume",
   "year": 2012,
   "publisher": "Oxford University Press",
+  "lang": "en",
   "theme": "t12",
   "openalex": "W4249291762",
   "oa": "closed"
@@ -26888,7 +27756,9 @@
    "Q889",
    "Q46",
    "Q159",
-   "Q34675"
+   "Q34675",
+   "Q27496",
+   "Q2218629"
   ],
   "openalex": "W6974303301",
   "oa": "green",
@@ -26958,6 +27828,7 @@
   "type": "Contributions to an edited volume",
   "year": 2014,
   "journal": "Postcolonial Text; Special Issue: Postcolonial Trauma Studies",
+  "lang": "en",
   "theme": "t02",
   "openalex": "W1560379108",
   "oa": "closed"
@@ -26978,7 +27849,9 @@
   "places": [
    "Q15180",
    "Q486324",
-   "Q813"
+   "Q813",
+   "Q1355846",
+   "Q130276"
   ],
   "openalex": "W4402612065",
   "oa": "bronze"
@@ -27013,6 +27886,7 @@
   "type": "Journal articles",
   "year": 2011,
   "journal": "International Journal of Urban and Regional Research",
+  "lang": "en",
   "theme": "t19",
   "openalex": "W2116488332",
   "oa": "closed"
@@ -27074,7 +27948,8 @@
    "Q7204",
    "Q48",
    "Q771405",
-   "Q11708"
+   "Q11708",
+   "Q143487"
   ],
   "gnd": [
    "4058448-3",
@@ -27114,7 +27989,8 @@
   "lang": "en",
   "theme": "t01",
   "places": [
-   "Q183"
+   "Q183",
+   "Q125851615"
   ],
   "openalex": "W7119198544",
   "oa": "closed"
@@ -27142,7 +28018,9 @@
    "Q796",
    "Q80338",
    "Q837",
-   "Q169132"
+   "Q169132",
+   "Q183314",
+   "Q771405"
   ],
   "gnd": [
    "4011882-4",
@@ -27181,6 +28059,7 @@
   "type": "Contributions to an edited volume",
   "year": 2014,
   "publisher": "Klaus Schwarz Verlag",
+  "lang": "en",
   "theme": "t12",
   "openalex": "W3207748018",
   "oa": "closed"
@@ -27195,6 +28074,7 @@
   "type": "Contributions to an edited volume",
   "year": 2020,
   "publisher": "Brill",
+  "lang": "en",
   "theme": "t01"
  },
  {
@@ -27260,7 +28140,11 @@
   "year": 2014,
   "publisher": "wvb Wissenschaftlicher Verlag Berlin",
   "lang": "en",
-  "theme": "t17"
+  "theme": "t17",
+  "places": [
+   "Q805804",
+   "Q200667"
+  ]
  },
  {
   "slug": "spaces-of-participation",
@@ -27447,6 +28331,7 @@
   "type": "Edited volumes",
   "year": 2012,
   "publisher": "Abraaj Capital Art Prize",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -27499,6 +28384,7 @@
   "type": "Contributions to an edited volume",
   "year": 2017,
   "publisher": "LIT",
+  "lang": "en",
   "theme": "t04"
  },
  {
@@ -27532,11 +28418,13 @@
   "year": 2022,
   "publisher": "James Currey",
   "series": "Eastern Africa Series",
+  "lang": "en",
   "theme": "t02",
   "places": [
    "Q115",
    "Q15",
-   "Q183"
+   "Q183",
+   "Q38"
   ]
  },
  {
@@ -27583,7 +28471,10 @@
   "type": "Contributions to an edited volume",
   "year": 2016,
   "lang": "en",
-  "theme": "t15"
+  "theme": "t15",
+  "places": [
+   "Q12560"
+  ]
  },
  {
   "slug": "stand-der-nachrichtendienstforschung-am-beispiel-der-irakischen-nachrichtendienste-in-den-70er-und-80er-jahren",
@@ -27657,7 +28548,9 @@
   "lang": "en",
   "theme": "t20",
   "places": [
-   "Q252"
+   "Q252",
+   "Q5095",
+   "Q5096"
   ],
   "openalex": "W3209145483",
   "oa": "hybrid"
@@ -27785,9 +28678,11 @@
   "journal": "Journal of Islamic Studies",
   "publisher": "Oxford Academic",
   "doi": "10.1093/jis/etae041",
+  "lang": "en",
   "theme": "t15",
   "places": [
-   "Q6583"
+   "Q6583",
+   "Q6250"
   ],
   "openalex": "W4402901440",
   "oa": "closed"
@@ -27823,7 +28718,8 @@
   "places": [
    "Q145",
    "Q796",
-   "Q41470"
+   "Q41470",
+   "Q66711956"
   ]
  },
  {
@@ -27889,7 +28785,11 @@
   "type": "Contributions to an edited volume",
   "year": 2009,
   "lang": "de",
-  "theme": "t19"
+  "theme": "t19",
+  "places": [
+   "Q6583",
+   "Q6250"
+  ]
  },
  {
   "slug": "street-children-as-a-transgression-in-the-new-bourgeois-urban-space",
@@ -27937,7 +28837,8 @@
   "lang": "de",
   "theme": "t10",
   "places": [
-   "Q771405"
+   "Q771405",
+   "Q843"
   ]
  },
  {
@@ -28028,7 +28929,9 @@
   "lang": "en",
   "theme": "t05",
   "places": [
-   "Q858"
+   "Q858",
+   "Q979315",
+   "Q34589"
   ],
   "openalex": "W2952811739",
   "oa": "closed"
@@ -28062,7 +28965,10 @@
   "year": 2014,
   "publisher": "trafo",
   "lang": "de",
-  "theme": "t22"
+  "theme": "t22",
+  "places": [
+   "Q771405"
+  ]
  },
  {
   "slug": "sufism-in-saudi-arabia-since-1979",
@@ -28155,6 +29061,7 @@
   "type": "Contributions to an edited volume",
   "year": 2023,
   "publisher": "Leibniz-Zentrum Moderner Orient",
+  "lang": "en",
   "theme": "t16"
  },
  {
@@ -28167,6 +29074,7 @@
   "type": "Contributions to an edited volume",
   "year": 2015,
   "publisher": "Santa Barbara",
+  "lang": "en",
   "theme": "t02"
  },
  {
@@ -28208,7 +29116,8 @@
   "theme": "t10",
   "places": [
    "Q2739014",
-   "Q114"
+   "Q114",
+   "Q185371"
   ],
   "openalex": "W2907392105",
   "oa": "closed"
@@ -28302,7 +29211,10 @@
    "Q46",
    "Q23522",
    "Q12560",
-   "Q406"
+   "Q406",
+   "Q37736",
+   "Q23334",
+   "Q83210"
   ],
   "openalex": "W7213440737",
   "oa": "closed"
@@ -28444,7 +29356,8 @@
   "theme": "t14",
   "places": [
    "Q183",
-   "Q64"
+   "Q64",
+   "Q125851615"
   ]
  },
  {
@@ -28473,6 +29386,7 @@
   "type": "Other publications",
   "year": 2015,
   "journal": "H-Soz-Kult",
+  "lang": "de",
   "theme": "t22",
   "places": [
    "Q668",
@@ -28535,6 +29449,7 @@
   "type": "Other publications",
   "year": 2018,
   "journal": "H-Soz-Kult",
+  "lang": "de",
   "theme": "t03",
   "places": [
    "Q64"
@@ -28602,6 +29517,7 @@
   "year": 2010,
   "journal": "oD Russia",
   "publisher": "Open Democracy",
+  "lang": "en",
   "theme": "t08",
   "places": [
    "Q863"
@@ -28617,6 +29533,7 @@
   "type": "Contributions to an edited volume",
   "year": 2024,
   "publisher": "UCL Press",
+  "lang": "en",
   "theme": "t08",
   "places": [
    "Q265"
@@ -28653,7 +29570,11 @@
   "type": "Monographs",
   "year": 2010,
   "publisher": "Chengalpattu",
-  "theme": "t17"
+  "lang": "ta",
+  "theme": "t17",
+  "places": [
+   "Q732594"
+  ]
  },
  {
   "slug": "tastbare-transzendenz-die-anwesenheit-von-religion-im-raum-der-stadt-/-tangible-transcendence-and-the-presence-of-religion-in-urban-space",
@@ -28769,7 +29690,8 @@
   "theme": "t02",
   "places": [
    "Q1009",
-   "Q183"
+   "Q183",
+   "Q161062"
   ],
   "openalex": "W4411979161",
   "oa": "hybrid"
@@ -28788,7 +29710,8 @@
   "lang": "en",
   "theme": "t05",
   "places": [
-   "Q43"
+   "Q43",
+   "Q70970"
   ],
   "openalex": "W3210326682",
   "oa": "closed"
@@ -28829,7 +29752,9 @@
   "places": [
    "Q43100",
    "Q771405",
-   "Q843"
+   "Q843",
+   "Q200697",
+   "Q805804"
   ],
   "openalex": "W2783368678",
   "oa": "diamond",
@@ -28846,7 +29771,10 @@
   "year": 2018,
   "publisher": "Routledge",
   "lang": "en",
-  "theme": "t04"
+  "theme": "t04",
+  "places": [
+   "Q506811"
+  ]
  },
  {
   "slug": "the-1850-uprising-in-aleppo-reconsidering-the-explanatory-power-of-sectarian-argumentations",
@@ -28875,6 +29803,7 @@
   "type": "Book reviews",
   "year": 2021,
   "journal": "Qantara",
+  "lang": "en",
   "theme": "t12"
  },
  {
@@ -28945,6 +29874,9 @@
   "publisher": "Edinburgh University Press",
   "lang": "en",
   "theme": "t14",
+  "places": [
+   "Q408"
+  ],
   "openalex": "W4214742740",
   "oa": "closed"
  },
@@ -28959,7 +29891,10 @@
   "year": 2012,
   "publisher": "Geisteswissenschaftliche Zentren Berlin",
   "lang": "en",
-  "theme": "t14"
+  "theme": "t14",
+  "places": [
+   "Q143487"
+  ]
  },
  {
   "slug": "the-arab-spring-in-global-perspective-social-movements-changing-contexts-and-political-transitions-in-the-arab-world-2010-2014",
@@ -28994,6 +29929,9 @@
   "publisher": "Routledge",
   "lang": "en",
   "theme": "t21",
+  "places": [
+   "Q34675"
+  ],
   "openalex": "W2475522260",
   "oa": "closed"
  },
@@ -29132,7 +30070,9 @@
    "Q668",
    "Q46",
    "Q30",
-   "Q928"
+   "Q928",
+   "Q1003502",
+   "Q169966"
   ],
   "openalex": "W4223428915",
   "oa": "closed"
@@ -29286,7 +30226,8 @@
   "theme": "t06",
   "places": [
    "Q796",
-   "Q41470"
+   "Q41470",
+   "Q66711956"
   ]
  },
  {
@@ -29345,7 +30286,8 @@
    "Q649",
    "Q18869",
    "Q159",
-   "Q1149903"
+   "Q1149903",
+   "Q200173"
   ]
  },
  {
@@ -29396,7 +30338,8 @@
   "theme": "t13",
   "places": [
    "Q43",
-   "Q12560"
+   "Q12560",
+   "Q17151"
   ],
   "gnd": [
    "4503930-6"
@@ -29476,7 +30419,9 @@
   "places": [
    "Q5764",
    "Q27275",
-   "Q159"
+   "Q159",
+   "Q746558",
+   "Q34266"
   ],
   "openalex": "W2998549988",
   "oa": "closed"
@@ -29553,7 +30498,8 @@
   "theme": "t21",
   "places": [
    "Q796",
-   "Q183"
+   "Q183",
+   "Q713750"
   ],
   "openalex": "W4281947226",
   "oa": "hybrid"
@@ -29812,7 +30758,8 @@
    "Q1049",
    "Q986",
    "Q115",
-   "Q977"
+   "Q977",
+   "Q7057805"
   ],
   "openalex": "W2888156273",
   "oa": "closed"
@@ -30000,7 +30947,10 @@
   "places": [
    "Q159",
    "Q212",
-   "Q900"
+   "Q900",
+   "Q34266",
+   "Q7835",
+   "Q1634214"
   ],
   "openalex": "W4211089181",
   "oa": "closed"
@@ -30018,7 +30968,8 @@
   "lang": "en",
   "theme": "t03",
   "places": [
-   "Q159"
+   "Q159",
+   "Q34266"
   ],
   "openalex": "W2990072899",
   "oa": "closed"
@@ -30039,7 +30990,8 @@
   "theme": "t08",
   "places": [
    "Q9361",
-   "Q159"
+   "Q159",
+   "Q813"
   ],
   "openalex": "W4404110757",
   "oa": "diamond",
@@ -30080,7 +31032,8 @@
   "theme": "t06",
   "places": [
    "Q41470",
-   "Q796"
+   "Q796",
+   "Q66711956"
   ],
   "gnd": [
    "1060958392",
@@ -30106,6 +31059,10 @@
   "publisher": "Brill",
   "doi": "10.1163/15700607-20250012",
   "theme": "t12",
+  "places": [
+   "Q5776",
+   "Q828"
+  ],
   "openalex": "W4413229920",
   "oa": "closed"
  },
@@ -30154,7 +31111,8 @@
    "Q148",
    "Q252",
    "Q668",
-   "Q843"
+   "Q843",
+   "Q833"
   ]
  },
  {
@@ -30170,6 +31128,9 @@
   "publisher": "Routledge",
   "lang": "en",
   "theme": "t14",
+  "places": [
+   "Q143487"
+  ],
   "openalex": "W630944576",
   "oa": "closed"
  },
@@ -30239,7 +31200,8 @@
   "lang": "en",
   "theme": "t20",
   "places": [
-   "Q1005"
+   "Q1005",
+   "Q160819"
   ]
  },
  {
@@ -30365,6 +31327,7 @@
   "year": 2023,
   "journal": "Analytical Bulletin of Armenian and Regional Studies",
   "doi": "10.56673/18294502-23.17-66",
+  "lang": "en",
   "theme": "t20",
   "places": [
    "Q48"
@@ -30584,7 +31547,8 @@
    "Q145",
    "Q12560",
    "Q79",
-   "Q15180"
+   "Q15180",
+   "Q27928"
   ],
   "openalex": "W2998812338",
   "oa": "closed"
@@ -30664,6 +31628,9 @@
   "publisher": "Vandenhoeck & Ruprecht",
   "lang": "en",
   "theme": "t14",
+  "places": [
+   "Q143487"
+  ],
   "openalex": "W2312621813",
   "oa": "closed"
  },
@@ -30886,7 +31853,8 @@
   "lang": "en",
   "theme": "t11",
   "places": [
-   "Q1033"
+   "Q1033",
+   "Q7058792"
   ]
  },
  {
@@ -31073,7 +32041,8 @@
   "lang": "en",
   "theme": "t24",
   "places": [
-   "Q64"
+   "Q64",
+   "Q16957"
   ]
  },
  {
@@ -31257,7 +32226,11 @@
   "year": 2011,
   "publisher": "Waxmann",
   "lang": "en",
-  "theme": "t11"
+  "theme": "t11",
+  "places": [
+   "Q2751060",
+   "Q48814712"
+  ]
  },
  {
   "slug": "the-taste-of-absence-1",
@@ -31276,7 +32249,8 @@
   "places": [
    "Q41470",
    "Q858",
-   "Q183"
+   "Q183",
+   "Q302268"
   ],
   "openalex": "W4415749184",
   "oa": "diamond"
@@ -31361,7 +32335,13 @@
    "Q948",
    "Q3718",
    "Q79",
-   "Q1016"
+   "Q1016",
+   "Q3889",
+   "Q2807",
+   "Q84",
+   "Q60",
+   "Q2887",
+   "Q49"
   ],
   "gnd": [
    "4000695-5",
@@ -31471,7 +32451,9 @@
   "theme": "t06",
   "places": [
    "Q41470",
-   "Q796"
+   "Q796",
+   "Q66711956",
+   "Q152831"
   ],
   "openalex": "W4213372163",
   "oa": "hybrid"
@@ -31527,6 +32509,7 @@
   "type": "Journal articles",
   "year": 2008,
   "journal": "Africa Today",
+  "lang": "en",
   "theme": "t10",
   "places": [
    "Q27407"
@@ -31938,7 +32921,8 @@
   "lang": "en",
   "theme": "t07",
   "places": [
-   "Q114"
+   "Q114",
+   "Q185371"
   ]
  },
  {
@@ -31963,7 +32947,8 @@
    "Q1149903",
    "Q15",
    "Q11708",
-   "Q7204"
+   "Q7204",
+   "Q771405"
   ],
   "gnd": [
    "1281040304",
@@ -32009,6 +32994,9 @@
   "doi": "10.1515/9783111341651-003",
   "lang": "en",
   "theme": "t16",
+  "places": [
+   "Q271771"
+  ],
   "openalex": "W4399758407",
   "oa": "hybrid"
  },
@@ -32239,7 +33227,8 @@
   "lang": "en",
   "theme": "t22",
   "places": [
-   "Q771405"
+   "Q771405",
+   "Q732594"
   ]
  },
  {
@@ -32292,7 +33281,8 @@
   "lang": "en",
   "theme": "t19",
   "places": [
-   "Q12560"
+   "Q12560",
+   "Q641"
   ],
   "openalex": "W6884802842",
   "oa": "hybrid"
@@ -32345,6 +33335,7 @@
   "type": "Contributions to an edited volume",
   "year": 2012,
   "publisher": "Ombre corte",
+  "lang": "it",
   "theme": "t09"
  },
  {
@@ -32476,7 +33467,8 @@
   "lang": "en",
   "theme": "t10",
   "places": [
-   "Q11708"
+   "Q11708",
+   "Q771405"
   ],
   "openalex": "W2618346257",
   "oa": "closed"
@@ -32517,7 +33509,8 @@
   "places": [
    "Q822",
    "Q183",
-   "Q64"
+   "Q64",
+   "Q12204698"
   ]
  },
  {
@@ -32563,7 +33556,11 @@
    "Q159",
    "Q48",
    "Q27381",
-   "Q183"
+   "Q183",
+   "Q794",
+   "Q8680",
+   "Q179023",
+   "Q34266"
   ],
   "openalex": "W3006440521",
   "oa": "closed"
@@ -32595,6 +33592,9 @@
   "publisher": "Routledge",
   "lang": "en",
   "theme": "t03",
+  "places": [
+   "Q967"
+  ],
   "openalex": "W4398193448",
   "oa": "closed"
  },
@@ -32608,6 +33608,7 @@
   "type": "Other publications",
   "year": 2020,
   "journal": "American Ethnologist",
+  "lang": "en",
   "theme": "t01"
  },
  {
@@ -32626,7 +33627,8 @@
   "places": [
    "Q668",
    "Q843",
-   "Q833"
+   "Q833",
+   "Q208643"
   ],
   "openalex": "W2182089274",
   "oa": "green",
@@ -32660,6 +33662,7 @@
   "type": "Contributions to an edited volume",
   "year": 2020,
   "publisher": "Presses universitaires Francois Rabelais",
+  "lang": "fr",
   "theme": "t17",
   "places": [
    "Q3579"
@@ -32700,6 +33703,11 @@
   "doi": "10.1016/j.polgeo.2023.103037",
   "lang": "en",
   "theme": "t20",
+  "places": [
+   "Q145",
+   "Q458",
+   "Q30"
+  ],
   "openalex": "W4389933298",
   "oa": "green",
   "oaUrl": "https://doi.org/10.5167/uzh-251666"
@@ -32747,7 +33755,8 @@
   "theme": "t13",
   "places": [
    "Q12560",
-   "Q406"
+   "Q406",
+   "Q17151"
   ],
   "openalex": "W3011921988",
   "oa": "green",
@@ -32833,6 +33842,7 @@
   "type": "Contributions to an edited volume",
   "year": 2020,
   "publisher": "Lynne Rienner Publishers",
+  "lang": "en",
   "theme": "t01",
   "places": [
    "Q43"
@@ -32852,7 +33862,8 @@
   "theme": "t13",
   "places": [
    "Q12560",
-   "Q43"
+   "Q43",
+   "Q673073"
   ]
  },
  {
@@ -32870,7 +33881,8 @@
   "theme": "t06",
   "places": [
    "Q796",
-   "Q41470"
+   "Q41470",
+   "Q66711956"
   ]
  },
  {
@@ -32921,7 +33933,10 @@
   "year": 2023,
   "publisher": "transcript",
   "lang": "en",
-  "theme": "t03"
+  "theme": "t03",
+  "places": [
+   "Q212"
+  ]
  },
  {
   "slug": "ukraines-religious-landscape-between-repression-and-pluralism",
@@ -32935,7 +33950,10 @@
   "year": 2023,
   "publisher": "Central European University Press",
   "lang": "en",
-  "theme": "t03"
+  "theme": "t03",
+  "places": [
+   "Q212"
+  ]
  },
  {
   "slug": "ukrainian-muslims-in-the-context-of-the-russo-ukrainian-conflict",
@@ -33039,7 +34057,8 @@
    "Q612",
    "Q846",
    "Q3861",
-   "Q842"
+   "Q842",
+   "Q2218629"
   ],
   "gnd": [
    "4063234-9",
@@ -33237,6 +34256,7 @@
   "type": "Journal articles",
   "year": 2013,
   "journal": "New Mandala (Malaysia)",
+  "lang": "en",
   "theme": "t10",
   "places": [
    "Q833"
@@ -33260,7 +34280,9 @@
   "places": [
    "Q212",
    "Q159",
-   "Q15180"
+   "Q15180",
+   "Q7835",
+   "Q34266"
   ],
   "openalex": "W7161821708",
   "oa": "hybrid"
@@ -33389,7 +34411,8 @@
   "lang": "en",
   "theme": "t06",
   "places": [
-   "Q851"
+   "Q851",
+   "Q12191403"
   ]
  },
  {
@@ -33409,7 +34432,9 @@
   "theme": "t07",
   "places": [
    "Q155",
-   "Q183"
+   "Q183",
+   "Q2844",
+   "Q1794"
   ],
   "openalex": "W3167887724",
   "oa": "hybrid"
@@ -33480,7 +34505,8 @@
   "places": [
    "Q12560",
    "Q851",
-   "Q374365"
+   "Q374365",
+   "Q956357"
   ]
  },
  {
@@ -33499,7 +34525,8 @@
   "places": [
    "Q12560",
    "Q851",
-   "Q374365"
+   "Q374365",
+   "Q956357"
   ],
   "openalex": "W2744498469",
   "oa": "hybrid",
@@ -33556,7 +34583,10 @@
    "Q771405",
    "Q406",
    "Q1218",
-   "Q1353"
+   "Q1353",
+   "Q7204",
+   "Q15",
+   "Q34647"
   ],
   "openalex": "W2997345018",
   "oa": "closed"
@@ -33615,7 +34645,8 @@
   "places": [
    "Q7204",
    "Q12560",
-   "Q46"
+   "Q46",
+   "Q63158027"
   ],
   "openalex": "W1495637089",
   "oa": "closed"
@@ -33649,7 +34680,8 @@
   "lang": "en",
   "theme": "t06",
   "places": [
-   "Q794"
+   "Q794",
+   "Q605142"
   ],
   "openalex": "W4389039886",
   "oa": "closed"
@@ -33708,7 +34740,11 @@
   "type": "Contributions to an edited volume",
   "year": 2015,
   "publisher": "Santa Barbara",
-  "theme": "t23"
+  "lang": "en",
+  "theme": "t23",
+  "places": [
+   "Q30"
+  ]
  },
  {
   "slug": "ustaarabu-a-conceptual-change-in-tanganyikan-newspaper-discourse-in-the-1920s",
@@ -33725,7 +34761,8 @@
   "theme": "t04",
   "places": [
    "Q2739014",
-   "Q27407"
+   "Q27407",
+   "Q924"
   ],
   "openalex": "W3091440447",
   "oa": "closed"
@@ -33742,6 +34779,7 @@
   "year": 2023,
   "publisher": "Brill",
   "doi": "10.1163/9789004525726_003",
+  "lang": "en",
   "theme": "t04",
   "places": [
    "Q272799"
@@ -33785,7 +34823,9 @@
   "theme": "t06",
   "places": [
    "Q41470",
-   "Q796"
+   "Q796",
+   "Q152831",
+   "Q66711956"
   ]
  },
  {
@@ -33831,7 +34871,10 @@
   "year": 2011,
   "publisher": "Saur",
   "lang": "de",
-  "theme": "t05"
+  "theme": "t05",
+  "places": [
+   "Q41741"
+  ]
  },
  {
   "slug": "vielfalt-fuer-alle",
@@ -33944,6 +34987,7 @@
   "year": 2021,
   "journal": "Central Asian Survey",
   "doi": "10.1080/02634937.2021.1883240",
+  "lang": "en",
   "theme": "t08",
   "places": [
    "Q27275"
@@ -34062,7 +35106,8 @@
   "theme": "t17",
   "places": [
    "Q794",
-   "Q796"
+   "Q796",
+   "Q241119"
   ],
   "openalex": "W7164209776",
   "oa": "closed"
@@ -34098,7 +35143,11 @@
   "year": 2025,
   "publisher": "Franckeschen Stiftungen Halle",
   "lang": "de",
-  "theme": "t22"
+  "theme": "t22",
+  "places": [
+   "Q213137",
+   "Q1534252"
+  ]
  },
  {
   "slug": "was-kant-a-racist",
@@ -34112,7 +35161,10 @@
   "year": 2021,
   "publisher": "Institute for a Greater Europe for the Europe",
   "lang": "en",
-  "theme": "t03"
+  "theme": "t03",
+  "places": [
+   "Q183"
+  ]
  },
  {
   "slug": "was-wir-sehen",
@@ -34163,7 +35215,9 @@
   "lang": "en",
   "theme": "t16",
   "places": [
-   "Q813"
+   "Q813",
+   "Q1355846",
+   "Q487640"
   ],
   "openalex": "W6957729426",
   "oa": "green",
@@ -34220,7 +35274,8 @@
   "theme": "t06",
   "places": [
    "Q41470",
-   "Q796"
+   "Q796",
+   "Q66711956"
   ]
  },
  {
@@ -34240,7 +35295,8 @@
    "Q863",
    "Q889",
    "Q145",
-   "Q159"
+   "Q159",
+   "Q8493"
   ],
   "openalex": "W2765564463",
   "oa": "diamond",
@@ -34292,7 +35348,8 @@
   "lang": "en",
   "theme": "t13",
   "places": [
-   "Q43"
+   "Q43",
+   "Q48338"
   ],
   "gnd": [
    "4061163-2",
@@ -34323,7 +35380,8 @@
   "theme": "t13",
   "places": [
    "Q12560",
-   "Q15"
+   "Q15",
+   "Q27381"
   ]
  },
  {
@@ -34339,6 +35397,10 @@
   "publisher": "V & R Unipress",
   "lang": "de",
   "theme": "t23",
+  "places": [
+   "Q226884",
+   "Q1566135"
+  ],
   "openalex": "W2501046736",
   "oa": "closed"
  },
@@ -34384,7 +35446,8 @@
    "Q46",
    "Q851",
    "Q31945",
-   "Q779924"
+   "Q779924",
+   "Q208154"
   ]
  },
  {
@@ -34403,7 +35466,8 @@
   "places": [
    "Q796",
    "Q794",
-   "Q183"
+   "Q183",
+   "Q713750"
   ]
  },
  {
@@ -34417,9 +35481,11 @@
   "year": 2020,
   "publisher": "University of KwaZulu-Natal",
   "doi": "https://hdl.handle.net/10520/ejc-nidan-v5-n2-a6",
+  "lang": "en",
   "theme": "t22",
   "places": [
-   "Q668"
+   "Q668",
+   "Q1445"
   ]
  },
  {
@@ -34516,7 +35582,8 @@
    "Q889",
    "Q79",
    "Q15",
-   "Q48"
+   "Q48",
+   "Q713750"
   ]
  },
  {
@@ -34609,6 +35676,9 @@
   "series": "Explorations in Mobility",
   "lang": "en",
   "theme": "t19",
+  "places": [
+   "Q269"
+  ],
   "openalex": "W4384253647",
   "oa": "closed"
  },
@@ -34751,7 +35821,9 @@
   "theme": "t06",
   "places": [
    "Q43",
-   "Q41470"
+   "Q41470",
+   "Q66711956",
+   "Q796"
   ]
  },
  {
@@ -34797,7 +35869,9 @@
    "Q27381",
    "Q15",
    "Q1028",
-   "Q1025"
+   "Q1025",
+   "Q6250",
+   "Q132959"
   ],
   "gnd": [
    "4042482-0",
@@ -34925,7 +35999,8 @@
    "Q12560",
    "Q142",
    "Q38",
-   "Q3572"
+   "Q3572",
+   "Q188258"
   ],
   "openalex": "W4417436690",
   "oa": "closed"
@@ -34942,6 +36017,7 @@
   "journal": "Current History",
   "publisher": "University of California Press",
   "doi": "10.1525/curh.2023.122.846.268",
+  "lang": "en",
   "theme": "t08",
   "places": [
    "Q813",
@@ -35010,7 +36086,8 @@
    "Q3572",
    "Q948",
    "Q80985",
-   "Q46"
+   "Q46",
+   "Q142"
   ]
  },
  {
@@ -35138,7 +36215,8 @@
   "lang": "en",
   "theme": "t08",
   "places": [
-   "Q34800"
+   "Q34800",
+   "Q148"
   ],
   "openalex": "W2078024856",
   "oa": "closed"
@@ -35172,10 +36250,13 @@
   "type": "Other publications",
   "year": 2022,
   "publisher": "Speaking Tiger",
+  "lang": "en",
   "theme": "t17",
   "places": [
    "Q1156",
-   "Q668"
+   "Q668",
+   "Q891827",
+   "Q1151567"
   ]
  },
  {
@@ -35206,6 +36287,7 @@
   "publisher": "Leibniz-Zentrum Moderner Orient",
   "series": "ZMO Working Papers 38",
   "doi": "10.58144/20240410-000",
+  "lang": "en",
   "theme": "t14",
   "places": [
    "Q79"
@@ -35245,7 +36327,8 @@
   "theme": "t08",
   "places": [
    "Q15180",
-   "Q27275"
+   "Q27275",
+   "Q302045"
   ],
   "openalex": "W2493927337",
   "oa": "closed"
@@ -35260,6 +36343,7 @@
   "type": "Contributions to an edited volume",
   "year": 2013,
   "publisher": "Oxford University Press",
+  "lang": "en",
   "theme": "t12"
  },
  {
@@ -35368,7 +36452,9 @@
   "lang": "de",
   "theme": "t22",
   "places": [
-   "Q668"
+   "Q668",
+   "Q16902610",
+   "Q1352"
   ]
  },
  {
@@ -35404,7 +36490,10 @@
    "Q1218",
    "Q183",
    "Q145",
-   "Q801"
+   "Q801",
+   "Q7318",
+   "Q38",
+   "Q143487"
   ],
   "gnd": [
    "4044381-4",
@@ -35519,7 +36608,9 @@
    "Q796",
    "Q889",
    "Q1009",
-   "Q183"
+   "Q183",
+   "Q103801",
+   "Q702521"
   ]
  }
 ]

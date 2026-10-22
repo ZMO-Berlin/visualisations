@@ -81,8 +81,10 @@ data_prep/                   Offline data pipelines (Python)
   fetch_subjects.py          books' ISBNs -> GND subject headings -> subjects.json
   regions.py                 Places named in titles and abstracts; --report for review
   gazetteer_check.py         Checks gazetteer ids on Wikidata -> places.json
+  place_mentions.py          Places listed by Claude Haiku 5.5 agents -> Wikidata
   titles.py                  A title without its formulas and a review's imprint
   languages.py               Language of a title (Lingua plus register-specific rules)
+  language_decisions.py      Languages decided by Claude Haiku 5.5 where Lingua cannot
   people.py                  Register author <-> people page, by name
   dashboard_extras.py        The enrichment layers of the dashboard dataset
   generate_publication_data.py   publications.json + layers -> dashboard dataset
@@ -90,7 +92,10 @@ data_prep/                   Offline data pipelines (Python)
   theme_labels.json          Theme names, written by Claude Opus 5.5 from the brief
   gazetteer.json             Hand-curated places: names in three languages, regions
   regions_review.json        Review decisions on ambiguous place names
-  reports/                   Not deployed: OpenAlex gaps, theme brief, regions review
+  place_mentions.json        Places in titles and abstracts, by Claude Haiku 5.5, resolved
+  language_decisions.json    Title languages decided by Claude Haiku 5.5
+  reports/                   Not deployed: OpenAlex gaps, theme brief, regions and
+                             place-mention reviews
   raw_data/                  Scraper output, committed for readable diffs
     <Unit>.txt               One file per research unit
     units.json               Manifest of what the unit scraper collected
@@ -392,7 +397,8 @@ field is not ranked beside them: it is filled on 192 of 1,976 records and holds
 still what names the venue on a working paper in the list below, and is still
 searched.
 
-A year slider under the timeline sets the same range as the From/To selects;
+A year slider under the timeline sets the same range as the From/To selects
+and zooms the timeline to it (a single clicked year keeps the whole axis);
 the author timelines are a heatmap on one scale; and every chart panel has a
 full-screen button. When the dashboard is embedded, the `<iframe>` needs
 `allow="fullscreen"` for that button to appear.
@@ -595,9 +601,9 @@ measurements that shaped them are in
 | --- | --- | --- | --- |
 | People | zmo.de people pages | 290 people; 174 register authors linked, in 1,718 publications | author links, profile line, darker network nodes |
 | OpenAlex | [OpenAlex](https://openalex.org) (CC0) | 833 of 1,976 publications matched | open access, institutions, citations |
-| Language | titles, [Lingua](https://github.com/pemistahl/lingua-py) | 1,638 of 1,976 determined | language ranking, languages over time |
+| Language | titles, [Lingua](https://github.com/pemistahl/lingua-py); where it cannot tell, Claude Haiku 5.5 | 1,952 of 1,979 determined (312 by Claude Haiku 5.5) | language ranking, languages over time |
 | Themes | [EmbeddingGemma 2](https://huggingface.co/google/embeddinggemma-2), names by Claude Opus 5.5 | every publication | map, theme ranking, themes over time |
-| Places | `gazetteer.json` (206 places), coordinates from Wikidata | 1,367 of 1,979 name a place | world map, place ranking, regions over time |
+| Places | `gazetteer.json` (206 places) and Claude Haiku 5.5 (240 more), resolved and placed with Wikidata | 1,480 of 1,979 name a place | world map, place ranking, regions over time |
 | Subject headings | GND, via [lobid](https://lobid.org/resources) and the [DNB](https://www.dnb.de) (CC0) | 133 of 245 books with an ISBN | heading ranking, list tags |
 
 The secondary dashboard files (`themes.json`, `openalex.json`) refer to
@@ -652,7 +658,27 @@ titles carrying a transliteration went to German or Malay, transliterated
 Arabic was read as Indonesian, and place names outvoted grammar ("… in Burkina
 Faso" as French). Function words decide first; Lingua is consulted only when
 they are inconclusive, and only at high confidence. A book review's title is the
-reviewed book's, so reviews are "undetermined", as are titles too short to tell.
+reviewed book's, so the detector leaves reviews "undetermined", as it does titles
+too short to tell.
+
+Those 339 records went to Claude Haiku 5.5 agents (`language_decisions.py`),
+given the title, journal or volume, publisher, series and the start of the
+abstract, and asked in which language the publication itself is written, how
+sure they were and why ("German-language venue (H-Soz-Kult)"; "Name-only title;
+Encyclopaedia of Islam, Three is English"). High- and medium-confidence answers
+are used — 312 of them; the agents left 26 undetermined, mostly reviews in
+multilingual journals such as *Die Welt des Islams*. A decision holds only while
+the record keeps the title and venue it was made on, never overrides the
+detector, and is credited to the model in the dashboard. Refreshing is manual,
+since CI has no language model:
+
+```bash
+python data_prep/language_decisions.py --pending /tmp/lang   # undetermined records without a decision
+```
+
+It writes the batches and `prompts.md`, one prompt per batch (the module's
+`PROMPT`); run one Claude Haiku 5.5 agent per prompt,
+then `python data_prep/language_decisions.py --merge /tmp/lang/out_*.json`.
 
 ### Themes — `build_themes.py`
 
@@ -732,6 +758,32 @@ Claude Opus 5.5 and the dashboard says so; a new ambiguous match after a monthly
 refresh keeps the default and is listed as unreviewed rather than failing the
 run. Researchers' stated regional focus on zmo.de is matched with the same list
 and shown beside the map.
+
+**Places the list has no names for — `place_mentions.py`.** A list of names
+finds only what it names: not Tranquebar, Lake Van, the Karakoram or the
+Volga. So every title and abstract was also read by Claude Haiku 5.5 agents,
+twenty batches in parallel, which listed the places each publication is about —
+towns, provinces, rivers, mountains, valleys, historical states — with the exact
+words used, an English name, a type and a modern country. The module keeps a
+mention only if its words occur in the record (9 of 2,725 did not), resolves
+each distinct name through the gazetteer first and then Wikidata's search,
+scored on label, kind of place and country, and fetches labels, a coordinate and
+countries; a place's region follows from its countries, with a short table in
+`place_mentions.json` for countries the gazetteer lacks. A river is never the
+country of the same name ("Gambia", "Jordan"), and a review decision in
+`regions_review.json` holds for the model's mention too. The result was reviewed
+from `reports/place-mentions.md`: seven search matches were namesakes (Colombia
+as a town in Huila, Eyüp as a village in Tokat) and 87 names were resolved or
+corrected by hand from the record's text; 51 stay unresolved, mostly phrases
+like "Northern Mali" that add nothing to the country the gazetteer already
+finds. The model added 240 places to 420 publications, and the dashboard says
+which model found them and who checked what. Like the language decisions, the
+list is refreshed by hand: `place_mentions.py --pending DIR` writes the records
+that are new or whose text changed, in batches, with one agent prompt per batch
+in `prompts.md`; the agents fill `out_NN.json` beside each batch, and
+`--merge DIR/out_*.json` checks, resolves and rewrites the report.
+Until then a new record gets the gazetteer's places, and a mention whose words a
+corrected title no longer has is dropped on the next build.
 
 ### Subject headings — `fetch_subjects.py`
 
@@ -901,15 +953,16 @@ Split, because the repository holds two different things:
 | | Licence | Covers |
 | --- | --- | --- |
 | Code | [MIT](LICENSE) | Everything in `data_prep/`, `shared/`, `landing/`, `tests/`, and both apps' `src/` and HTML |
-| Data | [CC BY 4.0](LICENSE-DATA) | `data_prep/raw_data/`, `data_prep/aliases.json`, `data_prep/theme_labels.json`, and both apps' `data/` |
+| Data | [CC BY 4.0](LICENSE-DATA) | `data_prep/raw_data/`, `data_prep/aliases.json`, `data_prep/theme_labels.json`, `data_prep/place_mentions.json`, `data_prep/language_decisions.json`, and both apps' `data/` |
 
 The data is derived from zmo.de — the research-unit and project descriptions,
 the publication register and the people pages — so the rights in the source
 material are the institute's, and the CC BY grant rests on this repository
 being published by the institute itself. `raw_data/openalex.json` holds
 OpenAlex metadata, which OpenAlex releases under CC0. The theme names in
-`theme_labels.json` were generated by Claude Opus 5.5 and are marked as such
-wherever they are shown. `raw_data/subjects.json` holds catalogue data from the
+`theme_labels.json` were generated by Claude Opus 5.5, and the place mentions
+and language decisions by Claude Haiku 5.5; all are marked as such wherever they
+are shown. `raw_data/subjects.json` holds catalogue data from the
 hbz and the German National Library, both released under CC0, and
 `raw_data/places.json` Wikidata labels and coordinates (CC0).
 

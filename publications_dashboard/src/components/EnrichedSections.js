@@ -9,7 +9,7 @@
  * denominator is the first thing on screen, not a footnote under the chart.
  */
 
-import { el, mount } from '../utils/dom.js';
+import { el, fullscreenButton, mount } from '../utils/dom.js';
 import { Pager } from '../../../shared/pager.js';
 import { fill, languageName } from '../utils/translations.js';
 import { CitationNetwork } from './charts/CitationNetwork.js';
@@ -269,6 +269,7 @@ export function enrichedSections({ store, strings, locale, service, d3, tooltip,
                     el('h3', { class: 'theme-panel__subtitle', text: strings.internal }),
                     el('p', { class: 'explore-hint', text: strings.internalHint }),
                     el('p', { class: 'explore-hint', text: fill(strings.internalCount, { edges: edges.length, nodes: new Set(edges.flat()).size }) }),
+                    edges.length ? el('div', { class: 'fullscreen-row' }, [fullscreenButton(graph, { enter: strings.fullscreen, exit: strings.exitFullscreen })]) : null,
                     graph,
                     edges.length ? el('details', { class: 'family' }, [
                         el('summary', { text: strings.citationList }),

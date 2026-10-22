@@ -39,7 +39,7 @@ export const translations = {
         removeFilter: 'Remove this filter',
 
         overTime: 'Publications per year',
-        overTimeHint: 'Click a column to filter by year, or a legend entry to filter by document type. The smallest types are grouped.',
+        overTimeHint: 'Click a column to filter by year, or a legend entry to filter by document type; drag the slider to zoom into a range. The smallest types are grouped.',
         otherTypes: 'Other types',
         documentTypes: 'Document types',
         topAuthors: 'Most published authors',
@@ -84,7 +84,7 @@ export const translations = {
         themesOverTime: 'Themes over time',
         themesOverTimeHint: 'Share of each theme among the selected publications in each five-year period. Darker cells hold a larger share; the number is the count.',
         languages: 'Language of the title',
-        languagesHint: 'Detected automatically from titles. Book reviews, whose titles are the reviewed book’s, and titles too short to tell are “undetermined”.',
+        languagesHint: 'Detected automatically from titles. Where a title cannot tell — a book review, whose title is the reviewed book’s, a bare name, a bilingual title — Claude Haiku 5.5 decided from the journal or volume, publisher and abstract; what it could not decide is “undetermined”.',
         languagesOverTime: 'Languages over time',
         undetermined: 'Undetermined',
         access: 'Open access',
@@ -126,7 +126,9 @@ export const translations = {
         regions: 'Regions studied',
         regionsHint: 'Places named in titles and abstracts. Click a place or a region to filter.',
         places: 'Places',
-        regionsProvenance: 'How places are found: by matching a reviewed list of {count} place names — countries, regions, cities and seas in English, German and French, with their adjectives — in titles and, where the register has one, abstracts. Publications with an abstract therefore show more places, and a place named is not always a place studied. Matches were checked by {by} on {date}: {scope}. Coordinates from Wikidata. Continents, seas and “worlds” are listed but not drawn.',
+        regionsProvenance: 'How places are found: by matching a reviewed list of {count} place names — countries, regions, cities and seas in English, German and French, with their adjectives — in titles and, where the register has one, abstracts. Matches were checked by {by} on {date}: {scope}.',
+        regionsProvenanceModel: 'And by {model}, which read every title and abstract and listed the places each publication is about, among them towns, rivers and mountains the list has no names for: {places} more places, in {records} publications. Each had to appear in the text, and was resolved to Wikidata; the resolution was checked by {by} on {date}: {scope}. A language model can still misread a title.',
+        regionsProvenanceEnd: 'Publications with an abstract show more places, and a place named is not always a place studied. Coordinates from Wikidata; continents and world regions are listed but not drawn.',
         regionsCount: '{n} of {total} publications in this selection name a place.',
         focus: 'Researchers’ stated regional focus',
         focusHint: 'As written on the zmo.de pages of current researchers; places matched with the same list.',
@@ -141,7 +143,7 @@ export const translations = {
         yearRange: 'Year range',
         fullscreen: 'Full screen',
         exitFullscreen: 'Exit full screen',
-        sourcesNote: 'Sources beyond the register: zmo.de people pages ({zmoAuthors} authors linked, in {withZmoAuthor} publications); OpenAlex ({openalex} publications matched by DOI, by ZMO affiliation or by title, author and year); the language of each title, detected automatically; and themes computed with EmbeddingGemma 2 and named by Claude Opus 5.5 (see Research themes).',
+        sourcesNote: 'Sources beyond the register: zmo.de people pages ({zmoAuthors} authors linked, in {withZmoAuthor} publications); OpenAlex ({openalex} publications matched by DOI, by ZMO affiliation or by title, author and year); the language of each title, detected automatically or, for {languageDecided} titles the detector could not read, decided by Claude Haiku 5.5; the places publications are about, from a reviewed list of names and from Claude Haiku 5.5 (see Regions studied); and themes computed with EmbeddingGemma 2 and named by Claude Opus 5.5 (see Research themes).',
 
         // The credit reads "<credit> Frédérick Madore"; the name is a link and
         // stays as it is written in every language.
@@ -190,7 +192,7 @@ export const translations = {
         removeFilter: 'Diesen Filter entfernen',
 
         overTime: 'Publikationen pro Jahr',
-        overTimeHint: 'Auf eine Säule klicken, um nach Jahr zu filtern, oder auf einen Legendeneintrag, um nach Dokumenttyp zu filtern. Die kleinsten Typen sind zusammengefasst.',
+        overTimeHint: 'Auf eine Säule klicken, um nach Jahr zu filtern, oder auf einen Legendeneintrag, um nach Dokumenttyp zu filtern; mit dem Regler einen Zeitraum heranzoomen. Die kleinsten Typen sind zusammengefasst.',
         otherTypes: 'Weitere Typen',
         documentTypes: 'Dokumenttypen',
         topAuthors: 'Meistpublizierte Autorinnen und Autoren',
@@ -231,7 +233,7 @@ export const translations = {
         themesOverTime: 'Themen im Zeitverlauf',
         themesOverTimeHint: 'Anteil jedes Themas an den ausgewählten Publikationen je Fünfjahreszeitraum. Dunklere Zellen stehen für einen größeren Anteil; die Zahl ist die Anzahl.',
         languages: 'Sprache des Titels',
-        languagesHint: 'Automatisch aus den Titeln erkannt. Rezensionen, deren Titel der des besprochenen Buches ist, und zu kurze Titel gelten als „unbestimmt“.',
+        languagesHint: 'Automatisch aus den Titeln erkannt. Wo der Titel es nicht verrät – bei Rezensionen, deren Titel der des besprochenen Buches ist, bei bloßen Namen und zweisprachigen Titeln –, hat Claude Haiku 5.5 anhand von Zeitschrift oder Sammelband, Verlag und Abstract entschieden; was es nicht entscheiden konnte, gilt als „unbestimmt“.',
         languagesOverTime: 'Sprachen im Zeitverlauf',
         undetermined: 'Unbestimmt',
         access: 'Open Access',
@@ -273,7 +275,9 @@ export const translations = {
         regions: 'Untersuchte Regionen',
         regionsHint: 'In Titeln und Abstracts genannte Orte. Einen Ort oder eine Region anklicken, um zu filtern.',
         places: 'Orte',
-        regionsProvenance: 'So werden Orte gefunden: durch Abgleich einer geprüften Liste von {count} Ortsnamen – Länder, Regionen, Städte und Meere auf Englisch, Deutsch und Französisch, samt Adjektiven – mit Titeln und, wo das Verzeichnis eines hat, Abstracts. Publikationen mit Abstract zeigen daher mehr Orte, und ein genannter Ort ist nicht immer ein untersuchter. Die Treffer wurden am {date} von {by} geprüft: {scope}. Koordinaten aus Wikidata. Kontinente, Meere und „Welten“ werden aufgeführt, aber nicht eingezeichnet.',
+        regionsProvenance: 'So werden Orte gefunden: durch Abgleich einer geprüften Liste von {count} Ortsnamen – Länder, Regionen, Städte und Meere auf Englisch, Deutsch und Französisch, samt Adjektiven – mit Titeln und, wo das Verzeichnis eines hat, Abstracts. Die Treffer wurden am {date} von {by} geprüft: {scope}.',
+        regionsProvenanceModel: 'Und durch {model}, das jeden Titel und jedes Abstract gelesen und die Orte aufgelistet hat, um die es in einer Publikation geht, darunter Städte, Flüsse und Gebirge, für die die Liste keine Namen hat: {places} weitere Orte, in {records} Publikationen. Jeder musste im Text vorkommen und wurde Wikidata zugeordnet; die Zuordnung wurde am {date} von {by} geprüft: {scope}. Ein Sprachmodell kann einen Titel dennoch missverstehen.',
+        regionsProvenanceEnd: 'Publikationen mit Abstract zeigen mehr Orte, und ein genannter Ort ist nicht immer ein untersuchter. Koordinaten aus Wikidata; Kontinente und Weltregionen werden aufgeführt, aber nicht eingezeichnet.',
         regionsCount: '{n} von {total} Publikationen dieser Auswahl nennen einen Ort.',
         focus: 'Regionale Schwerpunkte der Forschenden',
         focusHint: 'Wie auf den zmo.de-Seiten der aktuellen Forschenden angegeben; Orte mit derselben Liste zugeordnet.',
@@ -288,7 +292,7 @@ export const translations = {
         yearRange: 'Zeitraum',
         fullscreen: 'Vollbild',
         exitFullscreen: 'Vollbild beenden',
-        sourcesNote: 'Quellen über das Verzeichnis hinaus: Personenseiten auf zmo.de ({zmoAuthors} Personen verknüpft, in {withZmoAuthor} Publikationen); OpenAlex ({openalex} Publikationen über DOI, ZMO-Affiliation oder Titel, Autorschaft und Jahr zugeordnet); die automatisch erkannte Sprache jedes Titels; sowie Themen, berechnet mit EmbeddingGemma 2 und benannt von Claude Opus 5.5 (siehe Forschungsthemen).',
+        sourcesNote: 'Quellen über das Verzeichnis hinaus: Personenseiten auf zmo.de ({zmoAuthors} Personen verknüpft, in {withZmoAuthor} Publikationen); OpenAlex ({openalex} Publikationen über DOI, ZMO-Affiliation oder Titel, Autorschaft und Jahr zugeordnet); die Sprache jedes Titels, automatisch erkannt oder, bei {languageDecided} Titeln, die die Erkennung nicht lesen konnte, von Claude Haiku 5.5 bestimmt; die Orte, um die es in Publikationen geht, aus einer geprüften Namensliste und von Claude Haiku 5.5 (siehe Untersuchte Regionen); sowie Themen, berechnet mit EmbeddingGemma 2 und benannt von Claude Opus 5.5 (siehe Forschungsthemen).',
 
         credit: 'Erstellt von',
 

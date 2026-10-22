@@ -1,5 +1,5 @@
 {
- "datasetId": "7721e3b8afdfdaf0",
+ "datasetId": "00290efac76b5478",
  "attribution": {
   "gazetteer": 206,
   "coordinates": "https://www.wikidata.org",
@@ -8,6 +8,17 @@
    "date": "2026-10-22",
    "scope": "every match of the five names marked ambiguous (Benin, Georgia, Jordan, Medina, Tripoli), record by record, and a seeded sample of twelve matches per region; not reviewed by ZMO staff",
    "scope_de": "alle Treffer der fünf als mehrdeutig markierten Namen (Benin, Georgien, Jordanien, Medina, Tripolis), Eintrag für Eintrag, und eine Stichprobe von zwölf Treffern je Region; nicht von Mitarbeitenden des ZMO geprüft"
+  },
+  "mentions": {
+   "model": "Claude Haiku 5.5",
+   "places": 240,
+   "records": 420,
+   "reviewed": {
+    "by": "Claude Opus 5.5 (Anthropic)",
+    "date": "2026-10-22",
+    "scope": "the Wikidata match of every name the search resolved, and 87 names resolved or corrected by hand from the record's text; not each mention, and not by ZMO staff",
+    "scope_de": "die Wikidata-Zuordnung jedes über die Suche gefundenen Namens und 87 von Hand anhand des Eintragstexts zugeordnete oder korrigierte Namen; nicht jede einzelne Nennung und nicht von Mitarbeitenden des ZMO"
+   }
   }
  },
  "macros": [
@@ -85,6 +96,19 @@
  ],
  "places": [
   {
+   "id": "Q1003502",
+   "label": {
+    "en": "Secunderabad",
+    "de": "Secunderabad"
+   },
+   "macro": "south-asia",
+   "kind": "city",
+   "coord": [
+    78.5,
+    17.45
+   ]
+  },
+  {
    "id": "Q1005",
    "label": {
     "en": "The Gambia",
@@ -137,6 +161,19 @@
    ]
   },
   {
+   "id": "Q1014010",
+   "label": {
+    "en": "Tarim",
+    "de": "Tarim"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    49.0,
+    16.05
+   ]
+  },
+  {
    "id": "Q1016",
    "label": {
     "en": "Libya",
@@ -163,6 +200,32 @@
    ]
   },
   {
+   "id": "Q1017658",
+   "label": {
+    "en": "Deoband",
+    "de": "Deoband"
+   },
+   "macro": "south-asia",
+   "kind": "city",
+   "coord": [
+    77.68,
+    29.7
+   ]
+  },
+  {
+   "id": "Q1018209",
+   "label": {
+    "en": "Murghob",
+    "de": "Murghob"
+   },
+   "macro": "central-asia-caucasus",
+   "kind": "city",
+   "coord": [
+    73.967,
+    38.171
+   ]
+  },
+  {
    "id": "Q1019",
    "label": {
     "en": "Madagascar",
@@ -186,6 +249,32 @@
    "coord": [
     -11.0,
     21.0
+   ]
+  },
+  {
+   "id": "Q1027",
+   "label": {
+    "en": "Mauritius",
+    "de": "Mauritius"
+   },
+   "macro": "east-southern-africa",
+   "kind": "island",
+   "coord": [
+    57.5,
+    -20.2
+   ]
+  },
+  {
+   "id": "Q1027153",
+   "label": {
+    "en": "Yusufeli",
+    "de": "Yusufeli"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    41.521,
+    40.812
    ]
   },
   {
@@ -254,6 +343,19 @@
    ]
   },
   {
+   "id": "Q103801",
+   "label": {
+    "en": "East Prussia",
+    "de": "Ostpreußen"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "province",
+   "coord": [
+    20.51,
+    54.71
+   ]
+  },
+  {
    "id": "Q1041",
    "label": {
     "en": "Senegal",
@@ -293,6 +395,19 @@
    ]
   },
   {
+   "id": "Q104772074",
+   "label": {
+    "en": "The Line",
+    "de": "The Line"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    35.3,
+    28.1
+   ]
+  },
+  {
    "id": "Q1049",
    "label": {
     "en": "Sudan",
@@ -303,6 +418,19 @@
    "coord": [
     32.0,
     15.0
+   ]
+  },
+  {
+   "id": "Q1058785",
+   "label": {
+    "en": "North India",
+    "de": "Nordindien"
+   },
+   "macro": "south-asia",
+   "kind": "region",
+   "coord": [
+    76.591,
+    31.056
    ]
   },
   {
@@ -319,6 +447,45 @@
    ]
   },
   {
+   "id": "Q1113311",
+   "label": {
+    "en": "Peshawar",
+    "de": "Peschawar"
+   },
+   "macro": "south-asia",
+   "kind": "city",
+   "coord": [
+    71.567,
+    34.014
+   ]
+  },
+  {
+   "id": "Q11194",
+   "label": {
+    "en": "Sarajevo",
+    "de": "Sarajevo"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    18.413,
+    43.856
+   ]
+  },
+  {
+   "id": "Q1139666",
+   "label": {
+    "en": "Borkou",
+    "de": "Borkou"
+   },
+   "macro": "west-central-africa",
+   "kind": "region",
+   "coord": [
+    19.117,
+    17.917
+   ]
+  },
+  {
    "id": "Q114",
    "label": {
     "en": "Kenya",
@@ -329,6 +496,19 @@
    "coord": [
     38.0,
     0.1
+   ]
+  },
+  {
+   "id": "Q1142402",
+   "label": {
+    "en": "Konkan",
+    "de": "Konkan"
+   },
+   "macro": "south-asia",
+   "kind": "coast",
+   "coord": [
+    73.8,
+    15.6
    ]
   },
   {
@@ -354,6 +534,32 @@
    ]
   },
   {
+   "id": "Q1151567",
+   "label": {
+    "en": "West India",
+    "de": "westliches Indien"
+   },
+   "macro": "south-asia",
+   "kind": "region",
+   "coord": [
+    74.15,
+    19.0
+   ]
+  },
+  {
+   "id": "Q1151572",
+   "label": {
+    "en": "East India",
+    "de": "Ostindien"
+   },
+   "macro": "south-asia",
+   "kind": "region",
+   "coord": [
+    86.0,
+    23.25
+   ]
+  },
+  {
    "id": "Q1156",
    "label": {
     "en": "Mumbai",
@@ -364,6 +570,32 @@
    "coord": [
     72.877,
     19.076
+   ]
+  },
+  {
+   "id": "Q1163759",
+   "label": {
+    "en": "Ganges Delta",
+    "de": "Gangesdelta"
+   },
+   "macro": "south-asia",
+   "kind": "region",
+   "coord": [
+    89.667,
+    22.7
+   ]
+  },
+  {
+   "id": "Q1164",
+   "label": {
+    "en": "Assam",
+    "de": "Assam"
+   },
+   "macro": "south-asia",
+   "kind": "province",
+   "coord": [
+    93.0,
+    26.0
    ]
   },
   {
@@ -419,6 +651,71 @@
    ]
   },
   {
+   "id": "Q11772",
+   "label": {
+    "en": "Ancient Greece",
+    "de": "Antikes Griechenland"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "historical",
+   "coord": [
+    23.0,
+    38.5
+   ]
+  },
+  {
+   "id": "Q1186403",
+   "label": {
+    "en": "Jewish Quarter",
+    "de": "Jüdisches Viertel von Jerusalem"
+   },
+   "macro": "middle-east",
+   "kind": "neighbourhood",
+   "coord": [
+    35.232,
+    31.776
+   ]
+  },
+  {
+   "id": "Q1191",
+   "label": {
+    "en": "Maharashtra",
+    "de": "Maharashtra"
+   },
+   "macro": "south-asia",
+   "kind": "province",
+   "coord": [
+    75.714,
+    19.751
+   ]
+  },
+  {
+   "id": "Q1193",
+   "label": {
+    "en": "Manipur",
+    "de": "Manipur"
+   },
+   "macro": "south-asia",
+   "kind": "province",
+   "coord": [
+    93.94,
+    24.81
+   ]
+  },
+  {
+   "id": "Q1208",
+   "label": {
+    "en": "Brandenburg",
+    "de": "Brandenburg"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "region",
+   "coord": [
+    13.06,
+    52.395
+   ]
+  },
+  {
    "id": "Q1218",
    "label": {
     "en": "Jerusalem",
@@ -429,6 +726,32 @@
    "coord": [
     35.234,
     31.777
+   ]
+  },
+  {
+   "id": "Q12191403",
+   "label": {
+    "en": "Qatif",
+    "de": "Qatif"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    49.997,
+    26.575
+   ]
+  },
+  {
+   "id": "Q12204698",
+   "label": {
+    "en": "Jabal Akroum",
+    "de": "Jabal Akroum"
+   },
+   "macro": "middle-east",
+   "kind": "region",
+   "coord": [
+    36.363,
+    34.544
    ]
   },
   {
@@ -445,6 +768,45 @@
    ]
   },
   {
+   "id": "Q125309",
+   "label": {
+    "en": "Lake Chad",
+    "de": "Tschadsee"
+   },
+   "macro": "west-central-africa",
+   "kind": "lake",
+   "coord": [
+    14.534,
+    13.098
+   ]
+  },
+  {
+   "id": "Q12536",
+   "label": {
+    "en": "Abbasid Caliphate",
+    "de": "Abbasiden-Kalifat"
+   },
+   "macro": "middle-east",
+   "kind": "historical",
+   "coord": [
+    44.366,
+    33.315
+   ]
+  },
+  {
+   "id": "Q12544",
+   "label": {
+    "en": "Byzantine Empire",
+    "de": "Byzantinisches Reich"
+   },
+   "macro": "transregional",
+   "kind": "historical",
+   "coord": [
+    28.98,
+    41.013
+   ]
+  },
+  {
    "id": "Q12560",
    "label": {
     "en": "Ottoman Empire",
@@ -455,6 +817,63 @@
    "coord": [
     29.0,
     41.0
+   ]
+  },
+  {
+   "id": "Q125851615",
+   "label": {
+    "en": "German-speaking world",
+    "de": "German-speaking world"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "world"
+  },
+  {
+   "id": "Q126307",
+   "label": {
+    "en": "Lake Van",
+    "de": "Vansee"
+   },
+   "macro": "middle-east",
+   "kind": "lake",
+   "coord": [
+    42.817,
+    38.633
+   ]
+  },
+  {
+   "id": "Q12632",
+   "label": {
+    "en": "Brakna",
+    "de": "Brakna"
+   },
+   "macro": "north-africa",
+   "kind": "region",
+   "coord": [
+    -13.912,
+    17.061
+   ]
+  },
+  {
+   "id": "Q12837",
+   "label": {
+    "en": "Iberian Peninsula",
+    "de": "Iberische Halbinsel"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "world"
+  },
+  {
+   "id": "Q129286",
+   "label": {
+    "en": "British Raj",
+    "de": "Britisch-Indien"
+   },
+   "macro": "south-asia",
+   "kind": "historical",
+   "coord": [
+    88.338,
+    22.541
    ]
   },
   {
@@ -471,6 +890,54 @@
    ]
   },
   {
+   "id": "Q129677",
+   "label": {
+    "en": "Chernobyl",
+    "de": "Tschornobyl"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    30.217,
+    51.267
+   ]
+  },
+  {
+   "id": "Q130276",
+   "label": {
+    "en": "Kirghiz Soviet Socialist Republic",
+    "de": "Kirgisische Sozialistische Sowjetrepublik"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "historical",
+   "coord": [
+    74.6,
+    42.867
+   ]
+  },
+  {
+   "id": "Q131694",
+   "label": {
+    "en": "Aden",
+    "de": "Aden"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    45.033,
+    12.8
+   ]
+  },
+  {
+   "id": "Q132959",
+   "label": {
+    "en": "sub-Saharan Africa",
+    "de": "Subsahara-Afrika"
+   },
+   "macro": "transregional",
+   "kind": "world"
+  },
+  {
    "id": "Q1348",
    "label": {
     "en": "Kolkata",
@@ -481,6 +948,19 @@
    "coord": [
     88.37,
     22.567
+   ]
+  },
+  {
+   "id": "Q1352",
+   "label": {
+    "en": "Chennai",
+    "de": "Chennai"
+   },
+   "macro": "south-asia",
+   "kind": "city",
+   "coord": [
+    80.275,
+    13.082
    ]
   },
   {
@@ -510,6 +990,59 @@
    ]
   },
   {
+   "id": "Q135581356",
+   "label": {
+    "en": "Northwest Africa",
+    "de": "Northwest Africa"
+   },
+   "macro": "north-africa",
+   "kind": "world"
+  },
+  {
+   "id": "Q1355846",
+   "label": {
+    "en": "Mailuu-Suu",
+    "de": "Mailuusuu"
+   },
+   "macro": "central-asia-caucasus",
+   "kind": "city",
+   "coord": [
+    72.448,
+    41.246
+   ]
+  },
+  {
+   "id": "Q135671726",
+   "label": {
+    "en": "Southern Morocco",
+    "de": "Southern Morocco"
+   },
+   "macro": "north-africa",
+   "kind": "region"
+  },
+  {
+   "id": "Q139708",
+   "label": {
+    "en": "French Mandate for Syria and the Lebanon",
+    "de": "Völkerbundmandat für Syrien und Libanon"
+   },
+   "macro": "middle-east",
+   "kind": "historical",
+   "coord": [
+    35.513,
+    33.887
+   ]
+  },
+  {
+   "id": "Q1414323",
+   "label": {
+    "en": "Northwestern Europe",
+    "de": "Nordwesteuropa"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "world"
+  },
+  {
    "id": "Q142",
    "label": {
     "en": "France",
@@ -523,6 +1056,32 @@
    ]
   },
   {
+   "id": "Q14234624",
+   "label": {
+    "en": "Southeast Nigeria",
+    "de": "Southeast Nigeria"
+   },
+   "macro": "west-central-africa",
+   "kind": "region",
+   "coord": [
+    7.51,
+    6.453
+   ]
+  },
+  {
+   "id": "Q1425322",
+   "label": {
+    "en": "Kazan Governorate",
+    "de": "Gouvernement Kasan"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "province",
+   "coord": [
+    49.114,
+    55.791
+   ]
+  },
+  {
    "id": "Q143487",
    "label": {
     "en": "Arab world",
@@ -530,6 +1089,19 @@
    },
    "macro": "transregional",
    "kind": "world"
+  },
+  {
+   "id": "Q1445",
+   "label": {
+    "en": "Tamil Nadu",
+    "de": "Tamil Nadu"
+   },
+   "macro": "south-asia",
+   "kind": "region",
+   "coord": [
+    79.0,
+    11.0
+   ]
   },
   {
    "id": "Q145",
@@ -580,6 +1152,32 @@
    "kind": "continent"
   },
   {
+   "id": "Q1505",
+   "label": {
+    "en": "Sikkim",
+    "de": "Sikkim"
+   },
+   "macro": "south-asia",
+   "kind": "region",
+   "coord": [
+    88.5,
+    27.55
+   ]
+  },
+  {
+   "id": "Q1515",
+   "label": {
+    "en": "Abidjan",
+    "de": "Abidjan"
+   },
+   "macro": "west-central-africa",
+   "kind": "city",
+   "coord": [
+    -4.027,
+    5.336
+   ]
+  },
+  {
    "id": "Q1517159",
    "label": {
     "en": "Hadhramaut",
@@ -602,6 +1200,32 @@
    "kind": "historical"
   },
   {
+   "id": "Q15244460",
+   "label": {
+    "en": "Manankoro",
+    "de": "Manankoro"
+   },
+   "macro": "west-central-africa",
+   "kind": "city",
+   "coord": [
+    -7.45,
+    10.467
+   ]
+  },
+  {
+   "id": "Q152831",
+   "label": {
+    "en": "Duhok",
+    "de": "Dohuk"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    42.983,
+    36.85
+   ]
+  },
+  {
    "id": "Q1530",
    "label": {
     "en": "Baghdad",
@@ -612,6 +1236,32 @@
    "coord": [
     44.366,
     33.315
+   ]
+  },
+  {
+   "id": "Q153136",
+   "label": {
+    "en": "Habsburg monarchy",
+    "de": "Habsburgermonarchie"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "historical",
+   "coord": [
+    16.367,
+    48.2
+   ]
+  },
+  {
+   "id": "Q1534252",
+   "label": {
+    "en": "Malabar",
+    "de": "Malabar"
+   },
+   "macro": "south-asia",
+   "kind": "region",
+   "coord": [
+    75.283,
+    12.017
    ]
   },
   {
@@ -641,6 +1291,19 @@
    ]
   },
   {
+   "id": "Q1566135",
+   "label": {
+    "en": "Wünsdorf",
+    "de": "Wünsdorf"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    13.474,
+    52.163
+   ]
+  },
+  {
    "id": "Q159",
    "label": {
     "en": "Russia",
@@ -651,6 +1314,93 @@
    "coord": [
     94.25,
     66.417
+   ]
+  },
+  {
+   "id": "Q160819",
+   "label": {
+    "en": "Gambia River",
+    "de": "Gambia"
+   },
+   "macro": "west-central-africa",
+   "kind": "valley",
+   "coord": [
+    -12.251,
+    11.405
+   ]
+  },
+  {
+   "id": "Q161062",
+   "label": {
+    "en": "Togoland",
+    "de": "Togo"
+   },
+   "macro": "west-central-africa",
+   "kind": "region",
+   "coord": [
+    1.187,
+    6.272
+   ]
+  },
+  {
+   "id": "Q1627312",
+   "label": {
+    "en": "Western High Plateau",
+    "de": "Kameruner Grasland"
+   },
+   "macro": "west-central-africa",
+   "kind": "region",
+   "coord": [
+    10.5,
+    6.5
+   ]
+  },
+  {
+   "id": "Q163239",
+   "label": {
+    "en": "Balochistan",
+    "de": "Belutschistan"
+   },
+   "macro": "south-asia",
+   "kind": "region",
+   "coord": [
+    67.01,
+    30.12
+   ]
+  },
+  {
+   "id": "Q1634214",
+   "label": {
+    "en": "Volga Region",
+    "de": "Powolschje"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "region",
+   "coord": [
+    50.0,
+    55.0
+   ]
+  },
+  {
+   "id": "Q16896634",
+   "label": {
+    "en": "Euro-Mediterranean region",
+    "de": "Euro-Mediterranean region"
+   },
+   "macro": "transregional",
+   "kind": "world"
+  },
+  {
+   "id": "Q16902610",
+   "label": {
+    "en": "Vepery",
+    "de": "Vepery"
+   },
+   "macro": "south-asia",
+   "kind": "neighbourhood",
+   "coord": [
+    80.264,
+    13.084
    ]
   },
   {
@@ -680,6 +1430,19 @@
    ]
   },
   {
+   "id": "Q169966",
+   "label": {
+    "en": "Deccan Plateau",
+    "de": "Dekkan"
+   },
+   "macro": "south-asia",
+   "kind": "region",
+   "coord": [
+    77.0,
+    15.0
+   ]
+  },
+  {
    "id": "Q169977",
    "label": {
     "en": "Hejaz",
@@ -690,6 +1453,110 @@
    "coord": [
     40.86,
     23.504
+   ]
+  },
+  {
+   "id": "Q17",
+   "label": {
+    "en": "Japan",
+    "de": "Japan"
+   },
+   "macro": "east-asia",
+   "kind": "country",
+   "coord": [
+    136.0,
+    35.0
+   ]
+  },
+  {
+   "id": "Q170532",
+   "label": {
+    "en": "Amasya",
+    "de": "Amasya"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    35.828,
+    40.679
+   ]
+  },
+  {
+   "id": "Q1711",
+   "label": {
+    "en": "Potsdam",
+    "de": "Potsdam"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    13.059,
+    52.401
+   ]
+  },
+  {
+   "id": "Q1711781",
+   "label": {
+    "en": "New Julfa",
+    "de": "Dschulfa"
+   },
+   "macro": "middle-east",
+   "kind": "neighbourhood",
+   "coord": [
+    51.656,
+    32.636
+   ]
+  },
+  {
+   "id": "Q17151",
+   "label": {
+    "en": "Thessaloniki",
+    "de": "Thessaloniki"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    22.936,
+    40.64
+   ]
+  },
+  {
+   "id": "Q172415",
+   "label": {
+    "en": "Kutaisi",
+    "de": "Kutaissi"
+   },
+   "macro": "central-asia-caucasus",
+   "kind": "city",
+   "coord": [
+    42.706,
+    42.272
+   ]
+  },
+  {
+   "id": "Q1731",
+   "label": {
+    "en": "Dresden",
+    "de": "Dresden"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    13.738,
+    51.049
+   ]
+  },
+  {
+   "id": "Q175802",
+   "label": {
+    "en": "Ozyorsk",
+    "de": "Osjorsk"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    60.703,
+    55.756
    ]
   },
   {
@@ -706,6 +1573,58 @@
    ]
   },
   {
+   "id": "Q179023",
+   "label": {
+    "en": "French colonial empire",
+    "de": "französische Kolonien"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "historical",
+   "coord": [
+    -2.35,
+    48.85
+   ]
+  },
+  {
+   "id": "Q1794",
+   "label": {
+    "en": "Frankfurt",
+    "de": "Frankfurt am Main"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    8.682,
+    50.111
+   ]
+  },
+  {
+   "id": "Q181007",
+   "label": {
+    "en": "Hattusa",
+    "de": "Hattuša"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    34.615,
+    40.02
+   ]
+  },
+  {
+   "id": "Q18234383",
+   "label": {
+    "en": "Safavid Iran",
+    "de": "Safawiden-Reich"
+   },
+   "macro": "middle-east",
+   "kind": "historical",
+   "coord": [
+    50.0,
+    33.0
+   ]
+  },
+  {
    "id": "Q183",
    "label": {
     "en": "Germany",
@@ -716,6 +1635,71 @@
    "coord": [
     10.0,
     51.0
+   ]
+  },
+  {
+   "id": "Q183314",
+   "label": {
+    "en": "Khyber Pakhtunkhwa",
+    "de": "Khyber Pakhtunkhwa"
+   },
+   "macro": "south-asia",
+   "kind": "province",
+   "coord": [
+    72.18,
+    34.343
+   ]
+  },
+  {
+   "id": "Q183557",
+   "label": {
+    "en": "Dieppe",
+    "de": "Dieppe"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    1.075,
+    49.925
+   ]
+  },
+  {
+   "id": "Q185371",
+   "label": {
+    "en": "Coast Province",
+    "de": "Coast"
+   },
+   "macro": "east-southern-africa",
+   "kind": "coast",
+   "coord": [
+    39.5,
+    -3.0
+   ]
+  },
+  {
+   "id": "Q1881042",
+   "label": {
+    "en": "Chota Nagpur Plateau",
+    "de": "Chota Nagpur Plateau"
+   },
+   "macro": "south-asia",
+   "kind": "region",
+   "coord": [
+    85.0,
+    23.0
+   ]
+  },
+  {
+   "id": "Q188258",
+   "label": {
+    "en": "Fezzan",
+    "de": "Fessan"
+   },
+   "macro": "north-africa",
+   "kind": "region",
+   "coord": [
+    13.425,
+    26.333
    ]
   },
   {
@@ -732,6 +1716,32 @@
    ]
   },
   {
+   "id": "Q192237",
+   "label": {
+    "en": "Ghadames",
+    "de": "Ghadames"
+   },
+   "macro": "north-africa",
+   "kind": "city",
+   "coord": [
+    9.5,
+    30.133
+   ]
+  },
+  {
+   "id": "Q1953",
+   "label": {
+    "en": "Yerevan",
+    "de": "Jerewan"
+   },
+   "macro": "central-asia-caucasus",
+   "kind": "city",
+   "coord": [
+    44.514,
+    40.181
+   ]
+  },
+  {
    "id": "Q1960",
    "label": {
     "en": "Dar es Salaam",
@@ -743,6 +1753,128 @@
     39.28,
     -6.816
    ]
+  },
+  {
+   "id": "Q200173",
+   "label": {
+    "en": "South Caucasus",
+    "de": "Südkaukasus"
+   },
+   "macro": "central-asia-caucasus",
+   "kind": "region",
+   "coord": [
+    49.891,
+    40.38
+   ]
+  },
+  {
+   "id": "Q200237",
+   "label": {
+    "en": "Meerut",
+    "de": "Meerut"
+   },
+   "macro": "south-asia",
+   "kind": "city",
+   "coord": [
+    77.706,
+    28.98
+   ]
+  },
+  {
+   "id": "Q200667",
+   "label": {
+    "en": "Ladakh",
+    "de": "Ladakh"
+   },
+   "macro": "south-asia",
+   "kind": "region",
+   "coord": [
+    77.583,
+    34.167
+   ]
+  },
+  {
+   "id": "Q200697",
+   "label": {
+    "en": "Gilgit-Baltistan",
+    "de": "Gilgit-Baltistan"
+   },
+   "macro": "south-asia",
+   "kind": "region",
+   "coord": [
+    75.9,
+    35.35
+   ]
+  },
+  {
+   "id": "Q205792",
+   "label": {
+    "en": "Tamanrasset",
+    "de": "Tamanrasset"
+   },
+   "macro": "north-africa",
+   "kind": "city",
+   "coord": [
+    5.523,
+    22.785
+   ]
+  },
+  {
+   "id": "Q2079",
+   "label": {
+    "en": "Leipzig",
+    "de": "Leipzig"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    12.375,
+    51.341
+   ]
+  },
+  {
+   "id": "Q208005",
+   "label": {
+    "en": "Kırşehir",
+    "de": "Kırşehir"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    34.161,
+    39.145
+   ]
+  },
+  {
+   "id": "Q208154",
+   "label": {
+    "en": "Najd",
+    "de": "Nadschd"
+   },
+   "macro": "middle-east",
+   "kind": "region",
+   "coord": [
+    43.588,
+    24.291
+   ]
+  },
+  {
+   "id": "Q208643",
+   "label": {
+    "en": "Malay Archipelago",
+    "de": "Malaiischer Archipel"
+   },
+   "macro": "east-asia",
+   "kind": "world"
+  },
+  {
+   "id": "Q21051459",
+   "label": {
+    "en": "Balkan Route",
+    "de": "Balkanroute"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "other"
   },
   {
    "id": "Q212",
@@ -758,6 +1890,63 @@
    ]
   },
   {
+   "id": "Q212938",
+   "label": {
+    "en": "East Jerusalem",
+    "de": "Ostjerusalem"
+   },
+   "macro": "middle-east",
+   "kind": "region",
+   "coord": [
+    35.234,
+    31.783
+   ]
+  },
+  {
+   "id": "Q213137",
+   "label": {
+    "en": "East Indies",
+    "de": "Ostindien"
+   },
+   "macro": "transregional",
+   "kind": "world"
+  },
+  {
+   "id": "Q2142541",
+   "label": {
+    "en": "Tell Halaf",
+    "de": "Tell Halaf"
+   },
+   "macro": "middle-east",
+   "kind": "other",
+   "coord": [
+    40.04,
+    36.827
+   ]
+  },
+  {
+   "id": "Q220",
+   "label": {
+    "en": "Rome",
+    "de": "Rom"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    12.483,
+    41.893
+   ]
+  },
+  {
+   "id": "Q2218629",
+   "label": {
+    "en": "Arab states of the Persian Gulf",
+    "de": "Arabische Staaten am Persischen Golf"
+   },
+   "macro": "middle-east",
+   "kind": "world"
+  },
+  {
    "id": "Q225641",
    "label": {
     "en": "Mombasa",
@@ -768,6 +1957,19 @@
    "coord": [
     39.667,
     -4.05
+   ]
+  },
+  {
+   "id": "Q226884",
+   "label": {
+    "en": "Zossen",
+    "de": "Zossen"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    13.45,
+    52.217
    ]
   },
   {
@@ -797,6 +1999,15 @@
    ]
   },
   {
+   "id": "Q2311567",
+   "label": {
+    "en": "Western Armenia",
+    "de": "Westarmenien"
+   },
+   "macro": "middle-east",
+   "kind": "region"
+  },
+  {
    "id": "Q232",
    "label": {
     "en": "Kazakhstan",
@@ -807,6 +2018,19 @@
    "coord": [
     68.0,
     48.0
+   ]
+  },
+  {
+   "id": "Q23334",
+   "label": {
+    "en": "Abkhazia",
+    "de": "Abchasien"
+   },
+   "macro": "central-asia-caucasus",
+   "kind": "region",
+   "coord": [
+    41.0,
+    43.15
    ]
   },
   {
@@ -836,6 +2060,19 @@
    ]
   },
   {
+   "id": "Q23681",
+   "label": {
+    "en": "Northern Cyprus",
+    "de": "Türkische Republik Nordzypern"
+   },
+   "macro": "middle-east",
+   "kind": "region",
+   "coord": [
+    33.363,
+    35.182
+   ]
+  },
+  {
    "id": "Q23792",
    "label": {
     "en": "Palestine",
@@ -846,6 +2083,32 @@
    "coord": [
     35.145,
     31.625
+   ]
+  },
+  {
+   "id": "Q241119",
+   "label": {
+    "en": "Khuzestan Province",
+    "de": "Chuzestan"
+   },
+   "macro": "middle-east",
+   "kind": "province",
+   "coord": [
+    48.694,
+    31.327
+   ]
+  },
+  {
+   "id": "Q242587",
+   "label": {
+    "en": "Abéché",
+    "de": "Abéché"
+   },
+   "macro": "west-central-africa",
+   "kind": "city",
+   "coord": [
+    20.835,
+    13.833
    ]
   },
   {
@@ -862,6 +2125,19 @@
    ]
   },
   {
+   "id": "Q2473939",
+   "label": {
+    "en": "Abomey-Calavi",
+    "de": "Abomey-Calavi"
+   },
+   "macro": "west-central-africa",
+   "kind": "city",
+   "coord": [
+    2.356,
+    6.449
+   ]
+  },
+  {
    "id": "Q252",
    "label": {
     "en": "Indonesia",
@@ -872,6 +2148,19 @@
    "coord": [
     118.0,
     -2.0
+   ]
+  },
+  {
+   "id": "Q2538511",
+   "label": {
+    "en": "Kenya Colony",
+    "de": "Kenia-Kolonie"
+   },
+   "macro": "east-southern-africa",
+   "kind": "historical",
+   "coord": [
+    39.667,
+    -4.044
    ]
   },
   {
@@ -901,6 +2190,15 @@
    ]
   },
   {
+   "id": "Q263686",
+   "label": {
+    "en": "Southeastern Europe",
+    "de": "Südosteuropa"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "world"
+  },
+  {
    "id": "Q265",
    "label": {
     "en": "Uzbekistan",
@@ -927,6 +2225,32 @@
    ]
   },
   {
+   "id": "Q271771",
+   "label": {
+    "en": "Tanta",
+    "de": "Tanta"
+   },
+   "macro": "north-africa",
+   "kind": "city",
+   "coord": [
+    31.0,
+    30.783
+   ]
+  },
+  {
+   "id": "Q27230",
+   "label": {
+    "en": "La Marsa",
+    "de": "La Marsa"
+   },
+   "macro": "north-africa",
+   "kind": "city",
+   "coord": [
+    10.325,
+    36.876
+   ]
+  },
+  {
    "id": "Q27275",
    "label": {
     "en": "Central Asia",
@@ -950,6 +2274,19 @@
    "coord": [
     40.9,
     -2.269
+   ]
+  },
+  {
+   "id": "Q2734136",
+   "label": {
+    "en": "Jamalpur",
+    "de": "Jamalpur"
+   },
+   "macro": "south-asia",
+   "kind": "city",
+   "coord": [
+    86.5,
+    25.3
    ]
   },
   {
@@ -992,6 +2329,85 @@
    ]
   },
   {
+   "id": "Q27433",
+   "label": {
+    "en": "Central Africa",
+    "de": "Zentralafrika"
+   },
+   "macro": "west-central-africa",
+   "kind": "world"
+  },
+  {
+   "id": "Q27449",
+   "label": {
+    "en": "Southern Europe",
+    "de": "Südeuropa"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "world"
+  },
+  {
+   "id": "Q27496",
+   "label": {
+    "en": "Western Europe",
+    "de": "Westeuropa"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "world"
+  },
+  {
+   "id": "Q2751060",
+   "label": {
+    "en": "Lenasia",
+    "de": "Lenasia"
+   },
+   "macro": "east-southern-africa",
+   "kind": "neighbourhood",
+   "coord": [
+    27.828,
+    -26.317
+   ]
+  },
+  {
+   "id": "Q27928",
+   "label": {
+    "en": "Southern Red Sea Region",
+    "de": "Debubawi Kayih Bahri"
+   },
+   "macro": "east-southern-africa",
+   "kind": "region",
+   "coord": [
+    41.5,
+    13.75
+   ]
+  },
+  {
+   "id": "Q2807",
+   "label": {
+    "en": "Madrid",
+    "de": "Madrid"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    -3.703,
+    40.417
+   ]
+  },
+  {
+   "id": "Q2814",
+   "label": {
+    "en": "Halle (Saale)",
+    "de": "Halle (Saale)"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    11.97,
+    51.483
+   ]
+  },
+  {
    "id": "Q28227",
    "label": {
     "en": "Maghreb",
@@ -1002,6 +2418,45 @@
    "coord": [
     5.0,
     30.0
+   ]
+  },
+  {
+   "id": "Q283368",
+   "label": {
+    "en": "Raqqa",
+    "de": "Raqqa"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    39.01,
+    35.95
+   ]
+  },
+  {
+   "id": "Q2844",
+   "label": {
+    "en": "Brasília",
+    "de": "Brasília"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    -47.883,
+    -15.794
+   ]
+  },
+  {
+   "id": "Q2887",
+   "label": {
+    "en": "Santiago",
+    "de": "Santiago de Chile"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    -70.65,
+    -33.438
    ]
   },
   {
@@ -1018,6 +2473,80 @@
    ]
   },
   {
+   "id": "Q302045",
+   "label": {
+    "en": "Post-Soviet states",
+    "de": "Nachfolgestaaten der Sowjetunion"
+   },
+   "macro": "transregional",
+   "kind": "world"
+  },
+  {
+   "id": "Q302268",
+   "label": {
+    "en": "Afrin",
+    "de": "Afrin"
+   },
+   "macro": "middle-east",
+   "kind": "region",
+   "coord": [
+    36.869,
+    36.512
+   ]
+  },
+  {
+   "id": "Q31",
+   "label": {
+    "en": "Belgium",
+    "de": "Belgien"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "country",
+   "coord": [
+    4.668,
+    50.641
+   ]
+  },
+  {
+   "id": "Q3106527",
+   "label": {
+    "en": "Medina of Tunis",
+    "de": "Medina von Tunis"
+   },
+   "macro": "north-africa",
+   "kind": "neighbourhood",
+   "coord": [
+    10.17,
+    36.799
+   ]
+  },
+  {
+   "id": "Q311341",
+   "label": {
+    "en": "Al-Ahsa Oasis",
+    "de": "Al-Hasa Oase"
+   },
+   "macro": "middle-east",
+   "kind": "region",
+   "coord": [
+    49.622,
+    25.429
+   ]
+  },
+  {
+   "id": "Q312723",
+   "label": {
+    "en": "El Mahalla El Kubra",
+    "de": "Mahalla al-Kubra"
+   },
+   "macro": "north-africa",
+   "kind": "city",
+   "coord": [
+    31.167,
+    30.967
+   ]
+  },
+  {
    "id": "Q31945",
    "label": {
     "en": "Arabian Peninsula",
@@ -1029,6 +2558,54 @@
     46.0,
     23.0
    ]
+  },
+  {
+   "id": "Q32056",
+   "label": {
+    "en": "Badakhshan",
+    "de": "Badachschan"
+   },
+   "macro": "central-asia-caucasus",
+   "kind": "province",
+   "coord": [
+    71.83,
+    37.968
+   ]
+  },
+  {
+   "id": "Q3240533",
+   "label": {
+    "en": "Turkish Kurdistan",
+    "de": "Nordkurdistan"
+   },
+   "macro": "middle-east",
+   "kind": "region",
+   "coord": [
+    40.237,
+    37.911
+   ]
+  },
+  {
+   "id": "Q3242297",
+   "label": {
+    "en": "Old Delhi",
+    "de": "Shahjahanabad"
+   },
+   "macro": "south-asia",
+   "kind": "neighbourhood",
+   "coord": [
+    77.23,
+    28.66
+   ]
+  },
+  {
+   "id": "Q3301962",
+   "label": {
+    "en": "Eastern Mediterranean",
+    "de": "östlicher Mittelmeerraum"
+   },
+   "macro": "transregional",
+   "kind": "world"
   },
   {
    "id": "Q334",
@@ -1057,6 +2634,84 @@
    ]
   },
   {
+   "id": "Q3392",
+   "label": {
+    "en": "Nile",
+    "de": "Nil"
+   },
+   "macro": "transregional",
+   "kind": "river",
+   "coord": [
+    30.367,
+    31.465
+   ]
+  },
+  {
+   "id": "Q33946",
+   "label": {
+    "en": "Czechoslovakia",
+    "de": "Tschechoslowakei"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "historical",
+   "coord": [
+    14.417,
+    50.083
+   ]
+  },
+  {
+   "id": "Q34266",
+   "label": {
+    "en": "Russian Empire",
+    "de": "Russisches Kaiserreich"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "historical",
+   "coord": [
+    70.117,
+    58.65
+   ]
+  },
+  {
+   "id": "Q34374",
+   "label": {
+    "en": "Crete",
+    "de": "Kreta"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "island",
+   "coord": [
+    24.893,
+    35.31
+   ]
+  },
+  {
+   "id": "Q34589",
+   "label": {
+    "en": "Euphrates",
+    "de": "Euphrat"
+   },
+   "macro": "middle-east",
+   "kind": "river",
+   "coord": [
+    40.257,
+    39.728
+   ]
+  },
+  {
+   "id": "Q34647",
+   "label": {
+    "en": "Johannesburg",
+    "de": "Johannesburg"
+   },
+   "macro": "east-southern-africa",
+   "kind": "city",
+   "coord": [
+    28.042,
+    -26.204
+   ]
+  },
+  {
    "id": "Q34675",
    "label": {
     "en": "Persian Gulf",
@@ -1081,6 +2736,54 @@
     87.614,
     43.825
    ]
+  },
+  {
+   "id": "Q3491757",
+   "label": {
+    "en": "Soummam River",
+    "de": "Soummam"
+   },
+   "macro": "north-africa",
+   "kind": "valley",
+   "coord": [
+    5.076,
+    36.729
+   ]
+  },
+  {
+   "id": "Q3511003",
+   "label": {
+    "en": "Senegambia",
+    "de": "Senegambia"
+   },
+   "macro": "west-central-africa",
+   "kind": "region",
+   "coord": [
+    -15.05,
+    13.817
+   ]
+  },
+  {
+   "id": "Q35178",
+   "label": {
+    "en": "Kuwait City",
+    "de": "Kuweit-Stadt"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    47.98,
+    29.375
+   ]
+  },
+  {
+   "id": "Q3522980",
+   "label": {
+    "en": "Hindi Belt",
+    "de": "Hindi Belt"
+   },
+   "macro": "south-asia",
+   "kind": "region"
   },
   {
    "id": "Q35484",
@@ -1200,6 +2903,32 @@
    ]
   },
   {
+   "id": "Q3630",
+   "label": {
+    "en": "Jakarta",
+    "de": "Jakarta"
+   },
+   "macro": "east-asia",
+   "kind": "city",
+   "coord": [
+    106.827,
+    -6.175
+   ]
+  },
+  {
+   "id": "Q3640",
+   "label": {
+    "en": "Ankara",
+    "de": "Ankara"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    32.839,
+    39.936
+   ]
+  },
+  {
    "id": "Q3674",
    "label": {
     "en": "Niamey",
@@ -1226,6 +2955,19 @@
    ]
   },
   {
+   "id": "Q3708094",
+   "label": {
+    "en": "Seljuk Empire",
+    "de": "Reich der Großseldschuken"
+   },
+   "macro": "transregional",
+   "kind": "historical",
+   "coord": [
+    58.8,
+    36.2
+   ]
+  },
+  {
    "id": "Q3718",
    "label": {
     "en": "Dakar",
@@ -1236,6 +2978,19 @@
    "coord": [
     -17.432,
     14.673
+   ]
+  },
+  {
+   "id": "Q373808",
+   "label": {
+    "en": "Khujand",
+    "de": "Chudschand"
+   },
+   "macro": "central-asia-caucasus",
+   "kind": "city",
+   "coord": [
+    69.632,
+    40.279
    ]
   },
   {
@@ -1275,6 +3030,32 @@
    "coord": [
     36.292,
     33.513
+   ]
+  },
+  {
+   "id": "Q37736",
+   "label": {
+    "en": "North Caucasus",
+    "de": "Nordkaukasus"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "region",
+   "coord": [
+    43.832,
+    43.405
+   ]
+  },
+  {
+   "id": "Q3787",
+   "label": {
+    "en": "Abuja",
+    "de": "Abuja"
+   },
+   "macro": "west-central-africa",
+   "kind": "city",
+   "coord": [
+    7.491,
+    9.056
    ]
   },
   {
@@ -1343,6 +3124,32 @@
    ]
   },
   {
+   "id": "Q3838",
+   "label": {
+    "en": "Kinshasa",
+    "de": "Kinshasa"
+   },
+   "macro": "west-central-africa",
+   "kind": "city",
+   "coord": [
+    15.312,
+    -4.322
+   ]
+  },
+  {
+   "id": "Q38545",
+   "label": {
+    "en": "Adana",
+    "de": "Adana"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    35.325,
+    36.986
+   ]
+  },
+  {
    "id": "Q3861",
    "label": {
     "en": "Doha",
@@ -1353,6 +3160,45 @@
    "coord": [
     51.529,
     25.286
+   ]
+  },
+  {
+   "id": "Q3889",
+   "label": {
+    "en": "Maputo",
+    "de": "Maputo"
+   },
+   "macro": "east-southern-africa",
+   "kind": "city",
+   "coord": [
+    32.573,
+    -25.969
+   ]
+  },
+  {
+   "id": "Q39",
+   "label": {
+    "en": "Switzerland",
+    "de": "Schweiz"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "country",
+   "coord": [
+    8.232,
+    46.799
+   ]
+  },
+  {
+   "id": "Q39760",
+   "label": {
+    "en": "Gaza Strip",
+    "de": "Gazastreifen"
+   },
+   "macro": "middle-east",
+   "kind": "region",
+   "coord": [
+    34.4,
+    31.45
    ]
   },
   {
@@ -1369,6 +3215,28 @@
    ]
   },
   {
+   "id": "Q398417",
+   "label": {
+    "en": "Ashanti Region",
+    "de": "Ashanti Region"
+   },
+   "macro": "west-central-africa",
+   "kind": "region",
+   "coord": [
+    -1.5,
+    6.75
+   ]
+  },
+  {
+   "id": "Q398805",
+   "label": {
+    "en": "China Seas",
+    "de": "Chinesisches Meer"
+   },
+   "macro": "east-asia",
+   "kind": "sea"
+  },
+  {
    "id": "Q399",
    "label": {
     "en": "Armenia",
@@ -1379,6 +3247,32 @@
    "coord": [
     44.95,
     40.383
+   ]
+  },
+  {
+   "id": "Q40",
+   "label": {
+    "en": "Austria",
+    "de": "Österreich"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "country",
+   "coord": [
+    14.0,
+    48.0
+   ]
+  },
+  {
+   "id": "Q40269",
+   "label": {
+    "en": "Porto Alegre",
+    "de": "Porto Alegre"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    -51.23,
+    -30.033
    ]
   },
   {
@@ -1408,6 +3302,19 @@
    ]
   },
   {
+   "id": "Q408",
+   "label": {
+    "en": "Australia",
+    "de": "Australien"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "country",
+   "coord": [
+    133.0,
+    -25.0
+   ]
+  },
+  {
    "id": "Q41",
    "label": {
     "en": "Greece",
@@ -1434,6 +3341,19 @@
    ]
   },
   {
+   "id": "Q414",
+   "label": {
+    "en": "Argentina",
+    "de": "Argentinien"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "country",
+   "coord": [
+    -64.0,
+    -34.0
+   ]
+  },
+  {
    "id": "Q41470",
    "label": {
     "en": "Kurdistan",
@@ -1444,6 +3364,58 @@
    "coord": [
     43.55,
     37.559
+   ]
+  },
+  {
+   "id": "Q41621",
+   "label": {
+    "en": "Haifa",
+    "de": "Haifa"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    34.999,
+    32.819
+   ]
+  },
+  {
+   "id": "Q41741",
+   "label": {
+    "en": "Thrace",
+    "de": "Thrakien"
+   },
+   "macro": "transregional",
+   "kind": "region",
+   "coord": [
+    26.0,
+    42.0
+   ]
+  },
+  {
+   "id": "Q42310572",
+   "label": {
+    "en": "Neom",
+    "de": "Neom"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    35.203,
+    28.006
+   ]
+  },
+  {
+   "id": "Q424",
+   "label": {
+    "en": "Cambodia",
+    "de": "Kambodscha"
+   },
+   "macro": "east-asia",
+   "kind": "country",
+   "coord": [
+    105.0,
+    12.5
    ]
   },
   {
@@ -1512,6 +3484,15 @@
    ]
   },
   {
+   "id": "Q458",
+   "label": {
+    "en": "European Union",
+    "de": "Europäische Union"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "world"
+  },
+  {
    "id": "Q46",
    "label": {
     "en": "Europe",
@@ -1534,6 +3515,15 @@
    ]
   },
   {
+   "id": "Q4728314",
+   "label": {
+    "en": "Dersim",
+    "de": "Dersim"
+   },
+   "macro": "middle-east",
+   "kind": "region"
+  },
+  {
    "id": "Q48",
    "label": {
     "en": "Asia",
@@ -1541,6 +3531,19 @@
    },
    "macro": "transregional",
    "kind": "continent"
+  },
+  {
+   "id": "Q48338",
+   "label": {
+    "en": "Kayseri",
+    "de": "Kayseri"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    35.487,
+    38.722
+   ]
   },
   {
    "id": "Q486324",
@@ -1553,6 +3556,54 @@
    "coord": [
     71.758,
     40.901
+   ]
+  },
+  {
+   "id": "Q487640",
+   "label": {
+    "en": "Jalal-Abad Region",
+    "de": "Oblus Dschalal-Abad"
+   },
+   "macro": "central-asia-caucasus",
+   "kind": "province",
+   "coord": [
+    72.25,
+    41.25
+   ]
+  },
+  {
+   "id": "Q48814712",
+   "label": {
+    "en": "Azaadville",
+    "de": "Azaadville"
+   },
+   "macro": "east-southern-africa",
+   "kind": "neighbourhood",
+   "coord": [
+    27.749,
+    -26.172
+   ]
+  },
+  {
+   "id": "Q49",
+   "label": {
+    "en": "North America",
+    "de": "Nordamerika"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "world"
+  },
+  {
+   "id": "Q490",
+   "label": {
+    "en": "Milan",
+    "de": "Mailand"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    9.19,
+    45.467
    ]
   },
   {
@@ -1569,6 +3620,193 @@
    ]
   },
   {
+   "id": "Q501768",
+   "label": {
+    "en": "Barbary Coast",
+    "de": "Barbareskenstaat"
+   },
+   "macro": "north-africa",
+   "kind": "historical"
+  },
+  {
+   "id": "Q501817",
+   "label": {
+    "en": "Galata",
+    "de": "Galata"
+   },
+   "macro": "middle-east",
+   "kind": "neighbourhood",
+   "coord": [
+    28.974,
+    41.023
+   ]
+  },
+  {
+   "id": "Q503282",
+   "label": {
+    "en": "Mashriq",
+    "de": "Maschrek"
+   },
+   "macro": "middle-east",
+   "kind": "world"
+  },
+  {
+   "id": "Q506811",
+   "label": {
+    "en": "Odienné",
+    "de": "Odienné"
+   },
+   "macro": "west-central-africa",
+   "kind": "city",
+   "coord": [
+    -7.567,
+    9.5
+   ]
+  },
+  {
+   "id": "Q508014",
+   "label": {
+    "en": "French Sudan",
+    "de": "Französisch-Sudan"
+   },
+   "macro": "west-central-africa",
+   "kind": "historical",
+   "coord": [
+    -8.0,
+    12.65
+   ]
+  },
+  {
+   "id": "Q5089",
+   "label": {
+    "en": "Ganges",
+    "de": "Ganges"
+   },
+   "macro": "south-asia",
+   "kind": "river",
+   "coord": [
+    78.597,
+    30.145
+   ]
+  },
+  {
+   "id": "Q5095",
+   "label": {
+    "en": "Papua",
+    "de": "Provinz Papua"
+   },
+   "macro": "east-asia",
+   "kind": "province",
+   "coord": [
+    140.715,
+    -2.537
+   ]
+  },
+  {
+   "id": "Q5096",
+   "label": {
+    "en": "West Papua",
+    "de": "Papua Barat"
+   },
+   "macro": "east-asia",
+   "kind": "region",
+   "coord": [
+    133.671,
+    -1.801
+   ]
+  },
+  {
+   "id": "Q516769",
+   "label": {
+    "en": "Faya-Largeau",
+    "de": "Faya-Largeau"
+   },
+   "macro": "west-central-africa",
+   "kind": "city",
+   "coord": [
+    19.103,
+    17.93
+   ]
+  },
+  {
+   "id": "Q526757",
+   "label": {
+    "en": "Azamgarh",
+    "de": "Azamgarh"
+   },
+   "macro": "south-asia",
+   "kind": "city",
+   "coord": [
+    83.19,
+    26.06
+   ]
+  },
+  {
+   "id": "Q542146",
+   "label": {
+    "en": "South India",
+    "de": "Südindien"
+   },
+   "macro": "south-asia",
+   "kind": "region",
+   "coord": [
+    77.0,
+    13.0
+   ]
+  },
+  {
+   "id": "Q5451",
+   "label": {
+    "en": "Himalayas",
+    "de": "Himalaya"
+   },
+   "macro": "transregional",
+   "kind": "mountain range",
+   "coord": [
+    84.0,
+    29.0
+   ]
+  },
+  {
+   "id": "Q5465",
+   "label": {
+    "en": "Cape Town",
+    "de": "Kapstadt"
+   },
+   "macro": "east-southern-africa",
+   "kind": "city",
+   "coord": [
+    18.424,
+    -33.925
+   ]
+  },
+  {
+   "id": "Q5469",
+   "label": {
+    "en": "Karakoram",
+    "de": "Karakorum"
+   },
+   "macro": "transregional",
+   "kind": "mountain range",
+   "coord": [
+    76.509,
+    35.883
+   ]
+  },
+  {
+   "id": "Q5474",
+   "label": {
+    "en": "Tianshan Mountains",
+    "de": "Tienshan"
+   },
+   "macro": "transregional",
+   "kind": "mountain range",
+   "coord": [
+    80.125,
+    42.038
+   ]
+  },
+  {
    "id": "Q55",
    "label": {
     "en": "Netherlands",
@@ -1579,6 +3817,19 @@
    "coord": [
     5.55,
     52.317
+   ]
+  },
+  {
+   "id": "Q5595",
+   "label": {
+    "en": "Curonian Spit",
+    "de": "Kurische Nehrung"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "peninsula",
+   "coord": [
+    20.971,
+    55.274
    ]
   },
   {
@@ -1595,6 +3846,32 @@
    ]
   },
   {
+   "id": "Q576653",
+   "label": {
+    "en": "Nikolassee",
+    "de": "Nikolassee"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "neighbourhood",
+   "coord": [
+    13.2,
+    52.433
+   ]
+  },
+  {
+   "id": "Q5776",
+   "label": {
+    "en": "Bethlehem",
+    "de": "Bethlehem"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    35.206,
+    31.704
+   ]
+  },
+  {
    "id": "Q5806",
    "label": {
     "en": "Mecca",
@@ -1605,6 +3882,19 @@
    "coord": [
     39.826,
     21.422
+   ]
+  },
+  {
+   "id": "Q581452",
+   "label": {
+    "en": "Togo Mountains",
+    "de": "Togo-Atakora-Gebirge"
+   },
+   "macro": "west-central-africa",
+   "kind": "mountain range",
+   "coord": [
+    0.667,
+    7.417
    ]
   },
   {
@@ -1621,6 +3911,58 @@
    ]
   },
   {
+   "id": "Q58705",
+   "label": {
+    "en": "Arabian Sea",
+    "de": "Arabisches Meer"
+   },
+   "macro": "south-asia",
+   "kind": "sea",
+   "coord": [
+    64.0,
+    16.0
+   ]
+  },
+  {
+   "id": "Q60",
+   "label": {
+    "en": "New York City",
+    "de": "New York City"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    -74.006,
+    40.713
+   ]
+  },
+  {
+   "id": "Q600524",
+   "label": {
+    "en": "Sokoto Caliphate",
+    "de": "Kalifat von Sokoto"
+   },
+   "macro": "west-central-africa",
+   "kind": "historical",
+   "coord": [
+    5.248,
+    13.067
+   ]
+  },
+  {
+   "id": "Q605142",
+   "label": {
+    "en": "Dezful",
+    "de": "Dezful"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    48.406,
+    32.381
+   ]
+  },
+  {
    "id": "Q612",
    "label": {
     "en": "Dubai",
@@ -1631,6 +3973,32 @@
    "coord": [
     55.309,
     25.27
+   ]
+  },
+  {
+   "id": "Q618573",
+   "label": {
+    "en": "Lamu Archipelago",
+    "de": "Lamu-Archipel"
+   },
+   "macro": "east-southern-africa",
+   "kind": "region",
+   "coord": [
+    41.004,
+    -2.193
+   ]
+  },
+  {
+   "id": "Q61944",
+   "label": {
+    "en": "Semey",
+    "de": "Semei"
+   },
+   "macro": "central-asia-caucasus",
+   "kind": "city",
+   "coord": [
+    80.228,
+    50.411
    ]
   },
   {
@@ -1647,6 +4015,32 @@
    ]
   },
   {
+   "id": "Q626",
+   "label": {
+    "en": "Volga",
+    "de": "Wolga"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "river",
+   "coord": [
+    47.898,
+    45.695
+   ]
+  },
+  {
+   "id": "Q63158027",
+   "label": {
+    "en": "Qajar Iran",
+    "de": "Kadscharen Reich"
+   },
+   "macro": "middle-east",
+   "kind": "historical",
+   "coord": [
+    51.417,
+    35.7
+   ]
+  },
+  {
    "id": "Q64",
    "label": {
     "en": "Berlin",
@@ -1660,6 +4054,19 @@
    ]
   },
   {
+   "id": "Q641",
+   "label": {
+    "en": "Venice",
+    "de": "Venedig"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    12.332,
+    45.44
+   ]
+  },
+  {
    "id": "Q649",
    "label": {
     "en": "Moscow",
@@ -1670,6 +4077,32 @@
    "coord": [
     37.617,
     55.751
+   ]
+  },
+  {
+   "id": "Q649632",
+   "label": {
+    "en": "Dharavi",
+    "de": "Dharavi"
+   },
+   "macro": "south-asia",
+   "kind": "neighbourhood",
+   "coord": [
+    72.856,
+    19.044
+   ]
+  },
+  {
+   "id": "Q656",
+   "label": {
+    "en": "Saint Petersburg",
+    "de": "Sankt Petersburg"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    30.317,
+    59.95
    ]
   },
   {
@@ -1712,6 +4145,45 @@
    ]
   },
   {
+   "id": "Q664",
+   "label": {
+    "en": "New Zealand",
+    "de": "Neuseeland"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "country",
+   "coord": [
+    174.0,
+    -41.2
+   ]
+  },
+  {
+   "id": "Q6667298",
+   "label": {
+    "en": "Logar Province",
+    "de": "Lugar"
+   },
+   "macro": "south-asia",
+   "kind": "province",
+   "coord": [
+    69.2,
+    34.0
+   ]
+  },
+  {
+   "id": "Q66711956",
+   "label": {
+    "en": "Iraqi Kurdistan",
+    "de": "Irakisch Kurdistan"
+   },
+   "macro": "middle-east",
+   "kind": "region",
+   "coord": [
+    44.0,
+    36.0
+   ]
+  },
+  {
    "id": "Q668",
    "label": {
     "en": "India",
@@ -1725,6 +4197,89 @@
    ]
   },
   {
+   "id": "Q673073",
+   "label": {
+    "en": "Eyüpsultan",
+    "de": "Eyüp"
+   },
+   "macro": "middle-east",
+   "kind": "neighbourhood",
+   "coord": [
+    28.938,
+    41.08
+   ]
+  },
+  {
+   "id": "Q69808",
+   "label": {
+    "en": "Vichy France",
+    "de": "Vichy-Regime"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "historical",
+   "coord": [
+    3.4,
+    46.167
+   ]
+  },
+  {
+   "id": "Q702521",
+   "label": {
+    "en": "Marzahn",
+    "de": "Marzahn"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "neighbourhood",
+   "coord": [
+    13.562,
+    52.546
+   ]
+  },
+  {
+   "id": "Q7057805",
+   "label": {
+    "en": "Northeast Africa",
+    "de": "Nordostafrika"
+   },
+   "macro": "transregional",
+   "kind": "world"
+  },
+  {
+   "id": "Q7058792",
+   "label": {
+    "en": "Northern Nigeria",
+    "de": "Northern Nigeria"
+   },
+   "macro": "west-central-africa",
+   "kind": "region"
+  },
+  {
+   "id": "Q70970",
+   "label": {
+    "en": "Çoruh",
+    "de": "Çoruh"
+   },
+   "macro": "transregional",
+   "kind": "valley",
+   "coord": [
+    41.0,
+    40.307
+   ]
+  },
+  {
+   "id": "Q713750",
+   "label": {
+    "en": "West Germany",
+    "de": "Bundesrepublik Deutschland bis 1990"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "historical",
+   "coord": [
+    7.1,
+    50.734
+   ]
+  },
+  {
    "id": "Q7204",
    "label": {
     "en": "Middle East",
@@ -1735,6 +4290,119 @@
    "coord": [
     45.0,
     28.0
+   ]
+  },
+  {
+   "id": "Q721468",
+   "label": {
+    "en": "Mes Aynak",
+    "de": "Mes Aynak"
+   },
+   "macro": "south-asia",
+   "kind": "other",
+   "coord": [
+    69.367,
+    34.4
+   ]
+  },
+  {
+   "id": "Q7318",
+   "label": {
+    "en": "Nazi Germany",
+    "de": "NS-Staat"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "historical",
+   "coord": [
+    13.38,
+    52.511
+   ]
+  },
+  {
+   "id": "Q732594",
+   "label": {
+    "en": "Tharangambadi",
+    "de": "Tharangambadi"
+   },
+   "macro": "south-asia",
+   "kind": "city",
+   "coord": [
+    79.853,
+    11.033
+   ]
+  },
+  {
+   "id": "Q739",
+   "label": {
+    "en": "Colombia",
+    "de": "Kolumbien"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "country",
+   "coord": [
+    -73.25,
+    4.0
+   ]
+  },
+  {
+   "id": "Q7461578",
+   "label": {
+    "en": "Shaheen Bagh",
+    "de": "Shaheen Bagh"
+   },
+   "macro": "south-asia",
+   "kind": "neighbourhood",
+   "coord": [
+    77.297,
+    28.551
+   ]
+  },
+  {
+   "id": "Q746558",
+   "label": {
+    "en": "Emirate of Bukhara",
+    "de": "Emirat Buchara"
+   },
+   "macro": "central-asia-caucasus",
+   "kind": "historical",
+   "coord": [
+    64.429,
+    39.775
+   ]
+  },
+  {
+   "id": "Q750190",
+   "label": {
+    "en": "Sulaiman-Too",
+    "de": "Suleiman-Too"
+   },
+   "macro": "central-asia-caucasus",
+   "kind": "mountain",
+   "coord": [
+    72.783,
+    40.529
+   ]
+  },
+  {
+   "id": "Q7569281",
+   "label": {
+    "en": "Southeast Africa",
+    "de": "Südostafrika"
+   },
+   "macro": "east-southern-africa",
+   "kind": "world"
+  },
+  {
+   "id": "Q7679597",
+   "label": {
+    "en": "Taljai Hills",
+    "de": "Taljai Hills"
+   },
+   "macro": "south-asia",
+   "kind": "neighbourhood",
+   "coord": [
+    73.84,
+    18.478
    ]
   },
   {
@@ -1758,6 +4426,41 @@
    },
    "macro": "transregional",
    "kind": "world"
+  },
+  {
+   "id": "Q783117",
+   "label": {
+    "en": "Lamu Island",
+    "de": "Lamu"
+   },
+   "macro": "east-southern-africa",
+   "kind": "island",
+   "coord": [
+    40.867,
+    -2.283
+   ]
+  },
+  {
+   "id": "Q7834492",
+   "label": {
+    "en": "Transjordan",
+    "de": "Transjordan"
+   },
+   "macro": "middle-east",
+   "kind": "region"
+  },
+  {
+   "id": "Q7835",
+   "label": {
+    "en": "Crimea",
+    "de": "Krim"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "peninsula",
+   "coord": [
+    34.0,
+    45.0
+   ]
   },
   {
    "id": "Q79",
@@ -1851,6 +4554,19 @@
    ]
   },
   {
+   "id": "Q805804",
+   "label": {
+    "en": "Baltistan",
+    "de": "Baltistan"
+   },
+   "macro": "south-asia",
+   "kind": "region",
+   "coord": [
+    75.617,
+    35.3
+   ]
+  },
+  {
    "id": "Q80985",
    "label": {
     "en": "Fez",
@@ -1929,6 +4645,41 @@
    ]
   },
   {
+   "id": "Q828",
+   "label": {
+    "en": "Americas",
+    "de": "Amerika"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "world"
+  },
+  {
+   "id": "Q82859",
+   "label": {
+    "en": "Socotra",
+    "de": "Sokotra"
+   },
+   "macro": "middle-east",
+   "kind": "island",
+   "coord": [
+    53.92,
+    12.51
+   ]
+  },
+  {
+   "id": "Q83210",
+   "label": {
+    "en": "Golan Heights",
+    "de": "Golanhöhen"
+   },
+   "macro": "middle-east",
+   "kind": "region",
+   "coord": [
+    35.75,
+    33.0
+   ]
+  },
+  {
    "id": "Q833",
    "label": {
     "en": "Malaysia",
@@ -1952,6 +4703,32 @@
    "coord": [
     84.0,
     28.0
+   ]
+  },
+  {
+   "id": "Q83891",
+   "label": {
+    "en": "Sasanian Empire",
+    "de": "Sassanidenreich"
+   },
+   "macro": "middle-east",
+   "kind": "historical",
+   "coord": [
+    53.0,
+    33.0
+   ]
+  },
+  {
+   "id": "Q84",
+   "label": {
+    "en": "London",
+    "de": "London"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    -0.128,
+    51.507
    ]
   },
   {
@@ -1991,6 +4768,32 @@
    "coord": [
     51.213,
     25.27
+   ]
+  },
+  {
+   "id": "Q848574",
+   "label": {
+    "en": "Bougouni",
+    "de": "Bougouni"
+   },
+   "macro": "west-central-africa",
+   "kind": "city",
+   "coord": [
+    -7.483,
+    11.418
+   ]
+  },
+  {
+   "id": "Q8493",
+   "label": {
+    "en": "Amu Darya",
+    "de": "Amudarja"
+   },
+   "macro": "transregional",
+   "kind": "river",
+   "coord": [
+    59.681,
+    44.108
    ]
   },
   {
@@ -2085,6 +4888,19 @@
    ]
   },
   {
+   "id": "Q8680",
+   "label": {
+    "en": "British Empire",
+    "de": "Britisches Weltreich"
+   },
+   "macro": "transregional",
+   "kind": "historical",
+   "coord": [
+    -0.128,
+    51.507
+   ]
+  },
+  {
    "id": "Q87",
    "label": {
     "en": "Alexandria",
@@ -2124,6 +4940,32 @@
    ]
   },
   {
+   "id": "Q891827",
+   "label": {
+    "en": "Bombay Presidency",
+    "de": "Bombay"
+   },
+   "macro": "south-asia",
+   "kind": "province",
+   "coord": [
+    72.833,
+    18.967
+   ]
+  },
+  {
+   "id": "Q90",
+   "label": {
+    "en": "Paris",
+    "de": "Paris"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "city",
+   "coord": [
+    2.352,
+    48.857
+   ]
+  },
+  {
    "id": "Q900",
    "label": {
     "en": "Kazan",
@@ -2147,6 +4989,19 @@
    "coord": [
     89.867,
     24.017
+   ]
+  },
+  {
+   "id": "Q910493",
+   "label": {
+    "en": "Dubai Sports City",
+    "de": "Dubai Sports City"
+   },
+   "macro": "middle-east",
+   "kind": "neighbourhood",
+   "coord": [
+    55.219,
+    25.047
    ]
   },
   {
@@ -2202,6 +5057,32 @@
    ]
   },
   {
+   "id": "Q93338",
+   "label": {
+    "en": "Gaziantep",
+    "de": "Gaziantep"
+   },
+   "macro": "middle-east",
+   "kind": "city",
+   "coord": [
+    37.379,
+    37.063
+   ]
+  },
+  {
+   "id": "Q9337",
+   "label": {
+    "en": "Flemish Region",
+    "de": "Flämische Region"
+   },
+   "macro": "europe-elsewhere",
+   "kind": "region",
+   "coord": [
+    4.5,
+    51.0
+   ]
+  },
+  {
    "id": "Q9361",
    "label": {
     "en": "Bishkek",
@@ -2241,6 +5122,58 @@
    ]
   },
   {
+   "id": "Q950873",
+   "label": {
+    "en": "Kurd-Dagh",
+    "de": "Kurd Dagh"
+   },
+   "macro": "middle-east",
+   "kind": "region",
+   "coord": [
+    36.767,
+    36.667
+   ]
+  },
+  {
+   "id": "Q953508",
+   "label": {
+    "en": "Eastern Province",
+    "de": "Provinz asch-Scharqiyya"
+   },
+   "macro": "middle-east",
+   "kind": "province",
+   "coord": [
+    51.0,
+    22.5
+   ]
+  },
+  {
+   "id": "Q956357",
+   "label": {
+    "en": "Kingdom of Hejaz",
+    "de": "Königreich Hedschas"
+   },
+   "macro": "middle-east",
+   "kind": "historical",
+   "coord": [
+    39.826,
+    21.422
+   ]
+  },
+  {
+   "id": "Q958",
+   "label": {
+    "en": "South Sudan",
+    "de": "Südsudan"
+   },
+   "macro": "east-southern-africa",
+   "kind": "country",
+   "coord": [
+    30.0,
+    7.0
+   ]
+  },
+  {
    "id": "Q962",
    "label": {
     "en": "Benin",
@@ -2267,6 +5200,32 @@
    ]
   },
   {
+   "id": "Q967",
+   "label": {
+    "en": "Burundi",
+    "de": "Burundi"
+   },
+   "macro": "east-southern-africa",
+   "kind": "country",
+   "coord": [
+    29.817,
+    -3.667
+   ]
+  },
+  {
+   "id": "Q97",
+   "label": {
+    "en": "Atlantic Ocean",
+    "de": "Atlantischer Ozean"
+   },
+   "macro": "transregional",
+   "kind": "sea",
+   "coord": [
+    -30.0,
+    0.0
+   ]
+  },
+  {
    "id": "Q970",
    "label": {
     "en": "Comoros",
@@ -2280,6 +5239,15 @@
    ]
   },
   {
+   "id": "Q97365082",
+   "label": {
+    "en": "Global North",
+    "de": "globaler Norden"
+   },
+   "macro": "transregional",
+   "kind": "world"
+  },
+  {
    "id": "Q974",
    "label": {
     "en": "Democratic Republic of the Congo",
@@ -2290,6 +5258,19 @@
    "coord": [
     23.656,
     -2.88
+   ]
+  },
+  {
+   "id": "Q976955",
+   "label": {
+    "en": "Skardu",
+    "de": "Skardu"
+   },
+   "macro": "south-asia",
+   "kind": "city",
+   "coord": [
+    75.617,
+    35.3
    ]
   },
   {
@@ -2306,6 +5287,41 @@
    ]
   },
   {
+   "id": "Q979315",
+   "label": {
+    "en": "Euphrates Lake",
+    "de": "Euphratsee"
+   },
+   "macro": "middle-east",
+   "kind": "lake",
+   "coord": [
+    38.171,
+    36.0
+   ]
+  },
+  {
+   "id": "Q98",
+   "label": {
+    "en": "Pacific Ocean",
+    "de": "Pazifischer Ozean"
+   },
+   "macro": "transregional",
+   "kind": "sea",
+   "coord": [
+    -160.0,
+    0.0
+   ]
+  },
+  {
+   "id": "Q984212",
+   "label": {
+    "en": "Middle East and North Africa",
+    "de": "MENA-Region"
+   },
+   "macro": "transregional",
+   "kind": "world"
+  },
+  {
    "id": "Q986",
    "label": {
     "en": "Eritrea",
@@ -2316,6 +5332,19 @@
    "coord": [
     38.25,
     15.483
+   ]
+  },
+  {
+   "id": "Q990527",
+   "label": {
+    "en": "Diffa",
+    "de": "Diffa"
+   },
+   "macro": "west-central-africa",
+   "kind": "city",
+   "coord": [
+    12.611,
+    13.315
    ]
   }
  ],

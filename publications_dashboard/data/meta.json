@@ -1,7 +1,7 @@
 {
  "source": "https://www.zmo.de/en/publications/publication-search",
  "schemaVersion": 2,
- "datasetId": "7721e3b8afdfdaf0",
+ "datasetId": "00290efac76b5478",
  "documentTypes": [
   "Monographs",
   "Book reviews",
@@ -159,19 +159,24 @@
  ],
  "coverage": {
   "languages": {
-   "en": 1159,
-   "de": 343,
-   "und": 339,
-   "fr": 79,
+   "en": 1399,
+   "de": 392,
+   "fr": 90,
+   "und": 27,
    "ar": 22,
    "tr": 15,
-   "it": 8,
-   "es": 6,
+   "it": 9,
+   "es": 7,
+   "ru": 5,
+   "lt": 2,
    "ms": 2,
-   "ru": 2,
    "sw": 2,
+   "zh": 2,
+   "ka": 1,
+   "no": 1,
    "pl": 1,
-   "zh": 1
+   "ta": 1,
+   "uz": 1
   },
   "zmoAuthors": 175,
   "withZmoAuthor": 1721,
@@ -182,7 +187,8 @@
    "unknown": 1143
   },
   "themed": 1979,
-  "withPlace": 1367,
+  "withPlace": 1480,
+  "languageDecided": 312,
   "withHeadings": 133
  }
 }
