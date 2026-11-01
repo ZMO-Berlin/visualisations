@@ -8,7 +8,7 @@ beautifulsoup4==4.15.0
 # generate_word_data.py — tokenise, lemmatise, count.
 # NLTK >= 3.9 requires the `punkt_tab` tokenizer tables rather than the older
 # pickled `punkt` model; the generator downloads both.
-nltk==3.10.3
+nltk==3.10.4
 
 # generate_publication_data.py (languages.py) — the language a publication's
 # title is written in. Wheels for Linux x86-64 and Windows on x64 and ARM.
