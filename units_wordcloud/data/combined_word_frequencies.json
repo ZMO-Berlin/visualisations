@@ -1,19 +1,27 @@
 [
   {
     "text": "social",
-    "size": 62
+    "size": 63
   },
   {
     "text": "history",
-    "size": 57
+    "size": 60
+  },
+  {
+    "text": "und",
+    "size": 48
   },
   {
     "text": "practice",
-    "size": 45
+    "size": 46
   },
   {
     "text": "life",
-    "size": 42
+    "size": 43
+  },
+  {
+    "text": "die",
+    "size": 43
   },
   {
     "text": "local",
@@ -21,7 +29,11 @@
   },
   {
     "text": "state",
-    "size": 38
+    "size": 41
+  },
+  {
+    "text": "political",
+    "size": 36
   },
   {
     "text": "context",
@@ -33,7 +45,7 @@
   },
   {
     "text": "change",
-    "size": 34
+    "size": 35
   },
   {
     "text": "south",
@@ -56,51 +68,59 @@
     "size": 33
   },
   {
-    "text": "political",
-    "size": 32
+    "text": "region",
+    "size": 31
   },
   {
     "text": "work",
     "size": 31
   },
   {
+    "text": "process",
+    "size": 29
+  },
+  {
     "text": "global",
     "size": 29
   },
   {
-    "text": "role",
+    "text": "asia",
     "size": 29
   },
   {
-    "text": "process",
+    "text": "role",
     "size": 28
   },
   {
-    "text": "asia",
-    "size": 27
-  },
-  {
     "text": "knowledge",
-    "size": 27
+    "size": 28
   },
   {
     "text": "muslim",
-    "size": 27
+    "size": 28
+  },
+  {
+    "text": "der",
+    "size": 28
+  },
+  {
+    "text": "war",
+    "size": 26
+  },
+  {
+    "text": "woman",
+    "size": 26
+  },
+  {
+    "text": "actor",
+    "size": 25
   },
   {
     "text": "night",
     "size": 25
   },
   {
-    "text": "war",
-    "size": 24
-  },
-  {
-    "text": "region",
-    "size": 24
-  },
-  {
-    "text": "woman",
+    "text": "justice",
     "size": 24
   },
   {
@@ -112,7 +132,7 @@
     "size": 24
   },
   {
-    "text": "actor",
+    "text": "shape",
     "size": 23
   },
   {
@@ -120,16 +140,12 @@
     "size": 23
   },
   {
-    "text": "justice",
-    "size": 22
-  },
-  {
     "text": "network",
     "size": 22
   },
   {
-    "text": "shape",
-    "size": 21
+    "text": "islamic",
+    "size": 22
   },
   {
     "text": "central",
@@ -144,7 +160,15 @@
     "size": 21
   },
   {
+    "text": "material",
+    "size": 21
+  },
+  {
     "text": "world",
+    "size": 21
+  },
+  {
+    "text": "von",
     "size": 21
   },
   {
@@ -164,19 +188,19 @@
     "size": 21
   },
   {
-    "text": "islamic",
-    "size": 21
+    "text": "relation",
+    "size": 20
+  },
+  {
+    "text": "experience",
+    "size": 20
   },
   {
     "text": "understand",
     "size": 20
   },
   {
-    "text": "relation",
-    "size": 19
-  },
-  {
-    "text": "experience",
+    "text": "past",
     "size": 19
   },
   {
@@ -184,23 +208,19 @@
     "size": 19
   },
   {
+    "text": "future",
+    "size": 19
+  },
+  {
     "text": "form",
     "size": 19
-  },
-  {
-    "text": "material",
-    "size": 19
-  },
-  {
-    "text": "human",
-    "size": 18
   },
   {
     "text": "century",
     "size": 18
   },
   {
-    "text": "past",
+    "text": "community",
     "size": 18
   },
   {
@@ -216,11 +236,19 @@
     "size": 18
   },
   {
+    "text": "ethnographic",
+    "size": 18
+  },
+  {
     "text": "archive",
     "size": 18
   },
   {
-    "text": "community",
+    "text": "human",
+    "size": 17
+  },
+  {
+    "text": "shift",
     "size": 17
   },
   {
@@ -228,11 +256,11 @@
     "size": 17
   },
   {
-    "text": "future",
+    "text": "period",
     "size": 17
   },
   {
-    "text": "period",
+    "text": "dynamic",
     "size": 17
   },
   {
@@ -248,11 +276,11 @@
     "size": 16
   },
   {
-    "text": "challenge",
+    "text": "build",
     "size": 16
   },
   {
-    "text": "build",
+    "text": "urban",
     "size": 16
   },
   {
@@ -260,11 +288,15 @@
     "size": 16
   },
   {
-    "text": "ethnographic",
+    "text": "market",
     "size": 16
   },
   {
-    "text": "market",
+    "text": "trace",
+    "size": 16
+  },
+  {
+    "text": "narrative",
     "size": 16
   },
   {
@@ -284,6 +316,10 @@
     "size": 16
   },
   {
+    "text": "landscape",
+    "size": 15
+  },
+  {
     "text": "transformation",
     "size": 15
   },
@@ -292,11 +328,15 @@
     "size": 15
   },
   {
-    "text": "education",
+    "text": "challenge",
     "size": 15
   },
   {
-    "text": "urban",
+    "text": "individual",
+    "size": 15
+  },
+  {
+    "text": "education",
     "size": 15
   },
   {
@@ -308,7 +348,7 @@
     "size": 15
   },
   {
-    "text": "dynamic",
+    "text": "memory",
     "size": 15
   },
   {
@@ -332,11 +372,15 @@
     "size": 14
   },
   {
+    "text": "violence",
+    "size": 14
+  },
+  {
     "text": "impact",
     "size": 14
   },
   {
-    "text": "shift",
+    "text": "site",
     "size": 14
   },
   {
@@ -344,15 +388,7 @@
     "size": 14
   },
   {
-    "text": "memory",
-    "size": 14
-  },
-  {
-    "text": "place",
-    "size": 14
-  },
-  {
-    "text": "university",
+    "text": "concept",
     "size": 14
   },
   {
@@ -360,43 +396,7 @@
     "size": 14
   },
   {
-    "text": "africa",
+    "text": "legal",
     "size": 14
-  },
-  {
-    "text": "narrative",
-    "size": 14
-  },
-  {
-    "text": "religion",
-    "size": 14
-  },
-  {
-    "text": "digital",
-    "size": 14
-  },
-  {
-    "text": "conflict",
-    "size": 13
-  },
-  {
-    "text": "violence",
-    "size": 13
-  },
-  {
-    "text": "east",
-    "size": 13
-  },
-  {
-    "text": "individual",
-    "size": 13
-  },
-  {
-    "text": "become",
-    "size": 13
-  },
-  {
-    "text": "site",
-    "size": 13
   }
 ]

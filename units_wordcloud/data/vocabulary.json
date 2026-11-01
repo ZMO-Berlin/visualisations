@@ -12,8 +12,8 @@
       "stem": "Lives_Ecologies",
       "label": "Lives and Ecologies",
       "url": "https://www.zmo.de/en/research/lives-and-ecologies",
-      "tokens": 2138,
-      "projects": 16
+      "tokens": 3073,
+      "projects": 21
     },
     {
       "stem": "Religion-Intellectual-Culture",
@@ -57,10 +57,18 @@
       ]
     },
     {
+      "term": "aber",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "able",
       "counts": [
         0,
-        1,
+        2,
         0
       ]
     },
@@ -85,6 +93,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "abseits",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -300,7 +316,7 @@
       "term": "acquire",
       "counts": [
         0,
-        0,
+        1,
         1
       ]
     },
@@ -388,7 +404,7 @@
       "term": "actor",
       "counts": [
         11,
-        5,
+        7,
         7
       ]
     },
@@ -481,6 +497,14 @@
       ]
     },
     {
+      "term": "adjective",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "administrative",
       "counts": [
         2,
@@ -556,7 +580,7 @@
       "term": "affective",
       "counts": [
         7,
-        0,
+        1,
         1
       ]
     },
@@ -610,6 +634,22 @@
     },
     {
       "term": "afrin",
+      "counts": [
+        0,
+        6,
+        0
+      ]
+    },
+    {
+      "term": "afriner",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "afrins",
       "counts": [
         0,
         1,
@@ -673,14 +713,6 @@
       ]
     },
     {
-      "term": "agrarlandschaftsforschung",
-      "counts": [
-        0,
-        1,
-        0
-      ]
-    },
-    {
       "term": "agreement",
       "counts": [
         1,
@@ -692,7 +724,7 @@
       "term": "agricultural",
       "counts": [
         1,
-        1,
+        0,
         0
       ]
     },
@@ -737,10 +769,18 @@
       ]
     },
     {
+      "term": "akteuren",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "al",
       "counts": [
         1,
-        0,
+        4,
         0
       ]
     },
@@ -817,6 +857,14 @@
       ]
     },
     {
+      "term": "alkan",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "alla",
       "counts": [
         1,
@@ -830,6 +878,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "allem",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -953,6 +1009,14 @@
       ]
     },
     {
+      "term": "ambivalente",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "amidst",
       "counts": [
         0,
@@ -980,7 +1044,7 @@
       "term": "among",
       "counts": [
         3,
-        1,
+        2,
         2
       ]
     },
@@ -1017,6 +1081,14 @@
       ]
     },
     {
+      "term": "analysen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "analysiert",
       "counts": [
         1,
@@ -1044,7 +1116,7 @@
       "term": "analyze",
       "counts": [
         4,
-        0,
+        1,
         4
       ]
     },
@@ -1057,10 +1129,10 @@
       ]
     },
     {
-      "term": "anchor",
+      "term": "anbau",
       "counts": [
         0,
-        1,
+        3,
         0
       ]
     },
@@ -1073,10 +1145,26 @@
       ]
     },
     {
+      "term": "andauernder",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "anerkennung",
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "anfang",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -1089,9 +1177,25 @@
       ]
     },
     {
+      "term": "anhand",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "animate",
       "counts": [
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "ankunftsorten",
+      "counts": [
+        0,
         1,
         0
       ]
@@ -1129,6 +1233,22 @@
       ]
     },
     {
+      "term": "anpassungsmöglichkeiten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "anstrebt",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "answer",
       "counts": [
         1,
@@ -1156,7 +1276,7 @@
       "term": "anthropological",
       "counts": [
         2,
-        3,
+        2,
         2
       ]
     },
@@ -1345,10 +1465,26 @@
       ]
     },
     {
+      "term": "arabischsprachige",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "arbeit",
       "counts": [
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "arbeitsmigrant",
+      "counts": [
         0,
+        1,
         0
       ]
     },
@@ -1444,7 +1580,7 @@
       "term": "around",
       "counts": [
         5,
-        4,
+        5,
         1
       ]
     },
@@ -1485,6 +1621,22 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "artenvielfalt",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "artenübergreifenden",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -1548,7 +1700,7 @@
       "term": "asia",
       "counts": [
         21,
-        5,
+        7,
         1
       ]
     },
@@ -1564,7 +1716,7 @@
       "term": "ask",
       "counts": [
         1,
-        5,
+        6,
         2
       ]
     },
@@ -1732,7 +1884,15 @@
       "term": "au",
       "counts": [
         1,
+        8,
+        0
+      ]
+    },
+    {
+      "term": "auch",
+      "counts": [
         0,
+        3,
         0
       ]
     },
@@ -1761,6 +1921,38 @@
       ]
     },
     {
+      "term": "auf",
+      "counts": [
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "term": "aufbewahrung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "aufnahm",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "aufstand",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "augury",
       "counts": [
         1,
@@ -1769,7 +1961,47 @@
       ]
     },
     {
+      "term": "ausbeuterischen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "ausgewachsener",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "auskannten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "austria",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "auswirkungen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "authentizität",
       "counts": [
         0,
         1,
@@ -1812,7 +2044,7 @@
       "term": "authority",
       "counts": [
         2,
-        1,
+        2,
         0
       ]
     },
@@ -1945,6 +2177,14 @@
       ]
     },
     {
+      "term": "balkanstaaten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "ban",
       "counts": [
         1,
@@ -1953,10 +2193,18 @@
       ]
     },
     {
+      "term": "bangladesch",
+      "counts": [
+        0,
+        4,
+        0
+      ]
+    },
+    {
       "term": "bangladesh",
       "counts": [
         0,
-        1,
+        2,
         0
       ]
     },
@@ -1985,6 +2233,14 @@
       ]
     },
     {
+      "term": "beachtung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "bear",
       "counts": [
         0,
@@ -2009,10 +2265,34 @@
       ]
     },
     {
+      "term": "bedeutenden",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "bedeutung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "bedouin",
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "bedrohung",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -2025,11 +2305,27 @@
       ]
     },
     {
+      "term": "begann",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "begin",
       "counts": [
         1,
-        2,
+        3,
         1
+      ]
+    },
+    {
+      "term": "begleitet",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -2049,6 +2345,22 @@
       ]
     },
     {
+      "term": "bei",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "beiden",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "beilis",
       "counts": [
         1,
@@ -2060,7 +2372,7 @@
       "term": "beitrag",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -2100,7 +2412,7 @@
       "term": "belong",
       "counts": [
         1,
-        2,
+        3,
         1
       ]
     },
@@ -2129,6 +2441,14 @@
       ]
     },
     {
+      "term": "beobachtung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "berber",
       "counts": [
         0,
@@ -2153,10 +2473,26 @@
       ]
     },
     {
+      "term": "bertuzzo",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "berücksichtigt",
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "besetzten",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -2169,6 +2505,22 @@
       ]
     },
     {
+      "term": "besiedlung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "besondere",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "bessarabian",
       "counts": [
         1,
@@ -2177,10 +2529,34 @@
       ]
     },
     {
+      "term": "besseren",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "bestimmen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "betrachtet",
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "betroffen",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -2196,7 +2572,7 @@
       "term": "beyond",
       "counts": [
         4,
-        1,
+        3,
         4
       ]
     },
@@ -2204,7 +2580,7 @@
       "term": "beziehungen",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -2212,7 +2588,7 @@
       "term": "bi",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -2257,10 +2633,26 @@
       ]
     },
     {
+      "term": "binnenflüchtlinge",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "biodiversity",
       "counts": [
         0,
         2,
+        0
+      ]
+    },
+    {
+      "term": "biodiversität",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -2281,6 +2673,14 @@
       ]
     },
     {
+      "term": "bisher",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "bishkek",
       "counts": [
         10,
@@ -2289,9 +2689,33 @@
       ]
     },
     {
+      "term": "bislang",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "black",
       "counts": [
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "bleibt",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "blick",
+      "counts": [
+        0,
         1,
         0
       ]
@@ -2452,7 +2876,7 @@
       "term": "bring",
       "counts": [
         4,
-        2,
+        1,
         3
       ]
     },
@@ -2500,7 +2924,7 @@
       "term": "broader",
       "counts": [
         4,
-        0,
+        1,
         5
       ]
     },
@@ -2537,6 +2961,30 @@
       ]
     },
     {
+      "term": "bulgarien",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "bulgarisch",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "bulgarischsprachigen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "burkina",
       "counts": [
         0,
@@ -2561,6 +3009,22 @@
       ]
     },
     {
+      "term": "bäume",
+      "counts": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "term": "böden",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "bū",
       "counts": [
         0,
@@ -2572,7 +3036,7 @@
       "term": "ca",
       "counts": [
         1,
-        1,
+        0,
         1
       ]
     },
@@ -2668,7 +3132,7 @@
       "term": "capture",
       "counts": [
         2,
-        2,
+        3,
         0
       ]
     },
@@ -2677,14 +3141,6 @@
       "counts": [
         1,
         0,
-        0
-      ]
-    },
-    {
-      "term": "cardiff",
-      "counts": [
-        0,
-        1,
         0
       ]
     },
@@ -2932,7 +3388,7 @@
       "term": "challenge",
       "counts": [
         6,
-        7,
+        6,
         3
       ]
     },
@@ -2948,7 +3404,7 @@
       "term": "change",
       "counts": [
         12,
-        15,
+        16,
         7
       ]
     },
@@ -2998,14 +3454,6 @@
         0,
         0,
         1
-      ]
-    },
-    {
-      "term": "charge",
-      "counts": [
-        0,
-        1,
-        0
       ]
     },
     {
@@ -3068,7 +3516,7 @@
       "term": "choice",
       "counts": [
         0,
-        0,
+        1,
         1
       ]
     },
@@ -3164,7 +3612,7 @@
       "term": "circulation",
       "counts": [
         1,
-        1,
+        2,
         3
       ]
     },
@@ -3433,6 +3881,14 @@
       ]
     },
     {
+      "term": "cohabitation",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "cohesion",
       "counts": [
         0,
@@ -3580,7 +4036,7 @@
       "term": "combine",
       "counts": [
         1,
-        2,
+        3,
         2
       ]
     },
@@ -3708,7 +4164,7 @@
       "term": "community",
       "counts": [
         8,
-        7,
+        8,
         2
       ]
     },
@@ -3725,14 +4181,6 @@
       "counts": [
         1,
         0,
-        0
-      ]
-    },
-    {
-      "term": "companion",
-      "counts": [
-        0,
-        1,
         0
       ]
     },
@@ -3948,7 +4396,7 @@
       "term": "concept",
       "counts": [
         2,
-        4,
+        5,
         7
       ]
     },
@@ -4324,7 +4772,7 @@
       "term": "contest",
       "counts": [
         1,
-        1,
+        2,
         3
       ]
     },
@@ -4426,6 +4874,14 @@
     },
     {
       "term": "contradiction",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "contradictory",
       "counts": [
         0,
         1,
@@ -4700,7 +5156,7 @@
       "term": "court",
       "counts": [
         7,
-        0,
+        1,
         0
       ]
     },
@@ -4828,7 +5284,7 @@
       "term": "crisis",
       "counts": [
         2,
-        1,
+        3,
         0
       ]
     },
@@ -5020,7 +5476,7 @@
       "term": "da",
       "counts": [
         2,
-        0,
+        9,
         0
       ]
     },
@@ -5049,6 +5505,14 @@
       ]
     },
     {
+      "term": "damascus",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "dampen",
       "counts": [
         1,
@@ -5065,10 +5529,42 @@
       ]
     },
     {
+      "term": "danış",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "daraus",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "darkness",
       "counts": [
         5,
         0,
+        0
+      ]
+    },
+    {
+      "term": "darstellen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "darunter",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -5086,6 +5582,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "davon",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -5124,7 +5628,7 @@
       "term": "de",
       "counts": [
         1,
-        0,
+        3,
         1
       ]
     },
@@ -5174,6 +5678,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "decision",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -5313,6 +5825,14 @@
       ]
     },
     {
+      "term": "dekonstruiert",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "delay",
       "counts": [
         5,
@@ -5341,6 +5861,14 @@
       "counts": [
         2,
         0,
+        0
+      ]
+    },
+    {
+      "term": "dem",
+      "counts": [
+        0,
+        5,
         0
       ]
     },
@@ -5393,6 +5921,14 @@
       ]
     },
     {
+      "term": "demokratischen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "demonstrate",
       "counts": [
         2,
@@ -5412,7 +5948,7 @@
       "term": "den",
       "counts": [
         2,
-        0,
+        6,
         0
       ]
     },
@@ -5524,7 +6060,15 @@
       "term": "der",
       "counts": [
         5,
+        23,
+        0
+      ]
+    },
+    {
+      "term": "deren",
+      "counts": [
         0,
+        2,
         0
       ]
     },
@@ -5620,7 +6164,7 @@
       "term": "destruction",
       "counts": [
         0,
-        2,
+        3,
         0
       ]
     },
@@ -5668,7 +6212,7 @@
       "term": "deutschland",
       "counts": [
         1,
-        0,
+        2,
         0
       ]
     },
@@ -5718,6 +6262,14 @@
         0,
         0,
         3
+      ]
+    },
+    {
+      "term": "dezember",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -5788,7 +6340,7 @@
       "term": "die",
       "counts": [
         5,
-        0,
+        38,
         0
       ]
     },
@@ -5804,7 +6356,23 @@
       "term": "diese",
       "counts": [
         1,
+        3,
+        0
+      ]
+    },
+    {
+      "term": "diesem",
+      "counts": [
         0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "diesen",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -5812,7 +6380,7 @@
       "term": "dieser",
       "counts": [
         1,
-        0,
+        2,
         0
       ]
     },
@@ -6025,6 +6593,14 @@
       ]
     },
     {
+      "term": "diskussionen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "disorientation",
       "counts": [
         1,
@@ -6052,7 +6628,7 @@
       "term": "displacement",
       "counts": [
         0,
-        4,
+        7,
         0
       ]
     },
@@ -6164,7 +6740,7 @@
       "term": "distinction",
       "counts": [
         1,
-        0,
+        1,
         1
       ]
     },
@@ -6261,6 +6837,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "divorce",
+      "counts": [
+        0,
+        3,
         0
       ]
     },
@@ -6369,6 +6953,14 @@
       ]
     },
     {
+      "term": "drittens",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "driver",
       "counts": [
         1,
@@ -6396,7 +6988,7 @@
       "term": "due",
       "counts": [
         1,
-        2,
+        3,
         0
       ]
     },
@@ -6417,6 +7009,14 @@
       ]
     },
     {
+      "term": "durch",
+      "counts": [
+        0,
+        8,
+        0
+      ]
+    },
+    {
       "term": "durchbrechen",
       "counts": [
         1,
@@ -6425,10 +7025,18 @@
       ]
     },
     {
+      "term": "dy",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "dynamic",
       "counts": [
         5,
-        4,
+        6,
         6
       ]
     },
@@ -6441,11 +7049,35 @@
       ]
     },
     {
+      "term": "dörfer",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "dörfern",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "dārul",
       "counts": [
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "e",
+      "counts": [
+        0,
+        2,
+        0
       ]
     },
     {
@@ -6505,6 +7137,14 @@
       ]
     },
     {
+      "term": "ebenso",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "ecole",
       "counts": [
         0,
@@ -6532,7 +7172,7 @@
       "term": "economic",
       "counts": [
         5,
-        5,
+        6,
         0
       ]
     },
@@ -6649,6 +7289,14 @@
       ]
     },
     {
+      "term": "eigenversorgung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "eight",
       "counts": [
         0,
@@ -6657,10 +7305,82 @@
       ]
     },
     {
+      "term": "ein",
+      "counts": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "term": "eine",
+      "counts": [
+        0,
+        5,
+        0
+      ]
+    },
+    {
+      "term": "einem",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "einen",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "einer",
       "counts": [
         2,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "eines",
+      "counts": [
         0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "eingeführt",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "eingeführte",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "einheimische",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "einheimischen",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -6681,10 +7401,18 @@
       ]
     },
     {
+      "term": "einwohner",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "einzelprojekt",
       "counts": [
         1,
-        0,
+        3,
         0
       ]
     },
@@ -6702,6 +7430,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "elaborate",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -6724,12 +7460,20 @@
       "term": "element",
       "counts": [
         1,
-        1,
+        2,
         0
       ]
     },
     {
       "term": "elephant",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "elisa",
       "counts": [
         0,
         1,
@@ -6812,8 +7556,16 @@
       "term": "emerge",
       "counts": [
         5,
-        2,
+        4,
         3
+      ]
+    },
+    {
+      "term": "emigranten",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -6885,6 +7637,14 @@
       "counts": [
         1,
         3,
+        0
+      ]
+    },
+    {
+      "term": "emplacement",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -7177,6 +7937,14 @@
       ]
     },
     {
+      "term": "entvölkerung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "entwicklungspolitik",
       "counts": [
         1,
@@ -7185,10 +7953,18 @@
       ]
     },
     {
+      "term": "entwurzelt",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "environment",
       "counts": [
         0,
-        2,
+        3,
         0
       ]
     },
@@ -7196,7 +7972,7 @@
       "term": "environmental",
       "counts": [
         0,
-        7,
+        8,
         0
       ]
     },
@@ -7204,7 +7980,7 @@
       "term": "envision",
       "counts": [
         0,
-        0,
+        1,
         1
       ]
     },
@@ -7297,7 +8073,63 @@
       ]
     },
     {
+      "term": "erfahrungen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "erforscht",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "erhalten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "erhielten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "ermenek",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "erneuert",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "ernährungsgewohnheiten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "ernährungssysteme",
       "counts": [
         0,
         1,
@@ -7310,6 +8142,38 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "erstens",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "erweiterten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "erwiesen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "erzeuger",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -7369,6 +8233,14 @@
       ]
     },
     {
+      "term": "etabliert",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "etc",
       "counts": [
         1,
@@ -7417,7 +8289,39 @@
       ]
     },
     {
-      "term": "ethnobotanical",
+      "term": "ethnische",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "ethnischer",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "ethnobotanischen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "ethnografie",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "ethnografische",
       "counts": [
         0,
         1,
@@ -7428,7 +8332,7 @@
       "term": "ethnographic",
       "counts": [
         5,
-        4,
+        6,
         7
       ]
     },
@@ -7476,7 +8380,7 @@
       "term": "europe",
       "counts": [
         3,
-        4,
+        6,
         3
       ]
     },
@@ -7484,7 +8388,7 @@
       "term": "european",
       "counts": [
         6,
-        5,
+        4,
         2
       ]
     },
@@ -7564,8 +8468,16 @@
       "term": "everyday",
       "counts": [
         9,
-        1,
+        2,
         1
+      ]
+    },
+    {
+      "term": "evidence",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -7745,6 +8657,14 @@
       ]
     },
     {
+      "term": "exotisches",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "expand",
       "counts": [
         1,
@@ -7756,7 +8676,7 @@
       "term": "expansion",
       "counts": [
         0,
-        1,
+        2,
         2
       ]
     },
@@ -7812,7 +8732,7 @@
       "term": "experience",
       "counts": [
         8,
-        5,
+        6,
         6
       ]
     },
@@ -7836,7 +8756,7 @@
       "term": "expertise",
       "counts": [
         0,
-        2,
+        1,
         0
       ]
     },
@@ -7869,6 +8789,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "exportiert",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -7932,7 +8860,7 @@
       "term": "extensive",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -8057,6 +8985,14 @@
       ]
     },
     {
+      "term": "fallstudie",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "familiar",
       "counts": [
         1,
@@ -8073,10 +9009,18 @@
       ]
     },
     {
+      "term": "familien",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "family",
       "counts": [
         2,
-        2,
+        4,
         1
       ]
     },
@@ -8193,6 +9137,14 @@
       ]
     },
     {
+      "term": "feldforschung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "fellow",
       "counts": [
         1,
@@ -8252,7 +9204,7 @@
       "term": "field",
       "counts": [
         8,
-        0,
+        1,
         5
       ]
     },
@@ -8401,6 +9353,14 @@
       ]
     },
     {
+      "term": "flohen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "flood",
       "counts": [
         1,
@@ -8508,7 +9468,7 @@
       "term": "foreground",
       "counts": [
         1,
-        1,
+        0,
         0
       ]
     },
@@ -8585,6 +9545,22 @@
       ]
     },
     {
+      "term": "forschung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "fort",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "forthcoming",
       "counts": [
         1,
@@ -8601,18 +9577,10 @@
       ]
     },
     {
-      "term": "foscari",
-      "counts": [
-        0,
-        1,
-        0
-      ]
-    },
-    {
       "term": "foster",
       "counts": [
         4,
-        1,
+        0,
         0
       ]
     },
@@ -8649,6 +9617,14 @@
       ]
     },
     {
+      "term": "fourteen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "fourth",
       "counts": [
         0,
@@ -8668,7 +9644,7 @@
       "term": "fragment",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -8684,7 +9660,7 @@
       "term": "framework",
       "counts": [
         7,
-        1,
+        2,
         3
       ]
     },
@@ -8721,6 +9697,14 @@
       ]
     },
     {
+      "term": "fremden",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "french",
       "counts": [
         5,
@@ -8741,6 +9725,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "frisch",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -8844,7 +9836,7 @@
       "term": "future",
       "counts": [
         10,
-        5,
+        7,
         2
       ]
     },
@@ -8857,9 +9849,33 @@
       ]
     },
     {
+      "term": "fördern",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "führung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "für",
       "counts": [
         2,
+        3,
+        0
+      ]
+    },
+    {
+      "term": "fürsorge",
+      "counts": [
+        0,
         1,
         0
       ]
@@ -8868,7 +9884,7 @@
       "term": "gain",
       "counts": [
         2,
-        0,
+        1,
         3
       ]
     },
@@ -8905,10 +9921,26 @@
       ]
     },
     {
-      "term": "garden",
+      "term": "ganz",
       "counts": [
         0,
         1,
+        0
+      ]
+    },
+    {
+      "term": "ganzen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "garden",
+      "counts": [
+        0,
+        3,
         1
       ]
     },
@@ -8933,6 +9965,78 @@
       "counts": [
         10,
         0,
+        0
+      ]
+    },
+    {
+      "term": "gebiet",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "gebiete",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "geeignet",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "geflüchtete",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "gegen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "gemeinschaft",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "gemüse",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "gemüsesamen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "gemüsesorten",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -9057,11 +10161,27 @@
       ]
     },
     {
+      "term": "geprägt",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "gerda",
       "counts": [
         0,
         1,
         1
+      ]
+    },
+    {
+      "term": "geringem",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -9081,6 +10201,14 @@
       ]
     },
     {
+      "term": "geschichte",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "geschichtsbilder",
       "counts": [
         1,
@@ -9089,9 +10217,33 @@
       ]
     },
     {
+      "term": "gesellschaft",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "gestaltet",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "get",
       "counts": [
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "geteilte",
+      "counts": [
+        0,
         1,
         0
       ]
@@ -9105,10 +10257,26 @@
       ]
     },
     {
+      "term": "gewaltsame",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "gewinnen",
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "gewonnene",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -9125,6 +10293,22 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "ghouta",
+      "counts": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "term": "gibt",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -9150,6 +10334,14 @@
         1,
         0,
         1
+      ]
+    },
+    {
+      "term": "gleichzeitig",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -9212,7 +10404,7 @@
       "term": "god",
       "counts": [
         0,
-        0,
+        1,
         1
       ]
     },
@@ -9337,6 +10529,14 @@
       ]
     },
     {
+      "term": "grenzen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "grind",
       "counts": [
         0,
@@ -9393,6 +10593,30 @@
       ]
     },
     {
+      "term": "großer",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "großflächigeren",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "grundlegende",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "guide",
       "counts": [
         0,
@@ -9409,10 +10633,34 @@
       ]
     },
     {
+      "term": "gärten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "göttingen",
       "counts": [
         2,
         0,
+        0
+      ]
+    },
+    {
+      "term": "günstigen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "haben",
+      "counts": [
+        0,
+        4,
         0
       ]
     },
@@ -9473,6 +10721,14 @@
       ]
     },
     {
+      "term": "haqq",
+      "counts": [
+        0,
+        7,
+        0
+      ]
+    },
+    {
       "term": "harness",
       "counts": [
         1,
@@ -9510,6 +10766,22 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "hat",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "hatten",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -9609,6 +10881,14 @@
       ]
     },
     {
+      "term": "heimat",
+      "counts": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
       "term": "hejaz",
       "counts": [
         1,
@@ -9681,6 +10961,22 @@
       ]
     },
     {
+      "term": "herstellung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "herzustellen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "heshmat",
       "counts": [
         0,
@@ -9705,7 +11001,23 @@
       ]
     },
     {
+      "term": "heutigen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "hide",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "hier",
       "counts": [
         0,
         2,
@@ -9761,6 +11073,14 @@
       ]
     },
     {
+      "term": "hilal",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "hinder",
       "counts": [
         0,
@@ -9773,6 +11093,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "hinweg",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -9796,7 +11124,7 @@
       "term": "historically",
       "counts": [
         3,
-        0,
+        1,
         2
       ]
     },
@@ -9833,10 +11161,26 @@
       ]
     },
     {
+      "term": "historischer",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "historisches",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "history",
       "counts": [
         37,
-        13,
+        16,
         7
       ]
     },
@@ -9854,6 +11198,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "hochwertige",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -9988,7 +11340,7 @@
       "term": "human",
       "counts": [
         3,
-        8,
+        7,
         7
       ]
     },
@@ -10137,6 +11489,14 @@
       ]
     },
     {
+      "term": "identifikation",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "identify",
       "counts": [
         0,
@@ -10150,6 +11510,14 @@
         3,
         3,
         4
+      ]
+    },
+    {
+      "term": "identität",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -10180,7 +11548,15 @@
       "term": "ihre",
       "counts": [
         1,
+        4,
+        0
+      ]
+    },
+    {
+      "term": "ihrer",
+      "counts": [
         0,
+        3,
         0
       ]
     },
@@ -10244,7 +11620,7 @@
       "term": "im",
       "counts": [
         1,
-        1,
+        5,
         0
       ]
     },
@@ -10348,7 +11724,7 @@
       "term": "implement",
       "counts": [
         2,
-        0,
+        1,
         0
       ]
     },
@@ -10398,6 +11774,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "importierten",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -10564,7 +11948,7 @@
       "term": "individual",
       "counts": [
         7,
-        2,
+        4,
         4
       ]
     },
@@ -10604,7 +11988,7 @@
       "term": "influence",
       "counts": [
         3,
-        1,
+        2,
         5
       ]
     },
@@ -10657,6 +12041,14 @@
       ]
     },
     {
+      "term": "infrastrukturen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "ingeniously",
       "counts": [
         0,
@@ -10705,6 +12097,14 @@
       ]
     },
     {
+      "term": "inherit",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "initial",
       "counts": [
         1,
@@ -10732,7 +12132,7 @@
       "term": "initiative",
       "counts": [
         1,
-        1,
+        2,
         3
       ]
     },
@@ -10756,7 +12156,15 @@
       "term": "inmitten",
       "counts": [
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "innen",
+      "counts": [
         0,
+        4,
         0
       ]
     },
@@ -10860,7 +12268,7 @@
       "term": "institute",
       "counts": [
         1,
-        1,
+        0,
         0
       ]
     },
@@ -11156,7 +12564,7 @@
       "term": "interpretation",
       "counts": [
         1,
-        1,
+        2,
         3
       ]
     },
@@ -11212,7 +12620,7 @@
       "term": "intervention",
       "counts": [
         1,
-        1,
+        3,
         0
       ]
     },
@@ -11228,7 +12636,7 @@
       "term": "intimate",
       "counts": [
         0,
-        1,
+        2,
         0
       ]
     },
@@ -11337,6 +12745,22 @@
       ]
     },
     {
+      "term": "inzwischen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "irakischen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "iran",
       "counts": [
         0,
@@ -11404,7 +12828,7 @@
       "term": "islamic",
       "counts": [
         0,
-        0,
+        1,
         21
       ]
     },
@@ -11422,6 +12846,14 @@
         0,
         1,
         1
+      ]
+    },
+    {
+      "term": "islamistische",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -11452,7 +12884,7 @@
       "term": "ist",
       "counts": [
         2,
-        0,
+        2,
         0
       ]
     },
@@ -11466,6 +12898,30 @@
     },
     {
       "term": "istiqrar",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "italien",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "italienischen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "italiens",
       "counts": [
         0,
         1,
@@ -11521,6 +12977,30 @@
       ]
     },
     {
+      "term": "jahre",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "jahrhundert",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "jahrzehnten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "jam",
       "counts": [
         0,
@@ -11549,6 +13029,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "jedoch",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -11689,10 +13177,18 @@
       ]
     },
     {
+      "term": "jurisprudential",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "justice",
       "counts": [
         17,
-        5,
+        7,
         0
       ]
     },
@@ -11769,10 +13265,58 @@
       ]
     },
     {
+      "term": "karten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "kartiert",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "kartografie",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "kartografischen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "katharina",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "katie",
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "kaum",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -11789,6 +13333,14 @@
       "counts": [
         0,
         4,
+        0
+      ]
+    },
+    {
+      "term": "kaşlı",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -11813,6 +13365,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "keine",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -11913,6 +13473,22 @@
       ]
     },
     {
+      "term": "klima",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "klimawandel",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "know",
       "counts": [
         2,
@@ -11924,7 +13500,7 @@
       "term": "knowledge",
       "counts": [
         4,
-        11,
+        12,
         12
       ]
     },
@@ -11937,10 +13513,58 @@
       ]
     },
     {
+      "term": "kombination",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "kompatibel",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "konflikten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "konnten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "kontinuierlich",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "korea",
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "kriegen",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -11953,10 +13577,34 @@
       ]
     },
     {
+      "term": "kriegsflüchtlinge",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "kulturgeschichtlichen",
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "kurdischen",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "kurdischer",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -11972,7 +13620,7 @@
       "term": "kurdistan",
       "counts": [
         0,
-        1,
+        2,
         0
       ]
     },
@@ -12012,7 +13660,7 @@
       "term": "labor",
       "counts": [
         1,
-        1,
+        2,
         0
       ]
     },
@@ -12068,7 +13716,23 @@
       "term": "land",
       "counts": [
         1,
-        4,
+        7,
+        0
+      ]
+    },
+    {
+      "term": "landflucht",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "landing",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -12084,8 +13748,24 @@
       "term": "landscape",
       "counts": [
         4,
-        4,
+        9,
         2
+      ]
+    },
+    {
+      "term": "landschaft",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "landschaften",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -12097,10 +13777,34 @@
       ]
     },
     {
+      "term": "landwirt",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "landwirtschaftssektors",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "lange",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "language",
       "counts": [
         7,
-        0,
+        1,
         4
       ]
     },
@@ -12177,6 +13881,14 @@
       ]
     },
     {
+      "term": "laufenden",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "lavrentii",
       "counts": [
         1,
@@ -12188,7 +13900,7 @@
       "term": "law",
       "counts": [
         5,
-        0,
+        1,
         1
       ]
     },
@@ -12249,6 +13961,14 @@
       ]
     },
     {
+      "term": "lebenswelten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "lecturer",
       "counts": [
         1,
@@ -12260,7 +13980,7 @@
       "term": "legacy",
       "counts": [
         3,
-        0,
+        1,
         0
       ]
     },
@@ -12268,7 +13988,7 @@
       "term": "legal",
       "counts": [
         10,
-        0,
+        1,
         3
       ]
     },
@@ -12324,7 +14044,15 @@
       "term": "leibniz",
       "counts": [
         0,
-        2,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "leistet",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -12420,7 +14148,7 @@
       "term": "level",
       "counts": [
         0,
-        2,
+        3,
         1
       ]
     },
@@ -12481,10 +14209,26 @@
       ]
     },
     {
+      "term": "lieferkette",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "ließen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "life",
       "counts": [
         12,
-        20,
+        21,
         10
       ]
     },
@@ -12516,7 +14260,7 @@
       "term": "lifeworlds",
       "counts": [
         0,
-        0,
+        1,
         1
       ]
     },
@@ -12676,7 +14420,7 @@
       "term": "livelihood",
       "counts": [
         3,
-        6,
+        5,
         0
       ]
     },
@@ -12761,6 +14505,22 @@
       ]
     },
     {
+      "term": "lokale",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "lokalen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "london",
       "counts": [
         0,
@@ -12780,7 +14540,7 @@
       "term": "longer",
       "counts": [
         0,
-        0,
+        1,
         1
       ]
     },
@@ -12869,6 +14629,30 @@
       "counts": [
         4,
         0,
+        0
+      ]
+    },
+    {
+      "term": "ländern",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "ländliche",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "ländlicher",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -13052,7 +14836,7 @@
       "term": "many",
       "counts": [
         6,
-        4,
+        5,
         2
       ]
     },
@@ -13084,7 +14868,7 @@
       "term": "marginalise",
       "counts": [
         0,
-        0,
+        1,
         1
       ]
     },
@@ -13140,7 +14924,7 @@
       "term": "mass",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -13156,7 +14940,7 @@
       "term": "material",
       "counts": [
         13,
-        2,
+        4,
         4
       ]
     },
@@ -13244,7 +15028,7 @@
       "term": "meaning",
       "counts": [
         0,
-        1,
+        2,
         1
       ]
     },
@@ -13329,6 +15113,22 @@
       ]
     },
     {
+      "term": "mehreren",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "mehrheitsgesellschaft",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "member",
       "counts": [
         3,
@@ -13356,7 +15156,7 @@
       "term": "memory",
       "counts": [
         12,
-        2,
+        3,
         0
       ]
     },
@@ -13374,6 +15174,30 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "menschen",
+      "counts": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "term": "menschliche",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "menschlichen",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -13452,8 +15276,16 @@
       "term": "method",
       "counts": [
         1,
-        1,
+        2,
         4
+      ]
+    },
+    {
+      "term": "methoden",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -13532,7 +15364,7 @@
       "term": "migrate",
       "counts": [
         0,
-        1,
+        2,
         0
       ]
     },
@@ -13540,7 +15372,7 @@
       "term": "migration",
       "counts": [
         1,
-        8,
+        6,
         0
       ]
     },
@@ -13577,6 +15409,22 @@
       ]
     },
     {
+      "term": "milizen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "milizionäre",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "millennium",
       "counts": [
         1,
@@ -13588,7 +15436,15 @@
       "term": "million",
       "counts": [
         0,
-        5,
+        6,
+        0
+      ]
+    },
+    {
+      "term": "millionen",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -13598,6 +15454,14 @@
         2,
         0,
         1
+      ]
+    },
+    {
+      "term": "minderheit",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -13649,6 +15513,14 @@
       ]
     },
     {
+      "term": "mit",
+      "counts": [
+        0,
+        5,
+        0
+      ]
+    },
+    {
       "term": "mitigation",
       "counts": [
         0,
@@ -13658,6 +15530,14 @@
     },
     {
       "term": "mittelbau",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "mitteleuropa",
       "counts": [
         0,
         1,
@@ -13681,10 +15561,34 @@
       ]
     },
     {
+      "term": "mobilisieren",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "mobility",
       "counts": [
         4,
         10,
+        0
+      ]
+    },
+    {
+      "term": "mobilität",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "mobilitätsgerechtigkeit",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -13732,7 +15636,7 @@
       "term": "moderner",
       "counts": [
         2,
-        1,
+        0,
         1
       ]
     },
@@ -13844,7 +15748,7 @@
       "term": "moral",
       "counts": [
         2,
-        4,
+        5,
         2
       ]
     },
@@ -13972,7 +15876,7 @@
       "term": "move",
       "counts": [
         4,
-        3,
+        4,
         0
       ]
     },
@@ -14041,6 +15945,14 @@
       ]
     },
     {
+      "term": "multimodalen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "multinational",
       "counts": [
         0,
@@ -14052,7 +15964,7 @@
       "term": "multiple",
       "counts": [
         1,
-        1,
+        3,
         0
       ]
     },
@@ -14060,7 +15972,7 @@
       "term": "multispecies",
       "counts": [
         0,
-        3,
+        4,
         0
       ]
     },
@@ -14124,8 +16036,24 @@
       "term": "muslim",
       "counts": [
         6,
-        1,
+        2,
         20
+      ]
+    },
+    {
+      "term": "muslime",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "muslimischen",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -14156,7 +16084,31 @@
       "term": "nach",
       "counts": [
         1,
+        5,
+        0
+      ]
+    },
+    {
+      "term": "nachdem",
+      "counts": [
         0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "nachzeichnen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "nahen",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -14188,7 +16140,7 @@
       "term": "narrative",
       "counts": [
         10,
-        1,
+        3,
         3
       ]
     },
@@ -14230,6 +16182,14 @@
         15,
         1,
         7
+      ]
+    },
+    {
+      "term": "nationalarmee",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -14372,7 +16332,15 @@
       "term": "negotiate",
       "counts": [
         2,
-        3,
+        4,
+        0
+      ]
+    },
+    {
+      "term": "nehmen",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -14433,7 +16401,31 @@
       ]
     },
     {
-      "term": "netherlands",
+      "term": "network",
+      "counts": [
+        14,
+        5,
+        3
+      ]
+    },
+    {
+      "term": "netzwerke",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "neu",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "neuankömmlinge",
       "counts": [
         0,
         1,
@@ -14441,11 +16433,11 @@
       ]
     },
     {
-      "term": "network",
+      "term": "neuen",
       "counts": [
-        14,
-        5,
-        3
+        0,
+        1,
+        0
       ]
     },
     {
@@ -14526,6 +16518,30 @@
         0,
         0,
         2
+      ]
+    },
+    {
+      "term": "nieder",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "niedergelassen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "niederließen",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -14628,7 +16644,15 @@
       "term": "nonhuman",
       "counts": [
         0,
-        2,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "nordsyrien",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -14636,7 +16660,7 @@
       "term": "norm",
       "counts": [
         1,
-        0,
+        1,
         1
       ]
     },
@@ -14700,8 +16724,16 @@
       "term": "notion",
       "counts": [
         2,
-        2,
+        3,
         1
+      ]
+    },
+    {
+      "term": "noun",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -14809,6 +16841,14 @@
       ]
     },
     {
+      "term": "obstgärten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "occupation",
       "counts": [
         0,
@@ -14884,8 +16924,16 @@
       "term": "official",
       "counts": [
         4,
-        0,
+        1,
         1
+      ]
+    },
+    {
+      "term": "offiziellen",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -14917,6 +16965,54 @@
       "counts": [
         1,
         2,
+        0
+      ]
+    },
+    {
+      "term": "olive",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "oliven",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "olivenanbau",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "olivenbäume",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "olivenbäumen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "olivensetzlinge",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -15001,6 +17097,14 @@
       ]
     },
     {
+      "term": "opfern",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "opinion",
       "counts": [
         0,
@@ -15052,7 +17156,23 @@
       "term": "oral",
       "counts": [
         2,
-        6,
+        7,
+        0
+      ]
+    },
+    {
+      "term": "orale",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "oralhistorischen",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -15100,7 +17220,7 @@
       "term": "orient",
       "counts": [
         2,
-        1,
+        0,
         1
       ]
     },
@@ -15145,6 +17265,22 @@
       ]
     },
     {
+      "term": "ortsverbundenheit",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "osmanischen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "othered",
       "counts": [
         1,
@@ -15156,7 +17292,7 @@
       "term": "others",
       "counts": [
         1,
-        0,
+        1,
         2
       ]
     },
@@ -15332,7 +17468,7 @@
       "term": "paradigm",
       "counts": [
         0,
-        1,
+        0,
         2
       ]
     },
@@ -15361,6 +17497,14 @@
       ]
     },
     {
+      "term": "parla",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "parliamentary",
       "counts": [
         3,
@@ -15373,6 +17517,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "partei",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -15396,7 +17548,7 @@
       "term": "participate",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -15414,6 +17566,14 @@
         4,
         3,
         3
+      ]
+    },
+    {
+      "term": "partizipative",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -15452,7 +17612,7 @@
       "term": "past",
       "counts": [
         16,
-        2,
+        3,
         0
       ]
     },
@@ -15801,6 +17961,46 @@
       ]
     },
     {
+      "term": "pflanzen",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "pflanzenaustausch",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "pflanzenbiografien",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "pflanzliche",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "pflege",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "phase",
       "counts": [
         0,
@@ -15913,6 +18113,14 @@
       ]
     },
     {
+      "term": "pionierarbeit",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "pipeline",
       "counts": [
         0,
@@ -15924,7 +18132,7 @@
       "term": "place",
       "counts": [
         6,
-        5,
+        4,
         3
       ]
     },
@@ -15945,10 +18153,18 @@
       ]
     },
     {
+      "term": "planetare",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "plant",
       "counts": [
         0,
-        6,
+        5,
         0
       ]
     },
@@ -15956,7 +18172,7 @@
       "term": "planth",
       "counts": [
         0,
-        3,
+        5,
         0
       ]
     },
@@ -15980,7 +18196,7 @@
       "term": "play",
       "counts": [
         2,
-        2,
+        1,
         4
       ]
     },
@@ -16076,7 +18292,7 @@
       "term": "political",
       "counts": [
         18,
-        9,
+        13,
         5
       ]
     },
@@ -16100,7 +18316,23 @@
       "term": "politische",
       "counts": [
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "politischen",
+      "counts": [
         0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "politischer",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -16133,6 +18365,30 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "polysemic",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "pomak",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "pomaken",
+      "counts": [
+        0,
+        5,
         0
       ]
     },
@@ -16260,7 +18516,7 @@
       "term": "postdoctoral",
       "counts": [
         2,
-        1,
+        2,
         1
       ]
     },
@@ -16292,7 +18548,7 @@
       "term": "power",
       "counts": [
         8,
-        0,
+        1,
         0
       ]
     },
@@ -16316,7 +18572,7 @@
       "term": "practice",
       "counts": [
         19,
-        9,
+        10,
         17
       ]
     },
@@ -16457,6 +18713,14 @@
       ]
     },
     {
+      "term": "preisen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "prescription",
       "counts": [
         0,
@@ -16476,7 +18740,7 @@
       "term": "present",
       "counts": [
         5,
-        4,
+        5,
         0
       ]
     },
@@ -16492,7 +18756,7 @@
       "term": "preserve",
       "counts": [
         1,
-        1,
+        2,
         0
       ]
     },
@@ -16636,7 +18900,7 @@
       "term": "process",
       "counts": [
         11,
-        11,
+        12,
         6
       ]
     },
@@ -16668,7 +18932,7 @@
       "term": "produce",
       "counts": [
         1,
-        1,
+        2,
         3
       ]
     },
@@ -16701,6 +18965,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "produktion",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -16748,7 +19020,7 @@
       "term": "profound",
       "counts": [
         0,
-        0,
+        1,
         1
       ]
     },
@@ -16764,7 +19036,7 @@
       "term": "programme",
       "counts": [
         6,
-        0,
+        1,
         0
       ]
     },
@@ -16772,7 +19044,7 @@
       "term": "projekt",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -16837,6 +19109,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "property",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -16916,7 +19196,7 @@
       "term": "public",
       "counts": [
         4,
-        1,
+        2,
         4
       ]
     },
@@ -16956,7 +19236,7 @@
       "term": "pursuit",
       "counts": [
         2,
-        1,
+        2,
         0
       ]
     },
@@ -16972,6 +19252,14 @@
       "term": "put",
       "counts": [
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "pyd",
+      "counts": [
+        0,
         1,
         0
       ]
@@ -17188,7 +19476,7 @@
       "term": "rather",
       "counts": [
         3,
-        2,
+        3,
         3
       ]
     },
@@ -17276,7 +19564,7 @@
       "term": "reality",
       "counts": [
         2,
-        2,
+        3,
         1
       ]
     },
@@ -17318,6 +19606,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "rebuild",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -17433,6 +19729,14 @@
       ]
     },
     {
+      "term": "reconstruction",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "record",
       "counts": [
         3,
@@ -17461,6 +19765,22 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "recovery",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "redefine",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -17500,7 +19820,7 @@
       "term": "reevaluate",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -17564,7 +19884,7 @@
       "term": "refugee",
       "counts": [
         2,
-        10,
+        11,
         0
       ]
     },
@@ -17574,6 +19894,14 @@
         1,
         1,
         2
+      ]
+    },
+    {
+      "term": "regiert",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -17596,7 +19924,7 @@
       "term": "region",
       "counts": [
         5,
-        12,
+        19,
         7
       ]
     },
@@ -17609,6 +19937,14 @@
       ]
     },
     {
+      "term": "regionale",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "regionally",
       "counts": [
         0,
@@ -17617,10 +19953,18 @@
       ]
     },
     {
+      "term": "regionen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "register",
       "counts": [
         0,
-        0,
+        1,
         1
       ]
     },
@@ -17645,6 +19989,22 @@
       "counts": [
         3,
         0,
+        0
+      ]
+    },
+    {
+      "term": "rehabilitation",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "reich",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -17700,7 +20060,7 @@
       "term": "relation",
       "counts": [
         8,
-        8,
+        9,
         3
       ]
     },
@@ -17833,6 +20193,14 @@
       ]
     },
     {
+      "term": "remember",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "remembrance",
       "counts": [
         1,
@@ -17929,6 +20297,14 @@
       ]
     },
     {
+      "term": "repeatedly",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "repercussion",
       "counts": [
         3,
@@ -17956,7 +20332,7 @@
       "term": "represent",
       "counts": [
         3,
-        0,
+        1,
         1
       ]
     },
@@ -17964,7 +20340,7 @@
       "term": "representation",
       "counts": [
         3,
-        0,
+        2,
         3
       ]
     },
@@ -18044,7 +20420,7 @@
       "term": "reshape",
       "counts": [
         0,
-        0,
+        1,
         1
       ]
     },
@@ -18180,7 +20556,7 @@
       "term": "rethink",
       "counts": [
         1,
-        1,
+        2,
         0
       ]
     },
@@ -18257,6 +20633,14 @@
       ]
     },
     {
+      "term": "revitalisieren",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "revive",
       "counts": [
         1,
@@ -18305,6 +20689,30 @@
       ]
     },
     {
+      "term": "rhodopengebirge",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "rich",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "richtet",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "rift",
       "counts": [
         0,
@@ -18316,7 +20724,7 @@
       "term": "right",
       "counts": [
         6,
-        0,
+        3,
         1
       ]
     },
@@ -18388,7 +20796,7 @@
       "term": "role",
       "counts": [
         17,
-        3,
+        2,
         9
       ]
     },
@@ -18473,10 +20881,18 @@
       ]
     },
     {
-      "term": "rupture",
+      "term": "rund",
       "counts": [
         0,
         1,
+        0
+      ]
+    },
+    {
+      "term": "rupture",
+      "counts": [
+        0,
+        2,
         0
       ]
     },
@@ -18517,6 +20933,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "saatgut",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -18582,6 +21006,22 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "saman",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "sammeln",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -18745,6 +21185,14 @@
       ]
     },
     {
+      "term": "schätzungen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "science",
       "counts": [
         2,
@@ -18757,6 +21205,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "scripturalist",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -18806,6 +21262,14 @@
         0,
         1,
         1
+      ]
+    },
+    {
+      "term": "sechs",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -18900,7 +21364,7 @@
       "term": "seed",
       "counts": [
         0,
-        4,
+        5,
         0
       ]
     },
@@ -18913,11 +21377,27 @@
       ]
     },
     {
+      "term": "seit",
+      "counts": [
+        0,
+        6,
+        0
+      ]
+    },
+    {
       "term": "selb",
       "counts": [
         0,
         0,
         2
+      ]
+    },
+    {
+      "term": "self",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -19081,6 +21561,14 @@
       ]
     },
     {
+      "term": "setzte",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "several",
       "counts": [
         2,
@@ -19132,7 +21620,7 @@
       "term": "shape",
       "counts": [
         11,
-        5,
+        7,
         5
       ]
     },
@@ -19140,7 +21628,7 @@
       "term": "share",
       "counts": [
         1,
-        2,
+        3,
         0
       ]
     },
@@ -19188,7 +21676,7 @@
       "term": "shift",
       "counts": [
         8,
-        4,
+        7,
         2
       ]
     },
@@ -19265,11 +21753,51 @@
       ]
     },
     {
+      "term": "sich",
+      "counts": [
+        0,
+        9,
+        0
+      ]
+    },
+    {
       "term": "side",
       "counts": [
         0,
         0,
         2
+      ]
+    },
+    {
+      "term": "sie",
+      "counts": [
+        0,
+        5,
+        0
+      ]
+    },
+    {
+      "term": "siedlungsgebiet",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "siedlungsmuster",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "siege",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -19316,7 +21844,7 @@
       "term": "simply",
       "counts": [
         0,
-        0,
+        1,
         2
       ]
     },
@@ -19334,6 +21862,14 @@
         2,
         4,
         2
+      ]
+    },
+    {
+      "term": "sind",
+      "counts": [
+        0,
+        2,
+        0
       ]
     },
     {
@@ -19364,7 +21900,7 @@
       "term": "site",
       "counts": [
         7,
-        6,
+        7,
         0
       ]
     },
@@ -19380,7 +21916,7 @@
       "term": "situate",
       "counts": [
         3,
-        0,
+        1,
         1
       ]
     },
@@ -19492,7 +22028,7 @@
       "term": "social",
       "counts": [
         28,
-        16,
+        17,
         18
       ]
     },
@@ -19577,6 +22113,14 @@
       ]
     },
     {
+      "term": "sogenannten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "solidarity",
       "counts": [
         10,
@@ -19594,6 +22138,22 @@
     },
     {
       "term": "solve",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "somit",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "sorten",
       "counts": [
         0,
         1,
@@ -19668,7 +22228,23 @@
       "term": "sowie",
       "counts": [
         1,
+        4,
+        0
+      ]
+    },
+    {
+      "term": "soziale",
+      "counts": [
         0,
+        3,
+        0
+      ]
+    },
+    {
+      "term": "sozialen",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -19697,10 +22273,18 @@
       ]
     },
     {
+      "term": "spannungen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "spatial",
       "counts": [
         3,
-        2,
+        1,
         0
       ]
     },
@@ -19801,6 +22385,14 @@
       ]
     },
     {
+      "term": "sprechen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "ssr",
       "counts": [
         3,
@@ -19857,6 +22449,14 @@
       ]
     },
     {
+      "term": "stammte",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "stand",
       "counts": [
         1,
@@ -19873,6 +22473,22 @@
       ]
     },
     {
+      "term": "standorten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "stark",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "start",
       "counts": [
         1,
@@ -19884,7 +22500,7 @@
       "term": "state",
       "counts": [
         26,
-        6,
+        9,
         6
       ]
     },
@@ -19921,6 +22537,14 @@
       ]
     },
     {
+      "term": "statistiken",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "status",
       "counts": [
         0,
@@ -19949,6 +22573,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "stellung",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -20148,7 +22780,7 @@
       "term": "structure",
       "counts": [
         3,
-        3,
+        4,
         0
       ]
     },
@@ -20156,7 +22788,7 @@
       "term": "struggle",
       "counts": [
         3,
-        3,
+        4,
         0
       ]
     },
@@ -20169,6 +22801,14 @@
       ]
     },
     {
+      "term": "studie",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "studio",
       "counts": [
         1,
@@ -20177,10 +22817,34 @@
       ]
     },
     {
+      "term": "sturz",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "style",
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "städten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "stützen",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -20196,7 +22860,7 @@
       "term": "subject",
       "counts": [
         4,
-        0,
+        1,
         0
       ]
     },
@@ -20325,6 +22989,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "sultana",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -20489,7 +23161,7 @@
       ]
     },
     {
-      "term": "synergy",
+      "term": "symbolisch",
       "counts": [
         0,
         1,
@@ -20500,7 +23172,7 @@
       "term": "syria",
       "counts": [
         3,
-        3,
+        6,
         0
       ]
     },
@@ -20509,6 +23181,38 @@
       "counts": [
         5,
         6,
+        0
+      ]
+    },
+    {
+      "term": "syrien",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "syriens",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "syrische",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "syrischen",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -20557,6 +23261,14 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "tafeloliven",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -20665,6 +23377,14 @@
       ]
     },
     {
+      "term": "tausende",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "tbilisi",
       "counts": [
         1,
@@ -20713,6 +23433,46 @@
       ]
     },
     {
+      "term": "teil",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "teilnehmende",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "teilprojekt",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "teils",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "teilweise",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "tell",
       "counts": [
         1,
@@ -20724,7 +23484,7 @@
       "term": "temporal",
       "counts": [
         6,
-        2,
+        1,
         0
       ]
     },
@@ -20740,7 +23500,7 @@
       "term": "tension",
       "counts": [
         4,
-        1,
+        2,
         3
       ]
     },
@@ -20889,6 +23649,14 @@
       ]
     },
     {
+      "term": "theoriebildung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "theorize",
       "counts": [
         0,
@@ -20969,6 +23737,14 @@
       ]
     },
     {
+      "term": "thrakien",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "threat",
       "counts": [
         0,
@@ -20989,14 +23765,6 @@
       "counts": [
         1,
         0,
-        0
-      ]
-    },
-    {
-      "term": "throughout",
-      "counts": [
-        0,
-        1,
         0
       ]
     },
@@ -21076,7 +23844,7 @@
       "term": "today",
       "counts": [
         4,
-        0,
+        1,
         3
       ]
     },
@@ -21084,7 +23852,7 @@
       "term": "together",
       "counts": [
         1,
-        6,
+        5,
         2
       ]
     },
@@ -21188,7 +23956,7 @@
       "term": "trace",
       "counts": [
         9,
-        1,
+        6,
         1
       ]
     },
@@ -21238,6 +24006,14 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "traditionelles",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -21324,7 +24100,7 @@
       "term": "transform",
       "counts": [
         0,
-        1,
+        2,
         4
       ]
     },
@@ -21340,7 +24116,7 @@
       "term": "transformative",
       "counts": [
         1,
-        1,
+        2,
         0
       ]
     },
@@ -21396,6 +24172,14 @@
       "term": "translocality",
       "counts": [
         1,
+        0,
+        0
+      ]
+    },
+    {
+      "term": "translokaler",
+      "counts": [
+        0,
         1,
         0
       ]
@@ -21428,7 +24212,15 @@
       "term": "transnationale",
       "counts": [
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "transportieren",
+      "counts": [
         0,
+        1,
         0
       ]
     },
@@ -21452,7 +24244,7 @@
       "term": "treat",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -21468,7 +24260,7 @@
       "term": "tree",
       "counts": [
         0,
-        2,
+        3,
         0
       ]
     },
@@ -21521,6 +24313,14 @@
       ]
     },
     {
+      "term": "trotz",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "trouble",
       "counts": [
         1,
@@ -21553,9 +24353,25 @@
       ]
     },
     {
+      "term": "truth",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "try",
       "counts": [
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "trägt",
+      "counts": [
+        0,
         1,
         0
       ]
@@ -21596,7 +24412,7 @@
       "term": "turkey",
       "counts": [
         2,
-        3,
+        7,
         0
       ]
     },
@@ -21604,7 +24420,7 @@
       "term": "turkish",
       "counts": [
         2,
-        2,
+        3,
         0
       ]
     },
@@ -21641,6 +24457,38 @@
       ]
     },
     {
+      "term": "türkei",
+      "counts": [
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "term": "türkische",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "türkischen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "türkischer",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "u",
       "counts": [
         2,
@@ -21661,14 +24509,6 @@
       "counts": [
         1,
         0,
-        0
-      ]
-    },
-    {
-      "term": "uk",
-      "counts": [
-        0,
-        1,
         0
       ]
     },
@@ -21721,6 +24561,38 @@
       ]
     },
     {
+      "term": "um",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "umfasst",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "umliegenden",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "umwälzungen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "un",
       "counts": [
         0,
@@ -21738,6 +24610,14 @@
     },
     {
       "term": "unacknowledged",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "unbeachtet",
       "counts": [
         0,
         1,
@@ -21772,7 +24652,7 @@
       "term": "und",
       "counts": [
         7,
-        1,
+        41,
         0
       ]
     },
@@ -21865,6 +24745,14 @@
       ]
     },
     {
+      "term": "ungleichen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "unhcr",
       "counts": [
         0,
@@ -21892,7 +24780,7 @@
       "term": "union",
       "counts": [
         6,
-        3,
+        4,
         0
       ]
     },
@@ -21932,7 +24820,7 @@
       "term": "university",
       "counts": [
         1,
-        4,
+        0,
         9
       ]
     },
@@ -22057,10 +24945,42 @@
       ]
     },
     {
+      "term": "unter",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "unterscheiden",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "unterschiedlichen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "untersucht",
       "counts": [
         1,
+        3,
+        0
+      ]
+    },
+    {
+      "term": "unzureichend",
+      "counts": [
         0,
+        1,
         0
       ]
     },
@@ -22097,10 +25017,18 @@
       ]
     },
     {
+      "term": "uprise",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "urban",
       "counts": [
         9,
-        6,
+        7,
         0
       ]
     },
@@ -22252,7 +25180,7 @@
       "term": "value",
       "counts": [
         1,
-        1,
+        2,
         4
       ]
     },
@@ -22276,6 +25204,14 @@
       "term": "variety",
       "counts": [
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "variieren",
+      "counts": [
+        0,
         1,
         0
       ]
@@ -22321,6 +25257,14 @@
       ]
     },
     {
+      "term": "vegetal",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "vegetation",
       "counts": [
         0,
@@ -22345,7 +25289,79 @@
       ]
     },
     {
-      "term": "venice",
+      "term": "verankert",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "verantwortlichkeiten",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "verb",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "verbindung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "verbindungen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "verfolgung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "vergleichende",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "verkauft",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "verlorenen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "verlust",
       "counts": [
         0,
         1,
@@ -22357,6 +25373,30 @@
       "counts": [
         1,
         0,
+        0
+      ]
+    },
+    {
+      "term": "verortung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "verschiedenen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "verständnis",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -22374,6 +25414,38 @@
         0,
         0,
         1
+      ]
+    },
+    {
+      "term": "vertreibt",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "vertreibung",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "verwandtschaftsbeziehungen",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "veränderte",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -22468,7 +25540,7 @@
       "term": "violence",
       "counts": [
         8,
-        5,
+        6,
         0
       ]
     },
@@ -22476,7 +25548,7 @@
       "term": "violent",
       "counts": [
         2,
-        3,
+        4,
         2
       ]
     },
@@ -22524,7 +25596,7 @@
       "term": "vision",
       "counts": [
         4,
-        0,
+        1,
         0
       ]
     },
@@ -22588,6 +25660,22 @@
       "term": "von",
       "counts": [
         2,
+        19,
+        0
+      ]
+    },
+    {
+      "term": "vor",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "vorhaben",
+      "counts": [
+        0,
         1,
         0
       ]
@@ -22617,7 +25705,7 @@
       ]
     },
     {
-      "term": "wageningen",
+      "term": "wachsen",
       "counts": [
         0,
         1,
@@ -22636,7 +25724,7 @@
       "term": "war",
       "counts": [
         13,
-        8,
+        10,
         3
       ]
     },
@@ -22721,10 +25809,50 @@
       ]
     },
     {
+      "term": "wege",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "weiter",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "weitere",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "weitergabe",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "welfare",
       "counts": [
         0,
         1,
+        0
+      ]
+    },
+    {
+      "term": "werden",
+      "counts": [
+        0,
+        2,
         0
       ]
     },
@@ -22745,10 +25873,18 @@
       ]
     },
     {
+      "term": "westanatolien",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "western",
       "counts": [
         0,
-        3,
+        4,
         6
       ]
     },
@@ -22780,7 +25916,7 @@
       "term": "whose",
       "counts": [
         1,
-        0,
+        1,
         0
       ]
     },
@@ -22809,6 +25945,14 @@
       ]
     },
     {
+      "term": "wie",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "term": "wild",
       "counts": [
         0,
@@ -22833,6 +25977,38 @@
       ]
     },
     {
+      "term": "wird",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "wirtschaft",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "wirtschaftsverhältnisse",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "wissenschaftliche",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "without",
       "counts": [
         0,
@@ -22852,7 +26028,7 @@
       "term": "woman",
       "counts": [
         17,
-        1,
+        3,
         6
       ]
     },
@@ -22868,8 +26044,16 @@
       "term": "word",
       "counts": [
         2,
-        0,
+        1,
         2
+      ]
+    },
+    {
+      "term": "worden",
+      "counts": [
+        0,
+        1,
+        0
       ]
     },
     {
@@ -22953,10 +26137,26 @@
       ]
     },
     {
+      "term": "wurden",
+      "counts": [
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "term": "während",
+      "counts": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
       "term": "year",
       "counts": [
         7,
-        3,
+        4,
         1
       ]
     },
@@ -23001,6 +26201,14 @@
       ]
     },
     {
+      "term": "zahl",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "zakonnost",
       "counts": [
         1,
@@ -23009,7 +26217,7 @@
       ]
     },
     {
-      "term": "zalf",
+      "term": "zeitgenössischer",
       "counts": [
         0,
         1,
@@ -23033,6 +26241,22 @@
       ]
     },
     {
+      "term": "zirkulation",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "zirkuläre",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
       "term": "ziyad",
       "counts": [
         0,
@@ -23044,7 +26268,7 @@
       "term": "zmo",
       "counts": [
         2,
-        2,
+        1,
         0
       ]
     },
@@ -23068,7 +26292,31 @@
       "term": "zu",
       "counts": [
         2,
+        5,
+        0
+      ]
+    },
+    {
+      "term": "zudem",
+      "counts": [
         0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "zugehörigkeit",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "zugehörigkeiten",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -23076,7 +26324,47 @@
       "term": "zur",
       "counts": [
         1,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "zurückkehren",
+      "counts": [
         0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "zusammenarbeit",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "zusammenbruch",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "zwar",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "zweitens",
+      "counts": [
+        0,
+        1,
         0
       ]
     },
@@ -23084,7 +26372,39 @@
       "term": "zwischen",
       "counts": [
         1,
+        4,
+        0
+      ]
+    },
+    {
+      "term": "züchter",
+      "counts": [
         0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "ökologien",
+      "counts": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "term": "öl",
+      "counts": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "term": "über",
+      "counts": [
+        0,
+        4,
         0
       ]
     }
@@ -28666,109 +31986,6 @@
     },
     {
       "unit": "Lives_Ecologies",
-      "title": "Shifting landscapes of human-plant co-mobilities between Europe and Asia (PLANTH)",
-      "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-hilal-alkan-shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth",
-      "text": "Shifting landscapes of human-plant co-mobilities between Europe and Asia (PLANTH)",
-      "terms": [
-        "asia",
-        "europe",
-        "landscape",
-        "planth",
-        "shift"
-      ]
-    },
-    {
-      "unit": "Lives_Ecologies",
-      "title": "Shifting landscapes of human-plant co-mobilities between Europe and Asia (PLANTH)",
-      "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-hilal-alkan-shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth",
-      "text": "The Leibniz Collaborative Excellence project PLANTH, traces human-plant co-mobilities and asks how these co-mobilities change and shape landscapes in several interconnected sites in Europe and Asia: between Turkey and Bulgaria, Italy and Bangladesh, and Syria, Iraq and Germany.",
-      "terms": [
-        "asia",
-        "ask",
-        "bangladesh",
-        "bulgaria",
-        "change",
-        "collaborative",
-        "europe",
-        "excellence",
-        "germany",
-        "interconnect",
-        "iraq",
-        "italy",
-        "landscape",
-        "leibniz",
-        "planth",
-        "several",
-        "shape",
-        "site",
-        "syria",
-        "trace",
-        "turkey"
-      ]
-    },
-    {
-      "unit": "Lives_Ecologies",
-      "title": "Shifting landscapes of human-plant co-mobilities between Europe and Asia (PLANTH)",
-      "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-hilal-alkan-shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth",
-      "text": "PLANTH challenges the human-centric paradigm of migration and mobility studies by foregrounding the role played by human–nonhuman relations in creating new livelihoods and ‘making place’ in contexts of migration. The project focuses on plants as mobility companions, as temporal anchors to/in pre- and post-migration lives, and as both care charges and resources throughout migration. By bringing together two Leibniz research institutes, Leibniz-Zentrum Moderner Orient (ZMO) and Leibniz-Zentrum für Agrarlandschaftsforschung (ZALF), and expertise from three European universities, Wageningen University (Netherlands), Ca’Foscari University of Venice (Italy) and Cardiff University (UK), it fosters synergies between spatial, agricultural and ethnobotanical research and historical and anthropological studies of migration and translocality.",
-      "terms": [
-        "agrarlandschaftsforschung",
-        "agricultural",
-        "anchor",
-        "anthropological",
-        "bring",
-        "ca",
-        "cardiff",
-        "care",
-        "challenge",
-        "charge",
-        "companion",
-        "context",
-        "create",
-        "ethnobotanical",
-        "european",
-        "expertise",
-        "foreground",
-        "foscari",
-        "foster",
-        "für",
-        "historical",
-        "human",
-        "institute",
-        "italy",
-        "leibniz",
-        "life",
-        "livelihood",
-        "migration",
-        "mobility",
-        "moderner",
-        "netherlands",
-        "nonhuman",
-        "orient",
-        "paradigm",
-        "place",
-        "plant",
-        "planth",
-        "play",
-        "relation",
-        "resource",
-        "role",
-        "spatial",
-        "synergy",
-        "temporal",
-        "throughout",
-        "together",
-        "translocality",
-        "uk",
-        "university",
-        "venice",
-        "wageningen",
-        "zalf",
-        "zmo"
-      ]
-    },
-    {
-      "unit": "Lives_Ecologies",
       "title": "Beyond Humanitarianism: Disability Care and Belonging of Afghan Veterans in Iran (DFG)",
       "url": "https://www.zmo.de/en/research/lives-and-ecologies/ahmad-moradi",
       "text": "Beyond Humanitarianism: Disability Care and Belonging of Afghan Veterans in Iran (DFG)",
@@ -29270,6 +32487,913 @@
     },
     {
       "unit": "Lives_Ecologies",
+      "title": "Rights and Lives: Tracing Haqq Through Divorce in Turkey",
+      "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-burcu-kalpaklioglu-rights-and-lives-tracing-haqq-through-divorce-in-turkey",
+      "text": "Rights and Lives: Tracing Haqq Through Divorce in Turkey",
+      "terms": [
+        "divorce",
+        "haqq",
+        "life",
+        "right",
+        "trace",
+        "turkey"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "Rights and Lives: Tracing Haqq Through Divorce in Turkey",
+      "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-burcu-kalpaklioglu-rights-and-lives-tracing-haqq-through-divorce-in-turkey",
+      "text": "Examining divorce in everyday lives and family courts, my postdoctoral project traces women’s pursuit of their haqq in Turkey. The Arabic-rooted word haqq, which can be used as a verb, noun, and adjective in Turkish and many other languages, is a polysemic notion with extensive and dynamic meanings, such as truth, reality, right, justice, law, share, and due. The project aims to elaborate the concept of haqq as a way of capturing Muslim lifeworlds that move beyond Western frameworks of rights, which often focus on the tension between right-bearing individual subjects and the legal power of the state, as well as scripturalist interpretations of Islamic jurisprudential norms. By taking divorce as a site where women reevaluate their labor of care and negotiate and redefine their haqq, it rethinks haqq as a dynamic and contested field of moral, political, and affective struggles situated within relations among the self, others, and God. By analyzing intimate crises within the context of broader political and economic crises in Turkey, it aims to provide rich ethnographic evidence of the circulation of multiple registers of haqq at the individual, family, community, and state levels.",
+      "terms": [
+        "adjective",
+        "affective",
+        "among",
+        "analyze",
+        "beyond",
+        "broader",
+        "capture",
+        "care",
+        "circulation",
+        "community",
+        "concept",
+        "contest",
+        "context",
+        "court",
+        "crisis",
+        "divorce",
+        "due",
+        "dynamic",
+        "economic",
+        "elaborate",
+        "ethnographic",
+        "everyday",
+        "evidence",
+        "extensive",
+        "family",
+        "field",
+        "framework",
+        "god",
+        "haqq",
+        "individual",
+        "interpretation",
+        "intimate",
+        "islamic",
+        "jurisprudential",
+        "justice",
+        "labor",
+        "language",
+        "law",
+        "legal",
+        "level",
+        "life",
+        "lifeworlds",
+        "many",
+        "meaning",
+        "moral",
+        "move",
+        "multiple",
+        "muslim",
+        "negotiate",
+        "norm",
+        "notion",
+        "noun",
+        "others",
+        "political",
+        "polysemic",
+        "postdoctoral",
+        "power",
+        "pursuit",
+        "reality",
+        "redefine",
+        "reevaluate",
+        "register",
+        "relation",
+        "rethink",
+        "rich",
+        "right",
+        "scripturalist",
+        "self",
+        "share",
+        "site",
+        "situate",
+        "state",
+        "struggle",
+        "subject",
+        "tension",
+        "trace",
+        "truth",
+        "turkey",
+        "turkish",
+        "verb",
+        "western",
+        "woman",
+        "word"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "PLANTH",
+      "url": "https://www.zmo.de/en/research/lives-and-ecologies",
+      "text": "PLANTH",
+      "terms": [
+        "planth"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "PLANTH",
+      "url": "https://www.zmo.de/en/research/lives-and-ecologies",
+      "text": "The Leibniz Collaborative Excellence project PLANTH, traces human-plant co-mobilities and asks how these co-mobilities change and shape landscapes in several interconnected sites in Europe and Asia: between Turkey and Bulgaria, Italy and Bangladesh, and Syria, Iraq and Germany.",
+      "terms": [
+        "asia",
+        "ask",
+        "bangladesh",
+        "bulgaria",
+        "change",
+        "collaborative",
+        "europe",
+        "excellence",
+        "germany",
+        "interconnect",
+        "iraq",
+        "italy",
+        "landscape",
+        "leibniz",
+        "planth",
+        "several",
+        "shape",
+        "site",
+        "syria",
+        "trace",
+        "turkey"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Emplacement: Pomak refugees and vegetal distinction in Turkey",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/hilal-alkan",
+      "text": "A Landscape of Emplacement: Pomak refugees and vegetal distinction in Turkey",
+      "terms": [
+        "distinction",
+        "emplacement",
+        "landscape",
+        "pomak",
+        "refugee",
+        "turkey",
+        "vegetal"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Emplacement: Pomak refugees and vegetal distinction in Turkey",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/hilal-alkan",
+      "text": "Hilal Alkan",
+      "terms": [
+        "alkan",
+        "hilal"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Emplacement: Pomak refugees and vegetal distinction in Turkey",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/hilal-alkan",
+      "text": "Einzelprojekt von: Shifting landscapes of human-plant co-mobilities between Europe and Asia (PLANTH)",
+      "terms": [
+        "asia",
+        "einzelprojekt",
+        "europe",
+        "landscape",
+        "planth",
+        "shift",
+        "von"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Emplacement: Pomak refugees and vegetal distinction in Turkey",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/hilal-alkan",
+      "text": "Während und nach dem Zusammenbruch des Osmanischen Reiches ließen sich rund sechs Millionen Kriegsflüchtlinge im Gebiet der heutigen Türkei nieder. Ein großer Teil davon stammte aus den neuen Balkanstaaten darunter auch die bulgarischsprachigen muslimischen Pomaken aus dem Rhodopengebirge. Die Migration der Pomaken begann nach den russisch-osmanischen Kriegen der 1870er Jahre und setzte sich inmitten ethnisch-religiöser Verfolgung bis 1989 fort als die Türkei weitere 300.000 Neuankömmlinge aus Bulgarien aufnahm (Kaşlı & Parla 2009). Die Schätzungen zur Zahl der Pomaken in der Türkei variieren stark (zwischen 200.000 und 750.000) da es keine offiziellen Statistiken nach ethnischer Zugehörigkeit gibt. Da sie zwar wie die türkische Mehrheitsgesellschaft Muslime sind aber Bulgarisch sprechen nehmen sie eine ambivalente soziale Stellung in der türkischen Gesellschaft ein (Danış & Parla 2009; Emen-Gökatalay 2023) und erhielten bisher kaum wissenschaftliche Beachtung.",
+      "terms": [
+        "aber",
+        "al",
+        "ambivalente",
+        "au",
+        "auch",
+        "aufnahm",
+        "balkanstaaten",
+        "beachtung",
+        "begann",
+        "bi",
+        "bisher",
+        "bulgarien",
+        "bulgarisch",
+        "bulgarischsprachigen",
+        "da",
+        "danış",
+        "darunter",
+        "davon",
+        "de",
+        "dem",
+        "den",
+        "der",
+        "die",
+        "e",
+        "ein",
+        "eine",
+        "erhielten",
+        "ethnischer",
+        "fort",
+        "gebiet",
+        "gesellschaft",
+        "gibt",
+        "großer",
+        "heutigen",
+        "im",
+        "inmitten",
+        "jahre",
+        "kaum",
+        "kaşlı",
+        "keine",
+        "kriegen",
+        "kriegsflüchtlinge",
+        "ließen",
+        "mehrheitsgesellschaft",
+        "migration",
+        "millionen",
+        "muslime",
+        "muslimischen",
+        "nach",
+        "nehmen",
+        "neuankömmlinge",
+        "neuen",
+        "nieder",
+        "offiziellen",
+        "osmanischen",
+        "parla",
+        "pomaken",
+        "reich",
+        "rhodopengebirge",
+        "rund",
+        "schätzungen",
+        "sechs",
+        "setzte",
+        "sich",
+        "sie",
+        "sind",
+        "soziale",
+        "sprechen",
+        "stammte",
+        "stark",
+        "statistiken",
+        "stellung",
+        "teil",
+        "türkei",
+        "türkische",
+        "türkischen",
+        "und",
+        "variieren",
+        "verfolgung",
+        "weitere",
+        "wie",
+        "wissenschaftliche",
+        "während",
+        "zahl",
+        "zugehörigkeit",
+        "zur",
+        "zusammenbruch",
+        "zwar",
+        "zwischen"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Emplacement: Pomak refugees and vegetal distinction in Turkey",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/hilal-alkan",
+      "text": "Die Pomaken haben sich in Städten im ganzen Land sowie in Dörfern in Westanatolien und in der Region Thrakien niedergelassen. Diese Dörfer unterscheiden sich von den umliegenden einheimischen Dörfern durch ihre Obstgärten und Gärten hier wachsen vor allem aus Bulgarien eingeführte Sorten die durch zirkuläre Migration zwischen den beiden Ländern und transnationale Verwandtschaftsbeziehungen kontinuierlich erneuert werden. Dieser Pflanzenaustausch hat die lokalen Landschaften Siedlungsmuster Ernährungsgewohnheiten und die regionale Artenvielfalt neu geprägt. Traditionelles Saatgut – das seit über einem Jahrhundert durch Anbau Aufbewahrung und Weitergabe erhalten wird – verankert die Identität der Gemeinschaft.",
+      "terms": [
+        "allem",
+        "anbau",
+        "artenvielfalt",
+        "au",
+        "aufbewahrung",
+        "beiden",
+        "bulgarien",
+        "da",
+        "den",
+        "der",
+        "die",
+        "diese",
+        "dieser",
+        "durch",
+        "dörfer",
+        "dörfern",
+        "einem",
+        "eingeführte",
+        "einheimischen",
+        "erhalten",
+        "erneuert",
+        "ernährungsgewohnheiten",
+        "ganzen",
+        "gemeinschaft",
+        "geprägt",
+        "gärten",
+        "haben",
+        "hat",
+        "hier",
+        "identität",
+        "ihre",
+        "im",
+        "jahrhundert",
+        "kontinuierlich",
+        "land",
+        "landschaften",
+        "lokalen",
+        "ländern",
+        "migration",
+        "neu",
+        "niedergelassen",
+        "obstgärten",
+        "pflanzenaustausch",
+        "pomaken",
+        "region",
+        "regionale",
+        "saatgut",
+        "seit",
+        "sich",
+        "siedlungsmuster",
+        "sorten",
+        "sowie",
+        "städten",
+        "thrakien",
+        "traditionelles",
+        "transnationale",
+        "umliegenden",
+        "und",
+        "unterscheiden",
+        "verankert",
+        "verwandtschaftsbeziehungen",
+        "von",
+        "vor",
+        "wachsen",
+        "weitergabe",
+        "werden",
+        "westanatolien",
+        "wird",
+        "zirkuläre",
+        "zwischen",
+        "über"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Emplacement: Pomak refugees and vegetal distinction in Turkey",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/hilal-alkan",
+      "text": "In ihrer Forschung untersucht Hilal Alkan die Besiedlung ländlicher Gebiete durch die Pomaken anhand einer multimodalen artenübergreifenden Ethnografie die teilnehmende Beobachtung das Nachzeichnen von „Pflanzenbiografien“ durch orale Geschichte vergleichende Analysen historischer und zeitgenössischer Karten partizipative Kartografie sowie das Sammeln und Bestimmen von Pflanzen umfasst.",
+      "terms": [
+        "alkan",
+        "analysen",
+        "anhand",
+        "artenübergreifenden",
+        "beobachtung",
+        "besiedlung",
+        "bestimmen",
+        "da",
+        "die",
+        "durch",
+        "einer",
+        "ethnografie",
+        "forschung",
+        "gebiete",
+        "geschichte",
+        "hilal",
+        "historischer",
+        "ihrer",
+        "karten",
+        "kartografie",
+        "ländlicher",
+        "multimodalen",
+        "nachzeichnen",
+        "orale",
+        "partizipative",
+        "pflanzen",
+        "pflanzenbiografien",
+        "pomaken",
+        "sammeln",
+        "sowie",
+        "teilnehmende",
+        "umfasst",
+        "und",
+        "untersucht",
+        "vergleichende",
+        "von",
+        "zeitgenössischer"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Multiple Landings: More-than-human cohabitations and migrating (with) seeds between Italy and Bangladesh",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/elisa-t-bertuzzo",
+      "text": "A Landscape of Multiple Landings: More-than-human cohabitations and migrating (with) seeds between Italy and Bangladesh",
+      "terms": [
+        "bangladesh",
+        "cohabitation",
+        "italy",
+        "landing",
+        "landscape",
+        "migrate",
+        "multiple",
+        "seed"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Multiple Landings: More-than-human cohabitations and migrating (with) seeds between Italy and Bangladesh",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/elisa-t-bertuzzo",
+      "text": "Elisa T. Bertuzzo",
+      "terms": [
+        "bertuzzo",
+        "elisa"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Multiple Landings: More-than-human cohabitations and migrating (with) seeds between Italy and Bangladesh",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/elisa-t-bertuzzo",
+      "text": "Einzelprojekt von: Shifting landscapes of human-plant co-mobilities between Europe and Asia (PLANTH)",
+      "terms": [
+        "asia",
+        "einzelprojekt",
+        "europe",
+        "landscape",
+        "planth",
+        "shift",
+        "von"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Multiple Landings: More-than-human cohabitations and migrating (with) seeds between Italy and Bangladesh",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/elisa-t-bertuzzo",
+      "text": "Seit Anfang der 2000er Jahre haben sich Arbeitsmigrant*innen aus Bangladesch in verschiedenen Regionen Italiens als Züchter*innen von Gemüsesamen und -pflanzen aus ihrer Heimat etabliert. Nachdem sich diese Pflanzen als kompatibel mit Klima und Böden geeignet erwiesen hatten, erweiterten die Erzeuger*innen ihre Produktion von der Eigenversorgung auf einen großflächigeren Anbau. Inzwischen stützen sie eine Lieferkette, die frisches „exotisches“ Gemüse zu günstigen Preisen und mit geringem CO2-Fußabdruck in ganz Mitteleuropa vertreibt (Bertuzzo 2025 und 2026). Diese Landwirt*innen aus Bangladesch fördern regionale Ernährungssysteme abseits der ausbeuterischen Netzwerke des italienischen Landwirtschaftssektors und revitalisieren ländliche Gebiete, die seit Jahrzehnten von Entvölkerung und Landflucht betroffen sind. Ihre Pionierarbeit ist jedoch bislang unzureichend erforscht; ebenso bleibt die Arbeit der co-mobilen Samen in den Ökologien, in die sie eingeführt wurden, unbeachtet.",
+      "terms": [
+        "abseits",
+        "al",
+        "anbau",
+        "anfang",
+        "arbeit",
+        "arbeitsmigrant",
+        "au",
+        "auf",
+        "ausbeuterischen",
+        "bangladesch",
+        "bertuzzo",
+        "betroffen",
+        "bislang",
+        "bleibt",
+        "böden",
+        "de",
+        "den",
+        "der",
+        "die",
+        "diese",
+        "ebenso",
+        "eigenversorgung",
+        "eine",
+        "einen",
+        "eingeführt",
+        "entvölkerung",
+        "erforscht",
+        "ernährungssysteme",
+        "erweiterten",
+        "erwiesen",
+        "erzeuger",
+        "etabliert",
+        "exotisches",
+        "frisch",
+        "fördern",
+        "ganz",
+        "gebiete",
+        "geeignet",
+        "gemüse",
+        "gemüsesamen",
+        "geringem",
+        "großflächigeren",
+        "günstigen",
+        "haben",
+        "hatten",
+        "heimat",
+        "ihre",
+        "ihrer",
+        "innen",
+        "inzwischen",
+        "ist",
+        "italienischen",
+        "italiens",
+        "jahre",
+        "jahrzehnten",
+        "jedoch",
+        "klima",
+        "kompatibel",
+        "landflucht",
+        "landwirt",
+        "landwirtschaftssektors",
+        "lieferkette",
+        "ländliche",
+        "mit",
+        "mitteleuropa",
+        "nachdem",
+        "netzwerke",
+        "pflanzen",
+        "pionierarbeit",
+        "preisen",
+        "produktion",
+        "regionale",
+        "regionen",
+        "revitalisieren",
+        "saman",
+        "seit",
+        "sich",
+        "sie",
+        "sind",
+        "stützen",
+        "unbeachtet",
+        "und",
+        "unzureichend",
+        "verschiedenen",
+        "vertreibt",
+        "von",
+        "wurden",
+        "zu",
+        "züchter",
+        "ökologien"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Multiple Landings: More-than-human cohabitations and migrating (with) seeds between Italy and Bangladesh",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/elisa-t-bertuzzo",
+      "text": "Die Fallstudie trägt zu einem besseren Verständnis dieser Zirkulation von Samen und Menschen bei. Durch ethnografische Feldforschung an mehreren „Ankunftsorten“ in Italien und Bangladesch werden deren sozio-ökologische Infrastrukturen und transformative Auswirkungen untersucht. Das Projekt dekonstruiert Narrative, die die „fremden“ Gemüsesorten als Bedrohung für die „einheimische“ Biodiversität und „Authentizität“ der Landschaft darstellen. Der Blick richtet sich auf multispecies Zusammenarbeit, auf geteilte Erfahrungen von Verlust und (Wieder-)Herstellung von Ortsverbundenheit, sowie auf die ungleichen Verantwortlichkeiten und Anpassungsmöglichkeiten an den Klimawandel in Bangladesch und Italien (Sultana 2022). Somit leistet das Vorhaben einen Beitrag zu laufenden Diskussionen über place-making, Verortung und planetare Fürsorge, während es gleichzeitig eine Theoriebildung für eine more-than-human Mobilitätsgerechtigkeit (mobility justice) anstrebt.",
+      "terms": [
+        "al",
+        "ankunftsorten",
+        "anpassungsmöglichkeiten",
+        "anstrebt",
+        "auf",
+        "auswirkungen",
+        "authentizität",
+        "bangladesch",
+        "bedrohung",
+        "bei",
+        "beitrag",
+        "besseren",
+        "biodiversität",
+        "blick",
+        "da",
+        "darstellen",
+        "dekonstruiert",
+        "den",
+        "der",
+        "deren",
+        "die",
+        "dieser",
+        "diskussionen",
+        "durch",
+        "e",
+        "eine",
+        "einem",
+        "einen",
+        "einheimische",
+        "erfahrungen",
+        "ethnografische",
+        "fallstudie",
+        "feldforschung",
+        "fremden",
+        "für",
+        "fürsorge",
+        "gemüsesorten",
+        "geteilte",
+        "gleichzeitig",
+        "herstellung",
+        "infrastrukturen",
+        "italien",
+        "justice",
+        "klimawandel",
+        "landschaft",
+        "laufenden",
+        "leistet",
+        "mehreren",
+        "menschen",
+        "mobility",
+        "mobilitätsgerechtigkeit",
+        "multispecies",
+        "narrative",
+        "ortsverbundenheit",
+        "planetare",
+        "projekt",
+        "richtet",
+        "saman",
+        "sich",
+        "somit",
+        "sowie",
+        "sultana",
+        "theoriebildung",
+        "transformative",
+        "trägt",
+        "und",
+        "ungleichen",
+        "untersucht",
+        "verantwortlichkeiten",
+        "verlust",
+        "verortung",
+        "verständnis",
+        "von",
+        "vorhaben",
+        "werden",
+        "während",
+        "zirkulation",
+        "zu",
+        "zusammenarbeit",
+        "über"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Violent Displacements: Tracing human-arboreal mobilities through olive trees from Afrin, Syria",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/katharina-lange-lives-and-ecologies",
+      "text": "A Landscape of Violent Displacements: Tracing human-arboreal mobilities through olive trees from Afrin, Syria",
+      "terms": [
+        "afrin",
+        "displacement",
+        "landscape",
+        "mobility",
+        "olive",
+        "syria",
+        "trace",
+        "tree",
+        "violent"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Violent Displacements: Tracing human-arboreal mobilities through olive trees from Afrin, Syria",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/katharina-lange-lives-and-ecologies",
+      "text": "Katharina Lange",
+      "terms": [
+        "katharina",
+        "lange"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Violent Displacements: Tracing human-arboreal mobilities through olive trees from Afrin, Syria",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/katharina-lange-lives-and-ecologies",
+      "text": "Einzelprojekt von: Shifting landscapes of human-plant co-mobilities between Europe and Asia (PLANTH)",
+      "terms": [
+        "asia",
+        "einzelprojekt",
+        "europe",
+        "landscape",
+        "planth",
+        "shift",
+        "von"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Violent Displacements: Tracing human-arboreal mobilities through olive trees from Afrin, Syria",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/katharina-lange-lives-and-ecologies",
+      "text": "Die Region Afrin in Nordsyrien ist Heimat von über einer Million Olivenbäume und historisches Siedlungsgebiet eines bedeutenden Teils von Syriens kurdischer Minderheit. Die Oliven und das daraus gewonnene hochwertige Öl haben grundlegende Bedeutung für die lokale Wirtschaft. Durch die Identifikation der Region Afrin mit dem Olivenanbau transportieren sie zudem symbolisch besondere soziale und ethnische Zugehörigkeiten.",
+      "terms": [
+        "afrin",
+        "bedeutenden",
+        "bedeutung",
+        "besondere",
+        "da",
+        "daraus",
+        "dem",
+        "der",
+        "die",
+        "durch",
+        "einer",
+        "eines",
+        "ethnische",
+        "für",
+        "gewonnene",
+        "grundlegende",
+        "haben",
+        "heimat",
+        "historisches",
+        "hochwertige",
+        "identifikation",
+        "ist",
+        "kurdischer",
+        "lokale",
+        "million",
+        "minderheit",
+        "mit",
+        "nordsyrien",
+        "oliven",
+        "olivenanbau",
+        "olivenbäume",
+        "region",
+        "sie",
+        "siedlungsgebiet",
+        "soziale",
+        "symbolisch",
+        "syriens",
+        "teils",
+        "transportieren",
+        "und",
+        "von",
+        "wirtschaft",
+        "zudem",
+        "zugehörigkeiten",
+        "öl",
+        "über"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Violent Displacements: Tracing human-arboreal mobilities through olive trees from Afrin, Syria",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/katharina-lange-lives-and-ecologies",
+      "text": "Die politischen Umwälzungen in der Region seit dem Aufstand gegen das Assad-Regime haben auch die Beziehungen zwischen Menschen und Olivenbäumen in Afrin geprägt. 2018 besetzten islamistische Milizen der sogenannten „Syrischen Nationalarmee“ unter türkischer Führung die Region, die seit 2012 von der kurdischen Partei der Demokratischen Union (PYD) regiert worden war. Dies veränderte die soziale und politische Landschaft: ein großer Teil der kurdischen Einwohner flohen, während sich arabischsprachige Milizionäre und ihre Familien, aber auch syrische Binnenflüchtlinge hier niederließen. Seit dem Sturz des Assad-Regimes im Dezember 2024 konnten trotz weiter andauernder politischer Spannungen Tausende syrisch-kurdischer Familien in die Region zurückkehren. Afrins Olivenbäume wurden in diesen Konflikten zu Opfern und Akteuren von Vertreibung sowie translokaler Verbindungen. Erstens wurden zwischen 2018 und 2024 Tausende ausgewachsener Bäume entwurzelt und in der nahen Türkei verkauft. Zweitens wurden Olivensetzlinge aus Afrin nach Kurdistan-Irak exportiert, teilweise begleitet von menschlichen Emigranten, die sich mit deren Anbau und Pflege auskannten. Drittens importierten nach Deutschland geflüchtete Menschen Tafeloliven und Öl, um so eine Verbindung zu ihrer verlorenen Heimat herzustellen.",
+      "terms": [
+        "aber",
+        "afrin",
+        "afrins",
+        "akteuren",
+        "anbau",
+        "andauernder",
+        "arabischsprachige",
+        "au",
+        "auch",
+        "aufstand",
+        "ausgewachsener",
+        "auskannten",
+        "begleitet",
+        "besetzten",
+        "beziehungen",
+        "binnenflüchtlinge",
+        "bäume",
+        "da",
+        "de",
+        "dem",
+        "demokratischen",
+        "der",
+        "deren",
+        "deutschland",
+        "dezember",
+        "die",
+        "diesen",
+        "drittens",
+        "dy",
+        "ein",
+        "eine",
+        "einwohner",
+        "emigranten",
+        "entwurzelt",
+        "erstens",
+        "exportiert",
+        "familien",
+        "flohen",
+        "führung",
+        "geflüchtete",
+        "gegen",
+        "geprägt",
+        "großer",
+        "haben",
+        "heimat",
+        "herzustellen",
+        "hier",
+        "ihre",
+        "ihrer",
+        "im",
+        "importierten",
+        "islamistische",
+        "konflikten",
+        "konnten",
+        "kurdischen",
+        "landschaft",
+        "menschen",
+        "menschlichen",
+        "milizen",
+        "milizionäre",
+        "mit",
+        "nach",
+        "nahen",
+        "nationalarmee",
+        "niederließen",
+        "olivenbäume",
+        "olivenbäumen",
+        "olivensetzlinge",
+        "opfern",
+        "partei",
+        "pflege",
+        "politische",
+        "politischen",
+        "politischer",
+        "pyd",
+        "regiert",
+        "region",
+        "seit",
+        "sich",
+        "sogenannten",
+        "sowie",
+        "soziale",
+        "spannungen",
+        "sturz",
+        "syrische",
+        "syrischen",
+        "tafeloliven",
+        "tausende",
+        "teil",
+        "teilweise",
+        "translokaler",
+        "trotz",
+        "türkei",
+        "türkischer",
+        "um",
+        "umwälzungen",
+        "und",
+        "union",
+        "unter",
+        "verbindung",
+        "verbindungen",
+        "verkauft",
+        "verlorenen",
+        "vertreibung",
+        "veränderte",
+        "von",
+        "war",
+        "weiter",
+        "worden",
+        "wurden",
+        "während",
+        "zu",
+        "zurückkehren",
+        "zweitens",
+        "zwischen",
+        "öl"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "A Landscape of Violent Displacements: Tracing human-arboreal mobilities through olive trees from Afrin, Syria",
+      "url": "https://www.zmo.de/forschung/lebenswege-und-oekologien/shifting-landscapes-of-human-plant-co-mobilities-between-europe-and-asia-planth/katharina-lange-lives-and-ecologies",
+      "text": "Anhand der unterschiedlichen Wege der Afriner Oliven(bäume) untersucht Katharina Lange in diesem Teilprojekt, wie gewaltsame Mobilität menschliche und pflanzliche Lebenswelten neu gestaltet. Durch die Kombination von Ethnografie an mehreren Standorten in Deutschland, Syrien und im irakischen Kurdistan mit kartografischen, ethnobotanischen und oralhistorischen Methoden kartiert die Studie die sozialen Netzwerke und politischen Wirtschaftsverhältnisse, die Bäume über Grenzen hinweg mobilisieren.",
+      "terms": [
+        "afriner",
+        "anhand",
+        "bäume",
+        "der",
+        "deutschland",
+        "die",
+        "diesem",
+        "durch",
+        "ethnobotanischen",
+        "ethnografie",
+        "gestaltet",
+        "gewaltsame",
+        "grenzen",
+        "hinweg",
+        "im",
+        "irakischen",
+        "kartiert",
+        "kartografischen",
+        "katharina",
+        "kombination",
+        "kurdistan",
+        "lange",
+        "lebenswelten",
+        "mehreren",
+        "menschliche",
+        "methoden",
+        "mit",
+        "mobilisieren",
+        "mobilität",
+        "netzwerke",
+        "neu",
+        "oliven",
+        "oralhistorischen",
+        "pflanzliche",
+        "politischen",
+        "sozialen",
+        "standorten",
+        "studie",
+        "syrien",
+        "teilprojekt",
+        "und",
+        "unterschiedlichen",
+        "untersucht",
+        "von",
+        "wege",
+        "wie",
+        "wirtschaftsverhältnisse",
+        "über"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
       "title": "Bahari yetu (Our ocean/genre) – A Matrifocal Anthropological Study of Oral Archives and Embodied Knowledge Practices Along the Swahili Coast",
       "url": "https://www.zmo.de/en/research/lives-ecology/jasmin-mahazi-lives-and-ecologies",
       "text": "Bahari yetu (Our ocean/genre) – A Matrifocal Anthropological Study of Oral Archives and Embodied Knowledge Practices Along the Swahili Coast",
@@ -29588,6 +33712,152 @@
         "tension",
         "transition",
         "village"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "The Inherited Garden: How Material and Remembered Legacies Shape Future-Making in Post-War Syria",
+      "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-claudia-ghrawi-lebenswege-und-oekologien",
+      "text": "The Inherited Garden: How Material and Remembered Legacies Shape Future-Making in Post-War Syria",
+      "terms": [
+        "garden",
+        "inherit",
+        "legacy",
+        "material",
+        "remember",
+        "shape",
+        "syria"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "The Inherited Garden: How Material and Remembered Legacies Shape Future-Making in Post-War Syria",
+      "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-claudia-ghrawi-lebenswege-und-oekologien",
+      "text": "After fourteen years of war, destruction, and displacement, first initiatives for recovery and rehabilitation are beginning to emerge in the Ghouta, the peri-urban region around Damascus. Often represented historically as the “garden of Damascus”, the Ghouta was repeatedly reshaped through fragmented and often contradictory processes of urban expansion, state intervention, environmental change, and shifting relations over land and political authority. The project asks what different actors today mean by rehabilitation and what futures they envision against this longer history, including the profound ruptures of uprising, siege, violence, and mass displacement after 2011.",
+      "terms": [
+        "actor",
+        "around",
+        "ask",
+        "authority",
+        "begin",
+        "change",
+        "contradictory",
+        "damascus",
+        "destruction",
+        "displacement",
+        "emerge",
+        "environmental",
+        "envision",
+        "expansion",
+        "fourteen",
+        "fragment",
+        "future",
+        "garden",
+        "ghouta",
+        "historically",
+        "history",
+        "initiative",
+        "intervention",
+        "land",
+        "longer",
+        "mass",
+        "political",
+        "process",
+        "profound",
+        "recovery",
+        "region",
+        "rehabilitation",
+        "relation",
+        "repeatedly",
+        "represent",
+        "reshape",
+        "rupture",
+        "shift",
+        "siege",
+        "state",
+        "today",
+        "uprise",
+        "urban",
+        "violence",
+        "war",
+        "year"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "The Inherited Garden: How Material and Remembered Legacies Shape Future-Making in Post-War Syria",
+      "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-claudia-ghrawi-lebenswege-und-oekologien",
+      "text": "Rather than treating reconstruction simply as rebuilding, the study examines what futures different actors seek to create, what elements of the past they preserve or transform, and whose visions gain influence. Combining historical research with oral history and ethnographic methods, it traces how experience, knowledge, memory, representations, and inherited structures shape present choices and material interventions.",
+      "terms": [
+        "actor",
+        "choice",
+        "combine",
+        "create",
+        "element",
+        "ethnographic",
+        "experience",
+        "future",
+        "gain",
+        "historical",
+        "history",
+        "influence",
+        "inherit",
+        "intervention",
+        "knowledge",
+        "material",
+        "memory",
+        "method",
+        "oral",
+        "past",
+        "present",
+        "preserve",
+        "rather",
+        "rebuild",
+        "reconstruction",
+        "representation",
+        "shape",
+        "simply",
+        "structure",
+        "trace",
+        "transform",
+        "treat",
+        "vision",
+        "whose"
+      ]
+    },
+    {
+      "unit": "Lives_Ecologies",
+      "title": "The Inherited Garden: How Material and Remembered Legacies Shape Future-Making in Post-War Syria",
+      "url": "https://www.zmo.de/en/research/lives-and-ecologies/translate-to-english-claudia-ghrawi-lebenswege-und-oekologien",
+      "text": "Through the Ghouta, the project investigates Syria in the making. By tracing which histories and representations acquire value, which are marginalised, who is able to participate, and how decisions over land, resources, property, environment, and belonging are implemented, it examines how an emerging social and political order is produced in practice beyond official programmes and public narratives.",
+      "terms": [
+        "able",
+        "acquire",
+        "belong",
+        "beyond",
+        "decision",
+        "emerge",
+        "environment",
+        "ghouta",
+        "history",
+        "implement",
+        "land",
+        "marginalise",
+        "narrative",
+        "official",
+        "participate",
+        "political",
+        "practice",
+        "produce",
+        "programme",
+        "property",
+        "public",
+        "representation",
+        "resource",
+        "social",
+        "syria",
+        "trace",
+        "value"
       ]
     },
     {
@@ -32489,5 +36759,5 @@
       ]
     }
   ],
-  "datasetId": "9023a9c937c428ac"
+  "datasetId": "51ca771587eb8022"
 }

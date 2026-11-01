@@ -1,23 +1,47 @@
 [
   {
-    "text": "migrant",
-    "size": 21
+    "text": "und",
+    "size": 41
+  },
+  {
+    "text": "die",
+    "size": 38
+  },
+  {
+    "text": "der",
+    "size": 23
   },
   {
     "text": "life",
-    "size": 20
+    "size": 21
+  },
+  {
+    "text": "migrant",
+    "size": 21
   },
   {
     "text": "oil",
     "size": 20
   },
   {
+    "text": "region",
+    "size": 19
+  },
+  {
+    "text": "von",
+    "size": 19
+  },
+  {
     "text": "social",
-    "size": 16
+    "size": 17
   },
   {
     "text": "change",
-    "size": 15
+    "size": 16
+  },
+  {
+    "text": "history",
+    "size": 16
   },
   {
     "text": "care",
@@ -28,16 +52,16 @@
     "size": 13
   },
   {
-    "text": "history",
+    "text": "political",
     "size": 13
   },
   {
-    "text": "region",
+    "text": "process",
     "size": 12
   },
   {
-    "text": "process",
-    "size": 11
+    "text": "knowledge",
+    "size": 12
   },
   {
     "text": "conflict",
@@ -48,11 +72,19 @@
     "size": 11
   },
   {
-    "text": "knowledge",
+    "text": "refugee",
     "size": 11
   },
   {
     "text": "mobility",
+    "size": 10
+  },
+  {
+    "text": "war",
+    "size": 10
+  },
+  {
+    "text": "practice",
     "size": 10
   },
   {
@@ -68,19 +100,19 @@
     "size": 10
   },
   {
-    "text": "refugee",
-    "size": 10
-  },
-  {
-    "text": "political",
+    "text": "relation",
     "size": 9
   },
   {
-    "text": "practice",
+    "text": "landscape",
     "size": 9
   },
   {
     "text": "central",
+    "size": 9
+  },
+  {
+    "text": "state",
     "size": 9
   },
   {
@@ -92,27 +124,23 @@
     "size": 9
   },
   {
-    "text": "refinery",
+    "text": "sich",
     "size": 9
   },
   {
-    "text": "human",
-    "size": 8
+    "text": "da",
+    "size": 9
+  },
+  {
+    "text": "refinery",
+    "size": 9
   },
   {
     "text": "resource",
     "size": 8
   },
   {
-    "text": "war",
-    "size": 8
-  },
-  {
-    "text": "relation",
-    "size": 8
-  },
-  {
-    "text": "migration",
+    "text": "community",
     "size": 8
   },
   {
@@ -128,7 +156,35 @@
     "size": 8
   },
   {
+    "text": "environmental",
+    "size": 8
+  },
+  {
+    "text": "au",
+    "size": 8
+  },
+  {
+    "text": "durch",
+    "size": 8
+  },
+  {
+    "text": "human",
+    "size": 7
+  },
+  {
+    "text": "shape",
+    "size": 7
+  },
+  {
     "text": "live",
+    "size": 7
+  },
+  {
+    "text": "displacement",
+    "size": 7
+  },
+  {
+    "text": "actor",
     "size": 7
   },
   {
@@ -136,11 +192,15 @@
     "size": 7
   },
   {
-    "text": "community",
+    "text": "land",
     "size": 7
   },
   {
-    "text": "challenge",
+    "text": "justice",
+    "size": 7
+  },
+  {
+    "text": "shift",
     "size": 7
   },
   {
@@ -148,7 +208,23 @@
     "size": 7
   },
   {
+    "text": "site",
+    "size": 7
+  },
+  {
     "text": "build",
+    "size": 7
+  },
+  {
+    "text": "urban",
+    "size": 7
+  },
+  {
+    "text": "future",
+    "size": 7
+  },
+  {
+    "text": "asia",
     "size": 7
   },
   {
@@ -168,7 +244,15 @@
     "size": 7
   },
   {
-    "text": "environmental",
+    "text": "turkey",
+    "size": 7
+  },
+  {
+    "text": "haqq",
+    "size": 7
+  },
+  {
+    "text": "oral",
     "size": 7
   },
   {
@@ -176,15 +260,19 @@
     "size": 7
   },
   {
-    "text": "together",
-    "size": 6
-  },
-  {
-    "text": "livelihood",
+    "text": "violence",
     "size": 6
   },
   {
     "text": "middle",
+    "size": 6
+  },
+  {
+    "text": "syria",
+    "size": 6
+  },
+  {
+    "text": "afrin",
     "size": 6
   },
   {
@@ -200,15 +288,27 @@
     "size": 6
   },
   {
-    "text": "site",
+    "text": "ask",
     "size": 6
   },
   {
-    "text": "state",
+    "text": "experience",
     "size": 6
   },
   {
-    "text": "urban",
+    "text": "economic",
+    "size": 6
+  },
+  {
+    "text": "challenge",
+    "size": 6
+  },
+  {
+    "text": "migration",
+    "size": 6
+  },
+  {
+    "text": "europe",
     "size": 6
   },
   {
@@ -220,7 +320,11 @@
     "size": 6
   },
   {
-    "text": "plant",
+    "text": "dynamic",
+    "size": 6
+  },
+  {
+    "text": "ethnographic",
     "size": 6
   },
   {
@@ -228,11 +332,23 @@
     "size": 6
   },
   {
+    "text": "million",
+    "size": 6
+  },
+  {
     "text": "fish",
     "size": 6
   },
   {
-    "text": "oral",
+    "text": "trace",
+    "size": 6
+  },
+  {
+    "text": "den",
+    "size": 6
+  },
+  {
+    "text": "seit",
     "size": 6
   },
   {
@@ -240,7 +356,11 @@
     "size": 5
   },
   {
-    "text": "shape",
+    "text": "together",
+    "size": 5
+  },
+  {
+    "text": "livelihood",
     "size": 5
   },
   {
@@ -256,19 +376,11 @@
     "size": 5
   },
   {
-    "text": "violence",
-    "size": 5
-  },
-  {
     "text": "east",
     "size": 5
   },
   {
-    "text": "actor",
-    "size": 5
-  },
-  {
-    "text": "ask",
+    "text": "many",
     "size": 5
   },
   {
@@ -276,19 +388,7 @@
     "size": 5
   },
   {
-    "text": "experience",
-    "size": 5
-  },
-  {
     "text": "affect",
-    "size": 5
-  },
-  {
-    "text": "economic",
-    "size": 5
-  },
-  {
-    "text": "justice",
     "size": 5
   },
   {
@@ -298,105 +398,5 @@
   {
     "text": "become",
     "size": 5
-  },
-  {
-    "text": "especially",
-    "size": 5
-  },
-  {
-    "text": "work",
-    "size": 5
-  },
-  {
-    "text": "future",
-    "size": 5
-  },
-  {
-    "text": "asia",
-    "size": 5
-  },
-  {
-    "text": "historical",
-    "size": 5
-  },
-  {
-    "text": "form",
-    "size": 5
-  },
-  {
-    "text": "figuration",
-    "size": 5
-  },
-  {
-    "text": "group",
-    "size": 5
-  },
-  {
-    "text": "grouping",
-    "size": 5
-  },
-  {
-    "text": "place",
-    "size": 5
-  },
-  {
-    "text": "european",
-    "size": 5
-  },
-  {
-    "text": "million",
-    "size": 5
-  },
-  {
-    "text": "network",
-    "size": 5
-  },
-  {
-    "text": "ocean",
-    "size": 5
-  },
-  {
-    "text": "ecological",
-    "size": 4
-  },
-  {
-    "text": "societal",
-    "size": 4
-  },
-  {
-    "text": "good",
-    "size": 4
-  },
-  {
-    "text": "displacement",
-    "size": 4
-  },
-  {
-    "text": "rural",
-    "size": 4
-  },
-  {
-    "text": "many",
-    "size": 4
-  },
-  {
-    "text": "effect",
-    "size": 4
-  },
-  {
-    "text": "century",
-    "size": 4
-  },
-  {
-    "text": "landscape",
-    "size": 4
-  },
-  {
-    "text": "land",
-    "size": 4
-  },
-  {
-    "text": "dream",
-    "size": 4
   }
 ]
