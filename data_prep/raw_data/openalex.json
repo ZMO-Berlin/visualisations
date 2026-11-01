@@ -6,14 +6,14 @@
   "name": "Leibniz-Zentrum Moderner Orient"
  },
  "coverage": {
-  "register": 1979,
+  "register": 1985,
   "matched": {
-   "doi": 362,
+   "doi": 366,
    "affiliation": 143,
    "title": 331
   },
-  "with_references": 322,
-  "affiliated_total": 586
+  "with_references": 324,
+  "affiliated_total": 588
  },
  "works": {
   "%D8%A7%D9%84%D9%85%D8%AF%D9%86-%D8%A5%D8%B7%D8%A7%D8%B1%D9%8B%D8%A7-%D9%84%D9%84%D8%A7%D9%86%D8%AA%D9%85%D8%A7%D8%A1-%D8%A8%D8%B9%D8%B6-%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA-cities-as-frameworks-of-affiliation-some-considerations": {
@@ -519,7 +519,8 @@
    "doi": "10.3167/arcs.2025.110114",
    "title": "A Landscape of War (Munira Khayyat 2022)",
    "year": 2025,
-   "type": "article",
+   "type": "book-review",
+   "language": "en",
    "oa_status": "diamond",
    "oa_url": "https://doi.org/10.3167/arcs.2025.110114",
    "cited_by_count": 0,
@@ -644,7 +645,7 @@
    "title": "A “New Man” for a New Nation: Activism and Physical Culture in Late Colonial Algeria",
    "year": 2018,
    "type": "article",
-   "language": "en",
+   "language": "de",
    "oa_status": "bronze",
    "oa_url": "https://www.comparativ.net/v2/article/download/2888/2626",
    "cited_by_count": 1,
@@ -715,7 +716,7 @@
    "type": "article",
    "language": "en",
    "oa_status": "closed",
-   "cited_by_count": 2,
+   "cited_by_count": 3,
    "topic": {
     "id": "T12595",
     "name": "Romani and Gypsy Studies",
@@ -1641,7 +1642,7 @@
      "name": "Breuer, Ingo"
     },
     {
-     "name": "Gertel, Jörg 1961-"
+     "name": "Jörg Gertel"
     }
    ]
   },
@@ -2223,7 +2224,7 @@
    "year": 2012,
    "type": "book",
    "language": "en",
-   "oa_status": "gold",
+   "oa_status": "green",
    "oa_url": "http://content.ub.hu-berlin.de/monographs/toc/ethnologie/BV040148414.pdf",
    "cited_by_count": 46,
    "topic": {
@@ -2259,6 +2260,7 @@
    "title": "Authoritarianism, Displacement and Syrian Family Life",
    "year": 2026,
    "type": "book",
+   "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
    "topic": {
@@ -2670,6 +2672,7 @@
    "title": "Between Civic Loyalty and Religious Identity: Has the Muslim World’s Attitude Towards the Russian-Ukrainian War Affected Ukrainian Muslims?",
    "year": 2025,
    "type": "article",
+   "language": "en",
    "oa_status": "diamond",
    "oa_url": "https://oriental-world.org.ua/index.php/journal/article/download/804/793",
    "cited_by_count": 0,
@@ -2816,7 +2819,7 @@
    "doi": "10.1093/jis/etr032",
    "title": "Between Social Skills and Marketable Skills: The Politics of Islamic Education in 20th Century Zanzibar * By ROMAN LOIMEIER",
    "year": 2011,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -3150,7 +3153,7 @@
    "doi": "10.1163/15700607-20220010",
    "title": "Madawi Al-Rasheed, The Son King. Reform and Repression in Saudi Arabia",
    "year": 2022,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -3184,7 +3187,7 @@
    "doi": "10.3917/etu.4337.0134",
    "title": "Romain Grancher La mer en commun Le monde de la pêche à Dieppe (XVIII e -XIX e siècle) . Éditions de la Sorbonne, « Histoire environnementale », 2025, 264 pages, 25 €.",
    "year": 2026,
-   "type": "article",
+   "type": "book-review",
    "language": "fr",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -3527,7 +3530,7 @@
    "year": 2020,
    "type": "article",
    "language": "en",
-   "oa_status": "gold",
+   "oa_status": "green",
    "oa_url": "https://doi.org/10.31235/osf.io/wz2gf_v1",
    "cited_by_count": 4,
    "topic": {
@@ -4305,6 +4308,7 @@
    "title": "Preface",
    "year": 2026,
    "type": "paratext",
+   "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0
   },
@@ -4482,7 +4486,7 @@
    "year": 2021,
    "type": "article",
    "language": "en",
-   "oa_status": "gold",
+   "oa_status": "green",
    "oa_url": "https://directory.doabooks.org/handle/20.500.12854/71460",
    "cited_by_count": 0,
    "topic": {
@@ -4769,6 +4773,40 @@
     "W2256061601",
     "W2293091849",
     "W4252579799"
+   ]
+  },
+  "colonial-difference-under-un-supervision-racialized-status-hierarchies-and-the-reconfiguration-of-empire-in-the-un-trusteeship-system": {
+   "id": "W7214604691",
+   "match": "doi",
+   "fp": "c9aaa4228c",
+   "doi": "10.1017/s0260210526102010",
+   "title": "Colonial difference under UN supervision? Racialized status hierarchies and the reconfiguration of empire in the UN Trusteeship System",
+   "year": 2026,
+   "type": "article",
+   "language": "en",
+   "oa_status": "hybrid",
+   "oa_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0C460DE73A3D572A6373C5E0570E7D31/S0260210526102010a.pdf/div-class-title-colonial-difference-under-un-supervision-racialized-status-hierarchies-and-the-reconfiguration-of-empire-in-the-un-trusteeship-system-div.pdf",
+   "cited_by_count": 0,
+   "topic": {
+    "id": "T10053",
+    "name": "International Relations and Foreign Policy",
+    "subfield": "Political Science and International Relations",
+    "field": "Social Sciences"
+   },
+   "authors": [
+    {
+     "name": "Maria Ketzmerick-Calandrino",
+     "id": "A5086293878",
+     "orcid": "0000-0002-6996-732X"
+    }
+   ],
+   "institutions": [
+    {
+     "id": "I54009628",
+     "name": "University of Bayreuth",
+     "country": "DE",
+     "ror": "https://ror.org/0234wmv40"
+    }
    ]
   },
   "colonial-dis/continuities-in-cameroon-and-the-postcolonial-dilemma-in-the-archive": {
@@ -6980,7 +7018,18 @@
     "name": "Migration and Labor Dynamics",
     "subfield": "Sociology and Political Science",
     "field": "Social Sciences"
-   }
+   },
+   "authors": [
+    {
+     "name": "Johannes Becker"
+    },
+    {
+     "name": "Mathias Bös"
+    },
+    {
+     "name": "Sevil Çakır"
+    }
+   ]
   },
   "default-2edb909d60": {
    "id": "W3115049031",
@@ -7015,7 +7064,7 @@
    "year": 2010,
    "type": "article",
    "language": "en",
-   "oa_status": "green",
+   "oa_status": "diamond",
    "oa_url": "http://pubman.mpdl.mpg.de/pubman/item/escidoc:921720",
    "cited_by_count": 0,
    "topic": {
@@ -10654,7 +10703,7 @@
    "type": "book",
    "language": "en",
    "oa_status": "closed",
-   "cited_by_count": 23,
+   "cited_by_count": 24,
    "topic": {
     "id": "T13162",
     "name": "African Studies and Ethnography",
@@ -10877,6 +10926,75 @@
     "W2293091849",
     "W3126349953",
     "W4301056702"
+   ]
+  },
+  "from-expelungratefulafghans-to-expellingafghansisanationaldemand-a-comparative-analysis-of-digital-xenophobia-and-anti-migrant-hate-campaigns-in-iran-and-pakistan": {
+   "id": "W7223648394",
+   "match": "doi",
+   "fp": "f671789700",
+   "doi": "10.1111/imig.70237",
+   "title": "From # ExpelUngratefulAfghans to # ExpellingAfghansIsANationalDemand ; A Comparative Analysis of Digital Xenophobia and Anti‐Migrant Hate Campaigns in Iran and Pakistan",
+   "year": 2026,
+   "type": "article",
+   "language": "en",
+   "oa_status": "hybrid",
+   "oa_url": "https://doi.org/10.1111/imig.70237",
+   "cited_by_count": 0,
+   "topic": {
+    "id": "T10216",
+    "name": "Migration, Refugees, and Integration",
+    "subfield": "Sociology and Political Science",
+    "field": "Social Sciences"
+   },
+   "authors": [
+    {
+     "name": "Arash Beidollahkhani",
+     "id": "A5001124832",
+     "orcid": "0000-0002-8295-7142",
+     "zmo": true
+    }
+   ],
+   "institutions": [
+    {
+     "id": "I2801953415",
+     "name": "Leibniz-Zentrum Moderner Orient",
+     "country": "DE",
+     "ror": "https://ror.org/03ty9wj75"
+    },
+    {
+     "id": "I28407311",
+     "name": "University of Manchester",
+     "country": "GB",
+     "ror": "https://ror.org/027m9bs27"
+    }
+   ],
+   "referenced_works": [
+    "W2097375677",
+    "W2125910575",
+    "W2989368430",
+    "W3084316613",
+    "W3085133822",
+    "W3205787860",
+    "W4211044565",
+    "W4225125117",
+    "W4249673087",
+    "W4318334806",
+    "W4385431764",
+    "W4389788214",
+    "W4392791668",
+    "W4399886394",
+    "W4402102661",
+    "W4403069933",
+    "W4404378437",
+    "W4405142328",
+    "W4405211443",
+    "W4405262014",
+    "W4405416735",
+    "W4406963107",
+    "W4409327727",
+    "W4410995036",
+    "W4412105483",
+    "W7117686192"
    ]
   },
   "from-expulsion-to-extortion-deportability-predatory-policing-and-west-african-migrants-in-angola": {
@@ -11213,6 +11331,7 @@
    "title": "From Pasture to Forest Zone: Forest Project, Mobile Pastoralism, and the Environmental Policy of the Russian Empire in Central Asia (1898–1908)",
    "year": 2026,
    "type": "article",
+   "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
    "topic": {
@@ -11722,6 +11841,7 @@
    "title": "Geschichte Saudi-Arabiens",
    "year": 2026,
    "type": "book",
+   "language": "de",
    "oa_status": "closed",
    "cited_by_count": 0,
    "topic": {
@@ -11996,7 +12116,7 @@
    },
    "authors": [
     {
-     "name": "Topan, Farouk 1940-"
+     "name": "Farouk Topan"
     },
     {
      "name": "Kresse, Kai"
@@ -12540,6 +12660,7 @@
    "title": "251Hermeneutic harassment: the undermining of Jewish-Arab and Arab-Jewish solidarity",
    "year": 2025,
    "type": "book-chapter",
+   "language": "en",
    "oa_status": "hybrid",
    "oa_url": "https://www.degruyterbrill.com/document/doi/10.1515/9783111588551-013/pdf",
    "cited_by_count": 0,
@@ -12625,7 +12746,7 @@
    "year": 2026,
    "type": "book",
    "language": "en",
-   "oa_status": "gold",
+   "oa_status": "green",
    "oa_url": "https://d-nb.info/1403176116/04",
    "cited_by_count": 0,
    "topic": {
@@ -13134,7 +13255,7 @@
    "language": "en",
    "oa_status": "hybrid",
    "oa_url": "https://link.springer.com/content/pdf/10.1057/s41284-026-00552-1.pdf",
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "topic": {
     "id": "T12493",
     "name": "Memory, violence, and history",
@@ -13374,7 +13495,7 @@
    "doi": "10.1093/jis/etab067",
    "title": "Imperial Mecca: Ottoman Arabia and the Indian Ocean Hajj By Michael Christopher Low",
    "year": 2021,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 1,
@@ -13829,7 +13950,7 @@
    "language": "en",
    "oa_status": "diamond",
    "oa_url": "https://doi.org/10.1111/j.1548-1360.2011.01099.x",
-   "cited_by_count": 297,
+   "cited_by_count": 299,
    "topic": {
     "id": "T10239",
     "name": "Urban Planning and Governance",
@@ -14888,7 +15009,8 @@
    "year": 2021,
    "type": "book-chapter",
    "language": "en",
-   "oa_status": "closed",
+   "oa_status": "green",
+   "oa_url": "https://hal.science/hal-03514712v1/document",
    "cited_by_count": 0,
    "topic": {
     "id": "T11783",
@@ -15369,7 +15491,7 @@
    "title": "Introduction: Shaping the “New Man” in South Asia, Africa and the Middle East. Practices between Hope and Anxiety (1940s–1960s)",
    "year": 2018,
    "type": "article",
-   "language": "en",
+   "language": "de",
    "oa_status": "bronze",
    "oa_url": "https://www.comparativ.net/v2/article/download/2886/2624",
    "cited_by_count": 3,
@@ -16040,8 +16162,7 @@
     "W4375827433",
     "W4388437435",
     "W6825342749",
-    "W6941209507",
-    "W6982550074"
+    "W6941209507"
    ]
   },
   "islam-and-the-politics-of-secularism": {
@@ -16769,8 +16890,7 @@
    },
    "authors": [
     {
-     "name": "(:unkn) unknown",
-     "id": "A5148417337"
+     "name": "Deutscher Bibliotheksverband"
     },
     {
      "name": "Vereinigung der Österreichischen Bibliothekarinnen und Bibliothekare",
@@ -17112,7 +17232,8 @@
    "year": 2009,
    "type": "article",
    "language": "ca",
-   "oa_status": "closed",
+   "oa_status": "green",
+   "oa_url": "http://raco.cat/index.php/DCidob/article/view/139043",
    "cited_by_count": 0,
    "topic": {
     "id": "T12550",
@@ -17288,7 +17409,7 @@
    "doi": "10.1080/02665433.2023.2179261",
    "title": "Landed internationals. Planning cultures, the academy and the making of the modern Middle East",
    "year": 2023,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -17612,7 +17733,7 @@
    "type": "article",
    "language": "en",
    "oa_status": "hybrid",
-   "oa_url": "https://doi.org/10.1080/00141844.2026.2650458",
+   "oa_url": "https://www.tandfonline.com/doi/pdf/10.1080/00141844.2026.2650458?needAccess=true",
    "cited_by_count": 0,
    "topic": {
     "id": "T14062",
@@ -17640,6 +17761,10 @@
     {
      "id": "F4320320945",
      "name": "Københavns Universitet"
+    },
+    {
+     "id": "F4320322436",
+     "name": "Novo Nordisk"
     },
     {
      "id": "F4320325957",
@@ -17757,7 +17882,7 @@
    "doi": "10.14318/hau5.2.006",
    "title": "Living with unresolved differences",
    "year": 2015,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 28,
@@ -17811,7 +17936,7 @@
    "doi": "10.1163/19585705-12341424",
    "title": "Locale, Everyday Islam and Modernity: Qasbah Towns and Muslim Life in Colonial India , written by M. Raisur Rahman",
    "year": 2020,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -18045,7 +18170,8 @@
    "year": 2018,
    "type": "article",
    "language": "en",
-   "oa_status": "closed",
+   "oa_status": "green",
+   "oa_url": "https://www.persee.fr/doc/ethio_0066-2127_2018_num_32_1_1645",
    "cited_by_count": 1,
    "topic": {
     "id": "T13504",
@@ -18199,6 +18325,7 @@
    "title": "Making Place with Plants",
    "year": 2025,
    "type": "article",
+   "language": "en",
    "oa_status": "diamond",
    "oa_url": "https://doi.org/10.3167/cja.2025.430202",
    "cited_by_count": 3,
@@ -18229,7 +18356,7 @@
    "title": "Making the New Indian Citizen in Times of the Jawan (Soldier) and the Kisan (Farmer), 1962–1965",
    "year": 2018,
    "type": "article",
-   "language": "en",
+   "language": "de",
    "oa_status": "bronze",
    "oa_url": "https://www.comparativ.net/v2/article/download/2891/2629",
    "cited_by_count": 1,
@@ -18813,7 +18940,7 @@
    },
    "authors": [
     {
-     "name": "Abend, Pablo 1981-"
+     "name": "Pablo Abend"
     },
     {
      "name": "Haupts, Tobias"
@@ -19458,6 +19585,7 @@
    "title": "Migration and Welfare Austerity",
    "year": 2026,
    "type": "book",
+   "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
    "topic": {
@@ -19480,7 +19608,7 @@
    "doi": "10.1080/02665433.2013.800706",
    "title": "Alexandrie une architecture ottomane",
    "year": 2013,
-   "type": "article",
+   "type": "book-review",
    "language": "fr",
    "oa_status": "closed",
    "cited_by_count": 1,
@@ -20372,7 +20500,7 @@
    "type": "article",
    "language": "en",
    "oa_status": "green",
-   "oa_url": "https://doi.org/10.17613/58w04-5n618",
+   "oa_url": "https://hal.science/halshs-03161143v1",
    "cited_by_count": 3,
    "topic": {
     "id": "T13379",
@@ -22058,7 +22186,7 @@
    "doi": "10.1017/s0010417511000119",
    "title": "Outlaw Economics: Doing Business on the Fringes of the State. A Review Essay",
    "year": 2011,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 1,
@@ -22668,9 +22796,10 @@
    "doi": "10.1080/14649365.2025.2564644",
    "title": "Plant intimacies: thinking through affect and knowledge in a perilous world",
    "year": 2025,
-   "type": "article",
+   "type": "editorial",
    "language": "en",
-   "oa_status": "closed",
+   "oa_status": "bronze",
+   "oa_url": "https://www.tandfonline.com/doi/pdf/10.1080/14649365.2025.2564644?needAccess=true",
    "cited_by_count": 2,
    "topic": {
     "id": "T10738",
@@ -22792,6 +22921,7 @@
    "title": "Plantifying Emplacement",
    "year": 2025,
    "type": "article",
+   "language": "en",
    "oa_status": "diamond",
    "oa_url": "https://doi.org/10.3167/cja.2025.430203",
    "cited_by_count": 2,
@@ -23101,7 +23231,7 @@
    "language": "en",
    "oa_status": "gold",
    "oa_url": "https://www.mdpi.com/2077-1444/13/4/340/pdf?version=1649588172",
-   "cited_by_count": 21,
+   "cited_by_count": 22,
    "topic": {
     "id": "T10794",
     "name": "Islamic Studies and History",
@@ -23634,7 +23764,7 @@
    "type": "article",
    "language": "en",
    "oa_status": "closed",
-   "cited_by_count": 3,
+   "cited_by_count": 4,
    "topic": {
     "id": "T13103",
     "name": "Middle East Politics and Society",
@@ -23724,7 +23854,7 @@
    "doi": "10.35632/ajis.v37i1-2.705",
    "title": "Protestants, Gender and the Arab Renaissance in Late Ottoman Syria by Deanna Ferree Womack",
    "year": 2020,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "diamond",
    "oa_url": "https://doi.org/10.35632/ajis.v37i1-2.705",
@@ -24943,7 +25073,7 @@
    "language": "en",
    "oa_status": "bronze",
    "oa_url": "https://www.tandfonline.com/doi/pdf/10.1080/00856401.2020.1695075?needAccess=true&role=button",
-   "cited_by_count": 62,
+   "cited_by_count": 63,
    "topic": {
     "id": "T12949",
     "name": "South Asian Studies and Diaspora",
@@ -25319,7 +25449,7 @@
    "language": "en",
    "oa_status": "hybrid",
    "oa_url": "https://www.tandfonline.com/doi/pdf/10.1080/02684527.2022.2113679?needAccess=true",
-   "cited_by_count": 15,
+   "cited_by_count": 16,
    "topic": {
     "id": "T12572",
     "name": "Intelligence, Security, War Strategy",
@@ -25424,7 +25554,8 @@
    "year": 2026,
    "type": "book",
    "language": "en",
-   "oa_status": "closed",
+   "oa_status": "hybrid",
+   "oa_url": "https://queensu.scholaris.ca/bitstreams/11740c33-056c-478e-8b21-40c5411f3570/download",
    "cited_by_count": 0,
    "topic": {
     "id": "T10794",
@@ -25517,7 +25648,7 @@
    "doi": "10.1080/02665433.2021.1888568",
    "title": "Cairo Collage. Everyday life practices after the event",
    "year": 2021,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -25612,7 +25743,7 @@
    "doi": "10.1163/15733831-12341917",
    "title": "Saint Joseph in South India: Poetry, Mission and Theology in Costanzo Gioseffo Beschi’s Tēmpāvaṇi, written by Francis X. Clooney, S. J.",
    "year": 2023,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "bronze",
    "oa_url": "https://brill.com/downloadpdf/journals/mist/40/2/article-p310_9.pdf",
@@ -25807,7 +25938,7 @@
    "doi": "10.1080/02665433.2020.1798119",
    "title": "Architecture of counterrevolution: the French army in Northern Algeria",
    "year": 2020,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -25840,7 +25971,7 @@
    "doi": "10.1080/02634937.2023.2296546",
    "title": "Tracing the atom: Nuclear legacies in Russia and Central Asia",
    "year": 2024,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -25873,11 +26004,12 @@
   "review-of-exchange-ideologies-commerce-language-and-patriarchy-in-preconflict-aleppo-by-paul-anderson": {
    "id": "W4415749623",
    "match": "doi",
-   "fp": "01e448e8d5",
+   "fp": "c9a9c3413e",
    "doi": "10.3167/ame.2025.200207",
    "title": "Reports",
    "year": 2025,
-   "type": "article",
+   "type": "book-review",
+   "language": "en",
    "oa_status": "diamond",
    "oa_url": "https://doi.org/10.3167/ame.2025.200207",
    "cited_by_count": 0,
@@ -26333,7 +26465,7 @@
    "doi": "10.1163/15700607-00552p07",
    "title": "Dreams That Matter. Egyptian Landscapes of the Imagination, written by Amira Mittermaier, 2011",
    "year": 2015,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -26475,7 +26607,7 @@
    "doi": "10.1080/02665433.2015.1063324",
    "title": "Die Unruhen von 1850 in Aleppo. Gewalt im urbanen Raum",
    "year": 2015,
-   "type": "article",
+   "type": "book-review",
    "language": "de",
    "oa_status": "closed",
    "cited_by_count": 2,
@@ -26543,7 +26675,7 @@
    "doi": "10.1017/npt.2016.26",
    "title": "Lerna Ekmekçioğlu. Recovering Armenia: The Limits of Belonging in Post-Genocide Turkey. Palo Alto, CA: Stanford University Press, 2016, xvi + 240 pages.",
    "year": 2016,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -26576,7 +26708,7 @@
    "doi": "10.1163/15700607-00591p10",
    "title": "Salman’s Legacy. The Dilemmas of a New Era in Saudi Arabia, Madawi written by Al-Rasheed, 2018",
    "year": 2019,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 1,
@@ -26610,7 +26742,7 @@
    "doi": "10.1080/02665433.2013.828471",
    "title": "Homogenisation of representations",
    "year": 2013,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -26702,7 +26834,7 @@
    "doi": "10.1080/02665433.2013.800707",
    "title": "Villen in Beirut. Wohnkultur und sozialer Wandel (1860–1930)",
    "year": 2013,
-   "type": "article",
+   "type": "book-review",
    "language": "de",
    "oa_status": "closed",
    "cited_by_count": 1,
@@ -26771,7 +26903,7 @@
    "doi": "10.1080/09668136.2022.2083308",
    "title": "The Volga. A History of Russia’s Greatest River",
    "year": 2022,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 19,
@@ -26863,7 +26995,7 @@
    "doi": "10.1080/00263206.2013.771474",
    "title": "Legal and Political Reforms in Sa‘udi Arabia, by Joseph A. Kéchichian",
    "year": 2013,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -26952,7 +27084,7 @@
    "doi": "10.1163/15700607-61020012",
    "title": "Rosie Bsheer, Archive Wars. The Politics of History in Saudi Arabia",
    "year": 2021,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -27240,7 +27372,7 @@
    "doi": "10.29311/nmes.v3i0.2655",
    "title": "Review of Sarah Yizraeli, Politics and Society in Saudi Arabia: The Crucial Years of Development, 1960-1982",
    "year": 2013,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -27263,7 +27395,7 @@
    "doi": "10.1093/jis/etab034",
    "title": "Saudi Arabia and Indonesian Networks: Migration, Education, and Islam By Sumanto Al Qurtuby",
    "year": 2021,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -27410,7 +27542,7 @@
    "title": "Scouting: Training the “New Man” in Post-liberation Ethiopia",
    "year": 2018,
    "type": "article",
-   "language": "en",
+   "language": "de",
    "oa_status": "bronze",
    "oa_url": "https://www.comparativ.net/v2/article/download/2887/2625",
    "cited_by_count": 2,
@@ -28074,7 +28206,7 @@
    "year": 2021,
    "type": "article",
    "language": "en",
-   "oa_status": "gold",
+   "oa_status": "green",
    "oa_url": "https://bvbr.bib-bvb.de:443/F?func=service&doc_library=BVB01&local_base=BVB01&doc_number=032633229&sequence=000001&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA",
    "cited_by_count": 1,
    "topic": {
@@ -28115,8 +28247,7 @@
    },
    "authors": [
     {
-     "name": ":none",
-     "id": "A5127917408"
+     "name": ":none"
     }
    ]
   },
@@ -28388,7 +28519,7 @@
    "type": "article",
    "language": "en",
    "oa_status": "closed",
-   "cited_by_count": 1379,
+   "cited_by_count": 1389,
    "topic": {
     "id": "T12147",
     "name": "Urban and Rural Development Challenges",
@@ -28489,6 +28620,7 @@
    "title": "Sociological biographical research in the interpretive tradition",
    "year": 2025,
    "type": "book-chapter",
+   "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
    "topic": {
@@ -29003,7 +29135,7 @@
    "type": "article",
    "language": "en",
    "oa_status": "hybrid",
-   "oa_url": "https://doi.org/10.1080/19436149.2026.2635693",
+   "oa_url": "https://www.tandfonline.com/doi/pdf/10.1080/19436149.2026.2635693?needAccess=true",
    "cited_by_count": 0,
    "topic": {
     "id": "T13103",
@@ -29014,6 +29146,7 @@
    "authors": [
     {
      "name": "Johannes Becker",
+     "id": "A5136661129",
      "zmo": true
     }
    ],
@@ -29135,6 +29268,111 @@
      "id": "A5027574885",
      "orcid": "0000-0003-3662-8978"
     }
+   ]
+  },
+  "state-violence-protest-suppression-and-trauma-outcomes-a-scoping-review-of-cumulative-exposure-across-different-political-contexts": {
+   "id": "W7223157805",
+   "match": "doi",
+   "fp": "b342f41e9f",
+   "doi": "10.1080/20008066.2026.2742810",
+   "title": "State violence, protest suppression, and trauma outcomes: a scoping review of cumulative exposure across different political contexts",
+   "year": 2026,
+   "type": "review",
+   "language": "en",
+   "oa_status": "gold",
+   "oa_url": "https://www.tandfonline.com/doi/pdf/10.1080/20008066.2026.2742810?needAccess=true",
+   "cited_by_count": 0,
+   "topic": {
+    "id": "T10242",
+    "name": "Posttraumatic Stress Disorder Research",
+    "subfield": "Clinical Psychology",
+    "field": "Psychology"
+   },
+   "authors": [
+    {
+     "name": "Arash Beidollahkhani",
+     "id": "A5001124832",
+     "orcid": "0000-0002-8295-7142",
+     "zmo": true
+    },
+    {
+     "name": "Taghi Ebrahimi Salari",
+     "id": "A5046522284",
+     "orcid": "0000-0002-5290-6934"
+    }
+   ],
+   "institutions": [
+    {
+     "id": "I2801953415",
+     "name": "Leibniz-Zentrum Moderner Orient",
+     "country": "DE",
+     "ror": "https://ror.org/03ty9wj75"
+    },
+    {
+     "id": "I28407311",
+     "name": "University of Manchester",
+     "country": "GB",
+     "ror": "https://ror.org/027m9bs27"
+    },
+    {
+     "id": "I86958956",
+     "name": "Ferdowsi University of Mashhad",
+     "country": "IR",
+     "ror": "https://ror.org/00g6ka752"
+    }
+   ],
+   "referenced_works": [
+    "W1806934530",
+    "W2061777840",
+    "W2075950485",
+    "W2084824221",
+    "W2132479976",
+    "W2416777582",
+    "W2533961599",
+    "W2554570086",
+    "W2588924096",
+    "W2591807642",
+    "W2656044294",
+    "W2773536078",
+    "W2777651669",
+    "W2809472886",
+    "W2887116766",
+    "W2891378911",
+    "W2978490965",
+    "W3041184587",
+    "W3082442538",
+    "W3110443478",
+    "W3112891045",
+    "W3138539108",
+    "W3153980843",
+    "W3163378826",
+    "W3199403454",
+    "W3202511261",
+    "W3205123781",
+    "W4226450952",
+    "W4282919320",
+    "W4285891303",
+    "W4307391609",
+    "W4313236629",
+    "W4364368486",
+    "W4366778925",
+    "W4380290848",
+    "W4382364029",
+    "W4384153613",
+    "W4388680218",
+    "W4388909000",
+    "W4391565983",
+    "W4399137742",
+    "W4400464822",
+    "W4408054086",
+    "W4408684770",
+    "W4409052559",
+    "W4413506783",
+    "W4414554514",
+    "W4415455265",
+    "W4415609589",
+    "W4417357002",
+    "W7166305748"
    ]
   },
   "stellungnahme-zum-thema-situation-der-geistes-sozial-und-kulturwissenschaften-in-deutschland": {
@@ -29953,7 +30191,7 @@
    "type": "book-chapter",
    "language": "en",
    "oa_status": "closed",
-   "cited_by_count": 10,
+   "cited_by_count": 11,
    "topic": {
     "id": "T12493",
     "name": "Memory, violence, and history",
@@ -29993,6 +30231,25 @@
      "orcid": "0009-0006-1455-5690"
     }
    ]
+  },
+  "territorial-organisation-and-autonomy-in-russian-history-a-comparative-overview": {
+   "id": "W7221757808",
+   "match": "doi",
+   "fp": "9e0d986ff2",
+   "doi": "10.12946/gplh29",
+   "title": "Law and Diversity: European and Latin American Experiences from a Legal Historical Perspective",
+   "year": 2026,
+   "type": "book",
+   "language": "en",
+   "oa_status": "hybrid",
+   "oa_url": "https://doi.org/10.12946/gplh29",
+   "cited_by_count": 0,
+   "topic": {
+    "id": "T13665",
+    "name": "Legal and cultural studies analysis",
+    "subfield": "Anthropology",
+    "field": "Social Sciences"
+   }
   },
   "territorialisation-ambivalence-and-representational-spaces-in-gilgit-baltistan": {
    "id": "W2783368678",
@@ -31379,7 +31636,7 @@
    "type": "article",
    "language": "en",
    "oa_status": "hybrid",
-   "oa_url": "https://doi.org/10.1080/09592318.2026.2665759",
+   "oa_url": "https://www.tandfonline.com/doi/pdf/10.1080/09592318.2026.2665759?needAccess=true",
    "cited_by_count": 0,
    "topic": {
     "id": "T12550",
@@ -31880,7 +32137,6 @@
     "W6764468550",
     "W6764544839",
     "W6793166607",
-    "W7014702256",
     "W7053241372"
    ]
   },
@@ -32205,7 +32461,7 @@
    "doi": "10.1163/15700607-20250012",
    "title": "The Lives and Deaths of Jubrail Dabdoub. Or, How the Bethlehemites Discovered Amerka, written by Jacob Norris",
    "year": 2025,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
@@ -32431,7 +32687,7 @@
    "type": "article",
    "language": "en",
    "oa_status": "closed",
-   "cited_by_count": 11,
+   "cited_by_count": 12,
    "topic": {
     "id": "T13379",
     "name": "Multiculturalism, Politics, Migration, Gender",
@@ -32794,6 +33050,7 @@
    "title": "The Postcolonial State in Africa",
    "year": 2012,
    "type": "book",
+   "language": "en",
    "oa_status": "closed",
    "cited_by_count": 50,
    "topic": {
@@ -33265,7 +33522,7 @@
    "year": 2018,
    "type": "article",
    "language": "en",
-   "oa_status": "hybrid",
+   "oa_status": "diamond",
    "oa_url": "https://doi.org/10.4000/cedref.1111",
    "cited_by_count": 14,
    "topic": {
@@ -33581,6 +33838,7 @@
    "title": "The Taste of Absence",
    "year": 2025,
    "type": "article",
+   "language": "en",
    "oa_status": "diamond",
    "oa_url": "https://doi.org/10.3167/cja.2025.430206",
    "cited_by_count": 0,
@@ -33651,6 +33909,7 @@
     "W631475241",
     "W1479808467",
     "W1483180276",
+    "W1822387374",
     "W1969728874",
     "W1986229379",
     "W1995491056",
@@ -33663,7 +33922,6 @@
     "W2273742841",
     "W2489638269",
     "W2544083547",
-    "W3123521572",
     "W4242910608",
     "W4247126237"
    ]
@@ -33678,7 +33936,7 @@
    "type": "book",
    "language": "en",
    "oa_status": "closed",
-   "cited_by_count": 471,
+   "cited_by_count": 473,
    "topic": {
     "id": "T14038",
     "name": "Youth, Politics, and Society",
@@ -33719,6 +33977,7 @@
     {
      "id": "I4387155613",
      "name": "Linden-Museum Stuttgart",
+     "country": "DE",
      "ror": "https://ror.org/04nrmhz52"
     }
    ],
@@ -36044,7 +36303,7 @@
    "language": "en",
    "oa_status": "green",
    "oa_url": "https://doi.org/10.5167/uzh-251666",
-   "cited_by_count": 4,
+   "cited_by_count": 5,
    "topic": {
     "id": "T10718",
     "name": "Political Philosophy and Ethics",
@@ -36605,6 +36864,7 @@
    "title": "(Un)known Islam in Ukraine",
    "year": 2026,
    "type": "book",
+   "language": "en",
    "oa_status": "hybrid",
    "oa_url": "https://doi.org/10.1515/9783112225172",
    "cited_by_count": 0,
@@ -37118,7 +37378,7 @@
    "year": 2014,
    "type": "article",
    "language": "en",
-   "oa_status": "green",
+   "oa_status": "diamond",
    "oa_url": "https://ora.ox.ac.uk/objects/uuid:8045fc82-d793-4d09-9901-397ad8a8552e",
    "cited_by_count": 1,
    "topic": {
@@ -37245,7 +37505,7 @@
    "doi": "10.1080/02634937.2021.1883240",
    "title": "Visions of development in Central Asia: Revitalizing the culture concept",
    "year": 2021,
-   "type": "article",
+   "type": "book-review",
    "language": "en",
    "oa_status": "closed",
    "cited_by_count": 1,
@@ -38311,6 +38571,7 @@
    "title": "Women resisting colonization. Female rebels in Tunisia, Tripolitania and Fezzan: Networks, solidarity and repression (1881-1918)",
    "year": 2025,
    "type": "article",
+   "language": "en",
    "oa_status": "closed",
    "cited_by_count": 0,
    "topic": {
@@ -40322,8 +40583,8 @@
    "count": 2
   },
   "W1412147727": {
-   "title": "Great Transformation: Political and Economic Origins of our Time",
-   "year": 2002,
+   "title": "Великая трансформация: политические и экономические истоки нашего времени",
+   "year": 2010,
    "authors": [
     "Вадим Радаев"
    ],
@@ -43860,7 +44121,7 @@
    "authors": [
     "Jane Burbank",
     "Mark L. von Hagen",
-    "Remnev, Anatolij Viktorovič 1955-2012"
+    "Anatolij Viktorovič Remnev"
    ],
    "doi": "10.5860/choice.45-5739",
    "count": 2
@@ -46603,6 +46864,7 @@
   },
   "W2614995342": {
    "title": "Islamic education in Africa writing boards and blackboards",
+   "year": 2016,
    "authors": [
     "Robert Launay"
    ],
@@ -49121,7 +49383,6 @@
    "year": 2012,
    "authors": [
     "Jean Comaroff",
-    "Jean Comaroff",
     "John Comaroff"
    ],
    "doi": "10.1080/00664677.2012.694169",
@@ -50287,6 +50548,10 @@
    "the-lawful-empire-1"
   ],
   [
+   "state-violence-protest-suppression-and-trauma-outcomes-a-scoping-review-of-cumulative-exposure-across-different-political-contexts",
+   "i-dont-want-to-be-a-zirabzan-or-mokhber-but-they-made-me-the-informant-culture-of-spying-on-everyday-life-of-citizens-in-the-islamic-republic-of-iran"
+  ],
+  [
    "submerged-memories-memory-history-and-displacement-around-lake-asad-syria",
    "bedouin-and-shawaya-the-performative-constitution-of-tribal-identities-in-syria-during-the-french-mandate-and-today"
   ],
@@ -50738,7 +51003,7 @@
    "title": "KANE, Eileen et al. (dir.). Russian-Arab Worlds : A Documentary History",
    "year": 2024,
    "doi": "10.4000/127j2",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W4404128466",
@@ -50800,7 +51065,7 @@
    "title": "Résonnances oasiennes. Approches sensibles de l’urbain au Sahara [Resonances from the Oases. Sensitive approaches to the urban in the Sahara]",
    "year": 2023,
    "doi": "10.1080/02665433.2023.2202119",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W4385277199",
@@ -51009,7 +51274,7 @@
    "title": "Christianity in India: The Anti-Colonial Turn",
    "year": 2022,
    "doi": "10.1080/00856401.2022.2071004",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W4297885846",
@@ -51131,7 +51396,7 @@
    "id": "W3013927010",
    "title": "Sneja Gunew, Post-Multicultural Writers as Neo-Cosmopolitan Mediators",
    "year": 2020,
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W3022912728",
@@ -51158,7 +51423,7 @@
    "title": "Protestants, Gender and the Arab Renaissance in Late Ottoman Syria by Deanna Ferree Womack",
    "year": 2020,
    "doi": "10.35632/ajiss.v37i1-2.705",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W3139691658",
@@ -51333,7 +51598,7 @@
    "title": "Western Jesuit Scholars in India: Tracing Their Paths, Reassessing Their Goals , S.J. Francis X. Clooney",
    "year": 2020,
    "doi": "10.36886/nidan.2020.5.2.5",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W4211091044",
@@ -51458,7 +51723,7 @@
    "title": "La rue à Tunis. Réalités, permanences, transformations de l’espace urbain, 1835–1935",
    "year": 2019,
    "doi": "10.1080/02665433.2019.1620039",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W4211000368",
@@ -51549,7 +51814,7 @@
    "title": "Récits de villes: d’Aden à Beyrouth",
    "year": 2018,
    "doi": "10.1080/02665433.2018.1420388",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2792467802",
@@ -51563,7 +51828,7 @@
    "title": "Tehran. Life within walls. A city, its territory and forms of dwelling",
    "year": 2018,
    "doi": "10.1080/02665433.2018.1453313",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2796328738",
@@ -51584,21 +51849,21 @@
    "title": "Ottoman Women during World War I: Everyday Experiences, Politics, and Conflict. By Elif Mahir-Metinsoy",
    "year": 2018,
    "doi": "10.1093/jsh/shy044",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2894258160",
    "title": "Urban planning in North Africa",
    "year": 2018,
    "doi": "10.1080/02665433.2018.1523839",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2895718826",
    "title": "Gregory Mann. 2015. From Empires to NGOs in the West African Sahel: The Road to Nongovernmentality. Cambridge: Cambridge University Press.",
    "year": 2018,
    "doi": "10.1017/s0010417518000439",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2902318607",
@@ -51640,7 +51905,7 @@
    "title": "Ottoman Izmir. The Rise of a Cosmopolitan Port (1840-1880), written by Sibel Zandi-Sayek, 2012",
    "year": 2017,
    "doi": "10.1163/15700607-00571p16",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2605449390",
@@ -51667,7 +51932,7 @@
    "title": "World heritage, urban design and tourism. Three cities in the middle east",
    "year": 2017,
    "doi": "10.1080/02665433.2017.1329366",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2725204079",
@@ -51688,7 +51953,7 @@
    "title": "Media, Revolution and Politics in Egypt: The Story of an Uprising, written by Abdalla F. Hassan",
    "year": 2017,
    "doi": "10.1163/18739865-01002012",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2750462051",
@@ -51723,14 +51988,14 @@
    "title": "Ali Yaycioglu. Partners of the Empire: The Crisis of the Ottoman Order in the Age of Revolutions.",
    "year": 2017,
    "doi": "10.1093/ahr/122.4.1349",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2789989229",
    "title": "West African ʿulamāʾ and Salafism in Mecca and Medina: Jawāb al-Ifrῑqῑ—The Response of the African, written by Chanfi Ahmed",
    "year": 2017,
    "doi": "10.1163/15700666-12340107",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2888175389",
@@ -51744,14 +52009,14 @@
    "title": "Steamboats on the Indus: The Limits of Western Technological Superiority in South Asia, by Clive Dewey",
    "year": 2017,
    "doi": "10.1093/ehr/cex403",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2341326657",
    "title": "A History of Modern Morocco, written by Susan Gilson Miller",
    "year": 2016,
    "doi": "10.1163/21540993-00701011",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2408913346",
@@ -51764,7 +52029,7 @@
    "title": "Herausforderung und Inspiration: Ernst Reuter als Stadtreformer in der Türkei [Challenges and inspirations: Ernst Reuter as an urban reformer in Turkey",
    "year": 2016,
    "doi": "10.1080/02665433.2016.1203110",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2510249766",
@@ -51819,14 +52084,14 @@
    "title": "The economies of urban diversity. Ruhr area and Istanbul",
    "year": 2015,
    "doi": "10.1080/02665433.2014.1002214",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2203199020",
    "title": "Alger: politiques urbaines (1846–1958)",
    "year": 2015,
    "doi": "10.1080/02665433.2015.1100003",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2221336593",
@@ -51886,14 +52151,14 @@
    "title": "Sarajevo: Die Geschichte einer Stadt",
    "year": 2014,
    "doi": "10.1080/02665433.2014.967499",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W1971578866",
    "title": "Marges urbaines et néolibéralisme en Méditerranée",
    "year": 2014,
    "doi": "10.1080/02665433.2014.936131",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2051079881",
@@ -51914,7 +52179,7 @@
    "title": "The rise and decline of an anti-dam campaign: Yusufeli Dam project and the temporal politics of development",
    "year": 2014,
    "doi": "10.1007/s12685-014-0120-8",
-   "type": "book-chapter"
+   "type": "article"
   },
   {
    "id": "W2626776278",
@@ -51978,14 +52243,14 @@
    "id": "W1586262532",
    "title": "Temporalities by Russell West-Pavlov",
    "year": 2013,
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W1989785233",
    "title": "Post-cosmopolitan cities: explorations of urban coexistence",
    "year": 2013,
    "doi": "10.1080/02665433.2013.828467",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2070932111",
@@ -51999,7 +52264,7 @@
    "title": "Review essay: popular religious practice and shamanism in Inner and Central Asia",
    "year": 2013,
    "doi": "10.1080/02634937.2013.827355",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2078696537",
@@ -52020,7 +52285,7 @@
    "title": "On Being Lebanese in Australia: Identity, Racism and the Ethnic Field",
    "year": 2013,
    "doi": "10.1080/07256868.2013.765378",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2621816349",
@@ -52062,35 +52327,35 @@
    "title": "The Hadrami Diaspora: Community-Building on the Indian Ocean Rim * By LEIF MANGER",
    "year": 2012,
    "doi": "10.1093/jis/ets048",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W1993323494",
    "title": "Streets of memory – landscape, tolerance, and national identity in Istanbul",
    "year": 2012,
    "doi": "10.1080/02665433.2012.680290",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W1998088907",
    "title": "Europa in Palästina. Die Architekten des zionistischen Projekts (1902–1923)",
    "year": 2012,
    "doi": "10.1080/02665433.2012.680294",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2019044956",
    "title": "Being Alive: Essays on Movement, Knowledge and Description",
    "year": 2012,
    "doi": "10.1080/00141844.2012.678271",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2030468430",
    "title": "Life within limits: well-being in a world of want, by Jackson, Michael",
    "year": 2012,
    "doi": "10.1111/j.1469-8676.2011.00176_8.x",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2038190737",
@@ -52145,14 +52410,14 @@
    "title": "Hadrami Arabs in Present-Day Indonesia. An Indonesia-Oriented Group with an Arab Signature * By FRODE F. JACOBSEN",
    "year": 2011,
    "doi": "10.1093/jis/etr016",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2159649685",
    "title": "The Edge of Islam: Power, Personhood, and Ethnoreligious Boundaries on the Kenya Coast by Janet McIntosh",
    "year": 2011,
    "doi": "10.1111/j.1548-1425.2011.01312_21.x",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2267085263",
@@ -52185,7 +52450,7 @@
    "title": "Women and Islamic Revival in a West African Town by Adeline Masquelier",
    "year": 2010,
    "doi": "10.1111/j.1548-1433.2010.01294_15.x",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2067188037",
@@ -52234,7 +52499,7 @@
    "title": "Culture and identity in a Muslim society by Gregg, Gary S.",
    "year": 2009,
    "doi": "10.1111/j.1469-8676.2009.00064_7.x",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2135544663",
@@ -52298,7 +52563,7 @@
    "title": "Les Trajectoires d'un Etat-frontière: espaces, évolution politique et transformations sociales en Mauritanie (review)",
    "year": 2007,
    "doi": "10.1353/afr.2007.0085",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W1941683985",
@@ -52364,7 +52629,7 @@
    "id": "W819626236",
    "title": "Ariel Salzmann Tocqueville in the Ottoman Empire. Rival Paths to the Modern State. Leiden and Boston: Brill, 2004 Reviewed By Nora Lafi (ZMO Berlin)",
    "year": 2005,
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2230848982",
@@ -52396,7 +52661,7 @@
    "id": "W2596547327",
    "title": "Asma Moalla: The Regency of Tunis and the Ottoman Porte, 1777-1814: Army and government of a North-Africa Ottoman eyalet at the end of the eighteenth century, London and New York: Routledge Curzon, 2004.",
    "year": 2005,
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W2623284098",
@@ -52501,7 +52766,7 @@
    "id": "W2768426837",
    "title": "Nora Lafi (ZMO Berlin). Compte-rendu de : Jean-Luc Arnaud, Le Caire, mise en place d'une ville moderne 1867-1907. Des intérêts du prince aux sociétés privées, Arles, Sindbad Actes Sud, 1998, 444 p.",
    "year": 2000,
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W4236752962",
@@ -52522,7 +52787,7 @@
    "title": "Gerhard HÖPP/Gerdien JONKER (eds), In fremde Erde. Zur Geschichte und Gegenwert der islamischen Bestattung in Deutschland, Berlin, Zentrum Moderner Orient, Arbeitshefte 11. 1996",
    "year": 1996,
    "doi": "10.4000/cemoti.153",
-   "type": "article"
+   "type": "book-review"
   },
   {
    "id": "W4253208801",
@@ -53222,6 +53487,7 @@
   "learning-from-indonesia-in-chinese": "f95437ab63",
   "learning-intelligence-the-exchange-of-secret-service-knowledge-between-germany-and-the-arab-middle-east-1960-2010": "a154b6c105",
   "lebenswerte-satellitenstaedte": "73d45d38b7",
+  "legypte-de-nasser": "113b3fda56",
   "lequilibre-regional-au-cameroun-politique-dequite-sociale-ou-derive-ethnique": "c8c3d21395",
   "les-archives-la-societe-et-les-sciences-humaine": "16778ea7d8",
   "les-conversions-a-lislam-fondamentaliste-en-afrique-au-sud-du-sahara": "ce1e9df29e",
@@ -53330,6 +53596,7 @@
   "on-exponentials-and-the-return-to-normality": "4ad6e8e5e3",
   "on-not-understanding-the-stranger": "c4d13f5908",
   "on-recent-works-by-fahed-halabi": "204cf37ef3",
+  "on-sacrifice-privilege-and-dialectics": "ea95374b0f",
   "on-the-cause-of-migration": "7dbd1ea18b",
   "on-the-joy-and-melancholy-of-politics": "b931e940fb",
   "on-the-tarmac-waiting-for-take-off": "b13a1cc3a4",

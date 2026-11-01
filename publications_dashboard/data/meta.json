@@ -1,7 +1,7 @@
 {
  "source": "https://www.zmo.de/en/publications/publication-search",
  "schemaVersion": 2,
- "datasetId": "00290efac76b5478",
+ "datasetId": "a6b01ba8130745ed",
  "documentTypes": [
   "Monographs",
   "Book reviews",
@@ -14,8 +14,8 @@
   "Working Papers"
  ],
  "counts": {
-  "publications": 1979,
-  "authors": 670,
+  "publications": 1985,
+  "authors": 671,
   "untyped": 36,
   "withoutYear": 9
  },
@@ -154,15 +154,15 @@
   },
   {
    "year": 2026,
-   "count": 48
+   "count": 54
   }
  ],
  "coverage": {
   "languages": {
-   "en": 1399,
+   "en": 1403,
    "de": 392,
-   "fr": 90,
-   "und": 27,
+   "fr": 91,
+   "und": 28,
    "ar": 22,
    "tr": 15,
    "it": 9,
@@ -179,16 +179,16 @@
    "uz": 1
   },
   "zmoAuthors": 175,
-  "withZmoAuthor": 1721,
-  "openalex": 836,
+  "withZmoAuthor": 1725,
+  "openalex": 840,
   "access": {
-   "closed": 501,
-   "open": 335,
-   "unknown": 1143
+   "closed": 496,
+   "open": 344,
+   "unknown": 1145
   },
   "themed": 1979,
-  "withPlace": 1480,
-  "languageDecided": 312,
+  "withPlace": 1484,
+  "languageDecided": 311,
   "withHeadings": 133
  }
 }

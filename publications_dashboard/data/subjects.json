@@ -1,11 +1,11 @@
 {
- "datasetId": "00290efac76b5478",
+ "datasetId": "a6b01ba8130745ed",
  "sources": {
   "lobid": "https://lobid.org/resources",
   "dnb": "https://services.dnb.de/sru/dnb"
  },
  "coverage": {
-  "books": 315,
+  "books": 316,
   "withHeadings": 133
  },
  "headings": {

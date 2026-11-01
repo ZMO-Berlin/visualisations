@@ -1947,6 +1947,22 @@
  },
  {
   "parent": {
+   "slug": "economies-of-the-male-body",
+   "title": "Economies of the Male Body",
+   "url": "https://www.zmo.de/en/publications/publication-search/economies-of-the-male-body",
+   "registered": false
+  },
+  "children": [
+   {
+    "slug": "on-sacrifice-privilege-and-dialectics",
+    "title": "On sacrifice, privilege, and dialectics",
+    "url": "https://www.zmo.de/en/publications/publication-search/on-sacrifice-privilege-and-dialectics",
+    "registered": true
+   }
+  ]
+ },
+ {
+  "parent": {
    "slug": "emperyalizm-teorik-ve-guencel-tartismalar",
    "title": "Emperyalizm: Teorik ve Güncel Tartismalar",
    "url": "https://www.zmo.de/en/publications/publication-search/emperyalizm-teorik-ve-guencel-tartismalar",
@@ -4261,6 +4277,22 @@
     "slug": "the-ones-who-walk-away",
     "title": "The Ones Who Walk Away",
     "url": "https://www.zmo.de/en/publications/publication-search/the-ones-who-walk-away",
+    "registered": true
+   }
+  ]
+ },
+ {
+  "parent": {
+   "slug": "law-and-diversity",
+   "title": "Law and Diversity: European and Latin American Experiences from a Legal Historical Perspective",
+   "url": "https://www.zmo.de/en/publications/publication-search/law-and-diversity",
+   "registered": false
+  },
+  "children": [
+   {
+    "slug": "territorial-organisation-and-autonomy-in-russian-history-a-comparative-overview",
+    "title": "Territorial Organisation and Autonomy in Russian History: A Comparative Overview",
+    "url": "https://www.zmo.de/en/publications/publication-search/territorial-organisation-and-autonomy-in-russian-history-a-comparative-overview",
     "registered": true
    }
   ]

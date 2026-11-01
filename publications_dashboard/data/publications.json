@@ -2476,7 +2476,7 @@
    "4020588-5"
   ],
   "openalex": "W1550503962",
-  "oa": "gold",
+  "oa": "green",
   "oaUrl": "http://content.ub.hu-berlin.de/monographs/toc/ethnologie/BV040148414.pdf"
  },
  {
@@ -3908,7 +3908,7 @@
    "Q33946"
   ],
   "openalex": "W4248108165",
-  "oa": "gold",
+  "oa": "green",
   "oaUrl": "https://doi.org/10.31235/osf.io/wz2gf_v1"
  },
  {
@@ -4749,7 +4749,7 @@
    "4049396-9"
   ],
   "openalex": "W3184107427",
-  "oa": "gold",
+  "oa": "green",
   "oaUrl": "https://directory.doabooks.org/handle/20.500.12854/71460"
  },
  {
@@ -4885,6 +4885,25 @@
   "places": [
    "Q1009"
   ]
+ },
+ {
+  "slug": "colonial-difference-under-un-supervision-racialized-status-hierarchies-and-the-reconfiguration-of-empire-in-the-un-trusteeship-system",
+  "url": "https://www.zmo.de/en/publications/publication-search/colonial-difference-under-un-supervision-racialized-status-hierarchies-and-the-reconfiguration-of-empire-in-the-un-trusteeship-system",
+  "title": "Colonial difference under UN supervision? Racialized status hierarchies and the reconfiguration of empire in the UN Trusteeship System",
+  "authors": [
+   "Ketzmerick-Calandrino, Maria"
+  ],
+  "type": "Journal articles",
+  "year": 2026,
+  "journal": "Review of International Studies, online first",
+  "doi": "10.1017/S0260210526102010",
+  "lang": "en",
+  "places": [
+   "Q1149903"
+  ],
+  "openalex": "W7214604691",
+  "oa": "hybrid",
+  "oaUrl": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0C460DE73A3D572A6373C5E0570E7D31/S0260210526102010a.pdf/div-class-title-colonial-difference-under-un-supervision-racialized-status-hierarchies-and-the-reconfiguration-of-empire-in-the-un-trusteeship-system-div.pdf"
  },
  {
   "slug": "colonial-dis/continuities-in-cameroon-and-the-postcolonial-dilemma-in-the-archive",
@@ -6826,7 +6845,7 @@
    "Q813"
   ],
   "openalex": "W1509503146",
-  "oa": "green",
+  "oa": "diamond",
   "oaUrl": "http://pubman.mpdl.mpg.de/pubman/item/escidoc:921720"
  },
  {
@@ -10701,6 +10720,27 @@
   "oa": "closed"
  },
  {
+  "slug": "from-expelungratefulafghans-to-expellingafghansisanationaldemand-a-comparative-analysis-of-digital-xenophobia-and-anti-migrant-hate-campaigns-in-iran-and-pakistan",
+  "url": "https://www.zmo.de/en/publications/publication-search/from-expelungratefulafghans-to-expellingafghansisanationaldemand-a-comparative-analysis-of-digital-xenophobia-and-anti-migrant-hate-campaigns-in-iran-and-pakistan",
+  "title": "From #ExpelUngratefulAfghans to #ExpellingAfghansIsANationalDemand; A Comparative Analysis of Digital Xenophobia and Anti-Migrant Hate Campaigns in Iran and Pakistan",
+  "authors": [
+   "Beidollahkhani, Arash"
+  ],
+  "type": "Journal articles",
+  "year": 2026,
+  "journal": "International Migration",
+  "doi": "10.1111/imig.70237",
+  "lang": "en",
+  "places": [
+   "Q794",
+   "Q843",
+   "Q889",
+   "Q1149903"
+  ],
+  "openalex": "W7223648394",
+  "oa": "hybrid"
+ },
+ {
   "slug": "from-expulsion-to-extortion-deportability-predatory-policing-and-west-african-migrants-in-angola",
   "url": "https://www.zmo.de/en/publications/publication-search/from-expulsion-to-extortion-deportability-predatory-policing-and-west-african-migrants-in-angola",
   "title": "From Expulsion to Extortion: Deportability, Predatory Policing and West African Migrants in Angola",
@@ -12386,7 +12426,7 @@
    "Q18869"
   ],
   "openalex": "W7213458117",
-  "oa": "gold",
+  "oa": "green",
   "oaUrl": "https://d-nb.info/1403176116/04"
  },
  {
@@ -14555,7 +14595,8 @@
    "Q43"
   ],
   "openalex": "W4391556054",
-  "oa": "closed"
+  "oa": "green",
+  "oaUrl": "https://hal.science/hal-03514712v1/document"
  },
  {
   "slug": "introduction-contextualising-insidious-trauma-in-eastern-africa",
@@ -16532,7 +16573,8 @@
    "Q843"
   ],
   "openalex": "W1522756752",
-  "oa": "closed"
+  "oa": "green",
+  "oaUrl": "http://raco.cat/index.php/DCidob/article/view/139043"
  },
  {
   "slug": "la-premiere-guerre-mondiale-dans-la-peninsule-arabique-en-quete-de-ses-sources",
@@ -16956,6 +16998,23 @@
   "journal": "Zenith",
   "lang": "de",
   "theme": "t19"
+ },
+ {
+  "slug": "legypte-de-nasser",
+  "url": "https://www.zmo.de/en/publications/publication-search/legypte-de-nasser",
+  "title": "L’Égypte de Nasser",
+  "subtitle": "Classes moyennes et idéal socialiste (1952-1970)",
+  "authors": [
+   "Ferrand, Antoinette"
+  ],
+  "type": "Monographs",
+  "year": 2026,
+  "publisher": "Presses universitaires de France",
+  "lang": "fr",
+  "places": [
+   "Q7204",
+   "Q143487"
+  ]
  },
  {
   "slug": "leibniz-zentrum-moderner-orient-die-erforschung-muslimisch-gepraegter-lebens-und-erfahrungswelten",
@@ -17696,7 +17755,8 @@
    "Q30"
   ],
   "openalex": "W3161836292",
-  "oa": "closed"
+  "oa": "green",
+  "oaUrl": "https://www.persee.fr/doc/ethio_0066-2127_2018_num_32_1_1645"
  },
  {
   "slug": "making-human-differences-in-berlin-and-maharashtra",
@@ -19564,7 +19624,7 @@
   ],
   "openalex": "W3134091237",
   "oa": "green",
-  "oaUrl": "https://doi.org/10.17613/58w04-5n618"
+  "oaUrl": "https://hal.science/halshs-03161143v1"
  },
  {
   "slug": "muslim-grassroots-leaders-in-india",
@@ -20724,6 +20784,19 @@
   "theme": "t05"
  },
  {
+  "slug": "on-sacrifice-privilege-and-dialectics",
+  "url": "https://www.zmo.de/en/publications/publication-search/on-sacrifice-privilege-and-dialectics",
+  "title": "On sacrifice, privilege, and dialectics",
+  "subtitle": "An afterword",
+  "authors": [
+   "Schielke, Samuli"
+  ],
+  "type": "Contributions to an edited volume",
+  "year": 2026,
+  "publisher": "AUC Press",
+  "lang": "en"
+ },
+ {
   "slug": "on-the-cause-of-migration",
   "url": "https://www.zmo.de/en/publications/publication-search/on-the-cause-of-migration",
   "title": "On the Cause of Migration",
@@ -21799,7 +21872,7 @@
   "lang": "en",
   "theme": "t16",
   "openalex": "W4414628655",
-  "oa": "closed"
+  "oa": "bronze"
  },
  {
   "slug": "plantifying-emplacement",
@@ -24124,7 +24197,8 @@
    "Q1058785"
   ],
   "openalex": "W7131827303",
-  "oa": "closed"
+  "oa": "hybrid",
+  "oaUrl": "https://queensu.scholaris.ca/bitstreams/11740c33-056c-478e-8b21-40c5411f3570/download"
  },
  {
   "slug": "rethinking-memory-studies",
@@ -24581,7 +24655,7 @@
  {
   "slug": "review-of-exchange-ideologies-commerce-language-and-patriarchy-in-preconflict-aleppo-by-paul-anderson",
   "url": "https://www.zmo.de/en/publications/publication-search/review-of-exchange-ideologies-commerce-language-and-patriarchy-in-preconflict-aleppo-by-paul-anderson",
-  "title": "Rev.: Paul Anderson, Exchange Ideologies: Commerce, Language, and Patriarchy in Preconflict Aleppo (New York: Cornell University Press, 2023)204 pp.",
+  "title": "Rev.: Paul Anderson, Exchange Ideologies: Commerce, Language, and Patriarchy in Preconflict Aleppo (New York: Cornell University Press, 2023), 204 pp.",
   "authors": [
    "Holst, Birgitte Stampe"
   ],
@@ -24589,7 +24663,6 @@
   "year": 2025,
   "journal": "Anthropology of the Middle East",
   "doi": "10.3167/ame.2025.200207",
-  "lang": "en",
   "theme": "t01",
   "openalex": "W4415749623",
   "oa": "diamond"
@@ -27630,7 +27703,7 @@
    "4076232-4"
   ],
   "openalex": "W3174335945",
-  "oa": "gold",
+  "oa": "green",
   "oaUrl": "https://bvbr.bib-bvb.de:443/F?func=service&doc_library=BVB01&local_base=BVB01&doc_number=032633229&sequence=000001&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA"
  },
  {
@@ -28703,6 +28776,22 @@
   "oa": "closed"
  },
  {
+  "slug": "state-violence-protest-suppression-and-trauma-outcomes-a-scoping-review-of-cumulative-exposure-across-different-political-contexts",
+  "url": "https://www.zmo.de/en/publications/publication-search/state-violence-protest-suppression-and-trauma-outcomes-a-scoping-review-of-cumulative-exposure-across-different-political-contexts",
+  "title": "State violence, protest suppression, and trauma outcomes: a scoping review of cumulative exposure across different political contexts",
+  "authors": [
+   "Beidollahkhani, Arash",
+   "Salari, Taghi Ebrahimi"
+  ],
+  "type": "Journal articles",
+  "year": 2026,
+  "journal": "European Journal of Psychotraumatology",
+  "doi": "10.1080/20008066.2026.2742810",
+  "lang": "en",
+  "openalex": "W7223157805",
+  "oa": "gold"
+ },
+ {
   "slug": "statisquo",
   "url": "https://www.zmo.de/en/publications/publication-search/statisquo",
   "title": "\"StatisQuo\"",
@@ -29736,6 +29825,25 @@
   ],
   "openalex": "W6918123402",
   "oa": "green"
+ },
+ {
+  "slug": "territorial-organisation-and-autonomy-in-russian-history-a-comparative-overview",
+  "url": "https://www.zmo.de/en/publications/publication-search/territorial-organisation-and-autonomy-in-russian-history-a-comparative-overview",
+  "title": "Territorial Organisation and Autonomy in Russian History: A Comparative Overview",
+  "authors": [
+   "Kirmse, Stefan B."
+  ],
+  "type": "Contributions to an edited volume",
+  "year": 2026,
+  "publisher": "Max-Planck-Institut für Rechtsgeschichte und Rechtstheorie",
+  "series": "Global Perspectives on Legal History 29",
+  "doi": "10.12946/gplh29",
+  "lang": "en",
+  "places": [
+   "Q159"
+  ],
+  "openalex": "W7221757808",
+  "oa": "hybrid"
  },
  {
   "slug": "territorialisation-ambivalence-and-representational-spaces-in-gilgit-baltistan",
@@ -32004,7 +32112,7 @@
    "Q43"
   ],
   "openalex": "W2905638550",
-  "oa": "hybrid",
+  "oa": "diamond",
   "oaUrl": "https://doi.org/10.4000/cedref.1111"
  },
  {
@@ -34913,7 +35021,7 @@
    "Q843"
   ],
   "openalex": "W2905983343",
-  "oa": "green",
+  "oa": "diamond",
   "oaUrl": "https://ora.ox.ac.uk/objects/uuid:8045fc82-d793-4d09-9901-397ad8a8552e"
  },
  {
